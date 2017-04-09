@@ -17,8 +17,6 @@
     "lint": "eslint client server"
   },
   "pre-commit": [
-    "lint",
-    "test"
   ],
   "repository": {
     "type": "git",
@@ -56,8 +54,6 @@
     "redux-thunk": "^2.1.0",
     "sanitize-html": "^1.11.4",
 
-
-//dev dependencies
     "ava": "^0.15.2",
     "babel-eslint": "^6.0.4",
     "babel-loader": "^6.2.4",
