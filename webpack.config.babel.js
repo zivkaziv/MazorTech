@@ -32,6 +32,12 @@ module.exports = {
       },
     ],
   },
+
+  node: {
+    dns: 'mock',
+    net: 'mock'
+  },
+
   postcss: () => [
     postcssFocus(),
     cssnext({

@@ -16,6 +16,8 @@ module.exports = {
   node: {
     __filename: true,
     __dirname: true,
+    dns: 'mock',
+    net: 'mock'
   },
 
   resolve: {

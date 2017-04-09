@@ -34,6 +34,11 @@ module.exports = {
     ],
   },
 
+  node: {
+    dns: 'mock',
+    net: 'mock'
+  },
+
   module: {
     loaders: [
       {

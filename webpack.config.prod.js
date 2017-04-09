@@ -58,6 +58,11 @@ module.exports = {
     ],
   },
 
+  node: {
+    dns: 'mock',
+    net: 'mock'
+  },
+
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
@@ -76,12 +81,14 @@ module.exports = {
     new ChunkManifestPlugin({
       filename: "chunk-manifest.json",
       manifestVariable: "webpackManifest",
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        warnings: false,
-      }
-    }),
+    })
+    // ,
+    // new webpack.optimize.UglifyJsPlugin({
+    //   compressor: {
+    //     warnings: false,
+    //   }
+    // }
+    // ),
   ],
 
   postcss: () => [

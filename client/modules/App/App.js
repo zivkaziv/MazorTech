@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+var StepZilla = require('react-stepzilla');
 
 // Import Style
 import styles from './App.css';
@@ -9,6 +10,14 @@ import Helmet from 'react-helmet';
 import DevTools from './components/DevTools';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+
+//Steps
+import Step1 from '../Wizard/Step1'
+import Step2 from '../Wizard/Step2'
+import Step3 from '../Wizard/Step3'
+import Step4 from '../Wizard/Step4'
+import Step5 from '../Wizard/Step5'
+import Step6 from '../Wizard/Step6'
 
 // Import Actions
 import { toggleAddPost } from './AppActions';
