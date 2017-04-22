@@ -15,10 +15,10 @@ export function Header(props, context) {
     <div className={styles.header}>
       <div className={styles['language-switcher']}>
         <div className={styles['bool-logo']}><BoolLogoSvg width={120} /></div>
-        <ul>
-          <li><FormattedMessage id="switchLanguage" /></li>
-          {languageNodes}
-        </ul>
+        {/*<ul>*/}
+          {/*<li><FormattedMessage id="switchLanguage" /></li>*/}
+          {/*{languageNodes}*/}
+        {/*</ul>*/}
       </div>
       {/*<div className={styles.content}>*/}
         {/*<h1 className={styles['site-title']}>*/}
