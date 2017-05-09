@@ -101,7 +101,7 @@ const renderFullPage = (html, initialState) => {
   .progtrckr {
     text-align: center;
     padding-bottom: 16px;
-    border-bottom: solid 1px;
+    // border-bottom: solid 1px;
   }
   .progtrckr li {
     margin-bottom: 10px;
@@ -113,7 +113,8 @@ const renderFullPage = (html, initialState) => {
     color: #fff;
   }
   .step {
-    background-color: #ccc;
+    // background-color: #ccc;
+    border:1px solid #e5e5e5;
     min-height: 450px;
     padding: 10px;
   }
@@ -206,7 +207,13 @@ ol.progtrckr li span {
 @media (max-width: 650px) {
   .progtrckr em {
     display: inline;
-  }
+  // }border-bottom: solid 1px;
+}
+
+
+
+
+
 }
 
 ol.progtrckr li.progtrckr-todo {

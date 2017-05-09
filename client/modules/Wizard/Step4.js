@@ -1,14 +1,16 @@
 'use strict';
 
 import React from 'react';
+import CircularProgress from 'material-ui/CircularProgress';
 
 const Step4 = (props) => (
   <div className="step step2">
     <div className="row">
+      <CircularProgress size={80} thickness={5} />
       <form id="Form" className="form-horizontal">
         <div className="form-group">
           <label className="col-md-12 control-label">
-            <h1>Step 2: Pure Component Example</h1>
+            <h1>We've found the following medical rights:</h1>
           </label>
           <div className="row content">
             <div className="col-md-12">
