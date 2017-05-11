@@ -1,1 +1,1 @@
-web: npm run bs
+worker: npm run bs
