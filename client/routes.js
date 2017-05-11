@@ -24,20 +24,35 @@ if (process.env.NODE_ENV !== 'production') {
 // More info: http://blog.mxstbr.com/2016/01/react-apps-with-pages/
 export default (
   <Route path="/" component={App}>
+    {/*<IndexRoute*/}
+      {/*getComponent={(nextState, cb) => {*/}
+        {/*require.ensure([], require => {*/}
+          {/*cb(null, require('./modules/Post/pages/PostListPage/PostListPage').default);*/}
+        {/*});*/}
+      {/*}}*/}
+    {/*/>*/}
     <IndexRoute
       getComponent={(nextState, cb) => {
         require.ensure([], require => {
-          cb(null, require('./modules/Post/pages/PostListPage/PostListPage').default);
+          cb(null, require('./modules/Post/pages/HomePage/HomePage').default);
         });
       }}
     />
     <Route
-      path="/posts/:slug-:cuid"
+      path="/wizard"
       getComponent={(nextState, cb) => {
         require.ensure([], require => {
-          cb(null, require('./modules/Post/pages/PostDetailPage/PostDetailPage').default);
+          cb(null, require('./modules/Post/pages/WizardPage/WizardPage').default);
         });
       }}
     />
+    {/*<Route*/}
+      {/*path="/posts/:slug-:cuid"*/}
+      {/*getComponent={(nextState, cb) => {*/}
+        {/*require.ensure([], require => {*/}
+          {/*cb(null, require('./modules/Post/pages/PostDetailPage/PostDetailPage').default);*/}
+        {/*});*/}
+      {/*}}*/}
+    {/*/>*/}
   </Route>
 );

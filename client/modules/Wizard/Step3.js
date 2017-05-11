@@ -8,7 +8,7 @@ const styles = {
     maxHeight: 350,
   },
   termsSection:{
-    maxHeight: 388,
+    maxHeight: 280,
     overflow:'auto',
   },
   toggle: {

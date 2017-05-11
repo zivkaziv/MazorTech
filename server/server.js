@@ -115,7 +115,7 @@ const renderFullPage = (html, initialState) => {
   .step {
     // background-color: #ccc;
     border:1px solid #e5e5e5;
-    min-height: 450px;
+    min-height: 350px;
     padding: 10px;
   }
   html .row, html .form-horizontal .form-group {

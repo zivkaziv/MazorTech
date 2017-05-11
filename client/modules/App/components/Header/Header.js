@@ -13,8 +13,8 @@ export function Header(props, context) {
 
   return (
     <div className={styles.header}>
+      <div className={styles.logo}><BoolLogoSvg/></div>
       <div className={styles['language-switcher']}>
-        <div className={styles['bool-logo']}><BoolLogoSvg width={120} /></div>
         {/*<ul>*/}
           {/*<li><FormattedMessage id="switchLanguage" /></li>*/}
           {/*{languageNodes}*/}

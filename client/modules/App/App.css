@@ -3,6 +3,10 @@
   width: 100%;
   padding: 15px;
   margin: 0 auto;
+  position: fixed;
+  bottom: 60px;
+  top: 34px;
+  overflow: auto;
 }
 
 
