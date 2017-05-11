@@ -16,7 +16,11 @@
     "slate": "rimraf node_modules && npm install",
     "lint": "eslint client server"
   },
-  "pre-commit": [],
+  "pre-commit": [
+    "clean",
+    "build",
+    "build:server"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hashnode/mern-starter.git"
