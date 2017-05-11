@@ -32,8 +32,8 @@ export default class Step1 extends Component {
             <div className="form-group">
               <label className="col-md-12 control-label">
                 {/*<RaisedButton label="Default" />*/}
-                <h1>Step Yoav: Welcome to the official React StepZilla Example</h1>
-                <h3>Source, Installation Instructions and Docs can be found here: <a href="https://github.com/newbreedofgeek/react-stepzilla" target="_blank">https://github.com/newbreedofgeek/react-stepzilla</a></h3>
+                <h1>Mark here the Medical diagnosis </h1>
+                {/*<h3>Source, Installation Instructions and Docs can be found here: <a href="https://github.com/newbreedofgeek/react-stepzilla" target="_blank">https://github.com/newbreedofgeek/react-stepzilla</a></h3>*/}
               </label>
               <div className="row">
                 <div className="col-md-12">
