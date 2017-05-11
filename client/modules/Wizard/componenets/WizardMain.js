@@ -1,18 +1,16 @@
 import React, { PropTypes } from 'react';
 
 // Import Components
-import PostListItem from './PostListItem/PostListItem';
-import styles from '../../../css/prog-tracker.css';
+// import PostListItem from '../../Post/components/PostListItem/PostListItem';
+// import styles from '../../../css/prog-tracker.css';
 
 import StepZilla from 'react-stepzilla';
 
 //Steps
-import Step1 from '../../Wizard/Step1'
-import Step2 from '../../Wizard/Step2'
-import Step3 from '../..//Wizard/Step3'
-import Step4 from '../../Wizard/Step4'
-import Step5 from '../../Wizard/Step5'
-import Step6 from '../../Wizard/Step6'
+import Step1 from '../Steps/Step1'
+import Step2 from '../Steps/Step2'
+import Step3 from '../Steps/Step3'
+import Step4 from '../Steps/Step4'
 
 
 function WizardMain(props) {

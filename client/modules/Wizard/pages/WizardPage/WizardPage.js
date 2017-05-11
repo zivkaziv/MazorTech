@@ -2,15 +2,15 @@ import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
 
 // Import Components
-import WizardMain from '../../components/WizardMain';
+import WizardMain from '../../componenets/WizardMain';
 
 // Import Actions
-import { addPostRequest, fetchPosts, deletePostRequest } from '../../PostActions';
-import { toggleAddPost } from '../../../App/AppActions';
+// import { addPostRequest, fetchPosts, deletePostRequest } from '../../PostActions';
+// import { toggleAddPost } from '../../../App/AppActions';
 
 // Import Selectors
-import { getShowAddPost } from '../../../App/AppReducer';
-import { getPosts } from '../../PostReducer';
+// import { getShowAddPost } from '../../../App/AppReducer';
+// import { getPosts } from '../../PostReducer';
 
 class WizardPage extends Component {
   // componentDidMount() {
@@ -43,8 +43,8 @@ class WizardPage extends Component {
 // Retrieve data from store as props
 function mapStateToProps(state) {
   return {
-    showAddPost: getShowAddPost(state),
-    posts: getPosts(state),
+    // showAddPost: getShowAddPost(state),
+    // posts: getPosts(state),
   };
 }
 

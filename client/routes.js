@@ -34,7 +34,7 @@ export default (
     <IndexRoute
       getComponent={(nextState, cb) => {
         require.ensure([], require => {
-          cb(null, require('./modules/Post/pages/HomePage/HomePage').default);
+          cb(null, require('./modules/Wizard/pages/HomePage/HomePage').default);
         });
       }}
     />
@@ -42,7 +42,7 @@ export default (
       path="/wizard"
       getComponent={(nextState, cb) => {
         require.ensure([], require => {
-          cb(null, require('./modules/Post/pages/WizardPage/WizardPage').default);
+          cb(null, require('./modules/Wizard/pages/WizardPage/WizardPage').default);
         });
       }}
     />

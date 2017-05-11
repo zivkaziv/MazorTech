@@ -3,16 +3,14 @@ import { Link } from 'react-router';
 import { connect } from 'react-redux';
 
 // Import Components
-import PostList from '../../components/PostList';
-import PostCreateWidget from '../../components/PostCreateWidget/PostCreateWidget';
+// import PostList from '../../components/PostList';
 
 // Import Actions
-import { addPostRequest, fetchPosts, deletePostRequest } from '../../PostActions';
-import { toggleAddPost } from '../../../App/AppActions';
+// import { toggleAddPost } from '../../../App/AppActions';
 
 // Import Selectors
-import { getShowAddPost } from '../../../App/AppReducer';
-import { getPosts } from '../../PostReducer';
+// import { getShowAddPost } from '../../../App/AppReducer';
+// import { getPosts } from '../../PostReducer';
 
 const styles = {
   uploadButton: {
@@ -55,8 +53,8 @@ class HomePage extends Component {
 // Retrieve data from store as props
 function mapStateToProps(state) {
   return {
-    showAddPost: getShowAddPost(state),
-    posts: getPosts(state),
+    // showAddPost: getShowAddPost(state),
+    // posts: getPosts(state),
   };
 }
 
