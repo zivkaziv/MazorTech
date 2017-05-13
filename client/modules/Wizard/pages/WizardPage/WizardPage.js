@@ -5,17 +5,17 @@ import { connect } from 'react-redux';
 import WizardMain from '../../componenets/WizardMain';
 
 // Import Actions
-// import { addPostRequest, fetchPosts, deletePostRequest } from '../../PostActions';
+import { fetchMedicalRights } from '../../WizardActions';
 // import { toggleAddPost } from '../../../App/AppActions';
 
 // Import Selectors
 // import { getShowAddPost } from '../../../App/AppReducer';
-// import { getPosts } from '../../PostReducer';
+import { getMedicalRights } from '../../WizardReducer';
 
 class WizardPage extends Component {
-  // componentDidMount() {
-  //   this.props.dispatch(fetchPosts());
-  // }
+  componentDidMount() {
+    this.props.dispatch(fetchMedicalRights());
+  }
   //
   // handleDeletePost = post => {
   //   if (confirm('Do you want to delete this post')) { // eslint-disable-line
@@ -44,15 +44,13 @@ class WizardPage extends Component {
 function mapStateToProps(state) {
   return {
     // showAddPost: getShowAddPost(state),
-    // posts: getPosts(state),
+    // medicalRights: getMedicalRights(state),
   };
 }
 
 WizardPage.propTypes = {
-  // posts: PropTypes.arrayOf(PropTypes.shape({
-  //   name: PropTypes.string.isRequired,
-  //   title: PropTypes.string.isRequired,
-  //   content: PropTypes.string.isRequired,
+  // medicalRights: PropTypes.arrayOf(PropTypes.shape({
+  //   condition: PropTypes.string.isRequired
   // })).isRequired,
   // showAddPost: PropTypes.bool.isRequired,
   // dispatch: PropTypes.func.isRequired,

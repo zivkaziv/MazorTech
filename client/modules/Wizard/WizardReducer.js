@@ -1,4 +1,4 @@
-import { ADD_USER, TERMS_AGREE } from './WizardActions';
+import { ADD_USER, TERMS_AGREE, ADD_MEDICAL_RIGHTS } from './WizardActions';
 
 // Initial State
 const initialState = { data: [] };
@@ -15,6 +15,12 @@ const WizardReducer = (state = initialState, action) => {
         data: action.user,
       };
 
+    case ADD_MEDICAL_RIGHTS:
+      console.log('ziv');
+      return{
+        data: action.medicalRights,
+      };
+
     // case DELETE_POST :
     //   return {
     //     data: state.data.filter(post => post.cuid !== action.cuid),
@@ -28,10 +34,13 @@ const WizardReducer = (state = initialState, action) => {
 /* Selectors */
 
 // Get all posts
-export const getPosts = state => state.posts.data;
+export const getMedicalRights = state => state.medicalRights;
 
+export const printState = function(){
+  console.log(state);
+};
 // Get post by cuid
-export const getPost = (state, cuid) => state.posts.data.filter(post => post.cuid === cuid)[0];
+// export const getPost = (state, cuid) => state.posts.data.filter(post => post.cuid === cuid)[0];
 
 // Export Reducer
 export default WizardReducer;

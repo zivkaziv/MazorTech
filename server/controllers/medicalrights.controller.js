@@ -4,6 +4,8 @@
  * @param res
  * @returns void
  */
+import Post from '../models/post';
+
 export function getMedicalRights(req, res) {
     let right1 = {
       "condition":"OSA",
