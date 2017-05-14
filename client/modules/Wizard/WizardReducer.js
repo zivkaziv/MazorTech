@@ -16,7 +16,6 @@ const WizardReducer = (state = initialState, action) => {
       };
 
     case ADD_MEDICAL_RIGHTS:
-      console.log('ziv');
       return{
         data: action.medicalRights,
       };
@@ -34,11 +33,8 @@ const WizardReducer = (state = initialState, action) => {
 /* Selectors */
 
 // Get all posts
-export const getMedicalRights = state => state.medicalRights;
+export const getMedicalRights = state => state.medicalRights.data;
 
-export const printState = function(){
-  console.log(state);
-};
 // Get post by cuid
 // export const getPost = (state, cuid) => state.posts.data.filter(post => post.cuid === cuid)[0];
 

@@ -21,7 +21,7 @@ export function addMedicalRights(medicalRights) {
 export function fetchMedicalRights() {
   return (dispatch) => {
     return callApi('medicalrights').then(res => {
-      console.log(res.rights);
+      // console.log(res.rights);
       dispatch(addMedicalRights(res.rights));
     });
   };

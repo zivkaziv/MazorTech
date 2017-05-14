@@ -16,6 +16,7 @@ class WizardPage extends Component {
   componentDidMount() {
     this.props.dispatch(fetchMedicalRights());
   }
+
   //
   // handleDeletePost = post => {
   //   if (confirm('Do you want to delete this post')) { // eslint-disable-line
@@ -44,14 +45,15 @@ class WizardPage extends Component {
 function mapStateToProps(state) {
   return {
     // showAddPost: getShowAddPost(state),
-    // medicalRights: getMedicalRights(state),
+    medicalRights: getMedicalRights(state),
   };
 }
 
 WizardPage.propTypes = {
+  medicalRight: PropTypes.any
   // medicalRights: PropTypes.arrayOf(PropTypes.shape({
   //   condition: PropTypes.string.isRequired
-  // })).isRequired,
+  // })).isRequired
   // showAddPost: PropTypes.bool.isRequired,
   // dispatch: PropTypes.func.isRequired,
 };
