@@ -3,7 +3,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import RaisedButton from 'material-ui/RaisedButton';
-import MedicalRightItem from '../componenets/MedicalRightItem/MedicalRIghtItem';
+import MedicalDiagnosticItem from '../componenets/MedicalDiagnosticItem/MedicalDiagnosticItem';
 
 // Import Selectors
 import { getMedicalRights,printState } from '../WizardReducer';
@@ -47,7 +47,7 @@ class StepNumber1 extends Component {
 
             <div style={styles.medicalRightsContainer}>
           {this.props.medicalRights.map((medicalRight,i) => (
-            <MedicalRightItem key={i} medicalRight={medicalRight}/>
+            <MedicalDiagnosticItem key={i} medicalRight={medicalRight}/>
           ))}
             </div>
         </div>

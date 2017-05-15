@@ -139,9 +139,9 @@ exports.modules = {
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
-	var _MedicalRIghtItem = __webpack_require__(84);
+	var _MedicalDiagnosticItem = __webpack_require__(84);
 	
-	var _MedicalRIghtItem2 = _interopRequireDefault(_MedicalRIghtItem);
+	var _MedicalDiagnosticItem2 = _interopRequireDefault(_MedicalDiagnosticItem);
 	
 	var _WizardReducer = __webpack_require__(34);
 	
@@ -213,7 +213,7 @@ exports.modules = {
 	            'div',
 	            { style: styles.medicalRightsContainer },
 	            this.props.medicalRights.map(function (medicalRight, i) {
-	              return _react2.default.createElement(_MedicalRIghtItem2.default, { key: i, medicalRight: medicalRight });
+	              return _react2.default.createElement(_MedicalDiagnosticItem2.default, { key: i, medicalRight: medicalRight });
 	            })
 	          )
 	        )
@@ -256,22 +256,19 @@ exports.modules = {
 	
 	var _reactIntl = __webpack_require__(1);
 	
-	var _MedicalRightItem = {
-	  "medical-right-item": "_2OPQaFLVSkPuvLOeotACNW",
-	  "medical-condition": "_-zsAwla7bqudwL3lryVKn"
-	};
+	var _MedicalDiagnosticItem = content.locals;
 	
-	var _MedicalRightItem2 = _interopRequireDefault(_MedicalRightItem);
+	var _MedicalDiagnosticItem2 = _interopRequireDefault(_MedicalDiagnosticItem);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function MedicalRightItem(props) {
+	function MedicalDiagnosticItem(props) {
 	  return _react2.default.createElement(
 	    'div',
-	    { className: _MedicalRightItem2.default['medical-right-item'] },
+	    { className: _MedicalDiagnosticItem2.default['medical-right-item'] },
 	    _react2.default.createElement(
 	      'h3',
-	      { className: _MedicalRightItem2.default['medical-condition'] },
+	      { className: _MedicalDiagnosticItem2.default['medical-condition'] },
 	      props.medicalRight.condition
 	    )
 	  );
@@ -280,11 +277,11 @@ exports.modules = {
 	// Import Style
 	
 	
-	MedicalRightItem.propTypes = {
+	MedicalDiagnosticItem.propTypes = {
 	  medicalRight: _react.PropTypes.any
 	};
 	
-	exports.default = MedicalRightItem;
+	exports.default = MedicalDiagnosticItem;
 
 /***/ },
 
