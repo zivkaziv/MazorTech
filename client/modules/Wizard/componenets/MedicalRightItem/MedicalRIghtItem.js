@@ -14,9 +14,7 @@ function MedicalRightItem(props) {
 }
 
 MedicalRightItem.propTypes = {
-  medicalRight: PropTypes.shape({
-    condition: PropTypes.string.isRequired,
-  }).isRequired,
+  medicalRight: PropTypes.any
 };
 
 export default MedicalRightItem;

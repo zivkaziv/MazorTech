@@ -19,7 +19,7 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(2);
 	
-	var _WizardMain = __webpack_require__(84);
+	var _WizardMain = __webpack_require__(85);
 	
 	var _WizardMain2 = _interopRequireDefault(_WizardMain);
 	
@@ -139,6 +139,10 @@ exports.modules = {
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
+	var _MedicalRIghtItem = __webpack_require__(84);
+	
+	var _MedicalRIghtItem2 = _interopRequireDefault(_MedicalRIghtItem);
+	
 	var _WizardReducer = __webpack_require__(34);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -156,6 +160,9 @@ exports.modules = {
 	  pageStyle: {
 	    maxHeight: 350,
 	    overflow: 'auto'
+	  },
+	  medicalRightsContainer: {
+	    display: 'flex'
 	  }
 	};
 	
@@ -202,13 +209,13 @@ exports.modules = {
 	            null,
 	            'Please choose the diagnosis'
 	          ),
-	          this.props.medicalRights.map(function (medicalRight, i) {
-	            return _react2.default.createElement(
-	              'div',
-	              { key: i },
-	              medicalRight.condition
-	            );
-	          })
+	          _react2.default.createElement(
+	            'div',
+	            { style: styles.medicalRightsContainer },
+	            this.props.medicalRights.map(function (medicalRight, i) {
+	              return _react2.default.createElement(_MedicalRIghtItem2.default, { key: i, medicalRight: medicalRight });
+	            })
+	          )
 	        )
 	      );
 	    }
@@ -232,6 +239,56 @@ exports.modules = {
 /***/ },
 
 /***/ 84:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(0);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(3);
+	
+	var _reactIntl = __webpack_require__(1);
+	
+	var _MedicalRightItem = {
+	  "medical-right-item": "_2OPQaFLVSkPuvLOeotACNW",
+	  "medical-condition": "_-zsAwla7bqudwL3lryVKn"
+	};
+	
+	var _MedicalRightItem2 = _interopRequireDefault(_MedicalRightItem);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function MedicalRightItem(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: _MedicalRightItem2.default['medical-right-item'] },
+	    _react2.default.createElement(
+	      'h3',
+	      { className: _MedicalRightItem2.default['medical-condition'] },
+	      props.medicalRight.condition
+	    )
+	  );
+	}
+	
+	// Import Style
+	
+	
+	MedicalRightItem.propTypes = {
+	  medicalRight: _react.PropTypes.any
+	};
+	
+	exports.default = MedicalRightItem;
+
+/***/ },
+
+/***/ 85:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

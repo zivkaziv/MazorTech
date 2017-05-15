@@ -3,6 +3,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import RaisedButton from 'material-ui/RaisedButton';
+import MedicalRightItem from '../componenets/MedicalRightItem/MedicalRIghtItem';
 
 // Import Selectors
 import { getMedicalRights,printState } from '../WizardReducer';
@@ -11,6 +12,9 @@ const styles = {
   pageStyle: {
     maxHeight: 350,
     overflow:'auto',
+  },
+  medicalRightsContainer:{
+    display:'flex'
   }
 };
 
@@ -41,11 +45,11 @@ class StepNumber1 extends Component {
             <h3>Please choose the diagnosis</h3>
             {/*<button onClick={this.printMedicalRights}>Press to print</button>*/}
 
+            <div style={styles.medicalRightsContainer}>
           {this.props.medicalRights.map((medicalRight,i) => (
-            <div key={i}>
-              {medicalRight.condition}
-            </div>
+            <MedicalRightItem key={i} medicalRight={medicalRight}/>
           ))}
+            </div>
         </div>
       </div>
     )
