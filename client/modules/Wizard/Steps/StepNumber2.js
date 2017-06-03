@@ -1,6 +1,7 @@
 'use strict';
 
 import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
 
 // Material design
 import DatePicker from 'material-ui/DatePicker';
@@ -8,7 +9,12 @@ import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton';
 import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
 import Toggle from 'material-ui/Toggle';
+import CheckBox from 'material-ui/Checkbox';
 
+// Import Selectors
+import { getUser } from '../UserReducer';
+
+// Styles
 const styles = {
   block: {
     maxWidth: 250,
@@ -22,23 +28,33 @@ const styles = {
 };
 
 
-export default class Step2 extends Component {
+class StepNumber2 extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      termsAgreed : false,
-      dialogOpen : false
-    };
+    this.state = {};
 
     //Binds
     this.handleChange = this.handleChange.bind(this);
+    this.handleGenderChange = this.handleGenderChange.bind(this);
   }
 
   handleChange(event, index, value) {
     console.log('the new value is' + value);
-//   this.setState({value});
+    this.props.user.health_insurance = value;
+    this.setState({user: this.props.user});
   }
+
+  handleGenderChange(event, index, value) {
+    console.log('the new value is' + value);
+    this.props.user.gender = value;
+    this.setState({user: this.props.user});
+  }
+
+  onCheck(e,checked){
+    this.props.user.isSmoking = !this.props.user.isSmoking;
+    this.setState({user: this.props.user})
+  };
 
   render() {
     return (
@@ -55,7 +71,7 @@ export default class Step2 extends Component {
                   <div>
                     <SelectField
                       floatingLabelText="Health insurance"
-                      value={1}
+                      value={this.props.user.health_insurance}
                       onChange={this.handleChange}
                     >
                       <MenuItem value={1} primaryText="Unitedhealth Group" />
@@ -71,11 +87,15 @@ export default class Step2 extends Component {
                   </div>
                   {/*Date of birth section*/}
                   <div>
-                    <DatePicker hintText="Date of birth" />
+                    <DatePicker
+                      hintText="Date of birth"
+                      defaultDate={new Date()}
+                    />
                   </div>
                   {/*Gender*/}
                   <div>
-                    <RadioButtonGroup name="gender" defaultSelected="female">
+                    <RadioButtonGroup name="gender" defaultSelected="female"
+                                      onChange={this.handleGenderChange}>
                       <RadioButton
                         value="male"
                         label="Male"
@@ -90,10 +110,10 @@ export default class Step2 extends Component {
                   </div>
                   {/*Smoking*/}
                   <div style={styles.block}>
-                    <Toggle
-                      label="Smoking"
-                      style={styles.toggle}
-                    />
+                    <CheckBox
+                              label='Smoking'
+                              checked={!!this.props.user.isSmoking}
+                              onCheck={(e,checked) => this.onCheck(e,checked)}/>
                   </div>
                 </div>
                 {/*<div className="col-md-12 eg-jump-lnk">*/}
@@ -108,3 +128,15 @@ export default class Step2 extends Component {
   }
 }
 
+function mapStateToProps(state) {
+  return {
+    // showAddPost: getShowAddPost(state),
+    user: getUser(state),
+  };
+}
+
+StepNumber2.propTypes = {
+  user: PropTypes.any
+};
+
+export default connect(mapStateToProps)(StepNumber2);

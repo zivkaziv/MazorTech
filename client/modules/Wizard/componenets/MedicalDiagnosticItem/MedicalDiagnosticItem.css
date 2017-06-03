@@ -1,0 +1,8 @@
+.medical-diagnostic-item{
+  height: 65px;
+  background: #FFF;
+  padding-left: 2em;
+  border-bottom: 1px solid #AAA;
+  display: flex;
+  align-items: center;
+}

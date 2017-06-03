@@ -15,7 +15,7 @@
     "clean": "rimraf dist",
     "slate": "rimraf node_modules && npm install",
     "lint": "eslint client server",
-    "prepare-for-prod":"npm run clean && npm run build && npm run build:server"
+    "prepare-for-prod": "npm run clean && npm run build && npm run build:server"
   },
   "pre-commit": [],
   "repository": {
@@ -91,6 +91,7 @@
     "react-intl": "^2.1.2",
     "react-redux": "^4.4.5",
     "react-router": "^2.4.1",
+    "react-search-input": "^0.11.2",
     "react-stepzilla": "^4.4.4",
     "react-tap-event-plugin": "^2.0.1",
     "react-validation-mixin": "^5.4.0",
