@@ -42,7 +42,7 @@ class StepNumber1 extends Component {
     return (
       <div className="step step1" style={styles.pageStyle}>
         <div className="row">
-            <h3>Please choose the diagnosis</h3>
+            <h3>Please mark the medical diagnostics</h3>
             {/*<button onClick={this.printMedicalRights}>Press to print</button>*/}
 
             <div style={styles.medicalRightsContainer}>

@@ -2,6 +2,8 @@
 
 import React, { Component, PropTypes } from 'react';
 import Toggle from 'material-ui/Toggle';
+import Dialog from 'material-ui/Dialog';
+import FlatButton from 'material-ui/FlatButton';
 
 const styles = {
   pageStyle: {
@@ -23,14 +25,21 @@ export default class Step3 extends Component {
     super(props);
 
     this.state = {
-      termsAgreed : false
+      termsAgreed : false,
+      dialogOpen : false
     };
+
     //Binds
-    this.stateChanged = this.stateChanged.bind(this)
+    this.stateChanged = this.stateChanged.bind(this);
+    this.handleOpen = this.handleOpen.bind(this);
+    this.handleClose = this.handleClose.bind(this);
   }
 
   isValidated() {
     console.log(this.state);
+    if(!this.state.termsAgreed){
+      this.handleOpen();
+    }
     return this.state.termsAgreed;
   }
 
@@ -39,7 +48,24 @@ export default class Step3 extends Component {
     console.log(this.state);
   }
 
+  handleOpen = () => {
+    this.setState({dialogOpen: true});
+  };
+
+  handleClose = () => {
+    this.setState({dialogOpen: false});
+  };
+
   render() {
+    const actions = [
+      <FlatButton
+        label="Ok"
+        primary={true}
+        keyboardFocused={true}
+        onTouchTap={this.handleClose}
+      />,
+    ];
+
     return (
       <div style={styles.pageStyle} className="step step3">
         <section style={styles.termsSection} >
@@ -125,6 +151,15 @@ export default class Step3 extends Component {
             onToggle={this.stateChanged}
           />
         </div>
+        <Dialog
+          title="Agree terms"
+          actions={actions}
+          modal={false}
+          open={this.state.dialogOpen}
+          onRequestClose={this.handleClose}
+        >
+          You must agree in order to see your results
+        </Dialog>
       </div>
     )
   }
