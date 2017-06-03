@@ -38,7 +38,7 @@ class HomePage extends Component {
     return (
       <div>
         Home page<br/>
-        Here we'll put some stuff that related to the service...<br/>
+        Here we'll put some stuff that related to the service...Yey...<br/>
         <Link to={'/wizard'} >
          Start wizard
         </Link>
