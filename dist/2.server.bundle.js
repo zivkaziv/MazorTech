@@ -78,7 +78,7 @@ exports.modules = {
 	        null,
 	        'Home page',
 	        _react2.default.createElement('br', null),
-	        'Here we\'ll put some stuff that related to the service...',
+	        'Here we\'ll put some stuff that related to the service...Yey...',
 	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
 	          _reactRouter.Link,
