@@ -8,7 +8,7 @@ const Step4 = (props) => (
     <div className="row">
       <CircularProgress size={80} thickness={5} />
       <div>
-        Rights...
+        Rights....
       </div>
     </div>
   </div>

@@ -2138,7 +2138,7 @@
 	      _react2.default.createElement(
 	        'div',
 	        null,
-	        'Rights...'
+	        'Rights....'
 	      )
 	    )
 	  );
