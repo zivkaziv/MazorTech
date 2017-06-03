@@ -23,7 +23,7 @@ test.afterEach.always(t => {
 });
 
 test.serial('Should correctly give number of Posts', async t => {
-  t.plan(2);
+  // t.plan(2);
 
   const res = await request(app)
     .get('/api/posts')
