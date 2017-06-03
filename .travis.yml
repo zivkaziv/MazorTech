@@ -9,17 +9,10 @@ services:
 before_script:
   - sleep 15
 script:
+  - 'npm run test'
   - 'npm run prepare-for-prod'
 after_success:
   - './node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls'
-deploy:
-  provider: releases
-  api-key: $GITHUB_OAUTH_TOKEN
-  file_glob: true
-  file: dist/*
-  skip_cleanup: true
-  on:
-    tags: true
 deploy:
   provider: heroku
   api_key:
