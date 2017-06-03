@@ -15,5 +15,6 @@ after_success:
 deploy:
   provider: heroku
   api_key:
-    app: mazortech
+      secure: "0bbd396d-e093-4af2-8d76-f47cb1ecf039"
+  app: mazortech
 
