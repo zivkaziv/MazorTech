@@ -24,6 +24,37 @@ const styles = {
   },
   toggle: {
     marginBottom: 16,
+  },
+
+  userDetailSection:{
+    display: 'flex',
+    borderBottom: '1px solid #AAA',
+    padding:'7px 0px',
+    fontSize: '16px',
+    alignItems:'center',
+  },
+
+  userDetailSectionWithNoAlign:{
+    display: 'flex',
+    borderBottom: '1px solid #AAA',
+    padding:'7px 0px',
+    fontSize: '16px',
+  },
+
+  userDetailText:{
+    minWidth: '25%',
+    fontWeight: 'bold',
+    position:'relative',
+    top:'2px'
+  },
+
+  userDetailNote:{
+    fontSize: '8px',
+  },
+
+  // Gender
+  genderRadioButton:{
+    display:'flex'
   }
 };
 
@@ -37,6 +68,7 @@ class StepNumber2 extends Component {
     //Binds
     this.handleChange = this.handleChange.bind(this);
     this.handleGenderChange = this.handleGenderChange.bind(this);
+    this.handleDOBChange = this.handleDOBChange.bind(this);
   }
 
   handleChange(event, index, value) {
@@ -45,9 +77,15 @@ class StepNumber2 extends Component {
     this.setState({user: this.props.user});
   }
 
-  handleGenderChange(event, index, value) {
+  handleGenderChange(event, value) {
     console.log('the new value is' + value);
     this.props.user.gender = value;
+    this.setState({user: this.props.user});
+  }
+
+  handleDOBChange(event, value) {
+    console.log('the new value is' + value);
+    this.props.user.dob = value;
     this.setState({user: this.props.user});
   }
 
@@ -67,54 +105,87 @@ class StepNumber2 extends Component {
               </label>
               <div className="row content">
                 <div className="col-md-12">
-                  {/*Health insurance*/}
-                  <div>
-                    <SelectField
-                      floatingLabelText="Health insurance"
-                      value={this.props.user.health_insurance}
-                      onChange={this.handleChange}
-                    >
-                      <MenuItem value={1} primaryText="Unitedhealth Group" />
-                      <MenuItem value={2} primaryText="Wellpoint Inc. Group" />
-                      <MenuItem value={3} primaryText="Kaiser Foundation Group" />
-                      <MenuItem value={4} primaryText="Humana Group" />
-                      <MenuItem value={5} primaryText="Aetna Group" />
-                      <MenuItem value={6} primaryText="HCSC Group" />
-                      <MenuItem value={7} primaryText="Cigna Health Group" />
-                      <MenuItem value={8} primaryText="Highmark Group" />
-                      <MenuItem value={9} primaryText="Blue Cross Blue Shield Group" />
-                    </SelectField>
-                  </div>
-                  {/*Date of birth section*/}
-                  <div>
-                    <DatePicker
-                      hintText="Date of birth"
-                      defaultDate={new Date()}
-                    />
-                  </div>
                   {/*Gender*/}
-                  <div>
-                    <RadioButtonGroup name="gender" defaultSelected="female"
-                                      onChange={this.handleGenderChange}>
-                      <RadioButton
-                        value="male"
-                        label="Male"
-                        style={styles.radioButton}
-                      />
-                      <RadioButton
-                        value="female"
-                        label="Female"
-                        style={styles.radioButton}
-                      />
-                    </RadioButtonGroup>
+                  <div className="user-detail-section" style={styles.userDetailSection}>
+                    <div className="user-detail-text" style={styles.userDetailText}>
+                      Gender
+                    </div>
+                    <div className="user-detail-input">
+                      <RadioButtonGroup name="gender"
+                                        defaultSelected={this.props.user.gender}
+                                        style={styles.genderRadioButton}
+                                        onChange={this.handleGenderChange}>
+                        <RadioButton
+                          value="male"
+                          label="Male"
+                          style={styles.radioButton}
+                        />
+                        <RadioButton
+                          value="female"
+                          label="Female"
+                          style={styles.radioButton}
+                        />
+                      </RadioButtonGroup>
+                    </div>
                   </div>
+
+                  {/*Date of birth section*/}
+                  <div className="user-detail-section" style={styles.userDetailSectionWithNoAlign}>
+                    <div className="user-detail-text" style={styles.userDetailText}>
+                      Date of birth
+                    </div>
+                    <div className="user-detail-input">
+                      <DatePicker
+                        hintText="Select your birth date"
+                        defaultDate={new Date()}
+                        onChange={this.handleDOBChange}
+                        formatDate={null}
+                      />
+                    </div>
+                  </div>
+
+                  {/*Health insurance*/}
+                  <div className="user-detail-section" style={styles.userDetailSection}>
+                    <div className="user-detail-text" style={styles.userDetailText}>
+                      Health insurance
+                    </div>
+                    <div className="user-detail-input">
+                      <SelectField
+                        floatingLabelText="Health insurance"
+                        value={this.props.user.health_insurance}
+                        onChange={this.handleChange}
+                      >
+                        <MenuItem value={1} primaryText="Unitedhealth Group" />
+                        <MenuItem value={2} primaryText="Wellpoint Inc. Group" />
+                        <MenuItem value={3} primaryText="Kaiser Foundation Group" />
+                        <MenuItem value={4} primaryText="Humana Group" />
+                        <MenuItem value={5} primaryText="Aetna Group" />
+                        <MenuItem value={6} primaryText="HCSC Group" />
+                        <MenuItem value={7} primaryText="Cigna Health Group" />
+                        <MenuItem value={8} primaryText="Highmark Group" />
+                        <MenuItem value={9} primaryText="Blue Cross Blue Shield Group" />
+                      </SelectField>
+                      <div style={styles.userDetailNote}>
+                        If you can't find your insurance company it's must be because we are still working on analyze this data...
+                      </div>
+                    </div>
+                  </div>
+
                   {/*Smoking*/}
-                  <div style={styles.block}>
-                    <CheckBox
-                              label='Smoking'
-                              checked={!!this.props.user.isSmoking}
-                              onCheck={(e,checked) => this.onCheck(e,checked)}/>
+                  <div className="user-detail-section" style={styles.userDetailSectionWithNoAlign}>
+                    <div className="user-detail-text" style={styles.userDetailText}>
+                      Critical information
+                    </div>
+                    <div className="user-detail-input">
+                      <div style={styles.block}>
+                        <CheckBox
+                          label='Smoking'
+                          checked={!!this.props.user.isSmoking}
+                          onCheck={(e,checked) => this.onCheck(e,checked)}/>
+                      </div>
+                    </div>
                   </div>
+
                 </div>
                 {/*<div className="col-md-12 eg-jump-lnk">*/}
                 {/*<a href="#" onClick={() => props.jumpToStep(0)}>e.g. showing how we use the jumpToStep method helper method to jump back to step 1</a>*/}

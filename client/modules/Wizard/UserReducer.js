@@ -1,8 +1,13 @@
 import { ADD_USER} from './UserActions';
 
+let initialDob = new Date();
+// initialDob.setFullYear(initialDob.getFullYear() - 25);
 // Initial State
 const initialState = {
-  isSmoking:false
+  gender:'female',
+  isSmoking:false,
+  dob:initialDob,
+  health_insurance:4
 };
 
 const UserReducer = (state = initialState, action) => {

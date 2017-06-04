@@ -368,6 +368,37 @@ exports.modules = {
 	  },
 	  toggle: {
 	    marginBottom: 16
+	  },
+	
+	  userDetailSection: {
+	    display: 'flex',
+	    borderBottom: '1px solid #AAA',
+	    padding: '7px 0px',
+	    fontSize: '16px',
+	    alignItems: 'center'
+	  },
+	
+	  userDetailSectionWithNoAlign: {
+	    display: 'flex',
+	    borderBottom: '1px solid #AAA',
+	    padding: '7px 0px',
+	    fontSize: '16px'
+	  },
+	
+	  userDetailText: {
+	    minWidth: '25%',
+	    fontWeight: 'bold',
+	    position: 'relative',
+	    top: '2px'
+	  },
+	
+	  userDetailNote: {
+	    fontSize: '8px'
+	  },
+	
+	  // Gender
+	  genderRadioButton: {
+	    display: 'flex'
 	  }
 	};
 	
@@ -384,6 +415,7 @@ exports.modules = {
 	    //Binds
 	    _this.handleChange = _this.handleChange.bind(_this);
 	    _this.handleGenderChange = _this.handleGenderChange.bind(_this);
+	    _this.handleDOBChange = _this.handleDOBChange.bind(_this);
 	    return _this;
 	  }
 	
@@ -396,9 +428,16 @@ exports.modules = {
 	    }
 	  }, {
 	    key: 'handleGenderChange',
-	    value: function handleGenderChange(event, index, value) {
+	    value: function handleGenderChange(event, value) {
 	      console.log('the new value is' + value);
 	      this.props.user.gender = value;
+	      this.setState({ user: this.props.user });
+	    }
+	  }, {
+	    key: 'handleDOBChange',
+	    value: function handleDOBChange(event, value) {
+	      console.log('the new value is' + value);
+	      this.props.user.dob = value;
 	      this.setState({ user: this.props.user });
 	    }
 	  }, {
@@ -441,61 +480,110 @@ exports.modules = {
 	                  { className: 'col-md-12' },
 	                  _react2.default.createElement(
 	                    'div',
-	                    null,
+	                    { className: 'user-detail-section', style: styles.userDetailSection },
 	                    _react2.default.createElement(
-	                      _SelectField2.default,
-	                      {
-	                        floatingLabelText: 'Health insurance',
-	                        value: this.props.user.health_insurance,
-	                        onChange: this.handleChange
-	                      },
-	                      _react2.default.createElement(_MenuItem2.default, { value: 1, primaryText: 'Unitedhealth Group' }),
-	                      _react2.default.createElement(_MenuItem2.default, { value: 2, primaryText: 'Wellpoint Inc. Group' }),
-	                      _react2.default.createElement(_MenuItem2.default, { value: 3, primaryText: 'Kaiser Foundation Group' }),
-	                      _react2.default.createElement(_MenuItem2.default, { value: 4, primaryText: 'Humana Group' }),
-	                      _react2.default.createElement(_MenuItem2.default, { value: 5, primaryText: 'Aetna Group' }),
-	                      _react2.default.createElement(_MenuItem2.default, { value: 6, primaryText: 'HCSC Group' }),
-	                      _react2.default.createElement(_MenuItem2.default, { value: 7, primaryText: 'Cigna Health Group' }),
-	                      _react2.default.createElement(_MenuItem2.default, { value: 8, primaryText: 'Highmark Group' }),
-	                      _react2.default.createElement(_MenuItem2.default, { value: 9, primaryText: 'Blue Cross Blue Shield Group' })
+	                      'div',
+	                      { className: 'user-detail-text', style: styles.userDetailText },
+	                      'Gender'
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'user-detail-input' },
+	                      _react2.default.createElement(
+	                        _RadioButton.RadioButtonGroup,
+	                        { name: 'gender',
+	                          defaultSelected: this.props.user.gender,
+	                          style: styles.genderRadioButton,
+	                          onChange: this.handleGenderChange },
+	                        _react2.default.createElement(_RadioButton.RadioButton, {
+	                          value: 'male',
+	                          label: 'Male',
+	                          style: styles.radioButton
+	                        }),
+	                        _react2.default.createElement(_RadioButton.RadioButton, {
+	                          value: 'female',
+	                          label: 'Female',
+	                          style: styles.radioButton
+	                        })
+	                      )
 	                    )
 	                  ),
 	                  _react2.default.createElement(
 	                    'div',
-	                    null,
-	                    _react2.default.createElement(_DatePicker2.default, {
-	                      hintText: 'Date of birth',
-	                      defaultDate: new Date()
-	                    })
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    null,
+	                    { className: 'user-detail-section', style: styles.userDetailSectionWithNoAlign },
 	                    _react2.default.createElement(
-	                      _RadioButton.RadioButtonGroup,
-	                      { name: 'gender', defaultSelected: 'female',
-	                        onChange: this.handleGenderChange },
-	                      _react2.default.createElement(_RadioButton.RadioButton, {
-	                        value: 'male',
-	                        label: 'Male',
-	                        style: styles.radioButton
-	                      }),
-	                      _react2.default.createElement(_RadioButton.RadioButton, {
-	                        value: 'female',
-	                        label: 'Female',
-	                        style: styles.radioButton
+	                      'div',
+	                      { className: 'user-detail-text', style: styles.userDetailText },
+	                      'Date of birth'
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'user-detail-input' },
+	                      _react2.default.createElement(_DatePicker2.default, {
+	                        hintText: 'Select your birth date',
+	                        defaultDate: new Date(),
+	                        onChange: this.handleDOBChange,
+	                        formatDate: null
 	                      })
 	                    )
 	                  ),
 	                  _react2.default.createElement(
 	                    'div',
-	                    { style: styles.block },
-	                    _react2.default.createElement(_Checkbox2.default, {
-	                      label: 'Smoking',
-	                      checked: !!this.props.user.isSmoking,
-	                      onCheck: function onCheck(e, checked) {
-	                        return _this2.onCheck(e, checked);
-	                      } })
+	                    { className: 'user-detail-section', style: styles.userDetailSection },
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'user-detail-text', style: styles.userDetailText },
+	                      'Health insurance'
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'user-detail-input' },
+	                      _react2.default.createElement(
+	                        _SelectField2.default,
+	                        {
+	                          floatingLabelText: 'Health insurance',
+	                          value: this.props.user.health_insurance,
+	                          onChange: this.handleChange
+	                        },
+	                        _react2.default.createElement(_MenuItem2.default, { value: 1, primaryText: 'Unitedhealth Group' }),
+	                        _react2.default.createElement(_MenuItem2.default, { value: 2, primaryText: 'Wellpoint Inc. Group' }),
+	                        _react2.default.createElement(_MenuItem2.default, { value: 3, primaryText: 'Kaiser Foundation Group' }),
+	                        _react2.default.createElement(_MenuItem2.default, { value: 4, primaryText: 'Humana Group' }),
+	                        _react2.default.createElement(_MenuItem2.default, { value: 5, primaryText: 'Aetna Group' }),
+	                        _react2.default.createElement(_MenuItem2.default, { value: 6, primaryText: 'HCSC Group' }),
+	                        _react2.default.createElement(_MenuItem2.default, { value: 7, primaryText: 'Cigna Health Group' }),
+	                        _react2.default.createElement(_MenuItem2.default, { value: 8, primaryText: 'Highmark Group' }),
+	                        _react2.default.createElement(_MenuItem2.default, { value: 9, primaryText: 'Blue Cross Blue Shield Group' })
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { style: styles.userDetailNote },
+	                        'If you can\'t find your insurance company it\'s must be because we are still working on analyze this data...'
+	                      )
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'user-detail-section', style: styles.userDetailSectionWithNoAlign },
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'user-detail-text', style: styles.userDetailText },
+	                      'Critical information'
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'user-detail-input' },
+	                      _react2.default.createElement(
+	                        'div',
+	                        { style: styles.block },
+	                        _react2.default.createElement(_Checkbox2.default, {
+	                          label: 'Smoking',
+	                          checked: !!this.props.user.isSmoking,
+	                          onCheck: function onCheck(e, checked) {
+	                            return _this2.onCheck(e, checked);
+	                          } })
+	                      )
+	                    )
 	                  )
 	                )
 	              )

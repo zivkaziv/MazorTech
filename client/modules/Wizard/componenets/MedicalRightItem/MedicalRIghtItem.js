@@ -1,15 +1,30 @@
 import React, { PropTypes } from 'react';
-import { Link } from 'react-router';
-import { FormattedMessage } from 'react-intl';
+import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
+import FlatButton from 'material-ui/FlatButton';
 
 // Import Style
 import styles from './MedicalRightItem.css';
 
 function MedicalRightItem(props) {
   return (
-    <div className={styles['medical-right-item']}>
-      <h3 className={styles['medical-condition']}>{props.medicalRight.condition}</h3>
-    </div>
+    <Card>
+      <CardHeader
+        title="Without Avatar"
+        subtitle="Subtitle"
+        actAsExpander={true}
+        showExpandableButton={true}
+      />
+      <CardActions>
+        <FlatButton label="I didn't know that" />
+        <FlatButton label="That's not new" />
+      </CardActions>
+      <CardText expandable={true}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
+        Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+        Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
+      </CardText>
+    </Card>
   );
 }
 
