@@ -35,6 +35,13 @@ const WizardReducer = (state = initialState, action) => {
 // Get all posts
 export const getMedicalRights = state => state.medicalRights.data;
 
+export const getSelectedMedicalRights = state => {
+  return(
+    state.medicalRights.data.filter(function(right){
+      return right.isSelected;
+    })
+  );
+};
 // Get post by cuid
 // export const getPost = (state, cuid) => state.posts.data.filter(post => post.cuid === cuid)[0];
 

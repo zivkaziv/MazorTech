@@ -9,27 +9,27 @@ function MedicalRightItem(props) {
   return (
     <Card>
       <CardHeader
-        title="Without Avatar"
-        subtitle="Subtitle"
+        title={props.medicalRight.name}
+        subtitle={props.medicalCondition.condition}
         actAsExpander={true}
         showExpandableButton={true}
       />
       <CardActions>
-        <FlatButton label="I didn't know that" />
-        <FlatButton label="That's not new" />
+        <FlatButton primary={true}
+                    label="I didn't know that"
+                    href="https://www.facebook.com/sharer.php?u=http://www.ynet.co.il/articles/0,7340,L-4970913,00.html"
+                    target="_blank"/>
       </CardActions>
       <CardText expandable={true}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-        Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-        Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
+        {props.medicalRight.description}
       </CardText>
     </Card>
   );
 }
 
 MedicalRightItem.propTypes = {
-  medicalRight: PropTypes.any
+  medicalRight: PropTypes.any,
+  medicalCondition: PropTypes.any
 };
 
 export default MedicalRightItem;

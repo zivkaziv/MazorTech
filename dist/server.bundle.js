@@ -68,7 +68,7 @@
 /******/ 	};
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 64);
+/******/ 	return __webpack_require__(__webpack_require__.s = 65);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -362,15 +362,15 @@
 	
 	var _reactIntl = __webpack_require__(1);
 	
-	var _intl = __webpack_require__(67);
+	var _intl = __webpack_require__(68);
 	
 	var _intl2 = _interopRequireDefault(_intl);
 	
-	var _intlLocalesSupported = __webpack_require__(68);
+	var _intlLocalesSupported = __webpack_require__(69);
 	
 	var _intlLocalesSupported2 = _interopRequireDefault(_intlLocalesSupported);
 	
-	__webpack_require__(69);
+	__webpack_require__(70);
 	
 	var _en = __webpack_require__(78);
 	
@@ -380,7 +380,7 @@
 	
 	var _en4 = _interopRequireDefault(_en3);
 	
-	__webpack_require__(70);
+	__webpack_require__(71);
 	
 	var _fr = __webpack_require__(79);
 	
@@ -572,7 +572,7 @@
 	exports.API_URL = undefined;
 	exports.default = callApi;
 	
-	var _isomorphicFetch = __webpack_require__(71);
+	var _isomorphicFetch = __webpack_require__(72);
 	
 	var _isomorphicFetch2 = _interopRequireDefault(_isomorphicFetch);
 	
@@ -747,7 +747,7 @@
 	
 	var _DevTools2 = _interopRequireDefault(_DevTools);
 	
-	var _reducers = __webpack_require__(61);
+	var _reducers = __webpack_require__(62);
 	
 	var _reducers2 = _interopRequireDefault(_reducers);
 	
@@ -832,7 +832,7 @@
 	
 	var _express = __webpack_require__(4);
 	
-	var _medicalrights = __webpack_require__(62);
+	var _medicalrights = __webpack_require__(63);
 	
 	var MedicalRightsController = _interopRequireWildcard(_medicalrights);
 	
@@ -861,7 +861,7 @@
 	
 	var _express = __webpack_require__(4);
 	
-	var _post = __webpack_require__(63);
+	var _post = __webpack_require__(64);
 	
 	var PostController = _interopRequireWildcard(_post);
 	
@@ -895,7 +895,7 @@
 	});
 	exports.fetchComponentData = fetchComponentData;
 	
-	var _promiseUtils = __webpack_require__(65);
+	var _promiseUtils = __webpack_require__(66);
 	
 	function fetchComponentData(store, components, params) {
 	  var needs = components.reduce(function (prev, current) {
@@ -1035,7 +1035,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.getMedicalRights = undefined;
+	exports.getSelectedMedicalRights = exports.getMedicalRights = undefined;
 	
 	var _WizardActions = __webpack_require__(38);
 	
@@ -1081,6 +1081,11 @@
 	  return state.medicalRights.data;
 	};
 	
+	var getSelectedMedicalRights = exports.getSelectedMedicalRights = function getSelectedMedicalRights(state) {
+	  return state.medicalRights.data.filter(function (right) {
+	    return right.isSelected;
+	  });
+	};
 	// Get post by cuid
 	// export const getPost = (state, cuid) => state.posts.data.filter(post => post.cuid === cuid)[0];
 	
@@ -1089,6 +1094,12 @@
 
 /***/ },
 /* 35 */
+/***/ function(module, exports) {
+
+	module.exports = require("material-ui/FlatButton");
+
+/***/ },
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1108,11 +1119,11 @@
 	
 	var _Toggle2 = _interopRequireDefault(_Toggle);
 	
-	var _Dialog = __webpack_require__(40);
+	var _Dialog = __webpack_require__(41);
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
-	var _FlatButton = __webpack_require__(41);
+	var _FlatButton = __webpack_require__(35);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
@@ -2003,46 +2014,6 @@
 	exports.default = Step3;
 
 /***/ },
-/* 36 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(0);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _CircularProgress = __webpack_require__(73);
-	
-	var _CircularProgress2 = _interopRequireDefault(_CircularProgress);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Step4 = function Step4(props) {
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'step step2' },
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'row' },
-	      _react2.default.createElement(_CircularProgress2.default, { size: 80, thickness: 5 }),
-	      _react2.default.createElement(
-	        'div',
-	        null,
-	        'Rights....'
-	      )
-	    )
-	  );
-	};
-	
-	exports.default = Step4;
-
-/***/ },
 /* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -2054,7 +2025,7 @@
 	});
 	exports.getUser = undefined;
 	
-	var _UserActions = __webpack_require__(60);
+	var _UserActions = __webpack_require__(61);
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
@@ -2141,19 +2112,19 @@
 /* 39 */
 /***/ function(module, exports) {
 
-	module.exports = require("material-ui/DatePicker");
+	module.exports = require("material-ui/CircularProgress");
 
 /***/ },
 /* 40 */
 /***/ function(module, exports) {
 
-	module.exports = require("material-ui/Dialog");
+	module.exports = require("material-ui/DatePicker");
 
 /***/ },
 /* 41 */
 /***/ function(module, exports) {
 
-	module.exports = require("material-ui/FlatButton");
+	module.exports = require("material-ui/Dialog");
 
 /***/ },
 /* 42 */
@@ -2790,11 +2761,11 @@
 	
 	var _Step4 = _interopRequireDefault(_Step3);
 	
-	var _Step5 = __webpack_require__(35);
+	var _Step5 = __webpack_require__(36);
 	
 	var _Step6 = _interopRequireDefault(_Step5);
 	
-	var _Step7 = __webpack_require__(36);
+	var _Step7 = __webpack_require__(60);
 	
 	var _Step8 = _interopRequireDefault(_Step7);
 	
@@ -3337,7 +3308,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _DatePicker = __webpack_require__(39);
+	var _DatePicker = __webpack_require__(40);
 	
 	var _DatePicker2 = _interopRequireDefault(_DatePicker);
 	
@@ -3500,6 +3471,46 @@
 
 /***/ },
 /* 60 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(0);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _CircularProgress = __webpack_require__(39);
+	
+	var _CircularProgress2 = _interopRequireDefault(_CircularProgress);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Step4 = function Step4(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'step step2' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'row' },
+	      _react2.default.createElement(_CircularProgress2.default, { size: 80, thickness: 5 }),
+	      _react2.default.createElement(
+	        'div',
+	        null,
+	        'Rights....'
+	      )
+	    )
+	  );
+	};
+	
+	exports.default = Step4;
+
+/***/ },
+/* 61 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3511,7 +3522,7 @@
 	var ADD_USER = exports.ADD_USER = 'ADD_USER';
 
 /***/ },
-/* 61 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3560,7 +3571,7 @@
 	// Import Reducers
 
 /***/ },
-/* 62 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3582,7 +3593,7 @@
 	    "condition": "OSA",
 	    "rights": [{
 	      "name": "CPAP (continuous positive airway pressure)",
-	      "descrition": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
+	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
 	      "family_history": "",
 	      "general_condition": "",
 	      "filters": [{
@@ -3610,7 +3621,7 @@
 	    "condition": "OSA1",
 	    "rights": [{
 	      "name": "CPAP (continuous positive airway pressure)",
-	      "descrition": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
+	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
 	      "family_history": "",
 	      "general_condition": "",
 	      "filters": [{
@@ -3648,7 +3659,7 @@
 	   */
 
 /***/ },
-/* 63 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3666,11 +3677,11 @@
 	
 	var _post2 = _interopRequireDefault(_post);
 	
-	var _cuid = __webpack_require__(66);
+	var _cuid = __webpack_require__(67);
 	
 	var _cuid2 = _interopRequireDefault(_cuid);
 	
-	var _limax = __webpack_require__(72);
+	var _limax = __webpack_require__(73);
 	
 	var _limax2 = _interopRequireDefault(_limax);
 	
@@ -3757,7 +3768,7 @@
 	}
 
 /***/ },
-/* 64 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3952,7 +3963,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, "server"))
 
 /***/ },
-/* 65 */
+/* 66 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3983,52 +3994,46 @@
 	}
 
 /***/ },
-/* 66 */
+/* 67 */
 /***/ function(module, exports) {
 
 	module.exports = require("cuid");
 
 /***/ },
-/* 67 */
+/* 68 */
 /***/ function(module, exports) {
 
 	module.exports = require("intl");
 
 /***/ },
-/* 68 */
+/* 69 */
 /***/ function(module, exports) {
 
 	module.exports = require("intl-locales-supported");
 
 /***/ },
-/* 69 */
+/* 70 */
 /***/ function(module, exports) {
 
 	module.exports = require("intl/locale-data/jsonp/en");
 
 /***/ },
-/* 70 */
+/* 71 */
 /***/ function(module, exports) {
 
 	module.exports = require("intl/locale-data/jsonp/fr");
 
 /***/ },
-/* 71 */
+/* 72 */
 /***/ function(module, exports) {
 
 	module.exports = require("isomorphic-fetch");
 
 /***/ },
-/* 72 */
-/***/ function(module, exports) {
-
-	module.exports = require("limax");
-
-/***/ },
 /* 73 */
 /***/ function(module, exports) {
 
-	module.exports = require("material-ui/CircularProgress");
+	module.exports = require("limax");
 
 /***/ },
 /* 74 */
@@ -4103,13 +4108,21 @@
 /* 88 */,
 /* 89 */,
 /* 90 */,
-/* 91 */
+/* 91 */,
+/* 92 */,
+/* 93 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/Checkbox");
 
 /***/ },
-/* 92 */
+/* 94 */
+/***/ function(module, exports) {
+
+	module.exports = require("material-ui/Card");
+
+/***/ },
+/* 95 */
 /***/ function(module, exports) {
 
 	module.exports = require("react-search-input");

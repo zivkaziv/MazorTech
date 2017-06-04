@@ -106,7 +106,7 @@ class StepNumber2 extends Component {
               <div className="row content">
                 <div className="col-md-12">
                   {/*Gender*/}
-                  <div className="user-detail-section" style={styles.userDetailSection}>
+                  <div className="user-detail-section" style={styles.userDetailSectionWithNoAlign}>
                     <div className="user-detail-text" style={styles.userDetailText}>
                       Gender
                     </div>
@@ -130,7 +130,7 @@ class StepNumber2 extends Component {
                   </div>
 
                   {/*Date of birth section*/}
-                  <div className="user-detail-section" style={styles.userDetailSectionWithNoAlign}>
+                  <div className="user-detail-section" style={styles.userDetailSection}>
                     <div className="user-detail-text" style={styles.userDetailText}>
                       Date of birth
                     </div>

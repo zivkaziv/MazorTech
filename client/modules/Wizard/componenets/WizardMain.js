@@ -10,7 +10,7 @@ import StepZilla from 'react-stepzilla';
 import Step1 from '../Steps/StepNumber1'
 import Step2 from '../Steps/StepNumber2'
 import Step3 from '../Steps/Step3'
-import Step4 from '../Steps/Step4'
+import Step4 from '../Steps/StepNumber4'
 
 
 function WizardMain(props) {
