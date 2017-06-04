@@ -21,6 +21,14 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(2);
 	
+	var _RaisedButton = __webpack_require__(45);
+	
+	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
+	
+	var _IconSvg = __webpack_require__(36);
+	
+	var _IconSvg2 = _interopRequireDefault(_IconSvg);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -28,6 +36,9 @@ exports.modules = {
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	// Material
+	
 	
 	// Import Components
 	// import PostList from '../../components/PostList';
@@ -40,9 +51,41 @@ exports.modules = {
 	// import { getPosts } from '../../PostReducer';
 	
 	var styles = {
-	  uploadButton: {
-	    marginTop: 20
+	  homePageContainer: {
+	    background: 'url("http://wallpapercave.com/wp/2N8Zebr.jpg") no-repeat fixed center',
+	    position: 'fixed',
+	    top: 0,
+	    left: 0,
+	    right: 0,
+	    bottom: 0
+	  },
+	  logo: {
+	    position: 'fixed',
+	    top: '10px',
+	    left: '15px',
+	    color: 'white'
+	  },
+	  homePageTextContainer: {
+	    position: 'relative',
+	    top: '26%',
+	    textAlign: 'center',
+	    color: 'white'
+	  },
+	  homePageTextTitle: {
+	    fontSize: '30px',
+	    fontWeight: "bold",
+	    marginBottom: "10px"
+	  },
+	  homePageTextSubTitle: {
+	    fontSize: '18px',
+	    marginBottom: "15px"
+	  },
+	  button: {
+	    textAlign: 'center',
+	    display: 'inline-flex',
+	    fontSize: "24px"
 	  }
+	
 	};
 	
 	var HomePage = function (_Component) {
@@ -75,15 +118,34 @@ exports.modules = {
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        null,
-	        'Home page',
-	        _react2.default.createElement('br', null),
-	        'Here we\'ll put some stuff that related to the service...Yey...',
-	        _react2.default.createElement('br', null),
+	        { style: styles.homePageContainer },
 	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: '/wizard' },
-	          'Start wizard'
+	          'div',
+	          { style: styles.logo },
+	          _react2.default.createElement(_IconSvg2.default, null)
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { style: styles.homePageTextContainer },
+	          _react2.default.createElement(
+	            'div',
+	            { style: styles.homePageTextTitle },
+	            'Find your medical rights now'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { style: styles.homePageTextSubTitle },
+	            'Don\'t waste your time to analyze your medical insurance, ',
+	            _react2.default.createElement('br', null),
+	            'Just mark what the doctor said'
+	          ),
+	          _react2.default.createElement(_RaisedButton2.default, {
+	            labelPosition: 'before',
+	            style: styles.button,
+	            containerElement: 'label',
+	            label: 'Get Started Now',
+	            href: '/wizard'
+	          })
 	        )
 	      );
 	    }

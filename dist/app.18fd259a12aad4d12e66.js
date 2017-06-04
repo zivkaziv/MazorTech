@@ -121,7 +121,7 @@ webpackJsonp([3],[
 	
 	exports.__esModule = true;
 	
-	var _assign = __webpack_require__(275);
+	var _assign = __webpack_require__(278);
 	
 	var _assign2 = _interopRequireDefault(_assign);
 	
@@ -6099,7 +6099,7 @@ webpackJsonp([3],[
 	
 	exports.__esModule = true;
 	
-	var _defineProperty = __webpack_require__(276);
+	var _defineProperty = __webpack_require__(279);
 	
 	var _defineProperty2 = _interopRequireDefault(_defineProperty);
 	
@@ -6138,7 +6138,7 @@ webpackJsonp([3],[
 	
 	exports.__esModule = true;
 	
-	var _from = __webpack_require__(274);
+	var _from = __webpack_require__(272);
 	
 	var _from2 = _interopRequireDefault(_from);
 	
@@ -6186,7 +6186,7 @@ webpackJsonp([3],[
 	
 	var _en2 = _interopRequireDefault(_en);
 	
-	var _en3 = __webpack_require__(279);
+	var _en3 = __webpack_require__(280);
 	
 	var _en4 = _interopRequireDefault(_en3);
 	
@@ -6196,7 +6196,7 @@ webpackJsonp([3],[
 	
 	var _fr2 = _interopRequireDefault(_fr);
 	
-	var _fr3 = __webpack_require__(280);
+	var _fr3 = __webpack_require__(281);
 	
 	var _fr4 = _interopRequireDefault(_fr3);
 	
@@ -11715,7 +11715,7 @@ webpackJsonp([3],[
 	
 	var _reactHotLoader = __webpack_require__(657);
 	
-	var _App = __webpack_require__(281);
+	var _App = __webpack_require__(282);
 	
 	var _App2 = _interopRequireDefault(_App);
 	
@@ -11798,7 +11798,7 @@ webpackJsonp([3],[
 	});
 	exports.getSelectedMedicalRights = exports.getMedicalRights = undefined;
 	
-	var _WizardActions = __webpack_require__(273);
+	var _WizardActions = __webpack_require__(277);
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
@@ -11857,6 +11857,94 @@ webpackJsonp([3],[
 /* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = { "default": __webpack_require__(346), __esModule: true };
+
+/***/ },
+/* 273 */,
+/* 274 */,
+/* 275 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	/**
+	 * Bool short logo svg
+	 */
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(0);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var BoolLogoSvg = function (_Component) {
+	  _inherits(BoolLogoSvg, _Component);
+	
+	  function BoolLogoSvg() {
+	    _classCallCheck(this, BoolLogoSvg);
+	
+	    return _possibleConstructorReturn(this, (BoolLogoSvg.__proto__ || Object.getPrototypeOf(BoolLogoSvg)).apply(this, arguments));
+	  }
+	
+	  _createClass(BoolLogoSvg, [{
+	    key: 'render',
+	    value: function render() {
+	      var _props = this.props,
+	          width = _props.width,
+	          color = _props.color,
+	          className = _props.className;
+	
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'span',
+	          null,
+	          'Insu'
+	        ),
+	        _react2.default.createElement(
+	          'span',
+	          null,
+	          'rights'
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return BoolLogoSvg;
+	}(_react.Component);
+	
+	exports.default = BoolLogoSvg;
+	
+	
+	BoolLogoSvg.propTypes = {
+	  width: _react2.default.PropTypes.number,
+	  color: _react2.default.PropTypes.string,
+	  className: _react2.default.PropTypes.string
+	};
+	
+	BoolLogoSvg.defaultProps = {
+	  color: '#154a99',
+	  width: 200,
+	  className: ''
+	};
+
+/***/ },
+/* 276 */
+/***/ function(module, exports, __webpack_require__) {
+
 	"use strict";
 	'use strict';
 	
@@ -11906,7 +11994,7 @@ webpackJsonp([3],[
 	exports.default = UserReducer;
 
 /***/ },
-/* 273 */
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11949,27 +12037,19 @@ webpackJsonp([3],[
 	}
 
 /***/ },
-/* 274 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(346), __esModule: true };
-
-/***/ },
-/* 275 */
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = { "default": __webpack_require__(350), __esModule: true };
 
 /***/ },
-/* 276 */
+/* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = { "default": __webpack_require__(352), __esModule: true };
 
 /***/ },
-/* 277 */,
-/* 278 */,
-/* 279 */
+/* 280 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -11999,7 +12079,7 @@ webpackJsonp([3],[
 	};
 
 /***/ },
-/* 280 */
+/* 281 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -12029,7 +12109,7 @@ webpackJsonp([3],[
 	};
 
 /***/ },
-/* 281 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12118,7 +12198,7 @@ webpackJsonp([3],[
 	};
 
 /***/ },
-/* 282 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12233,8 +12313,7 @@ webpackJsonp([3],[
 	            'div',
 	            { className: _App2.default.container },
 	            this.props.children
-	          ),
-	          _react2.default.createElement(_Footer2.default, null)
+	          )
 	        )
 	      );
 	    }
@@ -12259,7 +12338,7 @@ webpackJsonp([3],[
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(App);
 
 /***/ },
-/* 283 */
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12302,86 +12381,6 @@ webpackJsonp([3],[
 	
 	// Export Reducer
 	exports.default = AppReducer;
-
-/***/ },
-/* 284 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-	/**
-	 * Bool short logo svg
-	 */
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(0);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var BoolLogoSvg = function (_Component) {
-	  _inherits(BoolLogoSvg, _Component);
-	
-	  function BoolLogoSvg() {
-	    _classCallCheck(this, BoolLogoSvg);
-	
-	    return _possibleConstructorReturn(this, (BoolLogoSvg.__proto__ || Object.getPrototypeOf(BoolLogoSvg)).apply(this, arguments));
-	  }
-	
-	  _createClass(BoolLogoSvg, [{
-	    key: 'render',
-	    value: function render() {
-	      var _props = this.props,
-	          width = _props.width,
-	          color = _props.color,
-	          className = _props.className;
-	
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          'span',
-	          null,
-	          'Insu'
-	        ),
-	        _react2.default.createElement(
-	          'span',
-	          null,
-	          'rights'
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return BoolLogoSvg;
-	}(_react.Component);
-	
-	exports.default = BoolLogoSvg;
-	
-	
-	BoolLogoSvg.propTypes = {
-	  width: _react2.default.PropTypes.number,
-	  color: _react2.default.PropTypes.string,
-	  className: _react2.default.PropTypes.string
-	};
-	
-	BoolLogoSvg.defaultProps = {
-	  color: '#154a99',
-	  width: 200,
-	  className: ''
-	};
 
 /***/ },
 /* 285 */
@@ -12462,7 +12461,7 @@ webpackJsonp([3],[
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _IconSvg = __webpack_require__(284);
+	var _IconSvg = __webpack_require__(275);
 	
 	var _IconSvg2 = _interopRequireDefault(_IconSvg);
 	
@@ -12484,9 +12483,13 @@ webpackJsonp([3],[
 	    'div',
 	    { className: _Header2.default.header },
 	    _react2.default.createElement(
-	      'div',
-	      { className: _Header2.default.logo },
-	      _react2.default.createElement(_IconSvg2.default, null)
+	      _reactRouter.Link,
+	      { to: '/' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: _Header2.default.logo },
+	        _react2.default.createElement(_IconSvg2.default, null)
+	      )
 	    ),
 	    _react2.default.createElement('div', { className: _Header2.default['language-switcher'] })
 	  );
@@ -12774,7 +12777,7 @@ webpackJsonp([3],[
 	
 	var _redux = __webpack_require__(151);
 	
-	var _AppReducer = __webpack_require__(283);
+	var _AppReducer = __webpack_require__(284);
 	
 	var _AppReducer2 = _interopRequireDefault(_AppReducer);
 	
@@ -12790,7 +12793,7 @@ webpackJsonp([3],[
 	
 	var _WizardReducer2 = _interopRequireDefault(_WizardReducer);
 	
-	var _UserReducer = __webpack_require__(272);
+	var _UserReducer = __webpack_require__(276);
 	
 	var _UserReducer2 = _interopRequireDefault(_UserReducer);
 	
@@ -12827,7 +12830,7 @@ webpackJsonp([3],[
 	
 	var _reactRouter = __webpack_require__(92);
 	
-	var _App = __webpack_require__(282);
+	var _App = __webpack_require__(283);
 	
 	var _App2 = _interopRequireDefault(_App);
 	

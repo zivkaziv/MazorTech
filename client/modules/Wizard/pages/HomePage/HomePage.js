@@ -2,6 +2,11 @@ import React, { PropTypes, Component } from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
 
+// Material
+import RaisedButton from 'material-ui/RaisedButton';
+
+import BoolLogoSvg from '../../../App/IconSvg'
+
 // Import Components
 // import PostList from '../../components/PostList';
 
@@ -13,9 +18,42 @@ import { connect } from 'react-redux';
 // import { getPosts } from '../../PostReducer';
 
 const styles = {
-  uploadButton: {
-    marginTop:20
-  }
+  homePageContainer:{
+    background: 'url("http://wallpapercave.com/wp/2N8Zebr.jpg") no-repeat fixed center',
+    position:'fixed',
+    top:0,
+    left:0,
+    right:0,
+    bottom:0
+  },
+  logo:{
+    position:'fixed',
+    top:'10px',
+    left:'15px',
+    color:'white'
+  },
+  homePageTextContainer: {
+    position: 'relative',
+    top: '26%',
+    textAlign:'center',
+    color:'white'
+  },
+  homePageTextTitle: {
+    fontSize:'30px',
+    fontWeight:"bold",
+    marginBottom:"10px"
+  },
+  homePageTextSubTitle: {
+    fontSize:'18px',
+    marginBottom:"15px"
+  },
+  button: {
+    textAlign: 'center',
+    display: 'inline-flex',
+    fontSize:"24px",
+    // fontWeight:"bold"
+  },
+
 };
 
 class HomePage extends Component {
@@ -36,12 +74,29 @@ class HomePage extends Component {
 
   render() {
     return (
-      <div>
-        Home page<br/>
-        Here we'll put some stuff that related to the service...Yey...<br/>
-        <Link to={'/wizard'} >
-         Start wizard
-        </Link>
+      <div style={styles.homePageContainer}>
+        <div style={styles.logo}>
+          <BoolLogoSvg/>
+        </div>
+        <div style={styles.homePageTextContainer}>
+           <div style={styles.homePageTextTitle}>
+             Find your medical rights now
+           </div>
+           <div  style={styles.homePageTextSubTitle}>
+             Don't waste your time to analyze your medical insurance, <br/>
+             Just mark what the doctor said
+           </div>
+            {/*<Link to={'/wizard'} >*/}
+              <RaisedButton
+                labelPosition="before"
+                style={styles.button}
+                containerElement="label"
+                label="Get Started Now"
+                href='/wizard'
+              />
+            {/*</Link>*/}
+        </div>
+
       </div>
     );
   }
