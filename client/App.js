@@ -23,8 +23,6 @@ require('./main.css');
 require('./css/prog-tracker.css');
 
 export default function App(props) {
-
-
   return (
     <MuiThemeProvider>
       <Provider store={props.store}>

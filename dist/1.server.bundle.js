@@ -139,7 +139,7 @@ exports.modules = {
 	
 	var _MedicalDiagnosticItem2 = _interopRequireDefault(_MedicalDiagnosticItem);
 	
-	var _reactSearchInput = __webpack_require__(95);
+	var _reactSearchInput = __webpack_require__(97);
 	
 	var _reactSearchInput2 = _interopRequireDefault(_reactSearchInput);
 	

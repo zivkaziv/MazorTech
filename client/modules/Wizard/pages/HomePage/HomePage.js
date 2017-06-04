@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 
 // Material
 import RaisedButton from 'material-ui/RaisedButton';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import lightTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 
 import BoolLogoSvg from '../../../App/IconSvg'
 
@@ -57,6 +59,11 @@ const styles = {
 };
 
 class HomePage extends Component {
+  getChildContext() {
+    return {
+      muiTheme: getMuiTheme(lightTheme)
+    };
+  }
   // componentDidMount() {
   //   this.props.dispatch(fetchPosts());
   // }
@@ -86,15 +93,14 @@ class HomePage extends Component {
              Don't waste your time to analyze your medical insurance, <br/>
              Just mark what the doctor said
            </div>
-            {/*<Link to={'/wizard'} >*/}
+            <Link to={'/wizard'} >
               <RaisedButton
                 labelPosition="before"
                 style={styles.button}
                 containerElement="label"
                 label="Get Started Now"
-                href='/wizard'
               />
-            {/*</Link>*/}
+            </Link>
         </div>
 
       </div>
@@ -121,6 +127,9 @@ HomePage.propTypes = {
   // })).isRequired,
   // showAddPost: PropTypes.bool.isRequired,
   // dispatch: PropTypes.func.isRequired,
+};
+HomePage.childContextTypes = {
+  muiTheme: React.PropTypes.object
 };
 
 HomePage.contextTypes = {

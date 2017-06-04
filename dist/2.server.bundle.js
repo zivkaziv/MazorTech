@@ -25,6 +25,14 @@ exports.modules = {
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
+	var _getMuiTheme = __webpack_require__(96);
+	
+	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
+	
+	var _lightBaseTheme = __webpack_require__(95);
+	
+	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
+	
 	var _IconSvg = __webpack_require__(36);
 	
 	var _IconSvg2 = _interopRequireDefault(_IconSvg);
@@ -84,6 +92,7 @@ exports.modules = {
 	    textAlign: 'center',
 	    display: 'inline-flex',
 	    fontSize: "24px"
+	    // fontWeight:"bold"
 	  }
 	
 	};
@@ -98,8 +107,12 @@ exports.modules = {
 	  }
 	
 	  _createClass(HomePage, [{
-	    key: 'render',
-	
+	    key: 'getChildContext',
+	    value: function getChildContext() {
+	      return {
+	        muiTheme: (0, _getMuiTheme2.default)(_lightBaseTheme2.default)
+	      };
+	    }
 	    // componentDidMount() {
 	    //   this.props.dispatch(fetchPosts());
 	    // }
@@ -115,6 +128,8 @@ exports.modules = {
 	    //   this.props.dispatch(addPostRequest({ name, title, content }));
 	    // };
 	
+	  }, {
+	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
@@ -139,13 +154,16 @@ exports.modules = {
 	            _react2.default.createElement('br', null),
 	            'Just mark what the doctor said'
 	          ),
-	          _react2.default.createElement(_RaisedButton2.default, {
-	            labelPosition: 'before',
-	            style: styles.button,
-	            containerElement: 'label',
-	            label: 'Get Started Now',
-	            href: '/wizard'
-	          })
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: '/wizard' },
+	            _react2.default.createElement(_RaisedButton2.default, {
+	              labelPosition: 'before',
+	              style: styles.button,
+	              containerElement: 'label',
+	              label: 'Get Started Now'
+	            })
+	          )
 	        )
 	      );
 	    }
@@ -175,6 +193,9 @@ exports.modules = {
 	  // })).isRequired,
 	  // showAddPost: PropTypes.bool.isRequired,
 	  // dispatch: PropTypes.func.isRequired,
+	};
+	HomePage.childContextTypes = {
+	  muiTheme: _react2.default.PropTypes.object
 	};
 	
 	HomePage.contextTypes = {
