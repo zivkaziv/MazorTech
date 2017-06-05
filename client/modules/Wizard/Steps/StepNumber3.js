@@ -1,13 +1,15 @@
 'use strict';
 
 import React, { Component, PropTypes } from 'react';
+
+// Material
 import Toggle from 'material-ui/Toggle';
 import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
 
 const styles = {
   pageStyle: {
-    maxHeight: 350,
+    maxWidth: 815,
   },
   termsSection:{
     maxHeight: 280,

@@ -9,8 +9,9 @@ import StepZilla from 'react-stepzilla';
 //Steps
 import Step1 from '../Steps/StepNumber1'
 import Step2 from '../Steps/StepNumber2'
-import Step3 from '../Steps/Step3'
+import Step3 from '../Steps/StepNumber3'
 import Step4 from '../Steps/StepNumber4'
+import Step5 from '../Steps/StepNumber5'
 
 
 function WizardMain(props) {
@@ -19,7 +20,8 @@ function WizardMain(props) {
       {name: 'Medical Diagnosis', component: <Step1 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
       {name: 'Personal Info', component: <Step2 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
       {name: 'Terms', component: <Step3 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
-      {name: 'Your Medical Rights', component: <Step4 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />}
+      {name: 'Your Medical Rights', component: <Step4 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
+      {name: 'Summary', component: <Step5 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />}
     ];
 
 

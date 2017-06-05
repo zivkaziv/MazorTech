@@ -6,6 +6,9 @@
   bottom: 60px;
   top: 34px;
   overflow: auto;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
 }
 
 
