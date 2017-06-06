@@ -2826,7 +2826,7 @@
 	
 	var _assign = __webpack_require__(4);
 	
-	var ReactChildren = __webpack_require__(273);
+	var ReactChildren = __webpack_require__(274);
 	var ReactComponent = __webpack_require__(149);
 	var ReactPureComponent = __webpack_require__(692);
 	var ReactClass = __webpack_require__(688);
@@ -9367,7 +9367,8 @@
 /* 270 */,
 /* 271 */,
 /* 272 */,
-/* 273 */
+/* 273 */,
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9563,7 +9564,6 @@
 	module.exports = ReactChildren;
 
 /***/ },
-/* 274 */,
 /* 275 */,
 /* 276 */,
 /* 277 */,

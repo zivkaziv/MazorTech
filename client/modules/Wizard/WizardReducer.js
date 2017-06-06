@@ -1,15 +1,30 @@
-import { INIT_MEDICAL_RIGHTS} from './WizardActions';
+import { INIT_MEDICAL_RIGHTS,SELECT_MEDICAL_CONDITION,UNSELECT_MEDICAL_CONDITION} from './WizardActions';
 
 // Initial State
-const initialState = { data: [] };
+const initialState = {
+  data: [],
+  selected:[]
+};
 
 const WizardReducer = (state = initialState, action) => {
   switch (action.type) {
     case INIT_MEDICAL_RIGHTS:
       return{
         data: action.medicalRights,
+        selected: []
       };
 
+    case SELECT_MEDICAL_CONDITION:
+      return{
+        data: [...state.data],
+        selected: [action.medicalCondition, ...state.selected],
+      };
+
+    case UNSELECT_MEDICAL_CONDITION:
+      return{
+        data: [...state.data],
+        selected: state.selected.filter(item => item.condition !== action.medicalCondition.condition)
+      };
     // case DELETE_POST :
     //   return {
     //     data: state.data.filter(post => post.cuid !== action.cuid),

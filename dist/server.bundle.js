@@ -1037,10 +1037,15 @@
 	});
 	exports.getSelectedMedicalRights = exports.getMedicalRights = undefined;
 	
-	var _WizardActions = __webpack_require__(42);
+	var _WizardActions = __webpack_require__(37);
+	
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
 	// Initial State
-	var initialState = { data: [] };
+	var initialState = {
+	  data: [],
+	  selected: []
+	};
 	
 	var WizardReducer = function WizardReducer() {
 	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
@@ -1049,9 +1054,23 @@
 	  switch (action.type) {
 	    case _WizardActions.INIT_MEDICAL_RIGHTS:
 	      return {
-	        data: action.medicalRights
+	        data: action.medicalRights,
+	        selected: []
 	      };
 	
+	    case _WizardActions.SELECT_MEDICAL_CONDITION:
+	      return {
+	        data: [].concat(_toConsumableArray(state.data)),
+	        selected: [action.medicalCondition].concat(_toConsumableArray(state.selected))
+	      };
+	
+	    case _WizardActions.UNSELECT_MEDICAL_CONDITION:
+	      return {
+	        data: [].concat(_toConsumableArray(state.data)),
+	        selected: state.selected.filter(function (item) {
+	          return item.condition !== action.medicalCondition.condition;
+	        })
+	      };
 	    // case DELETE_POST :
 	    //   return {
 	    //     data: state.data.filter(post => post.cuid !== action.cuid),
@@ -1164,24 +1183,96 @@
 
 /***/ },
 /* 37 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = require("material-ui/CircularProgress");
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.UNSELECT_MEDICAL_CONDITION = exports.SELECT_MEDICAL_CONDITION = exports.INIT_MEDICAL_RIGHTS = undefined;
+	exports.fetchMedicalRights = fetchMedicalRights;
+	exports.selectCondition = selectCondition;
+	exports.unselectCondition = unselectCondition;
+	
+	var _apiCaller = __webpack_require__(9);
+	
+	var _apiCaller2 = _interopRequireDefault(_apiCaller);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// Export Constants
+	var INIT_MEDICAL_RIGHTS = exports.INIT_MEDICAL_RIGHTS = 'INIT_MEDICAL_RIGHTS'; /**
+	                                                                                * Created by ziv on 11/05/2017.
+	                                                                                */
+	var SELECT_MEDICAL_CONDITION = exports.SELECT_MEDICAL_CONDITION = 'SELECT_MEDICAL_CONDITION';
+	var UNSELECT_MEDICAL_CONDITION = exports.UNSELECT_MEDICAL_CONDITION = 'UNSELECT_MEDICAL_CONDITION';
+	
+	function initMedicalRights(medicalRights) {
+	  return {
+	    type: INIT_MEDICAL_RIGHTS,
+	    medicalRights: medicalRights
+	  };
+	}
+	
+	function selectMedicalCondition(medicalCondition) {
+	  return {
+	    type: SELECT_MEDICAL_CONDITION,
+	    medicalCondition: medicalCondition
+	  };
+	}
+	
+	function unselectMedicalCondition(medicalCondition) {
+	  return {
+	    type: UNSELECT_MEDICAL_CONDITION,
+	    medicalCondition: medicalCondition
+	  };
+	}
+	
+	function fetchMedicalRights() {
+	  return function (dispatch) {
+	    return (0, _apiCaller2.default)('medicalrights').then(function (res) {
+	      // console.log(res.rights);
+	      dispatch(initMedicalRights(res.rights));
+	    });
+	  };
+	}
+	
+	function selectCondition(medicalCondition) {
+	  return function (dispatch) {
+	    // console.log(res.rights);
+	    dispatch(selectMedicalCondition(medicalCondition));
+	  };
+	}
+	
+	function unselectCondition(medicalCondition) {
+	  return function (dispatch) {
+	    // console.log(res.rights);
+	    dispatch(unselectMedicalCondition(medicalCondition));
+	  };
+	}
 
 /***/ },
 /* 38 */
 /***/ function(module, exports) {
 
-	module.exports = require("material-ui/Dialog");
+	module.exports = require("material-ui/CircularProgress");
 
 /***/ },
 /* 39 */
 /***/ function(module, exports) {
 
-	module.exports = require("material-ui/RaisedButton");
+	module.exports = require("material-ui/Dialog");
 
 /***/ },
 /* 40 */
+/***/ function(module, exports) {
+
+	module.exports = require("material-ui/RaisedButton");
+
+/***/ },
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1261,7 +1352,7 @@
 	};
 
 /***/ },
-/* 41 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1307,46 +1398,6 @@
 	
 	// Export Reducer
 	exports.default = UserReducer;
-
-/***/ },
-/* 42 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.INIT_MEDICAL_RIGHTS = undefined;
-	exports.initMedicalRights = initMedicalRights;
-	exports.fetchMedicalRights = fetchMedicalRights;
-	
-	var _apiCaller = __webpack_require__(9);
-	
-	var _apiCaller2 = _interopRequireDefault(_apiCaller);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	// Export Constants
-	var INIT_MEDICAL_RIGHTS = exports.INIT_MEDICAL_RIGHTS = 'INIT_MEDICAL_RIGHTS'; /**
-	                                                                                * Created by ziv on 11/05/2017.
-	                                                                                */
-	function initMedicalRights(medicalRights) {
-	  return {
-	    type: INIT_MEDICAL_RIGHTS,
-	    medicalRights: medicalRights
-	  };
-	}
-	
-	function fetchMedicalRights() {
-	  return function (dispatch) {
-	    return (0, _apiCaller2.default)('medicalrights').then(function (res) {
-	      // console.log(res.rights);
-	      dispatch(initMedicalRights(res.rights));
-	    });
-	  };
-	}
 
 /***/ },
 /* 43 */
@@ -1673,7 +1724,7 @@
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _IconSvg = __webpack_require__(40);
+	var _IconSvg = __webpack_require__(41);
 	
 	var _IconSvg2 = _interopRequireDefault(_IconSvg);
 	
@@ -2305,7 +2356,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _RaisedButton = __webpack_require__(39);
+	var _RaisedButton = __webpack_require__(40);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
@@ -2641,7 +2692,7 @@
 	
 	var _Toggle2 = _interopRequireDefault(_Toggle);
 	
-	var _Dialog = __webpack_require__(38);
+	var _Dialog = __webpack_require__(39);
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
@@ -3550,7 +3601,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _CircularProgress = __webpack_require__(37);
+	var _CircularProgress = __webpack_require__(38);
 	
 	var _CircularProgress2 = _interopRequireDefault(_CircularProgress);
 	
@@ -3604,7 +3655,7 @@
 	
 	var _WizardReducer2 = _interopRequireDefault(_WizardReducer);
 	
-	var _UserReducer = __webpack_require__(41);
+	var _UserReducer = __webpack_require__(42);
 	
 	var _UserReducer2 = _interopRequireDefault(_UserReducer);
 	
@@ -3700,7 +3751,7 @@
 	    }]
 	  };
 	  var right3 = {
-	    "condition": "OSA1",
+	    "condition": "OSA2",
 	    "rights": [{
 	      "name": "CPAP (continuous positive airway pressure)",
 	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
@@ -3728,7 +3779,7 @@
 	    }]
 	  };
 	  var right4 = {
-	    "condition": "OSA1",
+	    "condition": "OSA3",
 	    "rights": [{
 	      "name": "CPAP (continuous positive airway pressure)",
 	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
@@ -3756,7 +3807,7 @@
 	    }]
 	  };
 	  var right5 = {
-	    "condition": "OSA1",
+	    "condition": "OSA4",
 	    "rights": [{
 	      "name": "CPAP (continuous positive airway pressure)",
 	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
@@ -3784,7 +3835,7 @@
 	    }]
 	  };
 	  var right6 = {
-	    "condition": "OSA1",
+	    "condition": "OSA5",
 	    "rights": [{
 	      "name": "CPAP (continuous positive airway pressure)",
 	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
@@ -3812,7 +3863,7 @@
 	    }]
 	  };
 	  var right7 = {
-	    "condition": "OSA1",
+	    "condition": "OSA6",
 	    "rights": [{
 	      "name": "CPAP (continuous positive airway pressure)",
 	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
@@ -3840,7 +3891,7 @@
 	    }]
 	  };
 	  var right8 = {
-	    "condition": "OSA1",
+	    "condition": "OSA7",
 	    "rights": [{
 	      "name": "CPAP (continuous positive airway pressure)",
 	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
@@ -3868,7 +3919,7 @@
 	    }]
 	  };
 	  var right9 = {
-	    "condition": "OSA1",
+	    "condition": "OSA8",
 	    "rights": [{
 	      "name": "CPAP (continuous positive airway pressure)",
 	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",

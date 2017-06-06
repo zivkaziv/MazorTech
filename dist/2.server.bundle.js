@@ -21,7 +21,7 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(2);
 	
-	var _RaisedButton = __webpack_require__(39);
+	var _RaisedButton = __webpack_require__(40);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
@@ -33,7 +33,7 @@ exports.modules = {
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
-	var _IconSvg = __webpack_require__(40);
+	var _IconSvg = __webpack_require__(41);
 	
 	var _IconSvg2 = _interopRequireDefault(_IconSvg);
 	

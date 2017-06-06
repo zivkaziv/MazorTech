@@ -6,14 +6,32 @@ import callApi from '../../util/apiCaller';
 
 // Export Constants
 export const INIT_MEDICAL_RIGHTS = 'INIT_MEDICAL_RIGHTS';
+export const SELECT_MEDICAL_CONDITION = 'SELECT_MEDICAL_CONDITION';
+export const UNSELECT_MEDICAL_CONDITION = 'UNSELECT_MEDICAL_CONDITION';
 
 
-export function initMedicalRights(medicalRights) {
+function initMedicalRights(medicalRights) {
   return {
     type: INIT_MEDICAL_RIGHTS,
-    medicalRights,
+    medicalRights
   };
 }
+
+function selectMedicalCondition(medicalCondition) {
+  return {
+    type: SELECT_MEDICAL_CONDITION,
+    medicalCondition,
+  };
+}
+
+function unselectMedicalCondition(medicalCondition) {
+  return {
+    type: UNSELECT_MEDICAL_CONDITION,
+    medicalCondition,
+  };
+}
+
+
 
 
 export function fetchMedicalRights() {
@@ -24,3 +42,19 @@ export function fetchMedicalRights() {
     });
   };
 }
+
+export function selectCondition(medicalCondition) {
+  return (dispatch) => {
+      // console.log(res.rights);
+      dispatch(selectMedicalCondition(medicalCondition));
+  };
+}
+
+
+export function unselectCondition(medicalCondition) {
+  return (dispatch) => {
+    // console.log(res.rights);
+    dispatch(unselectMedicalCondition(medicalCondition));
+  };
+}
+

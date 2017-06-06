@@ -109,7 +109,7 @@ webpackJsonp([3],[
 	exports.default = routerWarning;
 	exports._resetWarned = _resetWarned;
 	
-	var _warning = __webpack_require__(65);
+	var _warning = __webpack_require__(66);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -1283,6 +1283,29 @@ webpackJsonp([3],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
+	'use strict';
+	
+	exports.__esModule = true;
+	exports.connect = exports.Provider = undefined;
+	
+	var _Provider = __webpack_require__(656);
+	
+	var _Provider2 = _interopRequireDefault(_Provider);
+	
+	var _connect = __webpack_require__(657);
+	
+	var _connect2 = _interopRequireDefault(_connect);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+	
+	exports.Provider = _Provider2["default"];
+	exports.connect = _connect2["default"];
+
+/***/ },
+/* 66 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
 	/**
 	 * Copyright 2014-2015, Facebook, Inc.
 	 * All rights reserved.
@@ -1344,29 +1367,6 @@ webpackJsonp([3],[
 	
 	module.exports = warning;
 
-
-/***/ },
-/* 66 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-	
-	exports.__esModule = true;
-	exports.connect = exports.Provider = undefined;
-	
-	var _Provider = __webpack_require__(656);
-	
-	var _Provider2 = _interopRequireDefault(_Provider);
-	
-	var _connect = __webpack_require__(657);
-	
-	var _connect2 = _interopRequireDefault(_connect);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-	
-	exports.Provider = _Provider2["default"];
-	exports.connect = _connect2["default"];
 
 /***/ },
 /* 67 */
@@ -4056,7 +4056,7 @@ webpackJsonp([3],[
 	exports.darken = darken;
 	exports.lighten = lighten;
 	
-	var _warning = __webpack_require__(65);
+	var _warning = __webpack_require__(66);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -11688,10 +11688,15 @@ webpackJsonp([3],[
 	});
 	exports.getSelectedMedicalRights = exports.getMedicalRights = undefined;
 	
-	var _WizardActions = __webpack_require__(276);
+	var _WizardActions = __webpack_require__(272);
+	
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
 	// Initial State
-	var initialState = { data: [] };
+	var initialState = {
+	  data: [],
+	  selected: []
+	};
 	
 	var WizardReducer = function WizardReducer() {
 	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
@@ -11700,9 +11705,23 @@ webpackJsonp([3],[
 	  switch (action.type) {
 	    case _WizardActions.INIT_MEDICAL_RIGHTS:
 	      return {
-	        data: action.medicalRights
+	        data: action.medicalRights,
+	        selected: []
 	      };
 	
+	    case _WizardActions.SELECT_MEDICAL_CONDITION:
+	      return {
+	        data: [].concat(_toConsumableArray(state.data)),
+	        selected: [action.medicalCondition].concat(_toConsumableArray(state.selected))
+	      };
+	
+	    case _WizardActions.UNSELECT_MEDICAL_CONDITION:
+	      return {
+	        data: [].concat(_toConsumableArray(state.data)),
+	        selected: state.selected.filter(function (item) {
+	          return item.condition !== action.medicalCondition.condition;
+	        })
+	      };
 	    // case DELETE_POST :
 	    //   return {
 	    //     data: state.data.filter(post => post.cuid !== action.cuid),
@@ -11740,7 +11759,7 @@ webpackJsonp([3],[
 	
 	exports.__esModule = true;
 	
-	var _from = __webpack_require__(272);
+	var _from = __webpack_require__(273);
 	
 	var _from2 = _interopRequireDefault(_from);
 	
@@ -11838,11 +11857,83 @@ webpackJsonp([3],[
 /* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.UNSELECT_MEDICAL_CONDITION = exports.SELECT_MEDICAL_CONDITION = exports.INIT_MEDICAL_RIGHTS = undefined;
+	exports.fetchMedicalRights = fetchMedicalRights;
+	exports.selectCondition = selectCondition;
+	exports.unselectCondition = unselectCondition;
+	
+	var _apiCaller = __webpack_require__(94);
+	
+	var _apiCaller2 = _interopRequireDefault(_apiCaller);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// Export Constants
+	var INIT_MEDICAL_RIGHTS = exports.INIT_MEDICAL_RIGHTS = 'INIT_MEDICAL_RIGHTS'; /**
+	                                                                                * Created by ziv on 11/05/2017.
+	                                                                                */
+	var SELECT_MEDICAL_CONDITION = exports.SELECT_MEDICAL_CONDITION = 'SELECT_MEDICAL_CONDITION';
+	var UNSELECT_MEDICAL_CONDITION = exports.UNSELECT_MEDICAL_CONDITION = 'UNSELECT_MEDICAL_CONDITION';
+	
+	function initMedicalRights(medicalRights) {
+	  return {
+	    type: INIT_MEDICAL_RIGHTS,
+	    medicalRights: medicalRights
+	  };
+	}
+	
+	function selectMedicalCondition(medicalCondition) {
+	  return {
+	    type: SELECT_MEDICAL_CONDITION,
+	    medicalCondition: medicalCondition
+	  };
+	}
+	
+	function unselectMedicalCondition(medicalCondition) {
+	  return {
+	    type: UNSELECT_MEDICAL_CONDITION,
+	    medicalCondition: medicalCondition
+	  };
+	}
+	
+	function fetchMedicalRights() {
+	  return function (dispatch) {
+	    return (0, _apiCaller2.default)('medicalrights').then(function (res) {
+	      // console.log(res.rights);
+	      dispatch(initMedicalRights(res.rights));
+	    });
+	  };
+	}
+	
+	function selectCondition(medicalCondition) {
+	  return function (dispatch) {
+	    // console.log(res.rights);
+	    dispatch(selectMedicalCondition(medicalCondition));
+	  };
+	}
+	
+	function unselectCondition(medicalCondition) {
+	  return function (dispatch) {
+	    // console.log(res.rights);
+	    dispatch(unselectMedicalCondition(medicalCondition));
+	  };
+	}
+
+/***/ },
+/* 273 */
+/***/ function(module, exports, __webpack_require__) {
+
 	module.exports = { "default": __webpack_require__(339), __esModule: true };
 
 /***/ },
-/* 273 */,
-/* 274 */
+/* 274 */,
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11922,7 +12013,7 @@ webpackJsonp([3],[
 	};
 
 /***/ },
-/* 275 */
+/* 276 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11968,46 +12059,6 @@ webpackJsonp([3],[
 	
 	// Export Reducer
 	exports.default = UserReducer;
-
-/***/ },
-/* 276 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.INIT_MEDICAL_RIGHTS = undefined;
-	exports.initMedicalRights = initMedicalRights;
-	exports.fetchMedicalRights = fetchMedicalRights;
-	
-	var _apiCaller = __webpack_require__(94);
-	
-	var _apiCaller2 = _interopRequireDefault(_apiCaller);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	// Export Constants
-	var INIT_MEDICAL_RIGHTS = exports.INIT_MEDICAL_RIGHTS = 'INIT_MEDICAL_RIGHTS'; /**
-	                                                                                * Created by ziv on 11/05/2017.
-	                                                                                */
-	function initMedicalRights(medicalRights) {
-	  return {
-	    type: INIT_MEDICAL_RIGHTS,
-	    medicalRights: medicalRights
-	  };
-	}
-	
-	function fetchMedicalRights() {
-	  return function (dispatch) {
-	    return (0, _apiCaller2.default)('medicalrights').then(function (res) {
-	      // console.log(res.rights);
-	      dispatch(initMedicalRights(res.rights));
-	    });
-	  };
-	}
 
 /***/ },
 /* 277 */
@@ -12097,7 +12148,7 @@ webpackJsonp([3],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(66);
+	var _reactRedux = __webpack_require__(65);
 	
 	var _reactRouter = __webpack_require__(93);
 	
@@ -12187,7 +12238,7 @@ webpackJsonp([3],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(66);
+	var _reactRedux = __webpack_require__(65);
 	
 	var _App = __webpack_require__(393);
 	
@@ -12433,7 +12484,7 @@ webpackJsonp([3],[
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _IconSvg = __webpack_require__(274);
+	var _IconSvg = __webpack_require__(275);
 	
 	var _IconSvg2 = _interopRequireDefault(_IconSvg);
 	
@@ -12545,7 +12596,7 @@ webpackJsonp([3],[
 	
 	var _reactIntl = __webpack_require__(67);
 	
-	var _reactRedux = __webpack_require__(66);
+	var _reactRedux = __webpack_require__(65);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -12753,7 +12804,7 @@ webpackJsonp([3],[
 	
 	var _WizardReducer2 = _interopRequireDefault(_WizardReducer);
 	
-	var _UserReducer = __webpack_require__(275);
+	var _UserReducer = __webpack_require__(276);
 	
 	var _UserReducer2 = _interopRequireDefault(_UserReducer);
 	
@@ -32590,7 +32641,7 @@ webpackJsonp([3],[
 	
 	var _autoprefixerStatic2 = _interopRequireDefault(_autoprefixerStatic);
 	
-	var _warning = __webpack_require__(65);
+	var _warning = __webpack_require__(66);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -32702,7 +32753,7 @@ webpackJsonp([3],[
 	});
 	exports.default = callOnce;
 	
-	var _warning = __webpack_require__(65);
+	var _warning = __webpack_require__(66);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -40062,7 +40113,7 @@ webpackJsonp([3],[
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _reactRedux = __webpack_require__(66);
+	var _reactRedux = __webpack_require__(65);
 	
 	var _reduxDevtoolsInstrument = __webpack_require__(257);
 	

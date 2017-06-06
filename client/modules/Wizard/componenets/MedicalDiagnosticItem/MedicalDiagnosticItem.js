@@ -1,10 +1,15 @@
 import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
+
 import { Link } from 'react-router';
 import { FormattedMessage } from 'react-intl';
 import CheckBox from 'material-ui/Checkbox';
 
 // Import Style
 import styles from './MedicalDiagnosticItem.css';
+
+import { selectCondition,unselectCondition } from '../../WizardActions';
+
 
 export class MedicalDiagnosticItem extends Component {
   constructor(props) {
@@ -14,11 +19,15 @@ export class MedicalDiagnosticItem extends Component {
 
     //Bind
     this.onCheck = this.onCheck.bind(this);
-
   }
 
   onCheck(e,checked){
     this.props.medicalRight.isSelected = !this.props.medicalRight.isSelected;
+
+    this.props.medicalRight.isSelected ?
+      this.props.dispatch(selectCondition(this.props.medicalRight)) :
+      this.props.dispatch(unselectCondition(this.props.medicalRight));
+
     this.setState({medicalRight: this.props.medicalRight})
   };
 
@@ -38,4 +47,9 @@ MedicalDiagnosticItem.propTypes = {
   medicalRight: PropTypes.any
 };
 
-export default MedicalDiagnosticItem;
+function mapStateToProps(state) {
+  return {
+  };
+}
+
+export default connect(mapStateToProps)(MedicalDiagnosticItem);

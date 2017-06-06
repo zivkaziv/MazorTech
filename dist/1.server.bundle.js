@@ -23,7 +23,7 @@ exports.modules = {
 	
 	var _WizardMain2 = _interopRequireDefault(_WizardMain);
 	
-	var _WizardActions = __webpack_require__(42);
+	var _WizardActions = __webpack_require__(37);
 	
 	var _UserActions = __webpack_require__(36);
 	
@@ -219,11 +219,11 @@ exports.modules = {
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
-	var _RaisedButton = __webpack_require__(39);
+	var _RaisedButton = __webpack_require__(40);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
-	var _Dialog = __webpack_require__(38);
+	var _Dialog = __webpack_require__(39);
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
@@ -487,7 +487,7 @@ exports.modules = {
 	
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 	
-	var _UserReducer = __webpack_require__(41);
+	var _UserReducer = __webpack_require__(42);
 	
 	var _UserActions = __webpack_require__(36);
 	
@@ -797,7 +797,7 @@ exports.modules = {
 	
 	var _Toggle2 = _interopRequireDefault(_Toggle);
 	
-	var _Dialog = __webpack_require__(38);
+	var _Dialog = __webpack_require__(39);
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
@@ -1715,7 +1715,7 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(2);
 	
-	var _CircularProgress = __webpack_require__(37);
+	var _CircularProgress = __webpack_require__(38);
 	
 	var _CircularProgress2 = _interopRequireDefault(_CircularProgress);
 	
@@ -1823,7 +1823,7 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(2);
 	
-	var _CircularProgress = __webpack_require__(37);
+	var _CircularProgress = __webpack_require__(38);
 	
 	var _CircularProgress2 = _interopRequireDefault(_CircularProgress);
 	
@@ -1916,6 +1916,8 @@ exports.modules = {
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactRedux = __webpack_require__(2);
+	
 	var _reactRouter = __webpack_require__(3);
 	
 	var _reactIntl = __webpack_require__(1);
@@ -1929,6 +1931,8 @@ exports.modules = {
 	};
 	
 	var _MedicalDiagnosticItem2 = _interopRequireDefault(_MedicalDiagnosticItem);
+	
+	var _WizardActions = __webpack_require__(37);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -1953,7 +1957,6 @@ exports.modules = {
 	
 	    //Bind
 	    _this.onCheck = _this.onCheck.bind(_this);
-	
 	    return _this;
 	  }
 	
@@ -1961,6 +1964,9 @@ exports.modules = {
 	    key: 'onCheck',
 	    value: function onCheck(e, checked) {
 	      this.props.medicalRight.isSelected = !this.props.medicalRight.isSelected;
+	
+	      this.props.medicalRight.isSelected ? this.props.dispatch((0, _WizardActions.selectCondition)(this.props.medicalRight)) : this.props.dispatch((0, _WizardActions.unselectCondition)(this.props.medicalRight));
+	
 	      this.setState({ medicalRight: this.props.medicalRight });
 	    }
 	  }, {
@@ -1988,7 +1994,11 @@ exports.modules = {
 	  medicalRight: _react.PropTypes.any
 	};
 	
-	exports.default = MedicalDiagnosticItem;
+	function mapStateToProps(state) {
+	  return {};
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps)(MedicalDiagnosticItem);
 
 /***/ },
 

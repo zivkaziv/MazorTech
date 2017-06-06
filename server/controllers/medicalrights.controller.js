@@ -78,7 +78,7 @@ export function getMedicalRights(req, res) {
     ]
   };
   let right3 = {
-    "condition":"OSA1",
+    "condition":"OSA2",
     "rights":[
       {
         "name": "CPAP (continuous positive airway pressure)",
@@ -113,7 +113,7 @@ export function getMedicalRights(req, res) {
     ]
   };
   let right4 = {
-    "condition":"OSA1",
+    "condition":"OSA3",
     "rights":[
       {
         "name": "CPAP (continuous positive airway pressure)",
@@ -148,7 +148,7 @@ export function getMedicalRights(req, res) {
     ]
   };
   let right5 = {
-    "condition":"OSA1",
+    "condition":"OSA4",
     "rights":[
       {
         "name": "CPAP (continuous positive airway pressure)",
@@ -183,7 +183,7 @@ export function getMedicalRights(req, res) {
     ]
   };
   let right6 = {
-    "condition":"OSA1",
+    "condition":"OSA5",
     "rights":[
       {
         "name": "CPAP (continuous positive airway pressure)",
@@ -218,7 +218,7 @@ export function getMedicalRights(req, res) {
     ]
   };
   let right7 = {
-    "condition":"OSA1",
+    "condition":"OSA6",
     "rights":[
       {
         "name": "CPAP (continuous positive airway pressure)",
@@ -253,7 +253,7 @@ export function getMedicalRights(req, res) {
     ]
   };
   let right8 = {
-    "condition":"OSA1",
+    "condition":"OSA7",
     "rights":[
       {
         "name": "CPAP (continuous positive airway pressure)",
@@ -288,7 +288,7 @@ export function getMedicalRights(req, res) {
     ]
   };
   let right9 = {
-    "condition":"OSA1",
+    "condition":"OSA8",
     "rights":[
       {
         "name": "CPAP (continuous positive airway pressure)",

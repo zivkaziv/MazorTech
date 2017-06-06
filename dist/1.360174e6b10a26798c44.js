@@ -16,13 +16,13 @@ webpackJsonp([1],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(66);
+	var _reactRedux = __webpack_require__(65);
 	
 	var _WizardMain = __webpack_require__(808);
 	
 	var _WizardMain2 = _interopRequireDefault(_WizardMain);
 	
-	var _WizardActions = __webpack_require__(276);
+	var _WizardActions = __webpack_require__(272);
 	
 	var _UserActions = __webpack_require__(271);
 	
@@ -988,7 +988,7 @@ webpackJsonp([1],{
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _warning = __webpack_require__(65);
+	var _warning = __webpack_require__(66);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -1526,7 +1526,7 @@ webpackJsonp([1],{
 	
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 	
-	var _warning = __webpack_require__(65);
+	var _warning = __webpack_require__(66);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -1728,7 +1728,7 @@ webpackJsonp([1],{
 	exports.monthDiff = monthDiff;
 	exports.yearDiff = yearDiff;
 	
-	var _warning = __webpack_require__(65);
+	var _warning = __webpack_require__(66);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -1962,7 +1962,7 @@ webpackJsonp([1],{
 	
 	exports.__esModule = true;
 	
-	var _from = __webpack_require__(272);
+	var _from = __webpack_require__(273);
 	
 	var _from2 = _interopRequireDefault(_from);
 	
@@ -3841,7 +3841,7 @@ webpackJsonp([1],{
 	
 	var _reactProdInvariant2 = _interopRequireDefault(_reactProdInvariant);
 	
-	var _ReactChildren = __webpack_require__(273);
+	var _ReactChildren = __webpack_require__(274);
 	
 	var _ReactChildren2 = _interopRequireDefault(_ReactChildren);
 	
@@ -4214,7 +4214,7 @@ webpackJsonp([1],{
 	
 	var _Paper2 = _interopRequireDefault(_Paper);
 	
-	var _warning = __webpack_require__(65);
+	var _warning = __webpack_require__(66);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -7620,7 +7620,7 @@ webpackJsonp([1],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(66);
+	var _reactRedux = __webpack_require__(65);
 	
 	var _MedicalDiagnosticItem = __webpack_require__(807);
 	
@@ -7876,7 +7876,7 @@ webpackJsonp([1],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(66);
+	var _reactRedux = __webpack_require__(65);
 	
 	var _DatePicker = __webpack_require__(838);
 	
@@ -7900,7 +7900,7 @@ webpackJsonp([1],{
 	
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 	
-	var _UserReducer = __webpack_require__(275);
+	var _UserReducer = __webpack_require__(276);
 	
 	var _UserActions = __webpack_require__(271);
 	
@@ -9126,7 +9126,7 @@ webpackJsonp([1],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(66);
+	var _reactRedux = __webpack_require__(65);
 	
 	var _CircularProgress = __webpack_require__(791);
 	
@@ -9234,7 +9234,7 @@ webpackJsonp([1],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRedux = __webpack_require__(66);
+	var _reactRedux = __webpack_require__(65);
 	
 	var _CircularProgress = __webpack_require__(791);
 	
@@ -9329,6 +9329,8 @@ webpackJsonp([1],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactRedux = __webpack_require__(65);
+	
 	var _reactRouter = __webpack_require__(93);
 	
 	var _reactIntl = __webpack_require__(67);
@@ -9340,6 +9342,8 @@ webpackJsonp([1],{
 	var _MedicalDiagnosticItem = __webpack_require__(812);
 	
 	var _MedicalDiagnosticItem2 = _interopRequireDefault(_MedicalDiagnosticItem);
+	
+	var _WizardActions = __webpack_require__(272);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -9364,7 +9368,6 @@ webpackJsonp([1],{
 	
 	    //Bind
 	    _this.onCheck = _this.onCheck.bind(_this);
-	
 	    return _this;
 	  }
 	
@@ -9372,6 +9375,9 @@ webpackJsonp([1],{
 	    key: 'onCheck',
 	    value: function onCheck(e, checked) {
 	      this.props.medicalRight.isSelected = !this.props.medicalRight.isSelected;
+	
+	      this.props.medicalRight.isSelected ? this.props.dispatch((0, _WizardActions.selectCondition)(this.props.medicalRight)) : this.props.dispatch((0, _WizardActions.unselectCondition)(this.props.medicalRight));
+	
 	      this.setState({ medicalRight: this.props.medicalRight });
 	    }
 	  }, {
@@ -9399,7 +9405,11 @@ webpackJsonp([1],{
 	  medicalRight: _react.PropTypes.any
 	};
 	
-	exports.default = MedicalDiagnosticItem;
+	function mapStateToProps(state) {
+	  return {};
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps)(MedicalDiagnosticItem);
 
 /***/ },
 
@@ -19495,7 +19505,7 @@ webpackJsonp([1],{
 	
 	var _RadioButton2 = _interopRequireDefault(_RadioButton);
 	
-	var _warning = __webpack_require__(65);
+	var _warning = __webpack_require__(66);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
@@ -20678,7 +20688,7 @@ webpackJsonp([1],{
 	
 	var _TextFieldUnderline2 = _interopRequireDefault(_TextFieldUnderline);
 	
-	var _warning = __webpack_require__(65);
+	var _warning = __webpack_require__(66);
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
