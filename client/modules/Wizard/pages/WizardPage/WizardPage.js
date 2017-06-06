@@ -12,6 +12,12 @@ import { fetchMedicalRights } from '../../WizardActions';
 // import { getShowAddPost } from '../../../App/AppReducer';
 import { getMedicalRights } from '../../WizardReducer';
 
+const styles = {
+  wizardContainer: {
+    width: '100%',
+  }
+};
+
 class WizardPage extends Component {
   componentDidMount() {
     this.props.dispatch(fetchMedicalRights());
@@ -31,9 +37,7 @@ class WizardPage extends Component {
 
   render() {
     return (
-      <div>
-        <WizardMain/>
-      </div>
+      <WizardMain/>
     );
   }
 }

@@ -5,4 +5,5 @@
   border-bottom: 1px solid #AAA;
   display: flex;
   align-items: center;
+  min-width: 340px;
 }

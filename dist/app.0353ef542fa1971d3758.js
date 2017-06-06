@@ -1233,7 +1233,7 @@ webpackJsonp([3],[
 	
 	var _create2 = _interopRequireDefault(_create);
 	
-	var _typeof2 = __webpack_require__(90);
+	var _typeof2 = __webpack_require__(91);
 	
 	var _typeof3 = _interopRequireDefault(_typeof2);
 	
@@ -1264,7 +1264,7 @@ webpackJsonp([3],[
 	
 	exports.__esModule = true;
 	
-	var _typeof2 = __webpack_require__(90);
+	var _typeof2 = __webpack_require__(91);
 	
 	var _typeof3 = _interopRequireDefault(_typeof2);
 	
@@ -4041,34 +4041,6 @@ webpackJsonp([3],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	"use strict";
-	
-	exports.__esModule = true;
-	
-	var _iterator = __webpack_require__(160);
-	
-	var _iterator2 = _interopRequireDefault(_iterator);
-	
-	var _symbol = __webpack_require__(296);
-	
-	var _symbol2 = _interopRequireDefault(_symbol);
-	
-	var _typeof = typeof _symbol2.default === "function" && typeof _iterator2.default === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof _symbol2.default === "function" && obj.constructor === _symbol2.default && obj !== _symbol2.default.prototype ? "symbol" : typeof obj; };
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = typeof _symbol2.default === "function" && _typeof(_iterator2.default) === "symbol" ? function (obj) {
-	  return typeof obj === "undefined" ? "undefined" : _typeof(obj);
-	} : function (obj) {
-	  return obj && typeof _symbol2.default === "function" && obj.constructor === _symbol2.default && obj !== _symbol2.default.prototype ? "symbol" : typeof obj === "undefined" ? "undefined" : _typeof(obj);
-	};
-
-/***/ },
-/* 91 */,
-/* 92 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
@@ -4313,6 +4285,34 @@ webpackJsonp([3],[
 	}
 
 /***/ },
+/* 91 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	"use strict";
+	
+	exports.__esModule = true;
+	
+	var _iterator = __webpack_require__(160);
+	
+	var _iterator2 = _interopRequireDefault(_iterator);
+	
+	var _symbol = __webpack_require__(296);
+	
+	var _symbol2 = _interopRequireDefault(_symbol);
+	
+	var _typeof = typeof _symbol2.default === "function" && typeof _iterator2.default === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof _symbol2.default === "function" && obj.constructor === _symbol2.default && obj !== _symbol2.default.prototype ? "symbol" : typeof obj; };
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = typeof _symbol2.default === "function" && _typeof(_iterator2.default) === "symbol" ? function (obj) {
+	  return typeof obj === "undefined" ? "undefined" : _typeof(obj);
+	} : function (obj) {
+	  return obj && typeof _symbol2.default === "function" && obj.constructor === _symbol2.default && obj !== _symbol2.default.prototype ? "symbol" : typeof obj === "undefined" ? "undefined" : _typeof(obj);
+	};
+
+/***/ },
+/* 92 */,
 /* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -6123,7 +6123,7 @@ webpackJsonp([3],[
 	
 	var _colors = __webpack_require__(80);
 	
-	var _colorManipulator = __webpack_require__(92);
+	var _colorManipulator = __webpack_require__(90);
 	
 	var _spacing = __webpack_require__(217);
 	
@@ -6182,7 +6182,7 @@ webpackJsonp([3],[
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
-	var _colorManipulator = __webpack_require__(92);
+	var _colorManipulator = __webpack_require__(90);
 	
 	var _lightBaseTheme = __webpack_require__(152);
 	
@@ -9232,7 +9232,7 @@ webpackJsonp([3],[
 	});
 	exports.getBase16Theme = exports.createStyling = exports.invertTheme = undefined;
 	
-	var _typeof2 = __webpack_require__(90);
+	var _typeof2 = __webpack_require__(91);
 	
 	var _typeof3 = _interopRequireDefault(_typeof2);
 	
@@ -32126,7 +32126,7 @@ webpackJsonp([3],[
 	
 	var _colors = __webpack_require__(80);
 	
-	var _colorManipulator = __webpack_require__(92);
+	var _colorManipulator = __webpack_require__(90);
 	
 	var _spacing = __webpack_require__(217);
 	

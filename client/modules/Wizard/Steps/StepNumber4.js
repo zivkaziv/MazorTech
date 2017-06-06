@@ -10,6 +10,14 @@ import MedicalRightItem from '../componenets/MedicalRightItem/MedicalRIghtItem';
 // Import Selectors
 import { getSelectedMedicalRights } from '../WizardReducer';
 
+const styles = {
+  pageStyle: {
+    maxHeight: 350,
+    maxWidth: 740,
+    overflow:'auto',
+  }
+};
+
 class StepNumber4 extends Component {
   constructor(props) {
     super(props);

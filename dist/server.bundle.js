@@ -1037,7 +1037,7 @@
 	});
 	exports.getSelectedMedicalRights = exports.getMedicalRights = undefined;
 	
-	var _WizardActions = __webpack_require__(40);
+	var _WizardActions = __webpack_require__(41);
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
@@ -1112,6 +1112,12 @@
 
 /***/ },
 /* 38 */
+/***/ function(module, exports) {
+
+	module.exports = require("material-ui/RaisedButton");
+
+/***/ },
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1191,7 +1197,7 @@
 	};
 
 /***/ },
-/* 39 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1243,7 +1249,7 @@
 	exports.default = UserReducer;
 
 /***/ },
-/* 40 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1286,28 +1292,22 @@
 	}
 
 /***/ },
-/* 41 */
+/* 42 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/DatePicker");
 
 /***/ },
-/* 42 */
+/* 43 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/MenuItem");
 
 /***/ },
-/* 43 */
-/***/ function(module, exports) {
-
-	module.exports = require("material-ui/RadioButton");
-
-/***/ },
 /* 44 */
 /***/ function(module, exports) {
 
-	module.exports = require("material-ui/RaisedButton");
+	module.exports = require("material-ui/RadioButton");
 
 /***/ },
 /* 45 */
@@ -1616,7 +1616,7 @@
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _IconSvg = __webpack_require__(38);
+	var _IconSvg = __webpack_require__(39);
 	
 	var _IconSvg2 = _interopRequireDefault(_IconSvg);
 	
@@ -2248,7 +2248,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _RaisedButton = __webpack_require__(44);
+	var _RaisedButton = __webpack_require__(38);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
@@ -2402,17 +2402,17 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _DatePicker = __webpack_require__(41);
+	var _DatePicker = __webpack_require__(42);
 	
 	var _DatePicker2 = _interopRequireDefault(_DatePicker);
 	
-	var _RadioButton = __webpack_require__(43);
+	var _RadioButton = __webpack_require__(44);
 	
 	var _SelectField = __webpack_require__(45);
 	
 	var _SelectField2 = _interopRequireDefault(_SelectField);
 	
-	var _MenuItem = __webpack_require__(42);
+	var _MenuItem = __webpack_require__(43);
 	
 	var _MenuItem2 = _interopRequireDefault(_MenuItem);
 	
@@ -3559,7 +3559,7 @@
 	
 	var _WizardReducer2 = _interopRequireDefault(_WizardReducer);
 	
-	var _UserReducer = __webpack_require__(39);
+	var _UserReducer = __webpack_require__(40);
 	
 	var _UserReducer2 = _interopRequireDefault(_UserReducer);
 	
@@ -3654,8 +3654,205 @@
 	      }]
 	    }]
 	  };
+	  var right3 = {
+	    "condition": "OSA1",
+	    "rights": [{
+	      "name": "CPAP (continuous positive airway pressure)",
+	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
+	      "family_history": "",
+	      "general_condition": "",
+	      "filters": [{
+	        "name": "age",
+	        "is_relevant": true,
+	        "min": 10,
+	        "max": 30
+	      }, {
+	        "name": "weight",
+	        "is_relevant": true,
+	        "min": 10,
+	        "max": 30
+	      }, {
+	        "name": "race",
+	        "is_relevant": true,
+	        "value": "black"
+	      }, {
+	        "name": "smoking",
+	        "is_relevant": true,
+	        "value": false
+	      }]
+	    }]
+	  };
+	  var right4 = {
+	    "condition": "OSA1",
+	    "rights": [{
+	      "name": "CPAP (continuous positive airway pressure)",
+	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
+	      "family_history": "",
+	      "general_condition": "",
+	      "filters": [{
+	        "name": "age",
+	        "is_relevant": true,
+	        "min": 10,
+	        "max": 30
+	      }, {
+	        "name": "weight",
+	        "is_relevant": true,
+	        "min": 10,
+	        "max": 30
+	      }, {
+	        "name": "race",
+	        "is_relevant": true,
+	        "value": "black"
+	      }, {
+	        "name": "smoking",
+	        "is_relevant": true,
+	        "value": false
+	      }]
+	    }]
+	  };
+	  var right5 = {
+	    "condition": "OSA1",
+	    "rights": [{
+	      "name": "CPAP (continuous positive airway pressure)",
+	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
+	      "family_history": "",
+	      "general_condition": "",
+	      "filters": [{
+	        "name": "age",
+	        "is_relevant": true,
+	        "min": 10,
+	        "max": 30
+	      }, {
+	        "name": "weight",
+	        "is_relevant": true,
+	        "min": 10,
+	        "max": 30
+	      }, {
+	        "name": "race",
+	        "is_relevant": true,
+	        "value": "black"
+	      }, {
+	        "name": "smoking",
+	        "is_relevant": true,
+	        "value": false
+	      }]
+	    }]
+	  };
+	  var right6 = {
+	    "condition": "OSA1",
+	    "rights": [{
+	      "name": "CPAP (continuous positive airway pressure)",
+	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
+	      "family_history": "",
+	      "general_condition": "",
+	      "filters": [{
+	        "name": "age",
+	        "is_relevant": true,
+	        "min": 10,
+	        "max": 30
+	      }, {
+	        "name": "weight",
+	        "is_relevant": true,
+	        "min": 10,
+	        "max": 30
+	      }, {
+	        "name": "race",
+	        "is_relevant": true,
+	        "value": "black"
+	      }, {
+	        "name": "smoking",
+	        "is_relevant": true,
+	        "value": false
+	      }]
+	    }]
+	  };
+	  var right7 = {
+	    "condition": "OSA1",
+	    "rights": [{
+	      "name": "CPAP (continuous positive airway pressure)",
+	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
+	      "family_history": "",
+	      "general_condition": "",
+	      "filters": [{
+	        "name": "age",
+	        "is_relevant": true,
+	        "min": 10,
+	        "max": 30
+	      }, {
+	        "name": "weight",
+	        "is_relevant": true,
+	        "min": 10,
+	        "max": 30
+	      }, {
+	        "name": "race",
+	        "is_relevant": true,
+	        "value": "black"
+	      }, {
+	        "name": "smoking",
+	        "is_relevant": true,
+	        "value": false
+	      }]
+	    }]
+	  };
+	  var right8 = {
+	    "condition": "OSA1",
+	    "rights": [{
+	      "name": "CPAP (continuous positive airway pressure)",
+	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
+	      "family_history": "",
+	      "general_condition": "",
+	      "filters": [{
+	        "name": "age",
+	        "is_relevant": true,
+	        "min": 10,
+	        "max": 30
+	      }, {
+	        "name": "weight",
+	        "is_relevant": true,
+	        "min": 10,
+	        "max": 30
+	      }, {
+	        "name": "race",
+	        "is_relevant": true,
+	        "value": "black"
+	      }, {
+	        "name": "smoking",
+	        "is_relevant": true,
+	        "value": false
+	      }]
+	    }]
+	  };
+	  var right9 = {
+	    "condition": "OSA1",
+	    "rights": [{
+	      "name": "CPAP (continuous positive airway pressure)",
+	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
+	      "family_history": "",
+	      "general_condition": "",
+	      "filters": [{
+	        "name": "age",
+	        "is_relevant": true,
+	        "min": 10,
+	        "max": 30
+	      }, {
+	        "name": "weight",
+	        "is_relevant": true,
+	        "min": 10,
+	        "max": 30
+	      }, {
+	        "name": "race",
+	        "is_relevant": true,
+	        "value": "black"
+	      }, {
+	        "name": "smoking",
+	        "is_relevant": true,
+	        "value": false
+	      }]
+	    }]
+	  };
+	
 	  var rights = [];
-	  rights.push(right1, right2);
+	  rights.push(right1, right2, right3, right4, right5, right6, right7, right8, right9);
 	  if (false) {
 	    res.status(500).send(err);
 	  }
@@ -3916,7 +4113,7 @@
 	  var assetsManifest = process.env.webpackAssets && JSON.parse(process.env.webpackAssets);
 	  var chunkManifest = process.env.webpackChunkAssets && JSON.parse(process.env.webpackChunkAssets);
 	
-	  return '\n    <!doctype html>\n    <html>\n      <head>\n        ' + head.base.toString() + '\n        ' + head.title.toString() + '\n        ' + head.meta.toString() + '\n        ' + head.link.toString() + '\n        ' + head.script.toString() + '\n\n        ' + (process.env.NODE_ENV === 'production' ? '<link rel=\'stylesheet\' href=\'' + assetsManifest['/app.css'] + '\' />' : '') + '\n        <link href=\'https://fonts.googleapis.com/css?family=Lato:400,300,700\' rel=\'stylesheet\' type=\'text/css\'/>\n        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" type=\'text/css\'>\n        <link rel="shortcut icon" href="http://res.cloudinary.com/hashnode/image/upload/v1455629445/static_imgs/mern/mern-favicon-circle-fill.png" type="image/png" />\n        <style>\n  /* local page styles */\n  html h1 {\n    font-size: 26px;\n    margin-left: 10px;\n  }\n  html h2 {\n    font-size: 22px;\n    margin-left: 10px;\n  }\n  html h3 {\n    font-size: 14px;\n    margin-left: 10px;\n  }\n  html h4 {\n    font-size: 16px;\n  }\n  .progtrckr {\n    text-align: center;\n    padding-bottom: 16px;\n    // border-bottom: solid 1px;\n  }\n  .progtrckr li {\n    margin-bottom: 10px;\n  }\n  .val-err-tooltip {\n    background-color: red;\n    padding: 3px 5px 3px 10px;\n    font-size: 14px;\n    color: #fff;\n  }\n  .step {\n    // background-color: #ccc;\n    border:1px solid #e5e5e5;\n    min-height: 350px;\n    padding: 10px;\n  }\n  html .row, html .form-horizontal .form-group {\n    margin: 0;\n  }\n  .footer-buttons {\n    margin-top: 10px;\n    margin-bottom: 50px;\n  }\n  html .step3 label, html .step4 label {\n    font-size: 20px;\n    text-align: left;\n  }\n  html .form-horizontal .control-label {\n    text-align: left;\n  }\n  .review .txt {\n    font-size: 20px;\n    text-align: left;\n    margin: 0;\n    padding: 0;\n  }\n  html body .saving {\n    background-color: #5cb85c;\n    width: 90%;\n    padding: 5px;\n    font-size: 16px;\n  }\n  code {\n    position: relative;\n    left: 12px;\n    line-height: 25px;\n  }\n  .eg-jump-lnk {\n    margin-top: 50px;\n    font-style: italic;\n  }\n  .lib-version {\n    font-size: 12px;\n    background-color: rgba(255, 255, 0, 0.38);\n    position: absolute;\n    right: 10px;\n    top: 10px;\n    padding: 5px;\n  }\n  html .content {\n    margin-left: 10px;\n  }\n  span.red {\n    color: #d9534f;\n  }\n  span.green {\n    color: #3c763d;\n  }\n  span.bold {\n    font-weight: bold;\n  }\n  html .hoc-alert {\n    margin-top: 20px;\n  }\n  html .form-block-holder {\n    margin-top: 20px !important;\n  }\n  ol.progtrckr {\n  margin: 0;\n  padding-bottom: 2.2rem;\n  list-style-type: none;\n}\nol.progtrckr li {\n  display: inline-block;\n  text-align: center;\n  line-height: 4.5rem;\n  padding: 0 0.7rem;\n  cursor: pointer;\n}\nol.progtrckr li span {\n  padding: 0 1.5rem;\n}\n@media (max-width: 650px) {\n  .progtrckr li span {\n    display: none;\n  }\n}\n.progtrckr em {\n  display: none;\n  font-weight: 700;\n  padding-left: 1rem;\n}\n@media (max-width: 650px) {\n  .progtrckr em {\n    display: inline;\n  // }border-bottom: solid 1px;\n}\n\n\n\n\n\n}\n\nol.progtrckr li.progtrckr-todo {\n  color: silver;\n  border-bottom: 4px solid silver;\n}\nol.progtrckr li.progtrckr-doing {\n  color: black;\n  border-bottom: 4px solid #33C3F0;\n}\nol.progtrckr li.progtrckr-done {\n  color: black;\n  border-bottom: 4px solid #33C3F0;\n}\nol.progtrckr li:after {\n  content: "\\00a0\\00a0";\n}\nol.progtrckr li:before {\n  position: relative;\n  bottom: -3.7rem;\n  float: left;\n  left: 50%;\n}\nol.progtrckr li.progtrckr-todo:before {\n  content: "\\039F";\n  color: silver;\n  background-color: white;\n  width: 1.2em;\n  line-height: 1.4em;\n}\nol.progtrckr li.progtrckr-todo:hover:before {\n  color: #0FA0CE;\n}\n\nol.progtrckr li.progtrckr-doing:before {\n  content: "\\2022";\n  color: white;\n  background-color: #33C3F0;\n  width: 1.2em;\n  line-height: 1.2em;\n  border-radius: 1.2em;\n}\nol.progtrckr li.progtrckr-doing:hover:before {\n  color: #0FA0CE;\n}\n\nol.progtrckr li.progtrckr-done:before {\n  content: "\\2713";\n  color: white;\n  background-color: #33C3F0;\n  width: 1.2em;\n  line-height: 1.2em;\n  border-radius: 1.2em;\n}\nol.progtrckr li.progtrckr-done:hover:before {\n  color: #0FA0CE;\n}\n\n  </style>\n      </head>\n      <body>\n        <div id="root">' + html + '</div>\n        <script>\n          window.__INITIAL_STATE__ = ' + JSON.stringify(initialState) + ';\n          ' + (process.env.NODE_ENV === 'production' ? '//<![CDATA[\n          window.webpackManifest = ' + JSON.stringify(chunkManifest) + ';\n          //]]>' : '') + '\n        </script>\n        <script src=\'' + (process.env.NODE_ENV === 'production' ? assetsManifest['/vendor.js'] : '/vendor.js') + '\'></script>\n        <script src=\'' + (process.env.NODE_ENV === 'production' ? assetsManifest['/app.js'] : '/app.js') + '\'></script>\n      </body>\n    </html>\n  ';
+	  return '\n    <!doctype html>\n    <html>\n      <head>\n        ' + head.base.toString() + '\n        ' + head.title.toString() + '\n        ' + head.meta.toString() + '\n        ' + head.link.toString() + '\n        ' + head.script.toString() + '\n\n        ' + (process.env.NODE_ENV === 'production' ? '<link rel=\'stylesheet\' href=\'' + assetsManifest['/app.css'] + '\' />' : '') + '\n        <link href=\'https://fonts.googleapis.com/css?family=Lato:400,300,700\' rel=\'stylesheet\' type=\'text/css\'/>\n        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" type=\'text/css\'>\n        <link rel="shortcut icon" href="http://res.cloudinary.com/hashnode/image/upload/v1455629445/static_imgs/mern/mern-favicon-circle-fill.png" type="image/png" />\n        <style>\n  /* local page styles */\n  html h1 {\n    font-size: 26px;\n    margin-left: 10px;\n  }\n  html h2 {\n    font-size: 22px;\n    margin-left: 10px;\n  }\n  html h3 {\n    font-size: 14px;\n    margin-left: 10px;\n  }\n  html h4 {\n    font-size: 16px;\n  }\n  .progtrckr {\n    text-align: center;\n    padding-bottom: 16px;\n    // border-bottom: solid 1px;\n  }\n  .progtrckr li {\n    margin-bottom: 10px;\n  }\n  .val-err-tooltip {\n    background-color: red;\n    padding: 3px 5px 3px 10px;\n    font-size: 14px;\n    color: #fff;\n  }\n  .step {\n    // background-color: #ccc;\n    border:1px solid #e5e5e5;\n    min-height: 400px;\n    padding: 10px;\n    max-width: 815px;\n    min-width: 366px\n  }\n  html .row, html .form-horizontal .form-group {\n    margin: 0;\n  }\n  .footer-buttons {\n    margin-top: 10px;\n    margin-bottom: 50px;\n  }\n  html .step3 label, html .step4 label {\n    font-size: 20px;\n    text-align: left;\n  }\n  html .form-horizontal .control-label {\n    text-align: left;\n  }\n  .review .txt {\n    font-size: 20px;\n    text-align: left;\n    margin: 0;\n    padding: 0;\n  }\n  html body .saving {\n    background-color: #5cb85c;\n    width: 90%;\n    padding: 5px;\n    font-size: 16px;\n  }\n  code {\n    position: relative;\n    left: 12px;\n    line-height: 25px;\n  }\n  .eg-jump-lnk {\n    margin-top: 50px;\n    font-style: italic;\n  }\n  .lib-version {\n    font-size: 12px;\n    background-color: rgba(255, 255, 0, 0.38);\n    position: absolute;\n    right: 10px;\n    top: 10px;\n    padding: 5px;\n  }\n  html .content {\n    margin-left: 10px;\n  }\n  span.red {\n    color: #d9534f;\n  }\n  span.green {\n    color: #3c763d;\n  }\n  span.bold {\n    font-weight: bold;\n  }\n  html .hoc-alert {\n    margin-top: 20px;\n  }\n  html .form-block-holder {\n    margin-top: 20px !important;\n  }\n  ol.progtrckr {\n  margin: 0;\n  padding-bottom: 2.2rem;\n  list-style-type: none;\n}\nol.progtrckr li {\n  display: inline-block;\n  text-align: center;\n  line-height: 4.5rem;\n  padding: 0 0.7rem;\n  cursor: pointer;\n}\nol.progtrckr li span {\n  padding: 0 1.5rem;\n}\n@media (max-width: 650px) {\n  .progtrckr li span {\n    display: none;\n  }\n}\n.progtrckr em {\n  display: none;\n  font-weight: 700;\n  padding-left: 1rem;\n}\n@media (max-width: 650px) {\n  .progtrckr em {\n    display: inline;\n  // }border-bottom: solid 1px;\n}\n\n\n\n\n\n}\n\nol.progtrckr li.progtrckr-todo {\n  color: silver;\n  border-bottom: 4px solid silver;\n}\nol.progtrckr li.progtrckr-doing {\n  color: black;\n  border-bottom: 4px solid #33C3F0;\n}\nol.progtrckr li.progtrckr-done {\n  color: black;\n  border-bottom: 4px solid #33C3F0;\n}\nol.progtrckr li:after {\n  content: "\\00a0\\00a0";\n}\nol.progtrckr li:before {\n  position: relative;\n  bottom: -3.7rem;\n  float: left;\n  left: 50%;\n}\nol.progtrckr li.progtrckr-todo:before {\n  content: "\\039F";\n  color: silver;\n  background-color: white;\n  width: 1.2em;\n  line-height: 1.4em;\n}\nol.progtrckr li.progtrckr-todo:hover:before {\n  color: #0FA0CE;\n}\n\nol.progtrckr li.progtrckr-doing:before {\n  content: "\\2022";\n  color: white;\n  background-color: #33C3F0;\n  width: 1.2em;\n  line-height: 1.2em;\n  border-radius: 1.2em;\n}\nol.progtrckr li.progtrckr-doing:hover:before {\n  color: #0FA0CE;\n}\n\nol.progtrckr li.progtrckr-done:before {\n  content: "\\2713";\n  color: white;\n  background-color: #33C3F0;\n  width: 1.2em;\n  line-height: 1.2em;\n  border-radius: 1.2em;\n}\nol.progtrckr li.progtrckr-done:hover:before {\n  color: #0FA0CE;\n}\n\n  </style>\n      </head>\n      <body>\n        <div id="root">' + html + '</div>\n        <script>\n          window.__INITIAL_STATE__ = ' + JSON.stringify(initialState) + ';\n          ' + (process.env.NODE_ENV === 'production' ? '//<![CDATA[\n          window.webpackManifest = ' + JSON.stringify(chunkManifest) + ';\n          //]]>' : '') + '\n        </script>\n        <script src=\'' + (process.env.NODE_ENV === 'production' ? assetsManifest['/vendor.js'] : '/vendor.js') + '\'></script>\n        <script src=\'' + (process.env.NODE_ENV === 'production' ? assetsManifest['/app.js'] : '/app.js') + '\'></script>\n      </body>\n    </html>\n  ';
 	};
 	
 	var renderError = function renderError(err) {
@@ -4124,22 +4321,28 @@
 /* 96 */
 /***/ function(module, exports) {
 
-	module.exports = require("material-ui/Card");
+	module.exports = require("material-ui/styles/baseThemes/lightBaseTheme");
 
 /***/ },
 /* 97 */
 /***/ function(module, exports) {
 
-	module.exports = require("material-ui/styles/baseThemes/lightBaseTheme");
+	module.exports = require("material-ui/styles/getMuiTheme");
 
 /***/ },
 /* 98 */
 /***/ function(module, exports) {
 
-	module.exports = require("material-ui/styles/getMuiTheme");
+	module.exports = require("material-ui/Card");
 
 /***/ },
 /* 99 */
+/***/ function(module, exports) {
+
+	module.exports = require("material-ui/TextField");
+
+/***/ },
+/* 100 */
 /***/ function(module, exports) {
 
 	module.exports = require("react-search-input");

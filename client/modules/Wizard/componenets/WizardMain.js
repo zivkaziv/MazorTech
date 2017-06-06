@@ -5,6 +5,7 @@ import React, { PropTypes } from 'react';
 // import styles from '../../../css/prog-tracker.css';
 
 import StepZilla from 'react-stepzilla';
+import wizardMainStyles from './WizardMain.css';
 
 //Steps
 import Step1 from '../Steps/StepNumber1'
@@ -12,7 +13,6 @@ import Step2 from '../Steps/StepNumber2'
 import Step3 from '../Steps/StepNumber3'
 import Step4 from '../Steps/StepNumber4'
 import Step5 from '../Steps/StepNumber5'
-
 
 function WizardMain(props) {
   const steps =
@@ -26,7 +26,7 @@ function WizardMain(props) {
 
 
   return (
-    <div className="listView">
+    <div className={wizardMainStyles['wizard-steps-container']}>
       <div className='step-progress'>
         <StepZilla steps={steps}/>
       </div>

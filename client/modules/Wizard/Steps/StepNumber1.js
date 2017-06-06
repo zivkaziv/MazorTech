@@ -7,21 +7,31 @@ import SearchInput, {createFilter} from 'react-search-input'
 
 //  Material
 import FlatButton from 'material-ui/FlatButton';
+import RaisedButton from 'material-ui/RaisedButton';
 import Dialog from 'material-ui/Dialog';
-
+import TextField from 'material-ui/TextField';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import lightTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 
 // Import Selectors
-import { getMedicalRights,printState } from '../WizardReducer';
+import { getMedicalRights } from '../WizardReducer';
 
 // Styles
 import searchInputStyles from './StepNumber1.css';
 const styles = {
   pageStyle: {
     maxHeight: 350,
-    overflow:'auto',
+    // overflow:'auto',
   },
   medicalDiagnosticsContainer:{
     display:'flex'
+  },
+  searchContainer:{
+    height:350,
+    overflow:'auto'
+  },
+  cantFindContainer:{
+    textAlign:'center'
   }
 };
 
@@ -33,13 +43,15 @@ class StepNumber1 extends Component {
 
     this.state = {
       searchTerm : '',
-      dialogOpen : false
+      dialogOpen : false,
+      cantFindDialogOpen : false
     };
 
-    this.printMedicalRights = this.printMedicalRights.bind(this);
     this.searchUpdated = this.searchUpdated.bind(this);
     this.handleOpen = this.handleOpen.bind(this);
     this.handleClose = this.handleClose.bind(this);
+    this.handleCantFindDialogOpen = this.handleCantFindDialogOpen.bind(this);
+    this.handleCantFindDialogClose = this.handleCantFindDialogClose.bind(this);
   }
 
   isValidated() {
@@ -57,9 +69,6 @@ class StepNumber1 extends Component {
     return isValid;
   }
 
-  printMedicalRights(){
-    console.log(this.props.medicalRights);
-  }
   searchUpdated (term) {
     console.log(term);
     this.setState({searchTerm: term})
@@ -71,6 +80,19 @@ class StepNumber1 extends Component {
     this.setState({dialogOpen: false});
   };
 
+  handleCantFindDialogOpen = () => {
+    this.setState({cantFindDialogOpen: true});
+  };
+  handleCantFindDialogClose = () => {
+    this.setState({cantFindDialogOpen: false});
+  };
+
+
+  getChildContext() {
+    return {
+      muiTheme: getMuiTheme(lightTheme)
+    };
+  }
   render() {
     const filteredMedicalDiagnostics = this.props.medicalRights.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS));
 
@@ -83,24 +105,52 @@ class StepNumber1 extends Component {
       />,
     ];
 
+    const actionsCantFind = [
+      <FlatButton
+        label="Save"
+        primary={true}
+        keyboardFocused={true}
+        onTouchTap={this.handleCantFindDialogClose}
+      />,
+    ];
+
     return (
       <div className="step step1" style={styles.pageStyle}>
         <div className="row">
-          {/*<h3>Please mark the medical diagnostics</h3>*/}
-          <SearchInput style={styles.medicalRightsContainer}
-                       placeholder='Search for your medical diagnostic'
-                       className={searchInputStyles['search-input']}
-                       onChange={this.searchUpdated} />
-          {filteredMedicalDiagnostics.map((medicalRight,i) => {
-            return (
-              <MedicalDiagnosticItem key={i} medicalRight={medicalRight}/>
-            )
-          })}
+          <div className="row" style={styles.searchContainer}>
+            <SearchInput placeholder='Search for your medical diagnostic'
+                         className={searchInputStyles['search-input']}
+                         onChange={this.searchUpdated} />
+            {filteredMedicalDiagnostics.map((medicalRight,i) => {
+              return (
+                <MedicalDiagnosticItem key={i} medicalRight={medicalRight}/>
+              )
+            })}
+          </div>
+          <div className="row" style={styles.cantFindContainer}>
+            <FlatButton
+              label="Can't find proper diagnostic"
+              primary={true}
+              keyboardFocused={false}
+              onTouchTap={this.handleCantFindDialogOpen}
+            />
+          </div>
 
+          {/*Can't find dialog*/}
           <Dialog
-            title="Agree terms"
+            title="Can't find"
+            actions={actionsCantFind}
+            modal={true}
+            open={this.state.cantFindDialogOpen}
+            onRequestClose={this.handleCantFindDialogClose}>
+            <TextField hintText="Write here in your words the medical diagnostic"/>
+          </Dialog>
+
+          {/*You must choose dialog*/}
+          <Dialog
+            title="Please choose"
             actions={actions}
-            modal={false}
+            modal={true}
             open={this.state.dialogOpen}
             onRequestClose={this.handleClose}
           >
@@ -122,5 +172,14 @@ function mapStateToProps(state) {
 StepNumber1.propTypes = {
   medicalRight: PropTypes.any
 };
+
+StepNumber1.childContextTypes = {
+  muiTheme: React.PropTypes.object
+};
+
+StepNumber1.contextTypes = {
+  router: React.PropTypes.object,
+};
+
 
 export default connect(mapStateToProps)(StepNumber1);

@@ -9,14 +9,14 @@ import FlatButton from 'material-ui/FlatButton';
 
 const styles = {
   pageStyle: {
-    maxWidth: 815,
+    maxWidth: 740,
   },
   termsSection:{
-    maxHeight: 280,
+    maxHeight: 334,
     overflow:'auto',
   },
   toggle: {
-    marginBottom: 15,
+    // marginBottom: 15,
     marginTop: 15,
     maxWidth:250
   }
@@ -69,7 +69,7 @@ export default class Step3 extends Component {
     ];
 
     return (
-      <div style={styles.pageStyle} className="step">
+      <div className="step">
         <section style={styles.termsSection} >
           <h1>Terms of Use</h1>
           <h3>Agreement between You and Instructure</h3>

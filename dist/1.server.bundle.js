@@ -23,7 +23,7 @@ exports.modules = {
 	
 	var _WizardMain2 = _interopRequireDefault(_WizardMain);
 	
-	var _WizardActions = __webpack_require__(40);
+	var _WizardActions = __webpack_require__(41);
 	
 	var _WizardReducer = __webpack_require__(34);
 	
@@ -45,6 +45,12 @@ exports.modules = {
 	// Import Selectors
 	// import { getShowAddPost } from '../../../App/AppReducer';
 	
+	
+	var styles = {
+	  wizardContainer: {
+	    width: '100%'
+	  }
+	};
 	
 	var WizardPage = function (_Component) {
 	  _inherits(WizardPage, _Component);
@@ -76,11 +82,7 @@ exports.modules = {
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(_WizardMain2.default, null)
-	      );
+	      return _react2.default.createElement(_WizardMain2.default, null);
 	    }
 	  }]);
 	
@@ -131,7 +133,7 @@ exports.modules = {
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Card = __webpack_require__(96);
+	var _Card = __webpack_require__(98);
 	
 	var _FlatButton = __webpack_require__(35);
 	
@@ -206,7 +208,7 @@ exports.modules = {
 	
 	var _MedicalDiagnosticItem2 = _interopRequireDefault(_MedicalDiagnosticItem);
 	
-	var _reactSearchInput = __webpack_require__(99);
+	var _reactSearchInput = __webpack_require__(100);
 	
 	var _reactSearchInput2 = _interopRequireDefault(_reactSearchInput);
 	
@@ -214,9 +216,25 @@ exports.modules = {
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
+	var _RaisedButton = __webpack_require__(38);
+	
+	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
+	
 	var _Dialog = __webpack_require__(37);
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
+	
+	var _TextField = __webpack_require__(99);
+	
+	var _TextField2 = _interopRequireDefault(_TextField);
+	
+	var _getMuiTheme = __webpack_require__(97);
+	
+	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
+	
+	var _lightBaseTheme = __webpack_require__(96);
+	
+	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
 	var _WizardReducer = __webpack_require__(34);
 	
@@ -245,11 +263,18 @@ exports.modules = {
 	
 	var styles = {
 	  pageStyle: {
-	    maxHeight: 350,
-	    overflow: 'auto'
+	    maxHeight: 350
+	    // overflow:'auto',
 	  },
 	  medicalDiagnosticsContainer: {
 	    display: 'flex'
+	  },
+	  searchContainer: {
+	    height: 350,
+	    overflow: 'auto'
+	  },
+	  cantFindContainer: {
+	    textAlign: 'center'
 	  }
 	};
 	
@@ -271,15 +296,25 @@ exports.modules = {
 	      _this.setState({ dialogOpen: false });
 	    };
 	
-	    _this.state = {
-	      searchTerm: '',
-	      dialogOpen: false
+	    _this.handleCantFindDialogOpen = function () {
+	      _this.setState({ cantFindDialogOpen: true });
 	    };
 	
-	    _this.printMedicalRights = _this.printMedicalRights.bind(_this);
+	    _this.handleCantFindDialogClose = function () {
+	      _this.setState({ cantFindDialogOpen: false });
+	    };
+	
+	    _this.state = {
+	      searchTerm: '',
+	      dialogOpen: false,
+	      cantFindDialogOpen: false
+	    };
+	
 	    _this.searchUpdated = _this.searchUpdated.bind(_this);
 	    _this.handleOpen = _this.handleOpen.bind(_this);
 	    _this.handleClose = _this.handleClose.bind(_this);
+	    _this.handleCantFindDialogOpen = _this.handleCantFindDialogOpen.bind(_this);
+	    _this.handleCantFindDialogClose = _this.handleCantFindDialogClose.bind(_this);
 	    return _this;
 	  }
 	
@@ -300,15 +335,17 @@ exports.modules = {
 	      return isValid;
 	    }
 	  }, {
-	    key: 'printMedicalRights',
-	    value: function printMedicalRights() {
-	      console.log(this.props.medicalRights);
-	    }
-	  }, {
 	    key: 'searchUpdated',
 	    value: function searchUpdated(term) {
 	      console.log(term);
 	      this.setState({ searchTerm: term });
+	    }
+	  }, {
+	    key: 'getChildContext',
+	    value: function getChildContext() {
+	      return {
+	        muiTheme: (0, _getMuiTheme2.default)(_lightBaseTheme2.default)
+	      };
 	    }
 	  }, {
 	    key: 'render',
@@ -322,25 +359,55 @@ exports.modules = {
 	        onTouchTap: this.handleClose
 	      })];
 	
+	      var actionsCantFind = [_react2.default.createElement(_FlatButton2.default, {
+	        label: 'Save',
+	        primary: true,
+	        keyboardFocused: true,
+	        onTouchTap: this.handleCantFindDialogClose
+	      })];
+	
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'step step1', style: styles.pageStyle },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'row' },
-	          _react2.default.createElement(_reactSearchInput2.default, { style: styles.medicalRightsContainer,
-	            placeholder: 'Search for your medical diagnostic',
-	            className: _StepNumber2.default['search-input'],
-	            onChange: this.searchUpdated }),
-	          filteredMedicalDiagnostics.map(function (medicalRight, i) {
-	            return _react2.default.createElement(_MedicalDiagnosticItem2.default, { key: i, medicalRight: medicalRight });
-	          }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'row', style: styles.searchContainer },
+	            _react2.default.createElement(_reactSearchInput2.default, { placeholder: 'Search for your medical diagnostic',
+	              className: _StepNumber2.default['search-input'],
+	              onChange: this.searchUpdated }),
+	            filteredMedicalDiagnostics.map(function (medicalRight, i) {
+	              return _react2.default.createElement(_MedicalDiagnosticItem2.default, { key: i, medicalRight: medicalRight });
+	            })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'row', style: styles.cantFindContainer },
+	            _react2.default.createElement(_FlatButton2.default, {
+	              label: 'Can\'t find proper diagnostic',
+	              primary: true,
+	              keyboardFocused: false,
+	              onTouchTap: this.handleCantFindDialogOpen
+	            })
+	          ),
 	          _react2.default.createElement(
 	            _Dialog2.default,
 	            {
-	              title: 'Agree terms',
+	              title: 'Can\'t find',
+	              actions: actionsCantFind,
+	              modal: true,
+	              open: this.state.cantFindDialogOpen,
+	              onRequestClose: this.handleCantFindDialogClose },
+	            _react2.default.createElement(_TextField2.default, { hintText: 'Write here in your words the medical diagnostic' })
+	          ),
+	          _react2.default.createElement(
+	            _Dialog2.default,
+	            {
+	              title: 'Please choose',
 	              actions: actions,
-	              modal: false,
+	              modal: true,
 	              open: this.state.dialogOpen,
 	              onRequestClose: this.handleClose
 	            },
@@ -365,6 +432,14 @@ exports.modules = {
 	  medicalRight: _react.PropTypes.any
 	};
 	
+	StepNumber1.childContextTypes = {
+	  muiTheme: _react2.default.PropTypes.object
+	};
+	
+	StepNumber1.contextTypes = {
+	  router: _react2.default.PropTypes.object
+	};
+	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(StepNumber1);
 
 /***/ },
@@ -387,17 +462,17 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(2);
 	
-	var _DatePicker = __webpack_require__(41);
+	var _DatePicker = __webpack_require__(42);
 	
 	var _DatePicker2 = _interopRequireDefault(_DatePicker);
 	
-	var _RadioButton = __webpack_require__(43);
+	var _RadioButton = __webpack_require__(44);
 	
 	var _SelectField = __webpack_require__(45);
 	
 	var _SelectField2 = _interopRequireDefault(_SelectField);
 	
-	var _MenuItem = __webpack_require__(42);
+	var _MenuItem = __webpack_require__(43);
 	
 	var _MenuItem2 = _interopRequireDefault(_MenuItem);
 	
@@ -409,7 +484,7 @@ exports.modules = {
 	
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 	
-	var _UserReducer = __webpack_require__(39);
+	var _UserReducer = __webpack_require__(40);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -720,14 +795,14 @@ exports.modules = {
 	
 	var styles = {
 	  pageStyle: {
-	    maxWidth: 815
+	    maxWidth: 740
 	  },
 	  termsSection: {
-	    maxHeight: 280,
+	    maxHeight: 334,
 	    overflow: 'auto'
 	  },
 	  toggle: {
-	    marginBottom: 15,
+	    // marginBottom: 15,
 	    marginTop: 15,
 	    maxWidth: 250
 	  }
@@ -788,7 +863,7 @@ exports.modules = {
 	
 	      return _react2.default.createElement(
 	        'div',
-	        { style: styles.pageStyle, className: 'step' },
+	        { className: 'step' },
 	        _react2.default.createElement(
 	          'section',
 	          { style: styles.termsSection },
@@ -1637,6 +1712,14 @@ exports.modules = {
 	// Import Selectors
 	
 	
+	var styles = {
+	  pageStyle: {
+	    maxHeight: 350,
+	    maxWidth: 740,
+	    overflow: 'auto'
+	  }
+	};
+	
 	var StepNumber4 = function (_Component) {
 	  _inherits(StepNumber4, _Component);
 	
@@ -1903,6 +1986,12 @@ exports.modules = {
 	
 	var _reactStepzilla2 = _interopRequireDefault(_reactStepzilla);
 	
+	var _WizardMain = {
+	  "wizard-steps-container": "_3rIfZKbLlZ4umprC1ltNYV"
+	};
+	
+	var _WizardMain2 = _interopRequireDefault(_WizardMain);
+	
 	var _StepNumber = __webpack_require__(88);
 	
 	var _StepNumber2 = _interopRequireDefault(_StepNumber);
@@ -1924,10 +2013,6 @@ exports.modules = {
 	var _StepNumber10 = _interopRequireDefault(_StepNumber9);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	// Import Components
-	// import PostListItem from '../../Post/components/PostListItem/PostListItem';
-	// import styles from '../../../css/prog-tracker.css';
 	
 	function WizardMain(props) {
 	  var _this = this;
@@ -1956,7 +2041,7 @@ exports.modules = {
 	
 	  return _react2.default.createElement(
 	    'div',
-	    { className: 'listView' },
+	    { className: _WizardMain2.default['wizard-steps-container'] },
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'step-progress' },
@@ -1967,6 +2052,10 @@ exports.modules = {
 	
 	//Steps
 	
+	
+	// Import Components
+	// import PostListItem from '../../Post/components/PostListItem/PostListItem';
+	// import styles from '../../../css/prog-tracker.css';
 	
 	WizardMain.propTypes = {
 	  // medicalRights: PropTypes.arrayOf(PropTypes.shape({
