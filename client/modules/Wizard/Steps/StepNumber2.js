@@ -14,6 +14,9 @@ import CheckBox from 'material-ui/Checkbox';
 // Import Selectors
 import { getUser } from '../UserReducer';
 
+// Import Actions
+import { updateUserDetails } from '../UserActions';
+
 // Styles
 const styles = {
   block: {
@@ -58,7 +61,6 @@ const styles = {
   }
 };
 
-
 class StepNumber2 extends Component {
   constructor(props) {
     super(props);
@@ -66,32 +68,44 @@ class StepNumber2 extends Component {
     this.state = {};
 
     //Binds
-    this.handleChange = this.handleChange.bind(this);
+    this.handleHealthInsuranceChange = this.handleHealthInsuranceChange.bind(this);
     this.handleGenderChange = this.handleGenderChange.bind(this);
     this.handleDOBChange = this.handleDOBChange.bind(this);
+    this.isValidated = this.isValidated.bind(this);
+    this.updateState = this.updateState.bind(this);
   }
 
-  handleChange(event, index, value) {
+  isValidated() {
+    updateUserDetails();
+    return true;
+  }
+
+  handleHealthInsuranceChange(event, index, value) {
     console.log('the new value is' + value);
     this.props.user.health_insurance = value;
-    this.setState({user: this.props.user});
+    this.updateState();
   }
 
   handleGenderChange(event, value) {
     console.log('the new value is' + value);
     this.props.user.gender = value;
-    this.setState({user: this.props.user});
+    this.updateState();
   }
 
   handleDOBChange(event, value) {
     console.log('the new value is' + value);
     this.props.user.dob = value;
+    this.updateState();
+  }
+
+  updateState(){
+    this.props.dispatch(updateUserDetails(this.props.user));
     this.setState({user: this.props.user});
   }
 
-  onCheck(e,checked){
+  handleIsSmokingChange(e,checked){
     this.props.user.isSmoking = !this.props.user.isSmoking;
-    this.setState({user: this.props.user})
+    this.updateState();
   };
 
   render() {
@@ -113,6 +127,7 @@ class StepNumber2 extends Component {
                     <div className="user-detail-input">
                       <RadioButtonGroup name="gender"
                                         defaultSelected={this.props.user.gender}
+                                        valueSelected={this.props.user.gender}
                                         style={styles.genderRadioButton}
                                         onChange={this.handleGenderChange}>
                         <RadioButton
@@ -153,7 +168,7 @@ class StepNumber2 extends Component {
                       <SelectField
                         floatingLabelText="Health insurance"
                         value={this.props.user.health_insurance}
-                        onChange={this.handleChange}
+                        onChange={this.handleHealthInsuranceChange}
                       >
                         <MenuItem value={1} primaryText="Unitedhealth Group" />
                         <MenuItem value={2} primaryText="Wellpoint Inc. Group" />
@@ -181,7 +196,7 @@ class StepNumber2 extends Component {
                         <CheckBox
                           label='Smoking'
                           checked={!!this.props.user.isSmoking}
-                          onCheck={(e,checked) => this.onCheck(e,checked)}/>
+                          onCheck={(e,checked) => this.handleIsSmokingChange(e,checked)}/>
                       </div>
                     </div>
                   </div>

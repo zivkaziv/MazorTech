@@ -1,21 +1,11 @@
-import { ADD_USER, TERMS_AGREE, ADD_MEDICAL_RIGHTS } from './WizardActions';
+import { INIT_MEDICAL_RIGHTS} from './WizardActions';
 
 // Initial State
 const initialState = { data: [] };
 
 const WizardReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_USER :
-      return {
-        data: [action.user, ...state.data],
-      };
-
-    case TERMS_AGREE :
-      return {
-        data: action.user,
-      };
-
-    case ADD_MEDICAL_RIGHTS:
+    case INIT_MEDICAL_RIGHTS:
       return{
         data: action.medicalRights,
       };

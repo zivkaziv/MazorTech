@@ -5,14 +5,12 @@ import callApi from '../../util/apiCaller';
 
 
 // Export Constants
-export const ADD_USER = 'ADD_USER';
-export const ADD_MEDICAL_RIGHTS = 'ADD_MEDICAL_RIGHTS';
-export const TERMS_AGREE = 'TERMS_AGREE';
+export const INIT_MEDICAL_RIGHTS = 'INIT_MEDICAL_RIGHTS';
 
 
-export function addMedicalRights(medicalRights) {
+export function initMedicalRights(medicalRights) {
   return {
-    type: ADD_MEDICAL_RIGHTS,
+    type: INIT_MEDICAL_RIGHTS,
     medicalRights,
   };
 }
@@ -22,7 +20,7 @@ export function fetchMedicalRights() {
   return (dispatch) => {
     return callApi('medicalrights').then(res => {
       // console.log(res.rights);
-      dispatch(addMedicalRights(res.rights));
+      dispatch(initMedicalRights(res.rights));
     });
   };
 }

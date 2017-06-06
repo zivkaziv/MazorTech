@@ -22,7 +22,7 @@ const styles = {
   }
 };
 
-export default class Step3 extends Component {
+export default class StepNumber3 extends Component {
   constructor(props) {
     super(props);
 
@@ -35,6 +35,7 @@ export default class Step3 extends Component {
     this.stateChanged = this.stateChanged.bind(this);
     this.handleOpen = this.handleOpen.bind(this);
     this.handleClose = this.handleClose.bind(this);
+    this.isValidated = this.isValidated.bind(this);
   }
 
   isValidated() {

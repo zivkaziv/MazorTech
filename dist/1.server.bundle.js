@@ -1,7 +1,7 @@
 exports.ids = [1];
 exports.modules = {
 
-/***/ 86:
+/***/ 87:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19,11 +19,13 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(2);
 	
-	var _WizardMain = __webpack_require__(94);
+	var _WizardMain = __webpack_require__(95);
 	
 	var _WizardMain2 = _interopRequireDefault(_WizardMain);
 	
-	var _WizardActions = __webpack_require__(41);
+	var _WizardActions = __webpack_require__(42);
+	
+	var _UserActions = __webpack_require__(36);
 	
 	var _WizardReducer = __webpack_require__(34);
 	
@@ -65,6 +67,7 @@ exports.modules = {
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
 	      this.props.dispatch((0, _WizardActions.fetchMedicalRights)());
+	      this.props.dispatch((0, _UserActions.fetchUser)());
 	    }
 	
 	    //
@@ -119,7 +122,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 87:
+/***/ 88:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -133,7 +136,7 @@ exports.modules = {
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Card = __webpack_require__(98);
+	var _Card = __webpack_require__(99);
 	
 	var _FlatButton = __webpack_require__(35);
 	
@@ -186,7 +189,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 88:
+/***/ 89:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -204,11 +207,11 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(2);
 	
-	var _MedicalDiagnosticItem = __webpack_require__(93);
+	var _MedicalDiagnosticItem = __webpack_require__(94);
 	
 	var _MedicalDiagnosticItem2 = _interopRequireDefault(_MedicalDiagnosticItem);
 	
-	var _reactSearchInput = __webpack_require__(100);
+	var _reactSearchInput = __webpack_require__(101);
 	
 	var _reactSearchInput2 = _interopRequireDefault(_reactSearchInput);
 	
@@ -216,23 +219,23 @@ exports.modules = {
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
-	var _RaisedButton = __webpack_require__(38);
+	var _RaisedButton = __webpack_require__(39);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
-	var _Dialog = __webpack_require__(37);
+	var _Dialog = __webpack_require__(38);
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
-	var _TextField = __webpack_require__(99);
+	var _TextField = __webpack_require__(100);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
-	var _getMuiTheme = __webpack_require__(97);
+	var _getMuiTheme = __webpack_require__(98);
 	
 	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 	
-	var _lightBaseTheme = __webpack_require__(96);
+	var _lightBaseTheme = __webpack_require__(97);
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
@@ -444,7 +447,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 89:
+/***/ 90:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -462,29 +465,31 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(2);
 	
-	var _DatePicker = __webpack_require__(42);
+	var _DatePicker = __webpack_require__(43);
 	
 	var _DatePicker2 = _interopRequireDefault(_DatePicker);
 	
-	var _RadioButton = __webpack_require__(44);
+	var _RadioButton = __webpack_require__(45);
 	
-	var _SelectField = __webpack_require__(45);
+	var _SelectField = __webpack_require__(46);
 	
 	var _SelectField2 = _interopRequireDefault(_SelectField);
 	
-	var _MenuItem = __webpack_require__(43);
+	var _MenuItem = __webpack_require__(44);
 	
 	var _MenuItem2 = _interopRequireDefault(_MenuItem);
 	
-	var _Toggle = __webpack_require__(13);
+	var _Toggle = __webpack_require__(14);
 	
 	var _Toggle2 = _interopRequireDefault(_Toggle);
 	
-	var _Checkbox = __webpack_require__(95);
+	var _Checkbox = __webpack_require__(96);
 	
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 	
-	var _UserReducer = __webpack_require__(40);
+	var _UserReducer = __webpack_require__(41);
+	
+	var _UserActions = __webpack_require__(36);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -498,6 +503,9 @@ exports.modules = {
 	
 	
 	// Import Selectors
+	
+	
+	// Import Actions
 	
 	
 	// Styles
@@ -555,38 +563,52 @@ exports.modules = {
 	    _this.state = {};
 	
 	    //Binds
-	    _this.handleChange = _this.handleChange.bind(_this);
+	    _this.handleHealthInsuranceChange = _this.handleHealthInsuranceChange.bind(_this);
 	    _this.handleGenderChange = _this.handleGenderChange.bind(_this);
 	    _this.handleDOBChange = _this.handleDOBChange.bind(_this);
+	    _this.isValidated = _this.isValidated.bind(_this);
+	    _this.updateState = _this.updateState.bind(_this);
 	    return _this;
 	  }
 	
 	  _createClass(StepNumber2, [{
-	    key: 'handleChange',
-	    value: function handleChange(event, index, value) {
+	    key: 'isValidated',
+	    value: function isValidated() {
+	      (0, _UserActions.updateUserDetails)();
+	      return true;
+	    }
+	  }, {
+	    key: 'handleHealthInsuranceChange',
+	    value: function handleHealthInsuranceChange(event, index, value) {
 	      console.log('the new value is' + value);
 	      this.props.user.health_insurance = value;
-	      this.setState({ user: this.props.user });
+	      this.updateState();
 	    }
 	  }, {
 	    key: 'handleGenderChange',
 	    value: function handleGenderChange(event, value) {
 	      console.log('the new value is' + value);
 	      this.props.user.gender = value;
-	      this.setState({ user: this.props.user });
+	      this.updateState();
 	    }
 	  }, {
 	    key: 'handleDOBChange',
 	    value: function handleDOBChange(event, value) {
 	      console.log('the new value is' + value);
 	      this.props.user.dob = value;
+	      this.updateState();
+	    }
+	  }, {
+	    key: 'updateState',
+	    value: function updateState() {
+	      this.props.dispatch((0, _UserActions.updateUserDetails)(this.props.user));
 	      this.setState({ user: this.props.user });
 	    }
 	  }, {
-	    key: 'onCheck',
-	    value: function onCheck(e, checked) {
+	    key: 'handleIsSmokingChange',
+	    value: function handleIsSmokingChange(e, checked) {
 	      this.props.user.isSmoking = !this.props.user.isSmoking;
-	      this.setState({ user: this.props.user });
+	      this.updateState();
 	    }
 	  }, {
 	    key: 'render',
@@ -635,6 +657,7 @@ exports.modules = {
 	                        _RadioButton.RadioButtonGroup,
 	                        { name: 'gender',
 	                          defaultSelected: this.props.user.gender,
+	                          valueSelected: this.props.user.gender,
 	                          style: styles.genderRadioButton,
 	                          onChange: this.handleGenderChange },
 	                        _react2.default.createElement(_RadioButton.RadioButton, {
@@ -685,7 +708,7 @@ exports.modules = {
 	                        {
 	                          floatingLabelText: 'Health insurance',
 	                          value: this.props.user.health_insurance,
-	                          onChange: this.handleChange
+	                          onChange: this.handleHealthInsuranceChange
 	                        },
 	                        _react2.default.createElement(_MenuItem2.default, { value: 1, primaryText: 'Unitedhealth Group' }),
 	                        _react2.default.createElement(_MenuItem2.default, { value: 2, primaryText: 'Wellpoint Inc. Group' }),
@@ -722,7 +745,7 @@ exports.modules = {
 	                          label: 'Smoking',
 	                          checked: !!this.props.user.isSmoking,
 	                          onCheck: function onCheck(e, checked) {
-	                            return _this2.onCheck(e, checked);
+	                            return _this2.handleIsSmokingChange(e, checked);
 	                          } })
 	                      )
 	                    )
@@ -754,7 +777,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 90:
+/***/ 91:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -770,11 +793,11 @@ exports.modules = {
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Toggle = __webpack_require__(13);
+	var _Toggle = __webpack_require__(14);
 	
 	var _Toggle2 = _interopRequireDefault(_Toggle);
 	
-	var _Dialog = __webpack_require__(37);
+	var _Dialog = __webpack_require__(38);
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
@@ -808,13 +831,13 @@ exports.modules = {
 	  }
 	};
 	
-	var Step3 = function (_Component) {
-	  _inherits(Step3, _Component);
+	var StepNumber3 = function (_Component) {
+	  _inherits(StepNumber3, _Component);
 	
-	  function Step3(props) {
-	    _classCallCheck(this, Step3);
+	  function StepNumber3(props) {
+	    _classCallCheck(this, StepNumber3);
 	
-	    var _this = _possibleConstructorReturn(this, (Step3.__proto__ || Object.getPrototypeOf(Step3)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (StepNumber3.__proto__ || Object.getPrototypeOf(StepNumber3)).call(this, props));
 	
 	    _this.handleOpen = function () {
 	      _this.setState({ dialogOpen: true });
@@ -833,10 +856,11 @@ exports.modules = {
 	    _this.stateChanged = _this.stateChanged.bind(_this);
 	    _this.handleOpen = _this.handleOpen.bind(_this);
 	    _this.handleClose = _this.handleClose.bind(_this);
+	    _this.isValidated = _this.isValidated.bind(_this);
 	    return _this;
 	  }
 	
-	  _createClass(Step3, [{
+	  _createClass(StepNumber3, [{
 	    key: 'isValidated',
 	    value: function isValidated() {
 	      console.log(this.state);
@@ -1666,14 +1690,14 @@ exports.modules = {
 	    }
 	  }]);
 	
-	  return Step3;
+	  return StepNumber3;
 	}(_react.Component);
 	
-	exports.default = Step3;
+	exports.default = StepNumber3;
 
 /***/ },
 
-/***/ 91:
+/***/ 92:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1691,11 +1715,11 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(2);
 	
-	var _CircularProgress = __webpack_require__(36);
+	var _CircularProgress = __webpack_require__(37);
 	
 	var _CircularProgress2 = _interopRequireDefault(_CircularProgress);
 	
-	var _MedicalRIghtItem = __webpack_require__(87);
+	var _MedicalRIghtItem = __webpack_require__(88);
 	
 	var _MedicalRIghtItem2 = _interopRequireDefault(_MedicalRIghtItem);
 	
@@ -1781,7 +1805,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 92:
+/***/ 93:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1799,11 +1823,11 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(2);
 	
-	var _CircularProgress = __webpack_require__(36);
+	var _CircularProgress = __webpack_require__(37);
 	
 	var _CircularProgress2 = _interopRequireDefault(_CircularProgress);
 	
-	var _MedicalRIghtItem = __webpack_require__(87);
+	var _MedicalRIghtItem = __webpack_require__(88);
 	
 	var _MedicalRIghtItem2 = _interopRequireDefault(_MedicalRIghtItem);
 	
@@ -1875,7 +1899,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 93:
+/***/ 94:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1896,7 +1920,7 @@ exports.modules = {
 	
 	var _reactIntl = __webpack_require__(1);
 	
-	var _Checkbox = __webpack_require__(95);
+	var _Checkbox = __webpack_require__(96);
 	
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 	
@@ -1968,7 +1992,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 94:
+/***/ 95:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1982,7 +2006,7 @@ exports.modules = {
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactStepzilla = __webpack_require__(46);
+	var _reactStepzilla = __webpack_require__(47);
 	
 	var _reactStepzilla2 = _interopRequireDefault(_reactStepzilla);
 	
@@ -1992,23 +2016,23 @@ exports.modules = {
 	
 	var _WizardMain2 = _interopRequireDefault(_WizardMain);
 	
-	var _StepNumber = __webpack_require__(88);
+	var _StepNumber = __webpack_require__(89);
 	
 	var _StepNumber2 = _interopRequireDefault(_StepNumber);
 	
-	var _StepNumber3 = __webpack_require__(89);
+	var _StepNumber3 = __webpack_require__(90);
 	
 	var _StepNumber4 = _interopRequireDefault(_StepNumber3);
 	
-	var _StepNumber5 = __webpack_require__(90);
+	var _StepNumber5 = __webpack_require__(91);
 	
 	var _StepNumber6 = _interopRequireDefault(_StepNumber5);
 	
-	var _StepNumber7 = __webpack_require__(91);
+	var _StepNumber7 = __webpack_require__(92);
 	
 	var _StepNumber8 = _interopRequireDefault(_StepNumber7);
 	
-	var _StepNumber9 = __webpack_require__(92);
+	var _StepNumber9 = __webpack_require__(93);
 	
 	var _StepNumber10 = _interopRequireDefault(_StepNumber9);
 	

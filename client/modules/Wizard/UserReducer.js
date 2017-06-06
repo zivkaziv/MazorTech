@@ -1,20 +1,20 @@
-import { ADD_USER} from './UserActions';
+import { INIT_USER,UPDATE_USER,TERMS_AGREE} from './UserActions';
 
-let initialDob = new Date();
+// let initialDob = new Date();
 // initialDob.setFullYear(initialDob.getFullYear() - 25);
 // Initial State
-const initialState = {
-  gender:'female',
-  isSmoking:false,
-  dob:initialDob,
-  health_insurance:4
-};
+const initialState = { user: {} };
 
 const UserReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_USER :
+    case INIT_USER :
       return {
-        data: [action.user, ...state.data],
+        ...action.user
+      };
+    case UPDATE_USER :
+      console.log('update');
+      return {
+        ...action.user
       };
 
     default:

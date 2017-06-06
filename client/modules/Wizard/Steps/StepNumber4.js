@@ -54,7 +54,6 @@ class StepNumber4 extends Component {
   }
 }
 
-
 function mapStateToProps(state) {
   return {
     // showAddPost: getShowAddPost(state),

@@ -6,6 +6,7 @@ import WizardMain from '../../componenets/WizardMain';
 
 // Import Actions
 import { fetchMedicalRights } from '../../WizardActions';
+import { fetchUser } from '../../UserActions';
 // import { toggleAddPost } from '../../../App/AppActions';
 
 // Import Selectors
@@ -21,6 +22,7 @@ const styles = {
 class WizardPage extends Component {
   componentDidMount() {
     this.props.dispatch(fetchMedicalRights());
+    this.props.dispatch(fetchUser());
   }
 
   //
