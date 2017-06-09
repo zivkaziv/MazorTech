@@ -1,7 +1,7 @@
 exports.ids = [1];
 exports.modules = {
 
-/***/ 87:
+/***/ 86:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19,7 +19,7 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(2);
 	
-	var _WizardMain = __webpack_require__(95);
+	var _WizardMain = __webpack_require__(94);
 	
 	var _WizardMain2 = _interopRequireDefault(_WizardMain);
 	
@@ -117,12 +117,11 @@ exports.modules = {
 	WizardPage.contextTypes = {
 	  router: _react2.default.PropTypes.object
 	};
-	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(WizardPage);
 
 /***/ },
 
-/***/ 88:
+/***/ 87:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -136,7 +135,7 @@ exports.modules = {
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Card = __webpack_require__(99);
+	var _Card = __webpack_require__(98);
 	
 	var _FlatButton = __webpack_require__(35);
 	
@@ -189,7 +188,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 89:
+/***/ 88:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -207,11 +206,11 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(2);
 	
-	var _MedicalDiagnosticItem = __webpack_require__(94);
+	var _MedicalDiagnosticItem = __webpack_require__(93);
 	
 	var _MedicalDiagnosticItem2 = _interopRequireDefault(_MedicalDiagnosticItem);
 	
-	var _reactSearchInput = __webpack_require__(101);
+	var _reactSearchInput = __webpack_require__(100);
 	
 	var _reactSearchInput2 = _interopRequireDefault(_reactSearchInput);
 	
@@ -227,15 +226,15 @@ exports.modules = {
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
-	var _TextField = __webpack_require__(100);
+	var _TextField = __webpack_require__(99);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
-	var _getMuiTheme = __webpack_require__(98);
+	var _getMuiTheme = __webpack_require__(97);
 	
 	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 	
-	var _lightBaseTheme = __webpack_require__(97);
+	var _lightBaseTheme = __webpack_require__(96);
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
@@ -447,7 +446,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 90:
+/***/ 89:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -483,7 +482,7 @@ exports.modules = {
 	
 	var _Toggle2 = _interopRequireDefault(_Toggle);
 	
-	var _Checkbox = __webpack_require__(96);
+	var _Checkbox = __webpack_require__(95);
 	
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 	
@@ -777,7 +776,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 91:
+/***/ 90:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1697,7 +1696,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 92:
+/***/ 91:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1719,7 +1718,7 @@ exports.modules = {
 	
 	var _CircularProgress2 = _interopRequireDefault(_CircularProgress);
 	
-	var _MedicalRIghtItem = __webpack_require__(88);
+	var _MedicalRIghtItem = __webpack_require__(87);
 	
 	var _MedicalRIghtItem2 = _interopRequireDefault(_MedicalRIghtItem);
 	
@@ -1805,7 +1804,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 93:
+/***/ 92:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1827,7 +1826,7 @@ exports.modules = {
 	
 	var _CircularProgress2 = _interopRequireDefault(_CircularProgress);
 	
-	var _MedicalRIghtItem = __webpack_require__(88);
+	var _MedicalRIghtItem = __webpack_require__(87);
 	
 	var _MedicalRIghtItem2 = _interopRequireDefault(_MedicalRIghtItem);
 	
@@ -1899,7 +1898,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 94:
+/***/ 93:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1922,7 +1921,7 @@ exports.modules = {
 	
 	var _reactIntl = __webpack_require__(1);
 	
-	var _Checkbox = __webpack_require__(96);
+	var _Checkbox = __webpack_require__(95);
 	
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 	
@@ -2002,7 +2001,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 95:
+/***/ 94:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2026,23 +2025,23 @@ exports.modules = {
 	
 	var _WizardMain2 = _interopRequireDefault(_WizardMain);
 	
-	var _StepNumber = __webpack_require__(89);
+	var _StepNumber = __webpack_require__(88);
 	
 	var _StepNumber2 = _interopRequireDefault(_StepNumber);
 	
-	var _StepNumber3 = __webpack_require__(90);
+	var _StepNumber3 = __webpack_require__(89);
 	
 	var _StepNumber4 = _interopRequireDefault(_StepNumber3);
 	
-	var _StepNumber5 = __webpack_require__(91);
+	var _StepNumber5 = __webpack_require__(90);
 	
 	var _StepNumber6 = _interopRequireDefault(_StepNumber5);
 	
-	var _StepNumber7 = __webpack_require__(92);
+	var _StepNumber7 = __webpack_require__(91);
 	
 	var _StepNumber8 = _interopRequireDefault(_StepNumber7);
 	
-	var _StepNumber9 = __webpack_require__(93);
+	var _StepNumber9 = __webpack_require__(92);
 	
 	var _StepNumber10 = _interopRequireDefault(_StepNumber9);
 	

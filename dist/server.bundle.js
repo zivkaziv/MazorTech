@@ -425,7 +425,7 @@
 	
 	__webpack_require__(71);
 	
-	var _en = __webpack_require__(79);
+	var _en = __webpack_require__(78);
 	
 	var _en2 = _interopRequireDefault(_en);
 	
@@ -435,7 +435,7 @@
 	
 	__webpack_require__(72);
 	
-	var _fr = __webpack_require__(80);
+	var _fr = __webpack_require__(79);
 	
 	var _fr2 = _interopRequireDefault(_fr);
 	
@@ -564,13 +564,13 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reduxDevtools = __webpack_require__(81);
+	var _reduxDevtools = __webpack_require__(80);
 	
-	var _reduxDevtoolsLogMonitor = __webpack_require__(83);
+	var _reduxDevtoolsLogMonitor = __webpack_require__(82);
 	
 	var _reduxDevtoolsLogMonitor2 = _interopRequireDefault(_reduxDevtoolsLogMonitor);
 	
-	var _reduxDevtoolsDockMonitor = __webpack_require__(82);
+	var _reduxDevtoolsDockMonitor = __webpack_require__(81);
 	
 	var _reduxDevtoolsDockMonitor2 = _interopRequireDefault(_reduxDevtoolsDockMonitor);
 	
@@ -711,7 +711,7 @@
 	  _react2.default.createElement(_reactRouter.IndexRoute, {
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(2).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(86).default);
+	        cb(null, __webpack_require__(85).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  }),
@@ -719,7 +719,7 @@
 	    path: '/wizard',
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(1).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(87).default);
+	        cb(null, __webpack_require__(86).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  })
@@ -739,7 +739,7 @@
 	
 	var _redux = __webpack_require__(19);
 	
-	var _reduxThunk = __webpack_require__(84);
+	var _reduxThunk = __webpack_require__(83);
 	
 	var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 	
@@ -1125,17 +1125,18 @@
 	
 	var _apiCaller2 = _interopRequireDefault(_apiCaller);
 	
-	var _reactCookie = __webpack_require__(78);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// import Cookies from 'universal-cookie';
+	
 	// Export Constants
-	/**
-	 * Created by ziv on 11/05/2017.
-	 */
-	var INIT_USER = exports.INIT_USER = 'INIT_USER';
+	var INIT_USER = exports.INIT_USER = 'INIT_USER'; /**
+	                                                  * Created by ziv on 11/05/2017.
+	                                                  */
 	var UPDATE_USER = exports.UPDATE_USER = 'UPDATE_USER';
 	var TERMS_AGREE = exports.TERMS_AGREE = 'TERMS_AGREE';
+	
+	// const cookies = new Cookies();
 	
 	function initUser(user) {
 	  return {
@@ -1154,8 +1155,8 @@
 	function fetchUser() {
 	  return function (dispatch) {
 	    //try to load from cookies otherwise use default
-	    var cookies = new _reactCookie.Cookies();
-	    var user = cookies.get('mzr_usr');
+	    // let user = cookies.get('mzr_usr');
+	    var user = getDefaultUser();
 	    if (!user) {
 	      user = getDefaultUser();
 	    }
@@ -1167,6 +1168,7 @@
 	function updateUserDetails(userToUpdate) {
 	  return function (dispatch) {
 	    //try to load from cookies otherwise use default
+	    // cookies.set('mzr_usr',userToUpdate);
 	    dispatch(updateUser(userToUpdate));
 	  };
 	}
@@ -3987,7 +3989,7 @@
 	
 	var _limax2 = _interopRequireDefault(_limax);
 	
-	var _sanitizeHtml = __webpack_require__(85);
+	var _sanitizeHtml = __webpack_require__(84);
 	
 	var _sanitizeHtml2 = _interopRequireDefault(_sanitizeHtml);
 	
@@ -4359,51 +4361,46 @@
 /* 78 */
 /***/ function(module, exports) {
 
-	module.exports = require("react-cookie");
+	module.exports = require("react-intl/locale-data/en");
 
 /***/ },
 /* 79 */
 /***/ function(module, exports) {
 
-	module.exports = require("react-intl/locale-data/en");
+	module.exports = require("react-intl/locale-data/fr");
 
 /***/ },
 /* 80 */
 /***/ function(module, exports) {
 
-	module.exports = require("react-intl/locale-data/fr");
+	module.exports = require("redux-devtools");
 
 /***/ },
 /* 81 */
 /***/ function(module, exports) {
 
-	module.exports = require("redux-devtools");
+	module.exports = require("redux-devtools-dock-monitor");
 
 /***/ },
 /* 82 */
 /***/ function(module, exports) {
 
-	module.exports = require("redux-devtools-dock-monitor");
+	module.exports = require("redux-devtools-log-monitor");
 
 /***/ },
 /* 83 */
 /***/ function(module, exports) {
 
-	module.exports = require("redux-devtools-log-monitor");
+	module.exports = require("redux-thunk");
 
 /***/ },
 /* 84 */
 /***/ function(module, exports) {
 
-	module.exports = require("redux-thunk");
-
-/***/ },
-/* 85 */
-/***/ function(module, exports) {
-
 	module.exports = require("sanitize-html");
 
 /***/ },
+/* 85 */,
 /* 86 */,
 /* 87 */,
 /* 88 */,
@@ -4413,38 +4410,37 @@
 /* 92 */,
 /* 93 */,
 /* 94 */,
-/* 95 */,
-/* 96 */
+/* 95 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/Checkbox");
 
 /***/ },
-/* 97 */
+/* 96 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/styles/baseThemes/lightBaseTheme");
 
 /***/ },
-/* 98 */
+/* 97 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/styles/getMuiTheme");
 
 /***/ },
-/* 99 */
+/* 98 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/Card");
 
 /***/ },
-/* 100 */
+/* 99 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/TextField");
 
 /***/ },
-/* 101 */
+/* 100 */
 /***/ function(module, exports) {
 
 	module.exports = require("react-search-input");

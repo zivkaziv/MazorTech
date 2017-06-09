@@ -2,13 +2,14 @@
  * Created by ziv on 11/05/2017.
  */
 import callApi from '../../util/apiCaller';
-import { CookiesProvider, withCookies, Cookies } from 'react-cookie';
+// import Cookies from 'universal-cookie';
 
 // Export Constants
 export const INIT_USER = 'INIT_USER';
 export const UPDATE_USER = 'UPDATE_USER';
 export const TERMS_AGREE = 'TERMS_AGREE';
 
+// const cookies = new Cookies();
 
 export function initUser(user) {
   return {
@@ -24,12 +25,11 @@ export function updateUser(user) {
   };
 }
 
-
 export function fetchUser() {
   return (dispatch) => {
     //try to load from cookies otherwise use default
-    const cookies = new Cookies();
-    let user = cookies.get('mzr_usr');
+    // let user = cookies.get('mzr_usr');
+    let user = getDefaultUser();
     if(!user){
       user = getDefaultUser();
     }
@@ -41,10 +41,10 @@ export function fetchUser() {
 export function updateUserDetails(userToUpdate) {
   return (dispatch) => {
     //try to load from cookies otherwise use default
+    // cookies.set('mzr_usr',userToUpdate);
     dispatch(updateUser(userToUpdate));
   };
 }
-
 
 function getDefaultUser() {
   let initialDob = new Date();

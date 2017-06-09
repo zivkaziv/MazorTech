@@ -67,5 +67,4 @@ WizardPage.propTypes = {
 WizardPage.contextTypes = {
   router: React.PropTypes.object,
 };
-
 export default connect(mapStateToProps)(WizardPage);
