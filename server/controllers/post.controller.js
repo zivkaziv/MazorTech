@@ -20,7 +20,7 @@ export function getPosts(req, res) {
 
 /**
  * Save a post
- * @param req
+ * @param reqc
  * @param res
  * @returns void
  */

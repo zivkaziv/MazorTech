@@ -34,6 +34,7 @@ import routes from '../client/routes';
 import { fetchComponentData } from './util/fetchData';
 import posts from './routes/post.routes';
 import medicalRights from './routes/medicalrights.routes';
+import populateDB from './routes/populateDB.routes';
 import dummyData from './dummyData';
 import serverConfig from './config';
 
@@ -48,7 +49,7 @@ mongoose.connect(serverConfig.mongoURL, (error) => {
   }
 
   // feed some dummy data in DB.
-  dummyData();
+  //dummyData();
 });
 
 // Apply body Parser and server public assets and routes
@@ -58,6 +59,7 @@ app.use(bodyParser.urlencoded({ limit: '20mb', extended: false }));
 app.use(Express.static(path.resolve(__dirname, '../dist')));
 app.use('/api', posts);
 app.use('/api', medicalRights);
+app.use('/api', populateDB);
 
 // Render Initial HTML
 const renderFullPage = (html, initialState) => {

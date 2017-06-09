@@ -5,8 +5,13 @@ import { Router } from 'express';
 import * as MedicalRightsController from '../controllers/medicalrights.controller';
 const router = new Router();
 
+// Get all conditions
+router.route('/medicalConditions').get(MedicalRightsController.getAllConditions);
+
 // Get all rights
 router.route('/medicalrights').get(MedicalRightsController.getMedicalRights);
 
+// Get one post by cuid
+router.route('/medicalrights/:condition').get(MedicalRightsController.getMedicalRights);
 
 export default router;
