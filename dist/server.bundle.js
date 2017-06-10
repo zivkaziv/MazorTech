@@ -68,7 +68,7 @@
 /******/ 	};
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 66);
+/******/ 	return __webpack_require__(__webpack_require__.s = 69);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -105,10 +105,16 @@
 /* 5 */
 /***/ function(module, exports) {
 
-	module.exports = require("react-helmet");
+	module.exports = require("mongoose");
 
 /***/ },
 /* 6 */
+/***/ function(module, exports) {
+
+	module.exports = require("react-helmet");
+
+/***/ },
+/* 7 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -129,7 +135,7 @@
 	}
 
 /***/ },
-/* 7 */
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -147,7 +153,7 @@
 	exports.deletePost = deletePost;
 	exports.deletePostRequest = deletePostRequest;
 	
-	var _apiCaller = __webpack_require__(9);
+	var _apiCaller = __webpack_require__(10);
 	
 	var _apiCaller2 = _interopRequireDefault(_apiCaller);
 	
@@ -219,7 +225,7 @@
 	}
 
 /***/ },
-/* 8 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -230,7 +236,7 @@
 	});
 	exports.getPost = exports.getPosts = undefined;
 	
-	var _PostActions = __webpack_require__(7);
+	var _PostActions = __webpack_require__(8);
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
@@ -282,7 +288,7 @@
 	exports.default = PostReducer;
 
 /***/ },
-/* 9 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -294,11 +300,11 @@
 	exports.API_URL = undefined;
 	exports.default = callApi;
 	
-	var _isomorphicFetch = __webpack_require__(73);
+	var _isomorphicFetch = __webpack_require__(78);
 	
 	var _isomorphicFetch2 = _interopRequireDefault(_isomorphicFetch);
 	
-	var _config = __webpack_require__(11);
+	var _config = __webpack_require__(12);
 	
 	var _config2 = _interopRequireDefault(_config);
 	
@@ -335,7 +341,7 @@
 	}
 
 /***/ },
-/* 10 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -345,7 +351,7 @@
 	  value: true
 	});
 	
-	var _mongoose = __webpack_require__(12);
+	var _mongoose = __webpack_require__(5);
 	
 	var _mongoose2 = _interopRequireDefault(_mongoose);
 	
@@ -353,19 +359,16 @@
 	
 	var Schema = _mongoose2.default.Schema;
 	
-	var postSchema = new Schema({
-	  name: { type: 'String', required: true },
-	  title: { type: 'String', required: true },
-	  content: { type: 'String', required: true },
-	  slug: { type: 'String', required: true },
-	  cuid: { type: 'String', required: true },
+	var schema = new Schema({
+	  condition: { type: 'String', required: true },
+	  rights: { type: 'Object', required: true },
 	  dateAdded: { type: 'Date', default: Date.now, required: true }
 	});
 	
-	exports.default = _mongoose2.default.model('Post', postSchema);
+	exports.default = _mongoose2.default.model('MedicalEntry', schema);
 
 /***/ },
-/* 11 */
+/* 12 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -382,12 +385,6 @@
 	};
 	
 	exports.default = config;
-
-/***/ },
-/* 12 */
-/***/ function(module, exports) {
-
-	module.exports = require("mongoose");
 
 /***/ },
 /* 13 */
@@ -415,31 +412,31 @@
 	
 	var _reactIntl = __webpack_require__(1);
 	
-	var _intl = __webpack_require__(69);
+	var _intl = __webpack_require__(74);
 	
 	var _intl2 = _interopRequireDefault(_intl);
 	
-	var _intlLocalesSupported = __webpack_require__(70);
+	var _intlLocalesSupported = __webpack_require__(75);
 	
 	var _intlLocalesSupported2 = _interopRequireDefault(_intlLocalesSupported);
 	
-	__webpack_require__(71);
+	__webpack_require__(76);
 	
-	var _en = __webpack_require__(78);
+	var _en = __webpack_require__(83);
 	
 	var _en2 = _interopRequireDefault(_en);
 	
-	var _en3 = __webpack_require__(48);
+	var _en3 = __webpack_require__(49);
 	
 	var _en4 = _interopRequireDefault(_en3);
 	
-	__webpack_require__(72);
+	__webpack_require__(77);
 	
-	var _fr = __webpack_require__(79);
+	var _fr = __webpack_require__(84);
 	
 	var _fr2 = _interopRequireDefault(_fr);
 	
-	var _fr3 = __webpack_require__(49);
+	var _fr3 = __webpack_require__(50);
 	
 	var _fr4 = _interopRequireDefault(_fr3);
 	
@@ -516,7 +513,7 @@
 	});
 	exports.getShowAddPost = undefined;
 	
-	var _AppActions = __webpack_require__(6);
+	var _AppActions = __webpack_require__(7);
 	
 	// Initial State
 	var initialState = {
@@ -564,13 +561,13 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reduxDevtools = __webpack_require__(80);
+	var _reduxDevtools = __webpack_require__(85);
 	
-	var _reduxDevtoolsLogMonitor = __webpack_require__(82);
+	var _reduxDevtoolsLogMonitor = __webpack_require__(87);
 	
 	var _reduxDevtoolsLogMonitor2 = _interopRequireDefault(_reduxDevtoolsLogMonitor);
 	
-	var _reduxDevtoolsDockMonitor = __webpack_require__(81);
+	var _reduxDevtoolsDockMonitor = __webpack_require__(86);
 	
 	var _reduxDevtoolsDockMonitor2 = _interopRequireDefault(_reduxDevtoolsDockMonitor);
 	
@@ -679,7 +676,7 @@
 	
 	var _reactRouter = __webpack_require__(3);
 	
-	var _App = __webpack_require__(50);
+	var _App = __webpack_require__(51);
 	
 	var _App2 = _interopRequireDefault(_App);
 	
@@ -699,8 +696,8 @@
 	/* eslint-disable global-require */
 	if (process.env.NODE_ENV !== 'production') {
 	  // Require async routes only in development for react-hot-reloader to work.
+	  __webpack_require__(59);
 	  __webpack_require__(58);
-	  __webpack_require__(57);
 	}
 	
 	// react-router setup with code-splitting
@@ -711,7 +708,7 @@
 	  _react2.default.createElement(_reactRouter.IndexRoute, {
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(2).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(85).default);
+	        cb(null, __webpack_require__(90).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  }),
@@ -719,7 +716,7 @@
 	    path: '/wizard',
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(1).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(86).default);
+	        cb(null, __webpack_require__(91).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  })
@@ -739,7 +736,7 @@
 	
 	var _redux = __webpack_require__(19);
 	
-	var _reduxThunk = __webpack_require__(83);
+	var _reduxThunk = __webpack_require__(88);
 	
 	var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 	
@@ -747,7 +744,7 @@
 	
 	var _DevTools2 = _interopRequireDefault(_DevTools);
 	
-	var _reducers = __webpack_require__(63);
+	var _reducers = __webpack_require__(64);
 	
 	var _reducers2 = _interopRequireDefault(_reducers);
 	
@@ -786,26 +783,49 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	
 	exports.default = function () {
-	  _post2.default.count().exec(function (err, count) {
+	  _medicalEntry2.default.count().exec(function (err, count) {
 	    if (count > 0) {
 	      return;
 	    }
 	
-	    var content1 = 'Sed ut perspiciatis unde omnis iste natus error\n      sit voluptatem accusantium doloremque laudantium, totam rem aperiam,\n      eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae\n      vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit\n      aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos\n      qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem\n      ipsum quia dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\n      enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi\n      ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit\n      in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint\n      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id\n      est laborum';
+	    var dummyRights = {
+	      "Medical_Condition": "OSA1",
+	      "rights": [{
+	        "Medical_Right": "hopa",
+	        "Medical_Right_Description": "Bla",
+	        "description": "CPAP (continuous positive airway pressure)",
+	        "filters": [{
+	          "name": "Age",
+	          "filter_type": "date",
+	          "min": 10,
+	          "max": 30
+	        }, {
+	          "name": "Weight",
+	          "filter_type": "range",
+	          "min": 10,
+	          "max": 30
+	        }, {
+	          "name": "Smoking",
+	          "filter_type": "boolean",
+	          "value": false
+	        }, {
+	          "name": "Family_Background",
+	          "filter_type": "boolean",
+	          "value": true
+	        }]
+	      }]
+	    };
 	
-	    var content2 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\n      enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi\n      ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit\n      in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint\n      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id\n      est laborum. Sed ut perspiciatis unde omnis iste natus error\n      sit voluptatem accusantium doloremque laudantium, totam rem aperiam,\n      eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae\n      vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit\n      aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos\n      qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem\n      ipsum quia dolor sit amet.';
+	    var me1 = new _medicalEntry2.default({ condition: 'OSA1', rights: dummyRights });
 	
-	    var post1 = new _post2.default({ name: 'Admin', title: 'Hello MERN', slug: 'hello-mern', cuid: 'cikqgkv4q01ck7453ualdn3hd', content: content1 });
-	    var post2 = new _post2.default({ name: 'Admin', title: 'Lorem Ipsum', slug: 'lorem-ipsum', cuid: 'cikqgkv4q01ck7453ualdn3hf', content: content2 });
-	
-	    _post2.default.create([post1, post2], function (error) {
+	    _medicalEntry2.default.create([me1], function (error) {
 	      if (!error) {
 	        // console.log('ready to go....');
 	      }
@@ -813,9 +833,9 @@
 	  });
 	};
 	
-	var _post = __webpack_require__(10);
+	var _medicalEntry = __webpack_require__(11);
 	
-	var _post2 = _interopRequireDefault(_post);
+	var _medicalEntry2 = _interopRequireDefault(_medicalEntry);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -832,7 +852,7 @@
 	
 	var _express = __webpack_require__(4);
 	
-	var _medicalrights = __webpack_require__(64);
+	var _medicalrights = __webpack_require__(65);
 	
 	var MedicalRightsController = _interopRequireWildcard(_medicalrights);
 	
@@ -843,8 +863,14 @@
 	 */
 	var router = new _express.Router();
 	
+	// Get all conditions
+	router.route('/medicalConditions').get(MedicalRightsController.getAllConditions);
+	
 	// Get all rights
 	router.route('/medicalrights').get(MedicalRightsController.getMedicalRights);
+	
+	// Get one post by cuid
+	router.route('/medicalrights/:condition').get(MedicalRightsController.getMedicalRights);
 	
 	exports.default = router;
 
@@ -861,7 +887,33 @@
 	
 	var _express = __webpack_require__(4);
 	
-	var _post = __webpack_require__(65);
+	var _populateDB = __webpack_require__(66);
+	
+	var PopulateDBController = _interopRequireWildcard(_populateDB);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	var router = new _express.Router();
+	
+	// Get all rights from DB and save to DB
+	router.route('/populateDB').get(PopulateDBController.populateDB);
+	
+	exports.default = router;
+
+/***/ },
+/* 26 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _express = __webpack_require__(4);
+	
+	var _post = __webpack_require__(67);
 	
 	var PostController = _interopRequireWildcard(_post);
 	
@@ -884,7 +936,7 @@
 	exports.default = router;
 
 /***/ },
-/* 26 */
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -895,7 +947,7 @@
 	});
 	exports.fetchComponentData = fetchComponentData;
 	
-	var _promiseUtils = __webpack_require__(67);
+	var _promiseUtils = __webpack_require__(70);
 	
 	function fetchComponentData(store, components, params) {
 	  var needs = components.reduce(function (prev, current) {
@@ -911,16 +963,16 @@
 	  */
 
 /***/ },
-/* 27 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	/* WEBPACK VAR INJECTION */(function(__dirname) {'use strict';
 	
 	var webpack = __webpack_require__(13);
-	var cssnext = __webpack_require__(75);
-	var postcssFocus = __webpack_require__(76);
-	var postcssReporter = __webpack_require__(77);
+	var cssnext = __webpack_require__(80);
+	var postcssFocus = __webpack_require__(81);
+	var postcssReporter = __webpack_require__(82);
 	
 	module.exports = {
 	  devtool: 'cheap-module-eval-source-map',
@@ -990,43 +1042,43 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, ""))
 
 /***/ },
-/* 28 */
+/* 29 */
 /***/ function(module, exports) {
 
 	module.exports = require("body-parser");
 
 /***/ },
-/* 29 */
+/* 30 */
 /***/ function(module, exports) {
 
 	module.exports = require("compression");
 
 /***/ },
-/* 30 */
+/* 31 */
 /***/ function(module, exports) {
 
 	module.exports = require("path");
 
 /***/ },
-/* 31 */
+/* 32 */
 /***/ function(module, exports) {
 
 	module.exports = require("react-dom/server");
 
 /***/ },
-/* 32 */
+/* 33 */
 /***/ function(module, exports) {
 
 	module.exports = require("webpack-dev-middleware");
 
 /***/ },
-/* 33 */
+/* 34 */
 /***/ function(module, exports) {
 
 	module.exports = require("webpack-hot-middleware");
 
 /***/ },
-/* 34 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1037,7 +1089,7 @@
 	});
 	exports.getSelectedMedicalRights = exports.getMedicalRights = undefined;
 	
-	var _WizardActions = __webpack_require__(37);
+	var _WizardActions = __webpack_require__(38);
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
@@ -1100,13 +1152,13 @@
 	exports.default = WizardReducer;
 
 /***/ },
-/* 35 */
+/* 36 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/FlatButton");
 
 /***/ },
-/* 36 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1121,7 +1173,7 @@
 	exports.fetchUser = fetchUser;
 	exports.updateUserDetails = updateUserDetails;
 	
-	var _apiCaller = __webpack_require__(9);
+	var _apiCaller = __webpack_require__(10);
 	
 	var _apiCaller2 = _interopRequireDefault(_apiCaller);
 	
@@ -1184,7 +1236,7 @@
 	}
 
 /***/ },
-/* 37 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1198,7 +1250,7 @@
 	exports.selectCondition = selectCondition;
 	exports.unselectCondition = unselectCondition;
 	
-	var _apiCaller = __webpack_require__(9);
+	var _apiCaller = __webpack_require__(10);
 	
 	var _apiCaller2 = _interopRequireDefault(_apiCaller);
 	
@@ -1256,25 +1308,25 @@
 	}
 
 /***/ },
-/* 38 */
+/* 39 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/CircularProgress");
 
 /***/ },
-/* 39 */
+/* 40 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/Dialog");
 
 /***/ },
-/* 40 */
+/* 41 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/RaisedButton");
 
 /***/ },
-/* 41 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1354,7 +1406,7 @@
 	};
 
 /***/ },
-/* 42 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1367,7 +1419,7 @@
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _UserActions = __webpack_require__(36);
+	var _UserActions = __webpack_require__(37);
 	
 	// let initialDob = new Date();
 	// initialDob.setFullYear(initialDob.getFullYear() - 25);
@@ -1402,37 +1454,37 @@
 	exports.default = UserReducer;
 
 /***/ },
-/* 43 */
+/* 44 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/DatePicker");
 
 /***/ },
-/* 44 */
+/* 45 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/MenuItem");
 
 /***/ },
-/* 45 */
+/* 46 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/RadioButton");
 
 /***/ },
-/* 46 */
+/* 47 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/SelectField");
 
 /***/ },
-/* 47 */
+/* 48 */
 /***/ function(module, exports) {
 
 	module.exports = require("react-stepzilla");
 
 /***/ },
-/* 48 */
+/* 49 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1462,7 +1514,7 @@
 	};
 
 /***/ },
-/* 49 */
+/* 50 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1492,7 +1544,7 @@
 	};
 
 /***/ },
-/* 50 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1521,7 +1573,7 @@
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _reactHelmet = __webpack_require__(5);
+	var _reactHelmet = __webpack_require__(6);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
@@ -1529,15 +1581,15 @@
 	
 	var _DevTools2 = _interopRequireDefault(_DevTools);
 	
-	var _Header = __webpack_require__(52);
+	var _Header = __webpack_require__(53);
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _Footer = __webpack_require__(51);
+	var _Footer = __webpack_require__(52);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
-	var _AppActions = __webpack_require__(6);
+	var _AppActions = __webpack_require__(7);
 	
 	var _IntlActions = __webpack_require__(18);
 	
@@ -1638,7 +1690,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(App);
 
 /***/ },
-/* 51 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1695,7 +1747,7 @@
 	exports.default = Footer;
 
 /***/ },
-/* 52 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1726,7 +1778,7 @@
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _IconSvg = __webpack_require__(41);
+	var _IconSvg = __webpack_require__(42);
 	
 	var _IconSvg2 = _interopRequireDefault(_IconSvg);
 	
@@ -1773,7 +1825,7 @@
 	exports.default = Header;
 
 /***/ },
-/* 53 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1820,7 +1872,7 @@
 	exports.default = IntlReducer;
 
 /***/ },
-/* 54 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1926,7 +1978,7 @@
 	exports.default = (0, _reactIntl.injectIntl)(PostCreateWidget);
 
 /***/ },
-/* 55 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1940,7 +1992,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _PostListItem = __webpack_require__(56);
+	var _PostListItem = __webpack_require__(57);
 	
 	var _PostListItem2 = _interopRequireDefault(_PostListItem);
 	
@@ -1953,23 +2005,23 @@
 	
 	var _progTracker2 = _interopRequireDefault(_progTracker);
 	
-	var _reactStepzilla = __webpack_require__(47);
+	var _reactStepzilla = __webpack_require__(48);
 	
 	var _reactStepzilla2 = _interopRequireDefault(_reactStepzilla);
 	
-	var _Step = __webpack_require__(59);
+	var _Step = __webpack_require__(60);
 	
 	var _Step2 = _interopRequireDefault(_Step);
 	
-	var _Step3 = __webpack_require__(60);
+	var _Step3 = __webpack_require__(61);
 	
 	var _Step4 = _interopRequireDefault(_Step3);
 	
-	var _Step5 = __webpack_require__(61);
+	var _Step5 = __webpack_require__(62);
 	
 	var _Step6 = _interopRequireDefault(_Step5);
 	
-	var _Step7 = __webpack_require__(62);
+	var _Step7 = __webpack_require__(63);
 	
 	var _Step8 = _interopRequireDefault(_Step7);
 	
@@ -2025,7 +2077,7 @@
 	exports.default = PostList;
 
 /***/ },
-/* 56 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2112,7 +2164,7 @@
 	exports.default = PostListItem;
 
 /***/ },
-/* 57 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2129,7 +2181,7 @@
 	
 	var _reactRedux = __webpack_require__(2);
 	
-	var _reactHelmet = __webpack_require__(5);
+	var _reactHelmet = __webpack_require__(6);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
@@ -2147,9 +2199,9 @@
 	
 	var _PostListItem2 = _interopRequireDefault(_PostListItem);
 	
-	var _PostActions = __webpack_require__(7);
+	var _PostActions = __webpack_require__(8);
 	
-	var _PostReducer = __webpack_require__(8);
+	var _PostReducer = __webpack_require__(9);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -2214,7 +2266,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(PostDetailPage);
 
 /***/ },
-/* 58 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2232,21 +2284,21 @@
 	
 	var _reactRedux = __webpack_require__(2);
 	
-	var _PostList = __webpack_require__(55);
+	var _PostList = __webpack_require__(56);
 	
 	var _PostList2 = _interopRequireDefault(_PostList);
 	
-	var _PostCreateWidget = __webpack_require__(54);
+	var _PostCreateWidget = __webpack_require__(55);
 	
 	var _PostCreateWidget2 = _interopRequireDefault(_PostCreateWidget);
 	
-	var _PostActions = __webpack_require__(7);
+	var _PostActions = __webpack_require__(8);
 	
-	var _AppActions = __webpack_require__(6);
+	var _AppActions = __webpack_require__(7);
 	
 	var _AppReducer = __webpack_require__(16);
 	
-	var _PostReducer = __webpack_require__(8);
+	var _PostReducer = __webpack_require__(9);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -2342,7 +2394,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(PostListPage);
 
 /***/ },
-/* 59 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2358,7 +2410,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _RaisedButton = __webpack_require__(40);
+	var _RaisedButton = __webpack_require__(41);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
@@ -2496,7 +2548,7 @@
 	exports.default = Step1;
 
 /***/ },
-/* 60 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2512,17 +2564,17 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _DatePicker = __webpack_require__(43);
+	var _DatePicker = __webpack_require__(44);
 	
 	var _DatePicker2 = _interopRequireDefault(_DatePicker);
 	
-	var _RadioButton = __webpack_require__(45);
+	var _RadioButton = __webpack_require__(46);
 	
-	var _SelectField = __webpack_require__(46);
+	var _SelectField = __webpack_require__(47);
 	
 	var _SelectField2 = _interopRequireDefault(_SelectField);
 	
-	var _MenuItem = __webpack_require__(44);
+	var _MenuItem = __webpack_require__(45);
 	
 	var _MenuItem2 = _interopRequireDefault(_MenuItem);
 	
@@ -2674,7 +2726,7 @@
 	exports.default = Step2;
 
 /***/ },
-/* 61 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2694,11 +2746,11 @@
 	
 	var _Toggle2 = _interopRequireDefault(_Toggle);
 	
-	var _Dialog = __webpack_require__(39);
+	var _Dialog = __webpack_require__(40);
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
-	var _FlatButton = __webpack_require__(35);
+	var _FlatButton = __webpack_require__(36);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
@@ -3589,7 +3641,7 @@
 	exports.default = Step3;
 
 /***/ },
-/* 62 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3603,7 +3655,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _CircularProgress = __webpack_require__(38);
+	var _CircularProgress = __webpack_require__(39);
 	
 	var _CircularProgress2 = _interopRequireDefault(_CircularProgress);
 	
@@ -3629,7 +3681,7 @@
 	exports.default = Step4;
 
 /***/ },
-/* 63 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3645,19 +3697,19 @@
 	
 	var _AppReducer2 = _interopRequireDefault(_AppReducer);
 	
-	var _PostReducer = __webpack_require__(8);
+	var _PostReducer = __webpack_require__(9);
 	
 	var _PostReducer2 = _interopRequireDefault(_PostReducer);
 	
-	var _IntlReducer = __webpack_require__(53);
+	var _IntlReducer = __webpack_require__(54);
 	
 	var _IntlReducer2 = _interopRequireDefault(_IntlReducer);
 	
-	var _WizardReducer = __webpack_require__(34);
+	var _WizardReducer = __webpack_require__(35);
 	
 	var _WizardReducer2 = _interopRequireDefault(_WizardReducer);
 	
-	var _UserReducer = __webpack_require__(42);
+	var _UserReducer = __webpack_require__(43);
 	
 	var _UserReducer2 = _interopRequireDefault(_UserReducer);
 	
@@ -3678,7 +3730,7 @@
 	// Import Reducers
 
 /***/ },
-/* 64 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3688,282 +3740,94 @@
 	  value: true
 	});
 	exports.getMedicalRights = getMedicalRights;
+	exports.getAllConditions = getAllConditions;
 	
-	var _post = __webpack_require__(10);
+	var _medicalEntry = __webpack_require__(11);
 	
-	var _post2 = _interopRequireDefault(_post);
+	var _medicalEntry2 = _interopRequireDefault(_medicalEntry);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function getMedicalRights(req, res) {
-	  var right1 = {
-	    "condition": "OSA",
-	    "rights": [{
-	      "name": "CPAP (continuous positive airway pressure)",
-	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
-	      "family_history": "",
-	      "general_condition": "",
-	      "filters": [{
-	        "name": "age",
-	        "is_relevant": true,
-	        "min": 10,
-	        "max": 30
-	      }, {
-	        "name": "weight",
-	        "is_relevant": true,
-	        "min": 10,
-	        "max": 30
-	      }, {
-	        "name": "race",
-	        "is_relevant": true,
-	        "value": "black"
-	      }, {
-	        "name": "smoking",
-	        "is_relevant": true,
-	        "value": false
-	      }]
-	    }]
-	  };
-	  var right2 = {
-	    "condition": "OSA1",
-	    "rights": [{
-	      "name": "CPAP (continuous positive airway pressure)",
-	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
-	      "family_history": "",
-	      "general_condition": "",
-	      "filters": [{
-	        "name": "age",
-	        "is_relevant": true,
-	        "min": 10,
-	        "max": 30
-	      }, {
-	        "name": "weight",
-	        "is_relevant": true,
-	        "min": 10,
-	        "max": 30
-	      }, {
-	        "name": "race",
-	        "is_relevant": true,
-	        "value": "black"
-	      }, {
-	        "name": "smoking",
-	        "is_relevant": true,
-	        "value": false
-	      }]
-	    }]
-	  };
-	  var right3 = {
-	    "condition": "OSA2",
-	    "rights": [{
-	      "name": "CPAP (continuous positive airway pressure)",
-	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
-	      "family_history": "",
-	      "general_condition": "",
-	      "filters": [{
-	        "name": "age",
-	        "is_relevant": true,
-	        "min": 10,
-	        "max": 30
-	      }, {
-	        "name": "weight",
-	        "is_relevant": true,
-	        "min": 10,
-	        "max": 30
-	      }, {
-	        "name": "race",
-	        "is_relevant": true,
-	        "value": "black"
-	      }, {
-	        "name": "smoking",
-	        "is_relevant": true,
-	        "value": false
-	      }]
-	    }]
-	  };
-	  var right4 = {
-	    "condition": "OSA3",
-	    "rights": [{
-	      "name": "CPAP (continuous positive airway pressure)",
-	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
-	      "family_history": "",
-	      "general_condition": "",
-	      "filters": [{
-	        "name": "age",
-	        "is_relevant": true,
-	        "min": 10,
-	        "max": 30
-	      }, {
-	        "name": "weight",
-	        "is_relevant": true,
-	        "min": 10,
-	        "max": 30
-	      }, {
-	        "name": "race",
-	        "is_relevant": true,
-	        "value": "black"
-	      }, {
-	        "name": "smoking",
-	        "is_relevant": true,
-	        "value": false
-	      }]
-	    }]
-	  };
-	  var right5 = {
-	    "condition": "OSA4",
-	    "rights": [{
-	      "name": "CPAP (continuous positive airway pressure)",
-	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
-	      "family_history": "",
-	      "general_condition": "",
-	      "filters": [{
-	        "name": "age",
-	        "is_relevant": true,
-	        "min": 10,
-	        "max": 30
-	      }, {
-	        "name": "weight",
-	        "is_relevant": true,
-	        "min": 10,
-	        "max": 30
-	      }, {
-	        "name": "race",
-	        "is_relevant": true,
-	        "value": "black"
-	      }, {
-	        "name": "smoking",
-	        "is_relevant": true,
-	        "value": false
-	      }]
-	    }]
-	  };
-	  var right6 = {
-	    "condition": "OSA5",
-	    "rights": [{
-	      "name": "CPAP (continuous positive airway pressure)",
-	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
-	      "family_history": "",
-	      "general_condition": "",
-	      "filters": [{
-	        "name": "age",
-	        "is_relevant": true,
-	        "min": 10,
-	        "max": 30
-	      }, {
-	        "name": "weight",
-	        "is_relevant": true,
-	        "min": 10,
-	        "max": 30
-	      }, {
-	        "name": "race",
-	        "is_relevant": true,
-	        "value": "black"
-	      }, {
-	        "name": "smoking",
-	        "is_relevant": true,
-	        "value": false
-	      }]
-	    }]
-	  };
-	  var right7 = {
-	    "condition": "OSA6",
-	    "rights": [{
-	      "name": "CPAP (continuous positive airway pressure)",
-	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
-	      "family_history": "",
-	      "general_condition": "",
-	      "filters": [{
-	        "name": "age",
-	        "is_relevant": true,
-	        "min": 10,
-	        "max": 30
-	      }, {
-	        "name": "weight",
-	        "is_relevant": true,
-	        "min": 10,
-	        "max": 30
-	      }, {
-	        "name": "race",
-	        "is_relevant": true,
-	        "value": "black"
-	      }, {
-	        "name": "smoking",
-	        "is_relevant": true,
-	        "value": false
-	      }]
-	    }]
-	  };
-	  var right8 = {
-	    "condition": "OSA7",
-	    "rights": [{
-	      "name": "CPAP (continuous positive airway pressure)",
-	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
-	      "family_history": "",
-	      "general_condition": "",
-	      "filters": [{
-	        "name": "age",
-	        "is_relevant": true,
-	        "min": 10,
-	        "max": 30
-	      }, {
-	        "name": "weight",
-	        "is_relevant": true,
-	        "min": 10,
-	        "max": 30
-	      }, {
-	        "name": "race",
-	        "is_relevant": true,
-	        "value": "black"
-	      }, {
-	        "name": "smoking",
-	        "is_relevant": true,
-	        "value": false
-	      }]
-	    }]
-	  };
-	  var right9 = {
-	    "condition": "OSA8",
-	    "rights": [{
-	      "name": "CPAP (continuous positive airway pressure)",
-	      "description": "3 months of CPAP theapry. (meet cover it longer,depends on your doctor).you pay 20% of the medcial approved amount ofr rental of he machine and purchase of the related supplies (like mask and tubing). Medicare pays the supplier to rent the machine for 13 months if you've been using it without interruption. After you've rented the machine for 13 months, you own it",
-	      "family_history": "",
-	      "general_condition": "",
-	      "filters": [{
-	        "name": "age",
-	        "is_relevant": true,
-	        "min": 10,
-	        "max": 30
-	      }, {
-	        "name": "weight",
-	        "is_relevant": true,
-	        "min": 10,
-	        "max": 30
-	      }, {
-	        "name": "race",
-	        "is_relevant": true,
-	        "value": "black"
-	      }, {
-	        "name": "smoking",
-	        "is_relevant": true,
-	        "value": false
-	      }]
-	    }]
-	  };
+	  _medicalEntry2.default.findOne(req.params).exec(function (err, medicalEntry) {
+	    if (err) {
+	      res.status(500).send(err);
+	    }
+	    res.json({ medicalEntry: medicalEntry });
+	  });
+	}
 	
-	  var rights = [];
-	  rights.push(right1, right2, right3, right4, right5, right6, right7, right8, right9);
-	  if (false) {
-	    res.status(500).send(err);
-	  }
-	  res.json({ rights: rights });
-	} /**
-	   * Get all posts
-	   * @param req
-	   * @param res
-	   * @returns void
-	   */
+	function getAllConditions(req, res) {
+	  _medicalEntry2.default.find({}).select({ "condition": 1, "_id": 0 }).exec(function (err, medicalEntry) {
+	    if (err) {
+	      res.status(500).send(err);
+	    }
+	    res.json({ medicalEntry: medicalEntry });
+	  });
+	}
 
 /***/ },
-/* 65 */
+/* 66 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.populateDB = populateDB;
+	
+	var _medicalEntry = __webpack_require__(11);
+	
+	var _medicalEntry2 = _interopRequireDefault(_medicalEntry);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function populateDB(req, res) {
+	  var csv = __webpack_require__(72);
+	  var hashMap = __webpack_require__(73);
+	  var map = new hashMap();
+	  var medRightArr = [];
+	
+	  csv.fromPath("C:\\mp2.csv", { headers: true }).on("data", function (data) {
+	    //data is now a JSON object whereas CSV header is the parameter name, and the row is the value.
+	    var med_con = data["Medical Condition"];
+	    delete data["Medical Condition"];
+	
+	    //Manage hashmap of array values (to consolidate similar keys)
+	    if (!map.has(med_con)) {
+	      var arr = [];
+	      map.set(med_con, arr);
+	    }
+	
+	    map.get(med_con).push(data);
+	  }).on("end", function () {
+	
+	    //value in the first parameter, confusing, isn't it?
+	    map.forEach(function (value, key) {
+	      var me = new _medicalEntry2.default({ condition: key, rights: value });
+	      medRightArr.push(me);
+	    });
+	
+	    //Create all DB rows at one shot
+	    if (typeof medRightArr !== 'undefined' && medRightArr.length > 0) {
+	      _medicalEntry2.default.create(medRightArr, function (error) {
+	        if (error) {
+	          console.log("An Error took place upon saving to DB" + error);
+	        }
+	      });
+	    } else {
+	      console.log("No Entry was updated in the DB");
+	    }
+	  });
+	  console.log("DB update finished!");
+	  var rights = [];
+	  res.json({ rights: rights });
+	}
+
+/***/ },
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3977,19 +3841,19 @@
 	exports.getPost = getPost;
 	exports.deletePost = deletePost;
 	
-	var _post = __webpack_require__(10);
+	var _post = __webpack_require__(68);
 	
 	var _post2 = _interopRequireDefault(_post);
 	
-	var _cuid = __webpack_require__(68);
+	var _cuid = __webpack_require__(71);
 	
 	var _cuid2 = _interopRequireDefault(_cuid);
 	
-	var _limax = __webpack_require__(74);
+	var _limax = __webpack_require__(79);
 	
 	var _limax2 = _interopRequireDefault(_limax);
 	
-	var _sanitizeHtml = __webpack_require__(84);
+	var _sanitizeHtml = __webpack_require__(89);
 	
 	var _sanitizeHtml2 = _interopRequireDefault(_sanitizeHtml);
 	
@@ -4012,7 +3876,7 @@
 	
 	/**
 	 * Save a post
-	 * @param req
+	 * @param reqc
 	 * @param res
 	 * @returns void
 	 */
@@ -4072,7 +3936,37 @@
 	}
 
 /***/ },
-/* 66 */
+/* 68 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _mongoose = __webpack_require__(5);
+	
+	var _mongoose2 = _interopRequireDefault(_mongoose);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Schema = _mongoose2.default.Schema;
+	
+	var postSchema = new Schema({
+	  name: { type: 'String', required: true },
+	  title: { type: 'String', required: true },
+	  content: { type: 'String', required: true },
+	  slug: { type: 'String', required: true },
+	  cuid: { type: 'String', required: true },
+	  dateAdded: { type: 'Date', default: Date.now, required: true }
+	});
+	
+	exports.default = _mongoose2.default.model('Post', postSchema);
+
+/***/ },
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4086,19 +3980,19 @@
 	
 	var _express2 = _interopRequireDefault(_express);
 	
-	var _compression = __webpack_require__(29);
+	var _compression = __webpack_require__(30);
 	
 	var _compression2 = _interopRequireDefault(_compression);
 	
-	var _mongoose = __webpack_require__(12);
+	var _mongoose = __webpack_require__(5);
 	
 	var _mongoose2 = _interopRequireDefault(_mongoose);
 	
-	var _bodyParser = __webpack_require__(28);
+	var _bodyParser = __webpack_require__(29);
 	
 	var _bodyParser2 = _interopRequireDefault(_bodyParser);
 	
-	var _path = __webpack_require__(30);
+	var _path = __webpack_require__(31);
 	
 	var _path2 = _interopRequireDefault(_path);
 	
@@ -4110,15 +4004,15 @@
 	
 	var _webpack2 = _interopRequireDefault(_webpack);
 	
-	var _webpackConfig = __webpack_require__(27);
+	var _webpackConfig = __webpack_require__(28);
 	
 	var _webpackConfig2 = _interopRequireDefault(_webpackConfig);
 	
-	var _webpackDevMiddleware = __webpack_require__(32);
+	var _webpackDevMiddleware = __webpack_require__(33);
 	
 	var _webpackDevMiddleware2 = _interopRequireDefault(_webpackDevMiddleware);
 	
-	var _webpackHotMiddleware = __webpack_require__(33);
+	var _webpackHotMiddleware = __webpack_require__(34);
 	
 	var _webpackHotMiddleware2 = _interopRequireDefault(_webpackHotMiddleware);
 	
@@ -4130,11 +4024,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _server = __webpack_require__(31);
+	var _server = __webpack_require__(32);
 	
 	var _reactRouter = __webpack_require__(3);
 	
-	var _reactHelmet = __webpack_require__(5);
+	var _reactHelmet = __webpack_require__(6);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
@@ -4142,9 +4036,9 @@
 	
 	var _routes2 = _interopRequireDefault(_routes);
 	
-	var _fetchData = __webpack_require__(26);
+	var _fetchData = __webpack_require__(27);
 	
-	var _post = __webpack_require__(25);
+	var _post = __webpack_require__(26);
 	
 	var _post2 = _interopRequireDefault(_post);
 	
@@ -4152,11 +4046,15 @@
 	
 	var _medicalrights2 = _interopRequireDefault(_medicalrights);
 	
+	var _populateDB = __webpack_require__(25);
+	
+	var _populateDB2 = _interopRequireDefault(_populateDB);
+	
 	var _dummyData = __webpack_require__(23);
 	
 	var _dummyData2 = _interopRequireDefault(_dummyData);
 	
-	var _config = __webpack_require__(11);
+	var _config = __webpack_require__(12);
 	
 	var _config2 = _interopRequireDefault(_config);
 	
@@ -4192,7 +4090,7 @@
 	  }
 	
 	  // feed some dummy data in DB.
-	  (0, _dummyData2.default)();
+	  //dummyData();
 	});
 	
 	// Apply body Parser and server public assets and routes
@@ -4202,6 +4100,7 @@
 	app.use(_express2.default.static(_path2.default.resolve(__dirname, '../dist')));
 	app.use('/api', _post2.default);
 	app.use('/api', _medicalrights2.default);
+	app.use('/api', _populateDB2.default);
 	
 	// Render Initial HTML
 	var renderFullPage = function renderFullPage(html, initialState) {
@@ -4267,7 +4166,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, "server"))
 
 /***/ },
-/* 67 */
+/* 70 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -4298,149 +4197,161 @@
 	}
 
 /***/ },
-/* 68 */
+/* 71 */
 /***/ function(module, exports) {
 
 	module.exports = require("cuid");
 
 /***/ },
-/* 69 */
-/***/ function(module, exports) {
-
-	module.exports = require("intl");
-
-/***/ },
-/* 70 */
-/***/ function(module, exports) {
-
-	module.exports = require("intl-locales-supported");
-
-/***/ },
-/* 71 */
-/***/ function(module, exports) {
-
-	module.exports = require("intl/locale-data/jsonp/en");
-
-/***/ },
 /* 72 */
 /***/ function(module, exports) {
 
-	module.exports = require("intl/locale-data/jsonp/fr");
+	module.exports = require("fast-csv");
 
 /***/ },
 /* 73 */
 /***/ function(module, exports) {
 
-	module.exports = require("isomorphic-fetch");
+	module.exports = require("hashmap");
 
 /***/ },
 /* 74 */
 /***/ function(module, exports) {
 
-	module.exports = require("limax");
+	module.exports = require("intl");
 
 /***/ },
 /* 75 */
 /***/ function(module, exports) {
 
-	module.exports = require("postcss-cssnext");
+	module.exports = require("intl-locales-supported");
 
 /***/ },
 /* 76 */
 /***/ function(module, exports) {
 
-	module.exports = require("postcss-focus");
+	module.exports = require("intl/locale-data/jsonp/en");
 
 /***/ },
 /* 77 */
 /***/ function(module, exports) {
 
-	module.exports = require("postcss-reporter");
+	module.exports = require("intl/locale-data/jsonp/fr");
 
 /***/ },
 /* 78 */
 /***/ function(module, exports) {
 
-	module.exports = require("react-intl/locale-data/en");
+	module.exports = require("isomorphic-fetch");
 
 /***/ },
 /* 79 */
 /***/ function(module, exports) {
 
-	module.exports = require("react-intl/locale-data/fr");
+	module.exports = require("limax");
 
 /***/ },
 /* 80 */
 /***/ function(module, exports) {
 
-	module.exports = require("redux-devtools");
+	module.exports = require("postcss-cssnext");
 
 /***/ },
 /* 81 */
 /***/ function(module, exports) {
 
-	module.exports = require("redux-devtools-dock-monitor");
+	module.exports = require("postcss-focus");
 
 /***/ },
 /* 82 */
 /***/ function(module, exports) {
 
-	module.exports = require("redux-devtools-log-monitor");
+	module.exports = require("postcss-reporter");
 
 /***/ },
 /* 83 */
 /***/ function(module, exports) {
 
-	module.exports = require("redux-thunk");
+	module.exports = require("react-intl/locale-data/en");
 
 /***/ },
 /* 84 */
 /***/ function(module, exports) {
 
+	module.exports = require("react-intl/locale-data/fr");
+
+/***/ },
+/* 85 */
+/***/ function(module, exports) {
+
+	module.exports = require("redux-devtools");
+
+/***/ },
+/* 86 */
+/***/ function(module, exports) {
+
+	module.exports = require("redux-devtools-dock-monitor");
+
+/***/ },
+/* 87 */
+/***/ function(module, exports) {
+
+	module.exports = require("redux-devtools-log-monitor");
+
+/***/ },
+/* 88 */
+/***/ function(module, exports) {
+
+	module.exports = require("redux-thunk");
+
+/***/ },
+/* 89 */
+/***/ function(module, exports) {
+
 	module.exports = require("sanitize-html");
 
 /***/ },
-/* 85 */,
-/* 86 */,
-/* 87 */,
-/* 88 */,
-/* 89 */,
 /* 90 */,
 /* 91 */,
 /* 92 */,
 /* 93 */,
 /* 94 */,
-/* 95 */
+/* 95 */,
+/* 96 */,
+/* 97 */,
+/* 98 */,
+/* 99 */,
+/* 100 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/Checkbox");
 
 /***/ },
-/* 96 */
+/* 101 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/styles/baseThemes/lightBaseTheme");
 
 /***/ },
-/* 97 */
+/* 102 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/styles/getMuiTheme");
 
 /***/ },
-/* 98 */
+/* 103 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/Card");
 
 /***/ },
-/* 99 */
+/* 104 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/TextField");
 
 /***/ },
-/* 100 */
+/* 105 */
 /***/ function(module, exports) {
 
 	module.exports = require("react-search-input");
