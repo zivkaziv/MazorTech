@@ -11805,7 +11805,7 @@ webpackJsonp([3],[
 	    gender: 'female',
 	    isSmoking: false,
 	    dob: initialDob,
-	    health_insurance: 4
+	    health_insurance: 1
 	  };
 	}
 
@@ -11862,7 +11862,7 @@ webpackJsonp([3],[
 	  return function (dispatch) {
 	    return (0, _apiCaller2.default)('medicalrights').then(function (res) {
 	      // console.log(res.rights);
-	      dispatch(initMedicalRights(res.rights));
+	      dispatch(initMedicalRights(res.medicalEntry));
 	    });
 	  };
 	}

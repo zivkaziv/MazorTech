@@ -1231,7 +1231,7 @@
 	    gender: 'female',
 	    isSmoking: false,
 	    dob: initialDob,
-	    health_insurance: 4
+	    health_insurance: 1
 	  };
 	}
 
@@ -1288,7 +1288,7 @@
 	  return function (dispatch) {
 	    return (0, _apiCaller2.default)('medicalrights').then(function (res) {
 	      // console.log(res.rights);
-	      dispatch(initMedicalRights(res.rights));
+	      dispatch(initMedicalRights(res.medicalEntry));
 	    });
 	  };
 	}
@@ -3752,8 +3752,11 @@
 	  _medicalEntry2.default.findOne(req.params).exec(function (err, medicalEntry) {
 	    if (err) {
 	      res.status(500).send(err);
+	    }if (medicalEntry) {
+	      res.json({ medicalEntry: medicalEntry });
+	    } else {
+	      res.json({ medicalEntry: [] });
 	    }
-	    res.json({ medicalEntry: medicalEntry });
 	  });
 	}
 	
@@ -3762,7 +3765,11 @@
 	    if (err) {
 	      res.status(500).send(err);
 	    }
-	    res.json({ medicalEntry: medicalEntry });
+	    if (medicalEntry) {
+	      res.json({ medicalEntry: medicalEntry });
+	    } else {
+	      res.json({ medicalEntry: [] });
+	    }
 	  });
 	}
 

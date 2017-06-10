@@ -4,17 +4,23 @@ export function getMedicalRights(req, res) {
   MedicalEntry.findOne(req.params).exec((err, medicalEntry) => {
       if (err) {
         res.status(500).send(err);
+      }if(medicalEntry){
+        res.json({ medicalEntry });
+      }else{
+        res.json({ medicalEntry : [] });
       }
-      res.json({ medicalEntry });
   });
 }
 
-export function getAllConditions(req, res)
-{
+export function getAllConditions(req, res) {
    MedicalEntry.find({}).select({ "condition": 1, "_id": 0}).exec((err, medicalEntry) => {
         if (err) {
           res.status(500).send(err);
         }
-        res.json({ medicalEntry });
+        if(medicalEntry){
+          res.json({ medicalEntry });
+        }else{
+          res.json({ medicalEntry : [] });
+        }
     });
 }

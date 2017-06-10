@@ -38,7 +38,7 @@ export function fetchMedicalRights() {
   return (dispatch) => {
     return callApi('medicalrights').then(res => {
       // console.log(res.rights);
-      dispatch(initMedicalRights(res.rights));
+      dispatch(initMedicalRights(res.medicalEntry));
     });
   };
 }
