@@ -31,9 +31,9 @@ exports.modules = {
 	
 	var _landricksComponents = __webpack_require__(104);
 	
-	var _background = '/' + "588dd433b0d32f56235d81ba17f0a11c.jpg";
+	var _background_city = '/' + "588dd433b0d32f56235d81ba17f0a11c.jpg";
 	
-	var _background2 = _interopRequireDefault(_background);
+	var _background_city2 = _interopRequireDefault(_background_city);
 	
 	var _RaisedButton = __webpack_require__(43);
 	
@@ -81,7 +81,7 @@ exports.modules = {
 	  primaryColor: '#FFFFFF',
 	  primaryContrastColor: '#71A2B6',
 	  objectDesign: 'square-solid',
-	  backgroundImage: '' + _background2.default
+	  backgroundImage: '' + _background_city2.default
 	});
 	
 	var HEAVY_BAND_THEME = _extends({}, BASE_THEME, {
@@ -209,18 +209,18 @@ exports.modules = {
 	              subtitle: 'You can add any number of them' },
 	            _react2.default.createElement(_landricksComponents.FeatureItem, {
 	              icon: 'rocket',
-	              title: 'Feature 1',
-	              description: 'bla bla bla bla bla'
+	              title: 'Feature 1'
+	              // description="bla bla bla bla bla"
 	            }),
 	            _react2.default.createElement(_landricksComponents.FeatureItem, {
 	              icon: 'rocket',
-	              title: 'Feature 2',
-	              description: 'bla bla bla bla bla'
+	              title: 'Feature 2'
+	              // description="bla bla bla bla bla"
 	            }),
 	            _react2.default.createElement(_landricksComponents.FeatureItem, {
 	              icon: 'rocket',
-	              title: 'Feature 3',
-	              description: 'bla bla bla bla bla'
+	              title: 'Feature 3'
+	              // description="bla bla bla bla bla"
 	            })
 	          ),
 	          _react2.default.createElement(
@@ -242,9 +242,9 @@ exports.modules = {
 	            _react2.default.createElement(_landricksComponents.PlaceHolder, { label: 'image placeholder' })
 	          ),
 	          _react2.default.createElement(_landricksComponents.EmailSqueezeBrick, {
-	            title: 'Join our Newsletter',
-	            subtitle: 'To get updates about what we want you to know about',
-	            theme: HEAVY_BAND_THEME,
+	            title: 'Join our Newsletter'
+	            // subtitle="To get updates about what we want you to know about"
+	            , theme: HEAVY_BAND_THEME,
 	            buttonLabel: 'Join',
 	            placeholder: 'Enter your email'
 	          })
