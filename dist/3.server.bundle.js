@@ -100,10 +100,16 @@ exports.modules = {
 	var HomePage = function (_Component) {
 	  _inherits(HomePage, _Component);
 	
-	  function HomePage() {
+	  function HomePage(props) {
 	    _classCallCheck(this, HomePage);
 	
-	    return _possibleConstructorReturn(this, (HomePage.__proto__ || Object.getPrototypeOf(HomePage)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (HomePage.__proto__ || Object.getPrototypeOf(HomePage)).call(this, props));
+	
+	    _this.state = {};
+	
+	    _this.componentDidMount = _this.componentDidMount.bind(_this);
+	    _this.goToWizard = _this.goToWizard.bind(_this);
+	    return _this;
 	  }
 	
 	  _createClass(HomePage, [{
@@ -113,9 +119,11 @@ exports.modules = {
 	        muiTheme: (0, _getMuiTheme2.default)(_lightBaseTheme2.default)
 	      };
 	    }
-	    // componentDidMount() {
-	    //   this.props.dispatch(fetchPosts());
-	    // }
+	  }, {
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      this.context.mixpanel.track('Homepage login');
+	    }
 	    //
 	    // handleDeletePost = post => {
 	    //   if (confirm('Do you want to delete this post')) { // eslint-disable-line
@@ -128,6 +136,13 @@ exports.modules = {
 	    //   this.props.dispatch(addPostRequest({ name, title, content }));
 	    // };
 	
+	  }, {
+	    key: 'goToWizard',
+	    value: function goToWizard() {
+	      this.context.mixpanel.track('Homepage button click', {
+	        'button_name': 'start wizard'
+	      });
+	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
@@ -161,7 +176,8 @@ exports.modules = {
 	              labelPosition: 'before',
 	              style: styles.button,
 	              containerElement: 'label',
-	              label: 'Get Started Now'
+	              label: 'Get Started Now',
+	              onTouchTap: this.goToWizard
 	            })
 	          )
 	        )
@@ -199,7 +215,8 @@ exports.modules = {
 	};
 	
 	HomePage.contextTypes = {
-	  router: _react2.default.PropTypes.object
+	  router: _react2.default.PropTypes.object,
+	  mixpanel: _react.PropTypes.object.isRequired
 	};
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(HomePage);

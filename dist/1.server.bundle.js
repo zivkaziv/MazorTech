@@ -364,6 +364,7 @@ exports.modules = {
 	    value: function componentDidMount() {
 	      this.props.dispatch((0, _WizardActions.fetchMedicalRights)());
 	      this.props.dispatch((0, _UserActions.fetchUser)());
+	      this.context.mixpanel.track('Wizard login');
 	    }
 	
 	    //
@@ -411,7 +412,8 @@ exports.modules = {
 	};
 	
 	WizardPage.contextTypes = {
-	  router: _react2.default.PropTypes.object
+	  router: _react2.default.PropTypes.object,
+	  mixpanel: _react.PropTypes.object.isRequired
 	};
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(WizardPage);
 
