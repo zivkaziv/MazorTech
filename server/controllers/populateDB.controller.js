@@ -19,6 +19,29 @@ export function populateDB(req, res) {
           map.set(med_con, arr);
        }
 
+        for(var key in data){
+            if (!data[key]){
+                delete data[key];
+            }
+            else if (data.Age){
+                var rangeStr = data.Age + "";
+                var range = rangeStr.split(";");
+                var age = {};
+                for (var index = 0; index < range.length; index++) {
+                  console.log("str: " + rangeStr);
+                  var sign = range[index].substring(0, 1);
+                  if (sign === "<"){
+                    age.max = range[index].substring(1);
+                    data.Age = age;
+                  }
+                  if (sign === ">"){
+                    age.min = range[index].substring(1);
+                    data.Age = age;
+                  }
+                }
+            }
+        }
+
        map.get(med_con).push(data);
    })
    .on("end", function(){
