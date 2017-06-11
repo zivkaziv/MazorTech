@@ -11640,7 +11640,7 @@ webpackJsonp([4],[
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.getSelectedMedicalRights = exports.getMedicalRights = undefined;
+	exports.getMedicalRightsForUser = exports.getSelectedMedicalRights = exports.getMedicalRights = undefined;
 	
 	var _WizardActions = __webpack_require__(274);
 	
@@ -11694,10 +11694,21 @@ webpackJsonp([4],[
 	};
 	
 	var getSelectedMedicalRights = exports.getSelectedMedicalRights = function getSelectedMedicalRights(state) {
-	  return state.medicalRights.data.filter(function (right) {
-	    return right.isSelected;
+	  return state.medicalRights.selected;
+	};
+	
+	var getMedicalRightsForUser = exports.getMedicalRightsForUser = function getMedicalRightsForUser(state) {
+	  return state.medicalRights.selected.filter(function (selected) {
+	    return selected.rights.filter(function (right) {
+	      return isRelevantForUser(right, state.user);
+	    });
 	  });
 	};
+	
+	function isRelevantForUser(right, user) {
+	  return true;
+	}
+	
 	// Get post by cuid
 	// export const getPost = (state, cuid) => state.posts.data.filter(post => post.cuid === cuid)[0];
 	

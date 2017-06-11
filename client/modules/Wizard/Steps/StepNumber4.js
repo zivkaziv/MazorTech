@@ -8,13 +8,18 @@ import CircularProgress from 'material-ui/CircularProgress';
 import MedicalRightItem from '../componenets/MedicalRightItem/MedicalRIghtItem';
 
 // Import Selectors
-import { getSelectedMedicalRights } from '../WizardReducer';
+import { getMedicalRightsForUser } from '../WizardReducer';
 
 ``//images
 // Import Images
 import serverError from '../images/server_error.jpg';
 
 const styles = {
+  wizardStepPageStyle: {
+    maxHeight: 350,
+    maxWidth: 679,
+    overflow:'auto',
+  },
   medicalRightsContainer:{
     overflow:'auto',
   },
@@ -71,7 +76,7 @@ class StepNumber4 extends Component {
       //Display server error
     }else{
       results = (
-        <div className="step" style={styles.pageStyle}>
+        <div className="step" style={styles.wizardStepPageStyle}>
           <div className="row">
             <div style={styles.brokenServerContainer}>
               <img src={serverError} style={styles.brokenServerImg}/>
@@ -93,7 +98,7 @@ class StepNumber4 extends Component {
 function mapStateToProps(state) {
   return {
     // showAddPost: getShowAddPost(state),
-    medicalConditions: getSelectedMedicalRights(state),
+    medicalConditions: getMedicalRightsForUser(state),
   };
 }
 

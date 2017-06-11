@@ -21,6 +21,7 @@ import searchInputStyles from './StepNumber1.css';
 const styles = {
   wizardStepPageStyle: {
     maxHeight: 350,
+    maxWidth: 679,
     overflow:'auto',
   },
   medicalDiagnosticsContainer:{

@@ -12,6 +12,11 @@ import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
 
 const styles = {
+  wizardStepPageStyle: {
+    maxHeight: 350,
+    maxWidth: 679,
+    overflow:'auto',
+  },
   termsSection:{
     maxHeight: 334,
     overflow:'auto',
@@ -71,7 +76,7 @@ class StepNumber3 extends Component {
     ];
 
     return (
-      <div className="step">
+      <div className="step step2" style={styles.wizardStepPageStyle}>
         <section style={styles.termsSection} >
           <h2>Terms of Use</h2>
           <h3>Agreement between You and Instructure</h3>
@@ -180,4 +185,5 @@ function mapStateToProps(state) {
 StepNumber3.propTypes = {
   user: PropTypes.any
 };
+
 export default connect(mapStateToProps)(StepNumber3);

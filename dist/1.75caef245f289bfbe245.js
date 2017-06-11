@@ -7660,6 +7660,7 @@ webpackJsonp([1],{
 	var styles = {
 	  wizardStepPageStyle: {
 	    maxHeight: 350,
+	    maxWidth: 679,
 	    overflow: 'auto'
 	  },
 	  medicalDiagnosticsContainer: {
@@ -7903,6 +7904,11 @@ webpackJsonp([1],{
 	
 	// Styles
 	var styles = {
+	  wizardStepPageStyle: {
+	    maxHeight: 350,
+	    maxWidth: 679,
+	    overflow: 'auto'
+	  },
 	  block: {
 	    maxWidth: 250
 	  },
@@ -8219,6 +8225,11 @@ webpackJsonp([1],{
 	
 	
 	var styles = {
+	  wizardStepPageStyle: {
+	    maxHeight: 350,
+	    maxWidth: 679,
+	    overflow: 'auto'
+	  },
 	  termsSection: {
 	    maxHeight: 334,
 	    overflow: 'auto'
@@ -8286,7 +8297,7 @@ webpackJsonp([1],{
 	
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'step' },
+	        { className: 'step step2', style: styles.wizardStepPageStyle },
 	        _react2.default.createElement(
 	          'section',
 	          { style: styles.termsSection },
@@ -9102,6 +9113,7 @@ webpackJsonp([1],{
 	StepNumber3.propTypes = {
 	  user: _react.PropTypes.any
 	};
+	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(StepNumber3);
 
 /***/ },
@@ -9154,6 +9166,11 @@ webpackJsonp([1],{
 	
 	
 	var styles = {
+	  wizardStepPageStyle: {
+	    maxHeight: 350,
+	    maxWidth: 679,
+	    overflow: 'auto'
+	  },
 	  medicalRightsContainer: {
 	    overflow: 'auto'
 	  },
@@ -9224,7 +9241,7 @@ webpackJsonp([1],{
 	      } else {
 	        results = _react2.default.createElement(
 	          'div',
-	          { className: 'step', style: styles.pageStyle },
+	          { className: 'step', style: styles.wizardStepPageStyle },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
@@ -9256,7 +9273,7 @@ webpackJsonp([1],{
 	function mapStateToProps(state) {
 	  return {
 	    // showAddPost: getShowAddPost(state),
-	    medicalConditions: (0, _WizardReducer.getSelectedMedicalRights)(state)
+	    medicalConditions: (0, _WizardReducer.getMedicalRightsForUser)(state)
 	  };
 	}
 	
@@ -9537,11 +9554,9 @@ webpackJsonp([1],{
 	        return _this.getStore();
 	      }, updateStore: function updateStore(u) {
 	        _this.updateStore(u);
-	      } }) }, { name: 'Summary', component: _react2.default.createElement(_StepNumber10.default, { getStore: function getStore() {
-	        return _this.getStore();
-	      }, updateStore: function updateStore(u) {
-	        _this.updateStore(u);
-	      } }) }];
+	      } })
+	    // {name: 'Summary', component: <Step5 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />}
+	  }];
 	
 	  return _react2.default.createElement(
 	    'div',
@@ -9549,7 +9564,10 @@ webpackJsonp([1],{
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'step-progress' },
-	      _react2.default.createElement(_reactStepzilla2.default, { steps: steps })
+	      _react2.default.createElement(_reactStepzilla2.default, { steps: steps,
+	        dontValidate: false,
+	        stepsNavigation: false,
+	        nextTextOnFinalActionStep: "See my medical rights" })
 	    )
 	  );
 	}

@@ -19,6 +19,11 @@ import { updateUserDetails } from '../UserActions';
 
 // Styles
 const styles = {
+  wizardStepPageStyle: {
+    maxHeight: 350,
+    maxWidth: 679,
+    overflow:'auto',
+  },
   block: {
     maxWidth: 250,
   },

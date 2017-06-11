@@ -20,15 +20,18 @@ function WizardMain(props) {
       {name: 'Medical Diagnosis', component: <Step1 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
       {name: 'Personal Info', component: <Step2 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
       {name: 'Terms', component: <Step3 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
-      {name: 'Your Medical Rights', component: <Step4 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
-      {name: 'Summary', component: <Step5 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />}
+      {name: 'Your Medical Rights', component: <Step4 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />}
+      // {name: 'Summary', component: <Step5 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />}
     ];
 
 
   return (
     <div>
       <div className='step-progress'>
-        <StepZilla steps={steps}/>
+        <StepZilla steps={steps}
+                   dontValidate={false}
+                   stepsNavigation={false}
+                   nextTextOnFinalActionStep={"See my medical rights"}/>
       </div>
     </div>
   );
