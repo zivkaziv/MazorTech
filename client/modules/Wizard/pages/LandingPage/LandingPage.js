@@ -15,6 +15,9 @@ import {
   PlaceHolder
 } from 'landricks-components';
 
+// Import Images
+import background from '../../images/background_city.jpg';
+
 // Material
 import RaisedButton from 'material-ui/RaisedButton';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
@@ -35,7 +38,7 @@ import BoolLogoSvg from '../../../App/IconSvg'
 const BASE_THEME = {
   fontFamily: 'Lato',
   baseFontSize: '18px'
-}
+};
 
 const HEADER_BAND_THEME = {
   ...BASE_THEME,
@@ -44,8 +47,9 @@ const HEADER_BAND_THEME = {
   textColor: '#FFFFFF',
   primaryColor: '#FFFFFF',
   primaryContrastColor: '#71A2B6',
-  objectDesign: 'square-solid'
-}
+  objectDesign: 'square-solid',
+  backgroundImage: `${background}`
+};
 
 const HEAVY_BAND_THEME = {
   ...BASE_THEME,
@@ -59,7 +63,7 @@ const HEAVY_BAND_THEME = {
 
 const styles = {
   homePageContainer:{
-    // background: 'url("http://wallpapercave.com/wp/2N8Zebr.jpg") no-repeat fixed center',
+    background: 'url("http://wallpapercave.com/wp/2N8Zebr.jpg") no-repeat fixed center',
     position:'fixed',
     top:0,
     left:0,
@@ -114,13 +118,14 @@ class LandingPage extends Component {
 
   render() {
     return (
-      <div styles={styles.homePageContainer}>
+      <div>
         <LandingCanvas>
           <StrongMessageBrick
             theme={ HEADER_BAND_THEME }
             messageLevel1="A beautiful message, but not so long"
             messageLevel2="A related but not so important concept, that usually is a little bit longer than the previous"
-            CTAs={ <CallToAction label="sign up" /> }
+            CTAs={ <CallToAction label="sign up"/>}
+            styles={styles.homePageContainer}
           />
           <DoubleContentBrick theme={ HEAVY_BAND_THEME } hasHeader={ false }>
             <ThemePropagator>
@@ -144,17 +149,17 @@ class LandingPage extends Component {
             <FeatureItem
               icon="rocket"
               title="Feature 1"
-              description="bla bla bla bla bla"
+              // description="bla bla bla bla bla"
             />
             <FeatureItem
               icon="rocket"
               title="Feature 2"
-              description="bla bla bla bla bla"
+              // description="bla bla bla bla bla"
             />
             <FeatureItem
               icon="rocket"
               title="Feature 3"
-              description="bla bla bla bla bla"
+              // description="bla bla bla bla bla"
             />
           </EnumerationBrick>
           <DoubleContentBrick theme={ LIGHT_BAND_THEME } hasHeader={ false }>
@@ -171,7 +176,7 @@ class LandingPage extends Component {
           </DoubleContentBrick>
           <EmailSqueezeBrick
             title="Join our Newsletter"
-            subtitle="To get updates about what we want you to know about"
+            // subtitle="To get updates about what we want you to know about"
             theme={ HEAVY_BAND_THEME }
             buttonLabel="Join"
             placeholder="Enter your email"

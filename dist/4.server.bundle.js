@@ -1,7 +1,7 @@
-exports.ids = [2];
+exports.ids = [4];
 exports.modules = {
 
-/***/ 100:
+/***/ 98:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -97,13 +97,13 @@ exports.modules = {
 	
 	};
 	
-	var LandingPageV2 = function (_Component) {
-	  _inherits(LandingPageV2, _Component);
+	var HomePage = function (_Component) {
+	  _inherits(HomePage, _Component);
 	
-	  function LandingPageV2(props) {
-	    _classCallCheck(this, LandingPageV2);
+	  function HomePage(props) {
+	    _classCallCheck(this, HomePage);
 	
-	    var _this = _possibleConstructorReturn(this, (LandingPageV2.__proto__ || Object.getPrototypeOf(LandingPageV2)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (HomePage.__proto__ || Object.getPrototypeOf(HomePage)).call(this, props));
 	
 	    _this.state = {};
 	
@@ -112,7 +112,7 @@ exports.modules = {
 	    return _this;
 	  }
 	
-	  _createClass(LandingPageV2, [{
+	  _createClass(HomePage, [{
 	    key: 'getChildContext',
 	    value: function getChildContext() {
 	      return {
@@ -185,7 +185,7 @@ exports.modules = {
 	    }
 	  }]);
 	
-	  return LandingPageV2;
+	  return HomePage;
 	}(_react.Component);
 	
 	// Actions required to provide data for this component to render in sever side.
@@ -201,7 +201,7 @@ exports.modules = {
 	  };
 	}
 	
-	LandingPageV2.propTypes = {
+	HomePage.propTypes = {
 	  // posts: PropTypes.arrayOf(PropTypes.shape({
 	  //   name: PropTypes.string.isRequired,
 	  //   title: PropTypes.string.isRequired,
@@ -210,16 +210,16 @@ exports.modules = {
 	  // showAddPost: PropTypes.bool.isRequired,
 	  // dispatch: PropTypes.func.isRequired,
 	};
-	LandingPageV2.childContextTypes = {
+	HomePage.childContextTypes = {
 	  muiTheme: _react2.default.PropTypes.object
 	};
 	
-	LandingPageV2.contextTypes = {
+	HomePage.contextTypes = {
 	  router: _react2.default.PropTypes.object,
 	  mixpanel: _react.PropTypes.object.isRequired
 	};
 	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps)(LandingPageV2);
+	exports.default = (0, _reactRedux.connect)(mapStateToProps)(HomePage);
 
 /***/ }
 

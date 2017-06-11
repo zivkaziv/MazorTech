@@ -1,7 +1,7 @@
 exports.ids = [3];
 exports.modules = {
 
-/***/ 98:
+/***/ 99:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13,6 +13,14 @@ exports.modules = {
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	// Import Images
+	
+	
+	// Material
+	
+	
 	var _react = __webpack_require__(0);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -20,6 +28,12 @@ exports.modules = {
 	var _reactRouter = __webpack_require__(3);
 	
 	var _reactRedux = __webpack_require__(1);
+	
+	var _landricksComponents = __webpack_require__(104);
+	
+	var _background = '/' + "588dd433b0d32f56235d81ba17f0a11c.jpg";
+	
+	var _background2 = _interopRequireDefault(_background);
 	
 	var _RaisedButton = __webpack_require__(43);
 	
@@ -45,9 +59,6 @@ exports.modules = {
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	// Material
-	
-	
 	// Import Components
 	// import PostList from '../../components/PostList';
 	
@@ -57,6 +68,30 @@ exports.modules = {
 	// Import Selectors
 	// import { getShowAddPost } from '../../../App/AppReducer';
 	// import { getPosts } from '../../PostReducer';
+	
+	var BASE_THEME = {
+	  fontFamily: 'Lato',
+	  baseFontSize: '18px'
+	};
+	
+	var HEADER_BAND_THEME = _extends({}, BASE_THEME, {
+	  baseFontSize: '18px',
+	  backgroundColor: '#71A2B6',
+	  textColor: '#FFFFFF',
+	  primaryColor: '#FFFFFF',
+	  primaryContrastColor: '#71A2B6',
+	  objectDesign: 'square-solid',
+	  backgroundImage: '' + _background2.default
+	});
+	
+	var HEAVY_BAND_THEME = _extends({}, BASE_THEME, {
+	  backgroundColor: '#29D9C2',
+	  textColor: '#FFFFFF',
+	  primaryColor: '#FFFFFF',
+	  primaryContrastColor: '#000000',
+	  secondaryColor: '#C99DA3',
+	  objectDesign: 'square-outline'
+	});
 	
 	var styles = {
 	  homePageContainer: {
@@ -97,22 +132,23 @@ exports.modules = {
 	
 	};
 	
-	var HomePage = function (_Component) {
-	  _inherits(HomePage, _Component);
+	var LIGHT_BAND_THEME = _extends({}, BASE_THEME, {
+	  backgroundColor: '#FAFAFA',
+	  textColor: '#888888',
+	  primaryColor: '#996888',
+	  secondaryColor: '#C99DA3'
+	});
 	
-	  function HomePage(props) {
-	    _classCallCheck(this, HomePage);
+	var LandingPage = function (_Component) {
+	  _inherits(LandingPage, _Component);
 	
-	    var _this = _possibleConstructorReturn(this, (HomePage.__proto__ || Object.getPrototypeOf(HomePage)).call(this, props));
+	  function LandingPage() {
+	    _classCallCheck(this, LandingPage);
 	
-	    _this.state = {};
-	
-	    _this.componentDidMount = _this.componentDidMount.bind(_this);
-	    _this.goToWizard = _this.goToWizard.bind(_this);
-	    return _this;
+	    return _possibleConstructorReturn(this, (LandingPage.__proto__ || Object.getPrototypeOf(LandingPage)).apply(this, arguments));
 	  }
 	
-	  _createClass(HomePage, [{
+	  _createClass(LandingPage, [{
 	    key: 'getChildContext',
 	    value: function getChildContext() {
 	      return {
@@ -120,72 +156,104 @@ exports.modules = {
 	      };
 	    }
 	  }, {
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      this.context.mixpanel.track('Homepage login');
-	    }
-	    //
-	    // handleDeletePost = post => {
-	    //   if (confirm('Do you want to delete this post')) { // eslint-disable-line
-	    //     this.props.dispatch(deletePostRequest(post));
-	    //   }
-	    // };
-	    //
-	    // handleAddPost = (name, title, content) => {
-	    //   this.props.dispatch(toggleAddPost());
-	    //   this.props.dispatch(addPostRequest({ name, title, content }));
-	    // };
-	
-	  }, {
-	    key: 'goToWizard',
-	    value: function goToWizard() {
-	      this.context.mixpanel.track('Homepage button click', {
-	        'button_name': 'start wizard'
-	      });
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { style: styles.homePageContainer },
+	        null,
 	        _react2.default.createElement(
-	          'div',
-	          { style: styles.logo },
-	          _react2.default.createElement(_IconSvg2.default, null)
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { style: styles.homePageTextContainer },
+	          _landricksComponents.LandingCanvas,
+	          null,
+	          _react2.default.createElement(_landricksComponents.StrongMessageBrick, {
+	            theme: HEADER_BAND_THEME,
+	            messageLevel1: 'A beautiful message, but not so long',
+	            messageLevel2: 'A related but not so important concept, that usually is a little bit longer than the previous',
+	            CTAs: _react2.default.createElement(_landricksComponents.CallToAction, { label: 'sign up' }),
+	            styles: styles.homePageContainer
+	          }),
 	          _react2.default.createElement(
-	            'div',
-	            { style: styles.homePageTextTitle },
-	            'Find your medical rights now'
+	            _landricksComponents.DoubleContentBrick,
+	            { theme: HEAVY_BAND_THEME, hasHeader: false },
+	            _react2.default.createElement(
+	              _landricksComponents.ThemePropagator,
+	              null,
+	              _react2.default.createElement(
+	                'h1',
+	                null,
+	                'Our product highlight'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'you wont find a better product anywhere in the universe.'
+	              ),
+	              _react2.default.createElement(_landricksComponents.CallToAction, { label: 'buy' }),
+	              _react2.default.createElement(_landricksComponents.CallToAction, { label: 'learn more' })
+	            ),
+	            _react2.default.createElement(_landricksComponents.PlaceHolder, null)
 	          ),
 	          _react2.default.createElement(
-	            'div',
-	            { style: styles.homePageTextSubTitle },
-	            'Don\'t waste your time to analyze your medical insurance, ',
-	            _react2.default.createElement('br', null),
-	            'Just mark what the doctor said'
+	            _landricksComponents.GenericBrick,
+	            {
+	              theme: LIGHT_BAND_THEME,
+	              title: 'Yes, we can!',
+	              subtitle: 'if you think you can do it',
+	              contentStyle: { textAlign: 'center' } },
+	            _react2.default.createElement(_landricksComponents.PlaceHolder, null)
 	          ),
 	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: '/wizard' },
-	            _react2.default.createElement(_RaisedButton2.default, {
-	              labelPosition: 'before',
-	              style: styles.button,
-	              containerElement: 'label',
-	              label: 'Get Started Now',
-	              onTouchTap: this.goToWizard
+	            _landricksComponents.EnumerationBrick,
+	            {
+	              theme: HEAVY_BAND_THEME,
+	              title: 'Awesome features',
+	              subtitle: 'You can add any number of them' },
+	            _react2.default.createElement(_landricksComponents.FeatureItem, {
+	              icon: 'rocket',
+	              title: 'Feature 1',
+	              description: 'bla bla bla bla bla'
+	            }),
+	            _react2.default.createElement(_landricksComponents.FeatureItem, {
+	              icon: 'rocket',
+	              title: 'Feature 2',
+	              description: 'bla bla bla bla bla'
+	            }),
+	            _react2.default.createElement(_landricksComponents.FeatureItem, {
+	              icon: 'rocket',
+	              title: 'Feature 3',
+	              description: 'bla bla bla bla bla'
 	            })
-	          )
+	          ),
+	          _react2.default.createElement(
+	            _landricksComponents.DoubleContentBrick,
+	            { theme: LIGHT_BAND_THEME, hasHeader: false },
+	            _react2.default.createElement(_landricksComponents.PlaceHolder, { useLoremIpsum: true }),
+	            _react2.default.createElement(_landricksComponents.PlaceHolder, { label: 'image placeholder' })
+	          ),
+	          _react2.default.createElement(
+	            _landricksComponents.DoubleContentBrick,
+	            { theme: LIGHT_BAND_THEME, hasHeader: false },
+	            _react2.default.createElement(_landricksComponents.PlaceHolder, { label: 'image placeholder' }),
+	            _react2.default.createElement(_landricksComponents.PlaceHolder, { useLoremIpsum: true })
+	          ),
+	          _react2.default.createElement(
+	            _landricksComponents.DoubleContentBrick,
+	            { theme: LIGHT_BAND_THEME, hasHeader: false },
+	            _react2.default.createElement(_landricksComponents.PlaceHolder, { useLoremIpsum: true }),
+	            _react2.default.createElement(_landricksComponents.PlaceHolder, { label: 'image placeholder' })
+	          ),
+	          _react2.default.createElement(_landricksComponents.EmailSqueezeBrick, {
+	            title: 'Join our Newsletter',
+	            subtitle: 'To get updates about what we want you to know about',
+	            theme: HEAVY_BAND_THEME,
+	            buttonLabel: 'Join',
+	            placeholder: 'Enter your email'
+	          })
 	        )
 	      );
 	    }
 	  }]);
 	
-	  return HomePage;
+	  return LandingPage;
 	}(_react.Component);
 	
 	// Actions required to provide data for this component to render in sever side.
@@ -201,7 +269,7 @@ exports.modules = {
 	  };
 	}
 	
-	HomePage.propTypes = {
+	LandingPage.propTypes = {
 	  // posts: PropTypes.arrayOf(PropTypes.shape({
 	  //   name: PropTypes.string.isRequired,
 	  //   title: PropTypes.string.isRequired,
@@ -210,16 +278,15 @@ exports.modules = {
 	  // showAddPost: PropTypes.bool.isRequired,
 	  // dispatch: PropTypes.func.isRequired,
 	};
-	HomePage.childContextTypes = {
+	LandingPage.childContextTypes = {
 	  muiTheme: _react2.default.PropTypes.object
 	};
 	
-	HomePage.contextTypes = {
-	  router: _react2.default.PropTypes.object,
-	  mixpanel: _react.PropTypes.object.isRequired
+	LandingPage.contextTypes = {
+	  router: _react2.default.PropTypes.object
 	};
 	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps)(HomePage);
+	exports.default = (0, _reactRedux.connect)(mapStateToProps)(LandingPage);
 
 /***/ }
 
