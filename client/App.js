@@ -11,6 +11,12 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import lightBaseTheme  from 'material-ui/styles/baseThemes/lightBaseTheme';
 
+// Mixpanel
+import mixpanel from 'mixpanel-browser';
+import MixpanelProvider from 'react-mixpanel';
+
+mixpanel.init("80bb2a9473ffb596cb6e7a06d7306699");
+
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
@@ -21,17 +27,20 @@ import routes from './routes';
 // Base stylesheet
 require('./main.css');
 require('./css/prog-tracker.css');
+require('./modules/Wizard/componenets/WizardMain.css');
 
 export default function App(props) {
   return (
     <MuiThemeProvider>
-      <Provider store={props.store}>
-        <IntlWrapper>
-          <Router history={browserHistory}>
-            {routes}
-          </Router>
-        </IntlWrapper>
-      </Provider>
+      <MixpanelProvider mixpanel={mixpanel}>
+        <Provider store={props.store}>
+          <IntlWrapper>
+            <Router history={browserHistory}>
+              {routes}
+            </Router>
+          </IntlWrapper>
+        </Provider>
+      </MixpanelProvider>
     </MuiThemeProvider>
   );
 }

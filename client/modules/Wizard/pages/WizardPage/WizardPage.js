@@ -23,6 +23,7 @@ class WizardPage extends Component {
   componentDidMount() {
     this.props.dispatch(fetchMedicalRights());
     this.props.dispatch(fetchUser());
+    this.context.mixpanel.track('Wizard login');
   }
 
   //
@@ -66,5 +67,6 @@ WizardPage.propTypes = {
 
 WizardPage.contextTypes = {
   router: React.PropTypes.object,
+  mixpanel: PropTypes.object.isRequired
 };
 export default connect(mapStateToProps)(WizardPage);

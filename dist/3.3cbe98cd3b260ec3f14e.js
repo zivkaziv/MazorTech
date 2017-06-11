@@ -1,6 +1,6 @@
-webpackJsonp([2],{
+webpackJsonp([3],{
 
-/***/ 741:
+/***/ 746:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20,7 +20,7 @@ webpackJsonp([2],{
 	
 	var _reactRedux = __webpack_require__(65);
 	
-	var _RaisedButton = __webpack_require__(770);
+	var _RaisedButton = __webpack_require__(775);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
@@ -32,7 +32,7 @@ webpackJsonp([2],{
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
-	var _IconSvg = __webpack_require__(273);
+	var _IconSvg = __webpack_require__(271);
 	
 	var _IconSvg2 = _interopRequireDefault(_IconSvg);
 	
@@ -99,10 +99,16 @@ webpackJsonp([2],{
 	var HomePage = function (_Component) {
 	  _inherits(HomePage, _Component);
 	
-	  function HomePage() {
+	  function HomePage(props) {
 	    _classCallCheck(this, HomePage);
 	
-	    return _possibleConstructorReturn(this, (HomePage.__proto__ || Object.getPrototypeOf(HomePage)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (HomePage.__proto__ || Object.getPrototypeOf(HomePage)).call(this, props));
+	
+	    _this.state = {};
+	
+	    _this.componentDidMount = _this.componentDidMount.bind(_this);
+	    _this.goToWizard = _this.goToWizard.bind(_this);
+	    return _this;
 	  }
 	
 	  _createClass(HomePage, [{
@@ -112,9 +118,11 @@ webpackJsonp([2],{
 	        muiTheme: (0, _getMuiTheme2.default)(_lightBaseTheme2.default)
 	      };
 	    }
-	    // componentDidMount() {
-	    //   this.props.dispatch(fetchPosts());
-	    // }
+	  }, {
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      this.context.mixpanel.track('Homepage login');
+	    }
 	    //
 	    // handleDeletePost = post => {
 	    //   if (confirm('Do you want to delete this post')) { // eslint-disable-line
@@ -127,6 +135,13 @@ webpackJsonp([2],{
 	    //   this.props.dispatch(addPostRequest({ name, title, content }));
 	    // };
 	
+	  }, {
+	    key: 'goToWizard',
+	    value: function goToWizard() {
+	      this.context.mixpanel.track('Homepage button click', {
+	        'button_name': 'start wizard'
+	      });
+	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
@@ -160,7 +175,8 @@ webpackJsonp([2],{
 	              labelPosition: 'before',
 	              style: styles.button,
 	              containerElement: 'label',
-	              label: 'Get Started Now'
+	              label: 'Get Started Now',
+	              onTouchTap: this.goToWizard
 	            })
 	          )
 	        )
@@ -198,14 +214,15 @@ webpackJsonp([2],{
 	};
 	
 	HomePage.contextTypes = {
-	  router: _react2.default.PropTypes.object
+	  router: _react2.default.PropTypes.object,
+	  mixpanel: _react.PropTypes.object.isRequired
 	};
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(HomePage);
 
 /***/ },
 
-/***/ 743:
+/***/ 749:
 /***/ function(module, exports) {
 
 	module.exports = function (target) {
@@ -223,7 +240,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 744:
+/***/ 750:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -264,28 +281,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 747:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = undefined;
-	
-	var _Paper = __webpack_require__(767);
-	
-	var _Paper2 = _interopRequireDefault(_Paper);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = _Paper2.default;
-
-/***/ },
-
-/***/ 748:
+/***/ 751:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -303,7 +299,45 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 749:
+/***/ 752:
+/***/ function(module, exports) {
+
+	"use strict";
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  set: function set(style, key, value) {
+	    style[key] = value;
+	  }
+	};
+
+/***/ },
+
+/***/ 754:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = undefined;
+	
+	var _Paper = __webpack_require__(773);
+	
+	var _Paper2 = _interopRequireDefault(_Paper);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = _Paper2.default;
+
+/***/ },
+
+/***/ 757:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -345,7 +379,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 750:
+/***/ 758:
 /***/ function(module, exports) {
 
 	// Source: http://jsfiddle.net/vWx8V/
@@ -498,24 +532,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 751:
-/***/ function(module, exports) {
-
-	"use strict";
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = {
-	  set: function set(style, key, value) {
-	    style[key] = value;
-	  }
-	};
-
-/***/ },
-
-/***/ 752:
+/***/ 759:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -553,7 +570,7 @@ webpackJsonp([2],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(743);
+	var _simpleAssign = __webpack_require__(749);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -565,21 +582,21 @@ webpackJsonp([2],{
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _childUtils = __webpack_require__(753);
+	var _childUtils = __webpack_require__(760);
 	
-	var _events = __webpack_require__(758);
+	var _events = __webpack_require__(763);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
-	var _keycode = __webpack_require__(750);
+	var _keycode = __webpack_require__(758);
 	
 	var _keycode2 = _interopRequireDefault(_keycode);
 	
-	var _FocusRipple = __webpack_require__(762);
+	var _FocusRipple = __webpack_require__(765);
 	
 	var _FocusRipple2 = _interopRequireDefault(_FocusRipple);
 	
-	var _TouchRipple = __webpack_require__(763);
+	var _TouchRipple = __webpack_require__(766);
 	
 	var _TouchRipple2 = _interopRequireDefault(_TouchRipple);
 	
@@ -928,7 +945,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 753:
+/***/ 760:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -944,7 +961,7 @@ webpackJsonp([2],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _ReactFragment = __webpack_require__(771);
+	var _ReactFragment = __webpack_require__(776);
 	
 	var _ReactFragment2 = _interopRequireDefault(_ReactFragment);
 	
@@ -987,7 +1004,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 754:
+/***/ 761:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -997,7 +1014,7 @@ webpackJsonp([2],{
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _chainFunction = __webpack_require__(765);
+	var _chainFunction = __webpack_require__(770);
 	
 	var _chainFunction2 = _interopRequireDefault(_chainFunction);
 	
@@ -1013,7 +1030,7 @@ webpackJsonp([2],{
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
-	var _ChildMapping = __webpack_require__(778);
+	var _ChildMapping = __webpack_require__(781);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -1266,7 +1283,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 758:
+/***/ 763:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1312,7 +1329,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 759:
+/***/ 764:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1320,7 +1337,7 @@ webpackJsonp([2],{
 	
 	exports.__esModule = true;
 	
-	var _from = __webpack_require__(271);
+	var _from = __webpack_require__(269);
 	
 	var _from2 = _interopRequireDefault(_from);
 	
@@ -1332,7 +1349,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 762:
+/***/ 765:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1362,7 +1379,7 @@ webpackJsonp([2],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(743);
+	var _simpleAssign = __webpack_require__(749);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -1378,19 +1395,19 @@ webpackJsonp([2],{
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _shallowEqual = __webpack_require__(748);
+	var _shallowEqual = __webpack_require__(751);
 	
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 	
-	var _autoPrefix = __webpack_require__(751);
+	var _autoPrefix = __webpack_require__(752);
 	
 	var _autoPrefix2 = _interopRequireDefault(_autoPrefix);
 	
-	var _transitions = __webpack_require__(744);
+	var _transitions = __webpack_require__(750);
 	
 	var _transitions2 = _interopRequireDefault(_transitions);
 	
-	var _ScaleIn = __webpack_require__(775);
+	var _ScaleIn = __webpack_require__(778);
 	
 	var _ScaleIn2 = _interopRequireDefault(_ScaleIn);
 	
@@ -1538,7 +1555,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 763:
+/***/ 766:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1572,11 +1589,11 @@ webpackJsonp([2],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _toArray2 = __webpack_require__(759);
+	var _toArray2 = __webpack_require__(764);
 	
 	var _toArray3 = _interopRequireDefault(_toArray2);
 	
-	var _simpleAssign = __webpack_require__(743);
+	var _simpleAssign = __webpack_require__(749);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -1592,15 +1609,15 @@ webpackJsonp([2],{
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _TransitionGroup = __webpack_require__(754);
+	var _TransitionGroup = __webpack_require__(761);
 	
 	var _TransitionGroup2 = _interopRequireDefault(_TransitionGroup);
 	
-	var _dom = __webpack_require__(764);
+	var _dom = __webpack_require__(767);
 	
 	var _dom2 = _interopRequireDefault(_dom);
 	
-	var _CircleRipple = __webpack_require__(773);
+	var _CircleRipple = __webpack_require__(777);
 	
 	var _CircleRipple2 = _interopRequireDefault(_CircleRipple);
 	
@@ -1855,7 +1872,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 764:
+/***/ 767:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1886,7 +1903,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 765:
+/***/ 770:
 /***/ function(module, exports) {
 
 	
@@ -1913,7 +1930,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 767:
+/***/ 773:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1951,7 +1968,7 @@ webpackJsonp([2],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(743);
+	var _simpleAssign = __webpack_require__(749);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -1963,11 +1980,11 @@ webpackJsonp([2],{
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _propTypes3 = __webpack_require__(749);
+	var _propTypes3 = __webpack_require__(757);
 	
 	var _propTypes4 = _interopRequireDefault(_propTypes3);
 	
-	var _transitions = __webpack_require__(744);
+	var _transitions = __webpack_require__(750);
 	
 	var _transitions2 = _interopRequireDefault(_transitions);
 	
@@ -2071,7 +2088,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 769:
+/***/ 774:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2109,7 +2126,7 @@ webpackJsonp([2],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(743);
+	var _simpleAssign = __webpack_require__(749);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -2121,19 +2138,19 @@ webpackJsonp([2],{
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _transitions = __webpack_require__(744);
+	var _transitions = __webpack_require__(750);
 	
 	var _transitions2 = _interopRequireDefault(_transitions);
 	
 	var _colorManipulator = __webpack_require__(90);
 	
-	var _childUtils = __webpack_require__(753);
+	var _childUtils = __webpack_require__(760);
 	
-	var _EnhancedButton = __webpack_require__(752);
+	var _EnhancedButton = __webpack_require__(759);
 	
 	var _EnhancedButton2 = _interopRequireDefault(_EnhancedButton);
 	
-	var _Paper = __webpack_require__(747);
+	var _Paper = __webpack_require__(754);
 	
 	var _Paper2 = _interopRequireDefault(_Paper);
 	
@@ -2574,7 +2591,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 770:
+/***/ 775:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2585,7 +2602,7 @@ webpackJsonp([2],{
 	});
 	exports.default = undefined;
 	
-	var _RaisedButton = __webpack_require__(769);
+	var _RaisedButton = __webpack_require__(774);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
@@ -2595,7 +2612,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 771:
+/***/ 776:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2613,7 +2630,7 @@ webpackJsonp([2],{
 	
 	var _reactProdInvariant2 = _interopRequireDefault(_reactProdInvariant);
 	
-	var _ReactChildren = __webpack_require__(272);
+	var _ReactChildren = __webpack_require__(270);
 	
 	var _ReactChildren2 = _interopRequireDefault(_ReactChildren);
 	
@@ -2712,7 +2729,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 773:
+/***/ 777:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2750,7 +2767,7 @@ webpackJsonp([2],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(743);
+	var _simpleAssign = __webpack_require__(749);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -2766,15 +2783,15 @@ webpackJsonp([2],{
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _shallowEqual = __webpack_require__(748);
+	var _shallowEqual = __webpack_require__(751);
 	
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 	
-	var _autoPrefix = __webpack_require__(751);
+	var _autoPrefix = __webpack_require__(752);
 	
 	var _autoPrefix2 = _interopRequireDefault(_autoPrefix);
 	
-	var _transitions = __webpack_require__(744);
+	var _transitions = __webpack_require__(750);
 	
 	var _transitions2 = _interopRequireDefault(_transitions);
 	
@@ -2891,7 +2908,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 775:
+/***/ 778:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2929,7 +2946,7 @@ webpackJsonp([2],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(743);
+	var _simpleAssign = __webpack_require__(749);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -2941,11 +2958,11 @@ webpackJsonp([2],{
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _TransitionGroup = __webpack_require__(754);
+	var _TransitionGroup = __webpack_require__(761);
 	
 	var _TransitionGroup2 = _interopRequireDefault(_TransitionGroup);
 	
-	var _ScaleInChild = __webpack_require__(776);
+	var _ScaleInChild = __webpack_require__(779);
 	
 	var _ScaleInChild2 = _interopRequireDefault(_ScaleInChild);
 	
@@ -3027,7 +3044,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 776:
+/***/ 779:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3065,7 +3082,7 @@ webpackJsonp([2],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(743);
+	var _simpleAssign = __webpack_require__(749);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -3081,11 +3098,11 @@ webpackJsonp([2],{
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _autoPrefix = __webpack_require__(751);
+	var _autoPrefix = __webpack_require__(752);
 	
 	var _autoPrefix2 = _interopRequireDefault(_autoPrefix);
 	
-	var _transitions = __webpack_require__(744);
+	var _transitions = __webpack_require__(750);
 	
 	var _transitions2 = _interopRequireDefault(_transitions);
 	
@@ -3204,7 +3221,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 778:
+/***/ 781:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

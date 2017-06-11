@@ -1,12 +1,12 @@
 import React, { PropTypes } from 'react';
 
+require('./WizardMain.css');
+
 // Import Components
 // import PostListItem from '../../Post/components/PostListItem/PostListItem';
 // import styles from '../../../css/prog-tracker.css';
 
 import StepZilla from 'react-stepzilla';
-import wizardMainStyles from './WizardMain.css';
-
 //Steps
 import Step1 from '../Steps/StepNumber1'
 import Step2 from '../Steps/StepNumber2'
@@ -20,15 +20,18 @@ function WizardMain(props) {
       {name: 'Medical Diagnosis', component: <Step1 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
       {name: 'Personal Info', component: <Step2 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
       {name: 'Terms', component: <Step3 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
-      {name: 'Your Medical Rights', component: <Step4 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
-      {name: 'Summary', component: <Step5 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />}
+      {name: 'Your Medical Rights', component: <Step4 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />}
+      // {name: 'Summary', component: <Step5 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />}
     ];
 
 
   return (
-    <div className={wizardMainStyles['wizard-steps-container']}>
+    <div>
       <div className='step-progress'>
-        <StepZilla steps={steps}/>
+        <StepZilla steps={steps}
+                   dontValidate={false}
+                   stepsNavigation={false}
+                   nextTextOnFinalActionStep={"See my medical rights"}/>
       </div>
     </div>
   );

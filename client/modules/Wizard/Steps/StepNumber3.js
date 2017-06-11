@@ -1,6 +1,10 @@
 'use strict';
 
 import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
+
+// Import Selectors
+import { getUser } from '../UserReducer';
 
 // Material
 import Toggle from 'material-ui/Toggle';
@@ -8,8 +12,10 @@ import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
 
 const styles = {
-  pageStyle: {
-    maxWidth: 740,
+  wizardStepPageStyle: {
+    maxHeight: 350,
+    maxWidth: 679,
+    overflow:'auto',
   },
   termsSection:{
     maxHeight: 334,
@@ -22,12 +28,11 @@ const styles = {
   }
 };
 
-export default class StepNumber3 extends Component {
+class StepNumber3 extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      termsAgreed : false,
       dialogOpen : false
     };
 
@@ -40,14 +45,15 @@ export default class StepNumber3 extends Component {
 
   isValidated() {
     console.log(this.state);
-    if(!this.state.termsAgreed){
+    if(!this.props.user.agreed_terms){
       this.handleOpen();
     }
-    return this.state.termsAgreed;
+    return this.props.user.agreed_terms;
   }
 
   stateChanged(value,isInputChecked){
-    this.setState({termsAgreed : isInputChecked});
+    this.props.user.agreed_terms = isInputChecked;
+    this.setState({user: this.props.user});
     console.log(this.state);
   }
 
@@ -70,9 +76,9 @@ export default class StepNumber3 extends Component {
     ];
 
     return (
-      <div className="step">
+      <div className="step step2" style={styles.wizardStepPageStyle}>
         <section style={styles.termsSection} >
-          <h1>Terms of Use</h1>
+          <h2>Terms of Use</h2>
           <h3>Agreement between You and Instructure</h3>
           <p>Last Updated Date: August 30th, 2016</p>
           <p>PLEASE READ THIS TERMS OF USE AGREEMENT (THE <b>&ldquo;TERMS&rdquo;</b>) CAREFULLY. BY ACCESSING OR USING THIS WEBSITE OR ANY OTHER WEBSITES OF INSTRUCTURE, INC. (<b>&ldquo;INSTRUCTURE&rdquo;</b>) WITH LINKS TO THIS AGREEMENT (COLLECTIVELY, THE <b>&ldquo;WEBSITE&rdquo;</b>) IN ANY WAY, INCLUDING USING THE SERVICES ENABLED VIA THE WEBSITE (THE <b>&ldquo;SERVICES&rdquo;</b>) BY INSTRUCTURE OR USERS OF THE SITE (<b>&ldquo;USERS&rdquo;</b>), CLICKING THE &ldquo;I ACCEPT&rdquo; CHECK BOX, OR MERELY BROWSING THE WEBSITE, YOU REPRESENT THAT YOU HAVE READ, UNDERSTAND, AND AGREE TO BE BOUND BY THE TERMS.  <b>IF YOU DO NOT AGREE TO BE BOUND BY THE TERMS, YOU MAY NOT ACCESS OR USE THIS WEBSITE OR THE SERVICES.</b> </p>
@@ -152,6 +158,7 @@ export default class StepNumber3 extends Component {
             label="I agree"
             style={styles.toggle}
             onToggle={this.stateChanged}
+            toggled={ this.props.user.agreed_terms}
           />
         </div>
         <Dialog
@@ -167,3 +174,16 @@ export default class StepNumber3 extends Component {
     )
   }
 }
+
+
+function mapStateToProps(state) {
+  return {
+    user: getUser(state),
+  };
+}
+
+StepNumber3.propTypes = {
+  user: PropTypes.any
+};
+
+export default connect(mapStateToProps)(StepNumber3);

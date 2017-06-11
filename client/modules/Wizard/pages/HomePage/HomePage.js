@@ -59,14 +59,22 @@ const styles = {
 };
 
 class HomePage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+
+    this.componentDidMount = this.componentDidMount.bind(this);
+    this.goToWizard = this.goToWizard.bind(this);
+  }
+
   getChildContext() {
     return {
       muiTheme: getMuiTheme(lightTheme)
     };
   }
-  // componentDidMount() {
-  //   this.props.dispatch(fetchPosts());
-  // }
+  componentDidMount() {
+    this.context.mixpanel.track('Homepage login');
+  }
   //
   // handleDeletePost = post => {
   //   if (confirm('Do you want to delete this post')) { // eslint-disable-line
@@ -79,6 +87,11 @@ class HomePage extends Component {
   //   this.props.dispatch(addPostRequest({ name, title, content }));
   // };
 
+  goToWizard(){
+    this.context.mixpanel.track('Homepage button click',{
+      'button_name':'start wizard'
+    });
+  }
   render() {
     return (
       <div style={styles.homePageContainer}>
@@ -99,6 +112,7 @@ class HomePage extends Component {
                 style={styles.button}
                 containerElement="label"
                 label="Get Started Now"
+                onTouchTap={this.goToWizard}
               />
             </Link>
         </div>
@@ -134,6 +148,7 @@ HomePage.childContextTypes = {
 
 HomePage.contextTypes = {
   router: React.PropTypes.object,
+  mixpanel: PropTypes.object.isRequired
 };
 
 export default connect(mapStateToProps)(HomePage);

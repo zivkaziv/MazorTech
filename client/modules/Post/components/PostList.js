@@ -7,10 +7,10 @@ import styles from '../../../css/prog-tracker.css';
 import StepZilla from 'react-stepzilla';
 
 //Steps
-import Step1 from '../../Wizard/Steps/Step1'
-import Step2 from '../../Wizard/Steps/Step2'
-import Step3 from '../../Wizard/Steps/Step3'
-import Step4 from '../../Wizard/Steps/Step4'
+import Step1 from '../../Wizard/Steps/StepNumber1'
+import Step2 from '../../Wizard/Steps/StepNumber2'
+import Step3 from '../../Wizard/Steps/StepNumber3'
+import Step4 from '../../Wizard/Steps/StepNumber4'
 
 
 function PostList(props) {

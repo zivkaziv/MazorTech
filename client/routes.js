@@ -46,6 +46,14 @@ export default (
         });
       }}
     />
+    <Route
+      path="/landing"
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Wizard/pages/LandingPage/LandingPage').default);
+        });
+      }}
+    />
     {/*<Route*/}
       {/*path="/posts/:slug-:cuid"*/}
       {/*getComponent={(nextState, cb) => {*/}

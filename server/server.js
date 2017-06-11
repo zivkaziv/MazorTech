@@ -211,7 +211,16 @@ ol.progtrckr li span {
 @media (max-width: 650px) {
   .progtrckr em {
     display: inline;
-  // }border-bottom: solid 1px;
+  }
+  border-bottom: solid 1px;
+}
+
+@media (max-width: 650px) {
+ .step {
+    max-height=320px;
+    min-height=320px;
+    min-width=300px;
+  }
 }
 
 
