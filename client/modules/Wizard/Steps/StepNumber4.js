@@ -12,8 +12,11 @@ import { getSelectedMedicalRights } from '../WizardReducer';
 
 const styles = {
   pageStyle: {
-    maxHeight: 350,
+    maxHeight: 400,
     maxWidth: 740,
+    overflow:'auto',
+  },
+  medicalRightsContainer:{
     overflow:'auto',
   }
 };
@@ -32,11 +35,11 @@ class StepNumber4 extends Component {
     console.log(medicalConditions);
 
     return(
-      <div className="step">
+      <div className="step" style={styles.pageStyle}>
         <div className="row">
           <h1>We have found for you the following medical rights</h1>
           {/*<CircularProgress size={80} thickness={5} />*/}
-          <div>
+          <div style={styles.medicalRightsContainer}>
             {this.props.medicalConditions.map((selectedConditions)=>{
               // console.log(selectedConditions);
               return selectedConditions.rights.map((medicalRight,i) => {

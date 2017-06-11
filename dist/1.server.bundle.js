@@ -1,7 +1,7 @@
 exports.ids = [1];
 exports.modules = {
 
-/***/ 91:
+/***/ 100:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19,13 +19,309 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(2);
 	
-	var _WizardMain = __webpack_require__(99);
+	var _CircularProgress = __webpack_require__(41);
+	
+	var _CircularProgress2 = _interopRequireDefault(_CircularProgress);
+	
+	var _MedicalRIghtItem = __webpack_require__(93);
+	
+	var _MedicalRIghtItem2 = _interopRequireDefault(_MedicalRIghtItem);
+	
+	var _WizardReducer = __webpack_require__(35);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	// Import Selectors
+	
+	
+	var StepNumber5 = function (_Component) {
+	  _inherits(StepNumber5, _Component);
+	
+	  function StepNumber5(props) {
+	    _classCallCheck(this, StepNumber5);
+	
+	    var _this = _possibleConstructorReturn(this, (StepNumber5.__proto__ || Object.getPrototypeOf(StepNumber5)).call(this, props));
+	
+	    _this.state = {};
+	
+	    return _this;
+	  }
+	
+	  _createClass(StepNumber5, [{
+	    key: 'render',
+	    value: function render() {
+	      var medicalConditions = this.props.medicalConditions;
+	
+	      console.log(medicalConditions);
+	
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'step' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row' },
+	          _react2.default.createElement(
+	            'h1',
+	            null,
+	            'Summary'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            'We\'ve found for you 5 rights.. we are still under beta and what to know from you what kind of thins you want to have.. please help us with that'
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return StepNumber5;
+	}(_react.Component);
+	
+	function mapStateToProps(state) {
+	  return {
+	    // showAddPost: getShowAddPost(state),
+	    medicalConditions: (0, _WizardReducer.getSelectedMedicalRights)(state)
+	  };
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps)(StepNumber5);
+
+/***/ },
+
+/***/ 101:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.MedicalDiagnosticItem = undefined;
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(0);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(2);
+	
+	var _reactRouter = __webpack_require__(3);
+	
+	var _reactIntl = __webpack_require__(1);
+	
+	var _Checkbox = __webpack_require__(103);
+	
+	var _Checkbox2 = _interopRequireDefault(_Checkbox);
+	
+	var _MedicalDiagnosticItem = {
+	  "medical-diagnostic-item": "_Uhygq52TmiRQTOLmE_0"
+	};
+	
+	var _MedicalDiagnosticItem2 = _interopRequireDefault(_MedicalDiagnosticItem);
+	
+	var _WizardActions = __webpack_require__(40);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	// Import Style
+	
+	
+	var MedicalDiagnosticItem = exports.MedicalDiagnosticItem = function (_Component) {
+	  _inherits(MedicalDiagnosticItem, _Component);
+	
+	  function MedicalDiagnosticItem(props) {
+	    _classCallCheck(this, MedicalDiagnosticItem);
+	
+	    var _this = _possibleConstructorReturn(this, (MedicalDiagnosticItem.__proto__ || Object.getPrototypeOf(MedicalDiagnosticItem)).call(this, props));
+	
+	    _this.state = {};
+	
+	    //Bind
+	    _this.onCheck = _this.onCheck.bind(_this);
+	    return _this;
+	  }
+	
+	  _createClass(MedicalDiagnosticItem, [{
+	    key: 'onCheck',
+	    value: function onCheck(e, checked) {
+	      this.props.medicalRight.isSelected = !this.props.medicalRight.isSelected;
+	
+	      this.props.medicalRight.isSelected ? this.props.dispatch((0, _WizardActions.selectCondition)(this.props.medicalRight)) : this.props.dispatch((0, _WizardActions.unselectCondition)(this.props.medicalRight));
+	
+	      this.setState({ medicalRight: this.props.medicalRight });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _this2 = this;
+	
+	      return _react2.default.createElement(
+	        'div',
+	        { className: _MedicalDiagnosticItem2.default['medical-diagnostic-item'] },
+	        _react2.default.createElement(_Checkbox2.default, { className: _MedicalDiagnosticItem2.default['medical-diagnostic'],
+	          label: this.props.medicalRight.condition,
+	          checked: !!this.props.medicalRight.isSelected,
+	          onCheck: function onCheck(e, checked) {
+	            return _this2.onCheck(e, checked);
+	          } })
+	      );
+	    }
+	  }]);
+	
+	  return MedicalDiagnosticItem;
+	}(_react.Component);
+	
+	MedicalDiagnosticItem.propTypes = {
+	  medicalRight: _react.PropTypes.any
+	};
+	
+	function mapStateToProps(state) {
+	  return {};
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps)(MedicalDiagnosticItem);
+
+/***/ },
+
+/***/ 102:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(0);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactStepzilla = __webpack_require__(48);
+	
+	var _reactStepzilla2 = _interopRequireDefault(_reactStepzilla);
+	
+	var _WizardMain = {
+	  "wizard-steps-container": "_3rIfZKbLlZ4umprC1ltNYV"
+	};
 	
 	var _WizardMain2 = _interopRequireDefault(_WizardMain);
 	
-	var _WizardActions = __webpack_require__(38);
+	var _StepNumber = __webpack_require__(96);
 	
-	var _UserActions = __webpack_require__(37);
+	var _StepNumber2 = _interopRequireDefault(_StepNumber);
+	
+	var _StepNumber3 = __webpack_require__(97);
+	
+	var _StepNumber4 = _interopRequireDefault(_StepNumber3);
+	
+	var _StepNumber5 = __webpack_require__(98);
+	
+	var _StepNumber6 = _interopRequireDefault(_StepNumber5);
+	
+	var _StepNumber7 = __webpack_require__(99);
+	
+	var _StepNumber8 = _interopRequireDefault(_StepNumber7);
+	
+	var _StepNumber9 = __webpack_require__(100);
+	
+	var _StepNumber10 = _interopRequireDefault(_StepNumber9);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function WizardMain(props) {
+	  var _this = this;
+	
+	  var steps = [{ name: 'Medical Diagnosis', component: _react2.default.createElement(_StepNumber2.default, { getStore: function getStore() {
+	        return _this.getStore();
+	      }, updateStore: function updateStore(u) {
+	        _this.updateStore(u);
+	      } }) }, { name: 'Personal Info', component: _react2.default.createElement(_StepNumber4.default, { getStore: function getStore() {
+	        return _this.getStore();
+	      }, updateStore: function updateStore(u) {
+	        _this.updateStore(u);
+	      } }) }, { name: 'Terms', component: _react2.default.createElement(_StepNumber6.default, { getStore: function getStore() {
+	        return _this.getStore();
+	      }, updateStore: function updateStore(u) {
+	        _this.updateStore(u);
+	      } }) }, { name: 'Your Medical Rights', component: _react2.default.createElement(_StepNumber8.default, { getStore: function getStore() {
+	        return _this.getStore();
+	      }, updateStore: function updateStore(u) {
+	        _this.updateStore(u);
+	      } }) }, { name: 'Summary', component: _react2.default.createElement(_StepNumber10.default, { getStore: function getStore() {
+	        return _this.getStore();
+	      }, updateStore: function updateStore(u) {
+	        _this.updateStore(u);
+	      } }) }];
+	
+	  return _react2.default.createElement(
+	    'div',
+	    { className: _WizardMain2.default['wizard-steps-container'] },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'step-progress' },
+	      _react2.default.createElement(_reactStepzilla2.default, { steps: steps })
+	    )
+	  );
+	}
+	
+	//Steps
+	
+	
+	// Import Components
+	// import PostListItem from '../../Post/components/PostListItem/PostListItem';
+	// import styles from '../../../css/prog-tracker.css';
+	
+	WizardMain.propTypes = {
+	  // medicalRights: PropTypes.arrayOf(PropTypes.shape({
+	  //   condition: PropTypes.string.isRequired
+	  // })).isRequired,
+	};
+	
+	exports.default = WizardMain;
+
+/***/ },
+
+/***/ 92:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(0);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(2);
+	
+	var _WizardMain = __webpack_require__(102);
+	
+	var _WizardMain2 = _interopRequireDefault(_WizardMain);
+	
+	var _WizardActions = __webpack_require__(40);
+	
+	var _UserActions = __webpack_require__(39);
 	
 	var _WizardReducer = __webpack_require__(35);
 	
@@ -121,7 +417,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 92:
+/***/ 93:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -135,7 +431,7 @@ exports.modules = {
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Card = __webpack_require__(103);
+	var _Card = __webpack_require__(105);
 	
 	var _FlatButton = __webpack_require__(36);
 	
@@ -188,7 +484,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 93:
+/***/ 96:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -206,11 +502,11 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(2);
 	
-	var _MedicalDiagnosticItem = __webpack_require__(98);
+	var _MedicalDiagnosticItem = __webpack_require__(101);
 	
 	var _MedicalDiagnosticItem2 = _interopRequireDefault(_MedicalDiagnosticItem);
 	
-	var _reactSearchInput = __webpack_require__(105);
+	var _reactSearchInput = __webpack_require__(107);
 	
 	var _reactSearchInput2 = _interopRequireDefault(_reactSearchInput);
 	
@@ -218,23 +514,23 @@ exports.modules = {
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
-	var _RaisedButton = __webpack_require__(41);
+	var _RaisedButton = __webpack_require__(37);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
-	var _Dialog = __webpack_require__(40);
+	var _Dialog = __webpack_require__(42);
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
-	var _TextField = __webpack_require__(104);
+	var _TextField = __webpack_require__(106);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
-	var _getMuiTheme = __webpack_require__(102);
+	var _getMuiTheme = __webpack_require__(95);
 	
 	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 	
-	var _lightBaseTheme = __webpack_require__(101);
+	var _lightBaseTheme = __webpack_require__(94);
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
@@ -446,7 +742,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 94:
+/***/ 97:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -482,13 +778,13 @@ exports.modules = {
 	
 	var _Toggle2 = _interopRequireDefault(_Toggle);
 	
-	var _Checkbox = __webpack_require__(100);
+	var _Checkbox = __webpack_require__(103);
 	
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 	
 	var _UserReducer = __webpack_require__(43);
 	
-	var _UserActions = __webpack_require__(37);
+	var _UserActions = __webpack_require__(39);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -776,7 +1072,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 95:
+/***/ 98:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -796,7 +1092,7 @@ exports.modules = {
 	
 	var _Toggle2 = _interopRequireDefault(_Toggle);
 	
-	var _Dialog = __webpack_require__(40);
+	var _Dialog = __webpack_require__(42);
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
@@ -1696,7 +1992,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 96:
+/***/ 99:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1714,11 +2010,11 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(2);
 	
-	var _CircularProgress = __webpack_require__(39);
+	var _CircularProgress = __webpack_require__(41);
 	
 	var _CircularProgress2 = _interopRequireDefault(_CircularProgress);
 	
-	var _MedicalRIghtItem = __webpack_require__(92);
+	var _MedicalRIghtItem = __webpack_require__(93);
 	
 	var _MedicalRIghtItem2 = _interopRequireDefault(_MedicalRIghtItem);
 	
@@ -1737,8 +2033,11 @@ exports.modules = {
 	
 	var styles = {
 	  pageStyle: {
-	    maxHeight: 350,
+	    maxHeight: 400,
 	    maxWidth: 740,
+	    overflow: 'auto'
+	  },
+	  medicalRightsContainer: {
 	    overflow: 'auto'
 	  }
 	};
@@ -1765,7 +2064,7 @@ exports.modules = {
 	
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'step' },
+	        { className: 'step', style: styles.pageStyle },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'row' },
@@ -1776,7 +2075,7 @@ exports.modules = {
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            null,
+	            { style: styles.medicalRightsContainer },
 	            this.props.medicalConditions.map(function (selectedConditions) {
 	              // console.log(selectedConditions);
 	              return selectedConditions.rights.map(function (medicalRight, i) {
@@ -1801,302 +2100,6 @@ exports.modules = {
 	}
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(StepNumber4);
-
-/***/ },
-
-/***/ 97:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(0);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRedux = __webpack_require__(2);
-	
-	var _CircularProgress = __webpack_require__(39);
-	
-	var _CircularProgress2 = _interopRequireDefault(_CircularProgress);
-	
-	var _MedicalRIghtItem = __webpack_require__(92);
-	
-	var _MedicalRIghtItem2 = _interopRequireDefault(_MedicalRIghtItem);
-	
-	var _WizardReducer = __webpack_require__(35);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	// Import Selectors
-	
-	
-	var StepNumber4 = function (_Component) {
-	  _inherits(StepNumber4, _Component);
-	
-	  function StepNumber4(props) {
-	    _classCallCheck(this, StepNumber4);
-	
-	    var _this = _possibleConstructorReturn(this, (StepNumber4.__proto__ || Object.getPrototypeOf(StepNumber4)).call(this, props));
-	
-	    _this.state = {};
-	
-	    return _this;
-	  }
-	
-	  _createClass(StepNumber4, [{
-	    key: 'render',
-	    value: function render() {
-	      var medicalConditions = this.props.medicalConditions;
-	
-	      console.log(medicalConditions);
-	
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'step' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'row' },
-	          _react2.default.createElement(
-	            'h1',
-	            null,
-	            'Summary'
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            null,
-	            'Thanks'
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return StepNumber4;
-	}(_react.Component);
-	
-	function mapStateToProps(state) {
-	  return {
-	    // showAddPost: getShowAddPost(state),
-	    medicalConditions: (0, _WizardReducer.getSelectedMedicalRights)(state)
-	  };
-	}
-	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps)(StepNumber4);
-
-/***/ },
-
-/***/ 98:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.MedicalDiagnosticItem = undefined;
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(0);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRedux = __webpack_require__(2);
-	
-	var _reactRouter = __webpack_require__(3);
-	
-	var _reactIntl = __webpack_require__(1);
-	
-	var _Checkbox = __webpack_require__(100);
-	
-	var _Checkbox2 = _interopRequireDefault(_Checkbox);
-	
-	var _MedicalDiagnosticItem = {
-	  "medical-diagnostic-item": "_Uhygq52TmiRQTOLmE_0"
-	};
-	
-	var _MedicalDiagnosticItem2 = _interopRequireDefault(_MedicalDiagnosticItem);
-	
-	var _WizardActions = __webpack_require__(38);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	// Import Style
-	
-	
-	var MedicalDiagnosticItem = exports.MedicalDiagnosticItem = function (_Component) {
-	  _inherits(MedicalDiagnosticItem, _Component);
-	
-	  function MedicalDiagnosticItem(props) {
-	    _classCallCheck(this, MedicalDiagnosticItem);
-	
-	    var _this = _possibleConstructorReturn(this, (MedicalDiagnosticItem.__proto__ || Object.getPrototypeOf(MedicalDiagnosticItem)).call(this, props));
-	
-	    _this.state = {};
-	
-	    //Bind
-	    _this.onCheck = _this.onCheck.bind(_this);
-	    return _this;
-	  }
-	
-	  _createClass(MedicalDiagnosticItem, [{
-	    key: 'onCheck',
-	    value: function onCheck(e, checked) {
-	      this.props.medicalRight.isSelected = !this.props.medicalRight.isSelected;
-	
-	      this.props.medicalRight.isSelected ? this.props.dispatch((0, _WizardActions.selectCondition)(this.props.medicalRight)) : this.props.dispatch((0, _WizardActions.unselectCondition)(this.props.medicalRight));
-	
-	      this.setState({ medicalRight: this.props.medicalRight });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _this2 = this;
-	
-	      return _react2.default.createElement(
-	        'div',
-	        { className: _MedicalDiagnosticItem2.default['medical-diagnostic-item'] },
-	        _react2.default.createElement(_Checkbox2.default, { className: _MedicalDiagnosticItem2.default['medical-diagnostic'],
-	          label: this.props.medicalRight.condition,
-	          checked: !!this.props.medicalRight.isSelected,
-	          onCheck: function onCheck(e, checked) {
-	            return _this2.onCheck(e, checked);
-	          } })
-	      );
-	    }
-	  }]);
-	
-	  return MedicalDiagnosticItem;
-	}(_react.Component);
-	
-	MedicalDiagnosticItem.propTypes = {
-	  medicalRight: _react.PropTypes.any
-	};
-	
-	function mapStateToProps(state) {
-	  return {};
-	}
-	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps)(MedicalDiagnosticItem);
-
-/***/ },
-
-/***/ 99:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(0);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactStepzilla = __webpack_require__(48);
-	
-	var _reactStepzilla2 = _interopRequireDefault(_reactStepzilla);
-	
-	var _WizardMain = {
-	  "wizard-steps-container": "_3rIfZKbLlZ4umprC1ltNYV"
-	};
-	
-	var _WizardMain2 = _interopRequireDefault(_WizardMain);
-	
-	var _StepNumber = __webpack_require__(93);
-	
-	var _StepNumber2 = _interopRequireDefault(_StepNumber);
-	
-	var _StepNumber3 = __webpack_require__(94);
-	
-	var _StepNumber4 = _interopRequireDefault(_StepNumber3);
-	
-	var _StepNumber5 = __webpack_require__(95);
-	
-	var _StepNumber6 = _interopRequireDefault(_StepNumber5);
-	
-	var _StepNumber7 = __webpack_require__(96);
-	
-	var _StepNumber8 = _interopRequireDefault(_StepNumber7);
-	
-	var _StepNumber9 = __webpack_require__(97);
-	
-	var _StepNumber10 = _interopRequireDefault(_StepNumber9);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function WizardMain(props) {
-	  var _this = this;
-	
-	  var steps = [{ name: 'Medical Diagnosis', component: _react2.default.createElement(_StepNumber2.default, { getStore: function getStore() {
-	        return _this.getStore();
-	      }, updateStore: function updateStore(u) {
-	        _this.updateStore(u);
-	      } }) }, { name: 'Personal Info', component: _react2.default.createElement(_StepNumber4.default, { getStore: function getStore() {
-	        return _this.getStore();
-	      }, updateStore: function updateStore(u) {
-	        _this.updateStore(u);
-	      } }) }, { name: 'Terms', component: _react2.default.createElement(_StepNumber6.default, { getStore: function getStore() {
-	        return _this.getStore();
-	      }, updateStore: function updateStore(u) {
-	        _this.updateStore(u);
-	      } }) }, { name: 'Your Medical Rights', component: _react2.default.createElement(_StepNumber8.default, { getStore: function getStore() {
-	        return _this.getStore();
-	      }, updateStore: function updateStore(u) {
-	        _this.updateStore(u);
-	      } }) }, { name: 'Summary', component: _react2.default.createElement(_StepNumber10.default, { getStore: function getStore() {
-	        return _this.getStore();
-	      }, updateStore: function updateStore(u) {
-	        _this.updateStore(u);
-	      } }) }];
-	
-	  return _react2.default.createElement(
-	    'div',
-	    { className: _WizardMain2.default['wizard-steps-container'] },
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'step-progress' },
-	      _react2.default.createElement(_reactStepzilla2.default, { steps: steps })
-	    )
-	  );
-	}
-	
-	//Steps
-	
-	
-	// Import Components
-	// import PostListItem from '../../Post/components/PostListItem/PostListItem';
-	// import styles from '../../../css/prog-tracker.css';
-	
-	WizardMain.propTypes = {
-	  // medicalRights: PropTypes.arrayOf(PropTypes.shape({
-	  //   condition: PropTypes.string.isRequired
-	  // })).isRequired,
-	};
-	
-	exports.default = WizardMain;
 
 /***/ }
 

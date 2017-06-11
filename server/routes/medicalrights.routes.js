@@ -10,6 +10,7 @@ router.route('/medicalConditions').get(MedicalRightsController.getAllConditions)
 
 // Get all rights
 router.route('/medicalrights').get(MedicalRightsController.getMedicalRights);
+router.route('/medicalrightsmock').get(MedicalRightsController.getMedicalRightsMock);
 
 // Get one post by cuid
 router.route('/medicalrights/:condition').get(MedicalRightsController.getMedicalRights);

@@ -36,7 +36,7 @@ function unselectMedicalCondition(medicalCondition) {
 
 export function fetchMedicalRights() {
   return (dispatch) => {
-    return callApi('medicalrights').then(res => {
+    return callApi('medicalrightsmock').then(res => {
       // console.log(res.rights);
       dispatch(initMedicalRights(res.medicalEntry));
     });
