@@ -27,6 +27,7 @@ import routes from './routes';
 // Base stylesheet
 require('./main.css');
 require('./css/prog-tracker.css');
+require('./modules/Wizard/componenets/WizardMain.css');
 
 export default function App(props) {
   return (

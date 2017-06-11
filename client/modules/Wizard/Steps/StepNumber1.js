@@ -19,9 +19,9 @@ import { getMedicalRights } from '../WizardReducer';
 // Styles
 import searchInputStyles from './StepNumber1.css';
 const styles = {
-  pageStyle: {
+  wizardStepPageStyle: {
     maxHeight: 350,
-    // overflow:'auto',
+    overflow:'auto',
   },
   medicalDiagnosticsContainer:{
     display:'flex'
@@ -115,7 +115,7 @@ class StepNumber1 extends Component {
     ];
 
     return (
-      <div className="step step1" style={styles.pageStyle}>
+      <div className="step step1" style={styles.wizardStepPageStyle}>
         <div className="row">
           <div className="row" style={styles.searchContainer}>
             <SearchInput placeholder='Search for your medical diagnostic'
@@ -180,6 +180,5 @@ StepNumber1.childContextTypes = {
 StepNumber1.contextTypes = {
   router: React.PropTypes.object,
 };
-
 
 export default connect(mapStateToProps)(StepNumber1);

@@ -1,12 +1,12 @@
 import React, { PropTypes } from 'react';
 
+require('./WizardMain.css');
+
 // Import Components
 // import PostListItem from '../../Post/components/PostListItem/PostListItem';
 // import styles from '../../../css/prog-tracker.css';
 
 import StepZilla from 'react-stepzilla';
-import wizardMainStyles from './WizardMain.css';
-
 //Steps
 import Step1 from '../Steps/StepNumber1'
 import Step2 from '../Steps/StepNumber2'
@@ -26,7 +26,7 @@ function WizardMain(props) {
 
 
   return (
-    <div className={wizardMainStyles['wizard-steps-container']}>
+    <div>
       <div className='step-progress'>
         <StepZilla steps={steps}/>
       </div>
