@@ -1010,8 +1010,8 @@
 	  { path: '/', component: _App2.default },
 	  _react2.default.createElement(_reactRouter.IndexRoute, {
 	    getComponent: function getComponent(nextState, cb) {
-	      __webpack_require__.e/* nsure */(4).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(98).default);
+	      __webpack_require__.e/* nsure */(2).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
+	        cb(null, __webpack_require__(99).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  }),
@@ -1019,7 +1019,7 @@
 	    path: '/wizard',
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(1).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(101).default);
+	        cb(null, __webpack_require__(100).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  }),
@@ -1027,15 +1027,7 @@
 	    path: '/landing',
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(3).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(99).default);
-	      }).bind(null, __webpack_require__));
-	    }
-	  }),
-	  _react2.default.createElement(_reactRouter.Route, {
-	    path: '/landing2',
-	    getComponent: function getComponent(nextState, cb) {
-	      __webpack_require__.e/* nsure */(2).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(100).default);
+	        cb(null, __webpack_require__(98).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  })
@@ -5267,8 +5259,7 @@
 /* 100 */,
 /* 101 */,
 /* 102 */,
-/* 103 */,
-/* 104 */
+/* 103 */
 /***/ function(module, exports) {
 
 	module.exports = require("landricks-components");

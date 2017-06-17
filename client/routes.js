@@ -34,7 +34,7 @@ export default (
     <IndexRoute
       getComponent={(nextState, cb) => {
         require.ensure([], require => {
-          cb(null, require('./modules/Wizard/pages/HomePage/HomePage').default);
+          cb(null, require('./modules/Wizard/pages/LandingPage/LandingPage').default);
         });
       }}
     />
@@ -50,18 +50,19 @@ export default (
       path="/landing"
       getComponent={(nextState, cb) => {
         require.ensure([], require => {
-          cb(null, require('./modules/Wizard/pages/LandingPage/LandingPage').default);
+          cb(null, require('./modules/Wizard/pages/HomePage/HomePage').default);
+
         });
       }}
     />
-    <Route
-      path="/landing2"
-      getComponent={(nextState, cb) => {
-        require.ensure([], require => {
-          cb(null, require('./modules/Wizard/pages/LandingPageV2/LandingPageV2').default);
-        });
-      }}
-    />
+    {/*<Route*/}
+      {/*path="/landing2"*/}
+      {/*getComponent={(nextState, cb) => {*/}
+        {/*require.ensure([], require => {*/}
+          {/*cb(null, require('./modules/Wizard/pages/LandingPageV2/LandingPageV2').default);*/}
+        {/*});*/}
+      {/*}}*/}
+    {/*/>*/}
     {/*<Route*/}
       {/*path="/posts/:slug-:cuid"*/}
       {/*getComponent={(nextState, cb) => {*/}

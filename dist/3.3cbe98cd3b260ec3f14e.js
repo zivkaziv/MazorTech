@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 748:
+/***/ 746:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20,7 +20,7 @@ webpackJsonp([3],{
 	
 	var _reactRedux = __webpack_require__(65);
 	
-	var _RaisedButton = __webpack_require__(772);
+	var _RaisedButton = __webpack_require__(775);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
@@ -96,13 +96,13 @@ webpackJsonp([3],{
 	
 	};
 	
-	var LandingPageV2 = function (_Component) {
-	  _inherits(LandingPageV2, _Component);
+	var HomePage = function (_Component) {
+	  _inherits(HomePage, _Component);
 	
-	  function LandingPageV2(props) {
-	    _classCallCheck(this, LandingPageV2);
+	  function HomePage(props) {
+	    _classCallCheck(this, HomePage);
 	
-	    var _this = _possibleConstructorReturn(this, (LandingPageV2.__proto__ || Object.getPrototypeOf(LandingPageV2)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (HomePage.__proto__ || Object.getPrototypeOf(HomePage)).call(this, props));
 	
 	    _this.state = {};
 	
@@ -111,7 +111,7 @@ webpackJsonp([3],{
 	    return _this;
 	  }
 	
-	  _createClass(LandingPageV2, [{
+	  _createClass(HomePage, [{
 	    key: 'getChildContext',
 	    value: function getChildContext() {
 	      return {
@@ -184,7 +184,7 @@ webpackJsonp([3],{
 	    }
 	  }]);
 	
-	  return LandingPageV2;
+	  return HomePage;
 	}(_react.Component);
 	
 	// Actions required to provide data for this component to render in sever side.
@@ -200,7 +200,7 @@ webpackJsonp([3],{
 	  };
 	}
 	
-	LandingPageV2.propTypes = {
+	HomePage.propTypes = {
 	  // posts: PropTypes.arrayOf(PropTypes.shape({
 	  //   name: PropTypes.string.isRequired,
 	  //   title: PropTypes.string.isRequired,
@@ -209,20 +209,20 @@ webpackJsonp([3],{
 	  // showAddPost: PropTypes.bool.isRequired,
 	  // dispatch: PropTypes.func.isRequired,
 	};
-	LandingPageV2.childContextTypes = {
+	HomePage.childContextTypes = {
 	  muiTheme: _react2.default.PropTypes.object
 	};
 	
-	LandingPageV2.contextTypes = {
+	HomePage.contextTypes = {
 	  router: _react2.default.PropTypes.object,
 	  mixpanel: _react.PropTypes.object.isRequired
 	};
 	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps)(LandingPageV2);
+	exports.default = (0, _reactRedux.connect)(mapStateToProps)(HomePage);
 
 /***/ },
 
-/***/ 750:
+/***/ 749:
 /***/ function(module, exports) {
 
 	module.exports = function (target) {
@@ -240,7 +240,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 751:
+/***/ 750:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -281,24 +281,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 752:
-/***/ function(module, exports) {
-
-	"use strict";
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = {
-	  set: function set(style, key, value) {
-	    style[key] = value;
-	  }
-	};
-
-/***/ },
-
-/***/ 753:
+/***/ 751:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -316,6 +299,23 @@ webpackJsonp([3],{
 
 /***/ },
 
+/***/ 752:
+/***/ function(module, exports) {
+
+	"use strict";
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  set: function set(style, key, value) {
+	    style[key] = value;
+	  }
+	};
+
+/***/ },
+
 /***/ 754:
 /***/ function(module, exports, __webpack_require__) {
 
@@ -327,7 +327,7 @@ webpackJsonp([3],{
 	});
 	exports.default = undefined;
 	
-	var _Paper = __webpack_require__(770);
+	var _Paper = __webpack_require__(773);
 	
 	var _Paper2 = _interopRequireDefault(_Paper);
 	
@@ -337,7 +337,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 755:
+/***/ 757:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -379,7 +379,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 756:
+/***/ 758:
 /***/ function(module, exports) {
 
 	// Source: http://jsfiddle.net/vWx8V/
@@ -532,345 +532,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 757:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.createChildFragment = createChildFragment;
-	exports.extendChildren = extendChildren;
-	
-	var _react = __webpack_require__(0);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _ReactFragment = __webpack_require__(773);
-	
-	var _ReactFragment2 = _interopRequireDefault(_ReactFragment);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function createChildFragment(fragments) {
-	  var newFragments = {};
-	  var validChildrenCount = 0;
-	  var firstKey = void 0;
-	
-	  // Only create non-empty key fragments
-	  for (var key in fragments) {
-	    var currentChild = fragments[key];
-	
-	    if (currentChild) {
-	      if (validChildrenCount === 0) firstKey = key;
-	      newFragments[key] = currentChild;
-	      validChildrenCount++;
-	    }
-	  }
-	
-	  if (validChildrenCount === 0) return undefined;
-	  if (validChildrenCount === 1) return newFragments[firstKey];
-	  return (0, _ReactFragment2.default)(newFragments);
-	}
-	
-	function extendChildren(children, extendedProps, extendedChildren) {
-	  return _react2.default.Children.map(children, function (child) {
-	    if (!_react2.default.isValidElement(child)) {
-	      return child;
-	    }
-	
-	    var newProps = typeof extendedProps === 'function' ? extendedProps(child) : extendedProps;
-	
-	    var newChildren = typeof extendedChildren === 'function' ? extendedChildren(child) : extendedChildren ? extendedChildren : child.props.children;
-	
-	    return _react2.default.cloneElement(child, newProps, newChildren);
-	  });
-	}
-
-/***/ },
-
-/***/ 758:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-	
-	exports.__esModule = true;
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	var _chainFunction = __webpack_require__(769);
-	
-	var _chainFunction2 = _interopRequireDefault(_chainFunction);
-	
-	var _react = __webpack_require__(0);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _propTypes = __webpack_require__(6);
-	
-	var _propTypes2 = _interopRequireDefault(_propTypes);
-	
-	var _warning = __webpack_require__(66);
-	
-	var _warning2 = _interopRequireDefault(_warning);
-	
-	var _ChildMapping = __webpack_require__(777);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var propTypes = {
-	  component: _propTypes2.default.any,
-	  childFactory: _propTypes2.default.func,
-	  children: _propTypes2.default.node
-	};
-	
-	var defaultProps = {
-	  component: 'span',
-	  childFactory: function childFactory(child) {
-	    return child;
-	  }
-	};
-	
-	var TransitionGroup = function (_React$Component) {
-	  _inherits(TransitionGroup, _React$Component);
-	
-	  function TransitionGroup(props, context) {
-	    _classCallCheck(this, TransitionGroup);
-	
-	    var _this = _possibleConstructorReturn(this, _React$Component.call(this, props, context));
-	
-	    _this.performAppear = function (key) {
-	      _this.currentlyTransitioningKeys[key] = true;
-	
-	      var component = _this.childRefs[key];
-	
-	      if (component.componentWillAppear) {
-	        component.componentWillAppear(_this._handleDoneAppearing.bind(_this, key));
-	      } else {
-	        _this._handleDoneAppearing(key);
-	      }
-	    };
-	
-	    _this._handleDoneAppearing = function (key) {
-	      var component = _this.childRefs[key];
-	      if (component && component.componentDidAppear) {
-	        component.componentDidAppear();
-	      }
-	
-	      delete _this.currentlyTransitioningKeys[key];
-	
-	      var currentChildMapping = (0, _ChildMapping.getChildMapping)(_this.props.children);
-	
-	      if (!currentChildMapping || !currentChildMapping.hasOwnProperty(key)) {
-	        // This was removed before it had fully appeared. Remove it.
-	        _this.performLeave(key);
-	      }
-	    };
-	
-	    _this.performEnter = function (key) {
-	      _this.currentlyTransitioningKeys[key] = true;
-	
-	      var component = _this.childRefs[key];
-	
-	      if (component.componentWillEnter) {
-	        component.componentWillEnter(_this._handleDoneEntering.bind(_this, key));
-	      } else {
-	        _this._handleDoneEntering(key);
-	      }
-	    };
-	
-	    _this._handleDoneEntering = function (key) {
-	      var component = _this.childRefs[key];
-	      if (component && component.componentDidEnter) {
-	        component.componentDidEnter();
-	      }
-	
-	      delete _this.currentlyTransitioningKeys[key];
-	
-	      var currentChildMapping = (0, _ChildMapping.getChildMapping)(_this.props.children);
-	
-	      if (!currentChildMapping || !currentChildMapping.hasOwnProperty(key)) {
-	        // This was removed before it had fully entered. Remove it.
-	        _this.performLeave(key);
-	      }
-	    };
-	
-	    _this.performLeave = function (key) {
-	      _this.currentlyTransitioningKeys[key] = true;
-	
-	      var component = _this.childRefs[key];
-	      if (component.componentWillLeave) {
-	        component.componentWillLeave(_this._handleDoneLeaving.bind(_this, key));
-	      } else {
-	        // Note that this is somewhat dangerous b/c it calls setState()
-	        // again, effectively mutating the component before all the work
-	        // is done.
-	        _this._handleDoneLeaving(key);
-	      }
-	    };
-	
-	    _this._handleDoneLeaving = function (key) {
-	      var component = _this.childRefs[key];
-	
-	      if (component && component.componentDidLeave) {
-	        component.componentDidLeave();
-	      }
-	
-	      delete _this.currentlyTransitioningKeys[key];
-	
-	      var currentChildMapping = (0, _ChildMapping.getChildMapping)(_this.props.children);
-	
-	      if (currentChildMapping && currentChildMapping.hasOwnProperty(key)) {
-	        // This entered again before it fully left. Add it again.
-	        _this.performEnter(key);
-	      } else {
-	        _this.setState(function (state) {
-	          var newChildren = _extends({}, state.children);
-	          delete newChildren[key];
-	          return { children: newChildren };
-	        });
-	      }
-	    };
-	
-	    _this.childRefs = Object.create(null);
-	
-	    _this.state = {
-	      children: (0, _ChildMapping.getChildMapping)(props.children)
-	    };
-	    return _this;
-	  }
-	
-	  TransitionGroup.prototype.componentWillMount = function componentWillMount() {
-	    this.currentlyTransitioningKeys = {};
-	    this.keysToEnter = [];
-	    this.keysToLeave = [];
-	  };
-	
-	  TransitionGroup.prototype.componentDidMount = function componentDidMount() {
-	    var initialChildMapping = this.state.children;
-	    for (var key in initialChildMapping) {
-	      if (initialChildMapping[key]) {
-	        this.performAppear(key);
-	      }
-	    }
-	  };
-	
-	  TransitionGroup.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
-	    var nextChildMapping = (0, _ChildMapping.getChildMapping)(nextProps.children);
-	    var prevChildMapping = this.state.children;
-	
-	    this.setState({
-	      children: (0, _ChildMapping.mergeChildMappings)(prevChildMapping, nextChildMapping)
-	    });
-	
-	    for (var key in nextChildMapping) {
-	      var hasPrev = prevChildMapping && prevChildMapping.hasOwnProperty(key);
-	      if (nextChildMapping[key] && !hasPrev && !this.currentlyTransitioningKeys[key]) {
-	        this.keysToEnter.push(key);
-	      }
-	    }
-	
-	    for (var _key in prevChildMapping) {
-	      var hasNext = nextChildMapping && nextChildMapping.hasOwnProperty(_key);
-	      if (prevChildMapping[_key] && !hasNext && !this.currentlyTransitioningKeys[_key]) {
-	        this.keysToLeave.push(_key);
-	      }
-	    }
-	
-	    // If we want to someday check for reordering, we could do it here.
-	  };
-	
-	  TransitionGroup.prototype.componentDidUpdate = function componentDidUpdate() {
-	    var keysToEnter = this.keysToEnter;
-	    this.keysToEnter = [];
-	    keysToEnter.forEach(this.performEnter);
-	
-	    var keysToLeave = this.keysToLeave;
-	    this.keysToLeave = [];
-	    keysToLeave.forEach(this.performLeave);
-	  };
-	
-	  TransitionGroup.prototype.render = function render() {
-	    var _this2 = this;
-	
-	    // TODO: we could get rid of the need for the wrapper node
-	    // by cloning a single child
-	    var childrenToRender = [];
-	
-	    var _loop = function _loop(key) {
-	      var child = _this2.state.children[key];
-	      if (child) {
-	        var isCallbackRef = typeof child.ref !== 'string';
-	        var factoryChild = _this2.props.childFactory(child);
-	        var ref = function ref(r) {
-	          _this2.childRefs[key] = r;
-	        };
-	
-	         false ? (0, _warning2.default)(isCallbackRef, 'string refs are not supported on children of TransitionGroup and will be ignored. ' + 'Please use a callback ref instead: https://facebook.github.io/react/docs/refs-and-the-dom.html#the-ref-callback-attribute') : void 0;
-	
-	        // Always chaining the refs leads to problems when the childFactory
-	        // wraps the child. The child ref callback gets called twice with the
-	        // wrapper and the child. So we only need to chain the ref if the
-	        // factoryChild is not different from child.
-	        if (factoryChild === child && isCallbackRef) {
-	          ref = (0, _chainFunction2.default)(child.ref, ref);
-	        }
-	
-	        // You may need to apply reactive updates to a child as it is leaving.
-	        // The normal React way to do it won't work since the child will have
-	        // already been removed. In case you need this behavior you can provide
-	        // a childFactory function to wrap every child, even the ones that are
-	        // leaving.
-	        childrenToRender.push(_react2.default.cloneElement(factoryChild, {
-	          key: key,
-	          ref: ref
-	        }));
-	      }
-	    };
-	
-	    for (var key in this.state.children) {
-	      _loop(key);
-	    }
-	
-	    // Do not forward TransitionGroup props to primitive DOM nodes
-	    var props = _extends({}, this.props);
-	    delete props.transitionLeave;
-	    delete props.transitionName;
-	    delete props.transitionAppear;
-	    delete props.transitionEnter;
-	    delete props.childFactory;
-	    delete props.transitionLeaveTimeout;
-	    delete props.transitionEnterTimeout;
-	    delete props.transitionAppearTimeout;
-	    delete props.component;
-	
-	    return _react2.default.createElement(this.props.component, props, childrenToRender);
-	  };
-	
-	  return TransitionGroup;
-	}(_react2.default.Component);
-	
-	TransitionGroup.displayName = 'TransitionGroup';
-	
-	
-	TransitionGroup.propTypes = propTypes;
-	TransitionGroup.defaultProps = defaultProps;
-	
-	exports.default = TransitionGroup;
-	module.exports = exports['default'];
-
-/***/ },
-
-/***/ 761:
+/***/ 759:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -908,7 +570,7 @@ webpackJsonp([3],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(750);
+	var _simpleAssign = __webpack_require__(749);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -920,21 +582,21 @@ webpackJsonp([3],{
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _childUtils = __webpack_require__(757);
+	var _childUtils = __webpack_require__(760);
 	
 	var _events = __webpack_require__(763);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
-	var _keycode = __webpack_require__(756);
+	var _keycode = __webpack_require__(758);
 	
 	var _keycode2 = _interopRequireDefault(_keycode);
 	
-	var _FocusRipple = __webpack_require__(766);
+	var _FocusRipple = __webpack_require__(765);
 	
 	var _FocusRipple2 = _interopRequireDefault(_FocusRipple);
 	
-	var _TouchRipple = __webpack_require__(767);
+	var _TouchRipple = __webpack_require__(766);
 	
 	var _TouchRipple2 = _interopRequireDefault(_TouchRipple);
 	
@@ -1283,6 +945,344 @@ webpackJsonp([3],{
 
 /***/ },
 
+/***/ 760:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.createChildFragment = createChildFragment;
+	exports.extendChildren = extendChildren;
+	
+	var _react = __webpack_require__(0);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _ReactFragment = __webpack_require__(776);
+	
+	var _ReactFragment2 = _interopRequireDefault(_ReactFragment);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function createChildFragment(fragments) {
+	  var newFragments = {};
+	  var validChildrenCount = 0;
+	  var firstKey = void 0;
+	
+	  // Only create non-empty key fragments
+	  for (var key in fragments) {
+	    var currentChild = fragments[key];
+	
+	    if (currentChild) {
+	      if (validChildrenCount === 0) firstKey = key;
+	      newFragments[key] = currentChild;
+	      validChildrenCount++;
+	    }
+	  }
+	
+	  if (validChildrenCount === 0) return undefined;
+	  if (validChildrenCount === 1) return newFragments[firstKey];
+	  return (0, _ReactFragment2.default)(newFragments);
+	}
+	
+	function extendChildren(children, extendedProps, extendedChildren) {
+	  return _react2.default.Children.map(children, function (child) {
+	    if (!_react2.default.isValidElement(child)) {
+	      return child;
+	    }
+	
+	    var newProps = typeof extendedProps === 'function' ? extendedProps(child) : extendedProps;
+	
+	    var newChildren = typeof extendedChildren === 'function' ? extendedChildren(child) : extendedChildren ? extendedChildren : child.props.children;
+	
+	    return _react2.default.cloneElement(child, newProps, newChildren);
+	  });
+	}
+
+/***/ },
+
+/***/ 761:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	
+	exports.__esModule = true;
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _chainFunction = __webpack_require__(770);
+	
+	var _chainFunction2 = _interopRequireDefault(_chainFunction);
+	
+	var _react = __webpack_require__(0);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _propTypes = __webpack_require__(6);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+	
+	var _warning = __webpack_require__(66);
+	
+	var _warning2 = _interopRequireDefault(_warning);
+	
+	var _ChildMapping = __webpack_require__(781);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var propTypes = {
+	  component: _propTypes2.default.any,
+	  childFactory: _propTypes2.default.func,
+	  children: _propTypes2.default.node
+	};
+	
+	var defaultProps = {
+	  component: 'span',
+	  childFactory: function childFactory(child) {
+	    return child;
+	  }
+	};
+	
+	var TransitionGroup = function (_React$Component) {
+	  _inherits(TransitionGroup, _React$Component);
+	
+	  function TransitionGroup(props, context) {
+	    _classCallCheck(this, TransitionGroup);
+	
+	    var _this = _possibleConstructorReturn(this, _React$Component.call(this, props, context));
+	
+	    _this.performAppear = function (key) {
+	      _this.currentlyTransitioningKeys[key] = true;
+	
+	      var component = _this.childRefs[key];
+	
+	      if (component.componentWillAppear) {
+	        component.componentWillAppear(_this._handleDoneAppearing.bind(_this, key));
+	      } else {
+	        _this._handleDoneAppearing(key);
+	      }
+	    };
+	
+	    _this._handleDoneAppearing = function (key) {
+	      var component = _this.childRefs[key];
+	      if (component && component.componentDidAppear) {
+	        component.componentDidAppear();
+	      }
+	
+	      delete _this.currentlyTransitioningKeys[key];
+	
+	      var currentChildMapping = (0, _ChildMapping.getChildMapping)(_this.props.children);
+	
+	      if (!currentChildMapping || !currentChildMapping.hasOwnProperty(key)) {
+	        // This was removed before it had fully appeared. Remove it.
+	        _this.performLeave(key);
+	      }
+	    };
+	
+	    _this.performEnter = function (key) {
+	      _this.currentlyTransitioningKeys[key] = true;
+	
+	      var component = _this.childRefs[key];
+	
+	      if (component.componentWillEnter) {
+	        component.componentWillEnter(_this._handleDoneEntering.bind(_this, key));
+	      } else {
+	        _this._handleDoneEntering(key);
+	      }
+	    };
+	
+	    _this._handleDoneEntering = function (key) {
+	      var component = _this.childRefs[key];
+	      if (component && component.componentDidEnter) {
+	        component.componentDidEnter();
+	      }
+	
+	      delete _this.currentlyTransitioningKeys[key];
+	
+	      var currentChildMapping = (0, _ChildMapping.getChildMapping)(_this.props.children);
+	
+	      if (!currentChildMapping || !currentChildMapping.hasOwnProperty(key)) {
+	        // This was removed before it had fully entered. Remove it.
+	        _this.performLeave(key);
+	      }
+	    };
+	
+	    _this.performLeave = function (key) {
+	      _this.currentlyTransitioningKeys[key] = true;
+	
+	      var component = _this.childRefs[key];
+	      if (component.componentWillLeave) {
+	        component.componentWillLeave(_this._handleDoneLeaving.bind(_this, key));
+	      } else {
+	        // Note that this is somewhat dangerous b/c it calls setState()
+	        // again, effectively mutating the component before all the work
+	        // is done.
+	        _this._handleDoneLeaving(key);
+	      }
+	    };
+	
+	    _this._handleDoneLeaving = function (key) {
+	      var component = _this.childRefs[key];
+	
+	      if (component && component.componentDidLeave) {
+	        component.componentDidLeave();
+	      }
+	
+	      delete _this.currentlyTransitioningKeys[key];
+	
+	      var currentChildMapping = (0, _ChildMapping.getChildMapping)(_this.props.children);
+	
+	      if (currentChildMapping && currentChildMapping.hasOwnProperty(key)) {
+	        // This entered again before it fully left. Add it again.
+	        _this.performEnter(key);
+	      } else {
+	        _this.setState(function (state) {
+	          var newChildren = _extends({}, state.children);
+	          delete newChildren[key];
+	          return { children: newChildren };
+	        });
+	      }
+	    };
+	
+	    _this.childRefs = Object.create(null);
+	
+	    _this.state = {
+	      children: (0, _ChildMapping.getChildMapping)(props.children)
+	    };
+	    return _this;
+	  }
+	
+	  TransitionGroup.prototype.componentWillMount = function componentWillMount() {
+	    this.currentlyTransitioningKeys = {};
+	    this.keysToEnter = [];
+	    this.keysToLeave = [];
+	  };
+	
+	  TransitionGroup.prototype.componentDidMount = function componentDidMount() {
+	    var initialChildMapping = this.state.children;
+	    for (var key in initialChildMapping) {
+	      if (initialChildMapping[key]) {
+	        this.performAppear(key);
+	      }
+	    }
+	  };
+	
+	  TransitionGroup.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+	    var nextChildMapping = (0, _ChildMapping.getChildMapping)(nextProps.children);
+	    var prevChildMapping = this.state.children;
+	
+	    this.setState({
+	      children: (0, _ChildMapping.mergeChildMappings)(prevChildMapping, nextChildMapping)
+	    });
+	
+	    for (var key in nextChildMapping) {
+	      var hasPrev = prevChildMapping && prevChildMapping.hasOwnProperty(key);
+	      if (nextChildMapping[key] && !hasPrev && !this.currentlyTransitioningKeys[key]) {
+	        this.keysToEnter.push(key);
+	      }
+	    }
+	
+	    for (var _key in prevChildMapping) {
+	      var hasNext = nextChildMapping && nextChildMapping.hasOwnProperty(_key);
+	      if (prevChildMapping[_key] && !hasNext && !this.currentlyTransitioningKeys[_key]) {
+	        this.keysToLeave.push(_key);
+	      }
+	    }
+	
+	    // If we want to someday check for reordering, we could do it here.
+	  };
+	
+	  TransitionGroup.prototype.componentDidUpdate = function componentDidUpdate() {
+	    var keysToEnter = this.keysToEnter;
+	    this.keysToEnter = [];
+	    keysToEnter.forEach(this.performEnter);
+	
+	    var keysToLeave = this.keysToLeave;
+	    this.keysToLeave = [];
+	    keysToLeave.forEach(this.performLeave);
+	  };
+	
+	  TransitionGroup.prototype.render = function render() {
+	    var _this2 = this;
+	
+	    // TODO: we could get rid of the need for the wrapper node
+	    // by cloning a single child
+	    var childrenToRender = [];
+	
+	    var _loop = function _loop(key) {
+	      var child = _this2.state.children[key];
+	      if (child) {
+	        var isCallbackRef = typeof child.ref !== 'string';
+	        var factoryChild = _this2.props.childFactory(child);
+	        var ref = function ref(r) {
+	          _this2.childRefs[key] = r;
+	        };
+	
+	         false ? (0, _warning2.default)(isCallbackRef, 'string refs are not supported on children of TransitionGroup and will be ignored. ' + 'Please use a callback ref instead: https://facebook.github.io/react/docs/refs-and-the-dom.html#the-ref-callback-attribute') : void 0;
+	
+	        // Always chaining the refs leads to problems when the childFactory
+	        // wraps the child. The child ref callback gets called twice with the
+	        // wrapper and the child. So we only need to chain the ref if the
+	        // factoryChild is not different from child.
+	        if (factoryChild === child && isCallbackRef) {
+	          ref = (0, _chainFunction2.default)(child.ref, ref);
+	        }
+	
+	        // You may need to apply reactive updates to a child as it is leaving.
+	        // The normal React way to do it won't work since the child will have
+	        // already been removed. In case you need this behavior you can provide
+	        // a childFactory function to wrap every child, even the ones that are
+	        // leaving.
+	        childrenToRender.push(_react2.default.cloneElement(factoryChild, {
+	          key: key,
+	          ref: ref
+	        }));
+	      }
+	    };
+	
+	    for (var key in this.state.children) {
+	      _loop(key);
+	    }
+	
+	    // Do not forward TransitionGroup props to primitive DOM nodes
+	    var props = _extends({}, this.props);
+	    delete props.transitionLeave;
+	    delete props.transitionName;
+	    delete props.transitionAppear;
+	    delete props.transitionEnter;
+	    delete props.childFactory;
+	    delete props.transitionLeaveTimeout;
+	    delete props.transitionEnterTimeout;
+	    delete props.transitionAppearTimeout;
+	    delete props.component;
+	
+	    return _react2.default.createElement(this.props.component, props, childrenToRender);
+	  };
+	
+	  return TransitionGroup;
+	}(_react2.default.Component);
+	
+	TransitionGroup.displayName = 'TransitionGroup';
+	
+	
+	TransitionGroup.propTypes = propTypes;
+	TransitionGroup.defaultProps = defaultProps;
+	
+	exports.default = TransitionGroup;
+	module.exports = exports['default'];
+
+/***/ },
+
 /***/ 763:
 /***/ function(module, exports) {
 
@@ -1349,7 +1349,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 766:
+/***/ 765:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1379,7 +1379,7 @@ webpackJsonp([3],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(750);
+	var _simpleAssign = __webpack_require__(749);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -1395,7 +1395,7 @@ webpackJsonp([3],{
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _shallowEqual = __webpack_require__(753);
+	var _shallowEqual = __webpack_require__(751);
 	
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 	
@@ -1403,11 +1403,11 @@ webpackJsonp([3],{
 	
 	var _autoPrefix2 = _interopRequireDefault(_autoPrefix);
 	
-	var _transitions = __webpack_require__(751);
+	var _transitions = __webpack_require__(750);
 	
 	var _transitions2 = _interopRequireDefault(_transitions);
 	
-	var _ScaleIn = __webpack_require__(775);
+	var _ScaleIn = __webpack_require__(778);
 	
 	var _ScaleIn2 = _interopRequireDefault(_ScaleIn);
 	
@@ -1555,7 +1555,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 767:
+/***/ 766:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1565,7 +1565,7 @@ webpackJsonp([3],{
 	  value: true
 	});
 	
-	var _toConsumableArray2 = __webpack_require__(267);
+	var _toConsumableArray2 = __webpack_require__(268);
 	
 	var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
 	
@@ -1593,7 +1593,7 @@ webpackJsonp([3],{
 	
 	var _toArray3 = _interopRequireDefault(_toArray2);
 	
-	var _simpleAssign = __webpack_require__(750);
+	var _simpleAssign = __webpack_require__(749);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -1609,15 +1609,15 @@ webpackJsonp([3],{
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _TransitionGroup = __webpack_require__(758);
+	var _TransitionGroup = __webpack_require__(761);
 	
 	var _TransitionGroup2 = _interopRequireDefault(_TransitionGroup);
 	
-	var _dom = __webpack_require__(768);
+	var _dom = __webpack_require__(767);
 	
 	var _dom2 = _interopRequireDefault(_dom);
 	
-	var _CircleRipple = __webpack_require__(774);
+	var _CircleRipple = __webpack_require__(777);
 	
 	var _CircleRipple2 = _interopRequireDefault(_CircleRipple);
 	
@@ -1872,7 +1872,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 768:
+/***/ 767:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1903,7 +1903,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 769:
+/***/ 770:
 /***/ function(module, exports) {
 
 	
@@ -1930,7 +1930,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 770:
+/***/ 773:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1968,7 +1968,7 @@ webpackJsonp([3],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(750);
+	var _simpleAssign = __webpack_require__(749);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -1980,11 +1980,11 @@ webpackJsonp([3],{
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _propTypes3 = __webpack_require__(755);
+	var _propTypes3 = __webpack_require__(757);
 	
 	var _propTypes4 = _interopRequireDefault(_propTypes3);
 	
-	var _transitions = __webpack_require__(751);
+	var _transitions = __webpack_require__(750);
 	
 	var _transitions2 = _interopRequireDefault(_transitions);
 	
@@ -2088,7 +2088,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 771:
+/***/ 774:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2126,7 +2126,7 @@ webpackJsonp([3],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(750);
+	var _simpleAssign = __webpack_require__(749);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -2138,15 +2138,15 @@ webpackJsonp([3],{
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _transitions = __webpack_require__(751);
+	var _transitions = __webpack_require__(750);
 	
 	var _transitions2 = _interopRequireDefault(_transitions);
 	
 	var _colorManipulator = __webpack_require__(90);
 	
-	var _childUtils = __webpack_require__(757);
+	var _childUtils = __webpack_require__(760);
 	
-	var _EnhancedButton = __webpack_require__(761);
+	var _EnhancedButton = __webpack_require__(759);
 	
 	var _EnhancedButton2 = _interopRequireDefault(_EnhancedButton);
 	
@@ -2591,7 +2591,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 772:
+/***/ 775:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2602,7 +2602,7 @@ webpackJsonp([3],{
 	});
 	exports.default = undefined;
 	
-	var _RaisedButton = __webpack_require__(771);
+	var _RaisedButton = __webpack_require__(774);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
@@ -2612,7 +2612,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 773:
+/***/ 776:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2729,7 +2729,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 774:
+/***/ 777:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2767,7 +2767,7 @@ webpackJsonp([3],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(750);
+	var _simpleAssign = __webpack_require__(749);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -2783,7 +2783,7 @@ webpackJsonp([3],{
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _shallowEqual = __webpack_require__(753);
+	var _shallowEqual = __webpack_require__(751);
 	
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 	
@@ -2791,7 +2791,7 @@ webpackJsonp([3],{
 	
 	var _autoPrefix2 = _interopRequireDefault(_autoPrefix);
 	
-	var _transitions = __webpack_require__(751);
+	var _transitions = __webpack_require__(750);
 	
 	var _transitions2 = _interopRequireDefault(_transitions);
 	
@@ -2908,7 +2908,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 775:
+/***/ 778:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2946,7 +2946,7 @@ webpackJsonp([3],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(750);
+	var _simpleAssign = __webpack_require__(749);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -2958,11 +2958,11 @@ webpackJsonp([3],{
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _TransitionGroup = __webpack_require__(758);
+	var _TransitionGroup = __webpack_require__(761);
 	
 	var _TransitionGroup2 = _interopRequireDefault(_TransitionGroup);
 	
-	var _ScaleInChild = __webpack_require__(776);
+	var _ScaleInChild = __webpack_require__(779);
 	
 	var _ScaleInChild2 = _interopRequireDefault(_ScaleInChild);
 	
@@ -3044,7 +3044,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 776:
+/***/ 779:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3082,7 +3082,7 @@ webpackJsonp([3],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(750);
+	var _simpleAssign = __webpack_require__(749);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -3102,7 +3102,7 @@ webpackJsonp([3],{
 	
 	var _autoPrefix2 = _interopRequireDefault(_autoPrefix);
 	
-	var _transitions = __webpack_require__(751);
+	var _transitions = __webpack_require__(750);
 	
 	var _transitions2 = _interopRequireDefault(_transitions);
 	
@@ -3221,7 +3221,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 777:
+/***/ 781:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

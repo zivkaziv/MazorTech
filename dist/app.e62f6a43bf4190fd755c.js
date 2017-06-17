@@ -1,4 +1,4 @@
-webpackJsonp([5],[
+webpackJsonp([4],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -6225,7 +6225,7 @@ webpackJsonp([5],[
 	  value: true
 	});
 	
-	var _toConsumableArray2 = __webpack_require__(267);
+	var _toConsumableArray2 = __webpack_require__(268);
 	
 	var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
 	
@@ -11635,33 +11635,6 @@ webpackJsonp([5],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	"use strict";
-	
-	exports.__esModule = true;
-	
-	var _from = __webpack_require__(269);
-	
-	var _from2 = _interopRequireDefault(_from);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (arr) {
-	  if (Array.isArray(arr)) {
-	    for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) {
-	      arr2[i] = arr[i];
-	    }
-	
-	    return arr2;
-	  } else {
-	    return (0, _from2.default)(arr);
-	  }
-	};
-
-/***/ },
-/* 268 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
@@ -11741,6 +11714,33 @@ webpackJsonp([5],[
 	
 	// Export Reducer
 	exports.default = WizardReducer;
+
+/***/ },
+/* 268 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	"use strict";
+	
+	exports.__esModule = true;
+	
+	var _from = __webpack_require__(269);
+	
+	var _from2 = _interopRequireDefault(_from);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (arr) {
+	  if (Array.isArray(arr)) {
+	    for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) {
+	      arr2[i] = arr[i];
+	    }
+	
+	    return arr2;
+	  } else {
+	    return (0, _from2.default)(arr);
+	  }
+	};
 
 /***/ },
 /* 269 */
@@ -13330,7 +13330,7 @@ webpackJsonp([5],[
 	
 	var _IntlReducer2 = _interopRequireDefault(_IntlReducer);
 	
-	var _WizardReducer = __webpack_require__(268);
+	var _WizardReducer = __webpack_require__(267);
 	
 	var _WizardReducer2 = _interopRequireDefault(_WizardReducer);
 	
@@ -13402,8 +13402,8 @@ webpackJsonp([5],[
 	  { path: '/', component: _App2.default },
 	  _react2.default.createElement(_reactRouter.IndexRoute, {
 	    getComponent: function getComponent(nextState, cb) {
-	      __webpack_require__.e/* nsure */(4).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(746).default);
+	      __webpack_require__.e/* nsure */(2).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
+	        cb(null, __webpack_require__(747).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  }),
@@ -13411,23 +13411,15 @@ webpackJsonp([5],[
 	    path: '/wizard',
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(1).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(749).default);
+	        cb(null, __webpack_require__(748).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  }),
 	  _react2.default.createElement(_reactRouter.Route, {
 	    path: '/landing',
 	    getComponent: function getComponent(nextState, cb) {
-	      __webpack_require__.e/* nsure */(2).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(747).default);
-	      }).bind(null, __webpack_require__));
-	    }
-	  }),
-	  _react2.default.createElement(_reactRouter.Route, {
-	    path: '/landing2',
-	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(3).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(748).default);
+	        cb(null, __webpack_require__(746).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  })

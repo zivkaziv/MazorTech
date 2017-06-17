@@ -3,10 +3,12 @@
   width: 100%;
   margin: 0 auto;
   position: fixed;
-  bottom: 60px;
+  /*currently we don't use the footer*/
+  /*bottom: 60px;*/
+  bottom: 0px;
   top: 34px;
   overflow: auto;
-  padding: 5px;
+  /*padding: 5px;*/
   display: flex;
   justify-content: center;
 }

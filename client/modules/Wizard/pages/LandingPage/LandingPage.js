@@ -53,7 +53,7 @@ const HEADER_BAND_THEME = {
 
 const HEAVY_BAND_THEME = {
   ...BASE_THEME,
-  backgroundColor: '#29D9C2',
+  backgroundColor: '#699aad',
   textColor: '#FFFFFF',
   primaryColor: '#FFFFFF',
   primaryContrastColor: '#000000',
@@ -63,12 +63,13 @@ const HEAVY_BAND_THEME = {
 
 const styles = {
   homePageContainer:{
-    background: 'url("http://wallpapercave.com/wp/2N8Zebr.jpg") no-repeat fixed center',
-    position:'fixed',
-    top:0,
-    left:0,
-    right:0,
-    bottom:0
+    background: 'url("http://wallpapercave.com/wp/2N8Zebr.jpg") no-repeat center',
+    textAlign:'center'
+    // position:'fixed',
+    // top:0,
+    // left:0,
+    // right:0,
+    // bottom:0
   },
   logo:{
     position:'fixed',
@@ -103,86 +104,125 @@ const styles = {
 
 const LIGHT_BAND_THEME = {
   ...BASE_THEME,
-  backgroundColor: '#FAFAFA',
-  textColor: '#888888',
+  backgroundColor: '#8fcfe8',
+  // textColor: '#888888',
+  textColor: '#FFFFFF',
   primaryColor: '#996888',
   secondaryColor: '#C99DA3'
 };
 
 class LandingPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+
+    this.goToWizard = this.goToWizard.bind(this);
+  }
   getChildContext() {
     return {
       muiTheme: getMuiTheme(lightTheme)
     };
   }
 
+  goToWizard(){
+    console.log('going to wizard');
+  }
+
   render() {
     return (
-      <div>
-        <LandingCanvas>
-          <StrongMessageBrick
+      <LandingCanvas  wrapperStyle={{
+          width:'100%'
+        }
+      }>
+          <GenericBrick
             theme={ HEADER_BAND_THEME }
-            messageLevel1="A beautiful message, but not so long"
-            messageLevel2="A related but not so important concept, that usually is a little bit longer than the previous"
-            CTAs={ <CallToAction label="sign up"/>}
-            styles={styles.homePageContainer}
-          />
+            wrapperStyle={
+              styles.homePageContainer
+            }>
+          <ThemePropagator>
+            <h1>Find now your medical rights</h1>
+            <h2>Easy way to see your medical rights according to your doctor diagnostic</h2>
+            <CallToAction label="Get started" onClick={this.goToWizard} href={'/wizard'}/>
+          </ThemePropagator>
+            {/*theme={ HEADER_BAND_THEME }*/}
+            {/*messageLevel1="Find now your medical rights"*/}
+            {/*messageLevel2="Easy way to see your medical rights according to your doctor diagnostic"*/}
+            {/*CTAs={ <CallToAction label="Get started" onClick={this.goToWizard} href={'/wizard'}/>}*/}
+          {/*/>*/}
+          </GenericBrick>
           <DoubleContentBrick theme={ HEAVY_BAND_THEME } hasHeader={ false }>
             <ThemePropagator>
-              <h1>Our product highlight</h1>
-              <p>you wont find a better product anywhere in the universe.</p>
-              <CallToAction label="buy" /><CallToAction label="learn more" />
+              <h1>Our vision</h1>
+              <p>We aim to improve human health by being the most accessible platform for dependable and accurate medical rights information.</p>
+              {/*<CallToAction label="learn more" />*/}
             </ThemePropagator>
-            <PlaceHolder />
+            <PlaceHolder
+              label={''}
+              wrapperStyle={
+                {
+                  background: 'url("http://www.freepngimg.com/thumb/vision/3-2-vision-free-download-png-thumb.png") no-repeat center',
+                  border:'none'
+                }
+              }/>
+          </DoubleContentBrick>
+          <DoubleContentBrick theme={ LIGHT_BAND_THEME } hasHeader={ false }>
+            <PlaceHolder
+              label={''}
+              wrapperStyle={
+                {
+                  background: 'url("https://nelioabtesting.com/wp-content/uploads/2014/07/goal-icon.png") no-repeat center',
+                  border:'none'
+                }
+              }/>
+            <ThemePropagator wrapperStyle={ {marginLeft: '20px'} }>
+              <h1>Our goal</h1>
+              <p>Every insurance policy is different and often very hard to interpret - we want to help you improve your awareness to your medical rights.</p>
+            </ThemePropagator>
           </DoubleContentBrick>
           <GenericBrick
             theme={ LIGHT_BAND_THEME }
-            title="Yes, we can!"
-            subtitle="if you think you can do it"
+            title="We don't save any information"
+            // subtitle="if you think you can do it"
             contentStyle={ {textAlign: 'center'} }>
-            <PlaceHolder />
+            {/*<PlaceHolder />*/}
           </GenericBrick>
-          <EnumerationBrick
-            theme={ HEAVY_BAND_THEME }
-            title="Awesome features"
-            subtitle="You can add any number of them">
-            <FeatureItem
-              icon="rocket"
-              title="Feature 1"
-              // description="bla bla bla bla bla"
-            />
-            <FeatureItem
-              icon="rocket"
-              title="Feature 2"
-              // description="bla bla bla bla bla"
-            />
-            <FeatureItem
-              icon="rocket"
-              title="Feature 3"
-              // description="bla bla bla bla bla"
-            />
-          </EnumerationBrick>
-          <DoubleContentBrick theme={ LIGHT_BAND_THEME } hasHeader={ false }>
-            <PlaceHolder useLoremIpsum={ true } />
-            <PlaceHolder label="image placeholder" />
-          </DoubleContentBrick>
-          <DoubleContentBrick theme={ LIGHT_BAND_THEME } hasHeader={ false }>
-            <PlaceHolder label="image placeholder" />
-            <PlaceHolder useLoremIpsum={ true } />
-          </DoubleContentBrick>
-          <DoubleContentBrick theme={ LIGHT_BAND_THEME } hasHeader={ false }>
-            <PlaceHolder useLoremIpsum={ true } />
-            <PlaceHolder label="image placeholder" />
-          </DoubleContentBrick>
+          {/*<EnumerationBrick*/}
+            {/*theme={ HEAVY_BAND_THEME }*/}
+            {/*title="Awesome features"*/}
+            {/*subtitle="You can add any number of them">*/}
+            {/*<FeatureItem*/}
+              {/*icon="rocket"*/}
+              {/*title="Feature 1"*/}
+              {/*// description="bla bla bla bla bla"*/}
+            {/*/>*/}
+            {/*<FeatureItem*/}
+              {/*icon="rocket"*/}
+              {/*title="Feature 2"*/}
+              {/*// description="bla bla bla bla bla"*/}
+            {/*/>*/}
+            {/*<FeatureItem*/}
+              {/*icon="rocket"*/}
+              {/*title="Feature 3"*/}
+              {/*// description="bla bla bla bla bla"*/}
+            {/*/>*/}
+          {/*</EnumerationBrick>*/}
+
+          {/*<DoubleContentBrick theme={ LIGHT_BAND_THEME } hasHeader={ false }>*/}
+            {/*<PlaceHolder label="image placeholder" />*/}
+            {/*<PlaceHolder useLoremIpsum={ true } />*/}
+          {/*</DoubleContentBrick>*/}
+          {/*<DoubleContentBrick theme={ LIGHT_BAND_THEME } hasHeader={ false }>*/}
+            {/*<PlaceHolder useLoremIpsum={ true } />*/}
+            {/*<PlaceHolder label="image placeholder" />*/}
+          {/*</DoubleContentBrick>*/}
           <EmailSqueezeBrick
-            title="Join our Newsletter"
-            // subtitle="To get updates about what we want you to know about"
+            title="If you wanna stay updated about medical insurance updates"
+            subtitle="Always stay updated"
             theme={ HEAVY_BAND_THEME }
-            buttonLabel="Join"
+            buttonLabel="Send"
             placeholder="Enter your email"
           />
         </LandingCanvas>
-      </div>
     );
   }
 }
