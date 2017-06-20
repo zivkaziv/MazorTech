@@ -319,6 +319,8 @@ let right9 = {
 
 
 let medicalEntry = [];
+medicalEntry.push(right1,right2,right3,right4,right5,right6,right7,right8,right9);
+
 export function getMedicalRights(req, res) {
   MedicalEntry.find({}).exec((err, medicalEntry) => {
       if (err) {
@@ -344,7 +346,6 @@ export function getMedicalRight(req, res) {
 }
 
 export function getMedicalRightsMock(req, res) {
-  medicalEntry.push(right1,right2,right3,right4,right5,right6,right7,right8,right9);
   res.json({ medicalEntry });
 }
 
