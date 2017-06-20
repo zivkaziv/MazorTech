@@ -17,7 +17,7 @@ import Step5 from '../Steps/StepNumber5'
 function WizardMain(props) {
   const steps =
     [
-      {name: 'Medical Diagnosis', component: <Step1 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
+      {name: 'Doctor Diagnosis', component: <Step1 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
       {name: 'Personal Info', component: <Step2 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
       {name: 'Terms', component: <Step3 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
       {name: 'Your Medical Rights', component: <Step4 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />}
@@ -31,6 +31,7 @@ function WizardMain(props) {
         <StepZilla steps={steps}
                    dontValidate={false}
                    stepsNavigation={false}
+                   skipValidationExecution = {false}
                    nextTextOnFinalActionStep={"See my medical rights"}/>
       </div>
     </div>

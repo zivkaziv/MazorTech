@@ -98,7 +98,9 @@ const styles = {
     fontSize:"24px",
     // fontWeight:"bold"
   },
-
+  callForAction:{
+    color:'#71A2B6'
+  }
 };
 
 
@@ -125,7 +127,7 @@ class LandingPage extends Component {
   }
 
   goToWizard(){
-    console.log('going to wizard');
+    this.context.mixpanel.track('Homepage login');
   }
 
   render() {
@@ -142,7 +144,15 @@ class LandingPage extends Component {
           <ThemePropagator>
             <h1>Find now your medical rights</h1>
             <h2>Easy way to see your medical rights according to your doctor diagnostic</h2>
-            <CallToAction label="Get started" onClick={this.goToWizard} href={'/wizard'}/>
+            <Link to={'/wizard'} style={styles.callForAction}>
+              <CallToAction
+                wrapperStyle={{
+                  backgroundColor:'white',
+                  color:'#71A2B6'
+                }}
+                label="Get started"
+                onClick={this.goToWizard}/>
+            </Link>
           </ThemePropagator>
             {/*theme={ HEADER_BAND_THEME }*/}
             {/*messageLevel1="Find now your medical rights"*/}
@@ -253,6 +263,7 @@ LandingPage.childContextTypes = {
 
 LandingPage.contextTypes = {
   router: React.PropTypes.object,
+  mixpanel: PropTypes.object.isRequired
 };
 
 export default connect(mapStateToProps)(LandingPage);

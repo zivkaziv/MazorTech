@@ -53,9 +53,11 @@ class StepNumber1 extends Component {
     this.handleClose = this.handleClose.bind(this);
     this.handleCantFindDialogOpen = this.handleCantFindDialogOpen.bind(this);
     this.handleCantFindDialogClose = this.handleCantFindDialogClose.bind(this);
+    this.isValidated = this.isValidated.bind(this);
   }
 
   isValidated() {
+    console.log('check is validate');
     let isValid = false;
     for(let index = 0; index < this.props.medicalRights.length; index++){
       if(this.props.medicalRights[index].isSelected){
