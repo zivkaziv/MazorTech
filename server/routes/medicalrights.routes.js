@@ -9,6 +9,7 @@ const router = new Router();
 router.route('/medicalConditions').get(MedicalRightsController.getAllConditions);
 
 // Get all rights
+router.route('/medicalright').get(MedicalRightsController.getMedicalRight);
 router.route('/medicalrights').get(MedicalRightsController.getMedicalRights);
 router.route('/medicalrightsmock').get(MedicalRightsController.getMedicalRightsMock);
 

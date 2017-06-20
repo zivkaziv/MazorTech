@@ -320,7 +320,7 @@ let right9 = {
 
 let medicalEntry = [];
 export function getMedicalRights(req, res) {
-  MedicalEntry.find(req.params).exec((err, medicalEntry) => {
+  MedicalEntry.find({}).exec((err, medicalEntry) => {
       if (err) {
         res.status(500).send(err);
       }if(medicalEntry){
@@ -328,6 +328,18 @@ export function getMedicalRights(req, res) {
       }else{
         res.json({ medicalEntry : [] });
       }
+  });
+}
+
+export function getMedicalRight(req, res) {
+  MedicalEntry.findOne(req.params).exec((err, medicalEntry) => {
+    if (err) {
+      res.status(500).send(err);
+    }if(medicalEntry){
+      res.json({ medicalEntry });
+    }else{
+      res.json({ medicalEntry : [] });
+    }
   });
 }
 
