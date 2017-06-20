@@ -12008,7 +12008,7 @@ webpackJsonp([4],[
 	
 	function fetchMedicalRights() {
 	  return function (dispatch) {
-	    return (0, _apiCaller2.default)('medicalrightsmock').then(function (res) {
+	    return (0, _apiCaller2.default)('medicalrights').then(function (res) {
 	      // console.log(res.rights);
 	      dispatch(initMedicalRights(res.medicalEntry));
 	    });
@@ -13492,9 +13492,9 @@ webpackJsonp([4],[
 	  value: true
 	});
 	var config = {
-	  mongoURL: 'mongodb://heroku_8tlqs9j6:ic64tk953vbvp6l9j20ftjinio@ds157380.mlab.com:57380/heroku_8tlqs9j6' || 'mongodb://localhost:27017/mern-starter',
+	  // mongoURL: 'mongodb://heroku_8tlqs9j6:ic64tk953vbvp6l9j20ftjinio@ds157380.mlab.com:57380/heroku_8tlqs9j6' || 'mongodb://localhost:27017/mern-starter',
 	  //Test12345
-	  // mongoURL: process.env.NODE_ENV === 'production'? 'mongodb://heroku_8tlqs9j6:ic64tk953vbvp6l9j20ftjinio@ds157380.mlab.com:57380/heroku_8tlqs9j6' : 'mongodb://localhost:27017/mern-starter',
+	  mongoURL: {"NODE_ENV":"production"}.MONGODB_URI || 'mongodb://localhost:27017/mazor',
 	  port: {"NODE_ENV":"production"}.PORT || 8000
 	};
 	

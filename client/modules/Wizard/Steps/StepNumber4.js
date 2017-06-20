@@ -21,7 +21,7 @@ const styles = {
     overflow:'auto',
   },
   medicalRightsContainer:{
-    overflow:'auto',
+    // overflow:'auto',
   },
   brokenServerContainer:{
     textAlign:'center',

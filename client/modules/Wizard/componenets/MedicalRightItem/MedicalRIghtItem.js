@@ -9,19 +9,22 @@ function MedicalRightItem(props) {
   return (
     <Card>
       <CardHeader
-        title={props.medicalRight.name}
+        title={props.medicalRight['Medical Right']}
         subtitle={props.medicalCondition.condition}
         actAsExpander={true}
         showExpandableButton={true}
       />
       <CardActions>
-        <FlatButton primary={true}
-                    label="I didn't know that"
-                    href="https://www.facebook.com/sharer.php?u=http://www.ynet.co.il/articles/0,7340,L-4970913,00.html"
-                    target="_blank"/>
+        {/*<FlatButton primary={true}*/}
+                    {/*label="I didn't know that"*/}
+                    {/*href="https://www.facebook.com/sharer.php?u=http://www.ynet.co.il/articles/0,7340,L-4970913,00.html"*/}
+                    {/*target="_blank"/>*/}
       </CardActions>
       <CardText expandable={true}>
-        {props.medicalRight.description}
+        {props.medicalRight['Medical Right Description']}
+        <br/>
+        <br/>
+        <b>Comments:</b>  {props.medicalRight['Comments']}
       </CardText>
     </Card>
   );
