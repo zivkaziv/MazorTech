@@ -304,7 +304,7 @@ exports.modules = {
 	function WizardMain(props) {
 	  var _this = this;
 	
-	  var steps = [{ name: 'Medical Diagnosis', component: _react2.default.createElement(_StepNumber2.default, { getStore: function getStore() {
+	  var steps = [{ name: 'Doctor Diagnosis', component: _react2.default.createElement(_StepNumber2.default, { getStore: function getStore() {
 	        return _this.getStore();
 	      }, updateStore: function updateStore(u) {
 	        _this.updateStore(u);
@@ -333,6 +333,7 @@ exports.modules = {
 	      _react2.default.createElement(_reactStepzilla2.default, { steps: steps,
 	        dontValidate: false,
 	        stepsNavigation: false,
+	        skipValidationExecution: false,
 	        nextTextOnFinalActionStep: "See my medical rights" })
 	    )
 	  );

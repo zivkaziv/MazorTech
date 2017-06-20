@@ -7712,12 +7712,14 @@ webpackJsonp([1],{
 	    _this.handleClose = _this.handleClose.bind(_this);
 	    _this.handleCantFindDialogOpen = _this.handleCantFindDialogOpen.bind(_this);
 	    _this.handleCantFindDialogClose = _this.handleCantFindDialogClose.bind(_this);
+	    _this.isValidated = _this.isValidated.bind(_this);
 	    return _this;
 	  }
 	
 	  _createClass(StepNumber1, [{
 	    key: 'isValidated',
 	    value: function isValidated() {
+	      console.log('check is validate');
 	      var isValid = false;
 	      for (var index = 0; index < this.props.medicalRights.length; index++) {
 	        if (this.props.medicalRights[index].isSelected) {
@@ -9538,7 +9540,7 @@ webpackJsonp([1],{
 	function WizardMain(props) {
 	  var _this = this;
 	
-	  var steps = [{ name: 'Medical Diagnosis', component: _react2.default.createElement(_StepNumber2.default, { getStore: function getStore() {
+	  var steps = [{ name: 'Doctor Diagnosis', component: _react2.default.createElement(_StepNumber2.default, { getStore: function getStore() {
 	        return _this.getStore();
 	      }, updateStore: function updateStore(u) {
 	        _this.updateStore(u);
@@ -9567,6 +9569,7 @@ webpackJsonp([1],{
 	      _react2.default.createElement(_reactStepzilla2.default, { steps: steps,
 	        dontValidate: false,
 	        stepsNavigation: false,
+	        skipValidationExecution: false,
 	        nextTextOnFinalActionStep: "See my medical rights" })
 	    )
 	  );

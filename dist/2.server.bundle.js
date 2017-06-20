@@ -129,8 +129,10 @@ exports.modules = {
 	    display: 'inline-flex',
 	    fontSize: "24px"
 	    // fontWeight:"bold"
+	  },
+	  callForAction: {
+	    color: '#71A2B6'
 	  }
-	
 	};
 	
 	var LIGHT_BAND_THEME = _extends({}, BASE_THEME, {
@@ -165,7 +167,7 @@ exports.modules = {
 	  }, {
 	    key: 'goToWizard',
 	    value: function goToWizard() {
-	      console.log('going to wizard');
+	      this.context.mixpanel.track('Homepage login');
 	    }
 	  }, {
 	    key: 'render',
@@ -193,7 +195,17 @@ exports.modules = {
 	              null,
 	              'Easy way to see your medical rights according to your doctor diagnostic'
 	            ),
-	            _react2.default.createElement(_landricksComponents.CallToAction, { label: 'Get started', onClick: this.goToWizard, href: '/wizard' })
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/wizard', style: styles.callForAction },
+	              _react2.default.createElement(_landricksComponents.CallToAction, {
+	                wrapperStyle: {
+	                  backgroundColor: 'white',
+	                  color: '#71A2B6'
+	                },
+	                label: 'Get started',
+	                onClick: this.goToWizard })
+	            )
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -290,7 +302,8 @@ exports.modules = {
 	};
 	
 	LandingPage.contextTypes = {
-	  router: _react2.default.PropTypes.object
+	  router: _react2.default.PropTypes.object,
+	  mixpanel: _react.PropTypes.object.isRequired
 	};
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(LandingPage);

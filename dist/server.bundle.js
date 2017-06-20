@@ -1178,6 +1178,7 @@
 	router.route('/medicalConditions').get(MedicalRightsController.getAllConditions);
 	
 	// Get all rights
+	router.route('/medicalright').get(MedicalRightsController.getMedicalRight);
 	router.route('/medicalrights').get(MedicalRightsController.getMedicalRights);
 	router.route('/medicalrightsmock').get(MedicalRightsController.getMedicalRightsMock);
 	
@@ -1618,12 +1619,14 @@
 	    _this.handleClose = _this.handleClose.bind(_this);
 	    _this.handleCantFindDialogOpen = _this.handleCantFindDialogOpen.bind(_this);
 	    _this.handleCantFindDialogClose = _this.handleCantFindDialogClose.bind(_this);
+	    _this.isValidated = _this.isValidated.bind(_this);
 	    return _this;
 	  }
 	
 	  _createClass(StepNumber1, [{
 	    key: 'isValidated',
 	    value: function isValidated() {
+	      console.log('check is validate');
 	      var isValid = false;
 	      for (var index = 0; index < this.props.medicalRights.length; index++) {
 	        if (this.props.medicalRights[index].isSelected) {
@@ -4352,6 +4355,7 @@
 	  value: true
 	});
 	exports.getMedicalRights = getMedicalRights;
+	exports.getMedicalRight = getMedicalRight;
 	exports.getMedicalRightsMock = getMedicalRightsMock;
 	exports.getAllConditions = getAllConditions;
 	
@@ -4615,7 +4619,21 @@
 	};
 	
 	var medicalEntry = [];
+	medicalEntry.push(right1, right2, right3, right4, right5, right6, right7, right8, right9);
+	
 	function getMedicalRights(req, res) {
+	  _medicalEntry2.default.find({}).exec(function (err, medicalEntry) {
+	    if (err) {
+	      res.status(500).send(err);
+	    }if (medicalEntry) {
+	      res.json({ medicalEntry: medicalEntry });
+	    } else {
+	      res.json({ medicalEntry: [] });
+	    }
+	  });
+	}
+	
+	function getMedicalRight(req, res) {
 	  _medicalEntry2.default.findOne(req.params).exec(function (err, medicalEntry) {
 	    if (err) {
 	      res.status(500).send(err);
@@ -4628,7 +4646,6 @@
 	}
 	
 	function getMedicalRightsMock(req, res) {
-	  medicalEntry.push(right1, right2, right3, right4, right5, right6, right7, right8, right9);
 	  res.json({ medicalEntry: medicalEntry });
 	}
 	
