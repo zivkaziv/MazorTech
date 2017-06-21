@@ -36,7 +36,7 @@ webpackJsonp([4],[
 	} else {
 	  // By explicitly using `prop-types` you are opting into new production behavior.
 	  // http://fb.me/prop-types-in-prod
-	  module.exports = __webpack_require__(568)();
+	  module.exports = __webpack_require__(570)();
 	}
 
 
@@ -200,7 +200,7 @@ webpackJsonp([4],[
 	
 	exports.__esModule = true;
 	
-	var _assign = __webpack_require__(275);
+	var _assign = __webpack_require__(276);
 	
 	var _assign2 = _interopRequireDefault(_assign);
 	
@@ -628,8 +628,8 @@ webpackJsonp([4],[
 /* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsNative = __webpack_require__(481),
-	    getValue = __webpack_require__(504);
+	var baseIsNative = __webpack_require__(482),
+	    getValue = __webpack_require__(505);
 	
 	/**
 	 * Gets the native function at `key` of `object`.
@@ -835,8 +835,8 @@ webpackJsonp([4],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var Symbol = __webpack_require__(59),
-	    getRawTag = __webpack_require__(501),
-	    objectToString = __webpack_require__(529);
+	    getRawTag = __webpack_require__(502),
+	    objectToString = __webpack_require__(530);
 	
 	/** `Object#toString` result references. */
 	var nullTag = '[object Null]',
@@ -1129,7 +1129,7 @@ webpackJsonp([4],[
 /* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(347), __esModule: true };
+	module.exports = { "default": __webpack_require__(348), __esModule: true };
 
 /***/ },
 /* 56 */,
@@ -1180,7 +1180,7 @@ webpackJsonp([4],[
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _shallowEqual = __webpack_require__(653);
+	var _shallowEqual = __webpack_require__(655);
 	
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 	
@@ -1225,15 +1225,15 @@ webpackJsonp([4],[
 	
 	exports.__esModule = true;
 	
-	var _setPrototypeOf = __webpack_require__(297);
+	var _setPrototypeOf = __webpack_require__(298);
 	
 	var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
 	
-	var _create = __webpack_require__(296);
+	var _create = __webpack_require__(297);
 	
 	var _create2 = _interopRequireDefault(_create);
 	
-	var _typeof2 = __webpack_require__(91);
+	var _typeof2 = __webpack_require__(90);
 	
 	var _typeof3 = _interopRequireDefault(_typeof2);
 	
@@ -1264,7 +1264,7 @@ webpackJsonp([4],[
 	
 	exports.__esModule = true;
 	
-	var _typeof2 = __webpack_require__(91);
+	var _typeof2 = __webpack_require__(90);
 	
 	var _typeof3 = _interopRequireDefault(_typeof2);
 	
@@ -1288,11 +1288,11 @@ webpackJsonp([4],[
 	exports.__esModule = true;
 	exports.connect = exports.Provider = undefined;
 	
-	var _Provider = __webpack_require__(654);
+	var _Provider = __webpack_require__(656);
 	
 	var _Provider2 = _interopRequireDefault(_Provider);
 	
-	var _connect = __webpack_require__(655);
+	var _connect = __webpack_require__(657);
 	
 	var _connect2 = _interopRequireDefault(_connect);
 	
@@ -1385,14 +1385,14 @@ webpackJsonp([4],[
 	
 	function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 	
-	var allLocaleData = _interopDefault(__webpack_require__(743));
+	var allLocaleData = _interopDefault(__webpack_require__(744));
 	var IntlMessageFormat = _interopDefault(__webpack_require__(189));
-	var IntlRelativeFormat = _interopDefault(__webpack_require__(444));
+	var IntlRelativeFormat = _interopDefault(__webpack_require__(445));
 	var PropTypes = _interopDefault(__webpack_require__(6));
 	var React = __webpack_require__(0);
 	var React__default = _interopDefault(React);
 	var invariant = _interopDefault(__webpack_require__(7));
-	var memoizeIntlConstructor = _interopDefault(__webpack_require__(433));
+	var memoizeIntlConstructor = _interopDefault(__webpack_require__(434));
 	
 	// GENERATED FILE
 	var defaultLocaleData = { "locale": "en", "pluralRuleFunction": function pluralRuleFunction(n, ord) {
@@ -3057,7 +3057,7 @@ webpackJsonp([4],[
 
 	"use strict";
 	'use strict';
-	var $at  = __webpack_require__(369)(true);
+	var $at  = __webpack_require__(370)(true);
 	
 	// 21.1.3.27 String.prototype[@@iterator]()
 	__webpack_require__(166)(String, 'String', function(iterated){
@@ -3102,7 +3102,7 @@ webpackJsonp([4],[
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
-	var _queryString = __webpack_require__(412);
+	var _queryString = __webpack_require__(413);
 	
 	var _runTransitionHook = __webpack_require__(115);
 	
@@ -3271,11 +3271,11 @@ webpackJsonp([4],[
 /* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var listCacheClear = __webpack_require__(515),
-	    listCacheDelete = __webpack_require__(516),
-	    listCacheGet = __webpack_require__(517),
-	    listCacheHas = __webpack_require__(518),
-	    listCacheSet = __webpack_require__(519);
+	var listCacheClear = __webpack_require__(516),
+	    listCacheDelete = __webpack_require__(517),
+	    listCacheGet = __webpack_require__(518),
+	    listCacheHas = __webpack_require__(519),
+	    listCacheSet = __webpack_require__(520);
 	
 	/**
 	 * Creates an list cache object.
@@ -3336,7 +3336,7 @@ webpackJsonp([4],[
 /* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isKeyable = __webpack_require__(512);
+	var isKeyable = __webpack_require__(513);
 	
 	/**
 	 * Gets the data for `map`.
@@ -3427,7 +3427,7 @@ webpackJsonp([4],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseGetTag = __webpack_require__(44),
-	    getPrototype = __webpack_require__(500),
+	    getPrototype = __webpack_require__(501),
 	    isObjectLike = __webpack_require__(32);
 	
 	/** `Object#toString` result references. */
@@ -3817,7 +3817,7 @@ webpackJsonp([4],[
 	
 	var _deprecateObjectProperties2 = _interopRequireDefault(_deprecateObjectProperties);
 	
-	var _getRouteParams = __webpack_require__(672);
+	var _getRouteParams = __webpack_require__(674);
 	
 	var _getRouteParams2 = _interopRequireDefault(_getRouteParams);
 	
@@ -4038,6 +4038,33 @@ webpackJsonp([4],[
 /***/ },
 /* 89 */,
 /* 90 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	"use strict";
+	
+	exports.__esModule = true;
+	
+	var _iterator = __webpack_require__(160);
+	
+	var _iterator2 = _interopRequireDefault(_iterator);
+	
+	var _symbol = __webpack_require__(299);
+	
+	var _symbol2 = _interopRequireDefault(_symbol);
+	
+	var _typeof = typeof _symbol2.default === "function" && typeof _iterator2.default === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof _symbol2.default === "function" && obj.constructor === _symbol2.default && obj !== _symbol2.default.prototype ? "symbol" : typeof obj; };
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = typeof _symbol2.default === "function" && _typeof(_iterator2.default) === "symbol" ? function (obj) {
+	  return typeof obj === "undefined" ? "undefined" : _typeof(obj);
+	} : function (obj) {
+	  return obj && typeof _symbol2.default === "function" && obj.constructor === _symbol2.default && obj !== _symbol2.default.prototype ? "symbol" : typeof obj === "undefined" ? "undefined" : _typeof(obj);
+	};
+
+/***/ },
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4285,33 +4312,6 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 91 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	"use strict";
-	
-	exports.__esModule = true;
-	
-	var _iterator = __webpack_require__(160);
-	
-	var _iterator2 = _interopRequireDefault(_iterator);
-	
-	var _symbol = __webpack_require__(298);
-	
-	var _symbol2 = _interopRequireDefault(_symbol);
-	
-	var _typeof = typeof _symbol2.default === "function" && typeof _iterator2.default === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof _symbol2.default === "function" && obj.constructor === _symbol2.default && obj !== _symbol2.default.prototype ? "symbol" : typeof obj; };
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = typeof _symbol2.default === "function" && _typeof(_iterator2.default) === "symbol" ? function (obj) {
-	  return typeof obj === "undefined" ? "undefined" : _typeof(obj);
-	} : function (obj) {
-	  return obj && typeof _symbol2.default === "function" && obj.constructor === _symbol2.default && obj !== _symbol2.default.prototype ? "symbol" : typeof obj === "undefined" ? "undefined" : _typeof(obj);
-	};
-
-/***/ },
 /* 92 */,
 /* 93 */
 /***/ function(module, exports, __webpack_require__) {
@@ -4355,7 +4355,7 @@ webpackJsonp([4],[
 	  }
 	});
 	
-	var _Router2 = __webpack_require__(665);
+	var _Router2 = __webpack_require__(667);
 	
 	var _Router3 = _interopRequireDefault(_Router2);
 	
@@ -4363,19 +4363,19 @@ webpackJsonp([4],[
 	
 	var _Link3 = _interopRequireDefault(_Link2);
 	
-	var _IndexLink2 = __webpack_require__(659);
+	var _IndexLink2 = __webpack_require__(661);
 	
 	var _IndexLink3 = _interopRequireDefault(_IndexLink2);
 	
-	var _withRouter2 = __webpack_require__(678);
+	var _withRouter2 = __webpack_require__(680);
 	
 	var _withRouter3 = _interopRequireDefault(_withRouter2);
 	
-	var _IndexRedirect2 = __webpack_require__(660);
+	var _IndexRedirect2 = __webpack_require__(662);
 	
 	var _IndexRedirect3 = _interopRequireDefault(_IndexRedirect2);
 	
-	var _IndexRoute2 = __webpack_require__(661);
+	var _IndexRoute2 = __webpack_require__(663);
 	
 	var _IndexRoute3 = _interopRequireDefault(_IndexRoute2);
 	
@@ -4383,23 +4383,23 @@ webpackJsonp([4],[
 	
 	var _Redirect3 = _interopRequireDefault(_Redirect2);
 	
-	var _Route2 = __webpack_require__(663);
+	var _Route2 = __webpack_require__(665);
 	
 	var _Route3 = _interopRequireDefault(_Route2);
 	
-	var _History2 = __webpack_require__(658);
+	var _History2 = __webpack_require__(660);
 	
 	var _History3 = _interopRequireDefault(_History2);
 	
-	var _Lifecycle2 = __webpack_require__(662);
+	var _Lifecycle2 = __webpack_require__(664);
 	
 	var _Lifecycle3 = _interopRequireDefault(_Lifecycle2);
 	
-	var _RouteContext2 = __webpack_require__(664);
+	var _RouteContext2 = __webpack_require__(666);
 	
 	var _RouteContext3 = _interopRequireDefault(_RouteContext2);
 	
-	var _useRoutes2 = __webpack_require__(677);
+	var _useRoutes2 = __webpack_require__(679);
 	
 	var _useRoutes3 = _interopRequireDefault(_useRoutes2);
 	
@@ -4407,13 +4407,13 @@ webpackJsonp([4],[
 	
 	var _RouterContext3 = _interopRequireDefault(_RouterContext2);
 	
-	var _RoutingContext2 = __webpack_require__(666);
+	var _RoutingContext2 = __webpack_require__(668);
 	
 	var _RoutingContext3 = _interopRequireDefault(_RoutingContext2);
 	
 	var _PropTypes3 = _interopRequireDefault(_PropTypes2);
 	
-	var _match2 = __webpack_require__(675);
+	var _match2 = __webpack_require__(677);
 	
 	var _match3 = _interopRequireDefault(_match2);
 	
@@ -4421,15 +4421,15 @@ webpackJsonp([4],[
 	
 	var _useRouterHistory3 = _interopRequireDefault(_useRouterHistory2);
 	
-	var _applyRouterMiddleware2 = __webpack_require__(668);
+	var _applyRouterMiddleware2 = __webpack_require__(670);
 	
 	var _applyRouterMiddleware3 = _interopRequireDefault(_applyRouterMiddleware2);
 	
-	var _browserHistory2 = __webpack_require__(669);
+	var _browserHistory2 = __webpack_require__(671);
 	
 	var _browserHistory3 = _interopRequireDefault(_browserHistory2);
 	
-	var _hashHistory2 = __webpack_require__(673);
+	var _hashHistory2 = __webpack_require__(675);
 	
 	var _hashHistory3 = _interopRequireDefault(_hashHistory2);
 	
@@ -4487,11 +4487,11 @@ webpackJsonp([4],[
 	exports.API_URL = undefined;
 	exports.default = callApi;
 	
-	var _isomorphicFetch = __webpack_require__(454);
+	var _isomorphicFetch = __webpack_require__(455);
 	
 	var _isomorphicFetch2 = _interopRequireDefault(_isomorphicFetch);
 	
-	var _config = __webpack_require__(293);
+	var _config = __webpack_require__(294);
 	
 	var _config2 = _interopRequireDefault(_config);
 	
@@ -4531,7 +4531,7 @@ webpackJsonp([4],[
 /* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(339), __esModule: true };
+	module.exports = { "default": __webpack_require__(340), __esModule: true };
 
 /***/ },
 /* 96 */
@@ -4548,7 +4548,7 @@ webpackJsonp([4],[
 /***/ function(module, exports, __webpack_require__) {
 
 	// optional / simple context binding
-	var aFunction = __webpack_require__(351);
+	var aFunction = __webpack_require__(352);
 	module.exports = function(fn, that, length){
 	  aFunction(fn);
 	  if(that === undefined)return fn;
@@ -4599,7 +4599,7 @@ webpackJsonp([4],[
 
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 	var anObject    = __webpack_require__(26)
-	  , dPs         = __webpack_require__(367)
+	  , dPs         = __webpack_require__(368)
 	  , enumBugKeys = __webpack_require__(99)
 	  , IE_PROTO    = __webpack_require__(105)('IE_PROTO')
 	  , Empty       = function(){ /* empty */ }
@@ -4614,7 +4614,7 @@ webpackJsonp([4],[
 	    , gt     = '>'
 	    , iframeDocument;
 	  iframe.style.display = 'none';
-	  __webpack_require__(356).appendChild(iframe);
+	  __webpack_require__(357).appendChild(iframe);
 	  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
 	  // createDict = iframe.contentWindow.Object;
 	  // html.removeChild(iframe);
@@ -4746,7 +4746,7 @@ webpackJsonp([4],[
 /* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(374);
+	__webpack_require__(375);
 	var global        = __webpack_require__(23)
 	  , hide          = __webpack_require__(38)
 	  , Iterators     = __webpack_require__(40)
@@ -4948,11 +4948,11 @@ webpackJsonp([4],[
 /* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var mapCacheClear = __webpack_require__(520),
-	    mapCacheDelete = __webpack_require__(521),
-	    mapCacheGet = __webpack_require__(522),
-	    mapCacheHas = __webpack_require__(523),
-	    mapCacheSet = __webpack_require__(524);
+	var mapCacheClear = __webpack_require__(521),
+	    mapCacheDelete = __webpack_require__(522),
+	    mapCacheGet = __webpack_require__(523),
+	    mapCacheHas = __webpack_require__(524),
+	    mapCacheSet = __webpack_require__(525);
 	
 	/**
 	 * Creates a map cache object to store key-value pairs.
@@ -4987,8 +4987,8 @@ webpackJsonp([4],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var MapCache = __webpack_require__(118),
-	    setCacheAdd = __webpack_require__(531),
-	    setCacheHas = __webpack_require__(532);
+	    setCacheAdd = __webpack_require__(532),
+	    setCacheHas = __webpack_require__(533);
 	
 	/**
 	 *
@@ -5097,7 +5097,7 @@ webpackJsonp([4],[
 /* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsArguments = __webpack_require__(477),
+	var baseIsArguments = __webpack_require__(478),
 	    isObjectLike = __webpack_require__(32);
 	
 	/** Used for built-in method references. */
@@ -5252,8 +5252,8 @@ webpackJsonp([4],[
 /* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var arrayLikeKeys = __webpack_require__(467),
-	    baseKeys = __webpack_require__(484),
+	var arrayLikeKeys = __webpack_require__(468),
+	    baseKeys = __webpack_require__(485),
 	    isArrayLike = __webpack_require__(212);
 	
 	/**
@@ -5535,21 +5535,21 @@ webpackJsonp([4],[
 	
 	var _routerWarning2 = _interopRequireDefault(_routerWarning);
 	
-	var _computeChangedRoutes2 = __webpack_require__(670);
+	var _computeChangedRoutes2 = __webpack_require__(672);
 	
 	var _computeChangedRoutes3 = _interopRequireDefault(_computeChangedRoutes2);
 	
-	var _TransitionUtils = __webpack_require__(667);
+	var _TransitionUtils = __webpack_require__(669);
 	
-	var _isActive2 = __webpack_require__(674);
+	var _isActive2 = __webpack_require__(676);
 	
 	var _isActive3 = _interopRequireDefault(_isActive2);
 	
-	var _getComponents = __webpack_require__(671);
+	var _getComponents = __webpack_require__(673);
 	
 	var _getComponents2 = _interopRequireDefault(_getComponents);
 	
-	var _matchRoutes = __webpack_require__(676);
+	var _matchRoutes = __webpack_require__(678);
 	
 	var _matchRoutes2 = _interopRequireDefault(_matchRoutes);
 	
@@ -5872,7 +5872,7 @@ webpackJsonp([4],[
 	
 	var _JSONArrow2 = _interopRequireDefault(_JSONArrow);
 	
-	var _getCollectionEntries = __webpack_require__(721);
+	var _getCollectionEntries = __webpack_require__(723);
 	
 	var _getCollectionEntries2 = _interopRequireDefault(_getCollectionEntries);
 	
@@ -5880,7 +5880,7 @@ webpackJsonp([4],[
 	
 	var _JSONNode2 = _interopRequireDefault(_JSONNode);
 	
-	var _ItemRange = __webpack_require__(715);
+	var _ItemRange = __webpack_require__(717);
 	
 	var _ItemRange2 = _interopRequireDefault(_ItemRange);
 	
@@ -6091,7 +6091,7 @@ webpackJsonp([4],[
 	  }
 	});
 	
-	var _persistState = __webpack_require__(727);
+	var _persistState = __webpack_require__(729);
 	
 	Object.defineProperty(exports, 'persistState', {
 	  enumerable: true,
@@ -6100,7 +6100,7 @@ webpackJsonp([4],[
 	  }
 	});
 	
-	var _createDevTools = __webpack_require__(726);
+	var _createDevTools = __webpack_require__(728);
 	
 	Object.defineProperty(exports, 'createDevTools', {
 	  enumerable: true,
@@ -6125,15 +6125,15 @@ webpackJsonp([4],[
 	
 	var _createStore2 = _interopRequireDefault(_createStore);
 	
-	var _combineReducers = __webpack_require__(731);
+	var _combineReducers = __webpack_require__(733);
 	
 	var _combineReducers2 = _interopRequireDefault(_combineReducers);
 	
-	var _bindActionCreators = __webpack_require__(730);
+	var _bindActionCreators = __webpack_require__(732);
 	
 	var _bindActionCreators2 = _interopRequireDefault(_bindActionCreators);
 	
-	var _applyMiddleware = __webpack_require__(729);
+	var _applyMiddleware = __webpack_require__(731);
 	
 	var _applyMiddleware2 = _interopRequireDefault(_applyMiddleware);
 	
@@ -6176,7 +6176,7 @@ webpackJsonp([4],[
 	
 	var _colors = __webpack_require__(80);
 	
-	var _colorManipulator = __webpack_require__(90);
+	var _colorManipulator = __webpack_require__(91);
 	
 	var _spacing = __webpack_require__(217);
 	
@@ -6225,43 +6225,43 @@ webpackJsonp([4],[
 	  value: true
 	});
 	
-	var _toConsumableArray2 = __webpack_require__(268);
+	var _toConsumableArray2 = __webpack_require__(269);
 	
 	var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
 	
 	exports.default = getMuiTheme;
 	
-	var _lodash = __webpack_require__(459);
+	var _lodash = __webpack_require__(460);
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
-	var _colorManipulator = __webpack_require__(90);
+	var _colorManipulator = __webpack_require__(91);
 	
 	var _lightBaseTheme = __webpack_require__(153);
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
-	var _zIndex = __webpack_require__(558);
+	var _zIndex = __webpack_require__(559);
 	
 	var _zIndex2 = _interopRequireDefault(_zIndex);
 	
-	var _autoprefixer = __webpack_require__(559);
+	var _autoprefixer = __webpack_require__(560);
 	
 	var _autoprefixer2 = _interopRequireDefault(_autoprefixer);
 	
-	var _callOnce = __webpack_require__(562);
+	var _callOnce = __webpack_require__(563);
 	
 	var _callOnce2 = _interopRequireDefault(_callOnce);
 	
-	var _rtl = __webpack_require__(563);
+	var _rtl = __webpack_require__(564);
 	
 	var _rtl2 = _interopRequireDefault(_rtl);
 	
-	var _compose = __webpack_require__(554);
+	var _compose = __webpack_require__(555);
 	
 	var _compose2 = _interopRequireDefault(_compose);
 	
-	var _typography = __webpack_require__(557);
+	var _typography = __webpack_require__(558);
 	
 	var _typography2 = _interopRequireDefault(_typography);
 	
@@ -6613,31 +6613,31 @@ webpackJsonp([4],[
 	
 	var _reactIntl = __webpack_require__(67);
 	
-	var _intl = __webpack_require__(450);
+	var _intl = __webpack_require__(451);
 	
 	var _intl2 = _interopRequireDefault(_intl);
 	
-	var _intlLocalesSupported = __webpack_require__(436);
+	var _intlLocalesSupported = __webpack_require__(437);
 	
 	var _intlLocalesSupported2 = _interopRequireDefault(_intlLocalesSupported);
 	
-	__webpack_require__(452);
+	__webpack_require__(453);
 	
-	var _en = __webpack_require__(648);
+	var _en = __webpack_require__(650);
 	
 	var _en2 = _interopRequireDefault(_en);
 	
-	var _en3 = __webpack_require__(279);
+	var _en3 = __webpack_require__(280);
 	
 	var _en4 = _interopRequireDefault(_en3);
 	
-	__webpack_require__(453);
+	__webpack_require__(454);
 	
-	var _fr = __webpack_require__(649);
+	var _fr = __webpack_require__(651);
 	
 	var _fr2 = _interopRequireDefault(_fr);
 	
-	var _fr3 = __webpack_require__(280);
+	var _fr3 = __webpack_require__(281);
 	
 	var _fr4 = _interopRequireDefault(_fr3);
 	
@@ -6741,11 +6741,11 @@ webpackJsonp([4],[
 	
 	var _reduxDevtools = __webpack_require__(151);
 	
-	var _reduxDevtoolsLogMonitor = __webpack_require__(713);
+	var _reduxDevtoolsLogMonitor = __webpack_require__(715);
 	
 	var _reduxDevtoolsLogMonitor2 = _interopRequireDefault(_reduxDevtoolsLogMonitor);
 	
-	var _reduxDevtoolsDockMonitor = __webpack_require__(697);
+	var _reduxDevtoolsDockMonitor = __webpack_require__(699);
 	
 	var _reduxDevtoolsDockMonitor2 = _interopRequireDefault(_reduxDevtoolsDockMonitor);
 	
@@ -6791,13 +6791,13 @@ webpackJsonp([4],[
 /* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(345), __esModule: true };
+	module.exports = { "default": __webpack_require__(346), __esModule: true };
 
 /***/ },
 /* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(350), __esModule: true };
+	module.exports = { "default": __webpack_require__(351), __esModule: true };
 
 /***/ },
 /* 161 */
@@ -6810,151 +6810,151 @@ webpackJsonp([4],[
 	
 	function _interopRequire(obj) { return obj && obj.__esModule ? obj['default'] : obj; }
 	
-	var _threezerotwofour = __webpack_require__(333);
+	var _threezerotwofour = __webpack_require__(334);
 	
 	exports.threezerotwofour = _interopRequire(_threezerotwofour);
 	
-	var _apathy = __webpack_require__(300);
+	var _apathy = __webpack_require__(301);
 	
 	exports.apathy = _interopRequire(_apathy);
 	
-	var _ashes = __webpack_require__(301);
+	var _ashes = __webpack_require__(302);
 	
 	exports.ashes = _interopRequire(_ashes);
 	
-	var _atelierDune = __webpack_require__(302);
+	var _atelierDune = __webpack_require__(303);
 	
 	exports.atelierDune = _interopRequire(_atelierDune);
 	
-	var _atelierForest = __webpack_require__(303);
+	var _atelierForest = __webpack_require__(304);
 	
 	exports.atelierForest = _interopRequire(_atelierForest);
 	
-	var _atelierHeath = __webpack_require__(304);
+	var _atelierHeath = __webpack_require__(305);
 	
 	exports.atelierHeath = _interopRequire(_atelierHeath);
 	
-	var _atelierLakeside = __webpack_require__(305);
+	var _atelierLakeside = __webpack_require__(306);
 	
 	exports.atelierLakeside = _interopRequire(_atelierLakeside);
 	
-	var _atelierSeaside = __webpack_require__(306);
+	var _atelierSeaside = __webpack_require__(307);
 	
 	exports.atelierSeaside = _interopRequire(_atelierSeaside);
 	
-	var _bespin = __webpack_require__(307);
+	var _bespin = __webpack_require__(308);
 	
 	exports.bespin = _interopRequire(_bespin);
 	
-	var _brewer = __webpack_require__(308);
+	var _brewer = __webpack_require__(309);
 	
 	exports.brewer = _interopRequire(_brewer);
 	
-	var _bright = __webpack_require__(309);
+	var _bright = __webpack_require__(310);
 	
 	exports.bright = _interopRequire(_bright);
 	
-	var _chalk = __webpack_require__(310);
+	var _chalk = __webpack_require__(311);
 	
 	exports.chalk = _interopRequire(_chalk);
 	
-	var _codeschool = __webpack_require__(311);
+	var _codeschool = __webpack_require__(312);
 	
 	exports.codeschool = _interopRequire(_codeschool);
 	
-	var _colors = __webpack_require__(312);
+	var _colors = __webpack_require__(313);
 	
 	exports.colors = _interopRequire(_colors);
 	
-	var _default = __webpack_require__(313);
+	var _default = __webpack_require__(314);
 	
 	exports['default'] = _interopRequire(_default);
 	
-	var _eighties = __webpack_require__(314);
+	var _eighties = __webpack_require__(315);
 	
 	exports.eighties = _interopRequire(_eighties);
 	
-	var _embers = __webpack_require__(315);
+	var _embers = __webpack_require__(316);
 	
 	exports.embers = _interopRequire(_embers);
 	
-	var _flat = __webpack_require__(316);
+	var _flat = __webpack_require__(317);
 	
 	exports.flat = _interopRequire(_flat);
 	
-	var _google = __webpack_require__(317);
+	var _google = __webpack_require__(318);
 	
 	exports.google = _interopRequire(_google);
 	
-	var _grayscale = __webpack_require__(318);
+	var _grayscale = __webpack_require__(319);
 	
 	exports.grayscale = _interopRequire(_grayscale);
 	
-	var _greenscreen = __webpack_require__(319);
+	var _greenscreen = __webpack_require__(320);
 	
 	exports.greenscreen = _interopRequire(_greenscreen);
 	
-	var _harmonic = __webpack_require__(320);
+	var _harmonic = __webpack_require__(321);
 	
 	exports.harmonic = _interopRequire(_harmonic);
 	
-	var _hopscotch = __webpack_require__(321);
+	var _hopscotch = __webpack_require__(322);
 	
 	exports.hopscotch = _interopRequire(_hopscotch);
 	
-	var _isotope = __webpack_require__(322);
+	var _isotope = __webpack_require__(323);
 	
 	exports.isotope = _interopRequire(_isotope);
 	
-	var _marrakesh = __webpack_require__(323);
+	var _marrakesh = __webpack_require__(324);
 	
 	exports.marrakesh = _interopRequire(_marrakesh);
 	
-	var _mocha = __webpack_require__(324);
+	var _mocha = __webpack_require__(325);
 	
 	exports.mocha = _interopRequire(_mocha);
 	
-	var _monokai = __webpack_require__(325);
+	var _monokai = __webpack_require__(326);
 	
 	exports.monokai = _interopRequire(_monokai);
 	
-	var _ocean = __webpack_require__(326);
+	var _ocean = __webpack_require__(327);
 	
 	exports.ocean = _interopRequire(_ocean);
 	
-	var _paraiso = __webpack_require__(327);
+	var _paraiso = __webpack_require__(328);
 	
 	exports.paraiso = _interopRequire(_paraiso);
 	
-	var _pop = __webpack_require__(328);
+	var _pop = __webpack_require__(329);
 	
 	exports.pop = _interopRequire(_pop);
 	
-	var _railscasts = __webpack_require__(329);
+	var _railscasts = __webpack_require__(330);
 	
 	exports.railscasts = _interopRequire(_railscasts);
 	
-	var _shapeshifter = __webpack_require__(330);
+	var _shapeshifter = __webpack_require__(331);
 	
 	exports.shapeshifter = _interopRequire(_shapeshifter);
 	
-	var _solarized = __webpack_require__(331);
+	var _solarized = __webpack_require__(332);
 	
 	exports.solarized = _interopRequire(_solarized);
 	
-	var _summerfruit = __webpack_require__(332);
+	var _summerfruit = __webpack_require__(333);
 	
 	exports.summerfruit = _interopRequire(_summerfruit);
 	
-	var _tomorrow = __webpack_require__(334);
+	var _tomorrow = __webpack_require__(335);
 	
 	exports.tomorrow = _interopRequire(_tomorrow);
 	
-	var _tube = __webpack_require__(335);
+	var _tube = __webpack_require__(336);
 	
 	exports.tube = _interopRequire(_tube);
 	
-	var _twilight = __webpack_require__(336);
+	var _twilight = __webpack_require__(337);
 	
 	exports.twilight = _interopRequire(_twilight);
 
@@ -7028,7 +7028,7 @@ webpackJsonp([4],[
 	  , hide           = __webpack_require__(38)
 	  , has            = __webpack_require__(28)
 	  , Iterators      = __webpack_require__(40)
-	  , $iterCreate    = __webpack_require__(361)
+	  , $iterCreate    = __webpack_require__(362)
 	  , setToStringTag = __webpack_require__(104)
 	  , getPrototypeOf = __webpack_require__(170)
 	  , ITERATOR       = __webpack_require__(13)('iterator')
@@ -7174,7 +7174,7 @@ webpackJsonp([4],[
 
 	var has          = __webpack_require__(28)
 	  , toIObject    = __webpack_require__(29)
-	  , arrayIndexOf = __webpack_require__(353)(false)
+	  , arrayIndexOf = __webpack_require__(354)(false)
 	  , IE_PROTO     = __webpack_require__(105)('IE_PROTO');
 	
 	module.exports = function(object, names){
@@ -7232,7 +7232,7 @@ webpackJsonp([4],[
 	});
 	exports.default = hyphenateProperty;
 	
-	var _hyphenateStyleName = __webpack_require__(413);
+	var _hyphenateStyleName = __webpack_require__(414);
 	
 	var _hyphenateStyleName2 = _interopRequireDefault(_hyphenateStyleName);
 	
@@ -7248,8 +7248,8 @@ webpackJsonp([4],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var pSlice = Array.prototype.slice;
-	var objectKeys = __webpack_require__(388);
-	var isArguments = __webpack_require__(387);
+	var objectKeys = __webpack_require__(389);
+	var isArguments = __webpack_require__(388);
 	
 	var deepEqual = module.exports = function (actual, expected, opts) {
 	  if (!opts) opts = {};
@@ -7746,11 +7746,11 @@ webpackJsonp([4],[
 	
 	var _PathUtils = __webpack_require__(30);
 	
-	var _AsyncUtils = __webpack_require__(408);
+	var _AsyncUtils = __webpack_require__(409);
 	
 	var _Actions = __webpack_require__(42);
 	
-	var _createLocation2 = __webpack_require__(410);
+	var _createLocation2 = __webpack_require__(411);
 	
 	var _createLocation3 = _interopRequireDefault(_createLocation2);
 	
@@ -8315,11 +8315,11 @@ webpackJsonp([4],[
 	
 	'use strict';
 	
-	var IntlMessageFormat = __webpack_require__(443)['default'];
+	var IntlMessageFormat = __webpack_require__(444)['default'];
 	
 	// Add all locale data to `IntlMessageFormat`. This module will be ignored when
 	// bundling for the browser with Browserify/Webpack.
-	__webpack_require__(741);
+	__webpack_require__(742);
 	
 	// Re-export `IntlMessageFormat` as the CommonJS default exports with all the
 	// locale data registered, and with English set as the default locale. Define
@@ -8384,11 +8384,11 @@ webpackJsonp([4],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var ListCache = __webpack_require__(73),
-	    stackClear = __webpack_require__(535),
-	    stackDelete = __webpack_require__(536),
-	    stackGet = __webpack_require__(537),
-	    stackHas = __webpack_require__(538),
-	    stackSet = __webpack_require__(539);
+	    stackClear = __webpack_require__(536),
+	    stackDelete = __webpack_require__(537),
+	    stackGet = __webpack_require__(538),
+	    stackHas = __webpack_require__(539),
+	    stackSet = __webpack_require__(540);
 	
 	/**
 	 * Creates a stack cache object to store key-value pairs.
@@ -8416,7 +8416,7 @@ webpackJsonp([4],[
 /* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIndexOf = __webpack_require__(476);
+	var baseIndexOf = __webpack_require__(477);
 	
 	/**
 	 * A specialized version of `_.includes` for arrays without support for
@@ -8521,7 +8521,7 @@ webpackJsonp([4],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var arrayPush = __webpack_require__(196),
-	    isFlattenable = __webpack_require__(511);
+	    isFlattenable = __webpack_require__(512);
 	
 	/**
 	 * The base implementation of `_.flatten` with support for restricting flattening.
@@ -8594,7 +8594,7 @@ webpackJsonp([4],[
 /* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsEqualDeep = __webpack_require__(478),
+	var baseIsEqualDeep = __webpack_require__(479),
 	    isObjectLike = __webpack_require__(32);
 	
 	/**
@@ -8629,8 +8629,8 @@ webpackJsonp([4],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var identity = __webpack_require__(78),
-	    overRest = __webpack_require__(530),
-	    setToString = __webpack_require__(533);
+	    overRest = __webpack_require__(531),
+	    setToString = __webpack_require__(534);
 	
 	/**
 	 * The base implementation of `_.rest` which doesn't validate or coerce arguments.
@@ -8673,8 +8673,8 @@ webpackJsonp([4],[
 
 	var isArray = __webpack_require__(20),
 	    isKey = __webpack_require__(121),
-	    stringToPath = __webpack_require__(541),
-	    toString = __webpack_require__(552);
+	    stringToPath = __webpack_require__(542),
+	    toString = __webpack_require__(553);
 	
 	/**
 	 * Casts `value` to a path array if it's not one.
@@ -8716,7 +8716,7 @@ webpackJsonp([4],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var SetCache = __webpack_require__(119),
-	    arraySome = __webpack_require__(468),
+	    arraySome = __webpack_require__(469),
 	    cacheHas = __webpack_require__(120);
 	
 	/** Used to compose bitmasks for value comparisons. */
@@ -9065,7 +9065,7 @@ webpackJsonp([4],[
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(19),
-	    stubFalse = __webpack_require__(551);
+	    stubFalse = __webpack_require__(552);
 	
 	/** Detect free variable `exports`. */
 	var freeExports = typeof exports == 'object' && exports && !exports.nodeType && exports;
@@ -9152,9 +9152,9 @@ webpackJsonp([4],[
 /* 216 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsTypedArray = __webpack_require__(482),
+	var baseIsTypedArray = __webpack_require__(483),
 	    baseUnary = __webpack_require__(201),
-	    nodeUtil = __webpack_require__(528);
+	    nodeUtil = __webpack_require__(529);
 	
 	/* Node.js helper references. */
 	var nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
@@ -9232,7 +9232,7 @@ webpackJsonp([4],[
 	});
 	exports.getBase16Theme = exports.createStyling = exports.invertTheme = undefined;
 	
-	var _typeof2 = __webpack_require__(91);
+	var _typeof2 = __webpack_require__(90);
 	
 	var _typeof3 = _interopRequireDefault(_typeof2);
 	
@@ -9240,7 +9240,7 @@ webpackJsonp([4],[
 	
 	var _extends3 = _interopRequireDefault(_extends2);
 	
-	var _slicedToArray2 = __webpack_require__(299);
+	var _slicedToArray2 = __webpack_require__(300);
 	
 	var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
 	
@@ -9248,7 +9248,7 @@ webpackJsonp([4],[
 	
 	var _keys2 = _interopRequireDefault(_keys);
 	
-	var _lodash = __webpack_require__(456);
+	var _lodash = __webpack_require__(457);
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
@@ -9256,19 +9256,19 @@ webpackJsonp([4],[
 	
 	var base16 = _interopRequireWildcard(_base);
 	
-	var _rgb2hex = __webpack_require__(571);
+	var _rgb2hex = __webpack_require__(573);
 	
 	var _rgb2hex2 = _interopRequireDefault(_rgb2hex);
 	
-	var _parse = __webpack_require__(574);
+	var _parse = __webpack_require__(576);
 	
 	var _parse2 = _interopRequireDefault(_parse);
 	
-	var _lodash3 = __webpack_require__(458);
+	var _lodash3 = __webpack_require__(459);
 	
 	var _lodash4 = _interopRequireDefault(_lodash3);
 	
-	var _colorConverters = __webpack_require__(576);
+	var _colorConverters = __webpack_require__(578);
 	
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
@@ -9909,7 +9909,7 @@ webpackJsonp([4],[
 	
 	var _useBasename2 = _interopRequireDefault(_useBasename);
 	
-	var _createMemoryHistory = __webpack_require__(411);
+	var _createMemoryHistory = __webpack_require__(412);
 	
 	var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
 	
@@ -10103,11 +10103,11 @@ webpackJsonp([4],[
 	exports.unliftStore = unliftStore;
 	exports.default = instrument;
 	
-	var _difference = __webpack_require__(543);
+	var _difference = __webpack_require__(544);
 	
 	var _difference2 = _interopRequireDefault(_difference);
 	
-	var _union = __webpack_require__(553);
+	var _union = __webpack_require__(554);
 	
 	var _union2 = _interopRequireDefault(_union);
 	
@@ -10115,7 +10115,7 @@ webpackJsonp([4],[
 	
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 	
-	var _symbolObservable = __webpack_require__(703);
+	var _symbolObservable = __webpack_require__(705);
 	
 	var _symbolObservable2 = _interopRequireDefault(_symbolObservable);
 	
@@ -10867,23 +10867,23 @@ webpackJsonp([4],[
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _objType = __webpack_require__(722);
+	var _objType = __webpack_require__(724);
 	
 	var _objType2 = _interopRequireDefault(_objType);
 	
-	var _JSONObjectNode = __webpack_require__(718);
+	var _JSONObjectNode = __webpack_require__(720);
 	
 	var _JSONObjectNode2 = _interopRequireDefault(_JSONObjectNode);
 	
-	var _JSONArrayNode = __webpack_require__(716);
+	var _JSONArrayNode = __webpack_require__(718);
 	
 	var _JSONArrayNode2 = _interopRequireDefault(_JSONArrayNode);
 	
-	var _JSONIterableNode = __webpack_require__(717);
+	var _JSONIterableNode = __webpack_require__(719);
 	
 	var _JSONIterableNode2 = _interopRequireDefault(_JSONIterableNode);
 	
-	var _JSONValueNode = __webpack_require__(719);
+	var _JSONValueNode = __webpack_require__(721);
 	
 	var _JSONValueNode2 = _interopRequireDefault(_JSONValueNode);
 	
@@ -11026,7 +11026,7 @@ webpackJsonp([4],[
 	
 	var _JSONNode2 = _interopRequireDefault(_JSONNode);
 	
-	var _createStylingFromTheme = __webpack_require__(720);
+	var _createStylingFromTheme = __webpack_require__(722);
 	
 	var _createStylingFromTheme2 = _interopRequireDefault(_createStylingFromTheme);
 	
@@ -11258,7 +11258,7 @@ webpackJsonp([4],[
 	
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 	
-	var _symbolObservable = __webpack_require__(732);
+	var _symbolObservable = __webpack_require__(734);
 	
 	var _symbolObservable2 = _interopRequireDefault(_symbolObservable);
 	
@@ -11543,6 +11543,13 @@ webpackJsonp([4],[
 
 /***/ },
 /* 264 */
+/***/ function(module, exports) {
+
+	module.exports = function() { throw new Error("define cannot be used indirect"); };
+
+
+/***/ },
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11554,13 +11561,13 @@ webpackJsonp([4],[
 	
 	var _reactDom = __webpack_require__(89);
 	
-	var _reactHotLoader = __webpack_require__(643);
+	var _reactHotLoader = __webpack_require__(645);
 	
-	var _App = __webpack_require__(281);
+	var _App = __webpack_require__(282);
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _store = __webpack_require__(292);
+	var _store = __webpack_require__(293);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -11592,7 +11599,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 265 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11600,7 +11607,7 @@ webpackJsonp([4],[
 	
 	exports.__esModule = true;
 	
-	var _defineProperty = __webpack_require__(276);
+	var _defineProperty = __webpack_require__(277);
 	
 	var _defineProperty2 = _interopRequireDefault(_defineProperty);
 	
@@ -11625,13 +11632,13 @@ webpackJsonp([4],[
 	}();
 
 /***/ },
-/* 266 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(346), __esModule: true };
+	module.exports = { "default": __webpack_require__(347), __esModule: true };
 
 /***/ },
-/* 267 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11642,7 +11649,7 @@ webpackJsonp([4],[
 	});
 	exports.getMedicalRightsForUser = exports.getSelectedMedicalRights = exports.getMedicalRights = undefined;
 	
-	var _WizardActions = __webpack_require__(274);
+	var _WizardActions = __webpack_require__(275);
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
@@ -11716,7 +11723,7 @@ webpackJsonp([4],[
 	exports.default = WizardReducer;
 
 /***/ },
-/* 268 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11724,7 +11731,7 @@ webpackJsonp([4],[
 	
 	exports.__esModule = true;
 	
-	var _from = __webpack_require__(269);
+	var _from = __webpack_require__(270);
 	
 	var _from2 = _interopRequireDefault(_from);
 	
@@ -11743,14 +11750,14 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 269 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(338), __esModule: true };
+	module.exports = { "default": __webpack_require__(339), __esModule: true };
 
 /***/ },
-/* 270 */,
-/* 271 */
+/* 271 */,
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11830,7 +11837,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 272 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11910,7 +11917,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 273 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11923,7 +11930,7 @@ webpackJsonp([4],[
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _UserActions = __webpack_require__(272);
+	var _UserActions = __webpack_require__(273);
 	
 	// let initialDob = new Date();
 	// initialDob.setFullYear(initialDob.getFullYear() - 25);
@@ -11958,7 +11965,7 @@ webpackJsonp([4],[
 	exports.default = UserReducer;
 
 /***/ },
-/* 274 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12030,26 +12037,26 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 275 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(342), __esModule: true };
-
-/***/ },
 /* 276 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(344), __esModule: true };
+	module.exports = { "default": __webpack_require__(343), __esModule: true };
 
 /***/ },
 /* 277 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	// removed by extract-text-webpack-plugin
-	module.exports = {"progtrckr":"_1T2D5xuQAzMIscEjI2nghz","val-err-tooltip":"_26s78mC1TlJwIeHL6_3T04","step":"_1LsG1_aQ2RSuPpA8BUgQzD","form-horizontal":"vFRtZyLC_JSGYTB8ZNp9L","form-group":"_3dlrtOMwBkuI7pch-Bh2XM","row":"YCmkvEtoQTgnkqZkV3KjA","footer-buttons":"vl9sepLxLhjaOumNvMGJu","step3":"jK2gRvchHCbebUwqQlyJV","step4":"_2LsxfDg-ozr6rp45JIcvR-","review":"_1TThIY09qLr5Wfk80vP-qp","txt":"SSuOYzX0RxznwJiDrGboH","control-label":"_293qLqtMLuu0AncbayrNUn","saving":"_31Is94zhKTCFBbXE3PfPxb","eg-jump-lnk":"_1jqBWnm1cdnu57XIYaEdrW","lib-version":"_1Vr7MgDfp2ylHVa3ryYMfJ","content":"_1u_fguEXmTnrJge1d1iz9C","red":"_9JyYUHPUFav3UOjbxJIfD","green":"_1YKtRyM4nU-ynOll96lla4","bold":"_1f9bz_Z7Jv1Ae6rkj6eLCm","hoc-alert":"_2SgTM_M73TmeYVq5XbDywY","form-block-holder":"_2NqFL78VnXh6Hc8sN2yjLW","progtrckr-todo":"_1hJePpQfJYCAqZPfgEDeiI","progtrckr-doing":"_1bAEdbbdwOsDMca2Er-enQ","progtrckr-done":"_1gy7LmBVkqoqrsnTTKTuWz"};
+	module.exports = { "default": __webpack_require__(345), __esModule: true };
 
 /***/ },
 /* 278 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"progtrckr":"_1T2D5xuQAzMIscEjI2nghz","val-err-tooltip":"_26s78mC1TlJwIeHL6_3T04","step":"_1LsG1_aQ2RSuPpA8BUgQzD","form-horizontal":"vFRtZyLC_JSGYTB8ZNp9L","form-group":"_3dlrtOMwBkuI7pch-Bh2XM","row":"YCmkvEtoQTgnkqZkV3KjA","footer-buttons":"vl9sepLxLhjaOumNvMGJu","step3":"jK2gRvchHCbebUwqQlyJV","step4":"_2LsxfDg-ozr6rp45JIcvR-","review":"_1TThIY09qLr5Wfk80vP-qp","txt":"SSuOYzX0RxznwJiDrGboH","control-label":"_293qLqtMLuu0AncbayrNUn","saving":"_31Is94zhKTCFBbXE3PfPxb","eg-jump-lnk":"_1jqBWnm1cdnu57XIYaEdrW","lib-version":"_1Vr7MgDfp2ylHVa3ryYMfJ","content":"_1u_fguEXmTnrJge1d1iz9C","red":"_9JyYUHPUFav3UOjbxJIfD","green":"_1YKtRyM4nU-ynOll96lla4","bold":"_1f9bz_Z7Jv1Ae6rkj6eLCm","hoc-alert":"_2SgTM_M73TmeYVq5XbDywY","form-block-holder":"_2NqFL78VnXh6Hc8sN2yjLW","progtrckr-todo":"_1hJePpQfJYCAqZPfgEDeiI","progtrckr-doing":"_1bAEdbbdwOsDMca2Er-enQ","progtrckr-done":"_1gy7LmBVkqoqrsnTTKTuWz","wizard-spacer":"_1dldT6inotw2Mi2tu7jfkW"};
+
+/***/ },
+/* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports.__esModule = true;
@@ -12062,7 +12069,7 @@ webpackJsonp([4],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactSideEffect = __webpack_require__(679);
+	var _reactSideEffect = __webpack_require__(681);
 	
 	var _reactSideEffect2 = _interopRequireDefault(_reactSideEffect);
 	
@@ -12074,9 +12081,9 @@ webpackJsonp([4],[
 	
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 	
-	var _HelmetConstants = __webpack_require__(641);
+	var _HelmetConstants = __webpack_require__(643);
 	
-	var _PlainComponent = __webpack_require__(642);
+	var _PlainComponent = __webpack_require__(644);
 	
 	var _PlainComponent2 = _interopRequireDefault(_PlainComponent);
 	
@@ -12587,7 +12594,7 @@ webpackJsonp([4],[
 	module.exports = exports["default"];
 
 /***/ },
-/* 279 */
+/* 280 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -12617,7 +12624,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 280 */
+/* 281 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -12647,7 +12654,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 281 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12666,23 +12673,27 @@ webpackJsonp([4],[
 	
 	var _reactRouter = __webpack_require__(93);
 	
-	var _IntlWrapper = __webpack_require__(287);
+	var _IntlWrapper = __webpack_require__(288);
 	
 	var _IntlWrapper2 = _interopRequireDefault(_IntlWrapper);
 	
-	var _MuiThemeProvider = __webpack_require__(555);
+	var _MuiThemeProvider = __webpack_require__(556);
 	
 	var _MuiThemeProvider2 = _interopRequireDefault(_MuiThemeProvider);
 	
-	var _reactTapEventPlugin = __webpack_require__(683);
+	var _reactTapEventPlugin = __webpack_require__(685);
 	
 	var _reactTapEventPlugin2 = _interopRequireDefault(_reactTapEventPlugin);
+	
+	var _mobileDetect = __webpack_require__(566);
+	
+	var _mobileDetect2 = _interopRequireDefault(_mobileDetect);
 	
 	var _getMuiTheme = __webpack_require__(154);
 	
 	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 	
-	var _darkBaseTheme = __webpack_require__(556);
+	var _darkBaseTheme = __webpack_require__(557);
 	
 	var _darkBaseTheme2 = _interopRequireDefault(_darkBaseTheme);
 	
@@ -12690,37 +12701,42 @@ webpackJsonp([4],[
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
-	var _mixpanelBrowser = __webpack_require__(564);
+	var _mixpanelBrowser = __webpack_require__(565);
 	
 	var _mixpanelBrowser2 = _interopRequireDefault(_mixpanelBrowser);
 	
-	var _reactMixpanel = __webpack_require__(651);
+	var _reactMixpanel = __webpack_require__(653);
 	
 	var _reactMixpanel2 = _interopRequireDefault(_reactMixpanel);
 	
-	var _routes = __webpack_require__(291);
+	var _routes = __webpack_require__(292);
 	
 	var _routes2 = _interopRequireDefault(_routes);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// Mixpanel
+	/**
+	 * Root Component
+	 */
 	_mixpanelBrowser2.default.init("80bb2a9473ffb596cb6e7a06d7306699");
 	
 	// Needed for onTouchTap
 	// http://stackoverflow.com/a/34015469/988941
-	/**
-	 * Root Component
-	 */
 	(0, _reactTapEventPlugin2.default)();
+	
+	//Mobile detect
+	var mobileDetect = new _mobileDetect2.default(window.navigator.userAgent);
+	//How to check if the device is mobile or not
+	// console.log(mobileDetect.mobile());
 	
 	// Import Routes
 	
 	
 	// Base stylesheet
+	__webpack_require__(392);
 	__webpack_require__(391);
-	__webpack_require__(390);
-	__webpack_require__(277);
+	__webpack_require__(278);
 	
 	function App(props) {
 	  return _react2.default.createElement(
@@ -12751,7 +12767,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 282 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12770,11 +12786,11 @@ webpackJsonp([4],[
 	
 	var _reactRedux = __webpack_require__(65);
 	
-	var _App = __webpack_require__(392);
+	var _App = __webpack_require__(393);
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _reactHelmet = __webpack_require__(278);
+	var _reactHelmet = __webpack_require__(279);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
@@ -12782,11 +12798,11 @@ webpackJsonp([4],[
 	
 	var _DevTools2 = _interopRequireDefault(_DevTools);
 	
-	var _Header = __webpack_require__(285);
+	var _Header = __webpack_require__(286);
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _Footer = __webpack_require__(284);
+	var _Footer = __webpack_require__(285);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
@@ -12891,7 +12907,7 @@ webpackJsonp([4],[
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(App);
 
 /***/ },
-/* 283 */
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12936,7 +12952,7 @@ webpackJsonp([4],[
 	exports.default = AppReducer;
 
 /***/ },
-/* 284 */
+/* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12953,11 +12969,11 @@ webpackJsonp([4],[
 	
 	var _reactIntl = __webpack_require__(67);
 	
-	var _Footer = __webpack_require__(393);
+	var _Footer = __webpack_require__(394);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
-	var _headerBk = __webpack_require__(737);
+	var _headerBk = __webpack_require__(739);
 	
 	var _headerBk2 = _interopRequireDefault(_headerBk);
 	
@@ -12991,7 +13007,7 @@ webpackJsonp([4],[
 	exports.default = Footer;
 
 /***/ },
-/* 285 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13010,11 +13026,11 @@ webpackJsonp([4],[
 	
 	var _reactIntl = __webpack_require__(67);
 	
-	var _Header = __webpack_require__(394);
+	var _Header = __webpack_require__(395);
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _IconSvg = __webpack_require__(271);
+	var _IconSvg = __webpack_require__(272);
 	
 	var _IconSvg2 = _interopRequireDefault(_IconSvg);
 	
@@ -13061,7 +13077,7 @@ webpackJsonp([4],[
 	exports.default = Header;
 
 /***/ },
-/* 286 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13109,7 +13125,7 @@ webpackJsonp([4],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)))
 
 /***/ },
-/* 287 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13153,7 +13169,7 @@ webpackJsonp([4],[
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(IntlWrapper);
 
 /***/ },
-/* 288 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13243,7 +13259,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 289 */
+/* 290 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13254,7 +13270,7 @@ webpackJsonp([4],[
 	});
 	exports.getPost = exports.getPosts = undefined;
 	
-	var _PostActions = __webpack_require__(288);
+	var _PostActions = __webpack_require__(289);
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
@@ -13306,7 +13322,7 @@ webpackJsonp([4],[
 	exports.default = PostReducer;
 
 /***/ },
-/* 290 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13318,23 +13334,23 @@ webpackJsonp([4],[
 	
 	var _redux = __webpack_require__(152);
 	
-	var _AppReducer = __webpack_require__(283);
+	var _AppReducer = __webpack_require__(284);
 	
 	var _AppReducer2 = _interopRequireDefault(_AppReducer);
 	
-	var _PostReducer = __webpack_require__(289);
+	var _PostReducer = __webpack_require__(290);
 	
 	var _PostReducer2 = _interopRequireDefault(_PostReducer);
 	
-	var _IntlReducer = __webpack_require__(286);
+	var _IntlReducer = __webpack_require__(287);
 	
 	var _IntlReducer2 = _interopRequireDefault(_IntlReducer);
 	
-	var _WizardReducer = __webpack_require__(267);
+	var _WizardReducer = __webpack_require__(268);
 	
 	var _WizardReducer2 = _interopRequireDefault(_WizardReducer);
 	
-	var _UserReducer = __webpack_require__(273);
+	var _UserReducer = __webpack_require__(274);
 	
 	var _UserReducer2 = _interopRequireDefault(_UserReducer);
 	
@@ -13355,7 +13371,7 @@ webpackJsonp([4],[
 	// Import Reducers
 
 /***/ },
-/* 291 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13371,7 +13387,7 @@ webpackJsonp([4],[
 	
 	var _reactRouter = __webpack_require__(93);
 	
-	var _App = __webpack_require__(282);
+	var _App = __webpack_require__(283);
 	
 	var _App2 = _interopRequireDefault(_App);
 	
@@ -13403,7 +13419,7 @@ webpackJsonp([4],[
 	  _react2.default.createElement(_reactRouter.IndexRoute, {
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(2).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(747).default);
+	        cb(null, __webpack_require__(748).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  }),
@@ -13411,7 +13427,7 @@ webpackJsonp([4],[
 	    path: '/wizard',
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(1).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(748).default);
+	        cb(null, __webpack_require__(749).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  }),
@@ -13419,14 +13435,14 @@ webpackJsonp([4],[
 	    path: '/landing',
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(3).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(746).default);
+	        cb(null, __webpack_require__(747).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  })
 	);
 
 /***/ },
-/* 292 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13439,7 +13455,7 @@ webpackJsonp([4],[
 	
 	var _redux = __webpack_require__(152);
 	
-	var _reduxThunk = __webpack_require__(728);
+	var _reduxThunk = __webpack_require__(730);
 	
 	var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 	
@@ -13447,7 +13463,7 @@ webpackJsonp([4],[
 	
 	var _DevTools2 = _interopRequireDefault(_DevTools);
 	
-	var _reducers = __webpack_require__(290);
+	var _reducers = __webpack_require__(291);
 	
 	var _reducers2 = _interopRequireDefault(_reducers);
 	
@@ -13482,7 +13498,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 293 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13501,12 +13517,6 @@ webpackJsonp([4],[
 	exports.default = config;
 
 /***/ },
-/* 294 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(340), __esModule: true };
-
-/***/ },
 /* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -13516,13 +13526,13 @@ webpackJsonp([4],[
 /* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(343), __esModule: true };
+	module.exports = { "default": __webpack_require__(342), __esModule: true };
 
 /***/ },
 /* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(348), __esModule: true };
+	module.exports = { "default": __webpack_require__(344), __esModule: true };
 
 /***/ },
 /* 298 */
@@ -13534,12 +13544,18 @@ webpackJsonp([4],[
 /* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = { "default": __webpack_require__(350), __esModule: true };
+
+/***/ },
+/* 300 */
+/***/ function(module, exports, __webpack_require__) {
+
 	"use strict";
 	"use strict";
 	
 	exports.__esModule = true;
 	
-	var _isIterable2 = __webpack_require__(294);
+	var _isIterable2 = __webpack_require__(295);
 	
 	var _isIterable3 = _interopRequireDefault(_isIterable2);
 	
@@ -13588,7 +13604,7 @@ webpackJsonp([4],[
 	}();
 
 /***/ },
-/* 300 */
+/* 301 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13618,7 +13634,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 301 */
+/* 302 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13648,7 +13664,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 302 */
+/* 303 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13678,7 +13694,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 303 */
+/* 304 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13708,7 +13724,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 304 */
+/* 305 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13738,7 +13754,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 305 */
+/* 306 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13768,7 +13784,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 306 */
+/* 307 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13798,7 +13814,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 307 */
+/* 308 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13828,7 +13844,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 308 */
+/* 309 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13858,7 +13874,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 309 */
+/* 310 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13888,7 +13904,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 310 */
+/* 311 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13918,7 +13934,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 311 */
+/* 312 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13948,7 +13964,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 312 */
+/* 313 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13978,7 +13994,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 313 */
+/* 314 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14008,7 +14024,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 314 */
+/* 315 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14038,7 +14054,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 315 */
+/* 316 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14068,7 +14084,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 316 */
+/* 317 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14098,7 +14114,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 317 */
+/* 318 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14128,7 +14144,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 318 */
+/* 319 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14158,7 +14174,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 319 */
+/* 320 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14188,7 +14204,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 320 */
+/* 321 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14218,7 +14234,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 321 */
+/* 322 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14248,7 +14264,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 322 */
+/* 323 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14278,7 +14294,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 323 */
+/* 324 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14308,7 +14324,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 324 */
+/* 325 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14338,7 +14354,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 325 */
+/* 326 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14368,7 +14384,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 326 */
+/* 327 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14398,7 +14414,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 327 */
+/* 328 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14428,7 +14444,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 328 */
+/* 329 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14458,7 +14474,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 329 */
+/* 330 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14488,7 +14504,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 330 */
+/* 331 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14518,7 +14534,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 331 */
+/* 332 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14548,7 +14564,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 332 */
+/* 333 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14578,7 +14594,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 333 */
+/* 334 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14608,7 +14624,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 334 */
+/* 335 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14638,7 +14654,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 335 */
+/* 336 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14668,7 +14684,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 336 */
+/* 337 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14698,7 +14714,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 337 */
+/* 338 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*!
@@ -14709,7 +14725,7 @@ webpackJsonp([4],[
 	
 	!function (root, name, definition) {
 	  if (typeof module != 'undefined' && module.exports) module.exports = definition()
-	  else if (true) __webpack_require__(738)(name, definition)
+	  else if (true) __webpack_require__(264)(name, definition)
 	  else root[name] = definition()
 	}(this, 'bowser', function () {
 	  /**
@@ -15305,20 +15321,12 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 338 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(70);
-	__webpack_require__(373);
-	module.exports = __webpack_require__(9).Array.from;
-
-/***/ },
 /* 339 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(111);
 	__webpack_require__(70);
-	module.exports = __webpack_require__(371);
+	__webpack_require__(374);
+	module.exports = __webpack_require__(9).Array.from;
 
 /***/ },
 /* 340 */
@@ -15332,25 +15340,23 @@ webpackJsonp([4],[
 /* 341 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(375);
-	module.exports = __webpack_require__(9).Number.isSafeInteger;
+	__webpack_require__(111);
+	__webpack_require__(70);
+	module.exports = __webpack_require__(373);
 
 /***/ },
 /* 342 */
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(376);
-	module.exports = __webpack_require__(9).Object.assign;
+	module.exports = __webpack_require__(9).Number.isSafeInteger;
 
 /***/ },
 /* 343 */
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(377);
-	var $Object = __webpack_require__(9).Object;
-	module.exports = function create(P, D){
-	  return $Object.create(P, D);
-	};
+	module.exports = __webpack_require__(9).Object.assign;
 
 /***/ },
 /* 344 */
@@ -15358,8 +15364,8 @@ webpackJsonp([4],[
 
 	__webpack_require__(378);
 	var $Object = __webpack_require__(9).Object;
-	module.exports = function defineProperty(it, key, desc){
-	  return $Object.defineProperty(it, key, desc);
+	module.exports = function create(P, D){
+	  return $Object.create(P, D);
 	};
 
 /***/ },
@@ -15368,8 +15374,8 @@ webpackJsonp([4],[
 
 	__webpack_require__(379);
 	var $Object = __webpack_require__(9).Object;
-	module.exports = function getOwnPropertyNames(it){
-	  return $Object.getOwnPropertyNames(it);
+	module.exports = function defineProperty(it, key, desc){
+	  return $Object.defineProperty(it, key, desc);
 	};
 
 /***/ },
@@ -15377,34 +15383,44 @@ webpackJsonp([4],[
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(380);
-	module.exports = __webpack_require__(9).Object.getPrototypeOf;
+	var $Object = __webpack_require__(9).Object;
+	module.exports = function getOwnPropertyNames(it){
+	  return $Object.getOwnPropertyNames(it);
+	};
 
 /***/ },
 /* 347 */
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(381);
-	module.exports = __webpack_require__(9).Object.keys;
+	module.exports = __webpack_require__(9).Object.getPrototypeOf;
 
 /***/ },
 /* 348 */
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(382);
-	module.exports = __webpack_require__(9).Object.setPrototypeOf;
+	module.exports = __webpack_require__(9).Object.keys;
 
 /***/ },
 /* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(384);
 	__webpack_require__(383);
-	__webpack_require__(385);
-	__webpack_require__(386);
-	module.exports = __webpack_require__(9).Symbol;
+	module.exports = __webpack_require__(9).Object.setPrototypeOf;
 
 /***/ },
 /* 350 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(385);
+	__webpack_require__(384);
+	__webpack_require__(386);
+	__webpack_require__(387);
+	module.exports = __webpack_require__(9).Symbol;
+
+/***/ },
+/* 351 */
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(70);
@@ -15412,7 +15428,7 @@ webpackJsonp([4],[
 	module.exports = __webpack_require__(110).f('iterator');
 
 /***/ },
-/* 351 */
+/* 352 */
 /***/ function(module, exports) {
 
 	module.exports = function(it){
@@ -15421,20 +15437,20 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 352 */
+/* 353 */
 /***/ function(module, exports) {
 
 	module.exports = function(){ /* empty */ };
 
 /***/ },
-/* 353 */
+/* 354 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// false -> Array#indexOf
 	// true  -> Array#includes
 	var toIObject = __webpack_require__(29)
 	  , toLength  = __webpack_require__(173)
-	  , toIndex   = __webpack_require__(370);
+	  , toIndex   = __webpack_require__(371);
 	module.exports = function(IS_INCLUDES){
 	  return function($this, el, fromIndex){
 	    var O      = toIObject($this)
@@ -15453,7 +15469,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 354 */
+/* 355 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -15467,7 +15483,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 355 */
+/* 356 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// all enumerable object keys, includes symbols
@@ -15487,13 +15503,13 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 356 */
+/* 357 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__(23).document && document.documentElement;
 
 /***/ },
-/* 357 */
+/* 358 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// check on default Array iterator
@@ -15506,7 +15522,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 358 */
+/* 359 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.2.2 IsArray(argument)
@@ -15516,7 +15532,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 359 */
+/* 360 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.3 Number.isInteger(number)
@@ -15527,7 +15543,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 360 */
+/* 361 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// call something on iterator step with safe closing on error
@@ -15544,7 +15560,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 361 */
+/* 362 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -15563,7 +15579,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 362 */
+/* 363 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var ITERATOR     = __webpack_require__(13)('iterator')
@@ -15589,7 +15605,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 363 */
+/* 364 */
 /***/ function(module, exports) {
 
 	module.exports = function(done, value){
@@ -15597,7 +15613,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 364 */
+/* 365 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var getKeys   = __webpack_require__(41)
@@ -15612,7 +15628,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 365 */
+/* 366 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var META     = __webpack_require__(69)('meta')
@@ -15670,7 +15686,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 366 */
+/* 367 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -15709,7 +15725,7 @@ webpackJsonp([4],[
 	} : $assign;
 
 /***/ },
-/* 367 */
+/* 368 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var dP       = __webpack_require__(24)
@@ -15727,7 +15743,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 368 */
+/* 369 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Works with __proto__ only. Old v8 can't work with null proto objects.
@@ -15757,7 +15773,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 369 */
+/* 370 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var toInteger = __webpack_require__(107)
@@ -15779,7 +15795,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 370 */
+/* 371 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var toInteger = __webpack_require__(107)
@@ -15791,7 +15807,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 371 */
+/* 372 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var anObject = __webpack_require__(26)
@@ -15803,7 +15819,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 372 */
+/* 373 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var classof   = __webpack_require__(162)
@@ -15817,7 +15833,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 373 */
+/* 374 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -15825,13 +15841,13 @@ webpackJsonp([4],[
 	var ctx            = __webpack_require__(97)
 	  , $export        = __webpack_require__(18)
 	  , toObject       = __webpack_require__(58)
-	  , call           = __webpack_require__(360)
-	  , isArrayIter    = __webpack_require__(357)
+	  , call           = __webpack_require__(361)
+	  , isArrayIter    = __webpack_require__(358)
 	  , toLength       = __webpack_require__(173)
-	  , createProperty = __webpack_require__(354)
+	  , createProperty = __webpack_require__(355)
 	  , getIterFn      = __webpack_require__(174);
 	
-	$export($export.S + $export.F * !__webpack_require__(362)(function(iter){ Array.from(iter); }), 'Array', {
+	$export($export.S + $export.F * !__webpack_require__(363)(function(iter){ Array.from(iter); }), 'Array', {
 	  // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
 	  from: function from(arrayLike/*, mapfn = undefined, thisArg = undefined*/){
 	    var O       = toObject(arrayLike)
@@ -15861,13 +15877,13 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 374 */
+/* 375 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	'use strict';
-	var addToUnscopables = __webpack_require__(352)
-	  , step             = __webpack_require__(363)
+	var addToUnscopables = __webpack_require__(353)
+	  , step             = __webpack_require__(364)
 	  , Iterators        = __webpack_require__(40)
 	  , toIObject        = __webpack_require__(29);
 	
@@ -15901,12 +15917,12 @@ webpackJsonp([4],[
 	addToUnscopables('entries');
 
 /***/ },
-/* 375 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.5 Number.isSafeInteger(number)
 	var $export   = __webpack_require__(18)
-	  , isInteger = __webpack_require__(359)
+	  , isInteger = __webpack_require__(360)
 	  , abs       = Math.abs;
 	
 	$export($export.S, 'Number', {
@@ -15916,16 +15932,16 @@ webpackJsonp([4],[
 	});
 
 /***/ },
-/* 376 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.1 Object.assign(target, source)
 	var $export = __webpack_require__(18);
 	
-	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(366)});
+	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(367)});
 
 /***/ },
-/* 377 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(18)
@@ -15933,7 +15949,7 @@ webpackJsonp([4],[
 	$export($export.S, 'Object', {create: __webpack_require__(101)});
 
 /***/ },
-/* 378 */
+/* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(18);
@@ -15941,7 +15957,7 @@ webpackJsonp([4],[
 	$export($export.S + $export.F * !__webpack_require__(27), 'Object', {defineProperty: __webpack_require__(24).f});
 
 /***/ },
-/* 379 */
+/* 380 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.7 Object.getOwnPropertyNames(O)
@@ -15950,7 +15966,7 @@ webpackJsonp([4],[
 	});
 
 /***/ },
-/* 380 */
+/* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.9 Object.getPrototypeOf(O)
@@ -15964,7 +15980,7 @@ webpackJsonp([4],[
 	});
 
 /***/ },
-/* 381 */
+/* 382 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 Object.keys(O)
@@ -15978,21 +15994,21 @@ webpackJsonp([4],[
 	});
 
 /***/ },
-/* 382 */
+/* 383 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.19 Object.setPrototypeOf(O, proto)
 	var $export = __webpack_require__(18);
-	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(368).set});
+	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(369).set});
 
 /***/ },
-/* 383 */
+/* 384 */
 /***/ function(module, exports) {
 
 
 
 /***/ },
-/* 384 */
+/* 385 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16003,7 +16019,7 @@ webpackJsonp([4],[
 	  , DESCRIPTORS    = __webpack_require__(27)
 	  , $export        = __webpack_require__(18)
 	  , redefine       = __webpack_require__(172)
-	  , META           = __webpack_require__(365).KEY
+	  , META           = __webpack_require__(366).KEY
 	  , $fails         = __webpack_require__(37)
 	  , shared         = __webpack_require__(106)
 	  , setToStringTag = __webpack_require__(104)
@@ -16011,9 +16027,9 @@ webpackJsonp([4],[
 	  , wks            = __webpack_require__(13)
 	  , wksExt         = __webpack_require__(110)
 	  , wksDefine      = __webpack_require__(109)
-	  , keyOf          = __webpack_require__(364)
-	  , enumKeys       = __webpack_require__(355)
-	  , isArray        = __webpack_require__(358)
+	  , keyOf          = __webpack_require__(365)
+	  , enumKeys       = __webpack_require__(356)
+	  , isArray        = __webpack_require__(359)
 	  , anObject       = __webpack_require__(26)
 	  , toIObject      = __webpack_require__(29)
 	  , toPrimitive    = __webpack_require__(108)
@@ -16233,19 +16249,19 @@ webpackJsonp([4],[
 	setToStringTag(global.JSON, 'JSON', true);
 
 /***/ },
-/* 385 */
+/* 386 */
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(109)('asyncIterator');
 
 /***/ },
-/* 386 */
+/* 387 */
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(109)('observable');
 
 /***/ },
-/* 387 */
+/* 388 */
 /***/ function(module, exports) {
 
 	var supportsArgumentsClass = (function(){
@@ -16271,7 +16287,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 388 */
+/* 389 */
 /***/ function(module, exports) {
 
 	exports = module.exports = typeof Object.keys === 'function'
@@ -16286,7 +16302,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 389 */
+/* 390 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -16332,41 +16348,40 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 390 */
+/* 391 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"progtrckr":"_1gots0T1qmximnr_geso4_","val-err-tooltip":"_9vCWgvVPszZxQNscac2Ic","step":"_1Lw7KWNcw1KcP4MogUxDao","form-horizontal":"_3t_6TlM0CU-IisvGk9NK_y","form-group":"_1xMhoS_wFX3PDFN6THuRiq","row":"_1A0QsO2w5NaRQ1G9oYcU3c","footer-buttons":"_3cHwoF0oTMYhUOY_AVxIc1","step3":"_33jkjCKn4b9H8dFr-OmDco","step4":"_25JJ0qY_sVAf94SdmFzzUc","review":"WcHoTG7viE6JzKImJwJkt","txt":"_2DSVPD_z8OekWJPFr5Ujkt","control-label":"VkflfFTpn4gmWEjpfgmN6","saving":"HMvG0YAmEQQck0GZo6Yjn","eg-jump-lnk":"_1mqogYJsRWO_p1owkPkKBp","lib-version":"_GRxm4KrXd1_JhsPoR7uo","content":"_1vKtlU1rl8N2NCVRsmsyp8","red":"_1ZjFff1GaWnOAAEtd87glv","green":"_3tgNwq-qgolFUVj6lS-DqJ","bold":"_1bJvCGENAbkau4FdN7nAlF","hoc-alert":"_1xGGQMpWFglkUzMznl314f","form-block-holder":"_1xQyqqV63sg3I0HCeTAJfQ","progtrckr-todo":"_3ojFsatz22_d65C5w_LGhd","progtrckr-doing":"_1UpcKFdVQwIpotH0H44uYE","progtrckr-done":"_21aScf6uurGWYPvd6q37Cr"};
 
 /***/ },
-/* 391 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
 /* 392 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"container":"_4uEyKcd5WHob5qPzotT7","progtrckr":"_3Y6DQZh1IQy_Ho6ycb_ahP","progtrckr-todo":"_1N_rZ4VqyEgJwR20fEJFZ1","progtrckr-doing":"_3uNOy-0WRNUayqAfLXOFGF","progtrckr-done":"_-ZF6hpRyofG5f3ViJeGlc"};
 
 /***/ },
 /* 393 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"footer":"_3vPEi87A1wyh1iLR3bsBGf"};
+	module.exports = {"container":"_4uEyKcd5WHob5qPzotT7","progtrckr":"_3Y6DQZh1IQy_Ho6ycb_ahP","progtrckr-todo":"_1N_rZ4VqyEgJwR20fEJFZ1","progtrckr-doing":"_3uNOy-0WRNUayqAfLXOFGF","progtrckr-done":"_-ZF6hpRyofG5f3ViJeGlc"};
 
 /***/ },
 /* 394 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
+	module.exports = {"footer":"_3vPEi87A1wyh1iLR3bsBGf"};
+
+/***/ },
+/* 395 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 	module.exports = {"header":"_2sEZYfHlvDy9uXqVIXG1aM","content":"_1eavAvnySzoZc5rld6Q4pa","site-title":"UfFn6muOcOBjkVI5_yltp","add-post-button":"CkTz6a2gQTJjwXIEAlTSk","language-switcher":"_3bviQya5ZWCvWr6lGdfO9h","selected":"_3IRlmCpgSZBcTGVIGHvgaI","logo":"LNLY14D54Y1IQaktsExe3"};
 
 /***/ },
-/* 395 */,
 /* 396 */,
 /* 397 */,
 /* 398 */,
@@ -16377,7 +16392,8 @@ webpackJsonp([4],[
 /* 403 */,
 /* 404 */,
 /* 405 */,
-/* 406 */
+/* 406 */,
+/* 407 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -16417,8 +16433,8 @@ webpackJsonp([4],[
 	module.exports = keyOf;
 
 /***/ },
-/* 407 */,
-/* 408 */
+/* 408 */,
+/* 409 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -16482,7 +16498,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 409 */
+/* 410 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16668,7 +16684,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 410 */
+/* 411 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16725,7 +16741,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 411 */
+/* 412 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16885,12 +16901,12 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 412 */
+/* 413 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	'use strict';
-	var strictUriEncode = __webpack_require__(736);
+	var strictUriEncode = __webpack_require__(738);
 	
 	exports.extract = function (str) {
 		return str.split('?')[1] || '';
@@ -16958,7 +16974,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 413 */
+/* 414 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -16981,7 +16997,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 414 */
+/* 415 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16995,11 +17011,11 @@ webpackJsonp([4],[
 	
 	exports.default = createPrefixer;
 	
-	var _getBrowserInformation = __webpack_require__(430);
+	var _getBrowserInformation = __webpack_require__(431);
 	
 	var _getBrowserInformation2 = _interopRequireDefault(_getBrowserInformation);
 	
-	var _getPrefixedKeyframes = __webpack_require__(431);
+	var _getPrefixedKeyframes = __webpack_require__(432);
 	
 	var _getPrefixedKeyframes2 = _interopRequireDefault(_getPrefixedKeyframes);
 	
@@ -17162,7 +17178,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 415 */
+/* 416 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17192,7 +17208,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 416 */
+/* 417 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17226,7 +17242,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 417 */
+/* 418 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17287,7 +17303,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 418 */
+/* 419 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17361,7 +17377,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 419 */
+/* 420 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17392,7 +17408,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 420 */
+/* 421 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17441,7 +17457,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 421 */
+/* 422 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17508,7 +17524,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 422 */
+/* 423 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17519,7 +17535,7 @@ webpackJsonp([4],[
 	});
 	exports.default = createPrefixer;
 	
-	var _prefixProperty = __webpack_require__(432);
+	var _prefixProperty = __webpack_require__(433);
 	
 	var _prefixProperty2 = _interopRequireDefault(_prefixProperty);
 	
@@ -17583,7 +17599,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 423 */
+/* 424 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17611,7 +17627,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 424 */
+/* 425 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -17634,7 +17650,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 425 */
+/* 426 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -17669,7 +17685,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 426 */
+/* 427 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -17714,7 +17730,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 427 */
+/* 428 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17745,7 +17761,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 428 */
+/* 429 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -17784,7 +17800,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 429 */
+/* 430 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17883,7 +17899,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 430 */
+/* 431 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17894,7 +17910,7 @@ webpackJsonp([4],[
 	});
 	exports.default = getBrowserInformation;
 	
-	var _bowser = __webpack_require__(337);
+	var _bowser = __webpack_require__(338);
 	
 	var _bowser2 = _interopRequireDefault(_bowser);
 	
@@ -18020,7 +18036,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 431 */
+/* 432 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -18041,7 +18057,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 432 */
+/* 433 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18069,18 +18085,18 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 433 */
+/* 434 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	'use strict';
 	
-	exports = module.exports = __webpack_require__(435)['default'];
+	exports = module.exports = __webpack_require__(436)['default'];
 	exports['default'] = exports;
 
 
 /***/ },
-/* 434 */
+/* 435 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -18165,12 +18181,12 @@ webpackJsonp([4],[
 	//# sourceMappingURL=es5.js.map
 
 /***/ },
-/* 435 */
+/* 436 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	"use strict";
-	var src$es5$$ = __webpack_require__(434);
+	var src$es5$$ = __webpack_require__(435);
 	exports["default"] = createFormatCache;
 	
 	// -----------------------------------------------------------------------------
@@ -18246,7 +18262,7 @@ webpackJsonp([4],[
 	//# sourceMappingURL=memoizer.js.map
 
 /***/ },
-/* 436 */
+/* 437 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -18292,18 +18308,18 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 437 */
+/* 438 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	'use strict';
 	
-	exports = module.exports = __webpack_require__(438)['default'];
+	exports = module.exports = __webpack_require__(439)['default'];
 	exports['default'] = exports;
 
 
 /***/ },
-/* 438 */
+/* 439 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -19668,7 +19684,7 @@ webpackJsonp([4],[
 	//# sourceMappingURL=parser.js.map
 
 /***/ },
-/* 439 */
+/* 440 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -19883,7 +19899,7 @@ webpackJsonp([4],[
 	//# sourceMappingURL=compiler.js.map
 
 /***/ },
-/* 440 */
+/* 441 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19896,7 +19912,7 @@ webpackJsonp([4],[
 	/* jslint esnext: true */
 	
 	"use strict";
-	var src$utils$$ = __webpack_require__(190), src$es5$$ = __webpack_require__(442), src$compiler$$ = __webpack_require__(439), intl$messageformat$parser$$ = __webpack_require__(437);
+	var src$utils$$ = __webpack_require__(190), src$es5$$ = __webpack_require__(443), src$compiler$$ = __webpack_require__(440), intl$messageformat$parser$$ = __webpack_require__(438);
 	exports["default"] = MessageFormat;
 	
 	// -- MessageFormat --------------------------------------------------------
@@ -20153,7 +20169,7 @@ webpackJsonp([4],[
 	//# sourceMappingURL=core.js.map
 
 /***/ },
-/* 441 */
+/* 442 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -20164,7 +20180,7 @@ webpackJsonp([4],[
 	//# sourceMappingURL=en.js.map
 
 /***/ },
-/* 442 */
+/* 443 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20219,14 +20235,14 @@ webpackJsonp([4],[
 	//# sourceMappingURL=es5.js.map
 
 /***/ },
-/* 443 */
+/* 444 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	/* jslint esnext: true */
 	
 	"use strict";
-	var src$core$$ = __webpack_require__(440), src$en$$ = __webpack_require__(441);
+	var src$core$$ = __webpack_require__(441), src$en$$ = __webpack_require__(442);
 	
 	src$core$$["default"].__addLocaleData(src$en$$["default"]);
 	src$core$$["default"].defaultLocale = 'en';
@@ -20236,7 +20252,7 @@ webpackJsonp([4],[
 	//# sourceMappingURL=main.js.map
 
 /***/ },
-/* 444 */
+/* 445 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20244,11 +20260,11 @@ webpackJsonp([4],[
 	
 	'use strict';
 	
-	var IntlRelativeFormat = __webpack_require__(449)['default'];
+	var IntlRelativeFormat = __webpack_require__(450)['default'];
 	
 	// Add all locale data to `IntlRelativeFormat`. This module will be ignored when
 	// bundling for the browser with Browserify/Webpack.
-	__webpack_require__(742);
+	__webpack_require__(743);
 	
 	// Re-export `IntlRelativeFormat` as the CommonJS default exports with all the
 	// locale data registered, and with English set as the default locale. Define
@@ -20258,7 +20274,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 445 */
+/* 446 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20271,7 +20287,7 @@ webpackJsonp([4],[
 	/* jslint esnext: true */
 	
 	"use strict";
-	var intl$messageformat$$ = __webpack_require__(189), src$diff$$ = __webpack_require__(446), src$es5$$ = __webpack_require__(448);
+	var intl$messageformat$$ = __webpack_require__(189), src$diff$$ = __webpack_require__(447), src$es5$$ = __webpack_require__(449);
 	exports["default"] = RelativeFormat;
 	
 	// -----------------------------------------------------------------------------
@@ -20561,7 +20577,7 @@ webpackJsonp([4],[
 	//# sourceMappingURL=core.js.map
 
 /***/ },
-/* 446 */
+/* 447 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -20613,7 +20629,7 @@ webpackJsonp([4],[
 	//# sourceMappingURL=diff.js.map
 
 /***/ },
-/* 447 */
+/* 448 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -20624,7 +20640,7 @@ webpackJsonp([4],[
 	//# sourceMappingURL=en.js.map
 
 /***/ },
-/* 448 */
+/* 449 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -20705,14 +20721,14 @@ webpackJsonp([4],[
 	//# sourceMappingURL=es5.js.map
 
 /***/ },
-/* 449 */
+/* 450 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	/* jslint esnext: true */
 	
 	"use strict";
-	var src$core$$ = __webpack_require__(445), src$en$$ = __webpack_require__(447);
+	var src$core$$ = __webpack_require__(446), src$en$$ = __webpack_require__(448);
 	
 	src$core$$["default"].__addLocaleData(src$en$$["default"]);
 	src$core$$["default"].defaultLocale = 'en';
@@ -20722,15 +20738,15 @@ webpackJsonp([4],[
 	//# sourceMappingURL=main.js.map
 
 /***/ },
-/* 450 */
+/* 451 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {// Expose `IntlPolyfill` as global to add locale data into runtime later on.
-	global.IntlPolyfill = __webpack_require__(451);
+	global.IntlPolyfill = __webpack_require__(452);
 	
 	// Require all locale data for `Intl`. This module will be
 	// ignored when bundling for the browser with Browserify/Webpack.
-	__webpack_require__(740);
+	__webpack_require__(741);
 	
 	// hack to export the polyfill as global Intl if needed
 	if (!global.Intl) {
@@ -20744,7 +20760,7 @@ webpackJsonp([4],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)))
 
 /***/ },
-/* 451 */
+/* 452 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25102,31 +25118,31 @@ webpackJsonp([4],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)))
 
 /***/ },
-/* 452 */
+/* 453 */
 /***/ function(module, exports) {
 
 	IntlPolyfill.__addLocaleData({locale:"en",date:{ca:["gregory","buddhist","chinese","coptic","dangi","ethioaa","ethiopic","generic","hebrew","indian","islamic","islamicc","japanese","persian","roc"],hourNo0:true,hour12:true,formats:{short:"{1}, {0}",medium:"{1}, {0}",full:"{1} 'at' {0}",long:"{1} 'at' {0}",availableFormats:{"d":"d","E":"ccc",Ed:"d E",Ehm:"E h:mm a",EHm:"E HH:mm",Ehms:"E h:mm:ss a",EHms:"E HH:mm:ss",Gy:"y G",GyMMM:"MMM y G",GyMMMd:"MMM d, y G",GyMMMEd:"E, MMM d, y G","h":"h a","H":"HH",hm:"h:mm a",Hm:"HH:mm",hms:"h:mm:ss a",Hms:"HH:mm:ss",hmsv:"h:mm:ss a v",Hmsv:"HH:mm:ss v",hmv:"h:mm a v",Hmv:"HH:mm v","M":"L",Md:"M/d",MEd:"E, M/d",MMM:"LLL",MMMd:"MMM d",MMMEd:"E, MMM d",MMMMd:"MMMM d",ms:"mm:ss","y":"y",yM:"M/y",yMd:"M/d/y",yMEd:"E, M/d/y",yMMM:"MMM y",yMMMd:"MMM d, y",yMMMEd:"E, MMM d, y",yMMMM:"MMMM y",yQQQ:"QQQ y",yQQQQ:"QQQQ y"},dateFormats:{yMMMMEEEEd:"EEEE, MMMM d, y",yMMMMd:"MMMM d, y",yMMMd:"MMM d, y",yMd:"M/d/yy"},timeFormats:{hmmsszzzz:"h:mm:ss a zzzz",hmsz:"h:mm:ss a z",hms:"h:mm:ss a",hm:"h:mm a"}},calendars:{buddhist:{months:{narrow:["J","F","M","A","M","J","J","A","S","O","N","D"],short:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],long:["January","February","March","April","May","June","July","August","September","October","November","December"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["BE"],short:["BE"],long:["BE"]},dayPeriods:{am:"AM",pm:"PM"}},chinese:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Mo1","Mo2","Mo3","Mo4","Mo5","Mo6","Mo7","Mo8","Mo9","Mo10","Mo11","Mo12"],long:["Month1","Month2","Month3","Month4","Month5","Month6","Month7","Month8","Month9","Month10","Month11","Month12"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},dayPeriods:{am:"AM",pm:"PM"}},coptic:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12","13"],short:["Tout","Baba","Hator","Kiahk","Toba","Amshir","Baramhat","Baramouda","Bashans","Paona","Epep","Mesra","Nasie"],long:["Tout","Baba","Hator","Kiahk","Toba","Amshir","Baramhat","Baramouda","Bashans","Paona","Epep","Mesra","Nasie"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["ERA0","ERA1"],short:["ERA0","ERA1"],long:["ERA0","ERA1"]},dayPeriods:{am:"AM",pm:"PM"}},dangi:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Mo1","Mo2","Mo3","Mo4","Mo5","Mo6","Mo7","Mo8","Mo9","Mo10","Mo11","Mo12"],long:["Month1","Month2","Month3","Month4","Month5","Month6","Month7","Month8","Month9","Month10","Month11","Month12"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},dayPeriods:{am:"AM",pm:"PM"}},ethiopic:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12","13"],short:["Meskerem","Tekemt","Hedar","Tahsas","Ter","Yekatit","Megabit","Miazia","Genbot","Sene","Hamle","Nehasse","Pagumen"],long:["Meskerem","Tekemt","Hedar","Tahsas","Ter","Yekatit","Megabit","Miazia","Genbot","Sene","Hamle","Nehasse","Pagumen"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["ERA0","ERA1"],short:["ERA0","ERA1"],long:["ERA0","ERA1"]},dayPeriods:{am:"AM",pm:"PM"}},ethioaa:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12","13"],short:["Meskerem","Tekemt","Hedar","Tahsas","Ter","Yekatit","Megabit","Miazia","Genbot","Sene","Hamle","Nehasse","Pagumen"],long:["Meskerem","Tekemt","Hedar","Tahsas","Ter","Yekatit","Megabit","Miazia","Genbot","Sene","Hamle","Nehasse","Pagumen"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["ERA0"],short:["ERA0"],long:["ERA0"]},dayPeriods:{am:"AM",pm:"PM"}},generic:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["M01","M02","M03","M04","M05","M06","M07","M08","M09","M10","M11","M12"],long:["M01","M02","M03","M04","M05","M06","M07","M08","M09","M10","M11","M12"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["ERA0","ERA1"],short:["ERA0","ERA1"],long:["ERA0","ERA1"]},dayPeriods:{am:"AM",pm:"PM"}},gregory:{months:{narrow:["J","F","M","A","M","J","J","A","S","O","N","D"],short:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],long:["January","February","March","April","May","June","July","August","September","October","November","December"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["B","A","BCE","CE"],short:["BC","AD","BCE","CE"],long:["Before Christ","Anno Domini","Before Common Era","Common Era"]},dayPeriods:{am:"AM",pm:"PM"}},hebrew:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12","13","7"],short:["Tishri","Heshvan","Kislev","Tevet","Shevat","Adar I","Adar","Nisan","Iyar","Sivan","Tamuz","Av","Elul","Adar II"],long:["Tishri","Heshvan","Kislev","Tevet","Shevat","Adar I","Adar","Nisan","Iyar","Sivan","Tamuz","Av","Elul","Adar II"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["AM"],short:["AM"],long:["AM"]},dayPeriods:{am:"AM",pm:"PM"}},indian:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Chaitra","Vaisakha","Jyaistha","Asadha","Sravana","Bhadra","Asvina","Kartika","Agrahayana","Pausa","Magha","Phalguna"],long:["Chaitra","Vaisakha","Jyaistha","Asadha","Sravana","Bhadra","Asvina","Kartika","Agrahayana","Pausa","Magha","Phalguna"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["Saka"],short:["Saka"],long:["Saka"]},dayPeriods:{am:"AM",pm:"PM"}},islamic:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Muh.","Saf.","Rab. I","Rab. II","Jum. I","Jum. II","Raj.","Sha.","Ram.","Shaw.","Dhuʻl-Q.","Dhuʻl-H."],long:["Muharram","Safar","Rabiʻ I","Rabiʻ II","Jumada I","Jumada II","Rajab","Shaʻban","Ramadan","Shawwal","Dhuʻl-Qiʻdah","Dhuʻl-Hijjah"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["AH"],short:["AH"],long:["AH"]},dayPeriods:{am:"AM",pm:"PM"}},islamicc:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Muh.","Saf.","Rab. I","Rab. II","Jum. I","Jum. II","Raj.","Sha.","Ram.","Shaw.","Dhuʻl-Q.","Dhuʻl-H."],long:["Muharram","Safar","Rabiʻ I","Rabiʻ II","Jumada I","Jumada II","Rajab","Shaʻban","Ramadan","Shawwal","Dhuʻl-Qiʻdah","Dhuʻl-Hijjah"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["AH"],short:["AH"],long:["AH"]},dayPeriods:{am:"AM",pm:"PM"}},japanese:{months:{narrow:["J","F","M","A","M","J","J","A","S","O","N","D"],short:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],long:["January","February","March","April","May","June","July","August","September","October","November","December"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["Taika (645–650)","Hakuchi (650–671)","Hakuhō (672–686)","Shuchō (686–701)","Taihō (701–704)","Keiun (704–708)","Wadō (708–715)","Reiki (715–717)","Yōrō (717–724)","Jinki (724–729)","Tenpyō (729–749)","Tenpyō-kampō (749-749)","Tenpyō-shōhō (749-757)","Tenpyō-hōji (757-765)","Tenpyō-jingo (765-767)","Jingo-keiun (767-770)","Hōki (770–780)","Ten-ō (781-782)","Enryaku (782–806)","Daidō (806–810)","Kōnin (810–824)","Tenchō (824–834)","Jōwa (834–848)","Kajō (848–851)","Ninju (851–854)","Saikō (854–857)","Ten-an (857-859)","Jōgan (859–877)","Gangyō (877–885)","Ninna (885–889)","Kanpyō (889–898)","Shōtai (898–901)","Engi (901–923)","Enchō (923–931)","Jōhei (931–938)","Tengyō (938–947)","Tenryaku (947–957)","Tentoku (957–961)","Ōwa (961–964)","Kōhō (964–968)","Anna (968–970)","Tenroku (970–973)","Ten’en (973–976)","Jōgen (976–978)","Tengen (978–983)","Eikan (983–985)","Kanna (985–987)","Eien (987–989)","Eiso (989–990)","Shōryaku (990–995)","Chōtoku (995–999)","Chōhō (999–1004)","Kankō (1004–1012)","Chōwa (1012–1017)","Kannin (1017–1021)","Jian (1021–1024)","Manju (1024–1028)","Chōgen (1028–1037)","Chōryaku (1037–1040)","Chōkyū (1040–1044)","Kantoku (1044–1046)","Eishō (1046–1053)","Tengi (1053–1058)","Kōhei (1058–1065)","Jiryaku (1065–1069)","Enkyū (1069–1074)","Shōho (1074–1077)","Shōryaku (1077–1081)","Eihō (1081–1084)","Ōtoku (1084–1087)","Kanji (1087–1094)","Kahō (1094–1096)","Eichō (1096–1097)","Jōtoku (1097–1099)","Kōwa (1099–1104)","Chōji (1104–1106)","Kashō (1106–1108)","Tennin (1108–1110)","Ten-ei (1110-1113)","Eikyū (1113–1118)","Gen’ei (1118–1120)","Hōan (1120–1124)","Tenji (1124–1126)","Daiji (1126–1131)","Tenshō (1131–1132)","Chōshō (1132–1135)","Hōen (1135–1141)","Eiji (1141–1142)","Kōji (1142–1144)","Ten’yō (1144–1145)","Kyūan (1145–1151)","Ninpei (1151–1154)","Kyūju (1154–1156)","Hōgen (1156–1159)","Heiji (1159–1160)","Eiryaku (1160–1161)","Ōho (1161–1163)","Chōkan (1163–1165)","Eiman (1165–1166)","Nin’an (1166–1169)","Kaō (1169–1171)","Shōan (1171–1175)","Angen (1175–1177)","Jishō (1177–1181)","Yōwa (1181–1182)","Juei (1182–1184)","Genryaku (1184–1185)","Bunji (1185–1190)","Kenkyū (1190–1199)","Shōji (1199–1201)","Kennin (1201–1204)","Genkyū (1204–1206)","Ken’ei (1206–1207)","Jōgen (1207–1211)","Kenryaku (1211–1213)","Kenpō (1213–1219)","Jōkyū (1219–1222)","Jōō (1222–1224)","Gennin (1224–1225)","Karoku (1225–1227)","Antei (1227–1229)","Kanki (1229–1232)","Jōei (1232–1233)","Tenpuku (1233–1234)","Bunryaku (1234–1235)","Katei (1235–1238)","Ryakunin (1238–1239)","En’ō (1239–1240)","Ninji (1240–1243)","Kangen (1243–1247)","Hōji (1247–1249)","Kenchō (1249–1256)","Kōgen (1256–1257)","Shōka (1257–1259)","Shōgen (1259–1260)","Bun’ō (1260–1261)","Kōchō (1261–1264)","Bun’ei (1264–1275)","Kenji (1275–1278)","Kōan (1278–1288)","Shōō (1288–1293)","Einin (1293–1299)","Shōan (1299–1302)","Kengen (1302–1303)","Kagen (1303–1306)","Tokuji (1306–1308)","Enkyō (1308–1311)","Ōchō (1311–1312)","Shōwa (1312–1317)","Bunpō (1317–1319)","Genō (1319–1321)","Genkō (1321–1324)","Shōchū (1324–1326)","Karyaku (1326–1329)","Gentoku (1329–1331)","Genkō (1331–1334)","Kenmu (1334–1336)","Engen (1336–1340)","Kōkoku (1340–1346)","Shōhei (1346–1370)","Kentoku (1370–1372)","Bunchū (1372–1375)","Tenju (1375–1379)","Kōryaku (1379–1381)","Kōwa (1381–1384)","Genchū (1384–1392)","Meitoku (1384–1387)","Kakei (1387–1389)","Kōō (1389–1390)","Meitoku (1390–1394)","Ōei (1394–1428)","Shōchō (1428–1429)","Eikyō (1429–1441)","Kakitsu (1441–1444)","Bun’an (1444–1449)","Hōtoku (1449–1452)","Kyōtoku (1452–1455)","Kōshō (1455–1457)","Chōroku (1457–1460)","Kanshō (1460–1466)","Bunshō (1466–1467)","Ōnin (1467–1469)","Bunmei (1469–1487)","Chōkyō (1487–1489)","Entoku (1489–1492)","Meiō (1492–1501)","Bunki (1501–1504)","Eishō (1504–1521)","Taiei (1521–1528)","Kyōroku (1528–1532)","Tenbun (1532–1555)","Kōji (1555–1558)","Eiroku (1558–1570)","Genki (1570–1573)","Tenshō (1573–1592)","Bunroku (1592–1596)","Keichō (1596–1615)","Genna (1615–1624)","Kan’ei (1624–1644)","Shōho (1644–1648)","Keian (1648–1652)","Jōō (1652–1655)","Meireki (1655–1658)","Manji (1658–1661)","Kanbun (1661–1673)","Enpō (1673–1681)","Tenna (1681–1684)","Jōkyō (1684–1688)","Genroku (1688–1704)","Hōei (1704–1711)","Shōtoku (1711–1716)","Kyōhō (1716–1736)","Genbun (1736–1741)","Kanpō (1741–1744)","Enkyō (1744–1748)","Kan’en (1748–1751)","Hōreki (1751–1764)","Meiwa (1764–1772)","An’ei (1772–1781)","Tenmei (1781–1789)","Kansei (1789–1801)","Kyōwa (1801–1804)","Bunka (1804–1818)","Bunsei (1818–1830)","Tenpō (1830–1844)","Kōka (1844–1848)","Kaei (1848–1854)","Ansei (1854–1860)","Man’en (1860–1861)","Bunkyū (1861–1864)","Genji (1864–1865)","Keiō (1865–1868)","M","T","S","H"],short:["Taika (645–650)","Hakuchi (650–671)","Hakuhō (672–686)","Shuchō (686–701)","Taihō (701–704)","Keiun (704–708)","Wadō (708–715)","Reiki (715–717)","Yōrō (717–724)","Jinki (724–729)","Tenpyō (729–749)","Tenpyō-kampō (749-749)","Tenpyō-shōhō (749-757)","Tenpyō-hōji (757-765)","Tenpyō-jingo (765-767)","Jingo-keiun (767-770)","Hōki (770–780)","Ten-ō (781-782)","Enryaku (782–806)","Daidō (806–810)","Kōnin (810–824)","Tenchō (824–834)","Jōwa (834–848)","Kajō (848–851)","Ninju (851–854)","Saikō (854–857)","Ten-an (857-859)","Jōgan (859–877)","Gangyō (877–885)","Ninna (885–889)","Kanpyō (889–898)","Shōtai (898–901)","Engi (901–923)","Enchō (923–931)","Jōhei (931–938)","Tengyō (938–947)","Tenryaku (947–957)","Tentoku (957–961)","Ōwa (961–964)","Kōhō (964–968)","Anna (968–970)","Tenroku (970–973)","Ten’en (973–976)","Jōgen (976–978)","Tengen (978–983)","Eikan (983–985)","Kanna (985–987)","Eien (987–989)","Eiso (989–990)","Shōryaku (990–995)","Chōtoku (995–999)","Chōhō (999–1004)","Kankō (1004–1012)","Chōwa (1012–1017)","Kannin (1017–1021)","Jian (1021–1024)","Manju (1024–1028)","Chōgen (1028–1037)","Chōryaku (1037–1040)","Chōkyū (1040–1044)","Kantoku (1044–1046)","Eishō (1046–1053)","Tengi (1053–1058)","Kōhei (1058–1065)","Jiryaku (1065–1069)","Enkyū (1069–1074)","Shōho (1074–1077)","Shōryaku (1077–1081)","Eihō (1081–1084)","Ōtoku (1084–1087)","Kanji (1087–1094)","Kahō (1094–1096)","Eichō (1096–1097)","Jōtoku (1097–1099)","Kōwa (1099–1104)","Chōji (1104–1106)","Kashō (1106–1108)","Tennin (1108–1110)","Ten-ei (1110-1113)","Eikyū (1113–1118)","Gen’ei (1118–1120)","Hōan (1120–1124)","Tenji (1124–1126)","Daiji (1126–1131)","Tenshō (1131–1132)","Chōshō (1132–1135)","Hōen (1135–1141)","Eiji (1141–1142)","Kōji (1142–1144)","Ten’yō (1144–1145)","Kyūan (1145–1151)","Ninpei (1151–1154)","Kyūju (1154–1156)","Hōgen (1156–1159)","Heiji (1159–1160)","Eiryaku (1160–1161)","Ōho (1161–1163)","Chōkan (1163–1165)","Eiman (1165–1166)","Nin’an (1166–1169)","Kaō (1169–1171)","Shōan (1171–1175)","Angen (1175–1177)","Jishō (1177–1181)","Yōwa (1181–1182)","Juei (1182–1184)","Genryaku (1184–1185)","Bunji (1185–1190)","Kenkyū (1190–1199)","Shōji (1199–1201)","Kennin (1201–1204)","Genkyū (1204–1206)","Ken’ei (1206–1207)","Jōgen (1207–1211)","Kenryaku (1211–1213)","Kenpō (1213–1219)","Jōkyū (1219–1222)","Jōō (1222–1224)","Gennin (1224–1225)","Karoku (1225–1227)","Antei (1227–1229)","Kanki (1229–1232)","Jōei (1232–1233)","Tenpuku (1233–1234)","Bunryaku (1234–1235)","Katei (1235–1238)","Ryakunin (1238–1239)","En’ō (1239–1240)","Ninji (1240–1243)","Kangen (1243–1247)","Hōji (1247–1249)","Kenchō (1249–1256)","Kōgen (1256–1257)","Shōka (1257–1259)","Shōgen (1259–1260)","Bun’ō (1260–1261)","Kōchō (1261–1264)","Bun’ei (1264–1275)","Kenji (1275–1278)","Kōan (1278–1288)","Shōō (1288–1293)","Einin (1293–1299)","Shōan (1299–1302)","Kengen (1302–1303)","Kagen (1303–1306)","Tokuji (1306–1308)","Enkyō (1308–1311)","Ōchō (1311–1312)","Shōwa (1312–1317)","Bunpō (1317–1319)","Genō (1319–1321)","Genkō (1321–1324)","Shōchū (1324–1326)","Karyaku (1326–1329)","Gentoku (1329–1331)","Genkō (1331–1334)","Kenmu (1334–1336)","Engen (1336–1340)","Kōkoku (1340–1346)","Shōhei (1346–1370)","Kentoku (1370–1372)","Bunchū (1372–1375)","Tenju (1375–1379)","Kōryaku (1379–1381)","Kōwa (1381–1384)","Genchū (1384–1392)","Meitoku (1384–1387)","Kakei (1387–1389)","Kōō (1389–1390)","Meitoku (1390–1394)","Ōei (1394–1428)","Shōchō (1428–1429)","Eikyō (1429–1441)","Kakitsu (1441–1444)","Bun’an (1444–1449)","Hōtoku (1449–1452)","Kyōtoku (1452–1455)","Kōshō (1455–1457)","Chōroku (1457–1460)","Kanshō (1460–1466)","Bunshō (1466–1467)","Ōnin (1467–1469)","Bunmei (1469–1487)","Chōkyō (1487–1489)","Entoku (1489–1492)","Meiō (1492–1501)","Bunki (1501–1504)","Eishō (1504–1521)","Taiei (1521–1528)","Kyōroku (1528–1532)","Tenbun (1532–1555)","Kōji (1555–1558)","Eiroku (1558–1570)","Genki (1570–1573)","Tenshō (1573–1592)","Bunroku (1592–1596)","Keichō (1596–1615)","Genna (1615–1624)","Kan’ei (1624–1644)","Shōho (1644–1648)","Keian (1648–1652)","Jōō (1652–1655)","Meireki (1655–1658)","Manji (1658–1661)","Kanbun (1661–1673)","Enpō (1673–1681)","Tenna (1681–1684)","Jōkyō (1684–1688)","Genroku (1688–1704)","Hōei (1704–1711)","Shōtoku (1711–1716)","Kyōhō (1716–1736)","Genbun (1736–1741)","Kanpō (1741–1744)","Enkyō (1744–1748)","Kan’en (1748–1751)","Hōreki (1751–1764)","Meiwa (1764–1772)","An’ei (1772–1781)","Tenmei (1781–1789)","Kansei (1789–1801)","Kyōwa (1801–1804)","Bunka (1804–1818)","Bunsei (1818–1830)","Tenpō (1830–1844)","Kōka (1844–1848)","Kaei (1848–1854)","Ansei (1854–1860)","Man’en (1860–1861)","Bunkyū (1861–1864)","Genji (1864–1865)","Keiō (1865–1868)","Meiji","Taishō","Shōwa","Heisei"],long:["Taika (645–650)","Hakuchi (650–671)","Hakuhō (672–686)","Shuchō (686–701)","Taihō (701–704)","Keiun (704–708)","Wadō (708–715)","Reiki (715–717)","Yōrō (717–724)","Jinki (724–729)","Tenpyō (729–749)","Tenpyō-kampō (749-749)","Tenpyō-shōhō (749-757)","Tenpyō-hōji (757-765)","Tenpyō-jingo (765-767)","Jingo-keiun (767-770)","Hōki (770–780)","Ten-ō (781-782)","Enryaku (782–806)","Daidō (806–810)","Kōnin (810–824)","Tenchō (824–834)","Jōwa (834–848)","Kajō (848–851)","Ninju (851–854)","Saikō (854–857)","Ten-an (857-859)","Jōgan (859–877)","Gangyō (877–885)","Ninna (885–889)","Kanpyō (889–898)","Shōtai (898–901)","Engi (901–923)","Enchō (923–931)","Jōhei (931–938)","Tengyō (938–947)","Tenryaku (947–957)","Tentoku (957–961)","Ōwa (961–964)","Kōhō (964–968)","Anna (968–970)","Tenroku (970–973)","Ten’en (973–976)","Jōgen (976–978)","Tengen (978–983)","Eikan (983–985)","Kanna (985–987)","Eien (987–989)","Eiso (989–990)","Shōryaku (990–995)","Chōtoku (995–999)","Chōhō (999–1004)","Kankō (1004–1012)","Chōwa (1012–1017)","Kannin (1017–1021)","Jian (1021–1024)","Manju (1024–1028)","Chōgen (1028–1037)","Chōryaku (1037–1040)","Chōkyū (1040–1044)","Kantoku (1044–1046)","Eishō (1046–1053)","Tengi (1053–1058)","Kōhei (1058–1065)","Jiryaku (1065–1069)","Enkyū (1069–1074)","Shōho (1074–1077)","Shōryaku (1077–1081)","Eihō (1081–1084)","Ōtoku (1084–1087)","Kanji (1087–1094)","Kahō (1094–1096)","Eichō (1096–1097)","Jōtoku (1097–1099)","Kōwa (1099–1104)","Chōji (1104–1106)","Kashō (1106–1108)","Tennin (1108–1110)","Ten-ei (1110-1113)","Eikyū (1113–1118)","Gen’ei (1118–1120)","Hōan (1120–1124)","Tenji (1124–1126)","Daiji (1126–1131)","Tenshō (1131–1132)","Chōshō (1132–1135)","Hōen (1135–1141)","Eiji (1141–1142)","Kōji (1142–1144)","Ten’yō (1144–1145)","Kyūan (1145–1151)","Ninpei (1151–1154)","Kyūju (1154–1156)","Hōgen (1156–1159)","Heiji (1159–1160)","Eiryaku (1160–1161)","Ōho (1161–1163)","Chōkan (1163–1165)","Eiman (1165–1166)","Nin’an (1166–1169)","Kaō (1169–1171)","Shōan (1171–1175)","Angen (1175–1177)","Jishō (1177–1181)","Yōwa (1181–1182)","Juei (1182–1184)","Genryaku (1184–1185)","Bunji (1185–1190)","Kenkyū (1190–1199)","Shōji (1199–1201)","Kennin (1201–1204)","Genkyū (1204–1206)","Ken’ei (1206–1207)","Jōgen (1207–1211)","Kenryaku (1211–1213)","Kenpō (1213–1219)","Jōkyū (1219–1222)","Jōō (1222–1224)","Gennin (1224–1225)","Karoku (1225–1227)","Antei (1227–1229)","Kanki (1229–1232)","Jōei (1232–1233)","Tenpuku (1233–1234)","Bunryaku (1234–1235)","Katei (1235–1238)","Ryakunin (1238–1239)","En’ō (1239–1240)","Ninji (1240–1243)","Kangen (1243–1247)","Hōji (1247–1249)","Kenchō (1249–1256)","Kōgen (1256–1257)","Shōka (1257–1259)","Shōgen (1259–1260)","Bun’ō (1260–1261)","Kōchō (1261–1264)","Bun’ei (1264–1275)","Kenji (1275–1278)","Kōan (1278–1288)","Shōō (1288–1293)","Einin (1293–1299)","Shōan (1299–1302)","Kengen (1302–1303)","Kagen (1303–1306)","Tokuji (1306–1308)","Enkyō (1308–1311)","Ōchō (1311–1312)","Shōwa (1312–1317)","Bunpō (1317–1319)","Genō (1319–1321)","Genkō (1321–1324)","Shōchū (1324–1326)","Karyaku (1326–1329)","Gentoku (1329–1331)","Genkō (1331–1334)","Kenmu (1334–1336)","Engen (1336–1340)","Kōkoku (1340–1346)","Shōhei (1346–1370)","Kentoku (1370–1372)","Bunchū (1372–1375)","Tenju (1375–1379)","Kōryaku (1379–1381)","Kōwa (1381–1384)","Genchū (1384–1392)","Meitoku (1384–1387)","Kakei (1387–1389)","Kōō (1389–1390)","Meitoku (1390–1394)","Ōei (1394–1428)","Shōchō (1428–1429)","Eikyō (1429–1441)","Kakitsu (1441–1444)","Bun’an (1444–1449)","Hōtoku (1449–1452)","Kyōtoku (1452–1455)","Kōshō (1455–1457)","Chōroku (1457–1460)","Kanshō (1460–1466)","Bunshō (1466–1467)","Ōnin (1467–1469)","Bunmei (1469–1487)","Chōkyō (1487–1489)","Entoku (1489–1492)","Meiō (1492–1501)","Bunki (1501–1504)","Eishō (1504–1521)","Taiei (1521–1528)","Kyōroku (1528–1532)","Tenbun (1532–1555)","Kōji (1555–1558)","Eiroku (1558–1570)","Genki (1570–1573)","Tenshō (1573–1592)","Bunroku (1592–1596)","Keichō (1596–1615)","Genna (1615–1624)","Kan’ei (1624–1644)","Shōho (1644–1648)","Keian (1648–1652)","Jōō (1652–1655)","Meireki (1655–1658)","Manji (1658–1661)","Kanbun (1661–1673)","Enpō (1673–1681)","Tenna (1681–1684)","Jōkyō (1684–1688)","Genroku (1688–1704)","Hōei (1704–1711)","Shōtoku (1711–1716)","Kyōhō (1716–1736)","Genbun (1736–1741)","Kanpō (1741–1744)","Enkyō (1744–1748)","Kan’en (1748–1751)","Hōreki (1751–1764)","Meiwa (1764–1772)","An’ei (1772–1781)","Tenmei (1781–1789)","Kansei (1789–1801)","Kyōwa (1801–1804)","Bunka (1804–1818)","Bunsei (1818–1830)","Tenpō (1830–1844)","Kōka (1844–1848)","Kaei (1848–1854)","Ansei (1854–1860)","Man’en (1860–1861)","Bunkyū (1861–1864)","Genji (1864–1865)","Keiō (1865–1868)","Meiji","Taishō","Shōwa","Heisei"]},dayPeriods:{am:"AM",pm:"PM"}},persian:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Farvardin","Ordibehesht","Khordad","Tir","Mordad","Shahrivar","Mehr","Aban","Azar","Dey","Bahman","Esfand"],long:["Farvardin","Ordibehesht","Khordad","Tir","Mordad","Shahrivar","Mehr","Aban","Azar","Dey","Bahman","Esfand"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["AP"],short:["AP"],long:["AP"]},dayPeriods:{am:"AM",pm:"PM"}},roc:{months:{narrow:["J","F","M","A","M","J","J","A","S","O","N","D"],short:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],long:["January","February","March","April","May","June","July","August","September","October","November","December"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["Before R.O.C.","Minguo"],short:["Before R.O.C.","Minguo"],long:["Before R.O.C.","Minguo"]},dayPeriods:{am:"AM",pm:"PM"}}}},number:{nu:["latn"],patterns:{decimal:{positivePattern:"{number}",negativePattern:"{minusSign}{number}"},currency:{positivePattern:"{currency}{number}",negativePattern:"{minusSign}{currency}{number}"},percent:{positivePattern:"{number}{percentSign}",negativePattern:"{minusSign}{number}{percentSign}"}},symbols:{latn:{decimal:".",group:",",nan:"NaN",plusSign:"+",minusSign:"-",percentSign:"%",infinity:"∞"}},currencies:{AUD:"A$",BRL:"R$",CAD:"CA$",CNY:"CN¥",EUR:"€",GBP:"£",HKD:"HK$",ILS:"₪",INR:"₹",JPY:"¥",KRW:"₩",MXN:"MX$",NZD:"NZ$",TWD:"NT$",USD:"$",VND:"₫",XAF:"FCFA",XCD:"EC$",XOF:"CFA",XPF:"CFPF"}}});
 
 /***/ },
-/* 453 */
+/* 454 */
 /***/ function(module, exports) {
 
 	IntlPolyfill.__addLocaleData({locale:"fr",date:{ca:["gregory","buddhist","chinese","coptic","dangi","ethioaa","ethiopic","generic","hebrew","indian","islamic","islamicc","japanese","persian","roc"],hourNo0:true,hour12:false,formats:{short:"{1} {0}",medium:"{1} 'à' {0}",full:"{1} 'à' {0}",long:"{1} 'à' {0}",availableFormats:{"d":"d","E":"E",Ed:"E d",Ehm:"E h:mm a",EHm:"E HH:mm",Ehms:"E h:mm:ss a",EHms:"E HH:mm:ss",Gy:"y G",GyMMM:"MMM y G",GyMMMd:"d MMM y G",GyMMMEd:"E d MMM y G","h":"h a","H":"HH 'h'",hm:"h:mm a",Hm:"HH:mm",hms:"h:mm:ss a",Hms:"HH:mm:ss",hmsv:"h:mm:ss a v",Hmsv:"HH:mm:ss v",hmv:"h:mm a v",Hmv:"HH:mm v","M":"L",Md:"dd/MM",MEd:"E dd/MM",MMM:"LLL",MMMd:"d MMM",MMMEd:"E d MMM",MMMMd:"d MMMM",ms:"mm:ss","y":"y",yM:"MM/y",yMd:"dd/MM/y",yMEd:"E dd/MM/y",yMMM:"MMM y",yMMMd:"d MMM y",yMMMEd:"E d MMM y",yMMMM:"MMMM y",yQQQ:"QQQ y",yQQQQ:"QQQQ y"},dateFormats:{yMMMMEEEEd:"EEEE d MMMM y",yMMMMd:"d MMMM y",yMMMd:"d MMM y",yMd:"dd/MM/y"},timeFormats:{hmmsszzzz:"HH:mm:ss zzzz",hmsz:"HH:mm:ss z",hms:"HH:mm:ss",hm:"HH:mm"}},calendars:{buddhist:{months:{narrow:["J","F","M","A","M","J","J","A","S","O","N","D"],short:["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."],long:["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"]},days:{narrow:["D","L","M","M","J","V","S"],short:["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],long:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]},eras:{narrow:["E.B."],short:["ère b."],long:["ère bouddhiste"]},dayPeriods:{am:"AM",pm:"PM"}},chinese:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["1yuè","2yuè","3yuè","4yuè","5yuè","6yuè","7yuè","8yuè","9yuè","10yuè","11yuè","12yuè"],long:["zhēngyuè","èryuè","sānyuè","sìyuè","wǔyuè","liùyuè","qīyuè","bāyuè","jiǔyuè","shíyuè","shíyīyuè","shí’èryuè"]},days:{narrow:["D","L","M","M","J","V","S"],short:["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],long:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]},dayPeriods:{am:"AM",pm:"PM"}},coptic:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12","13"],short:["Tout","Baba","Hator","Kiahk","Toba","Amshir","Baramhat","Baramouda","Bashans","Paona","Epep","Mesra","Nasie"],long:["Tout","Baba","Hator","Kiahk","Toba","Amshir","Baramhat","Baramouda","Bashans","Paona","Epep","Mesra","Nasie"]},days:{narrow:["D","L","M","M","J","V","S"],short:["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],long:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]},eras:{narrow:["ERA0","ERA1"],short:["ERA0","ERA1"],long:["ERA0","ERA1"]},dayPeriods:{am:"AM",pm:"PM"}},dangi:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["1yuè","2yuè","3yuè","4yuè","5yuè","6yuè","7yuè","8yuè","9yuè","10yuè","11yuè","12yuè"],long:["zhēngyuè","èryuè","sānyuè","sìyuè","wǔyuè","liùyuè","qīyuè","bāyuè","jiǔyuè","shíyuè","shíyīyuè","shí’èryuè"]},days:{narrow:["D","L","M","M","J","V","S"],short:["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],long:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]},dayPeriods:{am:"AM",pm:"PM"}},ethiopic:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12","13"],short:["Meskerem","Tekemt","Hedar","Tahsas","Ter","Yekatit","Megabit","Miazia","Genbot","Sene","Hamle","Nehasse","Pagumen"],long:["Meskerem","Tekemt","Hedar","Tahsas","Ter","Yekatit","Megabit","Miazia","Genbot","Sene","Hamle","Nehasse","Pagumen"]},days:{narrow:["D","L","M","M","J","V","S"],short:["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],long:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]},eras:{narrow:["ERA0","ERA1"],short:["ERA0","ERA1"],long:["ERA0","ERA1"]},dayPeriods:{am:"AM",pm:"PM"}},ethioaa:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12","13"],short:["Meskerem","Tekemt","Hedar","Tahsas","Ter","Yekatit","Megabit","Miazia","Genbot","Sene","Hamle","Nehasse","Pagumen"],long:["Meskerem","Tekemt","Hedar","Tahsas","Ter","Yekatit","Megabit","Miazia","Genbot","Sene","Hamle","Nehasse","Pagumen"]},days:{narrow:["D","L","M","M","J","V","S"],short:["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],long:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]},eras:{narrow:["ERA0"],short:["ERA0"],long:["ERA0"]},dayPeriods:{am:"AM",pm:"PM"}},generic:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["M01","M02","M03","M04","M05","M06","M07","M08","M09","M10","M11","M12"],long:["M01","M02","M03","M04","M05","M06","M07","M08","M09","M10","M11","M12"]},days:{narrow:["D","L","M","M","J","V","S"],short:["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],long:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]},eras:{narrow:["ERA0","ERA1"],short:["ERA0","ERA1"],long:["ERA0","ERA1"]},dayPeriods:{am:"AM",pm:"PM"}},gregory:{months:{narrow:["J","F","M","A","M","J","J","A","S","O","N","D"],short:["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."],long:["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"]},days:{narrow:["D","L","M","M","J","V","S"],short:["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],long:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]},eras:{narrow:["av. J.-C.","ap. J.-C.","AEC","EC"],short:["av. J.-C.","ap. J.-C.","AEC","EC"],long:["avant Jésus-Christ","après Jésus-Christ","avant l’ère commune","de l’ère commune"]},dayPeriods:{am:"AM",pm:"PM"}},hebrew:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12","13","7"],short:["Tisseri","Hesvan","Kislev","Tébeth","Schébat","Adar I","Adar","Nissan","Iyar","Sivan","Tamouz","Ab","Elloul","Adar II"],long:["Tisseri","Hesvan","Kislev","Tébeth","Schébat","Adar I","Adar","Nissan","Iyar","Sivan","Tamouz","Ab","Elloul","Adar II"]},days:{narrow:["D","L","M","M","J","V","S"],short:["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],long:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]},eras:{narrow:["AM"],short:["AM"],long:["AM"]},dayPeriods:{am:"AM",pm:"PM"}},indian:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Chaitra","Vaisakha","Jyaistha","Asadha","Sravana","Bhadra","Asvina","Kartika","Agrahayana","Pausa","Magha","Phalguna"],long:["Chaitra","Vaisakha","Jyaistha","Asadha","Sravana","Bhadra","Asvina","Kartika","Agrahayana","Pausa","Magha","Phalguna"]},days:{narrow:["D","L","M","M","J","V","S"],short:["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],long:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]},eras:{narrow:["Saka"],short:["Saka"],long:["Saka"]},dayPeriods:{am:"AM",pm:"PM"}},islamic:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["mouh.","saf.","rab. aw.","rab. th.","joum. oul.","joum. tha.","raj.","chaa.","ram.","chaw.","dhou. q.","dhou. h."],long:["mouharram","safar","rabia al awal","rabia ath-thani","joumada al oula","joumada ath-thania","rajab","chaabane","ramadan","chawwal","dhou al qi`da","dhou al-hijja"]},days:{narrow:["D","L","M","M","J","V","S"],short:["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],long:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]},eras:{narrow:["AH"],short:["AH"],long:["AH"]},dayPeriods:{am:"AM",pm:"PM"}},islamicc:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["mouh.","saf.","rab. aw.","rab. th.","joum. oul.","joum. tha.","raj.","chaa.","ram.","chaw.","dhou. q.","dhou. h."],long:["mouharram","safar","rabia al awal","rabia ath-thani","joumada al oula","joumada ath-thania","rajab","chaabane","ramadan","chawwal","dhou al qi`da","dhou al-hijja"]},days:{narrow:["D","L","M","M","J","V","S"],short:["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],long:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]},eras:{narrow:["AH"],short:["AH"],long:["AH"]},dayPeriods:{am:"AM",pm:"PM"}},japanese:{months:{narrow:["J","F","M","A","M","J","J","A","S","O","N","D"],short:["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."],long:["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"]},days:{narrow:["D","L","M","M","J","V","S"],short:["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],long:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]},eras:{narrow:["Taika (645–650)","Hakuchi (650–671)","Hakuhō (672–686)","Shuchō (686–701)","Taihō (701–704)","Keiun (704–708)","Wadō (708–715)","Reiki (715–717)","Yōrō (717–724)","Jinki (724–729)","Tenpyō (729–749)","Tenpyō-kampō (749-749)","Tenpyō-shōhō (749-757)","Tenpyō-hōji (757-765)","Tenpyō-jingo (765-767)","Jingo-keiun (767-770)","Hōki (770–780)","Ten-ō (781-782)","Enryaku (782–806)","Daidō (806–810)","Kōnin (810–824)","Tenchō (824–834)","Jōwa (834–848)","Kajō (848–851)","Ninju (851–854)","Saikō (854–857)","Ten-an (857-859)","Jōgan (859–877)","Gangyō (877–885)","Ninna (885–889)","Kanpyō (889–898)","Shōtai (898–901)","Engi (901–923)","Enchō (923–931)","Jōhei (931–938)","Tengyō (938–947)","Tenryaku (947–957)","Tentoku (957–961)","Ōwa (961–964)","Kōhō (964–968)","Anna (968–970)","Tenroku (970–973)","Ten’en (973–976)","Jōgen (976–978)","Tengen (978–983)","Eikan (983–985)","Kanna (985–987)","Eien (987–989)","Eiso (989–990)","Shōryaku (990–995)","Chōtoku (995–999)","Chōhō (999–1004)","Kankō (1004–1012)","Chōwa (1012–1017)","Kannin (1017–1021)","Jian (1021–1024)","Manju (1024–1028)","Chōgen (1028–1037)","Chōryaku (1037–1040)","Chōkyū (1040–1044)","Kantoku (1044–1046)","Eishō (1046–1053)","Tengi (1053–1058)","Kōhei (1058–1065)","Jiryaku (1065–1069)","Enkyū (1069–1074)","Shōho (1074–1077)","Shōryaku (1077–1081)","Eihō (1081–1084)","Ōtoku (1084–1087)","Kanji (1087–1094)","Kahō (1094–1096)","Eichō (1096–1097)","Jōtoku (1097–1099)","Kōwa (1099–1104)","Chōji (1104–1106)","Kashō (1106–1108)","Tennin (1108–1110)","Ten-ei (1110-1113)","Eikyū (1113–1118)","Gen’ei (1118–1120)","Hōan (1120–1124)","Tenji (1124–1126)","Daiji (1126–1131)","Tenshō (1131–1132)","Chōshō (1132–1135)","Hōen (1135–1141)","Eiji (1141–1142)","Kōji (1142–1144)","Ten’yō (1144–1145)","Kyūan (1145–1151)","Ninpei (1151–1154)","Kyūju (1154–1156)","Hōgen (1156–1159)","Heiji (1159–1160)","Eiryaku (1160–1161)","Ōho (1161–1163)","Chōkan (1163–1165)","Eiman (1165–1166)","Nin’an (1166–1169)","Kaō (1169–1171)","Shōan (1171–1175)","Angen (1175–1177)","Jishō (1177–1181)","Yōwa (1181–1182)","Juei (1182–1184)","Genryaku (1184–1185)","Bunji (1185–1190)","Kenkyū (1190–1199)","Shōji (1199–1201)","Kennin (1201–1204)","Genkyū (1204–1206)","Ken’ei (1206–1207)","Jōgen (1207–1211)","Kenryaku (1211–1213)","Kenpō (1213–1219)","Jōkyū (1219–1222)","Jōō (1222–1224)","Gennin (1224–1225)","Karoku (1225–1227)","Antei (1227–1229)","Kanki (1229–1232)","Jōei (1232–1233)","Tenpuku (1233–1234)","Bunryaku (1234–1235)","Katei (1235–1238)","Ryakunin (1238–1239)","En’ō (1239–1240)","Ninji (1240–1243)","Kangen (1243–1247)","Hōji (1247–1249)","Kenchō (1249–1256)","Kōgen (1256–1257)","Shōka (1257–1259)","Shōgen (1259–1260)","Bun’ō (1260–1261)","Kōchō (1261–1264)","Bun’ei (1264–1275)","Kenji (1275–1278)","Kōan (1278–1288)","Shōō (1288–1293)","Einin (1293–1299)","Shōan (1299–1302)","Kengen (1302–1303)","Kagen (1303–1306)","Tokuji (1306–1308)","Enkyō (1308–1311)","Ōchō (1311–1312)","Shōwa (1312–1317)","Bunpō (1317–1319)","Genō (1319–1321)","Genkō (1321–1324)","Shōchū (1324–1326)","Karyaku (1326–1329)","Gentoku (1329–1331)","Genkō (1331–1334)","Kenmu (1334–1336)","Engen (1336–1340)","Kōkoku (1340–1346)","Shōhei (1346–1370)","Kentoku (1370–1372)","Bunchū (1372–1375)","Tenju (1375–1379)","Kōryaku (1379–1381)","Kōwa (1381–1384)","Genchū (1384–1392)","Meitoku (1384–1387)","Kakei (1387–1389)","Kōō (1389–1390)","Meitoku (1390–1394)","Ōei (1394–1428)","Shōchō (1428–1429)","Eikyō (1429–1441)","Kakitsu (1441–1444)","Bun’an (1444–1449)","Hōtoku (1449–1452)","Kyōtoku (1452–1455)","Kōshō (1455–1457)","Chōroku (1457–1460)","Kanshō (1460–1466)","Bunshō (1466–1467)","Ōnin (1467–1469)","Bunmei (1469–1487)","Chōkyō (1487–1489)","Entoku (1489–1492)","Meiō (1492–1501)","Bunki (1501–1504)","Eishō (1504–1521)","Taiei (1521–1528)","Kyōroku (1528–1532)","Tenbun (1532–1555)","Kōji (1555–1558)","Eiroku (1558–1570)","Genki (1570–1573)","Tenshō (1573–1592)","Bunroku (1592–1596)","Keichō (1596–1615)","Genna (1615–1624)","Kan’ei (1624–1644)","Shōho (1644–1648)","Keian (1648–1652)","Jōō (1652–1655)","Meireki (1655–1658)","Manji (1658–1661)","Kanbun (1661–1673)","Enpō (1673–1681)","Tenna (1681–1684)","Jōkyō (1684–1688)","Genroku (1688–1704)","Hōei (1704–1711)","Shōtoku (1711–1716)","Kyōhō (1716–1736)","Genbun (1736–1741)","Kanpō (1741–1744)","Enkyō (1744–1748)","Kan’en (1748–1751)","Hōreki (1751–1764)","Meiwa (1764–1772)","An’ei (1772–1781)","Tenmei (1781–1789)","Kansei (1789–1801)","Kyōwa (1801–1804)","Bunka (1804–1818)","Bunsei (1818–1830)","Tenpō (1830–1844)","Kōka (1844–1848)","Kaei (1848–1854)","Ansei (1854–1860)","Man’en (1860–1861)","Bunkyū (1861–1864)","Genji (1864–1865)","Keiō (1865–1868)","M","T","S","H"],short:["Taika (645–650)","Hakuchi (650–671)","Hakuhō (672–686)","Shuchō (686–701)","Taihō (701–704)","Keiun (704–708)","Wadō (708–715)","Reiki (715–717)","Yōrō (717–724)","Jinki (724–729)","Tenpyō (729–749)","Tenpyō-kampō (749-749)","Tenpyō-shōhō (749-757)","Tenpyō-hōji (757-765)","Tenpyō-jingo (765-767)","Jingo-keiun (767-770)","Hōki (770–780)","Ten-ō (781-782)","Enryaku (782–806)","Daidō (806–810)","Kōnin (810–824)","Tenchō (824–834)","Jōwa (834–848)","Kajō (848–851)","Ninju (851–854)","Saikō (854–857)","Ten-an (857-859)","Jōgan (859–877)","Gangyō (877–885)","Ninna (885–889)","Kanpyō (889–898)","Shōtai (898–901)","Engi (901–923)","Enchō (923–931)","Jōhei (931–938)","Tengyō (938–947)","Tenryaku (947–957)","Tentoku (957–961)","Ōwa (961–964)","Kōhō (964–968)","Anna (968–970)","Tenroku (970–973)","Ten’en (973–976)","Jōgen (976–978)","Tengen (978–983)","Eikan (983–985)","Kanna (985–987)","Eien (987–989)","Eiso (989–990)","Shōryaku (990–995)","Chōtoku (995–999)","Chōhō (999–1004)","Kankō (1004–1012)","Chōwa (1012–1017)","Kannin (1017–1021)","Jian (1021–1024)","Manju (1024–1028)","Chōgen (1028–1037)","Chōryaku (1037–1040)","Chōkyū (1040–1044)","Kantoku (1044–1046)","Eishō (1046–1053)","Tengi (1053–1058)","Kōhei (1058–1065)","Jiryaku (1065–1069)","Enkyū (1069–1074)","Shōho (1074–1077)","Shōryaku (1077–1081)","Eihō (1081–1084)","Ōtoku (1084–1087)","Kanji (1087–1094)","Kahō (1094–1096)","Eichō (1096–1097)","Jōtoku (1097–1099)","Kōwa (1099–1104)","Chōji (1104–1106)","Kashō (1106–1108)","Tennin (1108–1110)","Ten-ei (1110-1113)","Eikyū (1113–1118)","Gen’ei (1118–1120)","Hōan (1120–1124)","Tenji (1124–1126)","Daiji (1126–1131)","Tenshō (1131–1132)","Chōshō (1132–1135)","Hōen (1135–1141)","Eiji (1141–1142)","Kōji (1142–1144)","Ten’yō (1144–1145)","Kyūan (1145–1151)","Ninpei (1151–1154)","Kyūju (1154–1156)","Hōgen (1156–1159)","Heiji (1159–1160)","Eiryaku (1160–1161)","Ōho (1161–1163)","Chōkan (1163–1165)","Eiman (1165–1166)","Nin’an (1166–1169)","Kaō (1169–1171)","Shōan (1171–1175)","Angen (1175–1177)","Jishō (1177–1181)","Yōwa (1181–1182)","Juei (1182–1184)","Genryaku (1184–1185)","Bunji (1185–1190)","Kenkyū (1190–1199)","Shōji (1199–1201)","Kennin (1201–1204)","Genkyū (1204–1206)","Ken’ei (1206–1207)","Jōgen (1207–1211)","Kenryaku (1211–1213)","Kenpō (1213–1219)","Jōkyū (1219–1222)","Jōō (1222–1224)","Gennin (1224–1225)","Karoku (1225–1227)","Antei (1227–1229)","Kanki (1229–1232)","Jōei (1232–1233)","Tenpuku (1233–1234)","Bunryaku (1234–1235)","Katei (1235–1238)","Ryakunin (1238–1239)","En’ō (1239–1240)","Ninji (1240–1243)","Kangen (1243–1247)","Hōji (1247–1249)","Kenchō (1249–1256)","Kōgen (1256–1257)","Shōka (1257–1259)","Shōgen (1259–1260)","Bun’ō (1260–1261)","Kōchō (1261–1264)","Bun’ei (1264–1275)","Kenji (1275–1278)","Kōan (1278–1288)","Shōō (1288–1293)","Einin (1293–1299)","Shōan (1299–1302)","Kengen (1302–1303)","Kagen (1303–1306)","Tokuji (1306–1308)","Enkyō (1308–1311)","Ōchō (1311–1312)","Shōwa (1312–1317)","Bunpō (1317–1319)","Genō (1319–1321)","Genkō (1321–1324)","Shōchū (1324–1326)","Karyaku (1326–1329)","Gentoku (1329–1331)","Genkō (1331–1334)","Kenmu (1334–1336)","Engen (1336–1340)","Kōkoku (1340–1346)","Shōhei (1346–1370)","Kentoku (1370–1372)","Bunchū (1372–1375)","Tenju (1375–1379)","Kōryaku (1379–1381)","Kōwa (1381–1384)","Genchū (1384–1392)","Meitoku (1384–1387)","Kakei (1387–1389)","Kōō (1389–1390)","Meitoku (1390–1394)","Ōei (1394–1428)","Shōchō (1428–1429)","Eikyō (1429–1441)","Kakitsu (1441–1444)","Bun’an (1444–1449)","Hōtoku (1449–1452)","Kyōtoku (1452–1455)","Kōshō (1455–1457)","Chōroku (1457–1460)","Kanshō (1460–1466)","Bunshō (1466–1467)","Ōnin (1467–1469)","Bunmei (1469–1487)","Chōkyō (1487–1489)","Entoku (1489–1492)","Meiō (1492–1501)","Bunki (1501–1504)","Eishō (1504–1521)","Taiei (1521–1528)","Kyōroku (1528–1532)","Tenbun (1532–1555)","Kōji (1555–1558)","Eiroku (1558–1570)","Genki (1570–1573)","Tenshō (1573–1592)","Bunroku (1592–1596)","Keichō (1596–1615)","Genna (1615–1624)","Kan’ei (1624–1644)","Shōho (1644–1648)","Keian (1648–1652)","Jōō (1652–1655)","Meireki (1655–1658)","Manji (1658–1661)","Kanbun (1661–1673)","Enpō (1673–1681)","Tenna (1681–1684)","Jōkyō (1684–1688)","Genroku (1688–1704)","Hōei (1704–1711)","Shōtoku (1711–1716)","Kyōhō (1716–1736)","Genbun (1736–1741)","Kanpō (1741–1744)","Enkyō (1744–1748)","Kan’en (1748–1751)","Hōreki (1751–1764)","Meiwa (1764–1772)","An’ei (1772–1781)","Tenmei (1781–1789)","Kansei (1789–1801)","Kyōwa (1801–1804)","Bunka (1804–1818)","Bunsei (1818–1830)","Tenpō (1830–1844)","Kōka (1844–1848)","Kaei (1848–1854)","Ansei (1854–1860)","Man’en (1860–1861)","Bunkyū (1861–1864)","Genji (1864–1865)","Keiō (1865–1868)","Meiji","Taishō","Shōwa","Heisei"],long:["Taika (645–650)","Hakuchi (650–671)","Hakuhō (672–686)","Shuchō (686–701)","Taihō (701–704)","Keiun (704–708)","Wadō (708–715)","Reiki (715–717)","Yōrō (717–724)","Jinki (724–729)","Tenpyō (729–749)","Tenpyō-kampō (749-749)","Tenpyō-shōhō (749-757)","Tenpyō-hōji (757-765)","Tenpyō-jingo (765-767)","Jingo-keiun (767-770)","Hōki (770–780)","Ten-ō (781-782)","Enryaku (782–806)","Daidō (806–810)","Kōnin (810–824)","Tenchō (824–834)","Jōwa (834–848)","Kajō (848–851)","Ninju (851–854)","Saikō (854–857)","Ten-an (857-859)","Jōgan (859–877)","Gangyō (877–885)","Ninna (885–889)","Kanpyō (889–898)","Shōtai (898–901)","Engi (901–923)","Enchō (923–931)","Jōhei (931–938)","Tengyō (938–947)","Tenryaku (947–957)","Tentoku (957–961)","Ōwa (961–964)","Kōhō (964–968)","Anna (968–970)","Tenroku (970–973)","Ten’en (973–976)","Jōgen (976–978)","Tengen (978–983)","Eikan (983–985)","Kanna (985–987)","Eien (987–989)","Eiso (989–990)","Shōryaku (990–995)","Chōtoku (995–999)","Chōhō (999–1004)","Kankō (1004–1012)","Chōwa (1012–1017)","Kannin (1017–1021)","Jian (1021–1024)","Manju (1024–1028)","Chōgen (1028–1037)","Chōryaku (1037–1040)","Chōkyū (1040–1044)","Kantoku (1044–1046)","Eishō (1046–1053)","Tengi (1053–1058)","Kōhei (1058–1065)","Jiryaku (1065–1069)","Enkyū (1069–1074)","Shōho (1074–1077)","Shōryaku (1077–1081)","Eihō (1081–1084)","Ōtoku (1084–1087)","Kanji (1087–1094)","Kahō (1094–1096)","Eichō (1096–1097)","Jōtoku (1097–1099)","Kōwa (1099–1104)","Chōji (1104–1106)","Kashō (1106–1108)","Tennin (1108–1110)","Ten-ei (1110-1113)","Eikyū (1113–1118)","Gen’ei (1118–1120)","Hōan (1120–1124)","Tenji (1124–1126)","Daiji (1126–1131)","Tenshō (1131–1132)","Chōshō (1132–1135)","Hōen (1135–1141)","Eiji (1141–1142)","Kōji (1142–1144)","Ten’yō (1144–1145)","Kyūan (1145–1151)","Ninpei (1151–1154)","Kyūju (1154–1156)","Hōgen (1156–1159)","Heiji (1159–1160)","Eiryaku (1160–1161)","Ōho (1161–1163)","Chōkan (1163–1165)","Eiman (1165–1166)","Nin’an (1166–1169)","Kaō (1169–1171)","Shōan (1171–1175)","Angen (1175–1177)","Jishō (1177–1181)","Yōwa (1181–1182)","Juei (1182–1184)","Genryaku (1184–1185)","Bunji (1185–1190)","Kenkyū (1190–1199)","Shōji (1199–1201)","Kennin (1201–1204)","Genkyū (1204–1206)","Ken’ei (1206–1207)","Jōgen (1207–1211)","Kenryaku (1211–1213)","Kenpō (1213–1219)","Jōkyū (1219–1222)","Jōō (1222–1224)","Gennin (1224–1225)","Karoku (1225–1227)","Antei (1227–1229)","Kanki (1229–1232)","Jōei (1232–1233)","Tenpuku (1233–1234)","Bunryaku (1234–1235)","Katei (1235–1238)","Ryakunin (1238–1239)","En’ō (1239–1240)","Ninji (1240–1243)","Kangen (1243–1247)","Hōji (1247–1249)","Kenchō (1249–1256)","Kōgen (1256–1257)","Shōka (1257–1259)","Shōgen (1259–1260)","Bun’ō (1260–1261)","Kōchō (1261–1264)","Bun’ei (1264–1275)","Kenji (1275–1278)","Kōan (1278–1288)","Shōō (1288–1293)","Einin (1293–1299)","Shōan (1299–1302)","Kengen (1302–1303)","Kagen (1303–1306)","Tokuji (1306–1308)","Enkyō (1308–1311)","Ōchō (1311–1312)","Shōwa (1312–1317)","Bunpō (1317–1319)","Genō (1319–1321)","Genkō (1321–1324)","Shōchū (1324–1326)","Karyaku (1326–1329)","Gentoku (1329–1331)","Genkō (1331–1334)","Kenmu (1334–1336)","Engen (1336–1340)","Kōkoku (1340–1346)","Shōhei (1346–1370)","Kentoku (1370–1372)","Bunchū (1372–1375)","Tenju (1375–1379)","Kōryaku (1379–1381)","Kōwa (1381–1384)","Genchū (1384–1392)","Meitoku (1384–1387)","Kakei (1387–1389)","Kōō (1389–1390)","Meitoku (1390–1394)","Ōei (1394–1428)","Shōchō (1428–1429)","Eikyō (1429–1441)","Kakitsu (1441–1444)","Bun’an (1444–1449)","Hōtoku (1449–1452)","Kyōtoku (1452–1455)","Kōshō (1455–1457)","Chōroku (1457–1460)","Kanshō (1460–1466)","Bunshō (1466–1467)","Ōnin (1467–1469)","Bunmei (1469–1487)","Chōkyō (1487–1489)","Entoku (1489–1492)","Meiō (1492–1501)","Bunki (1501–1504)","Eishō (1504–1521)","Taiei (1521–1528)","Kyōroku (1528–1532)","Tenbun (1532–1555)","Kōji (1555–1558)","Eiroku (1558–1570)","Genki (1570–1573)","Tenshō (1573–1592)","Bunroku (1592–1596)","Keichō (1596–1615)","Genna (1615–1624)","Kan’ei (1624–1644)","Shōho (1644–1648)","Keian (1648–1652)","Jōō (1652–1655)","Meireki (1655–1658)","Manji (1658–1661)","Kanbun (1661–1673)","Enpō (1673–1681)","Tenna (1681–1684)","Jōkyō (1684–1688)","Genroku (1688–1704)","Hōei (1704–1711)","Shōtoku (1711–1716)","Kyōhō (1716–1736)","Genbun (1736–1741)","Kanpō (1741–1744)","Enkyō (1744–1748)","Kan’en (1748–1751)","Hōreki (1751–1764)","Meiwa (1764–1772)","An’ei (1772–1781)","Tenmei (1781–1789)","Kansei (1789–1801)","Kyōwa (1801–1804)","Bunka (1804–1818)","Bunsei (1818–1830)","Tenpō (1830–1844)","Kōka (1844–1848)","Kaei (1848–1854)","Ansei (1854–1860)","Man’en (1860–1861)","Bunkyū (1861–1864)","Genji (1864–1865)","Keiō (1865–1868)","Meiji","Taishō","Shōwa","Heisei"]},dayPeriods:{am:"AM",pm:"PM"}},persian:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Farvardin","Ordibehesht","Khordad","Tir","Mordad","Shahrivar","Mehr","Aban","Azar","Dey","Bahman","Esfand"],long:["Farvardin","Ordibehesht","Khordad","Tir","Mordad","Shahrivar","Mehr","Aban","Azar","Dey","Bahman","Esfand"]},days:{narrow:["D","L","M","M","J","V","S"],short:["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],long:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]},eras:{narrow:["AP"],short:["AP"],long:["AP"]},dayPeriods:{am:"AM",pm:"PM"}},roc:{months:{narrow:["J","F","M","A","M","J","J","A","S","O","N","D"],short:["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."],long:["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"]},days:{narrow:["D","L","M","M","J","V","S"],short:["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],long:["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]},eras:{narrow:["avant RdC","RdC"],short:["avant RdC","RdC"],long:["avant RdC","RdC"]},dayPeriods:{am:"AM",pm:"PM"}}}},number:{nu:["latn"],patterns:{decimal:{positivePattern:"{number}",negativePattern:"{minusSign}{number}"},currency:{positivePattern:"{number} {currency}",negativePattern:"{minusSign}{number} {currency}"},percent:{positivePattern:"{number} {percentSign}",negativePattern:"{minusSign}{number} {percentSign}"}},symbols:{latn:{decimal:",",group:" ",nan:"NaN",plusSign:"+",minusSign:"-",percentSign:"%",infinity:"∞"}},currencies:{ARS:"$AR",AUD:"$AU",BEF:"FB",BMD:"$BM",BND:"$BN",BRL:"R$",BSD:"$BS",BZD:"$BZ",CAD:"$CA",CLP:"$CL",COP:"$CO",CYP:"£CY",EUR:"€",FJD:"$FJ",FKP:"£FK",FRF:"F",GBP:"£GB",GIP:"£GI",IEP:"£IE",ILP:"£IL",ILS:"₪",INR:"₹",ITL:"₤IT",KRW:"₩",LBP:"£LB",MTP:"£MT",MXN:"$MX",NAD:"$NA",NZD:"$NZ",RHD:"$RH",SBD:"$SB",SGD:"$SG",SRD:"$SR",TTD:"$TT",USD:"$US",UYU:"$UY",VND:"₫",WST:"WS$",XAF:"FCFA",XOF:"CFA",XPF:"FCFP"}}});
 
 /***/ },
-/* 454 */
+/* 455 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// the whatwg-fetch polyfill installs the fetch() function
 	// on the global object (window or self)
 	//
 	// Return that as the export for use in Webpack, Browserify etc.
-	__webpack_require__(739);
+	__webpack_require__(740);
 	module.exports = self.fetch.bind(self);
 
 
 /***/ },
-/* 455 */
+/* 456 */
 /***/ function(module, exports) {
 
 	/**
@@ -25269,7 +25285,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 456 */
+/* 457 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -26505,7 +26521,7 @@ webpackJsonp([4],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)))
 
 /***/ },
-/* 457 */
+/* 458 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -26889,7 +26905,7 @@ webpackJsonp([4],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)))
 
 /***/ },
-/* 458 */
+/* 459 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -27339,7 +27355,7 @@ webpackJsonp([4],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)))
 
 /***/ },
-/* 459 */
+/* 460 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, module) {/**
@@ -29553,7 +29569,7 @@ webpackJsonp([4],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12), __webpack_require__(62)(module)))
 
 /***/ },
-/* 460 */
+/* 461 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var getNative = __webpack_require__(31),
@@ -29566,14 +29582,14 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 461 */
+/* 462 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var hashClear = __webpack_require__(506),
-	    hashDelete = __webpack_require__(507),
-	    hashGet = __webpack_require__(508),
-	    hashHas = __webpack_require__(509),
-	    hashSet = __webpack_require__(510);
+	var hashClear = __webpack_require__(507),
+	    hashDelete = __webpack_require__(508),
+	    hashGet = __webpack_require__(509),
+	    hashHas = __webpack_require__(510),
+	    hashSet = __webpack_require__(511);
 	
 	/**
 	 * Creates a hash object.
@@ -29604,7 +29620,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 462 */
+/* 463 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var getNative = __webpack_require__(31),
@@ -29617,7 +29633,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 463 */
+/* 464 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var root = __webpack_require__(19);
@@ -29629,7 +29645,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 464 */
+/* 465 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var getNative = __webpack_require__(31),
@@ -29642,7 +29658,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 465 */
+/* 466 */
 /***/ function(module, exports) {
 
 	/**
@@ -29669,7 +29685,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 466 */
+/* 467 */
 /***/ function(module, exports) {
 
 	/**
@@ -29700,10 +29716,10 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 467 */
+/* 468 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseTimes = __webpack_require__(490),
+	var baseTimes = __webpack_require__(491),
 	    isArguments = __webpack_require__(123),
 	    isArray = __webpack_require__(20),
 	    isBuffer = __webpack_require__(214),
@@ -29755,7 +29771,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 468 */
+/* 469 */
 /***/ function(module, exports) {
 
 	/**
@@ -29784,7 +29800,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 469 */
+/* 470 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var defineProperty = __webpack_require__(203);
@@ -29815,7 +29831,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 470 */
+/* 471 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var SetCache = __webpack_require__(119),
@@ -29888,7 +29904,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 471 */
+/* 472 */
 /***/ function(module, exports) {
 
 	/**
@@ -29918,10 +29934,10 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 472 */
+/* 473 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var createBaseFor = __webpack_require__(494);
+	var createBaseFor = __webpack_require__(495);
 	
 	/**
 	 * The base implementation of `baseForOwn` which iterates over `object`
@@ -29940,10 +29956,10 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 473 */
+/* 474 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseFor = __webpack_require__(472),
+	var baseFor = __webpack_require__(473),
 	    keys = __webpack_require__(127);
 	
 	/**
@@ -29962,7 +29978,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 474 */
+/* 475 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var arrayPush = __webpack_require__(196),
@@ -29988,7 +30004,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 475 */
+/* 476 */
 /***/ function(module, exports) {
 
 	/**
@@ -30007,12 +30023,12 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 476 */
+/* 477 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseFindIndex = __webpack_require__(471),
-	    baseIsNaN = __webpack_require__(480),
-	    strictIndexOf = __webpack_require__(540);
+	var baseFindIndex = __webpack_require__(472),
+	    baseIsNaN = __webpack_require__(481),
+	    strictIndexOf = __webpack_require__(541);
 	
 	/**
 	 * The base implementation of `_.indexOf` without `fromIndex` bounds checks.
@@ -30033,7 +30049,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 477 */
+/* 478 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseGetTag = __webpack_require__(44),
@@ -30057,14 +30073,14 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 478 */
+/* 479 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Stack = __webpack_require__(192),
 	    equalArrays = __webpack_require__(204),
-	    equalByTag = __webpack_require__(496),
-	    equalObjects = __webpack_require__(497),
-	    getTag = __webpack_require__(503),
+	    equalByTag = __webpack_require__(497),
+	    equalObjects = __webpack_require__(498),
+	    getTag = __webpack_require__(504),
 	    isArray = __webpack_require__(20),
 	    isBuffer = __webpack_require__(214),
 	    isTypedArray = __webpack_require__(216);
@@ -30146,7 +30162,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 479 */
+/* 480 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Stack = __webpack_require__(192),
@@ -30214,7 +30230,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 480 */
+/* 481 */
 /***/ function(module, exports) {
 
 	/**
@@ -30232,11 +30248,11 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 481 */
+/* 482 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var isFunction = __webpack_require__(215),
-	    isMasked = __webpack_require__(513),
+	    isMasked = __webpack_require__(514),
 	    isObject = __webpack_require__(125),
 	    toSource = __webpack_require__(210);
 	
@@ -30285,7 +30301,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 482 */
+/* 483 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseGetTag = __webpack_require__(44),
@@ -30351,14 +30367,14 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 483 */
+/* 484 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseMatches = __webpack_require__(485),
-	    baseMatchesProperty = __webpack_require__(486),
+	var baseMatches = __webpack_require__(486),
+	    baseMatchesProperty = __webpack_require__(487),
 	    identity = __webpack_require__(78),
 	    isArray = __webpack_require__(20),
-	    property = __webpack_require__(549);
+	    property = __webpack_require__(550);
 	
 	/**
 	 * The base implementation of `_.iteratee`.
@@ -30388,11 +30404,11 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 484 */
+/* 485 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isPrototype = __webpack_require__(514),
-	    nativeKeys = __webpack_require__(527);
+	var isPrototype = __webpack_require__(515),
+	    nativeKeys = __webpack_require__(528);
 	
 	/** Used for built-in method references. */
 	var objectProto = Object.prototype;
@@ -30424,11 +30440,11 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 485 */
+/* 486 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsMatch = __webpack_require__(479),
-	    getMatchData = __webpack_require__(499),
+	var baseIsMatch = __webpack_require__(480),
+	    getMatchData = __webpack_require__(500),
 	    matchesStrictComparable = __webpack_require__(208);
 	
 	/**
@@ -30452,12 +30468,12 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 486 */
+/* 487 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseIsEqual = __webpack_require__(199),
-	    get = __webpack_require__(544),
-	    hasIn = __webpack_require__(545),
+	    get = __webpack_require__(545),
+	    hasIn = __webpack_require__(546),
 	    isKey = __webpack_require__(121),
 	    isStrictComparable = __webpack_require__(207),
 	    matchesStrictComparable = __webpack_require__(208),
@@ -30491,7 +30507,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 487 */
+/* 488 */
 /***/ function(module, exports) {
 
 	/**
@@ -30511,7 +30527,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 488 */
+/* 489 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseGet = __webpack_require__(198);
@@ -30533,10 +30549,10 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 489 */
+/* 490 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var constant = __webpack_require__(542),
+	var constant = __webpack_require__(543),
 	    defineProperty = __webpack_require__(203),
 	    identity = __webpack_require__(78);
 	
@@ -30561,7 +30577,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 490 */
+/* 491 */
 /***/ function(module, exports) {
 
 	/**
@@ -30587,7 +30603,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 491 */
+/* 492 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Symbol = __webpack_require__(59),
@@ -30630,14 +30646,14 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 492 */
+/* 493 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var SetCache = __webpack_require__(119),
 	    arrayIncludes = __webpack_require__(193),
 	    arrayIncludesWith = __webpack_require__(194),
 	    cacheHas = __webpack_require__(120),
-	    createSet = __webpack_require__(495),
+	    createSet = __webpack_require__(496),
 	    setToArray = __webpack_require__(122);
 	
 	/** Used as the size to enable large array optimizations. */
@@ -30708,7 +30724,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 493 */
+/* 494 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var root = __webpack_require__(19);
@@ -30720,7 +30736,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 494 */
+/* 495 */
 /***/ function(module, exports) {
 
 	/**
@@ -30751,11 +30767,11 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 495 */
+/* 496 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Set = __webpack_require__(191),
-	    noop = __webpack_require__(548),
+	    noop = __webpack_require__(549),
 	    setToArray = __webpack_require__(122);
 	
 	/** Used as references for various `Number` constants. */
@@ -30776,14 +30792,14 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 496 */
+/* 497 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Symbol = __webpack_require__(59),
-	    Uint8Array = __webpack_require__(463),
+	    Uint8Array = __webpack_require__(464),
 	    eq = __webpack_require__(211),
 	    equalArrays = __webpack_require__(204),
-	    mapToArray = __webpack_require__(525),
+	    mapToArray = __webpack_require__(526),
 	    setToArray = __webpack_require__(122);
 	
 	/** Used to compose bitmasks for value comparisons. */
@@ -30894,10 +30910,10 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 497 */
+/* 498 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getAllKeys = __webpack_require__(498);
+	var getAllKeys = __webpack_require__(499);
 	
 	/** Used to compose bitmasks for value comparisons. */
 	var COMPARE_PARTIAL_FLAG = 1;
@@ -30989,11 +31005,11 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 498 */
+/* 499 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseGetAllKeys = __webpack_require__(474),
-	    getSymbols = __webpack_require__(502),
+	var baseGetAllKeys = __webpack_require__(475),
+	    getSymbols = __webpack_require__(503),
 	    keys = __webpack_require__(127);
 	
 	/**
@@ -31011,7 +31027,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 499 */
+/* 500 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var isStrictComparable = __webpack_require__(207),
@@ -31041,7 +31057,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 500 */
+/* 501 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var overArg = __webpack_require__(209);
@@ -31053,7 +31069,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 501 */
+/* 502 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Symbol = __webpack_require__(59);
@@ -31105,11 +31121,11 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 502 */
+/* 503 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var arrayFilter = __webpack_require__(466),
-	    stubArray = __webpack_require__(550);
+	var arrayFilter = __webpack_require__(467),
+	    stubArray = __webpack_require__(551);
 	
 	/** Used for built-in method references. */
 	var objectProto = Object.prototype;
@@ -31141,14 +31157,14 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 503 */
+/* 504 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var DataView = __webpack_require__(460),
+	var DataView = __webpack_require__(461),
 	    Map = __webpack_require__(117),
-	    Promise = __webpack_require__(462),
+	    Promise = __webpack_require__(463),
 	    Set = __webpack_require__(191),
-	    WeakMap = __webpack_require__(464),
+	    WeakMap = __webpack_require__(465),
 	    baseGetTag = __webpack_require__(44),
 	    toSource = __webpack_require__(210);
 	
@@ -31205,7 +31221,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 504 */
+/* 505 */
 /***/ function(module, exports) {
 
 	/**
@@ -31224,7 +31240,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 505 */
+/* 506 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var castPath = __webpack_require__(202),
@@ -31269,7 +31285,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 506 */
+/* 507 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var nativeCreate = __webpack_require__(76);
@@ -31290,7 +31306,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 507 */
+/* 508 */
 /***/ function(module, exports) {
 
 	/**
@@ -31313,7 +31329,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 508 */
+/* 509 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var nativeCreate = __webpack_require__(76);
@@ -31349,7 +31365,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 509 */
+/* 510 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var nativeCreate = __webpack_require__(76);
@@ -31378,7 +31394,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 510 */
+/* 511 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var nativeCreate = __webpack_require__(76);
@@ -31407,7 +31423,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 511 */
+/* 512 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Symbol = __webpack_require__(59),
@@ -31433,7 +31449,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 512 */
+/* 513 */
 /***/ function(module, exports) {
 
 	/**
@@ -31454,10 +31470,10 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 513 */
+/* 514 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var coreJsData = __webpack_require__(493);
+	var coreJsData = __webpack_require__(494);
 	
 	/** Used to detect methods masquerading as native. */
 	var maskSrcKey = (function() {
@@ -31480,7 +31496,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 514 */
+/* 515 */
 /***/ function(module, exports) {
 
 	/** Used for built-in method references. */
@@ -31504,7 +31520,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 515 */
+/* 516 */
 /***/ function(module, exports) {
 
 	/**
@@ -31523,7 +31539,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 516 */
+/* 517 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var assocIndexOf = __webpack_require__(74);
@@ -31564,7 +31580,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 517 */
+/* 518 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var assocIndexOf = __webpack_require__(74);
@@ -31589,7 +31605,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 518 */
+/* 519 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var assocIndexOf = __webpack_require__(74);
@@ -31611,7 +31627,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 519 */
+/* 520 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var assocIndexOf = __webpack_require__(74);
@@ -31643,10 +31659,10 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 520 */
+/* 521 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Hash = __webpack_require__(461),
+	var Hash = __webpack_require__(462),
 	    ListCache = __webpack_require__(73),
 	    Map = __webpack_require__(117);
 	
@@ -31670,7 +31686,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 521 */
+/* 522 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var getMapData = __webpack_require__(75);
@@ -31694,7 +31710,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 522 */
+/* 523 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var getMapData = __webpack_require__(75);
@@ -31716,7 +31732,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 523 */
+/* 524 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var getMapData = __webpack_require__(75);
@@ -31738,7 +31754,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 524 */
+/* 525 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var getMapData = __webpack_require__(75);
@@ -31766,7 +31782,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 525 */
+/* 526 */
 /***/ function(module, exports) {
 
 	/**
@@ -31790,10 +31806,10 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 526 */
+/* 527 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var memoize = __webpack_require__(547);
+	var memoize = __webpack_require__(548);
 	
 	/** Used as the maximum memoize cache size. */
 	var MAX_MEMOIZE_SIZE = 500;
@@ -31822,7 +31838,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 527 */
+/* 528 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var overArg = __webpack_require__(209);
@@ -31834,7 +31850,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 528 */
+/* 529 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {var freeGlobal = __webpack_require__(205);
@@ -31863,7 +31879,7 @@ webpackJsonp([4],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(62)(module)))
 
 /***/ },
-/* 529 */
+/* 530 */
 /***/ function(module, exports) {
 
 	/** Used for built-in method references. */
@@ -31891,10 +31907,10 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 530 */
+/* 531 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var apply = __webpack_require__(465);
+	var apply = __webpack_require__(466);
 	
 	/* Built-in method references for those with the same name as other `lodash` methods. */
 	var nativeMax = Math.max;
@@ -31933,7 +31949,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 531 */
+/* 532 */
 /***/ function(module, exports) {
 
 	/** Used to stand-in for `undefined` hash values. */
@@ -31958,7 +31974,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 532 */
+/* 533 */
 /***/ function(module, exports) {
 
 	/**
@@ -31978,11 +31994,11 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 533 */
+/* 534 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseSetToString = __webpack_require__(489),
-	    shortOut = __webpack_require__(534);
+	var baseSetToString = __webpack_require__(490),
+	    shortOut = __webpack_require__(535);
 	
 	/**
 	 * Sets the `toString` method of `func` to return `string`.
@@ -31998,7 +32014,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 534 */
+/* 535 */
 /***/ function(module, exports) {
 
 	/** Used to detect hot functions by number of calls within a span of milliseconds. */
@@ -32041,7 +32057,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 535 */
+/* 536 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var ListCache = __webpack_require__(73);
@@ -32062,7 +32078,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 536 */
+/* 537 */
 /***/ function(module, exports) {
 
 	/**
@@ -32086,7 +32102,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 537 */
+/* 538 */
 /***/ function(module, exports) {
 
 	/**
@@ -32106,7 +32122,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 538 */
+/* 539 */
 /***/ function(module, exports) {
 
 	/**
@@ -32126,7 +32142,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 539 */
+/* 540 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var ListCache = __webpack_require__(73),
@@ -32166,7 +32182,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 540 */
+/* 541 */
 /***/ function(module, exports) {
 
 	/**
@@ -32195,10 +32211,10 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 541 */
+/* 542 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var memoizeCapped = __webpack_require__(526);
+	var memoizeCapped = __webpack_require__(527);
 	
 	/** Used to match property names within property paths. */
 	var reLeadingDot = /^\./,
@@ -32229,7 +32245,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 542 */
+/* 543 */
 /***/ function(module, exports) {
 
 	/**
@@ -32261,10 +32277,10 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 543 */
+/* 544 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseDifference = __webpack_require__(470),
+	var baseDifference = __webpack_require__(471),
 	    baseFlatten = __webpack_require__(197),
 	    baseRest = __webpack_require__(200),
 	    isArrayLikeObject = __webpack_require__(213);
@@ -32300,7 +32316,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 544 */
+/* 545 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseGet = __webpack_require__(198);
@@ -32339,11 +32355,11 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 545 */
+/* 546 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseHasIn = __webpack_require__(475),
-	    hasPath = __webpack_require__(505);
+	var baseHasIn = __webpack_require__(476),
+	    hasPath = __webpack_require__(506);
 	
 	/**
 	 * Checks if `path` is a direct or inherited property of `object`.
@@ -32379,12 +32395,12 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 546 */
+/* 547 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseAssignValue = __webpack_require__(469),
-	    baseForOwn = __webpack_require__(473),
-	    baseIteratee = __webpack_require__(483);
+	var baseAssignValue = __webpack_require__(470),
+	    baseForOwn = __webpack_require__(474),
+	    baseIteratee = __webpack_require__(484);
 	
 	/**
 	 * Creates an object with the same keys as `object` and values generated
@@ -32428,7 +32444,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 547 */
+/* 548 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var MapCache = __webpack_require__(118);
@@ -32507,7 +32523,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 548 */
+/* 549 */
 /***/ function(module, exports) {
 
 	/**
@@ -32530,11 +32546,11 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 549 */
+/* 550 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseProperty = __webpack_require__(487),
-	    basePropertyDeep = __webpack_require__(488),
+	var baseProperty = __webpack_require__(488),
+	    basePropertyDeep = __webpack_require__(489),
 	    isKey = __webpack_require__(121),
 	    toKey = __webpack_require__(77);
 	
@@ -32568,7 +32584,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 550 */
+/* 551 */
 /***/ function(module, exports) {
 
 	/**
@@ -32597,7 +32613,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 551 */
+/* 552 */
 /***/ function(module, exports) {
 
 	/**
@@ -32621,10 +32637,10 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 552 */
+/* 553 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseToString = __webpack_require__(491);
+	var baseToString = __webpack_require__(492);
 	
 	/**
 	 * Converts `value` to a string. An empty string is returned for `null`
@@ -32655,12 +32671,12 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 553 */
+/* 554 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseFlatten = __webpack_require__(197),
 	    baseRest = __webpack_require__(200),
-	    baseUniq = __webpack_require__(492),
+	    baseUniq = __webpack_require__(493),
 	    isArrayLikeObject = __webpack_require__(213);
 	
 	/**
@@ -32687,7 +32703,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 554 */
+/* 555 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -32718,7 +32734,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 555 */
+/* 556 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32728,7 +32744,7 @@ webpackJsonp([4],[
 	  value: true
 	});
 	
-	var _getPrototypeOf = __webpack_require__(266);
+	var _getPrototypeOf = __webpack_require__(267);
 	
 	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 	
@@ -32736,7 +32752,7 @@ webpackJsonp([4],[
 	
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 	
-	var _createClass2 = __webpack_require__(265);
+	var _createClass2 = __webpack_require__(266);
 	
 	var _createClass3 = _interopRequireDefault(_createClass2);
 	
@@ -32794,7 +32810,7 @@ webpackJsonp([4],[
 	exports.default = MuiThemeProvider;
 
 /***/ },
-/* 556 */
+/* 557 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32806,7 +32822,7 @@ webpackJsonp([4],[
 	
 	var _colors = __webpack_require__(80);
 	
-	var _colorManipulator = __webpack_require__(90);
+	var _colorManipulator = __webpack_require__(91);
 	
 	var _spacing = __webpack_require__(217);
 	
@@ -32837,7 +32853,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 557 */
+/* 558 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32878,7 +32894,7 @@ webpackJsonp([4],[
 	exports.default = new Typography();
 
 /***/ },
-/* 558 */
+/* 559 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -32901,7 +32917,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 559 */
+/* 560 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32961,19 +32977,19 @@ webpackJsonp([4],[
 	  }
 	};
 	
-	var _createPrefixer = __webpack_require__(422);
+	var _createPrefixer = __webpack_require__(423);
 	
 	var _createPrefixer2 = _interopRequireDefault(_createPrefixer);
 	
-	var _createPrefixer3 = __webpack_require__(414);
+	var _createPrefixer3 = __webpack_require__(415);
 	
 	var _createPrefixer4 = _interopRequireDefault(_createPrefixer3);
 	
-	var _autoprefixerDynamic = __webpack_require__(560);
+	var _autoprefixerDynamic = __webpack_require__(561);
 	
 	var _autoprefixerDynamic2 = _interopRequireDefault(_autoprefixerDynamic);
 	
-	var _autoprefixerStatic = __webpack_require__(561);
+	var _autoprefixerStatic = __webpack_require__(562);
 	
 	var _autoprefixerStatic2 = _interopRequireDefault(_autoprefixerStatic);
 	
@@ -32986,7 +33002,7 @@ webpackJsonp([4],[
 	var hasWarnedAboutUserAgent = false;
 
 /***/ },
-/* 560 */
+/* 561 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32996,31 +33012,31 @@ webpackJsonp([4],[
 	  value: true
 	});
 	
-	var _calc = __webpack_require__(415);
+	var _calc = __webpack_require__(416);
 	
 	var _calc2 = _interopRequireDefault(_calc);
 	
-	var _flex = __webpack_require__(416);
+	var _flex = __webpack_require__(417);
 	
 	var _flex2 = _interopRequireDefault(_flex);
 	
-	var _flexboxIE = __webpack_require__(417);
+	var _flexboxIE = __webpack_require__(418);
 	
 	var _flexboxIE2 = _interopRequireDefault(_flexboxIE);
 	
-	var _flexboxOld = __webpack_require__(418);
+	var _flexboxOld = __webpack_require__(419);
 	
 	var _flexboxOld2 = _interopRequireDefault(_flexboxOld);
 	
-	var _gradient = __webpack_require__(419);
+	var _gradient = __webpack_require__(420);
 	
 	var _gradient2 = _interopRequireDefault(_gradient);
 	
-	var _sizing = __webpack_require__(420);
+	var _sizing = __webpack_require__(421);
 	
 	var _sizing2 = _interopRequireDefault(_sizing);
 	
-	var _transition = __webpack_require__(421);
+	var _transition = __webpack_require__(422);
 	
 	var _transition2 = _interopRequireDefault(_transition);
 	
@@ -33032,7 +33048,7 @@ webpackJsonp([4],[
 	}; /* eslint-disable */
 
 /***/ },
-/* 561 */
+/* 562 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33042,31 +33058,31 @@ webpackJsonp([4],[
 	  value: true
 	});
 	
-	var _calc = __webpack_require__(423);
+	var _calc = __webpack_require__(424);
 	
 	var _calc2 = _interopRequireDefault(_calc);
 	
-	var _flex = __webpack_require__(424);
+	var _flex = __webpack_require__(425);
 	
 	var _flex2 = _interopRequireDefault(_flex);
 	
-	var _flexboxIE = __webpack_require__(425);
+	var _flexboxIE = __webpack_require__(426);
 	
 	var _flexboxIE2 = _interopRequireDefault(_flexboxIE);
 	
-	var _flexboxOld = __webpack_require__(426);
+	var _flexboxOld = __webpack_require__(427);
 	
 	var _flexboxOld2 = _interopRequireDefault(_flexboxOld);
 	
-	var _gradient = __webpack_require__(427);
+	var _gradient = __webpack_require__(428);
 	
 	var _gradient2 = _interopRequireDefault(_gradient);
 	
-	var _sizing = __webpack_require__(428);
+	var _sizing = __webpack_require__(429);
 	
 	var _sizing2 = _interopRequireDefault(_sizing);
 	
-	var _transition = __webpack_require__(429);
+	var _transition = __webpack_require__(430);
 	
 	var _transition2 = _interopRequireDefault(_transition);
 	
@@ -33078,7 +33094,7 @@ webpackJsonp([4],[
 	}; /* eslint-disable */
 
 /***/ },
-/* 562 */
+/* 563 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33110,7 +33126,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 563 */
+/* 564 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33213,7 +33229,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 564 */
+/* 565 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -38763,7 +38779,1003 @@ webpackJsonp([4],[
 	module.exports = mixpanel;
 
 /***/ },
-/* 565 */
+/* 566 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// THIS FILE IS GENERATED - DO NOT EDIT!
+	/*!mobile-detect v1.3.6 2017-04-05*/
+	/*global module:false, define:false*/
+	/*jshint latedef:false*/
+	/*!@license Copyright 2013, Heinrich Goebl, License: MIT, see https://github.com/hgoebl/mobile-detect.js*/
+	(function (define, undefined) {
+	define(function () {
+	    'use strict';
+	
+	    var impl = {};
+	
+	    impl.mobileDetectRules = {
+	    "phones": {
+	        "iPhone": "\\biPhone\\b|\\biPod\\b",
+	        "BlackBerry": "BlackBerry|\\bBB10\\b|rim[0-9]+",
+	        "HTC": "HTC|HTC.*(Sensation|Evo|Vision|Explorer|6800|8100|8900|A7272|S510e|C110e|Legend|Desire|T8282)|APX515CKT|Qtek9090|APA9292KT|HD_mini|Sensation.*Z710e|PG86100|Z715e|Desire.*(A8181|HD)|ADR6200|ADR6400L|ADR6425|001HT|Inspire 4G|Android.*\\bEVO\\b|T-Mobile G1|Z520m",
+	        "Nexus": "Nexus One|Nexus S|Galaxy.*Nexus|Android.*Nexus.*Mobile|Nexus 4|Nexus 5|Nexus 6",
+	        "Dell": "Dell.*Streak|Dell.*Aero|Dell.*Venue|DELL.*Venue Pro|Dell Flash|Dell Smoke|Dell Mini 3iX|XCD28|XCD35|\\b001DL\\b|\\b101DL\\b|\\bGS01\\b",
+	        "Motorola": "Motorola|DROIDX|DROID BIONIC|\\bDroid\\b.*Build|Android.*Xoom|HRI39|MOT-|A1260|A1680|A555|A853|A855|A953|A955|A956|Motorola.*ELECTRIFY|Motorola.*i1|i867|i940|MB200|MB300|MB501|MB502|MB508|MB511|MB520|MB525|MB526|MB611|MB612|MB632|MB810|MB855|MB860|MB861|MB865|MB870|ME501|ME502|ME511|ME525|ME600|ME632|ME722|ME811|ME860|ME863|ME865|MT620|MT710|MT716|MT720|MT810|MT870|MT917|Motorola.*TITANIUM|WX435|WX445|XT300|XT301|XT311|XT316|XT317|XT319|XT320|XT390|XT502|XT530|XT531|XT532|XT535|XT603|XT610|XT611|XT615|XT681|XT701|XT702|XT711|XT720|XT800|XT806|XT860|XT862|XT875|XT882|XT883|XT894|XT901|XT907|XT909|XT910|XT912|XT928|XT926|XT915|XT919|XT925|XT1021|\\bMoto E\\b",
+	        "Samsung": "\\bSamsung\\b|SM-G9250|GT-19300|SGH-I337|BGT-S5230|GT-B2100|GT-B2700|GT-B2710|GT-B3210|GT-B3310|GT-B3410|GT-B3730|GT-B3740|GT-B5510|GT-B5512|GT-B5722|GT-B6520|GT-B7300|GT-B7320|GT-B7330|GT-B7350|GT-B7510|GT-B7722|GT-B7800|GT-C3010|GT-C3011|GT-C3060|GT-C3200|GT-C3212|GT-C3212I|GT-C3262|GT-C3222|GT-C3300|GT-C3300K|GT-C3303|GT-C3303K|GT-C3310|GT-C3322|GT-C3330|GT-C3350|GT-C3500|GT-C3510|GT-C3530|GT-C3630|GT-C3780|GT-C5010|GT-C5212|GT-C6620|GT-C6625|GT-C6712|GT-E1050|GT-E1070|GT-E1075|GT-E1080|GT-E1081|GT-E1085|GT-E1087|GT-E1100|GT-E1107|GT-E1110|GT-E1120|GT-E1125|GT-E1130|GT-E1160|GT-E1170|GT-E1175|GT-E1180|GT-E1182|GT-E1200|GT-E1210|GT-E1225|GT-E1230|GT-E1390|GT-E2100|GT-E2120|GT-E2121|GT-E2152|GT-E2220|GT-E2222|GT-E2230|GT-E2232|GT-E2250|GT-E2370|GT-E2550|GT-E2652|GT-E3210|GT-E3213|GT-I5500|GT-I5503|GT-I5700|GT-I5800|GT-I5801|GT-I6410|GT-I6420|GT-I7110|GT-I7410|GT-I7500|GT-I8000|GT-I8150|GT-I8160|GT-I8190|GT-I8320|GT-I8330|GT-I8350|GT-I8530|GT-I8700|GT-I8703|GT-I8910|GT-I9000|GT-I9001|GT-I9003|GT-I9010|GT-I9020|GT-I9023|GT-I9070|GT-I9082|GT-I9100|GT-I9103|GT-I9220|GT-I9250|GT-I9300|GT-I9305|GT-I9500|GT-I9505|GT-M3510|GT-M5650|GT-M7500|GT-M7600|GT-M7603|GT-M8800|GT-M8910|GT-N7000|GT-S3110|GT-S3310|GT-S3350|GT-S3353|GT-S3370|GT-S3650|GT-S3653|GT-S3770|GT-S3850|GT-S5210|GT-S5220|GT-S5229|GT-S5230|GT-S5233|GT-S5250|GT-S5253|GT-S5260|GT-S5263|GT-S5270|GT-S5300|GT-S5330|GT-S5350|GT-S5360|GT-S5363|GT-S5369|GT-S5380|GT-S5380D|GT-S5560|GT-S5570|GT-S5600|GT-S5603|GT-S5610|GT-S5620|GT-S5660|GT-S5670|GT-S5690|GT-S5750|GT-S5780|GT-S5830|GT-S5839|GT-S6102|GT-S6500|GT-S7070|GT-S7200|GT-S7220|GT-S7230|GT-S7233|GT-S7250|GT-S7500|GT-S7530|GT-S7550|GT-S7562|GT-S7710|GT-S8000|GT-S8003|GT-S8500|GT-S8530|GT-S8600|SCH-A310|SCH-A530|SCH-A570|SCH-A610|SCH-A630|SCH-A650|SCH-A790|SCH-A795|SCH-A850|SCH-A870|SCH-A890|SCH-A930|SCH-A950|SCH-A970|SCH-A990|SCH-I100|SCH-I110|SCH-I400|SCH-I405|SCH-I500|SCH-I510|SCH-I515|SCH-I600|SCH-I730|SCH-I760|SCH-I770|SCH-I830|SCH-I910|SCH-I920|SCH-I959|SCH-LC11|SCH-N150|SCH-N300|SCH-R100|SCH-R300|SCH-R351|SCH-R400|SCH-R410|SCH-T300|SCH-U310|SCH-U320|SCH-U350|SCH-U360|SCH-U365|SCH-U370|SCH-U380|SCH-U410|SCH-U430|SCH-U450|SCH-U460|SCH-U470|SCH-U490|SCH-U540|SCH-U550|SCH-U620|SCH-U640|SCH-U650|SCH-U660|SCH-U700|SCH-U740|SCH-U750|SCH-U810|SCH-U820|SCH-U900|SCH-U940|SCH-U960|SCS-26UC|SGH-A107|SGH-A117|SGH-A127|SGH-A137|SGH-A157|SGH-A167|SGH-A177|SGH-A187|SGH-A197|SGH-A227|SGH-A237|SGH-A257|SGH-A437|SGH-A517|SGH-A597|SGH-A637|SGH-A657|SGH-A667|SGH-A687|SGH-A697|SGH-A707|SGH-A717|SGH-A727|SGH-A737|SGH-A747|SGH-A767|SGH-A777|SGH-A797|SGH-A817|SGH-A827|SGH-A837|SGH-A847|SGH-A867|SGH-A877|SGH-A887|SGH-A897|SGH-A927|SGH-B100|SGH-B130|SGH-B200|SGH-B220|SGH-C100|SGH-C110|SGH-C120|SGH-C130|SGH-C140|SGH-C160|SGH-C170|SGH-C180|SGH-C200|SGH-C207|SGH-C210|SGH-C225|SGH-C230|SGH-C417|SGH-C450|SGH-D307|SGH-D347|SGH-D357|SGH-D407|SGH-D415|SGH-D780|SGH-D807|SGH-D980|SGH-E105|SGH-E200|SGH-E315|SGH-E316|SGH-E317|SGH-E335|SGH-E590|SGH-E635|SGH-E715|SGH-E890|SGH-F300|SGH-F480|SGH-I200|SGH-I300|SGH-I320|SGH-I550|SGH-I577|SGH-I600|SGH-I607|SGH-I617|SGH-I627|SGH-I637|SGH-I677|SGH-I700|SGH-I717|SGH-I727|SGH-i747M|SGH-I777|SGH-I780|SGH-I827|SGH-I847|SGH-I857|SGH-I896|SGH-I897|SGH-I900|SGH-I907|SGH-I917|SGH-I927|SGH-I937|SGH-I997|SGH-J150|SGH-J200|SGH-L170|SGH-L700|SGH-M110|SGH-M150|SGH-M200|SGH-N105|SGH-N500|SGH-N600|SGH-N620|SGH-N625|SGH-N700|SGH-N710|SGH-P107|SGH-P207|SGH-P300|SGH-P310|SGH-P520|SGH-P735|SGH-P777|SGH-Q105|SGH-R210|SGH-R220|SGH-R225|SGH-S105|SGH-S307|SGH-T109|SGH-T119|SGH-T139|SGH-T209|SGH-T219|SGH-T229|SGH-T239|SGH-T249|SGH-T259|SGH-T309|SGH-T319|SGH-T329|SGH-T339|SGH-T349|SGH-T359|SGH-T369|SGH-T379|SGH-T409|SGH-T429|SGH-T439|SGH-T459|SGH-T469|SGH-T479|SGH-T499|SGH-T509|SGH-T519|SGH-T539|SGH-T559|SGH-T589|SGH-T609|SGH-T619|SGH-T629|SGH-T639|SGH-T659|SGH-T669|SGH-T679|SGH-T709|SGH-T719|SGH-T729|SGH-T739|SGH-T746|SGH-T749|SGH-T759|SGH-T769|SGH-T809|SGH-T819|SGH-T839|SGH-T919|SGH-T929|SGH-T939|SGH-T959|SGH-T989|SGH-U100|SGH-U200|SGH-U800|SGH-V205|SGH-V206|SGH-X100|SGH-X105|SGH-X120|SGH-X140|SGH-X426|SGH-X427|SGH-X475|SGH-X495|SGH-X497|SGH-X507|SGH-X600|SGH-X610|SGH-X620|SGH-X630|SGH-X700|SGH-X820|SGH-X890|SGH-Z130|SGH-Z150|SGH-Z170|SGH-ZX10|SGH-ZX20|SHW-M110|SPH-A120|SPH-A400|SPH-A420|SPH-A460|SPH-A500|SPH-A560|SPH-A600|SPH-A620|SPH-A660|SPH-A700|SPH-A740|SPH-A760|SPH-A790|SPH-A800|SPH-A820|SPH-A840|SPH-A880|SPH-A900|SPH-A940|SPH-A960|SPH-D600|SPH-D700|SPH-D710|SPH-D720|SPH-I300|SPH-I325|SPH-I330|SPH-I350|SPH-I500|SPH-I600|SPH-I700|SPH-L700|SPH-M100|SPH-M220|SPH-M240|SPH-M300|SPH-M305|SPH-M320|SPH-M330|SPH-M350|SPH-M360|SPH-M370|SPH-M380|SPH-M510|SPH-M540|SPH-M550|SPH-M560|SPH-M570|SPH-M580|SPH-M610|SPH-M620|SPH-M630|SPH-M800|SPH-M810|SPH-M850|SPH-M900|SPH-M910|SPH-M920|SPH-M930|SPH-N100|SPH-N200|SPH-N240|SPH-N300|SPH-N400|SPH-Z400|SWC-E100|SCH-i909|GT-N7100|GT-N7105|SCH-I535|SM-N900A|SGH-I317|SGH-T999L|GT-S5360B|GT-I8262|GT-S6802|GT-S6312|GT-S6310|GT-S5312|GT-S5310|GT-I9105|GT-I8510|GT-S6790N|SM-G7105|SM-N9005|GT-S5301|GT-I9295|GT-I9195|SM-C101|GT-S7392|GT-S7560|GT-B7610|GT-I5510|GT-S7582|GT-S7530E|GT-I8750|SM-G9006V|SM-G9008V|SM-G9009D|SM-G900A|SM-G900D|SM-G900F|SM-G900H|SM-G900I|SM-G900J|SM-G900K|SM-G900L|SM-G900M|SM-G900P|SM-G900R4|SM-G900S|SM-G900T|SM-G900V|SM-G900W8|SHV-E160K|SCH-P709|SCH-P729|SM-T2558|GT-I9205|SM-G9350|SM-J120F|SM-G920F|SM-G920V|SM-G930F|SM-N910C",
+	        "LG": "\\bLG\\b;|LG[- ]?(C800|C900|E400|E610|E900|E-900|F160|F180K|F180L|F180S|730|855|L160|LS740|LS840|LS970|LU6200|MS690|MS695|MS770|MS840|MS870|MS910|P500|P700|P705|VM696|AS680|AS695|AX840|C729|E970|GS505|272|C395|E739BK|E960|L55C|L75C|LS696|LS860|P769BK|P350|P500|P509|P870|UN272|US730|VS840|VS950|LN272|LN510|LS670|LS855|LW690|MN270|MN510|P509|P769|P930|UN200|UN270|UN510|UN610|US670|US740|US760|UX265|UX840|VN271|VN530|VS660|VS700|VS740|VS750|VS910|VS920|VS930|VX9200|VX11000|AX840A|LW770|P506|P925|P999|E612|D955|D802|MS323)",
+	        "Sony": "SonyST|SonyLT|SonyEricsson|SonyEricssonLT15iv|LT18i|E10i|LT28h|LT26w|SonyEricssonMT27i|C5303|C6902|C6903|C6906|C6943|D2533",
+	        "Asus": "Asus.*Galaxy|PadFone.*Mobile",
+	        "NokiaLumia": "Lumia [0-9]{3,4}",
+	        "Micromax": "Micromax.*\\b(A210|A92|A88|A72|A111|A110Q|A115|A116|A110|A90S|A26|A51|A35|A54|A25|A27|A89|A68|A65|A57|A90)\\b",
+	        "Palm": "PalmSource|Palm",
+	        "Vertu": "Vertu|Vertu.*Ltd|Vertu.*Ascent|Vertu.*Ayxta|Vertu.*Constellation(F|Quest)?|Vertu.*Monika|Vertu.*Signature",
+	        "Pantech": "PANTECH|IM-A850S|IM-A840S|IM-A830L|IM-A830K|IM-A830S|IM-A820L|IM-A810K|IM-A810S|IM-A800S|IM-T100K|IM-A725L|IM-A780L|IM-A775C|IM-A770K|IM-A760S|IM-A750K|IM-A740S|IM-A730S|IM-A720L|IM-A710K|IM-A690L|IM-A690S|IM-A650S|IM-A630K|IM-A600S|VEGA PTL21|PT003|P8010|ADR910L|P6030|P6020|P9070|P4100|P9060|P5000|CDM8992|TXT8045|ADR8995|IS11PT|P2030|P6010|P8000|PT002|IS06|CDM8999|P9050|PT001|TXT8040|P2020|P9020|P2000|P7040|P7000|C790",
+	        "Fly": "IQ230|IQ444|IQ450|IQ440|IQ442|IQ441|IQ245|IQ256|IQ236|IQ255|IQ235|IQ245|IQ275|IQ240|IQ285|IQ280|IQ270|IQ260|IQ250",
+	        "Wiko": "KITE 4G|HIGHWAY|GETAWAY|STAIRWAY|DARKSIDE|DARKFULL|DARKNIGHT|DARKMOON|SLIDE|WAX 4G|RAINBOW|BLOOM|SUNSET|GOA(?!nna)|LENNY|BARRY|IGGY|OZZY|CINK FIVE|CINK PEAX|CINK PEAX 2|CINK SLIM|CINK SLIM 2|CINK +|CINK KING|CINK PEAX|CINK SLIM|SUBLIM",
+	        "iMobile": "i-mobile (IQ|i-STYLE|idea|ZAA|Hitz)",
+	        "SimValley": "\\b(SP-80|XT-930|SX-340|XT-930|SX-310|SP-360|SP60|SPT-800|SP-120|SPT-800|SP-140|SPX-5|SPX-8|SP-100|SPX-8|SPX-12)\\b",
+	        "Wolfgang": "AT-B24D|AT-AS50HD|AT-AS40W|AT-AS55HD|AT-AS45q2|AT-B26D|AT-AS50Q",
+	        "Alcatel": "Alcatel",
+	        "Nintendo": "Nintendo 3DS",
+	        "Amoi": "Amoi",
+	        "INQ": "INQ",
+	        "GenericPhone": "Tapatalk|PDA;|SAGEM|\\bmmp\\b|pocket|\\bpsp\\b|symbian|Smartphone|smartfon|treo|up.browser|up.link|vodafone|\\bwap\\b|nokia|Series40|Series60|S60|SonyEricsson|N900|MAUI.*WAP.*Browser"
+	    },
+	    "tablets": {
+	        "iPad": "iPad|iPad.*Mobile",
+	        "NexusTablet": "Android.*Nexus[\\s]+(7|9|10)",
+	        "SamsungTablet": "SAMSUNG.*Tablet|Galaxy.*Tab|SC-01C|GT-P1000|GT-P1003|GT-P1010|GT-P3105|GT-P6210|GT-P6800|GT-P6810|GT-P7100|GT-P7300|GT-P7310|GT-P7500|GT-P7510|SCH-I800|SCH-I815|SCH-I905|SGH-I957|SGH-I987|SGH-T849|SGH-T859|SGH-T869|SPH-P100|GT-P3100|GT-P3108|GT-P3110|GT-P5100|GT-P5110|GT-P6200|GT-P7320|GT-P7511|GT-N8000|GT-P8510|SGH-I497|SPH-P500|SGH-T779|SCH-I705|SCH-I915|GT-N8013|GT-P3113|GT-P5113|GT-P8110|GT-N8010|GT-N8005|GT-N8020|GT-P1013|GT-P6201|GT-P7501|GT-N5100|GT-N5105|GT-N5110|SHV-E140K|SHV-E140L|SHV-E140S|SHV-E150S|SHV-E230K|SHV-E230L|SHV-E230S|SHW-M180K|SHW-M180L|SHW-M180S|SHW-M180W|SHW-M300W|SHW-M305W|SHW-M380K|SHW-M380S|SHW-M380W|SHW-M430W|SHW-M480K|SHW-M480S|SHW-M480W|SHW-M485W|SHW-M486W|SHW-M500W|GT-I9228|SCH-P739|SCH-I925|GT-I9200|GT-P5200|GT-P5210|GT-P5210X|SM-T311|SM-T310|SM-T310X|SM-T210|SM-T210R|SM-T211|SM-P600|SM-P601|SM-P605|SM-P900|SM-P901|SM-T217|SM-T217A|SM-T217S|SM-P6000|SM-T3100|SGH-I467|XE500|SM-T110|GT-P5220|GT-I9200X|GT-N5110X|GT-N5120|SM-P905|SM-T111|SM-T2105|SM-T315|SM-T320|SM-T320X|SM-T321|SM-T520|SM-T525|SM-T530NU|SM-T230NU|SM-T330NU|SM-T900|XE500T1C|SM-P605V|SM-P905V|SM-T337V|SM-T537V|SM-T707V|SM-T807V|SM-P600X|SM-P900X|SM-T210X|SM-T230|SM-T230X|SM-T325|GT-P7503|SM-T531|SM-T330|SM-T530|SM-T705|SM-T705C|SM-T535|SM-T331|SM-T800|SM-T700|SM-T537|SM-T807|SM-P907A|SM-T337A|SM-T537A|SM-T707A|SM-T807A|SM-T237|SM-T807P|SM-P607T|SM-T217T|SM-T337T|SM-T807T|SM-T116NQ|SM-P550|SM-T350|SM-T550|SM-T9000|SM-P9000|SM-T705Y|SM-T805|GT-P3113|SM-T710|SM-T810|SM-T815|SM-T360|SM-T533|SM-T113|SM-T335|SM-T715|SM-T560|SM-T670|SM-T677|SM-T377|SM-T567|SM-T357T|SM-T555|SM-T561|SM-T713|SM-T719|SM-T813|SM-T819|SM-T580|SM-T355Y|SM-T280|SM-T817A|SM-T820|SM-W700|SM-P580|SM-T587",
+	        "Kindle": "Kindle|Silk.*Accelerated|Android.*\\b(KFOT|KFTT|KFJWI|KFJWA|KFOTE|KFSOWI|KFTHWI|KFTHWA|KFAPWI|KFAPWA|WFJWAE|KFSAWA|KFSAWI|KFASWI|KFARWI|KFFOWI|KFGIWI|KFMEWI)\\b|Android.*Silk\/[0-9.]+ like Chrome\/[0-9.]+ (?!Mobile)",
+	        "SurfaceTablet": "Windows NT [0-9.]+; ARM;.*(Tablet|ARMBJS)",
+	        "HPTablet": "HP Slate (7|8|10)|HP ElitePad 900|hp-tablet|EliteBook.*Touch|HP 8|Slate 21|HP SlateBook 10",
+	        "AsusTablet": "^.*PadFone((?!Mobile).)*$|Transformer|TF101|TF101G|TF300T|TF300TG|TF300TL|TF700T|TF700KL|TF701T|TF810C|ME171|ME301T|ME302C|ME371MG|ME370T|ME372MG|ME172V|ME173X|ME400C|Slider SL101|\\bK00F\\b|\\bK00C\\b|\\bK00E\\b|\\bK00L\\b|TX201LA|ME176C|ME102A|\\bM80TA\\b|ME372CL|ME560CG|ME372CG|ME302KL| K010 | K011 | K017 | K01E |ME572C|ME103K|ME170C|ME171C|\\bME70C\\b|ME581C|ME581CL|ME8510C|ME181C|P01Y|PO1MA|P01Z",
+	        "BlackBerryTablet": "PlayBook|RIM Tablet",
+	        "HTCtablet": "HTC_Flyer_P512|HTC Flyer|HTC Jetstream|HTC-P715a|HTC EVO View 4G|PG41200|PG09410",
+	        "MotorolaTablet": "xoom|sholest|MZ615|MZ605|MZ505|MZ601|MZ602|MZ603|MZ604|MZ606|MZ607|MZ608|MZ609|MZ615|MZ616|MZ617",
+	        "NookTablet": "Android.*Nook|NookColor|nook browser|BNRV200|BNRV200A|BNTV250|BNTV250A|BNTV400|BNTV600|LogicPD Zoom2",
+	        "AcerTablet": "Android.*; \\b(A100|A101|A110|A200|A210|A211|A500|A501|A510|A511|A700|A701|W500|W500P|W501|W501P|W510|W511|W700|G100|G100W|B1-A71|B1-710|B1-711|A1-810|A1-811|A1-830)\\b|W3-810|\\bA3-A10\\b|\\bA3-A11\\b|\\bA3-A20\\b|\\bA3-A30",
+	        "ToshibaTablet": "Android.*(AT100|AT105|AT200|AT205|AT270|AT275|AT300|AT305|AT1S5|AT500|AT570|AT700|AT830)|TOSHIBA.*FOLIO",
+	        "LGTablet": "\\bL-06C|LG-V909|LG-V900|LG-V700|LG-V510|LG-V500|LG-V410|LG-V400|LG-VK810\\b",
+	        "FujitsuTablet": "Android.*\\b(F-01D|F-02F|F-05E|F-10D|M532|Q572)\\b",
+	        "PrestigioTablet": "PMP3170B|PMP3270B|PMP3470B|PMP7170B|PMP3370B|PMP3570C|PMP5870C|PMP3670B|PMP5570C|PMP5770D|PMP3970B|PMP3870C|PMP5580C|PMP5880D|PMP5780D|PMP5588C|PMP7280C|PMP7280C3G|PMP7280|PMP7880D|PMP5597D|PMP5597|PMP7100D|PER3464|PER3274|PER3574|PER3884|PER5274|PER5474|PMP5097CPRO|PMP5097|PMP7380D|PMP5297C|PMP5297C_QUAD|PMP812E|PMP812E3G|PMP812F|PMP810E|PMP880TD|PMT3017|PMT3037|PMT3047|PMT3057|PMT7008|PMT5887|PMT5001|PMT5002",
+	        "LenovoTablet": "Lenovo TAB|Idea(Tab|Pad)( A1|A10| K1|)|ThinkPad([ ]+)?Tablet|YT3-X90L|YT3-X90F|YT3-X90X|Lenovo.*(S2109|S2110|S5000|S6000|K3011|A3000|A3500|A1000|A2107|A2109|A1107|A5500|A7600|B6000|B8000|B8080)(-|)(FL|F|HV|H|)",
+	        "DellTablet": "Venue 11|Venue 8|Venue 7|Dell Streak 10|Dell Streak 7",
+	        "YarvikTablet": "Android.*\\b(TAB210|TAB211|TAB224|TAB250|TAB260|TAB264|TAB310|TAB360|TAB364|TAB410|TAB411|TAB420|TAB424|TAB450|TAB460|TAB461|TAB464|TAB465|TAB467|TAB468|TAB07-100|TAB07-101|TAB07-150|TAB07-151|TAB07-152|TAB07-200|TAB07-201-3G|TAB07-210|TAB07-211|TAB07-212|TAB07-214|TAB07-220|TAB07-400|TAB07-485|TAB08-150|TAB08-200|TAB08-201-3G|TAB08-201-30|TAB09-100|TAB09-211|TAB09-410|TAB10-150|TAB10-201|TAB10-211|TAB10-400|TAB10-410|TAB13-201|TAB274EUK|TAB275EUK|TAB374EUK|TAB462EUK|TAB474EUK|TAB9-200)\\b",
+	        "MedionTablet": "Android.*\\bOYO\\b|LIFE.*(P9212|P9514|P9516|S9512)|LIFETAB",
+	        "ArnovaTablet": "97G4|AN10G2|AN7bG3|AN7fG3|AN8G3|AN8cG3|AN7G3|AN9G3|AN7dG3|AN7dG3ST|AN7dG3ChildPad|AN10bG3|AN10bG3DT|AN9G2",
+	        "IntensoTablet": "INM8002KP|INM1010FP|INM805ND|Intenso Tab|TAB1004",
+	        "IRUTablet": "M702pro",
+	        "MegafonTablet": "MegaFon V9|\\bZTE V9\\b|Android.*\\bMT7A\\b",
+	        "EbodaTablet": "E-Boda (Supreme|Impresspeed|Izzycomm|Essential)",
+	        "AllViewTablet": "Allview.*(Viva|Alldro|City|Speed|All TV|Frenzy|Quasar|Shine|TX1|AX1|AX2)",
+	        "ArchosTablet": "\\b(101G9|80G9|A101IT)\\b|Qilive 97R|Archos5|\\bARCHOS (70|79|80|90|97|101|FAMILYPAD|)(b|c|)(G10| Cobalt| TITANIUM(HD|)| Xenon| Neon|XSK| 2| XS 2| PLATINUM| CARBON|GAMEPAD)\\b",
+	        "AinolTablet": "NOVO7|NOVO8|NOVO10|Novo7Aurora|Novo7Basic|NOVO7PALADIN|novo9-Spark",
+	        "NokiaLumiaTablet": "Lumia 2520",
+	        "SonyTablet": "Sony.*Tablet|Xperia Tablet|Sony Tablet S|SO-03E|SGPT12|SGPT13|SGPT114|SGPT121|SGPT122|SGPT123|SGPT111|SGPT112|SGPT113|SGPT131|SGPT132|SGPT133|SGPT211|SGPT212|SGPT213|SGP311|SGP312|SGP321|EBRD1101|EBRD1102|EBRD1201|SGP351|SGP341|SGP511|SGP512|SGP521|SGP541|SGP551|SGP621|SGP612|SOT31",
+	        "PhilipsTablet": "\\b(PI2010|PI3000|PI3100|PI3105|PI3110|PI3205|PI3210|PI3900|PI4010|PI7000|PI7100)\\b",
+	        "CubeTablet": "Android.*(K8GT|U9GT|U10GT|U16GT|U17GT|U18GT|U19GT|U20GT|U23GT|U30GT)|CUBE U8GT",
+	        "CobyTablet": "MID1042|MID1045|MID1125|MID1126|MID7012|MID7014|MID7015|MID7034|MID7035|MID7036|MID7042|MID7048|MID7127|MID8042|MID8048|MID8127|MID9042|MID9740|MID9742|MID7022|MID7010",
+	        "MIDTablet": "M9701|M9000|M9100|M806|M1052|M806|T703|MID701|MID713|MID710|MID727|MID760|MID830|MID728|MID933|MID125|MID810|MID732|MID120|MID930|MID800|MID731|MID900|MID100|MID820|MID735|MID980|MID130|MID833|MID737|MID960|MID135|MID860|MID736|MID140|MID930|MID835|MID733|MID4X10",
+	        "MSITablet": "MSI \\b(Primo 73K|Primo 73L|Primo 81L|Primo 77|Primo 93|Primo 75|Primo 76|Primo 73|Primo 81|Primo 91|Primo 90|Enjoy 71|Enjoy 7|Enjoy 10)\\b",
+	        "SMiTTablet": "Android.*(\\bMID\\b|MID-560|MTV-T1200|MTV-PND531|MTV-P1101|MTV-PND530)",
+	        "RockChipTablet": "Android.*(RK2818|RK2808A|RK2918|RK3066)|RK2738|RK2808A",
+	        "FlyTablet": "IQ310|Fly Vision",
+	        "bqTablet": "Android.*(bq)?.*(Elcano|Curie|Edison|Maxwell|Kepler|Pascal|Tesla|Hypatia|Platon|Newton|Livingstone|Cervantes|Avant|Aquaris [E|M]10)|Maxwell.*Lite|Maxwell.*Plus",
+	        "HuaweiTablet": "MediaPad|MediaPad 7 Youth|IDEOS S7|S7-201c|S7-202u|S7-101|S7-103|S7-104|S7-105|S7-106|S7-201|S7-Slim",
+	        "NecTablet": "\\bN-06D|\\bN-08D",
+	        "PantechTablet": "Pantech.*P4100",
+	        "BronchoTablet": "Broncho.*(N701|N708|N802|a710)",
+	        "VersusTablet": "TOUCHPAD.*[78910]|\\bTOUCHTAB\\b",
+	        "ZyncTablet": "z1000|Z99 2G|z99|z930|z999|z990|z909|Z919|z900",
+	        "PositivoTablet": "TB07STA|TB10STA|TB07FTA|TB10FTA",
+	        "NabiTablet": "Android.*\\bNabi",
+	        "KoboTablet": "Kobo Touch|\\bK080\\b|\\bVox\\b Build|\\bArc\\b Build",
+	        "DanewTablet": "DSlide.*\\b(700|701R|702|703R|704|802|970|971|972|973|974|1010|1012)\\b",
+	        "TexetTablet": "NaviPad|TB-772A|TM-7045|TM-7055|TM-9750|TM-7016|TM-7024|TM-7026|TM-7041|TM-7043|TM-7047|TM-8041|TM-9741|TM-9747|TM-9748|TM-9751|TM-7022|TM-7021|TM-7020|TM-7011|TM-7010|TM-7023|TM-7025|TM-7037W|TM-7038W|TM-7027W|TM-9720|TM-9725|TM-9737W|TM-1020|TM-9738W|TM-9740|TM-9743W|TB-807A|TB-771A|TB-727A|TB-725A|TB-719A|TB-823A|TB-805A|TB-723A|TB-715A|TB-707A|TB-705A|TB-709A|TB-711A|TB-890HD|TB-880HD|TB-790HD|TB-780HD|TB-770HD|TB-721HD|TB-710HD|TB-434HD|TB-860HD|TB-840HD|TB-760HD|TB-750HD|TB-740HD|TB-730HD|TB-722HD|TB-720HD|TB-700HD|TB-500HD|TB-470HD|TB-431HD|TB-430HD|TB-506|TB-504|TB-446|TB-436|TB-416|TB-146SE|TB-126SE",
+	        "PlaystationTablet": "Playstation.*(Portable|Vita)",
+	        "TrekstorTablet": "ST10416-1|VT10416-1|ST70408-1|ST702xx-1|ST702xx-2|ST80208|ST97216|ST70104-2|VT10416-2|ST10216-2A|SurfTab",
+	        "PyleAudioTablet": "\\b(PTBL10CEU|PTBL10C|PTBL72BC|PTBL72BCEU|PTBL7CEU|PTBL7C|PTBL92BC|PTBL92BCEU|PTBL9CEU|PTBL9CUK|PTBL9C)\\b",
+	        "AdvanTablet": "Android.* \\b(E3A|T3X|T5C|T5B|T3E|T3C|T3B|T1J|T1F|T2A|T1H|T1i|E1C|T1-E|T5-A|T4|E1-B|T2Ci|T1-B|T1-D|O1-A|E1-A|T1-A|T3A|T4i)\\b ",
+	        "DanyTechTablet": "Genius Tab G3|Genius Tab S2|Genius Tab Q3|Genius Tab G4|Genius Tab Q4|Genius Tab G-II|Genius TAB GII|Genius TAB GIII|Genius Tab S1",
+	        "GalapadTablet": "Android.*\\bG1\\b",
+	        "MicromaxTablet": "Funbook|Micromax.*\\b(P250|P560|P360|P362|P600|P300|P350|P500|P275)\\b",
+	        "KarbonnTablet": "Android.*\\b(A39|A37|A34|ST8|ST10|ST7|Smart Tab3|Smart Tab2)\\b",
+	        "AllFineTablet": "Fine7 Genius|Fine7 Shine|Fine7 Air|Fine8 Style|Fine9 More|Fine10 Joy|Fine11 Wide",
+	        "PROSCANTablet": "\\b(PEM63|PLT1023G|PLT1041|PLT1044|PLT1044G|PLT1091|PLT4311|PLT4311PL|PLT4315|PLT7030|PLT7033|PLT7033D|PLT7035|PLT7035D|PLT7044K|PLT7045K|PLT7045KB|PLT7071KG|PLT7072|PLT7223G|PLT7225G|PLT7777G|PLT7810K|PLT7849G|PLT7851G|PLT7852G|PLT8015|PLT8031|PLT8034|PLT8036|PLT8080K|PLT8082|PLT8088|PLT8223G|PLT8234G|PLT8235G|PLT8816K|PLT9011|PLT9045K|PLT9233G|PLT9735|PLT9760G|PLT9770G)\\b",
+	        "YONESTablet": "BQ1078|BC1003|BC1077|RK9702|BC9730|BC9001|IT9001|BC7008|BC7010|BC708|BC728|BC7012|BC7030|BC7027|BC7026",
+	        "ChangJiaTablet": "TPC7102|TPC7103|TPC7105|TPC7106|TPC7107|TPC7201|TPC7203|TPC7205|TPC7210|TPC7708|TPC7709|TPC7712|TPC7110|TPC8101|TPC8103|TPC8105|TPC8106|TPC8203|TPC8205|TPC8503|TPC9106|TPC9701|TPC97101|TPC97103|TPC97105|TPC97106|TPC97111|TPC97113|TPC97203|TPC97603|TPC97809|TPC97205|TPC10101|TPC10103|TPC10106|TPC10111|TPC10203|TPC10205|TPC10503",
+	        "GUTablet": "TX-A1301|TX-M9002|Q702|kf026",
+	        "PointOfViewTablet": "TAB-P506|TAB-navi-7-3G-M|TAB-P517|TAB-P-527|TAB-P701|TAB-P703|TAB-P721|TAB-P731N|TAB-P741|TAB-P825|TAB-P905|TAB-P925|TAB-PR945|TAB-PL1015|TAB-P1025|TAB-PI1045|TAB-P1325|TAB-PROTAB[0-9]+|TAB-PROTAB25|TAB-PROTAB26|TAB-PROTAB27|TAB-PROTAB26XL|TAB-PROTAB2-IPS9|TAB-PROTAB30-IPS9|TAB-PROTAB25XXL|TAB-PROTAB26-IPS10|TAB-PROTAB30-IPS10",
+	        "OvermaxTablet": "OV-(SteelCore|NewBase|Basecore|Baseone|Exellen|Quattor|EduTab|Solution|ACTION|BasicTab|TeddyTab|MagicTab|Stream|TB-08|TB-09)",
+	        "HCLTablet": "HCL.*Tablet|Connect-3G-2.0|Connect-2G-2.0|ME Tablet U1|ME Tablet U2|ME Tablet G1|ME Tablet X1|ME Tablet Y2|ME Tablet Sync",
+	        "DPSTablet": "DPS Dream 9|DPS Dual 7",
+	        "VistureTablet": "V97 HD|i75 3G|Visture V4( HD)?|Visture V5( HD)?|Visture V10",
+	        "CrestaTablet": "CTP(-)?810|CTP(-)?818|CTP(-)?828|CTP(-)?838|CTP(-)?888|CTP(-)?978|CTP(-)?980|CTP(-)?987|CTP(-)?988|CTP(-)?989",
+	        "MediatekTablet": "\\bMT8125|MT8389|MT8135|MT8377\\b",
+	        "ConcordeTablet": "Concorde([ ]+)?Tab|ConCorde ReadMan",
+	        "GoCleverTablet": "GOCLEVER TAB|A7GOCLEVER|M1042|M7841|M742|R1042BK|R1041|TAB A975|TAB A7842|TAB A741|TAB A741L|TAB M723G|TAB M721|TAB A1021|TAB I921|TAB R721|TAB I720|TAB T76|TAB R70|TAB R76.2|TAB R106|TAB R83.2|TAB M813G|TAB I721|GCTA722|TAB I70|TAB I71|TAB S73|TAB R73|TAB R74|TAB R93|TAB R75|TAB R76.1|TAB A73|TAB A93|TAB A93.2|TAB T72|TAB R83|TAB R974|TAB R973|TAB A101|TAB A103|TAB A104|TAB A104.2|R105BK|M713G|A972BK|TAB A971|TAB R974.2|TAB R104|TAB R83.3|TAB A1042",
+	        "ModecomTablet": "FreeTAB 9000|FreeTAB 7.4|FreeTAB 7004|FreeTAB 7800|FreeTAB 2096|FreeTAB 7.5|FreeTAB 1014|FreeTAB 1001 |FreeTAB 8001|FreeTAB 9706|FreeTAB 9702|FreeTAB 7003|FreeTAB 7002|FreeTAB 1002|FreeTAB 7801|FreeTAB 1331|FreeTAB 1004|FreeTAB 8002|FreeTAB 8014|FreeTAB 9704|FreeTAB 1003",
+	        "VoninoTablet": "\\b(Argus[ _]?S|Diamond[ _]?79HD|Emerald[ _]?78E|Luna[ _]?70C|Onyx[ _]?S|Onyx[ _]?Z|Orin[ _]?HD|Orin[ _]?S|Otis[ _]?S|SpeedStar[ _]?S|Magnet[ _]?M9|Primus[ _]?94[ _]?3G|Primus[ _]?94HD|Primus[ _]?QS|Android.*\\bQ8\\b|Sirius[ _]?EVO[ _]?QS|Sirius[ _]?QS|Spirit[ _]?S)\\b",
+	        "ECSTablet": "V07OT2|TM105A|S10OT1|TR10CS1",
+	        "StorexTablet": "eZee[_']?(Tab|Go)[0-9]+|TabLC7|Looney Tunes Tab",
+	        "VodafoneTablet": "SmartTab([ ]+)?[0-9]+|SmartTabII10|SmartTabII7|VF-1497",
+	        "EssentielBTablet": "Smart[ ']?TAB[ ]+?[0-9]+|Family[ ']?TAB2",
+	        "RossMoorTablet": "RM-790|RM-997|RMD-878G|RMD-974R|RMT-705A|RMT-701|RME-601|RMT-501|RMT-711",
+	        "iMobileTablet": "i-mobile i-note",
+	        "TolinoTablet": "tolino tab [0-9.]+|tolino shine",
+	        "AudioSonicTablet": "\\bC-22Q|T7-QC|T-17B|T-17P\\b",
+	        "AMPETablet": "Android.* A78 ",
+	        "SkkTablet": "Android.* (SKYPAD|PHOENIX|CYCLOPS)",
+	        "TecnoTablet": "TECNO P9",
+	        "JXDTablet": "Android.* \\b(F3000|A3300|JXD5000|JXD3000|JXD2000|JXD300B|JXD300|S5800|S7800|S602b|S5110b|S7300|S5300|S602|S603|S5100|S5110|S601|S7100a|P3000F|P3000s|P101|P200s|P1000m|P200m|P9100|P1000s|S6600b|S908|P1000|P300|S18|S6600|S9100)\\b",
+	        "iJoyTablet": "Tablet (Spirit 7|Essentia|Galatea|Fusion|Onix 7|Landa|Titan|Scooby|Deox|Stella|Themis|Argon|Unique 7|Sygnus|Hexen|Finity 7|Cream|Cream X2|Jade|Neon 7|Neron 7|Kandy|Scape|Saphyr 7|Rebel|Biox|Rebel|Rebel 8GB|Myst|Draco 7|Myst|Tab7-004|Myst|Tadeo Jones|Tablet Boing|Arrow|Draco Dual Cam|Aurix|Mint|Amity|Revolution|Finity 9|Neon 9|T9w|Amity 4GB Dual Cam|Stone 4GB|Stone 8GB|Andromeda|Silken|X2|Andromeda II|Halley|Flame|Saphyr 9,7|Touch 8|Planet|Triton|Unique 10|Hexen 10|Memphis 4GB|Memphis 8GB|Onix 10)",
+	        "FX2Tablet": "FX2 PAD7|FX2 PAD10",
+	        "XoroTablet": "KidsPAD 701|PAD[ ]?712|PAD[ ]?714|PAD[ ]?716|PAD[ ]?717|PAD[ ]?718|PAD[ ]?720|PAD[ ]?721|PAD[ ]?722|PAD[ ]?790|PAD[ ]?792|PAD[ ]?900|PAD[ ]?9715D|PAD[ ]?9716DR|PAD[ ]?9718DR|PAD[ ]?9719QR|PAD[ ]?9720QR|TelePAD1030|Telepad1032|TelePAD730|TelePAD731|TelePAD732|TelePAD735Q|TelePAD830|TelePAD9730|TelePAD795|MegaPAD 1331|MegaPAD 1851|MegaPAD 2151",
+	        "ViewsonicTablet": "ViewPad 10pi|ViewPad 10e|ViewPad 10s|ViewPad E72|ViewPad7|ViewPad E100|ViewPad 7e|ViewSonic VB733|VB100a",
+	        "OdysTablet": "LOOX|XENO10|ODYS[ -](Space|EVO|Xpress|NOON)|\\bXELIO\\b|Xelio10Pro|XELIO7PHONETAB|XELIO10EXTREME|XELIOPT2|NEO_QUAD10",
+	        "CaptivaTablet": "CAPTIVA PAD",
+	        "IconbitTablet": "NetTAB|NT-3702|NT-3702S|NT-3702S|NT-3603P|NT-3603P|NT-0704S|NT-0704S|NT-3805C|NT-3805C|NT-0806C|NT-0806C|NT-0909T|NT-0909T|NT-0907S|NT-0907S|NT-0902S|NT-0902S",
+	        "TeclastTablet": "T98 4G|\\bP80\\b|\\bX90HD\\b|X98 Air|X98 Air 3G|\\bX89\\b|P80 3G|\\bX80h\\b|P98 Air|\\bX89HD\\b|P98 3G|\\bP90HD\\b|P89 3G|X98 3G|\\bP70h\\b|P79HD 3G|G18d 3G|\\bP79HD\\b|\\bP89s\\b|\\bA88\\b|\\bP10HD\\b|\\bP19HD\\b|G18 3G|\\bP78HD\\b|\\bA78\\b|\\bP75\\b|G17s 3G|G17h 3G|\\bP85t\\b|\\bP90\\b|\\bP11\\b|\\bP98t\\b|\\bP98HD\\b|\\bG18d\\b|\\bP85s\\b|\\bP11HD\\b|\\bP88s\\b|\\bA80HD\\b|\\bA80se\\b|\\bA10h\\b|\\bP89\\b|\\bP78s\\b|\\bG18\\b|\\bP85\\b|\\bA70h\\b|\\bA70\\b|\\bG17\\b|\\bP18\\b|\\bA80s\\b|\\bA11s\\b|\\bP88HD\\b|\\bA80h\\b|\\bP76s\\b|\\bP76h\\b|\\bP98\\b|\\bA10HD\\b|\\bP78\\b|\\bP88\\b|\\bA11\\b|\\bA10t\\b|\\bP76a\\b|\\bP76t\\b|\\bP76e\\b|\\bP85HD\\b|\\bP85a\\b|\\bP86\\b|\\bP75HD\\b|\\bP76v\\b|\\bA12\\b|\\bP75a\\b|\\bA15\\b|\\bP76Ti\\b|\\bP81HD\\b|\\bA10\\b|\\bT760VE\\b|\\bT720HD\\b|\\bP76\\b|\\bP73\\b|\\bP71\\b|\\bP72\\b|\\bT720SE\\b|\\bC520Ti\\b|\\bT760\\b|\\bT720VE\\b|T720-3GE|T720-WiFi",
+	        "OndaTablet": "\\b(V975i|Vi30|VX530|V701|Vi60|V701s|Vi50|V801s|V719|Vx610w|VX610W|V819i|Vi10|VX580W|Vi10|V711s|V813|V811|V820w|V820|Vi20|V711|VI30W|V712|V891w|V972|V819w|V820w|Vi60|V820w|V711|V813s|V801|V819|V975s|V801|V819|V819|V818|V811|V712|V975m|V101w|V961w|V812|V818|V971|V971s|V919|V989|V116w|V102w|V973|Vi40)\\b[\\s]+",
+	        "JaytechTablet": "TPC-PA762",
+	        "BlaupunktTablet": "Endeavour 800NG|Endeavour 1010",
+	        "DigmaTablet": "\\b(iDx10|iDx9|iDx8|iDx7|iDxD7|iDxD8|iDsQ8|iDsQ7|iDsQ8|iDsD10|iDnD7|3TS804H|iDsQ11|iDj7|iDs10)\\b",
+	        "EvolioTablet": "ARIA_Mini_wifi|Aria[ _]Mini|Evolio X10|Evolio X7|Evolio X8|\\bEvotab\\b|\\bNeura\\b",
+	        "LavaTablet": "QPAD E704|\\bIvoryS\\b|E-TAB IVORY|\\bE-TAB\\b",
+	        "AocTablet": "MW0811|MW0812|MW0922|MTK8382|MW1031|MW0831|MW0821|MW0931|MW0712",
+	        "MpmanTablet": "MP11 OCTA|MP10 OCTA|MPQC1114|MPQC1004|MPQC994|MPQC974|MPQC973|MPQC804|MPQC784|MPQC780|\\bMPG7\\b|MPDCG75|MPDCG71|MPDC1006|MP101DC|MPDC9000|MPDC905|MPDC706HD|MPDC706|MPDC705|MPDC110|MPDC100|MPDC99|MPDC97|MPDC88|MPDC8|MPDC77|MP709|MID701|MID711|MID170|MPDC703|MPQC1010",
+	        "CelkonTablet": "CT695|CT888|CT[\\s]?910|CT7 Tab|CT9 Tab|CT3 Tab|CT2 Tab|CT1 Tab|C820|C720|\\bCT-1\\b",
+	        "WolderTablet": "miTab \\b(DIAMOND|SPACE|BROOKLYN|NEO|FLY|MANHATTAN|FUNK|EVOLUTION|SKY|GOCAR|IRON|GENIUS|POP|MINT|EPSILON|BROADWAY|JUMP|HOP|LEGEND|NEW AGE|LINE|ADVANCE|FEEL|FOLLOW|LIKE|LINK|LIVE|THINK|FREEDOM|CHICAGO|CLEVELAND|BALTIMORE-GH|IOWA|BOSTON|SEATTLE|PHOENIX|DALLAS|IN 101|MasterChef)\\b",
+	        "MiTablet": "\\bMI PAD\\b|\\bHM NOTE 1W\\b",
+	        "NibiruTablet": "Nibiru M1|Nibiru Jupiter One",
+	        "NexoTablet": "NEXO NOVA|NEXO 10|NEXO AVIO|NEXO FREE|NEXO GO|NEXO EVO|NEXO 3G|NEXO SMART|NEXO KIDDO|NEXO MOBI",
+	        "LeaderTablet": "TBLT10Q|TBLT10I|TBL-10WDKB|TBL-10WDKBO2013|TBL-W230V2|TBL-W450|TBL-W500|SV572|TBLT7I|TBA-AC7-8G|TBLT79|TBL-8W16|TBL-10W32|TBL-10WKB|TBL-W100",
+	        "UbislateTablet": "UbiSlate[\\s]?7C",
+	        "PocketBookTablet": "Pocketbook",
+	        "KocasoTablet": "\\b(TB-1207)\\b",
+	        "HisenseTablet": "\\b(F5281|E2371)\\b",
+	        "Hudl": "Hudl HT7S3|Hudl 2",
+	        "TelstraTablet": "T-Hub2",
+	        "GenericTablet": "Android.*\\b97D\\b|Tablet(?!.*PC)|BNTV250A|MID-WCDMA|LogicPD Zoom2|\\bA7EB\\b|CatNova8|A1_07|CT704|CT1002|\\bM721\\b|rk30sdk|\\bEVOTAB\\b|M758A|ET904|ALUMIUM10|Smartfren Tab|Endeavour 1010|Tablet-PC-4|Tagi Tab|\\bM6pro\\b|CT1020W|arc 10HD|\\bTP750\\b"
+	    },
+	    "oss": {
+	        "AndroidOS": "Android",
+	        "BlackBerryOS": "blackberry|\\bBB10\\b|rim tablet os",
+	        "PalmOS": "PalmOS|avantgo|blazer|elaine|hiptop|palm|plucker|xiino",
+	        "SymbianOS": "Symbian|SymbOS|Series60|Series40|SYB-[0-9]+|\\bS60\\b",
+	        "WindowsMobileOS": "Windows CE.*(PPC|Smartphone|Mobile|[0-9]{3}x[0-9]{3})|Window Mobile|Windows Phone [0-9.]+|WCE;",
+	        "WindowsPhoneOS": "Windows Phone 10.0|Windows Phone 8.1|Windows Phone 8.0|Windows Phone OS|XBLWP7|ZuneWP7|Windows NT 6.[23]; ARM;",
+	        "iOS": "\\biPhone.*Mobile|\\biPod|\\biPad",
+	        "MeeGoOS": "MeeGo",
+	        "MaemoOS": "Maemo",
+	        "JavaOS": "J2ME\/|\\bMIDP\\b|\\bCLDC\\b",
+	        "webOS": "webOS|hpwOS",
+	        "badaOS": "\\bBada\\b",
+	        "BREWOS": "BREW"
+	    },
+	    "uas": {
+	        "Chrome": "\\bCrMo\\b|CriOS|Android.*Chrome\/[.0-9]* (Mobile)?",
+	        "Dolfin": "\\bDolfin\\b",
+	        "Opera": "Opera.*Mini|Opera.*Mobi|Android.*Opera|Mobile.*OPR\/[0-9.]+|Coast\/[0-9.]+",
+	        "Skyfire": "Skyfire",
+	        "Edge": "Mobile Safari\/[.0-9]* Edge",
+	        "IE": "IEMobile|MSIEMobile",
+	        "Firefox": "fennec|firefox.*maemo|(Mobile|Tablet).*Firefox|Firefox.*Mobile|FxiOS",
+	        "Bolt": "bolt",
+	        "TeaShark": "teashark",
+	        "Blazer": "Blazer",
+	        "Safari": "Version.*Mobile.*Safari|Safari.*Mobile|MobileSafari",
+	        "UCBrowser": "UC.*Browser|UCWEB",
+	        "baiduboxapp": "baiduboxapp",
+	        "baidubrowser": "baidubrowser",
+	        "DiigoBrowser": "DiigoBrowser",
+	        "Puffin": "Puffin",
+	        "Mercury": "\\bMercury\\b",
+	        "ObigoBrowser": "Obigo",
+	        "NetFront": "NF-Browser",
+	        "GenericBrowser": "NokiaBrowser|OviBrowser|OneBrowser|TwonkyBeamBrowser|SEMC.*Browser|FlyFlow|Minimo|NetFront|Novarra-Vision|MQQBrowser|MicroMessenger",
+	        "PaleMoon": "Android.*PaleMoon|Mobile.*PaleMoon"
+	    },
+	    "props": {
+	        "Mobile": "Mobile\/[VER]",
+	        "Build": "Build\/[VER]",
+	        "Version": "Version\/[VER]",
+	        "VendorID": "VendorID\/[VER]",
+	        "iPad": "iPad.*CPU[a-z ]+[VER]",
+	        "iPhone": "iPhone.*CPU[a-z ]+[VER]",
+	        "iPod": "iPod.*CPU[a-z ]+[VER]",
+	        "Kindle": "Kindle\/[VER]",
+	        "Chrome": [
+	            "Chrome\/[VER]",
+	            "CriOS\/[VER]",
+	            "CrMo\/[VER]"
+	        ],
+	        "Coast": [
+	            "Coast\/[VER]"
+	        ],
+	        "Dolfin": "Dolfin\/[VER]",
+	        "Firefox": [
+	            "Firefox\/[VER]",
+	            "FxiOS\/[VER]"
+	        ],
+	        "Fennec": "Fennec\/[VER]",
+	        "Edge": "Edge\/[VER]",
+	        "IE": [
+	            "IEMobile\/[VER];",
+	            "IEMobile [VER]",
+	            "MSIE [VER];",
+	            "Trident\/[0-9.]+;.*rv:[VER]"
+	        ],
+	        "NetFront": "NetFront\/[VER]",
+	        "NokiaBrowser": "NokiaBrowser\/[VER]",
+	        "Opera": [
+	            " OPR\/[VER]",
+	            "Opera Mini\/[VER]",
+	            "Version\/[VER]"
+	        ],
+	        "Opera Mini": "Opera Mini\/[VER]",
+	        "Opera Mobi": "Version\/[VER]",
+	        "UC Browser": "UC Browser[VER]",
+	        "MQQBrowser": "MQQBrowser\/[VER]",
+	        "MicroMessenger": "MicroMessenger\/[VER]",
+	        "baiduboxapp": "baiduboxapp\/[VER]",
+	        "baidubrowser": "baidubrowser\/[VER]",
+	        "SamsungBrowser": "SamsungBrowser\/[VER]",
+	        "Iron": "Iron\/[VER]",
+	        "Safari": [
+	            "Version\/[VER]",
+	            "Safari\/[VER]"
+	        ],
+	        "Skyfire": "Skyfire\/[VER]",
+	        "Tizen": "Tizen\/[VER]",
+	        "Webkit": "webkit[ \/][VER]",
+	        "PaleMoon": "PaleMoon\/[VER]",
+	        "Gecko": "Gecko\/[VER]",
+	        "Trident": "Trident\/[VER]",
+	        "Presto": "Presto\/[VER]",
+	        "Goanna": "Goanna\/[VER]",
+	        "iOS": " \\bi?OS\\b [VER][ ;]{1}",
+	        "Android": "Android [VER]",
+	        "BlackBerry": [
+	            "BlackBerry[\\w]+\/[VER]",
+	            "BlackBerry.*Version\/[VER]",
+	            "Version\/[VER]"
+	        ],
+	        "BREW": "BREW [VER]",
+	        "Java": "Java\/[VER]",
+	        "Windows Phone OS": [
+	            "Windows Phone OS [VER]",
+	            "Windows Phone [VER]"
+	        ],
+	        "Windows Phone": "Windows Phone [VER]",
+	        "Windows CE": "Windows CE\/[VER]",
+	        "Windows NT": "Windows NT [VER]",
+	        "Symbian": [
+	            "SymbianOS\/[VER]",
+	            "Symbian\/[VER]"
+	        ],
+	        "webOS": [
+	            "webOS\/[VER]",
+	            "hpwOS\/[VER];"
+	        ]
+	    },
+	    "utils": {
+	        "Bot": "Googlebot|facebookexternalhit|AdsBot-Google|Google Keyword Suggestion|Facebot|YandexBot|YandexMobileBot|bingbot|ia_archiver|AhrefsBot|Ezooms|GSLFbot|WBSearchBot|Twitterbot|TweetmemeBot|Twikle|PaperLiBot|Wotbox|UnwindFetchor|Exabot|MJ12bot|YandexImages|TurnitinBot|Pingdom",
+	        "MobileBot": "Googlebot-Mobile|AdsBot-Google-Mobile|YahooSeeker\/M1A1-R2D2",
+	        "DesktopMode": "WPDesktop",
+	        "TV": "SonyDTV|HbbTV",
+	        "WebKit": "(webkit)[ \/]([\\w.]+)",
+	        "Console": "\\b(Nintendo|Nintendo WiiU|Nintendo 3DS|PLAYSTATION|Xbox)\\b",
+	        "Watch": "SM-V700"
+	    }
+	};
+	
+	    // following patterns come from http://detectmobilebrowsers.com/
+	    impl.detectMobileBrowsers = {
+	        fullPattern: /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i,
+	        shortPattern: /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i,
+	        tabletPattern: /android|ipad|playbook|silk/i
+	    };
+	
+	    var hasOwnProp = Object.prototype.hasOwnProperty,
+	        isArray;
+	
+	    impl.FALLBACK_PHONE = 'UnknownPhone';
+	    impl.FALLBACK_TABLET = 'UnknownTablet';
+	    impl.FALLBACK_MOBILE = 'UnknownMobile';
+	
+	    isArray = ('isArray' in Array) ?
+	        Array.isArray : function (value) { return Object.prototype.toString.call(value) === '[object Array]'; };
+	
+	    function equalIC(a, b) {
+	        return a != null && b != null && a.toLowerCase() === b.toLowerCase();
+	    }
+	
+	    function containsIC(array, value) {
+	        var valueLC, i, len = array.length;
+	        if (!len || !value) {
+	            return false;
+	        }
+	        valueLC = value.toLowerCase();
+	        for (i = 0; i < len; ++i) {
+	            if (valueLC === array[i].toLowerCase()) {
+	                return true;
+	            }
+	        }
+	        return false;
+	    }
+	
+	    function convertPropsToRegExp(object) {
+	        for (var key in object) {
+	            if (hasOwnProp.call(object, key)) {
+	                object[key] = new RegExp(object[key], 'i');
+	            }
+	        }
+	    }
+	
+	    (function init() {
+	        var key, values, value, i, len, verPos, mobileDetectRules = impl.mobileDetectRules;
+	        for (key in mobileDetectRules.props) {
+	            if (hasOwnProp.call(mobileDetectRules.props, key)) {
+	                values = mobileDetectRules.props[key];
+	                if (!isArray(values)) {
+	                    values = [values];
+	                }
+	                len = values.length;
+	                for (i = 0; i < len; ++i) {
+	                    value = values[i];
+	                    verPos = value.indexOf('[VER]');
+	                    if (verPos >= 0) {
+	                        value = value.substring(0, verPos) + '([\\w._\\+]+)' + value.substring(verPos + 5);
+	                    }
+	                    values[i] = new RegExp(value, 'i');
+	                }
+	                mobileDetectRules.props[key] = values;
+	            }
+	        }
+	        convertPropsToRegExp(mobileDetectRules.oss);
+	        convertPropsToRegExp(mobileDetectRules.phones);
+	        convertPropsToRegExp(mobileDetectRules.tablets);
+	        convertPropsToRegExp(mobileDetectRules.uas);
+	        convertPropsToRegExp(mobileDetectRules.utils);
+	
+	        // copy some patterns to oss0 which are tested first (see issue#15)
+	        mobileDetectRules.oss0 = {
+	            WindowsPhoneOS: mobileDetectRules.oss.WindowsPhoneOS,
+	            WindowsMobileOS: mobileDetectRules.oss.WindowsMobileOS
+	        };
+	    }());
+	
+	    /**
+	     * Test userAgent string against a set of rules and find the first matched key.
+	     * @param {Object} rules (key is String, value is RegExp)
+	     * @param {String} userAgent the navigator.userAgent (or HTTP-Header 'User-Agent').
+	     * @returns {String|null} the matched key if found, otherwise <tt>null</tt>
+	     * @private
+	     */
+	    impl.findMatch = function(rules, userAgent) {
+	        for (var key in rules) {
+	            if (hasOwnProp.call(rules, key)) {
+	                if (rules[key].test(userAgent)) {
+	                    return key;
+	                }
+	            }
+	        }
+	        return null;
+	    };
+	
+	    /**
+	     * Test userAgent string against a set of rules and return an array of matched keys.
+	     * @param {Object} rules (key is String, value is RegExp)
+	     * @param {String} userAgent the navigator.userAgent (or HTTP-Header 'User-Agent').
+	     * @returns {Array} an array of matched keys, may be empty when there is no match, but not <tt>null</tt>
+	     * @private
+	     */
+	    impl.findMatches = function(rules, userAgent) {
+	        var result = [];
+	        for (var key in rules) {
+	            if (hasOwnProp.call(rules, key)) {
+	                if (rules[key].test(userAgent)) {
+	                    result.push(key);
+	                }
+	            }
+	        }
+	        return result;
+	    };
+	
+	    /**
+	     * Check the version of the given property in the User-Agent.
+	     *
+	     * @param {String} propertyName
+	     * @param {String} userAgent
+	     * @return {String} version or <tt>null</tt> if version not found
+	     * @private
+	     */
+	    impl.getVersionStr = function (propertyName, userAgent) {
+	        var props = impl.mobileDetectRules.props, patterns, i, len, match;
+	        if (hasOwnProp.call(props, propertyName)) {
+	            patterns = props[propertyName];
+	            len = patterns.length;
+	            for (i = 0; i < len; ++i) {
+	                match = patterns[i].exec(userAgent);
+	                if (match !== null) {
+	                    return match[1];
+	                }
+	            }
+	        }
+	        return null;
+	    };
+	
+	    /**
+	     * Check the version of the given property in the User-Agent.
+	     * Will return a float number. (eg. 2_0 will return 2.0, 4.3.1 will return 4.31)
+	     *
+	     * @param {String} propertyName
+	     * @param {String} userAgent
+	     * @return {Number} version or <tt>NaN</tt> if version not found
+	     * @private
+	     */
+	    impl.getVersion = function (propertyName, userAgent) {
+	        var version = impl.getVersionStr(propertyName, userAgent);
+	        return version ? impl.prepareVersionNo(version) : NaN;
+	    };
+	
+	    /**
+	     * Prepare the version number.
+	     *
+	     * @param {String} version
+	     * @return {Number} the version number as a floating number
+	     * @private
+	     */
+	    impl.prepareVersionNo = function (version) {
+	        var numbers;
+	
+	        numbers = version.split(/[a-z._ \/\-]/i);
+	        if (numbers.length === 1) {
+	            version = numbers[0];
+	        }
+	        if (numbers.length > 1) {
+	            version = numbers[0] + '.';
+	            numbers.shift();
+	            version += numbers.join('');
+	        }
+	        return Number(version);
+	    };
+	
+	    impl.isMobileFallback = function (userAgent) {
+	        return impl.detectMobileBrowsers.fullPattern.test(userAgent) ||
+	            impl.detectMobileBrowsers.shortPattern.test(userAgent.substr(0,4));
+	    };
+	
+	    impl.isTabletFallback = function (userAgent) {
+	        return impl.detectMobileBrowsers.tabletPattern.test(userAgent);
+	    };
+	
+	    impl.prepareDetectionCache = function (cache, userAgent, maxPhoneWidth) {
+	        if (cache.mobile !== undefined) {
+	            return;
+	        }
+	        var phone, tablet, phoneSized;
+	
+	        // first check for stronger tablet rules, then phone (see issue#5)
+	        tablet = impl.findMatch(impl.mobileDetectRules.tablets, userAgent);
+	        if (tablet) {
+	            cache.mobile = cache.tablet = tablet;
+	            cache.phone = null;
+	            return; // unambiguously identified as tablet
+	        }
+	
+	        phone = impl.findMatch(impl.mobileDetectRules.phones, userAgent);
+	        if (phone) {
+	            cache.mobile = cache.phone = phone;
+	            cache.tablet = null;
+	            return; // unambiguously identified as phone
+	        }
+	
+	        // our rules haven't found a match -> try more general fallback rules
+	        if (impl.isMobileFallback(userAgent)) {
+	            phoneSized = MobileDetect.isPhoneSized(maxPhoneWidth);
+	            if (phoneSized === undefined) {
+	                cache.mobile = impl.FALLBACK_MOBILE;
+	                cache.tablet = cache.phone = null;
+	            } else if (phoneSized) {
+	                cache.mobile = cache.phone = impl.FALLBACK_PHONE;
+	                cache.tablet = null;
+	            } else {
+	                cache.mobile = cache.tablet = impl.FALLBACK_TABLET;
+	                cache.phone = null;
+	            }
+	        } else if (impl.isTabletFallback(userAgent)) {
+	            cache.mobile = cache.tablet = impl.FALLBACK_TABLET;
+	            cache.phone = null;
+	        } else {
+	            // not mobile at all!
+	            cache.mobile = cache.tablet = cache.phone = null;
+	        }
+	    };
+	
+	    // t is a reference to a MobileDetect instance
+	    impl.mobileGrade = function (t) {
+	        // impl note:
+	        // To keep in sync w/ Mobile_Detect.php easily, the following code is tightly aligned to the PHP version.
+	        // When changes are made in Mobile_Detect.php, copy this method and replace:
+	        //     $this-> / t.
+	        //     self::MOBILE_GRADE_(.) / '$1'
+	        //     , self::VERSION_TYPE_FLOAT / (nothing)
+	        //     isIOS() / os('iOS')
+	        //     [reg] / (nothing)   <-- jsdelivr complaining about unescaped unicode character U+00AE
+	        var $isMobile = t.mobile() !== null;
+	
+	        if (
+	            // Apple iOS 3.2-5.1 - Tested on the original iPad (4.3 / 5.0), iPad 2 (4.3), iPad 3 (5.1), original iPhone (3.1), iPhone 3 (3.2), 3GS (4.3), 4 (4.3 / 5.0), and 4S (5.1)
+	            t.os('iOS') && t.version('iPad')>=4.3 ||
+	            t.os('iOS') && t.version('iPhone')>=3.1 ||
+	            t.os('iOS') && t.version('iPod')>=3.1 ||
+	
+	            // Android 2.1-2.3 - Tested on the HTC Incredible (2.2), original Droid (2.2), HTC Aria (2.1), Google Nexus S (2.3). Functional on 1.5 & 1.6 but performance may be sluggish, tested on Google G1 (1.5)
+	            // Android 3.1 (Honeycomb)  - Tested on the Samsung Galaxy Tab 10.1 and Motorola XOOM
+	            // Android 4.0 (ICS)  - Tested on a Galaxy Nexus. Note: transition performance can be poor on upgraded devices
+	            // Android 4.1 (Jelly Bean)  - Tested on a Galaxy Nexus and Galaxy 7
+	            ( t.version('Android')>2.1 && t.is('Webkit') ) ||
+	
+	            // Windows Phone 7-7.5 - Tested on the HTC Surround (7.0) HTC Trophy (7.5), LG-E900 (7.5), Nokia Lumia 800
+	            t.version('Windows Phone OS')>=7.0 ||
+	
+	            // Blackberry 7 - Tested on BlackBerry Torch 9810
+	            // Blackberry 6.0 - Tested on the Torch 9800 and Style 9670
+	            t.is('BlackBerry') && t.version('BlackBerry')>=6.0 ||
+	            // Blackberry Playbook (1.0-2.0) - Tested on PlayBook
+	            t.match('Playbook.*Tablet') ||
+	
+	            // Palm WebOS (1.4-2.0) - Tested on the Palm Pixi (1.4), Pre (1.4), Pre 2 (2.0)
+	            ( t.version('webOS')>=1.4 && t.match('Palm|Pre|Pixi') ) ||
+	            // Palm WebOS 3.0  - Tested on HP TouchPad
+	            t.match('hp.*TouchPad') ||
+	
+	            // Firefox Mobile (12 Beta) - Tested on Android 2.3 device
+	            ( t.is('Firefox') && t.version('Firefox')>=12 ) ||
+	
+	            // Chrome for Android - Tested on Android 4.0, 4.1 device
+	            ( t.is('Chrome') && t.is('AndroidOS') && t.version('Android')>=4.0 ) ||
+	
+	            // Skyfire 4.1 - Tested on Android 2.3 device
+	            ( t.is('Skyfire') && t.version('Skyfire')>=4.1 && t.is('AndroidOS') && t.version('Android')>=2.3 ) ||
+	
+	            // Opera Mobile 11.5-12: Tested on Android 2.3
+	            ( t.is('Opera') && t.version('Opera Mobi')>11 && t.is('AndroidOS') ) ||
+	
+	            // Meego 1.2 - Tested on Nokia 950 and N9
+	            t.is('MeeGoOS') ||
+	
+	            // Tizen (pre-release) - Tested on early hardware
+	            t.is('Tizen') ||
+	
+	            // Samsung Bada 2.0 - Tested on a Samsung Wave 3, Dolphin browser
+	            // @todo: more tests here!
+	            t.is('Dolfin') && t.version('Bada')>=2.0 ||
+	
+	            // UC Browser - Tested on Android 2.3 device
+	            ( (t.is('UC Browser') || t.is('Dolfin')) && t.version('Android')>=2.3 ) ||
+	
+	            // Kindle 3 and Fire  - Tested on the built-in WebKit browser for each
+	            ( t.match('Kindle Fire') ||
+	                t.is('Kindle') && t.version('Kindle')>=3.0 ) ||
+	
+	            // Nook Color 1.4.1 - Tested on original Nook Color, not Nook Tablet
+	            t.is('AndroidOS') && t.is('NookTablet') ||
+	
+	            // Chrome Desktop 11-21 - Tested on OS X 10.7 and Windows 7
+	            t.version('Chrome')>=11 && !$isMobile ||
+	
+	            // Safari Desktop 4-5 - Tested on OS X 10.7 and Windows 7
+	            t.version('Safari')>=5.0 && !$isMobile ||
+	
+	            // Firefox Desktop 4-13 - Tested on OS X 10.7 and Windows 7
+	            t.version('Firefox')>=4.0 && !$isMobile ||
+	
+	            // Internet Explorer 7-9 - Tested on Windows XP, Vista and 7
+	            t.version('MSIE')>=7.0 && !$isMobile ||
+	
+	            // Opera Desktop 10-12 - Tested on OS X 10.7 and Windows 7
+	            // @reference: http://my.opera.com/community/openweb/idopera/
+	            t.version('Opera')>=10 && !$isMobile
+	
+	            ){
+	            return 'A';
+	        }
+	
+	        if (
+	            t.os('iOS') && t.version('iPad')<4.3 ||
+	            t.os('iOS') && t.version('iPhone')<3.1 ||
+	            t.os('iOS') && t.version('iPod')<3.1 ||
+	
+	            // Blackberry 5.0: Tested on the Storm 2 9550, Bold 9770
+	            t.is('Blackberry') && t.version('BlackBerry')>=5 && t.version('BlackBerry')<6 ||
+	
+	            //Opera Mini (5.0-6.5) - Tested on iOS 3.2/4.3 and Android 2.3
+	            ( t.version('Opera Mini')>=5.0 && t.version('Opera Mini')<=6.5 &&
+	                (t.version('Android')>=2.3 || t.is('iOS')) ) ||
+	
+	            // Nokia Symbian^3 - Tested on Nokia N8 (Symbian^3), C7 (Symbian^3), also works on N97 (Symbian^1)
+	            t.match('NokiaN8|NokiaC7|N97.*Series60|Symbian/3') ||
+	
+	            // @todo: report this (tested on Nokia N71)
+	            t.version('Opera Mobi')>=11 && t.is('SymbianOS')
+	            ){
+	            return 'B';
+	        }
+	
+	        if (
+	        // Blackberry 4.x - Tested on the Curve 8330
+	            t.version('BlackBerry')<5.0 ||
+	            // Windows Mobile - Tested on the HTC Leo (WinMo 5.2)
+	            t.match('MSIEMobile|Windows CE.*Mobile') || t.version('Windows Mobile')<=5.2
+	
+	            ){
+	            return 'C';
+	        }
+	
+	        //All older smartphone platforms and featurephones - Any device that doesn't support media queries
+	        //will receive the basic, C grade experience.
+	        return 'C';
+	    };
+	
+	    impl.detectOS = function (ua) {
+	        return impl.findMatch(impl.mobileDetectRules.oss0, ua) ||
+	            impl.findMatch(impl.mobileDetectRules.oss, ua);
+	    };
+	
+	    impl.getDeviceSmallerSide = function () {
+	        return window.screen.width < window.screen.height ?
+	            window.screen.width :
+	            window.screen.height;
+	    };
+	
+	    /**
+	     * Constructor for MobileDetect object.
+	     * <br>
+	     * Such an object will keep a reference to the given user-agent string and cache most of the detect queries.<br>
+	     * <div style="background-color: #d9edf7; border: 1px solid #bce8f1; color: #3a87ad; padding: 14px; border-radius: 2px; margin-top: 20px">
+	     *     <strong>Find information how to download and install:</strong>
+	     *     <a href="https://github.com/hgoebl/mobile-detect.js/">github.com/hgoebl/mobile-detect.js/</a>
+	     * </div>
+	     *
+	     * @example <pre>
+	     *     var md = new MobileDetect(window.navigator.userAgent);
+	     *     if (md.mobile()) {
+	     *         location.href = (md.mobileGrade() === 'A') ? '/mobile/' : '/lynx/';
+	     *     }
+	     * </pre>
+	     *
+	     * @param {string} userAgent typically taken from window.navigator.userAgent or http_header['User-Agent']
+	     * @param {number} [maxPhoneWidth=600] <strong>only for browsers</strong> specify a value for the maximum
+	     *        width of smallest device side (in logical "CSS" pixels) until a device detected as mobile will be handled
+	     *        as phone.
+	     *        This is only used in cases where the device cannot be classified as phone or tablet.<br>
+	     *        See <a href="http://developer.android.com/guide/practices/screens_support.html">Declaring Tablet Layouts
+	     *        for Android</a>.<br>
+	     *        If you provide a value < 0, then this "fuzzy" check is disabled.
+	     * @constructor
+	     * @global
+	     */
+	    function MobileDetect(userAgent, maxPhoneWidth) {
+	        this.ua = userAgent || '';
+	        this._cache = {};
+	        //600dp is typical 7" tablet minimum width
+	        this.maxPhoneWidth = maxPhoneWidth || 600;
+	    }
+	
+	    MobileDetect.prototype = {
+	        constructor: MobileDetect,
+	
+	        /**
+	         * Returns the detected phone or tablet type or <tt>null</tt> if it is not a mobile device.
+	         * <br>
+	         * For a list of possible return values see {@link MobileDetect#phone} and {@link MobileDetect#tablet}.<br>
+	         * <br>
+	         * If the device is not detected by the regular expressions from Mobile-Detect, a test is made against
+	         * the patterns of <a href="http://detectmobilebrowsers.com/">detectmobilebrowsers.com</a>. If this test
+	         * is positive, a value of <code>UnknownPhone</code>, <code>UnknownTablet</code> or
+	         * <code>UnknownMobile</code> is returned.<br>
+	         * When used in browser, the decision whether phone or tablet is made based on <code>screen.width/height</code>.<br>
+	         * <br>
+	         * When used server-side (node.js), there is no way to tell the difference between <code>UnknownTablet</code>
+	         * and <code>UnknownMobile</code>, so you will get <code>UnknownMobile</code> here.<br>
+	         * Be aware that since v1.0.0 in this special case you will get <code>UnknownMobile</code> only for:
+	         * {@link MobileDetect#mobile}, not for {@link MobileDetect#phone} and {@link MobileDetect#tablet}.
+	         * In versions before v1.0.0 all 3 methods returned <code>UnknownMobile</code> which was tedious to use.
+	         * <br>
+	         * In most cases you will use the return value just as a boolean.
+	         *
+	         * @returns {String} the key for the phone family or tablet family, e.g. "Nexus".
+	         * @function MobileDetect#mobile
+	         */
+	        mobile: function () {
+	            impl.prepareDetectionCache(this._cache, this.ua, this.maxPhoneWidth);
+	            return this._cache.mobile;
+	        },
+	
+	        /**
+	         * Returns the detected phone type/family string or <tt>null</tt>.
+	         * <br>
+	         * The returned tablet (family or producer) is one of following keys:<br>
+	         * <br><tt>iPhone, BlackBerry, HTC, Nexus, Dell, Motorola, Samsung, LG, Sony, Asus,
+	         * NokiaLumia, Micromax, Palm, Vertu, Pantech, Fly, Wiko, iMobile, SimValley,
+	         * Wolfgang, Alcatel, Nintendo, Amoi, INQ, GenericPhone</tt><br>
+	         * <br>
+	         * If the device is not detected by the regular expressions from Mobile-Detect, a test is made against
+	         * the patterns of <a href="http://detectmobilebrowsers.com/">detectmobilebrowsers.com</a>. If this test
+	         * is positive, a value of <code>UnknownPhone</code> or <code>UnknownMobile</code> is returned.<br>
+	         * When used in browser, the decision whether phone or tablet is made based on <code>screen.width/height</code>.<br>
+	         * <br>
+	         * When used server-side (node.js), there is no way to tell the difference between <code>UnknownTablet</code>
+	         * and <code>UnknownMobile</code>, so you will get <code>null</code> here, while {@link MobileDetect#mobile}
+	         * will return <code>UnknownMobile</code>.<br>
+	         * Be aware that since v1.0.0 in this special case you will get <code>UnknownMobile</code> only for:
+	         * {@link MobileDetect#mobile}, not for {@link MobileDetect#phone} and {@link MobileDetect#tablet}.
+	         * In versions before v1.0.0 all 3 methods returned <code>UnknownMobile</code> which was tedious to use.
+	         * <br>
+	         * In most cases you will use the return value just as a boolean.
+	         *
+	         * @returns {String} the key of the phone family or producer, e.g. "iPhone"
+	         * @function MobileDetect#phone
+	         */
+	        phone: function () {
+	            impl.prepareDetectionCache(this._cache, this.ua, this.maxPhoneWidth);
+	            return this._cache.phone;
+	        },
+	
+	        /**
+	         * Returns the detected tablet type/family string or <tt>null</tt>.
+	         * <br>
+	         * The returned tablet (family or producer) is one of following keys:<br>
+	         * <br><tt>iPad, NexusTablet, SamsungTablet, Kindle, SurfaceTablet, HPTablet, AsusTablet,
+	         * BlackBerryTablet, HTCtablet, MotorolaTablet, NookTablet, AcerTablet,
+	         * ToshibaTablet, LGTablet, FujitsuTablet, PrestigioTablet, LenovoTablet,
+	         * DellTablet, YarvikTablet, MedionTablet, ArnovaTablet, IntensoTablet, IRUTablet,
+	         * MegafonTablet, EbodaTablet, AllViewTablet, ArchosTablet, AinolTablet,
+	         * NokiaLumiaTablet, SonyTablet, PhilipsTablet, CubeTablet, CobyTablet, MIDTablet,
+	         * MSITablet, SMiTTablet, RockChipTablet, FlyTablet, bqTablet, HuaweiTablet,
+	         * NecTablet, PantechTablet, BronchoTablet, VersusTablet, ZyncTablet,
+	         * PositivoTablet, NabiTablet, KoboTablet, DanewTablet, TexetTablet,
+	         * PlaystationTablet, TrekstorTablet, PyleAudioTablet, AdvanTablet,
+	         * DanyTechTablet, GalapadTablet, MicromaxTablet, KarbonnTablet, AllFineTablet,
+	         * PROSCANTablet, YONESTablet, ChangJiaTablet, GUTablet, PointOfViewTablet,
+	         * OvermaxTablet, HCLTablet, DPSTablet, VistureTablet, CrestaTablet,
+	         * MediatekTablet, ConcordeTablet, GoCleverTablet, ModecomTablet, VoninoTablet,
+	         * ECSTablet, StorexTablet, VodafoneTablet, EssentielBTablet, RossMoorTablet,
+	         * iMobileTablet, TolinoTablet, AudioSonicTablet, AMPETablet, SkkTablet,
+	         * TecnoTablet, JXDTablet, iJoyTablet, FX2Tablet, XoroTablet, ViewsonicTablet,
+	         * OdysTablet, CaptivaTablet, IconbitTablet, TeclastTablet, OndaTablet,
+	         * JaytechTablet, BlaupunktTablet, DigmaTablet, EvolioTablet, LavaTablet,
+	         * AocTablet, MpmanTablet, CelkonTablet, WolderTablet, MiTablet, NibiruTablet,
+	         * NexoTablet, LeaderTablet, UbislateTablet, PocketBookTablet, KocasoTablet,
+	         * HisenseTablet, Hudl, TelstraTablet, GenericTablet</tt><br>
+	         * <br>
+	         * If the device is not detected by the regular expressions from Mobile-Detect, a test is made against
+	         * the patterns of <a href="http://detectmobilebrowsers.com/">detectmobilebrowsers.com</a>. If this test
+	         * is positive, a value of <code>UnknownTablet</code> or <code>UnknownMobile</code> is returned.<br>
+	         * When used in browser, the decision whether phone or tablet is made based on <code>screen.width/height</code>.<br>
+	         * <br>
+	         * When used server-side (node.js), there is no way to tell the difference between <code>UnknownTablet</code>
+	         * and <code>UnknownMobile</code>, so you will get <code>null</code> here, while {@link MobileDetect#mobile}
+	         * will return <code>UnknownMobile</code>.<br>
+	         * Be aware that since v1.0.0 in this special case you will get <code>UnknownMobile</code> only for:
+	         * {@link MobileDetect#mobile}, not for {@link MobileDetect#phone} and {@link MobileDetect#tablet}.
+	         * In versions before v1.0.0 all 3 methods returned <code>UnknownMobile</code> which was tedious to use.
+	         * <br>
+	         * In most cases you will use the return value just as a boolean.
+	         *
+	         * @returns {String} the key of the tablet family or producer, e.g. "SamsungTablet"
+	         * @function MobileDetect#tablet
+	         */
+	        tablet: function () {
+	            impl.prepareDetectionCache(this._cache, this.ua, this.maxPhoneWidth);
+	            return this._cache.tablet;
+	        },
+	
+	        /**
+	         * Returns the (first) detected user-agent string or <tt>null</tt>.
+	         * <br>
+	         * The returned user-agent is one of following keys:<br>
+	         * <br><tt>Chrome, Dolfin, Opera, Skyfire, Edge, IE, Firefox, Bolt, TeaShark, Blazer,
+	         * Safari, UCBrowser, baiduboxapp, baidubrowser, DiigoBrowser, Puffin, Mercury,
+	         * ObigoBrowser, NetFront, GenericBrowser, PaleMoon</tt><br>
+	         * <br>
+	         * In most cases calling {@link MobileDetect#userAgent} will be sufficient. But there are rare
+	         * cases where a mobile device pretends to be more than one particular browser. You can get the
+	         * list of all matches with {@link MobileDetect#userAgents} or check for a particular value by
+	         * providing one of the defined keys as first argument to {@link MobileDetect#is}.
+	         *
+	         * @returns {String} the key for the detected user-agent or <tt>null</tt>
+	         * @function MobileDetect#userAgent
+	         */
+	        userAgent: function () {
+	            if (this._cache.userAgent === undefined) {
+	                this._cache.userAgent = impl.findMatch(impl.mobileDetectRules.uas, this.ua);
+	            }
+	            return this._cache.userAgent;
+	        },
+	
+	        /**
+	         * Returns all detected user-agent strings.
+	         * <br>
+	         * The array is empty or contains one or more of following keys:<br>
+	         * <br><tt>Chrome, Dolfin, Opera, Skyfire, Edge, IE, Firefox, Bolt, TeaShark, Blazer,
+	         * Safari, UCBrowser, baiduboxapp, baidubrowser, DiigoBrowser, Puffin, Mercury,
+	         * ObigoBrowser, NetFront, GenericBrowser, PaleMoon</tt><br>
+	         * <br>
+	         * In most cases calling {@link MobileDetect#userAgent} will be sufficient. But there are rare
+	         * cases where a mobile device pretends to be more than one particular browser. You can get the
+	         * list of all matches with {@link MobileDetect#userAgents} or check for a particular value by
+	         * providing one of the defined keys as first argument to {@link MobileDetect#is}.
+	         *
+	         * @returns {Array} the array of detected user-agent keys or <tt>[]</tt>
+	         * @function MobileDetect#userAgents
+	         */
+	        userAgents: function () {
+	            if (this._cache.userAgents === undefined) {
+	                this._cache.userAgents = impl.findMatches(impl.mobileDetectRules.uas, this.ua);
+	            }
+	            return this._cache.userAgents;
+	        },
+	
+	        /**
+	         * Returns the detected operating system string or <tt>null</tt>.
+	         * <br>
+	         * The operating system is one of following keys:<br>
+	         * <br><tt>AndroidOS, BlackBerryOS, PalmOS, SymbianOS, WindowsMobileOS, WindowsPhoneOS,
+	         * iOS, MeeGoOS, MaemoOS, JavaOS, webOS, badaOS, BREWOS</tt><br>
+	         *
+	         * @returns {String} the key for the detected operating system.
+	         * @function MobileDetect#os
+	         */
+	        os: function () {
+	            if (this._cache.os === undefined) {
+	                this._cache.os = impl.detectOS(this.ua);
+	            }
+	            return this._cache.os;
+	        },
+	
+	        /**
+	         * Get the version (as Number) of the given property in the User-Agent.
+	         * <br>
+	         * Will return a float number. (eg. 2_0 will return 2.0, 4.3.1 will return 4.31)
+	         *
+	         * @param {String} key a key defining a thing which has a version.<br>
+	         *        You can use one of following keys:<br>
+	         * <br><tt>Mobile, Build, Version, VendorID, iPad, iPhone, iPod, Kindle, Chrome, Coast,
+	         * Dolfin, Firefox, Fennec, Edge, IE, NetFront, NokiaBrowser, Opera, Opera Mini,
+	         * Opera Mobi, UC Browser, MQQBrowser, MicroMessenger, baiduboxapp, baidubrowser,
+	         * SamsungBrowser, Iron, Safari, Skyfire, Tizen, Webkit, PaleMoon, Gecko, Trident,
+	         * Presto, Goanna, iOS, Android, BlackBerry, BREW, Java, Windows Phone OS, Windows
+	         * Phone, Windows CE, Windows NT, Symbian, webOS</tt><br>
+	         *
+	         * @returns {Number} the version as float or <tt>NaN</tt> if User-Agent doesn't contain this version.
+	         *          Be careful when comparing this value with '==' operator!
+	         * @function MobileDetect#version
+	         */
+	        version: function (key) {
+	            return impl.getVersion(key, this.ua);
+	        },
+	
+	        /**
+	         * Get the version (as String) of the given property in the User-Agent.
+	         * <br>
+	         *
+	         * @param {String} key a key defining a thing which has a version.<br>
+	         *        You can use one of following keys:<br>
+	         * <br><tt>Mobile, Build, Version, VendorID, iPad, iPhone, iPod, Kindle, Chrome, Coast,
+	         * Dolfin, Firefox, Fennec, Edge, IE, NetFront, NokiaBrowser, Opera, Opera Mini,
+	         * Opera Mobi, UC Browser, MQQBrowser, MicroMessenger, baiduboxapp, baidubrowser,
+	         * SamsungBrowser, Iron, Safari, Skyfire, Tizen, Webkit, PaleMoon, Gecko, Trident,
+	         * Presto, Goanna, iOS, Android, BlackBerry, BREW, Java, Windows Phone OS, Windows
+	         * Phone, Windows CE, Windows NT, Symbian, webOS</tt><br>
+	         *
+	         * @returns {String} the "raw" version as String or <tt>null</tt> if User-Agent doesn't contain this version.
+	         *
+	         * @function MobileDetect#versionStr
+	         */
+	        versionStr: function (key) {
+	            return impl.getVersionStr(key, this.ua);
+	        },
+	
+	        /**
+	         * Global test key against userAgent, os, phone, tablet and some other properties of userAgent string.
+	         *
+	         * @param {String} key the key (case-insensitive) of a userAgent, an operating system, phone or
+	         *        tablet family.<br>
+	         *        For a complete list of possible values, see {@link MobileDetect#userAgent},
+	         *        {@link MobileDetect#os}, {@link MobileDetect#phone}, {@link MobileDetect#tablet}.<br>
+	         *        Additionally you have following keys:<br>
+	         * <br><tt>Bot, MobileBot, DesktopMode, TV, WebKit, Console, Watch</tt><br>
+	         *
+	         * @returns {boolean} <tt>true</tt> when the given key is one of the defined keys of userAgent, os, phone,
+	         *                    tablet or one of the listed additional keys, otherwise <tt>false</tt>
+	         * @function MobileDetect#is
+	         */
+	        is: function (key) {
+	            return containsIC(this.userAgents(), key) ||
+	                   equalIC(key, this.os()) ||
+	                   equalIC(key, this.phone()) ||
+	                   equalIC(key, this.tablet()) ||
+	                   containsIC(impl.findMatches(impl.mobileDetectRules.utils, this.ua), key);
+	        },
+	
+	        /**
+	         * Do a quick test against navigator::userAgent.
+	         *
+	         * @param {String|RegExp} pattern the pattern, either as String or RegExp
+	         *                        (a string will be converted to a case-insensitive RegExp).
+	         * @returns {boolean} <tt>true</tt> when the pattern matches, otherwise <tt>false</tt>
+	         * @function MobileDetect#match
+	         */
+	        match: function (pattern) {
+	            if (!(pattern instanceof RegExp)) {
+	                pattern = new RegExp(pattern, 'i');
+	            }
+	            return pattern.test(this.ua);
+	        },
+	
+	        /**
+	         * Checks whether the mobile device can be considered as phone regarding <code>screen.width</code>.
+	         * <br>
+	         * Obviously this method makes sense in browser environments only (not for Node.js)!
+	         * @param {number} [maxPhoneWidth] the maximum logical pixels (aka. CSS-pixels) to be considered as phone.<br>
+	         *        The argument is optional and if not present or falsy, the value of the constructor is taken.
+	         * @returns {boolean|undefined} <code>undefined</code> if screen size wasn't detectable, else <code>true</code>
+	         *          when screen.width is less or equal to maxPhoneWidth, otherwise <code>false</code>.<br>
+	         *          Will always return <code>undefined</code> server-side.
+	         */
+	        isPhoneSized: function (maxPhoneWidth) {
+	            return MobileDetect.isPhoneSized(maxPhoneWidth || this.maxPhoneWidth);
+	        },
+	
+	        /**
+	         * Returns the mobile grade ('A', 'B', 'C').
+	         *
+	         * @returns {String} one of the mobile grades ('A', 'B', 'C').
+	         * @function MobileDetect#mobileGrade
+	         */
+	        mobileGrade: function () {
+	            if (this._cache.grade === undefined) {
+	                this._cache.grade = impl.mobileGrade(this);
+	            }
+	            return this._cache.grade;
+	        }
+	    };
+	
+	    // environment-dependent
+	    if (typeof window !== 'undefined' && window.screen) {
+	        MobileDetect.isPhoneSized = function (maxPhoneWidth) {
+	            return maxPhoneWidth < 0 ? undefined : impl.getDeviceSmallerSide() <= maxPhoneWidth;
+	        };
+	    } else {
+	        MobileDetect.isPhoneSized = function () {};
+	    }
+	
+	    // should not be replaced by a completely new object - just overwrite existing methods
+	    MobileDetect._impl = impl;
+	    
+	    MobileDetect.version = '1.3.6 2017-04-05';
+	
+	    return MobileDetect;
+	}); // end of call of define()
+	})((function (undefined) {
+	    if (typeof module !== 'undefined' && module.exports) {
+	        return function (factory) { module.exports = factory(); };
+	    } else if (true) {
+	        return __webpack_require__(264);
+	    } else if (typeof window !== 'undefined') {
+	        return function (factory) { window.MobileDetect = factory(); };
+	    } else {
+	        // please file a bug if you get this error!
+	        throw new Error('unknown environment');
+	    }
+	})());
+
+/***/ },
+/* 567 */
 /***/ function(module, exports) {
 
 	// Most of these are according to this table: http://www.ssicom.org/js/x171166.htm
@@ -38813,13 +39825,13 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 566 */
+/* 568 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	'use strict';
 	
-	var keycodes = __webpack_require__(565);
+	var keycodes = __webpack_require__(567);
 	
 	function assertKeyString(s) {
 	  if (!/^(ctrl-|shift-|alt-|meta-){0,4}\w+$/.test(s))
@@ -38857,8 +39869,8 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 567 */,
-/* 568 */
+/* 569 */,
+/* 570 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38924,8 +39936,8 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 569 */,
-/* 570 */
+/* 571 */,
+/* 572 */
 /***/ function(module, exports) {
 
 	function hsl2rgb(hsl) {
@@ -38969,7 +39981,7 @@ webpackJsonp([4],[
 	module.exports = hsl2rgb;
 
 /***/ },
-/* 571 */
+/* 573 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var clamp = __webpack_require__(128);
@@ -38988,7 +40000,7 @@ webpackJsonp([4],[
 	module.exports = rgb2hex;
 
 /***/ },
-/* 572 */
+/* 574 */
 /***/ function(module, exports) {
 
 	function hex(hex) {
@@ -39007,7 +40019,7 @@ webpackJsonp([4],[
 	module.exports = hex;
 
 /***/ },
-/* 573 */
+/* 575 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var extractComponents = __webpack_require__(221);
@@ -39034,13 +40046,13 @@ webpackJsonp([4],[
 	module.exports = hsl;
 
 /***/ },
-/* 574 */
+/* 576 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var hsl = __webpack_require__(573);
-	var hex = __webpack_require__(572);
-	var rgb = __webpack_require__(575);
-	var hsl2rgb = __webpack_require__(570);
+	var hsl = __webpack_require__(575);
+	var hex = __webpack_require__(574);
+	var rgb = __webpack_require__(577);
+	var hsl2rgb = __webpack_require__(572);
 	
 	function hsl2rgbParse(color) {
 	  var h = hsl(color);
@@ -39075,7 +40087,7 @@ webpackJsonp([4],[
 	module.exports = parse;
 
 /***/ },
-/* 575 */
+/* 577 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var extractComponents = __webpack_require__(221);
@@ -39100,7 +40112,7 @@ webpackJsonp([4],[
 	module.exports = rgb;
 
 /***/ },
-/* 576 */
+/* 578 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -39143,15 +40155,15 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 577 */,
-/* 578 */,
 /* 579 */,
 /* 580 */,
 /* 581 */,
 /* 582 */,
 /* 583 */,
 /* 584 */,
-/* 585 */
+/* 585 */,
+/* 586 */,
+/* 587 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -39248,8 +40260,6 @@ webpackJsonp([4],[
 	module.exports = EventConstants;
 
 /***/ },
-/* 586 */,
-/* 587 */,
 /* 588 */,
 /* 589 */,
 /* 590 */,
@@ -39303,7 +40313,9 @@ webpackJsonp([4],[
 /* 638 */,
 /* 639 */,
 /* 640 */,
-/* 641 */
+/* 641 */,
+/* 642 */,
+/* 643 */
 /***/ function(module, exports) {
 
 	exports.__esModule = true;
@@ -39339,7 +40351,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 642 */
+/* 644 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports.__esModule = true;
@@ -39381,14 +40393,14 @@ webpackJsonp([4],[
 	module.exports = exports["default"];
 
 /***/ },
-/* 643 */
+/* 645 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(646);
+	module.exports = __webpack_require__(648);
 
 
 /***/ },
-/* 644 */
+/* 646 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39397,13 +40409,13 @@ webpackJsonp([4],[
 	'use strict';
 	
 	if (true) {
-	  module.exports = __webpack_require__(645);
+	  module.exports = __webpack_require__(647);
 	} else {
 	  module.exports = require('./AppContainer.dev');
 	}
 
 /***/ },
-/* 645 */
+/* 647 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39448,7 +40460,7 @@ webpackJsonp([4],[
 	module.exports = AppContainer;
 
 /***/ },
-/* 646 */
+/* 648 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39457,36 +40469,36 @@ webpackJsonp([4],[
 	'use strict';
 	
 	if (true) {
-	  module.exports = __webpack_require__(647);
+	  module.exports = __webpack_require__(649);
 	} else {
 	  module.exports = require('./index.dev');
 	}
 
 /***/ },
-/* 647 */
+/* 649 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	'use strict';
 	
-	module.exports.AppContainer = __webpack_require__(644);
+	module.exports.AppContainer = __webpack_require__(646);
 
 /***/ },
-/* 648 */
+/* 650 */
 /***/ function(module, exports, __webpack_require__) {
 
 	!function(e,a){ true?module.exports=a():"function"==typeof define&&define.amd?define(a):(e.ReactIntlLocaleData=e.ReactIntlLocaleData||{},e.ReactIntlLocaleData.en=a())}(this,function(){"use strict";var e=[{locale:"en",pluralRuleFunction:function(e,a){var n=String(e).split("."),l=!n[1],o=Number(n[0])==e,t=o&&n[0].slice(-1),r=o&&n[0].slice(-2);return a?1==t&&11!=r?"one":2==t&&12!=r?"two":3==t&&13!=r?"few":"other":1==e&&l?"one":"other"},fields:{year:{displayName:"year",relative:{0:"this year",1:"next year","-1":"last year"},relativeTime:{future:{one:"in {0} year",other:"in {0} years"},past:{one:"{0} year ago",other:"{0} years ago"}}},month:{displayName:"month",relative:{0:"this month",1:"next month","-1":"last month"},relativeTime:{future:{one:"in {0} month",other:"in {0} months"},past:{one:"{0} month ago",other:"{0} months ago"}}},day:{displayName:"day",relative:{0:"today",1:"tomorrow","-1":"yesterday"},relativeTime:{future:{one:"in {0} day",other:"in {0} days"},past:{one:"{0} day ago",other:"{0} days ago"}}},hour:{displayName:"hour",relativeTime:{future:{one:"in {0} hour",other:"in {0} hours"},past:{one:"{0} hour ago",other:"{0} hours ago"}}},minute:{displayName:"minute",relativeTime:{future:{one:"in {0} minute",other:"in {0} minutes"},past:{one:"{0} minute ago",other:"{0} minutes ago"}}},second:{displayName:"second",relative:{0:"now"},relativeTime:{future:{one:"in {0} second",other:"in {0} seconds"},past:{one:"{0} second ago",other:"{0} seconds ago"}}}}},{locale:"en-001",parentLocale:"en"},{locale:"en-150",parentLocale:"en-001"},{locale:"en-AG",parentLocale:"en-001"},{locale:"en-AI",parentLocale:"en-001"},{locale:"en-AS",parentLocale:"en"},{locale:"en-AT",parentLocale:"en-150"},{locale:"en-AU",parentLocale:"en-001"},{locale:"en-BB",parentLocale:"en-001"},{locale:"en-BE",parentLocale:"en-001"},{locale:"en-BI",parentLocale:"en"},{locale:"en-BM",parentLocale:"en-001"},{locale:"en-BS",parentLocale:"en-001"},{locale:"en-BW",parentLocale:"en-001"},{locale:"en-BZ",parentLocale:"en-001"},{locale:"en-CA",parentLocale:"en-001"},{locale:"en-CC",parentLocale:"en-001"},{locale:"en-CH",parentLocale:"en-150"},{locale:"en-CK",parentLocale:"en-001"},{locale:"en-CM",parentLocale:"en-001"},{locale:"en-CX",parentLocale:"en-001"},{locale:"en-CY",parentLocale:"en-001"},{locale:"en-DE",parentLocale:"en-150"},{locale:"en-DG",parentLocale:"en-001"},{locale:"en-DK",parentLocale:"en-150"},{locale:"en-DM",parentLocale:"en-001"},{locale:"en-Dsrt",pluralRuleFunction:function(e,a){return"other"},fields:{year:{displayName:"Year",relative:{0:"this year",1:"next year","-1":"last year"},relativeTime:{future:{other:"+{0} y"},past:{other:"-{0} y"}}},month:{displayName:"Month",relative:{0:"this month",1:"next month","-1":"last month"},relativeTime:{future:{other:"+{0} m"},past:{other:"-{0} m"}}},day:{displayName:"Day",relative:{0:"today",1:"tomorrow","-1":"yesterday"},relativeTime:{future:{other:"+{0} d"},past:{other:"-{0} d"}}},hour:{displayName:"Hour",relativeTime:{future:{other:"+{0} h"},past:{other:"-{0} h"}}},minute:{displayName:"Minute",relativeTime:{future:{other:"+{0} min"},past:{other:"-{0} min"}}},second:{displayName:"Second",relative:{0:"now"},relativeTime:{future:{other:"+{0} s"},past:{other:"-{0} s"}}}}},{locale:"en-ER",parentLocale:"en-001"},{locale:"en-FI",parentLocale:"en-150"},{locale:"en-FJ",parentLocale:"en-001"},{locale:"en-FK",parentLocale:"en-001"},{locale:"en-FM",parentLocale:"en-001"},{locale:"en-GB",parentLocale:"en-001"},{locale:"en-GD",parentLocale:"en-001"},{locale:"en-GG",parentLocale:"en-001"},{locale:"en-GH",parentLocale:"en-001"},{locale:"en-GI",parentLocale:"en-001"},{locale:"en-GM",parentLocale:"en-001"},{locale:"en-GU",parentLocale:"en"},{locale:"en-GY",parentLocale:"en-001"},{locale:"en-HK",parentLocale:"en-001"},{locale:"en-IE",parentLocale:"en-001"},{locale:"en-IL",parentLocale:"en-001"},{locale:"en-IM",parentLocale:"en-001"},{locale:"en-IN",parentLocale:"en-001"},{locale:"en-IO",parentLocale:"en-001"},{locale:"en-JE",parentLocale:"en-001"},{locale:"en-JM",parentLocale:"en-001"},{locale:"en-KE",parentLocale:"en-001"},{locale:"en-KI",parentLocale:"en-001"},{locale:"en-KN",parentLocale:"en-001"},{locale:"en-KY",parentLocale:"en-001"},{locale:"en-LC",parentLocale:"en-001"},{locale:"en-LR",parentLocale:"en-001"},{locale:"en-LS",parentLocale:"en-001"},{locale:"en-MG",parentLocale:"en-001"},{locale:"en-MH",parentLocale:"en"},{locale:"en-MO",parentLocale:"en-001"},{locale:"en-MP",parentLocale:"en"},{locale:"en-MS",parentLocale:"en-001"},{locale:"en-MT",parentLocale:"en-001"},{locale:"en-MU",parentLocale:"en-001"},{locale:"en-MW",parentLocale:"en-001"},{locale:"en-MY",parentLocale:"en-001"},{locale:"en-NA",parentLocale:"en-001"},{locale:"en-NF",parentLocale:"en-001"},{locale:"en-NG",parentLocale:"en-001"},{locale:"en-NL",parentLocale:"en-150"},{locale:"en-NR",parentLocale:"en-001"},{locale:"en-NU",parentLocale:"en-001"},{locale:"en-NZ",parentLocale:"en-001"},{locale:"en-PG",parentLocale:"en-001"},{locale:"en-PH",parentLocale:"en-001"},{locale:"en-PK",parentLocale:"en-001"},{locale:"en-PN",parentLocale:"en-001"},{locale:"en-PR",parentLocale:"en"},{locale:"en-PW",parentLocale:"en-001"},{locale:"en-RW",parentLocale:"en-001"},{locale:"en-SB",parentLocale:"en-001"},{locale:"en-SC",parentLocale:"en-001"},{locale:"en-SD",parentLocale:"en-001"},{locale:"en-SE",parentLocale:"en-150"},{locale:"en-SG",parentLocale:"en-001"},{locale:"en-SH",parentLocale:"en-001"},{locale:"en-SI",parentLocale:"en-150"},{locale:"en-SL",parentLocale:"en-001"},{locale:"en-SS",parentLocale:"en-001"},{locale:"en-SX",parentLocale:"en-001"},{locale:"en-SZ",parentLocale:"en-001"},{locale:"en-Shaw",pluralRuleFunction:function(e,a){return"other"},fields:{year:{displayName:"Year",relative:{0:"this year",1:"next year","-1":"last year"},relativeTime:{future:{other:"+{0} y"},past:{other:"-{0} y"}}},month:{displayName:"Month",relative:{0:"this month",1:"next month","-1":"last month"},relativeTime:{future:{other:"+{0} m"},past:{other:"-{0} m"}}},day:{displayName:"Day",relative:{0:"today",1:"tomorrow","-1":"yesterday"},relativeTime:{future:{other:"+{0} d"},past:{other:"-{0} d"}}},hour:{displayName:"Hour",relativeTime:{future:{other:"+{0} h"},past:{other:"-{0} h"}}},minute:{displayName:"Minute",relativeTime:{future:{other:"+{0} min"},past:{other:"-{0} min"}}},second:{displayName:"Second",relative:{0:"now"},relativeTime:{future:{other:"+{0} s"},past:{other:"-{0} s"}}}}},{locale:"en-TC",parentLocale:"en-001"},{locale:"en-TK",parentLocale:"en-001"},{locale:"en-TO",parentLocale:"en-001"},{locale:"en-TT",parentLocale:"en-001"},{locale:"en-TV",parentLocale:"en-001"},{locale:"en-TZ",parentLocale:"en-001"},{locale:"en-UG",parentLocale:"en-001"},{locale:"en-UM",parentLocale:"en"},{locale:"en-US",parentLocale:"en"},{locale:"en-VC",parentLocale:"en-001"},{locale:"en-VG",parentLocale:"en-001"},{locale:"en-VI",parentLocale:"en"},{locale:"en-VU",parentLocale:"en-001"},{locale:"en-WS",parentLocale:"en-001"},{locale:"en-ZA",parentLocale:"en-001"},{locale:"en-ZM",parentLocale:"en-001"},{locale:"en-ZW",parentLocale:"en-001"}];return e});
 
 
 /***/ },
-/* 649 */
+/* 651 */
 /***/ function(module, exports, __webpack_require__) {
 
 	!function(e,a){ true?module.exports=a():"function"==typeof define&&define.amd?define(a):(e.ReactIntlLocaleData=e.ReactIntlLocaleData||{},e.ReactIntlLocaleData.fr=a())}(this,function(){"use strict";var e=[{locale:"fr",pluralRuleFunction:function(e,a){return a?1==e?"one":"other":e>=0&&e<2?"one":"other"},fields:{year:{displayName:"année",relative:{0:"cette année",1:"l’année prochaine","-1":"l’année dernière"},relativeTime:{future:{one:"dans {0} an",other:"dans {0} ans"},past:{one:"il y a {0} an",other:"il y a {0} ans"}}},month:{displayName:"mois",relative:{0:"ce mois-ci",1:"le mois prochain","-1":"le mois dernier"},relativeTime:{future:{one:"dans {0} mois",other:"dans {0} mois"},past:{one:"il y a {0} mois",other:"il y a {0} mois"}}},day:{displayName:"jour",relative:{0:"aujourd’hui",1:"demain",2:"après-demain","-2":"avant-hier","-1":"hier"},relativeTime:{future:{one:"dans {0} jour",other:"dans {0} jours"},past:{one:"il y a {0} jour",other:"il y a {0} jours"}}},hour:{displayName:"heure",relativeTime:{future:{one:"dans {0} heure",other:"dans {0} heures"},past:{one:"il y a {0} heure",other:"il y a {0} heures"}}},minute:{displayName:"minute",relativeTime:{future:{one:"dans {0} minute",other:"dans {0} minutes"},past:{one:"il y a {0} minute",other:"il y a {0} minutes"}}},second:{displayName:"seconde",relative:{0:"maintenant"},relativeTime:{future:{one:"dans {0} seconde",other:"dans {0} secondes"},past:{one:"il y a {0} seconde",other:"il y a {0} secondes"}}}}},{locale:"fr-BE",parentLocale:"fr"},{locale:"fr-BF",parentLocale:"fr"},{locale:"fr-BI",parentLocale:"fr"},{locale:"fr-BJ",parentLocale:"fr"},{locale:"fr-BL",parentLocale:"fr"},{locale:"fr-CA",parentLocale:"fr",fields:{year:{displayName:"année",relative:{0:"cette année",1:"l’année prochaine","-1":"l’année dernière"},relativeTime:{future:{one:"Dans {0} an",other:"Dans {0} ans"},past:{one:"Il y a {0} an",other:"Il y a {0} ans"}}},month:{displayName:"mois",relative:{0:"ce mois-ci",1:"le mois prochain","-1":"le mois dernier"},relativeTime:{future:{one:"dans {0} mois",other:"dans {0} mois"},past:{one:"il y a {0} mois",other:"il y a {0} mois"}}},day:{displayName:"jour",relative:{0:"aujourd’hui",1:"demain",2:"après-demain","-2":"avant-hier","-1":"hier"},relativeTime:{future:{one:"dans {0} jour",other:"dans {0} jours"},past:{one:"il y a {0} jour",other:"il y a {0} jours"}}},hour:{displayName:"heure",relativeTime:{future:{one:"dans {0} heure",other:"dans {0} heures"},past:{one:"il y a {0} heure",other:"il y a {0} heures"}}},minute:{displayName:"minute",relativeTime:{future:{one:"Dans {0} minute",other:"Dans {0} minutes"},past:{one:"Il y a {0} minute",other:"Il y a {0} minutes"}}},second:{displayName:"seconde",relative:{0:"maintenant"},relativeTime:{future:{one:"dans {0} seconde",other:"dans {0} secondes"},past:{one:"il y a {0} seconde",other:"il y a {0} secondes"}}}}},{locale:"fr-CD",parentLocale:"fr"},{locale:"fr-CF",parentLocale:"fr"},{locale:"fr-CG",parentLocale:"fr"},{locale:"fr-CH",parentLocale:"fr"},{locale:"fr-CI",parentLocale:"fr"},{locale:"fr-CM",parentLocale:"fr"},{locale:"fr-DJ",parentLocale:"fr"},{locale:"fr-DZ",parentLocale:"fr"},{locale:"fr-GA",parentLocale:"fr"},{locale:"fr-GF",parentLocale:"fr"},{locale:"fr-GN",parentLocale:"fr"},{locale:"fr-GP",parentLocale:"fr"},{locale:"fr-GQ",parentLocale:"fr"},{locale:"fr-HT",parentLocale:"fr"},{locale:"fr-KM",parentLocale:"fr"},{locale:"fr-LU",parentLocale:"fr"},{locale:"fr-MA",parentLocale:"fr"},{locale:"fr-MC",parentLocale:"fr"},{locale:"fr-MF",parentLocale:"fr"},{locale:"fr-MG",parentLocale:"fr"},{locale:"fr-ML",parentLocale:"fr"},{locale:"fr-MQ",parentLocale:"fr"},{locale:"fr-MR",parentLocale:"fr"},{locale:"fr-MU",parentLocale:"fr"},{locale:"fr-NC",parentLocale:"fr"},{locale:"fr-NE",parentLocale:"fr"},{locale:"fr-PF",parentLocale:"fr"},{locale:"fr-PM",parentLocale:"fr"},{locale:"fr-RE",parentLocale:"fr"},{locale:"fr-RW",parentLocale:"fr"},{locale:"fr-SC",parentLocale:"fr"},{locale:"fr-SN",parentLocale:"fr"},{locale:"fr-SY",parentLocale:"fr"},{locale:"fr-TD",parentLocale:"fr"},{locale:"fr-TG",parentLocale:"fr"},{locale:"fr-TN",parentLocale:"fr"},{locale:"fr-VU",parentLocale:"fr"},{locale:"fr-WF",parentLocale:"fr"},{locale:"fr-YT",parentLocale:"fr"}];return e});
 
 
 /***/ },
-/* 650 */
+/* 652 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39500,7 +40512,7 @@ webpackJsonp([4],[
 	
 	var _react = __webpack_require__(0);
 	
-	var _mixpanelShape = __webpack_require__(652);
+	var _mixpanelShape = __webpack_require__(654);
 	
 	var _mixpanelShape2 = _interopRequireDefault(_mixpanelShape);
 	
@@ -39552,7 +40564,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 651 */
+/* 653 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39562,7 +40574,7 @@ webpackJsonp([4],[
 	  value: true
 	});
 	
-	var _MixpanelProvider = __webpack_require__(650);
+	var _MixpanelProvider = __webpack_require__(652);
 	
 	var _MixpanelProvider2 = _interopRequireDefault(_MixpanelProvider);
 	
@@ -39571,7 +40583,7 @@ webpackJsonp([4],[
 	exports.default = _MixpanelProvider2.default;
 
 /***/ },
-/* 652 */
+/* 654 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39589,7 +40601,7 @@ webpackJsonp([4],[
 	});
 
 /***/ },
-/* 653 */
+/* 655 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -39628,7 +40640,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 654 */
+/* 656 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39716,7 +40728,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 655 */
+/* 657 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39734,11 +40746,11 @@ webpackJsonp([4],[
 	
 	var _storeShape2 = _interopRequireDefault(_storeShape);
 	
-	var _shallowEqual = __webpack_require__(656);
+	var _shallowEqual = __webpack_require__(658);
 	
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 	
-	var _wrapActionCreators = __webpack_require__(657);
+	var _wrapActionCreators = __webpack_require__(659);
 	
 	var _wrapActionCreators2 = _interopRequireDefault(_wrapActionCreators);
 	
@@ -40117,7 +41129,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 656 */
+/* 658 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -40149,7 +41161,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 657 */
+/* 659 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40167,7 +41179,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 658 */
+/* 660 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40202,7 +41214,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 659 */
+/* 661 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40236,7 +41248,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 660 */
+/* 662 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40305,7 +41317,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 661 */
+/* 663 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40371,7 +41383,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 662 */
+/* 664 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40445,7 +41457,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 663 */
+/* 665 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40508,7 +41520,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 664 */
+/* 666 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40559,7 +41571,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 665 */
+/* 667 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40789,7 +41801,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 666 */
+/* 668 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40825,7 +41837,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 667 */
+/* 669 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40953,7 +41965,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 668 */
+/* 670 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -41016,7 +42028,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 669 */
+/* 671 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -41024,7 +42036,7 @@ webpackJsonp([4],[
 	
 	exports.__esModule = true;
 	
-	var _createBrowserHistory = __webpack_require__(409);
+	var _createBrowserHistory = __webpack_require__(410);
 	
 	var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 	
@@ -41038,7 +42050,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 670 */
+/* 672 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -41121,7 +42133,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 671 */
+/* 673 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -41173,7 +42185,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 672 */
+/* 674 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -41205,7 +42217,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 673 */
+/* 675 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -41227,7 +42239,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 674 */
+/* 676 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -41385,7 +42397,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 675 */
+/* 677 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -41474,7 +42486,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 676 */
+/* 678 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -41731,7 +42743,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 677 */
+/* 679 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -41788,7 +42800,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 678 */
+/* 680 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -41858,7 +42870,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 679 */
+/* 681 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -41868,11 +42880,11 @@ webpackJsonp([4],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _exenv = __webpack_require__(389);
+	var _exenv = __webpack_require__(390);
 	
 	var _exenv2 = _interopRequireDefault(_exenv);
 	
-	var _shallowequal = __webpack_require__(735);
+	var _shallowequal = __webpack_require__(737);
 	
 	var _shallowequal2 = _interopRequireDefault(_shallowequal);
 	
@@ -41982,7 +42994,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 680 */
+/* 682 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -42007,14 +43019,14 @@ webpackJsonp([4],[
 	
 	"use strict";
 	
-	var EventConstants = __webpack_require__(585);
+	var EventConstants = __webpack_require__(587);
 	var EventPluginUtils = __webpack_require__(81);
 	var EventPropagators = __webpack_require__(48);
 	var SyntheticUIEvent = __webpack_require__(50);
-	var TouchEventUtils = __webpack_require__(681);
+	var TouchEventUtils = __webpack_require__(683);
 	var ViewportMetrics = __webpack_require__(137);
 	
-	var keyOf = __webpack_require__(406);
+	var keyOf = __webpack_require__(407);
 	var topLevelTypes = EventConstants.topLevelTypes;
 	
 	var isStartish = EventPluginUtils.isStartish;
@@ -42160,7 +43172,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 681 */
+/* 683 */
 /***/ function(module, exports) {
 
 	/**
@@ -42208,7 +43220,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 682 */
+/* 684 */
 /***/ function(module, exports) {
 
 	module.exports = function(lastTouchEvent, clickTimestamp) {
@@ -42219,11 +43231,11 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 683 */
+/* 685 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var invariant = __webpack_require__(1);
-	var defaultClickRejectionStrategy = __webpack_require__(682);
+	var defaultClickRejectionStrategy = __webpack_require__(684);
 	
 	var alreadyInjected = false;
 	
@@ -42245,14 +43257,12 @@ webpackJsonp([4],[
 	  alreadyInjected = true;
 	
 	  __webpack_require__(47).injection.injectEventPluginsByName({
-	    'TapEventPlugin':       __webpack_require__(680)(shouldRejectClick)
+	    'TapEventPlugin':       __webpack_require__(682)(shouldRejectClick)
 	  });
 	};
 
 
 /***/ },
-/* 684 */,
-/* 685 */,
 /* 686 */,
 /* 687 */,
 /* 688 */,
@@ -42263,7 +43273,9 @@ webpackJsonp([4],[
 /* 693 */,
 /* 694 */,
 /* 695 */,
-/* 696 */
+/* 696 */,
+/* 697 */,
+/* 698 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -42281,7 +43293,7 @@ webpackJsonp([4],[
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _reactDock = __webpack_require__(702);
+	var _reactDock = __webpack_require__(704);
 	
 	var _reactDock2 = _interopRequireDefault(_reactDock);
 	
@@ -42289,11 +43301,11 @@ webpackJsonp([4],[
 	
 	var _actions = __webpack_require__(254);
 	
-	var _reducers = __webpack_require__(698);
+	var _reducers = __webpack_require__(700);
 	
 	var _reducers2 = _interopRequireDefault(_reducers);
 	
-	var _parseKey = __webpack_require__(566);
+	var _parseKey = __webpack_require__(568);
 	
 	var _parseKey2 = _interopRequireDefault(_parseKey);
 	
@@ -42449,7 +43461,7 @@ webpackJsonp([4],[
 	exports.default = DockMonitor;
 
 /***/ },
-/* 697 */
+/* 699 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -42458,7 +43470,7 @@ webpackJsonp([4],[
 	exports.__esModule = true;
 	exports.default = undefined;
 	
-	var _DockMonitor = __webpack_require__(696);
+	var _DockMonitor = __webpack_require__(698);
 	
 	var _DockMonitor2 = _interopRequireDefault(_DockMonitor);
 	
@@ -42467,7 +43479,7 @@ webpackJsonp([4],[
 	exports.default = _DockMonitor2.default;
 
 /***/ },
-/* 698 */
+/* 700 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -42546,7 +43558,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 699 */
+/* 701 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -42557,7 +43569,7 @@ webpackJsonp([4],[
 	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <https://lodash.com/license>
 	 */
-	var getNative = __webpack_require__(455);
+	var getNative = __webpack_require__(456);
 	
 	/** Used as the `TypeError` message for "Functions" methods. */
 	var FUNC_ERROR_TEXT = 'Expected a function';
@@ -42786,7 +43798,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 700 */
+/* 702 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -42811,11 +43823,11 @@ webpackJsonp([4],[
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _lodash = __webpack_require__(699);
+	var _lodash = __webpack_require__(701);
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
-	var _autoprefix = __webpack_require__(701);
+	var _autoprefix = __webpack_require__(703);
 	
 	var _autoprefix2 = _interopRequireDefault(_autoprefix);
 	
@@ -43279,7 +44291,7 @@ webpackJsonp([4],[
 	exports.default = Dock;
 
 /***/ },
-/* 701 */
+/* 703 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -43312,7 +44324,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 702 */
+/* 704 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -43323,7 +44335,7 @@ webpackJsonp([4],[
 	});
 	exports.default = undefined;
 	
-	var _Dock = __webpack_require__(700);
+	var _Dock = __webpack_require__(702);
 	
 	var _Dock2 = _interopRequireDefault(_Dock);
 	
@@ -43332,14 +44344,14 @@ webpackJsonp([4],[
 	exports.default = _Dock2.default;
 
 /***/ },
-/* 703 */
+/* 705 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(704);
+	module.exports = __webpack_require__(706);
 
 
 /***/ },
-/* 704 */
+/* 706 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -43349,7 +44361,7 @@ webpackJsonp([4],[
 	  value: true
 	});
 	
-	var _ponyfill = __webpack_require__(705);
+	var _ponyfill = __webpack_require__(707);
 	
 	var _ponyfill2 = _interopRequireDefault(_ponyfill);
 	
@@ -43375,7 +44387,7 @@ webpackJsonp([4],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12), __webpack_require__(62)(module)))
 
 /***/ },
-/* 705 */
+/* 707 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -43404,7 +44416,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 706 */
+/* 708 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -43426,7 +44438,7 @@ webpackJsonp([4],[
 	
 	var _function2 = _interopRequireDefault(_function);
 	
-	var _reduxDevtoolsThemes = __webpack_require__(724);
+	var _reduxDevtoolsThemes = __webpack_require__(726);
 	
 	var themes = _interopRequireWildcard(_reduxDevtoolsThemes);
 	
@@ -43434,19 +44446,19 @@ webpackJsonp([4],[
 	
 	var _actions = __webpack_require__(257);
 	
-	var _reducers = __webpack_require__(714);
+	var _reducers = __webpack_require__(716);
 	
 	var _reducers2 = _interopRequireDefault(_reducers);
 	
-	var _LogMonitorButtonBar = __webpack_require__(708);
+	var _LogMonitorButtonBar = __webpack_require__(710);
 	
 	var _LogMonitorButtonBar2 = _interopRequireDefault(_LogMonitorButtonBar);
 	
-	var _LogMonitorEntryList = __webpack_require__(711);
+	var _LogMonitorEntryList = __webpack_require__(713);
 	
 	var _LogMonitorEntryList2 = _interopRequireDefault(_LogMonitorEntryList);
 	
-	var _lodash = __webpack_require__(457);
+	var _lodash = __webpack_require__(458);
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
@@ -43691,7 +44703,7 @@ webpackJsonp([4],[
 	exports.default = LogMonitor;
 
 /***/ },
-/* 707 */
+/* 709 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -43705,7 +44717,7 @@ webpackJsonp([4],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _brighten = __webpack_require__(712);
+	var _brighten = __webpack_require__(714);
 	
 	var _brighten2 = _interopRequireDefault(_brighten);
 	
@@ -43822,7 +44834,7 @@ webpackJsonp([4],[
 	exports.default = LogMonitorButton;
 
 /***/ },
-/* 708 */
+/* 710 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -43846,7 +44858,7 @@ webpackJsonp([4],[
 	
 	var _reduxDevtools = __webpack_require__(151);
 	
-	var _LogMonitorButton = __webpack_require__(707);
+	var _LogMonitorButton = __webpack_require__(709);
 	
 	var _LogMonitorButton2 = _interopRequireDefault(_LogMonitorButton);
 	
@@ -43961,7 +44973,7 @@ webpackJsonp([4],[
 	exports.default = LogMonitorButtonBar;
 
 /***/ },
-/* 709 */
+/* 711 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -43985,7 +44997,7 @@ webpackJsonp([4],[
 	
 	var _reactJsonTree2 = _interopRequireDefault(_reactJsonTree);
 	
-	var _LogMonitorEntryAction = __webpack_require__(710);
+	var _LogMonitorEntryAction = __webpack_require__(712);
 	
 	var _LogMonitorEntryAction2 = _interopRequireDefault(_LogMonitorEntryAction);
 	
@@ -44181,7 +45193,7 @@ webpackJsonp([4],[
 	exports.default = LogMonitorEntry;
 
 /***/ },
-/* 710 */
+/* 712 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -44280,7 +45292,7 @@ webpackJsonp([4],[
 	exports.default = LogMonitorAction;
 
 /***/ },
-/* 711 */
+/* 713 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -44296,7 +45308,7 @@ webpackJsonp([4],[
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _LogMonitorEntry = __webpack_require__(709);
+	var _LogMonitorEntry = __webpack_require__(711);
 	
 	var _LogMonitorEntry2 = _interopRequireDefault(_LogMonitorEntry);
 	
@@ -44401,7 +45413,7 @@ webpackJsonp([4],[
 	exports.default = LogMonitorEntryList;
 
 /***/ },
-/* 712 */
+/* 714 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -44427,7 +45439,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 713 */
+/* 715 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -44436,7 +45448,7 @@ webpackJsonp([4],[
 	exports.__esModule = true;
 	exports.default = undefined;
 	
-	var _LogMonitor = __webpack_require__(706);
+	var _LogMonitor = __webpack_require__(708);
 	
 	var _LogMonitor2 = _interopRequireDefault(_LogMonitor);
 	
@@ -44445,7 +45457,7 @@ webpackJsonp([4],[
 	exports.default = _LogMonitor2.default;
 
 /***/ },
-/* 714 */
+/* 716 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -44482,7 +45494,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 715 */
+/* 717 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -44581,7 +45593,7 @@ webpackJsonp([4],[
 	exports['default'] = ItemRange;
 
 /***/ },
-/* 716 */
+/* 718 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -44637,7 +45649,7 @@ webpackJsonp([4],[
 	exports['default'] = JSONArrayNode;
 
 /***/ },
-/* 717 */
+/* 719 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -44657,7 +45669,7 @@ webpackJsonp([4],[
 	
 	var _getIterator3 = _interopRequireDefault(_getIterator2);
 	
-	var _isSafeInteger = __webpack_require__(295);
+	var _isSafeInteger = __webpack_require__(296);
 	
 	var _isSafeInteger2 = _interopRequireDefault(_isSafeInteger);
 	
@@ -44717,7 +45729,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 718 */
+/* 720 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -44779,7 +45791,7 @@ webpackJsonp([4],[
 	exports['default'] = JSONObjectNode;
 
 /***/ },
-/* 719 */
+/* 721 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -44844,7 +45856,7 @@ webpackJsonp([4],[
 	exports['default'] = JSONValueNode;
 
 /***/ },
-/* 720 */
+/* 722 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -44856,7 +45868,7 @@ webpackJsonp([4],[
 	
 	var _extends3 = _interopRequireDefault(_extends2);
 	
-	var _solarized = __webpack_require__(723);
+	var _solarized = __webpack_require__(725);
 	
 	var _solarized2 = _interopRequireDefault(_solarized);
 	
@@ -45073,7 +46085,7 @@ webpackJsonp([4],[
 	});
 
 /***/ },
-/* 721 */
+/* 723 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -45237,7 +46249,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 722 */
+/* 724 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -45263,7 +46275,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 723 */
+/* 725 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -45292,7 +46304,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 724 */
+/* 726 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -45310,12 +46322,12 @@ webpackJsonp([4],[
 	
 	_defaults(exports, _interopExportWildcard(_base16, _defaults));
 	
-	var _nicinabox = __webpack_require__(725);
+	var _nicinabox = __webpack_require__(727);
 	
 	exports.nicinabox = _interopRequire(_nicinabox);
 
 /***/ },
-/* 725 */
+/* 727 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -45345,7 +46357,7 @@ webpackJsonp([4],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 726 */
+/* 728 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -45436,7 +46448,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 727 */
+/* 729 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -45448,7 +46460,7 @@ webpackJsonp([4],[
 	
 	exports.default = persistState;
 	
-	var _mapValues = __webpack_require__(546);
+	var _mapValues = __webpack_require__(547);
 	
 	var _mapValues2 = _interopRequireDefault(_mapValues);
 	
@@ -45526,7 +46538,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 728 */
+/* 730 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -45555,7 +46567,7 @@ webpackJsonp([4],[
 	exports['default'] = thunk;
 
 /***/ },
-/* 729 */
+/* 731 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -45619,7 +46631,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 730 */
+/* 732 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -45676,7 +46688,7 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 731 */
+/* 733 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -45824,14 +46836,14 @@ webpackJsonp([4],[
 	}
 
 /***/ },
-/* 732 */
+/* 734 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(733);
+	module.exports = __webpack_require__(735);
 
 
 /***/ },
-/* 733 */
+/* 735 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -45841,7 +46853,7 @@ webpackJsonp([4],[
 	  value: true
 	});
 	
-	var _ponyfill = __webpack_require__(734);
+	var _ponyfill = __webpack_require__(736);
 	
 	var _ponyfill2 = _interopRequireDefault(_ponyfill);
 	
@@ -45867,7 +46879,7 @@ webpackJsonp([4],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12), __webpack_require__(62)(module)))
 
 /***/ },
-/* 734 */
+/* 736 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -45896,7 +46908,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 735 */
+/* 737 */
 /***/ function(module, exports) {
 
 	module.exports = function shallowEqual(objA, objB, compare, compareContext) {
@@ -45952,7 +46964,7 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 736 */
+/* 738 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -45965,20 +46977,13 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 737 */
+/* 739 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "bbaeb5f32b7042f0def39648a1d111b9.png";
 
 /***/ },
-/* 738 */
-/***/ function(module, exports) {
-
-	module.exports = function() { throw new Error("define cannot be used indirect"); };
-
-
-/***/ },
-/* 739 */
+/* 740 */
 /***/ function(module, exports) {
 
 	(function(self) {
@@ -46445,12 +47450,6 @@ webpackJsonp([4],[
 
 
 /***/ },
-/* 740 */
-/***/ function(module, exports) {
-
-	/* (ignored) */
-
-/***/ },
 /* 741 */
 /***/ function(module, exports) {
 
@@ -46470,10 +47469,16 @@ webpackJsonp([4],[
 
 /***/ },
 /* 744 */
+/***/ function(module, exports) {
+
+	/* (ignored) */
+
+/***/ },
+/* 745 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(264);
+	module.exports = __webpack_require__(265);
 
 
 /***/ }
-],[744]);
+],[745]);

@@ -29,25 +29,25 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(1);
 	
-	var _landricksComponents = __webpack_require__(103);
+	var _landricksComponents = __webpack_require__(104);
 	
 	var _background_city = '/' + "588dd433b0d32f56235d81ba17f0a11c.jpg";
 	
 	var _background_city2 = _interopRequireDefault(_background_city);
 	
-	var _RaisedButton = __webpack_require__(43);
+	var _RaisedButton = __webpack_require__(42);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
-	var _getMuiTheme = __webpack_require__(45);
+	var _getMuiTheme = __webpack_require__(44);
 	
 	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 	
-	var _lightBaseTheme = __webpack_require__(44);
+	var _lightBaseTheme = __webpack_require__(43);
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
-	var _IconSvg = __webpack_require__(42);
+	var _IconSvg = __webpack_require__(45);
 	
 	var _IconSvg2 = _interopRequireDefault(_IconSvg);
 	
@@ -163,6 +163,11 @@ exports.modules = {
 	      return {
 	        muiTheme: (0, _getMuiTheme2.default)(_lightBaseTheme2.default)
 	      };
+	    }
+	  }, {
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      this.context.mixpanel.track('Homepage login', { 'ab_version': 'v1' });
 	    }
 	  }, {
 	    key: 'goToWizard',

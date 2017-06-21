@@ -68,7 +68,7 @@
 /******/ 	};
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 70);
+/******/ 	return __webpack_require__(__webpack_require__.s = 72);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -125,7 +125,7 @@
 	});
 	exports.getMedicalRightsForUser = exports.getSelectedMedicalRights = exports.getMedicalRights = undefined;
 	
-	var _WizardActions = __webpack_require__(18);
+	var _WizardActions = __webpack_require__(19);
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
@@ -202,6 +202,12 @@
 /* 8 */
 /***/ function(module, exports) {
 
+	module.exports = require("material-ui/FlatButton");
+
+/***/ },
+/* 9 */
+/***/ function(module, exports) {
+
 	"use strict";
 	'use strict';
 	
@@ -220,7 +226,7 @@
 	}
 
 /***/ },
-/* 9 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -238,7 +244,7 @@
 	exports.deletePost = deletePost;
 	exports.deletePostRequest = deletePostRequest;
 	
-	var _apiCaller = __webpack_require__(12);
+	var _apiCaller = __webpack_require__(13);
 	
 	var _apiCaller2 = _interopRequireDefault(_apiCaller);
 	
@@ -310,7 +316,7 @@
 	}
 
 /***/ },
-/* 10 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -321,7 +327,7 @@
 	});
 	exports.getPost = exports.getPosts = undefined;
 	
-	var _PostActions = __webpack_require__(9);
+	var _PostActions = __webpack_require__(10);
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
@@ -373,7 +379,7 @@
 	exports.default = PostReducer;
 
 /***/ },
-/* 11 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -386,7 +392,7 @@
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _UserActions = __webpack_require__(17);
+	var _UserActions = __webpack_require__(18);
 	
 	// let initialDob = new Date();
 	// initialDob.setFullYear(initialDob.getFullYear() - 25);
@@ -421,7 +427,7 @@
 	exports.default = UserReducer;
 
 /***/ },
-/* 12 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -433,7 +439,7 @@
 	exports.API_URL = undefined;
 	exports.default = callApi;
 	
-	var _isomorphicFetch = __webpack_require__(79);
+	var _isomorphicFetch = __webpack_require__(81);
 	
 	var _isomorphicFetch2 = _interopRequireDefault(_isomorphicFetch);
 	
@@ -474,7 +480,7 @@
 	}
 
 /***/ },
-/* 13 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -499,12 +505,6 @@
 	});
 	
 	exports.default = _mongoose2.default.model('MedicalEntry', schema);
-
-/***/ },
-/* 14 */
-/***/ function(module, exports) {
-
-	module.exports = require("material-ui/FlatButton");
 
 /***/ },
 /* 15 */
@@ -533,6 +533,12 @@
 
 /***/ },
 /* 17 */
+/***/ function(module, exports) {
+
+	module.exports = require("material-ui/TextField");
+
+/***/ },
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -547,7 +553,7 @@
 	exports.fetchUser = fetchUser;
 	exports.updateUserDetails = updateUserDetails;
 	
-	var _apiCaller = __webpack_require__(12);
+	var _apiCaller = __webpack_require__(13);
 	
 	var _apiCaller2 = _interopRequireDefault(_apiCaller);
 	
@@ -612,7 +618,7 @@
 	}
 
 /***/ },
-/* 18 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -626,7 +632,7 @@
 	exports.selectCondition = selectCondition;
 	exports.unselectCondition = unselectCondition;
 	
-	var _apiCaller = __webpack_require__(12);
+	var _apiCaller = __webpack_require__(13);
 	
 	var _apiCaller2 = _interopRequireDefault(_apiCaller);
 	
@@ -684,7 +690,7 @@
 	}
 
 /***/ },
-/* 19 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -697,31 +703,31 @@
 	
 	var _reactIntl = __webpack_require__(2);
 	
-	var _intl = __webpack_require__(75);
+	var _intl = __webpack_require__(77);
 	
 	var _intl2 = _interopRequireDefault(_intl);
 	
-	var _intlLocalesSupported = __webpack_require__(76);
+	var _intlLocalesSupported = __webpack_require__(78);
 	
 	var _intlLocalesSupported2 = _interopRequireDefault(_intlLocalesSupported);
 	
-	__webpack_require__(77);
+	__webpack_require__(79);
 	
 	var _en = __webpack_require__(90);
 	
 	var _en2 = _interopRequireDefault(_en);
 	
-	var _en3 = __webpack_require__(53);
+	var _en3 = __webpack_require__(55);
 	
 	var _en4 = _interopRequireDefault(_en3);
 	
-	__webpack_require__(78);
+	__webpack_require__(80);
 	
 	var _fr = __webpack_require__(91);
 	
 	var _fr2 = _interopRequireDefault(_fr);
 	
-	var _fr3 = __webpack_require__(54);
+	var _fr3 = __webpack_require__(56);
 	
 	var _fr4 = _interopRequireDefault(_fr3);
 	
@@ -787,7 +793,7 @@
 	localizationData.fr.messages = flattenMessages(localizationData.fr.messages);
 
 /***/ },
-/* 20 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -798,7 +804,7 @@
 	});
 	exports.getShowAddPost = undefined;
 	
-	var _AppActions = __webpack_require__(8);
+	var _AppActions = __webpack_require__(9);
 	
 	// Initial State
 	var initialState = {
@@ -832,7 +838,7 @@
 	exports.default = AppReducer;
 
 /***/ },
-/* 21 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -868,7 +874,7 @@
 	));
 
 /***/ },
-/* 22 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -883,7 +889,7 @@
 	
 	exports.switchLanguage = switchLanguage;
 	
-	var _setup = __webpack_require__(19);
+	var _setup = __webpack_require__(20);
 	
 	// Export Constants
 	var SWITCH_LANGUAGE = exports.SWITCH_LANGUAGE = 'SWITCH_LANGUAGE';
@@ -895,22 +901,16 @@
 	}
 
 /***/ },
-/* 23 */
+/* 24 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/Checkbox");
 
 /***/ },
-/* 24 */
-/***/ function(module, exports) {
-
-	module.exports = require("material-ui/Dialog");
-
-/***/ },
 /* 25 */
 /***/ function(module, exports) {
 
-	module.exports = require("material-ui/TextField");
+	module.exports = require("material-ui/Dialog");
 
 /***/ },
 /* 26 */
@@ -979,7 +979,7 @@
 	
 	var _reactRouter = __webpack_require__(3);
 	
-	var _App = __webpack_require__(55);
+	var _App = __webpack_require__(57);
 	
 	var _App2 = _interopRequireDefault(_App);
 	
@@ -999,8 +999,8 @@
 	/* eslint-disable global-require */
 	if (process.env.NODE_ENV !== 'production') {
 	  // Require async routes only in development for react-hot-reloader to work.
-	  __webpack_require__(63);
-	  __webpack_require__(62);
+	  __webpack_require__(65);
+	  __webpack_require__(64);
 	}
 	
 	// react-router setup with code-splitting
@@ -1051,11 +1051,11 @@
 	
 	var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 	
-	var _DevTools = __webpack_require__(21);
+	var _DevTools = __webpack_require__(22);
 	
 	var _DevTools2 = _interopRequireDefault(_DevTools);
 	
-	var _reducers = __webpack_require__(65);
+	var _reducers = __webpack_require__(67);
 	
 	var _reducers2 = _interopRequireDefault(_reducers);
 	
@@ -1144,7 +1144,7 @@
 	  });
 	};
 	
-	var _medicalEntry = __webpack_require__(13);
+	var _medicalEntry = __webpack_require__(14);
 	
 	var _medicalEntry2 = _interopRequireDefault(_medicalEntry);
 	
@@ -1163,7 +1163,7 @@
 	
 	var _express = __webpack_require__(4);
 	
-	var _medicalrights = __webpack_require__(66);
+	var _medicalrights = __webpack_require__(68);
 	
 	var MedicalRightsController = _interopRequireWildcard(_medicalrights);
 	
@@ -1200,7 +1200,7 @@
 	
 	var _express = __webpack_require__(4);
 	
-	var _populateDB = __webpack_require__(67);
+	var _populateDB = __webpack_require__(69);
 	
 	var PopulateDBController = _interopRequireWildcard(_populateDB);
 	
@@ -1226,7 +1226,7 @@
 	
 	var _express = __webpack_require__(4);
 	
-	var _post = __webpack_require__(68);
+	var _post = __webpack_require__(70);
 	
 	var PostController = _interopRequireWildcard(_post);
 	
@@ -1260,7 +1260,7 @@
 	});
 	exports.fetchComponentData = fetchComponentData;
 	
-	var _promiseUtils = __webpack_require__(71);
+	var _promiseUtils = __webpack_require__(73);
 	
 	function fetchComponentData(store, components, params) {
 	  var needs = components.reduce(function (prev, current) {
@@ -1392,6 +1392,24 @@
 
 /***/ },
 /* 42 */
+/***/ function(module, exports) {
+
+	module.exports = require("material-ui/RaisedButton");
+
+/***/ },
+/* 43 */
+/***/ function(module, exports) {
+
+	module.exports = require("material-ui/styles/baseThemes/lightBaseTheme");
+
+/***/ },
+/* 44 */
+/***/ function(module, exports) {
+
+	module.exports = require("material-ui/styles/getMuiTheme");
+
+/***/ },
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1471,24 +1489,6 @@
 	};
 
 /***/ },
-/* 43 */
-/***/ function(module, exports) {
-
-	module.exports = require("material-ui/RaisedButton");
-
-/***/ },
-/* 44 */
-/***/ function(module, exports) {
-
-	module.exports = require("material-ui/styles/baseThemes/lightBaseTheme");
-
-/***/ },
-/* 45 */
-/***/ function(module, exports) {
-
-	module.exports = require("material-ui/styles/getMuiTheme");
-
-/***/ },
 /* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -1507,7 +1507,7 @@
 	
 	var _reactRedux = __webpack_require__(1);
 	
-	var _MedicalDiagnosticItem = __webpack_require__(64);
+	var _MedicalDiagnosticItem = __webpack_require__(66);
 	
 	var _MedicalDiagnosticItem2 = _interopRequireDefault(_MedicalDiagnosticItem);
 	
@@ -1515,27 +1515,27 @@
 	
 	var _reactSearchInput2 = _interopRequireDefault(_reactSearchInput);
 	
-	var _FlatButton = __webpack_require__(14);
+	var _FlatButton = __webpack_require__(8);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
-	var _RaisedButton = __webpack_require__(43);
+	var _RaisedButton = __webpack_require__(42);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
-	var _Dialog = __webpack_require__(24);
+	var _Dialog = __webpack_require__(25);
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
-	var _TextField = __webpack_require__(25);
+	var _TextField = __webpack_require__(17);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
-	var _getMuiTheme = __webpack_require__(45);
+	var _getMuiTheme = __webpack_require__(44);
 	
 	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 	
-	var _lightBaseTheme = __webpack_require__(44);
+	var _lightBaseTheme = __webpack_require__(43);
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
@@ -1567,7 +1567,7 @@
 	var styles = {
 	  wizardStepPageStyle: {
 	    maxHeight: 350,
-	    maxWidth: 679,
+	    // maxWidth: 679,
 	    overflow: 'auto'
 	  },
 	  medicalDiagnosticsContainer: {
@@ -1645,6 +1645,11 @@
 	    value: function searchUpdated(term) {
 	      console.log(term);
 	      this.setState({ searchTerm: term });
+	    }
+	  }, {
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      this.context.mixpanel.track('Wizard step open', { 'ab_version': 'v1', 'step': '1' });
 	    }
 	  }, {
 	    key: 'getChildContext',
@@ -1728,9 +1733,12 @@
 	}(_react.Component);
 	
 	function mapStateToProps(state) {
+	  var stateObject = state.stateObject;
+	
 	  return {
 	    // showAddPost: getShowAddPost(state),
-	    medicalRights: (0, _WizardReducer.getMedicalRights)(state)
+	    medicalRights: (0, _WizardReducer.getMedicalRights)(state),
+	    stateObject: stateObject
 	  };
 	}
 	
@@ -1743,7 +1751,8 @@
 	};
 	
 	StepNumber1.contextTypes = {
-	  router: _react2.default.PropTypes.object
+	  router: _react2.default.PropTypes.object,
+	  mixpanel: _react.PropTypes.object.isRequired
 	};
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(StepNumber1);
@@ -1767,31 +1776,31 @@
 	
 	var _reactRedux = __webpack_require__(1);
 	
-	var _DatePicker = __webpack_require__(82);
+	var _DatePicker = __webpack_require__(84);
 	
 	var _DatePicker2 = _interopRequireDefault(_DatePicker);
 	
-	var _RadioButton = __webpack_require__(84);
+	var _RadioButton = __webpack_require__(85);
 	
-	var _SelectField = __webpack_require__(85);
+	var _SelectField = __webpack_require__(53);
 	
 	var _SelectField2 = _interopRequireDefault(_SelectField);
 	
-	var _MenuItem = __webpack_require__(83);
+	var _MenuItem = __webpack_require__(52);
 	
 	var _MenuItem2 = _interopRequireDefault(_MenuItem);
 	
-	var _Checkbox = __webpack_require__(23);
+	var _Checkbox = __webpack_require__(24);
 	
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 	
-	var _TextField = __webpack_require__(25);
+	var _TextField = __webpack_require__(17);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
-	var _UserReducer = __webpack_require__(11);
+	var _UserReducer = __webpack_require__(12);
 	
-	var _UserActions = __webpack_require__(17);
+	var _UserActions = __webpack_require__(18);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -1814,8 +1823,17 @@
 	var styles = {
 	  wizardStepPageStyle: {
 	    maxHeight: 350,
-	    maxWidth: 679,
+	    // maxWidth: 679,
 	    overflow: 'auto'
+	  },
+	  title: {
+	    display: 'inline-flex',
+	    width: '100%'
+	  },
+	  personalDetails: {
+	    display: 'inline-flex',
+	    width: '100%',
+	    flexDirection: 'column'
 	  },
 	  block: {
 	    maxWidth: 250
@@ -1886,6 +1904,11 @@
 	      return true;
 	    }
 	  }, {
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      this.context.mixpanel.track('Wizard step open', { 'ab_version': 'v1', 'step': '2' });
+	    }
+	  }, {
 	    key: 'handleHealthInsuranceChange',
 	    value: function handleHealthInsuranceChange(event, index, value) {
 	      console.log('the new value is' + value);
@@ -1935,7 +1958,7 @@
 	        { className: 'step step2', style: styles.wizardStepPageStyle },
 	        _react2.default.createElement(
 	          'section',
-	          null,
+	          { style: styles.title },
 	          _react2.default.createElement(
 	            'h2',
 	            null,
@@ -1944,7 +1967,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-12' },
+	          { className: 'col-md-12', style: styles.personalDetails },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'user-detail-section', style: styles.userDetailSectionWithNoAlign },
@@ -2082,6 +2105,10 @@
 	  user: _react.PropTypes.any
 	};
 	
+	StepNumber2.contextTypes = {
+	  mixpanel: _react.PropTypes.object.isRequired
+	};
+	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(StepNumber2);
 
 /***/ },
@@ -2103,17 +2130,17 @@
 	
 	var _reactRedux = __webpack_require__(1);
 	
-	var _UserReducer = __webpack_require__(11);
+	var _UserReducer = __webpack_require__(12);
 	
 	var _Toggle = __webpack_require__(86);
 	
 	var _Toggle2 = _interopRequireDefault(_Toggle);
 	
-	var _Dialog = __webpack_require__(24);
+	var _Dialog = __webpack_require__(25);
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
-	var _FlatButton = __webpack_require__(14);
+	var _FlatButton = __webpack_require__(8);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
@@ -2134,17 +2161,22 @@
 	var styles = {
 	  wizardStepPageStyle: {
 	    maxHeight: 350,
-	    maxWidth: 679,
+	    // maxWidth: 679,
 	    overflow: 'auto'
 	  },
 	  termsSection: {
 	    maxHeight: 334,
-	    overflow: 'auto'
+	    overflow: 'auto',
+	    display: 'inline-flex',
+	    width: '100%',
+	    flexDirection: 'column'
 	  },
 	  toggle: {
 	    // marginBottom: 15,
 	    marginTop: 15,
-	    maxWidth: 250
+	    maxWidth: 250,
+	    display: 'inline-flex',
+	    width: '100%'
 	  }
 	};
 	
@@ -2177,6 +2209,11 @@
 	  }
 	
 	  _createClass(StepNumber3, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      this.context.mixpanel.track('Wizard step open', { 'ab_version': 'v1', 'step': '3' });
+	    }
+	  }, {
 	    key: 'isValidated',
 	    value: function isValidated() {
 	      console.log(this.state);
@@ -2212,11 +2249,6 @@
 	            'h2',
 	            null,
 	            'Terms of Use'
-	          ),
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            'Agreement between You and Instructure'
 	          ),
 	          _react2.default.createElement(
 	            'div',
@@ -3025,6 +3057,10 @@
 	  user: _react.PropTypes.any
 	};
 	
+	StepNumber3.contextTypes = {
+	  mixpanel: _react.PropTypes.object.isRequired
+	};
+	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(StepNumber3);
 
 /***/ },
@@ -3078,15 +3114,25 @@
 	var styles = {
 	  wizardStepPageStyle: {
 	    maxHeight: 350,
-	    maxWidth: 679,
+	    // maxWidth: 679,
 	    overflow: 'auto'
+	  },
+	  medicalRightsTitle: {
+	    display: 'inline-flex',
+	    width: '100%'
 	  },
 	  medicalRightsContainer: {
 	    // overflow:'auto',
+	    display: 'inline-flex',
+	    width: '100%',
+	    flexDirection: 'column'
 	  },
 	  brokenServerContainer: {
 	    textAlign: 'center',
-	    marginTop: '10%'
+	    marginTop: '10%',
+	    // display:'inline-flex',
+	    width: '100%',
+	    flexDirection: 'column'
 	  },
 	  brokenServerImg: {
 	    height: 120
@@ -3094,6 +3140,15 @@
 	  brokenServerText: {
 	    fontSize: 20,
 	    fontWeight: 'bold'
+	  },
+	  errorSection: {
+	    width: '100%',
+	    // display:'inline-flex',
+	    flexDirection: 'column'
+	  },
+	  spacer: {
+	    width: '100%',
+	    display: 'inline-flex'
 	  }
 	};
 	
@@ -3111,6 +3166,11 @@
 	  }
 	
 	  _createClass(StepNumber4, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      this.context.mixpanel.track('Wizard step open', { 'ab_version': 'v1', 'step': '4' });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      var medicalConditions = this.props.medicalConditions;
@@ -3127,7 +3187,7 @@
 	            { className: 'row' },
 	            _react2.default.createElement(
 	              'section',
-	              null,
+	              { style: styles.medicalRightsTitle },
 	              _react2.default.createElement(
 	                'h2',
 	                null,
@@ -3154,7 +3214,7 @@
 	          { className: 'step', style: styles.wizardStepPageStyle },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'row' },
+	            { className: 'row', style: styles.errorSection },
 	            _react2.default.createElement(
 	              'div',
 	              { style: styles.brokenServerContainer },
@@ -3167,7 +3227,8 @@
 	                'stay tight..',
 	                _react2.default.createElement('br', null),
 	                ' Our best engineers are working to fix it'
-	              )
+	              ),
+	              _react2.default.createElement('span', { style: styles.spacer })
 	            )
 	          )
 	        );
@@ -3187,6 +3248,10 @@
 	  };
 	}
 	
+	StepNumber4.contextTypes = {
+	  mixpanel: _react.PropTypes.object.isRequired
+	};
+	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(StepNumber4);
 
 /***/ },
@@ -3204,9 +3269,9 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Card = __webpack_require__(81);
+	var _Card = __webpack_require__(83);
 	
-	var _FlatButton = __webpack_require__(14);
+	var _FlatButton = __webpack_require__(8);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
@@ -3267,10 +3332,22 @@
 /* 52 */
 /***/ function(module, exports) {
 
-	module.exports = require("react-stepzilla");
+	module.exports = require("material-ui/MenuItem");
 
 /***/ },
 /* 53 */
+/***/ function(module, exports) {
+
+	module.exports = require("material-ui/SelectField");
+
+/***/ },
+/* 54 */
+/***/ function(module, exports) {
+
+	module.exports = require("react-stepzilla");
+
+/***/ },
+/* 55 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3300,7 +3377,7 @@
 	};
 
 /***/ },
-/* 54 */
+/* 56 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3330,7 +3407,7 @@
 	};
 
 /***/ },
-/* 55 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3363,21 +3440,21 @@
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
-	var _DevTools = __webpack_require__(21);
+	var _DevTools = __webpack_require__(22);
 	
 	var _DevTools2 = _interopRequireDefault(_DevTools);
 	
-	var _Header = __webpack_require__(57);
+	var _Header = __webpack_require__(59);
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _Footer = __webpack_require__(56);
+	var _Footer = __webpack_require__(58);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
-	var _AppActions = __webpack_require__(8);
+	var _AppActions = __webpack_require__(9);
 	
-	var _IntlActions = __webpack_require__(22);
+	var _IntlActions = __webpack_require__(23);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -3476,7 +3553,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(App);
 
 /***/ },
-/* 56 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3533,7 +3610,7 @@
 	exports.default = Footer;
 
 /***/ },
-/* 57 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3564,7 +3641,7 @@
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _IconSvg = __webpack_require__(42);
+	var _IconSvg = __webpack_require__(45);
 	
 	var _IconSvg2 = _interopRequireDefault(_IconSvg);
 	
@@ -3611,7 +3688,7 @@
 	exports.default = Header;
 
 /***/ },
-/* 58 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3623,9 +3700,9 @@
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _setup = __webpack_require__(19);
+	var _setup = __webpack_require__(20);
 	
-	var _IntlActions = __webpack_require__(22);
+	var _IntlActions = __webpack_require__(23);
 	
 	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 	
@@ -3658,7 +3735,7 @@
 	exports.default = IntlReducer;
 
 /***/ },
-/* 59 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3764,7 +3841,7 @@
 	exports.default = (0, _reactIntl.injectIntl)(PostCreateWidget);
 
 /***/ },
-/* 60 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3778,7 +3855,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _PostListItem = __webpack_require__(61);
+	var _PostListItem = __webpack_require__(63);
 	
 	var _PostListItem2 = _interopRequireDefault(_PostListItem);
 	
@@ -3811,7 +3888,7 @@
 	
 	var _progTracker2 = _interopRequireDefault(_progTracker);
 	
-	var _reactStepzilla = __webpack_require__(52);
+	var _reactStepzilla = __webpack_require__(54);
 	
 	var _reactStepzilla2 = _interopRequireDefault(_reactStepzilla);
 	
@@ -3883,7 +3960,7 @@
 	exports.default = PostList;
 
 /***/ },
-/* 61 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3970,7 +4047,7 @@
 	exports.default = PostListItem;
 
 /***/ },
-/* 62 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4005,9 +4082,9 @@
 	
 	var _PostListItem2 = _interopRequireDefault(_PostListItem);
 	
-	var _PostActions = __webpack_require__(9);
+	var _PostActions = __webpack_require__(10);
 	
-	var _PostReducer = __webpack_require__(10);
+	var _PostReducer = __webpack_require__(11);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -4072,7 +4149,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(PostDetailPage);
 
 /***/ },
-/* 63 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4090,21 +4167,21 @@
 	
 	var _reactRedux = __webpack_require__(1);
 	
-	var _PostList = __webpack_require__(60);
+	var _PostList = __webpack_require__(62);
 	
 	var _PostList2 = _interopRequireDefault(_PostList);
 	
-	var _PostCreateWidget = __webpack_require__(59);
+	var _PostCreateWidget = __webpack_require__(61);
 	
 	var _PostCreateWidget2 = _interopRequireDefault(_PostCreateWidget);
 	
-	var _PostActions = __webpack_require__(9);
+	var _PostActions = __webpack_require__(10);
 	
-	var _AppActions = __webpack_require__(8);
+	var _AppActions = __webpack_require__(9);
 	
-	var _AppReducer = __webpack_require__(20);
+	var _AppReducer = __webpack_require__(21);
 	
-	var _PostReducer = __webpack_require__(10);
+	var _PostReducer = __webpack_require__(11);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -4200,7 +4277,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(PostListPage);
 
 /***/ },
-/* 64 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4223,7 +4300,7 @@
 	
 	var _reactIntl = __webpack_require__(2);
 	
-	var _Checkbox = __webpack_require__(23);
+	var _Checkbox = __webpack_require__(24);
 	
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 	
@@ -4233,7 +4310,7 @@
 	
 	var _MedicalDiagnosticItem2 = _interopRequireDefault(_MedicalDiagnosticItem);
 	
-	var _WizardActions = __webpack_require__(18);
+	var _WizardActions = __webpack_require__(19);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -4302,7 +4379,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(MedicalDiagnosticItem);
 
 /***/ },
-/* 65 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4314,15 +4391,15 @@
 	
 	var _redux = __webpack_require__(26);
 	
-	var _AppReducer = __webpack_require__(20);
+	var _AppReducer = __webpack_require__(21);
 	
 	var _AppReducer2 = _interopRequireDefault(_AppReducer);
 	
-	var _PostReducer = __webpack_require__(10);
+	var _PostReducer = __webpack_require__(11);
 	
 	var _PostReducer2 = _interopRequireDefault(_PostReducer);
 	
-	var _IntlReducer = __webpack_require__(58);
+	var _IntlReducer = __webpack_require__(60);
 	
 	var _IntlReducer2 = _interopRequireDefault(_IntlReducer);
 	
@@ -4330,7 +4407,7 @@
 	
 	var _WizardReducer2 = _interopRequireDefault(_WizardReducer);
 	
-	var _UserReducer = __webpack_require__(11);
+	var _UserReducer = __webpack_require__(12);
 	
 	var _UserReducer2 = _interopRequireDefault(_UserReducer);
 	
@@ -4351,7 +4428,7 @@
 	// Import Reducers
 
 /***/ },
-/* 66 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4365,7 +4442,7 @@
 	exports.getMedicalRightsMock = getMedicalRightsMock;
 	exports.getAllConditions = getAllConditions;
 	
-	var _medicalEntry = __webpack_require__(13);
+	var _medicalEntry = __webpack_require__(14);
 	
 	var _medicalEntry2 = _interopRequireDefault(_medicalEntry);
 	
@@ -4669,7 +4746,7 @@
 	}
 
 /***/ },
-/* 67 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4680,15 +4757,15 @@
 	});
 	exports.populateDB = populateDB;
 	
-	var _medicalEntry = __webpack_require__(13);
+	var _medicalEntry = __webpack_require__(14);
 	
 	var _medicalEntry2 = _interopRequireDefault(_medicalEntry);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function populateDB(req, res) {
-	  var csv = __webpack_require__(73);
-	  var hashMap = __webpack_require__(74);
+	  var csv = __webpack_require__(75);
+	  var hashMap = __webpack_require__(76);
 	  var map = new hashMap();
 	  var medRightArr = [];
 	
@@ -4751,7 +4828,7 @@
 	}
 
 /***/ },
-/* 68 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4765,15 +4842,15 @@
 	exports.getPost = getPost;
 	exports.deletePost = deletePost;
 	
-	var _post = __webpack_require__(69);
+	var _post = __webpack_require__(71);
 	
 	var _post2 = _interopRequireDefault(_post);
 	
-	var _cuid = __webpack_require__(72);
+	var _cuid = __webpack_require__(74);
 	
 	var _cuid2 = _interopRequireDefault(_cuid);
 	
-	var _limax = __webpack_require__(80);
+	var _limax = __webpack_require__(82);
 	
 	var _limax2 = _interopRequireDefault(_limax);
 	
@@ -4860,7 +4937,7 @@
 	}
 
 /***/ },
-/* 69 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4890,7 +4967,7 @@
 	exports.default = _mongoose2.default.model('Post', postSchema);
 
 /***/ },
-/* 70 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5090,7 +5167,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, "server"))
 
 /***/ },
-/* 71 */
+/* 73 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -5121,88 +5198,76 @@
 	}
 
 /***/ },
-/* 72 */
+/* 74 */
 /***/ function(module, exports) {
 
 	module.exports = require("cuid");
 
 /***/ },
-/* 73 */
+/* 75 */
 /***/ function(module, exports) {
 
 	module.exports = require("fast-csv");
 
 /***/ },
-/* 74 */
+/* 76 */
 /***/ function(module, exports) {
 
 	module.exports = require("hashmap");
 
 /***/ },
-/* 75 */
+/* 77 */
 /***/ function(module, exports) {
 
 	module.exports = require("intl");
 
 /***/ },
-/* 76 */
+/* 78 */
 /***/ function(module, exports) {
 
 	module.exports = require("intl-locales-supported");
 
 /***/ },
-/* 77 */
+/* 79 */
 /***/ function(module, exports) {
 
 	module.exports = require("intl/locale-data/jsonp/en");
 
 /***/ },
-/* 78 */
+/* 80 */
 /***/ function(module, exports) {
 
 	module.exports = require("intl/locale-data/jsonp/fr");
 
 /***/ },
-/* 79 */
+/* 81 */
 /***/ function(module, exports) {
 
 	module.exports = require("isomorphic-fetch");
 
 /***/ },
-/* 80 */
+/* 82 */
 /***/ function(module, exports) {
 
 	module.exports = require("limax");
 
 /***/ },
-/* 81 */
+/* 83 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/Card");
 
 /***/ },
-/* 82 */
+/* 84 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/DatePicker");
 
 /***/ },
-/* 83 */
-/***/ function(module, exports) {
-
-	module.exports = require("material-ui/MenuItem");
-
-/***/ },
-/* 84 */
-/***/ function(module, exports) {
-
-	module.exports = require("material-ui/RadioButton");
-
-/***/ },
 /* 85 */
 /***/ function(module, exports) {
 
-	module.exports = require("material-ui/SelectField");
+	module.exports = require("material-ui/RadioButton");
 
 /***/ },
 /* 86 */
@@ -5282,10 +5347,29 @@
 /* 100 */,
 /* 101 */,
 /* 102 */,
-/* 103 */
+/* 103 */,
+/* 104 */
 /***/ function(module, exports) {
 
 	module.exports = require("landricks-components");
+
+/***/ },
+/* 105 */
+/***/ function(module, exports) {
+
+	module.exports = require("material-ui/Stepper");
+
+/***/ },
+/* 106 */
+/***/ function(module, exports) {
+
+	module.exports = require("material-ui/internal/ExpandTransition");
+
+/***/ },
+/* 107 */
+/***/ function(module, exports) {
+
+	module.exports = require("react-stars");
 
 /***/ }
 /******/ ]);

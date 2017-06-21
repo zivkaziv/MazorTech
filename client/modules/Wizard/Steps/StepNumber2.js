@@ -95,6 +95,10 @@ class StepNumber2 extends Component {
     return true;
   }
 
+  componentDidMount() {
+    this.context.mixpanel.track('Wizard step open',{'ab_version':'v1','step':'2'});
+  }
+
   handleHealthInsuranceChange(event, index, value) {
     console.log('the new value is' + value);
     this.props.user.health_insurance = value;
@@ -241,6 +245,10 @@ function mapStateToProps(state) {
 
 StepNumber2.propTypes = {
   user: PropTypes.any
+};
+
+StepNumber2.contextTypes = {
+  mixpanel: PropTypes.object.isRequired
 };
 
 export default connect(mapStateToProps)(StepNumber2);

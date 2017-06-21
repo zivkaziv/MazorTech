@@ -103,7 +103,6 @@ const styles = {
   }
 };
 
-
 const LIGHT_BAND_THEME = {
   ...BASE_THEME,
   backgroundColor: '#8fcfe8',
@@ -120,10 +119,15 @@ class LandingPage extends Component {
 
     this.goToWizard = this.goToWizard.bind(this);
   }
+
   getChildContext() {
     return {
       muiTheme: getMuiTheme(lightTheme)
     };
+  }
+
+  componentDidMount() {
+    this.context.mixpanel.track('Homepage login',{'ab_version':'v1'});
   }
 
   goToWizard(){

@@ -48,6 +48,10 @@ class StepNumber3 extends Component {
     this.isValidated = this.isValidated.bind(this);
   }
 
+  componentDidMount() {
+    this.context.mixpanel.track('Wizard step open',{'ab_version':'v1','step':'3'});
+  }
+
   isValidated() {
     console.log(this.state);
     if(!this.props.user.agreed_terms){
@@ -190,6 +194,10 @@ function mapStateToProps(state) {
 
 StepNumber3.propTypes = {
   user: PropTypes.any
+};
+
+StepNumber3.contextTypes = {
+  mixpanel: PropTypes.object.isRequired
 };
 
 export default connect(mapStateToProps)(StepNumber3);

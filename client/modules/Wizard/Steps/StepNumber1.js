@@ -76,6 +76,11 @@ class StepNumber1 extends Component {
     console.log(term);
     this.setState({searchTerm: term})
   }
+
+  componentDidMount() {
+    this.context.mixpanel.track('Wizard step open',{'ab_version':'v1','step':'1'});
+  }
+
   handleOpen = () => {
     this.setState({dialogOpen: true});
   };
@@ -165,9 +170,11 @@ class StepNumber1 extends Component {
 }
 
 function mapStateToProps(state) {
+  const {stateObject} = state;
   return {
     // showAddPost: getShowAddPost(state),
-    medicalRights: getMedicalRights(state)
+    medicalRights: getMedicalRights(state),
+    stateObject
   };
 }
 
@@ -181,6 +188,7 @@ StepNumber1.childContextTypes = {
 
 StepNumber1.contextTypes = {
   router: React.PropTypes.object,
+  mixpanel: PropTypes.object.isRequired
 };
 
 export default connect(mapStateToProps)(StepNumber1);

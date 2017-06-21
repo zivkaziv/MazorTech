@@ -64,6 +64,10 @@ class StepNumber4 extends Component {
 
   }
 
+  componentDidMount() {
+    this.context.mixpanel.track('Wizard step open',{'ab_version':'v1','step':'4'});
+  }
+
   render(){
     const {medicalConditions} = this.props;
     console.log(medicalConditions);
@@ -121,6 +125,10 @@ function mapStateToProps(state) {
     medicalConditions: getMedicalRightsForUser(state),
   };
 }
+
+StepNumber4.contextTypes = {
+  mixpanel: PropTypes.object.isRequired
+};
 
 export default connect(mapStateToProps)(StepNumber4);
 

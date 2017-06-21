@@ -7,6 +7,9 @@ import MedicalRightItem from '../componenets/MedicalRightItem/MedicalRIghtItem';
 
 // Material
 import TextField from 'material-ui/TextField';
+import FlatButton from 'material-ui/FlatButton';
+import SelectField from 'material-ui/SelectField';
+import MenuItem from 'material-ui/MenuItem';
 
 import ReactStars from 'react-stars'
 
@@ -14,8 +17,9 @@ import ReactStars from 'react-stars'
 import { getSelectedMedicalRights } from '../WizardReducer';
 
 const styles = {
-  medicalRightsContainer:{
-    overflow:'auto',
+  question:{
+    display:'flex',
+    alignItems:'center'
   }
 };
 
@@ -24,38 +28,114 @@ export default class StepSurvey extends Component {
     super(props);
 
     this.state = {
+      generalRating:0,
+      isSubmitted:false,
+      moreFeatures:'',
+      freeText:''
     };
 
-    this.isValidated = this.isValidated.bind(this);
+    this.ratingChanged = this.ratingChanged.bind(this);
+    this.submitFeedback = this.submitFeedback.bind(this);
   }
 
-  isValidated(){
-    console.log('validate');
-    return false;
+  componentDidMount() {
+    this.context.mixpanel.track('Wizard step open',{'ab_version':'v1','step':'survey'});
   }
 
+  ratingChanged(newRating){
+    console.log(newRating);
+    this.state.generalRating = newRating;
+  };
+
+  submitFeedback(){
+    this.context.mixpanel.track('Feedback',{
+      'ab_version':'v1',
+      'general_rating':this.state.generalRating,
+      'more_features':this.state.moreFeatures,
+      'free_text':this.state.freeText,
+    });
+
+    this.setState({isSubmitted: true});
+  }
+
+  handleChange = (event, index, value) => this.setState({moreFeatures:value});
+
+  textFieldChange = (event, text) => this.setState({freeText:text});
   render(){
-    return(
-      <div className="step" style={styles.wizardStepPageStyle}>
-        <div className="row">
-          <section>
-            <h2>Let us know what you think</h2>
-          </section>
-          {/*<CircularProgress size={80} thickness={5} />*/}
-          <div className="col-md-12">
-            We really want to get improve, please write us your feedback:
-            Did you like it?
-            And what you want to see next?
-            <TextField
-              hintText="Tell us what do you think"
-              floatingLabelText="What do you want to see more?"
-              multiLine={true}
-            /><br />
+      var results = null;
+      if(!this.state.isSubmitted){
+        results = (
+          <div className="step" style={styles.wizardStepPageStyle}>
+              <div className="row">
+              <section>
+                <h2>Help us to get improve</h2>
+              </section>
+              {/*<CircularProgress size={80} thickness={5} />*/}
+              <div className="col-md-12">
+                <br/>
+                <br/>
+                <div style={styles.question}>
+                  <span style={{marginRight:20}}>Did you like the idea of our wizard?</span>
+                  <ReactStars
+                    count={5}
+                    onChange={this.ratingChanged}
+                    size={24}
+                    color2={'#ffd700'}/>
+                </div>
+                <div style={styles.question}>
+                  <SelectField
+                    style={{minWidth:350}}
+                    floatingLabelText="What else will really help you?"
+                    value={this.state.moreFeatures}
+                    onChange={this.handleChange}
+                  >
+                    <MenuItem value={'more_rights'} primaryText="Get more rights" />
+                    <MenuItem value={'help_to_get_them'} primaryText="Someone that will help me to get them" />
+                    <MenuItem value={'comparison'} primaryText="Insurance comparison" />
+                    <MenuItem value={'smart_recommendation'} primaryText="Recommend me on other insurance programs" />
+                  </SelectField>
+                </div>
+                <TextField
+                  hintText="Free text for everything you want"
+                  floatingLabelText="feel free to write any review"
+                  multiLine={true}
+                  onChange={this.textFieldChange}
+                /><br />
+
+                <FlatButton
+                  style={{marginTop:30}}
+                  label="Submit"
+                  primary={true}
+                  keyboardFocused={false}
+                  onTouchTap={this.submitFeedback}
+                />
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    )
+        )
+      }else {
+        results = (
+          <div className="step" style={styles.wizardStepPageStyle}>
+            <div className="row">
+              <h1 style={{
+                display:'flex',
+                justifyContent:'center',
+                color:'#00bcd4',
+                textAlign:'center'
+              }}>
+                Thanks..
+                <br/>
+                you really helped us
+              </h1>
+            </div>
+          </div>
+        )
+      }
+
+      return results;
   }
 }
 
-
+StepSurvey.contextTypes = {
+  mixpanel: PropTypes.object.isRequired
+};
