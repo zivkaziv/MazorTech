@@ -90,7 +90,6 @@ class StepNumber1 extends Component {
     this.setState({cantFindDialogOpen: false});
   };
 
-
   getChildContext() {
     return {
       muiTheme: getMuiTheme(lightTheme)
@@ -168,7 +167,7 @@ class StepNumber1 extends Component {
 function mapStateToProps(state) {
   return {
     // showAddPost: getShowAddPost(state),
-    medicalRights: getMedicalRights(state),
+    medicalRights: getMedicalRights(state)
   };
 }
 
@@ -177,7 +176,7 @@ StepNumber1.propTypes = {
 };
 
 StepNumber1.childContextTypes = {
-  muiTheme: React.PropTypes.object
+  muiTheme: React.PropTypes.object,
 };
 
 StepNumber1.contextTypes = {

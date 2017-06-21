@@ -16,19 +16,22 @@ const styles = {
   }
 };
 
-class StepNumber5 extends Component {
+export default class StepNumber5 extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
     };
 
+    this.isValidated = this.isValidated.bind(this);
+  }
+
+  isValidated(){
+    console.log('validate');
+    return false;
   }
 
   render(){
-    const {medicalConditions} = this.props;
-    console.log(medicalConditions);
-
     return(
       <div className="step" style={styles.wizardStepPageStyle}>
         <div className="row">
@@ -46,12 +49,4 @@ class StepNumber5 extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    // showAddPost: getShowAddPost(state),
-    medicalConditions: getSelectedMedicalRights(state),
-  };
-}
-
-export default connect(mapStateToProps)(StepNumber5);
 
