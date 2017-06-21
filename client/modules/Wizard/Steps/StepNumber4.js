@@ -68,6 +68,12 @@ class StepNumber4 extends Component {
     this.context.mixpanel.track('Wizard step open',{'ab_version':'v1','step':'4'});
   }
 
+  componentWillUnmount(){
+    this.context.mixpanel.track('Medical right results',{
+      'num_of_selected_medical_conditions':this.props.medicalConditions.length
+    });
+  }
+
   render(){
     const {medicalConditions} = this.props;
     console.log(medicalConditions);

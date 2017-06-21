@@ -200,4 +200,4 @@ StepNumber3.contextTypes = {
   mixpanel: PropTypes.object.isRequired
 };
 
-export default connect(mapStateToProps)(StepNumber3);
+export default connect(mapStateToProps, null, null, { withRef: true })(StepNumber3);

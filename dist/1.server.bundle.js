@@ -261,8 +261,6 @@ exports.modules = {
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'col-md-12' },
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'div',
 	                { style: styles.question },
@@ -587,14 +585,28 @@ exports.modules = {
 	    }, _this.handleNext = function () {
 	      var stepIndex = _this.state.stepIndex;
 	
-	      if (!_this.state.loading) {
-	        _this.dummyAsync(function () {
-	          return _this.setState({
-	            loading: false,
-	            stepIndex: stepIndex + 1,
-	            finished: stepIndex >= 3
+	      if (_this.handleStepValidation(stepIndex)) {
+	        if (!_this.state.loading) {
+	          _this.dummyAsync(function () {
+	            return _this.setState({
+	              loading: false,
+	              stepIndex: stepIndex + 1,
+	              finished: stepIndex >= 3
+	            });
 	          });
-	        });
+	        }
+	      }
+	    }, _this.handleStepValidation = function (stepIndex) {
+	      try {
+	        var stepIndexToWorkOn = ++stepIndex;
+	        console.log(stepIndexToWorkOn);
+	        if (_this.refs['step' + stepIndexToWorkOn].getWrappedInstance() && _this.refs['step' + stepIndexToWorkOn].getWrappedInstance().isValidated) {
+	          return _this.refs['step' + stepIndexToWorkOn].getWrappedInstance().isValidated();
+	        } else {
+	          return true;
+	        }
+	      } catch (err) {
+	        return true;
 	      }
 	    }, _this.handlePrev = function () {
 	      var stepIndex = _this.state.stepIndex;

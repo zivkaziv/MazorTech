@@ -170,11 +170,8 @@ class StepNumber1 extends Component {
 }
 
 function mapStateToProps(state) {
-  const {stateObject} = state;
   return {
-    // showAddPost: getShowAddPost(state),
-    medicalRights: getMedicalRights(state),
-    stateObject
+    medicalRights: getMedicalRights(state)
   };
 }
 
@@ -191,4 +188,4 @@ StepNumber1.contextTypes = {
   mixpanel: PropTypes.object.isRequired
 };
 
-export default connect(mapStateToProps)(StepNumber1);
+export default connect(mapStateToProps, null, null, { withRef: true })(StepNumber1);

@@ -6716,6 +6716,7 @@ webpackJsonp([4],[
 	exports.toggleAddPost = toggleAddPost;
 	// Export Constants
 	var TOGGLE_ADD_POST = exports.TOGGLE_ADD_POST = 'TOGGLE_ADD_POST';
+	var FETCH_DEVICE = exports.FETCH_DEVICE = 'FETCH_DEVICE';
 	
 	// Export Actions
 	function toggleAddPost() {
@@ -11910,8 +11911,8 @@ webpackJsonp([4],[
 	    gender: 'female',
 	    isSmoking: false,
 	    dob: initialDob,
-	    health_insurance: 1,
-	    weight: 110,
+	    healthInsurance: 'MEDICARE',
+	    weight: 150,
 	    agreed_terms: false
 	  };
 	}

@@ -43,12 +43,29 @@ class WizardMainStepper extends React.Component {
 
   handleNext = () => {
     const {stepIndex} = this.state;
-    if (!this.state.loading) {
-      this.dummyAsync(() => this.setState({
-        loading: false,
-        stepIndex: stepIndex + 1,
-        finished: stepIndex >= 3,
-      }));
+    if(this.handleStepValidation(stepIndex)) {
+      if (!this.state.loading) {
+        this.dummyAsync(() => this.setState({
+          loading: false,
+          stepIndex: stepIndex + 1,
+          finished: stepIndex >= 3,
+        }));
+      }
+    }
+  };
+
+  handleStepValidation = (stepIndex) => {
+    try {
+      let stepIndexToWorkOn = ++stepIndex;
+      console.log(stepIndexToWorkOn);
+      if (this.refs['step' + stepIndexToWorkOn].getWrappedInstance() &&
+        this.refs['step' + stepIndexToWorkOn].getWrappedInstance().isValidated) {
+        return this.refs['step' + stepIndexToWorkOn].getWrappedInstance().isValidated()
+      } else {
+        return true;
+      }
+    }catch(err){
+      return true;
     }
   };
 

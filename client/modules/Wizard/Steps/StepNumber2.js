@@ -92,16 +92,27 @@ class StepNumber2 extends Component {
 
   isValidated() {
     updateUserDetails();
+    //send them with mixpanel
+    this.sendUserDetails();
     return true;
   }
 
+  sendUserDetails = () =>{
+    this.context.mixpanel.track('User details',{
+      'gender': this.props.user.gender,
+      'is_smoking': this.props.user.isSmoking,
+      'dob': this.props.user.dob,
+      'health_insurance': this.props.user.healthInsurance,
+      'weight': this.props.user.weight,
+    });
+  };
   componentDidMount() {
     this.context.mixpanel.track('Wizard step open',{'ab_version':'v1','step':'2'});
   }
 
   handleHealthInsuranceChange(event, index, value) {
     console.log('the new value is' + value);
-    this.props.user.health_insurance = value;
+    this.props.user.healthInsurance = value;
     this.updateState();
   }
 
@@ -188,19 +199,19 @@ class StepNumber2 extends Component {
             <div className="user-detail-input">
               <SelectField
                 floatingLabelText="Health insurance"
-                value={this.props.user.health_insurance}
+                value={this.props.user.healthInsurance}
                 onChange={this.handleHealthInsuranceChange}
               >
-                <MenuItem value={1} primaryText="Medicare" />
-                <MenuItem value={2} primaryText="Unitedhealth Group" />
-                <MenuItem value={3} primaryText="Wellpoint Inc. Group" />
-                <MenuItem value={4} primaryText="Kaiser Foundation Group" />
-                <MenuItem value={5} primaryText="Humana Group" />
-                <MenuItem value={6} primaryText="Aetna Group" />
-                <MenuItem value={7} primaryText="HCSC Group" />
-                <MenuItem value={8} primaryText="Cigna Health Group" />
-                <MenuItem value={9} primaryText="Highmark Group" />
-                <MenuItem value={10} primaryText="Blue Cross Blue Shield Group" />
+                <MenuItem value={'MEDICARE'} primaryText="Medicare" />
+                <MenuItem value={'UNITED_HEALTH'} primaryText="Unitedhealth Group" />
+                <MenuItem value={'WELL_POINT'} primaryText="Wellpoint Inc. Group" />
+                <MenuItem value={'KAISER'} primaryText="Kaiser Foundation Group" />
+                <MenuItem value={'HUMANA'} primaryText="Humana Group" />
+                <MenuItem value={'AETNA'} primaryText="Aetna Group" />
+                <MenuItem value={'HCSC'} primaryText="HCSC Group" />
+                <MenuItem value={'CIGNA_HEALTH'} primaryText="Cigna Health Group" />
+                <MenuItem value={'HIGHMARK'} primaryText="Highmark Group" />
+                <MenuItem value={'BLUE_CROSS_SHILD'} primaryText="Blue Cross Blue Shield Group" />
               </SelectField>
               <div style={styles.userDetailNote}>
                 If you can't find your insurance company it's must be because we are still working on analyze this data...
@@ -251,4 +262,4 @@ StepNumber2.contextTypes = {
   mixpanel: PropTypes.object.isRequired
 };
 
-export default connect(mapStateToProps)(StepNumber2);
+export default connect(mapStateToProps, null, null, { withRef: true })(StepNumber2);

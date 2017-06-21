@@ -72,8 +72,6 @@ export default class StepSurvey extends Component {
               </section>
               {/*<CircularProgress size={80} thickness={5} />*/}
               <div className="col-md-12">
-                <br/>
-                <br/>
                 <div style={styles.question}>
                   <span style={{marginRight:20}}>Did you like the idea of our wizard?</span>
                   <ReactStars

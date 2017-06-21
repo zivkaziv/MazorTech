@@ -5627,12 +5627,8 @@ webpackJsonp([1],{
 	}(_react.Component);
 	
 	function mapStateToProps(state) {
-	  var stateObject = state.stateObject;
-	
 	  return {
-	    // showAddPost: getShowAddPost(state),
-	    medicalRights: (0, _WizardReducer.getMedicalRights)(state),
-	    stateObject: stateObject
+	    medicalRights: (0, _WizardReducer.getMedicalRights)(state)
 	  };
 	}
 	
@@ -5649,7 +5645,7 @@ webpackJsonp([1],{
 	  mixpanel: _react.PropTypes.object.isRequired
 	};
 	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps)(StepNumber1);
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, null, null, { withRef: true })(StepNumber1);
 
 /***/ },
 
@@ -5780,6 +5776,16 @@ webpackJsonp([1],{
 	
 	    var _this = _possibleConstructorReturn(this, (StepNumber2.__proto__ || Object.getPrototypeOf(StepNumber2)).call(this, props));
 	
+	    _this.sendUserDetails = function () {
+	      _this.context.mixpanel.track('User details', {
+	        'gender': _this.props.user.gender,
+	        'is_smoking': _this.props.user.isSmoking,
+	        'dob': _this.props.user.dob,
+	        'health_insurance': _this.props.user.healthInsurance,
+	        'weight': _this.props.user.weight
+	      });
+	    };
+	
 	    _this.state = {};
 	
 	    //Binds
@@ -5796,6 +5802,8 @@ webpackJsonp([1],{
 	    key: 'isValidated',
 	    value: function isValidated() {
 	      (0, _UserActions.updateUserDetails)();
+	      //send them with mixpanel
+	      this.sendUserDetails();
 	      return true;
 	    }
 	  }, {
@@ -5807,7 +5815,7 @@ webpackJsonp([1],{
 	    key: 'handleHealthInsuranceChange',
 	    value: function handleHealthInsuranceChange(event, index, value) {
 	      console.log('the new value is' + value);
-	      this.props.user.health_insurance = value;
+	      this.props.user.healthInsurance = value;
 	      this.updateState();
 	    }
 	  }, {
@@ -5928,19 +5936,19 @@ webpackJsonp([1],{
 	                _SelectField2.default,
 	                {
 	                  floatingLabelText: 'Health insurance',
-	                  value: this.props.user.health_insurance,
+	                  value: this.props.user.healthInsurance,
 	                  onChange: this.handleHealthInsuranceChange
 	                },
-	                _react2.default.createElement(_MenuItem2.default, { value: 1, primaryText: 'Medicare' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 2, primaryText: 'Unitedhealth Group' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 3, primaryText: 'Wellpoint Inc. Group' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 4, primaryText: 'Kaiser Foundation Group' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 5, primaryText: 'Humana Group' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 6, primaryText: 'Aetna Group' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 7, primaryText: 'HCSC Group' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 8, primaryText: 'Cigna Health Group' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 9, primaryText: 'Highmark Group' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 10, primaryText: 'Blue Cross Blue Shield Group' })
+	                _react2.default.createElement(_MenuItem2.default, { value: 'MEDICARE', primaryText: 'Medicare' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'UNITED_HEALTH', primaryText: 'Unitedhealth Group' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'WELL_POINT', primaryText: 'Wellpoint Inc. Group' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'KAISER', primaryText: 'Kaiser Foundation Group' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'HUMANA', primaryText: 'Humana Group' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'AETNA', primaryText: 'Aetna Group' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'HCSC', primaryText: 'HCSC Group' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'CIGNA_HEALTH', primaryText: 'Cigna Health Group' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'HIGHMARK', primaryText: 'Highmark Group' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'BLUE_CROSS_SHILD', primaryText: 'Blue Cross Blue Shield Group' })
 	              ),
 	              _react2.default.createElement(
 	                'div',
@@ -6004,7 +6012,7 @@ webpackJsonp([1],{
 	  mixpanel: _react.PropTypes.object.isRequired
 	};
 	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps)(StepNumber2);
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, null, null, { withRef: true })(StepNumber2);
 
 /***/ },
 
@@ -6957,7 +6965,7 @@ webpackJsonp([1],{
 	  mixpanel: _react.PropTypes.object.isRequired
 	};
 	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps)(StepNumber3);
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, null, null, { withRef: true })(StepNumber3);
 
 /***/ },
 
@@ -7066,6 +7074,13 @@ webpackJsonp([1],{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
 	      this.context.mixpanel.track('Wizard step open', { 'ab_version': 'v1', 'step': '4' });
+	    }
+	  }, {
+	    key: 'componentWillUnmount',
+	    value: function componentWillUnmount() {
+	      this.context.mixpanel.track('Medical right results', {
+	        'num_of_selected_medical_conditions': this.props.medicalConditions.length
+	      });
 	    }
 	  }, {
 	    key: 'render',
@@ -9885,8 +9900,6 @@ webpackJsonp([1],{
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'col-md-12' },
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'div',
 	                { style: styles.question },
@@ -10286,14 +10299,28 @@ webpackJsonp([1],{
 	    }, _this.handleNext = function () {
 	      var stepIndex = _this.state.stepIndex;
 	
-	      if (!_this.state.loading) {
-	        _this.dummyAsync(function () {
-	          return _this.setState({
-	            loading: false,
-	            stepIndex: stepIndex + 1,
-	            finished: stepIndex >= 3
+	      if (_this.handleStepValidation(stepIndex)) {
+	        if (!_this.state.loading) {
+	          _this.dummyAsync(function () {
+	            return _this.setState({
+	              loading: false,
+	              stepIndex: stepIndex + 1,
+	              finished: stepIndex >= 3
+	            });
 	          });
-	        });
+	        }
+	      }
+	    }, _this.handleStepValidation = function (stepIndex) {
+	      try {
+	        var stepIndexToWorkOn = ++stepIndex;
+	        console.log(stepIndexToWorkOn);
+	        if (_this.refs['step' + stepIndexToWorkOn].getWrappedInstance() && _this.refs['step' + stepIndexToWorkOn].getWrappedInstance().isValidated) {
+	          return _this.refs['step' + stepIndexToWorkOn].getWrappedInstance().isValidated();
+	        } else {
+	          return true;
+	        }
+	      } catch (err) {
+	        return true;
 	      }
 	    }, _this.handlePrev = function () {
 	      var stepIndex = _this.state.stepIndex;

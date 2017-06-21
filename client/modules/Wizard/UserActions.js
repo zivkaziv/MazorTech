@@ -52,8 +52,8 @@ function getDefaultUser() {
       gender:'female',
       isSmoking:false,
       dob:initialDob,
-      health_insurance:1,
-      weight:110,
+      healthInsurance: 'MEDICARE',
+      weight:150,
       agreed_terms:false
   };
 }

@@ -217,6 +217,7 @@
 	exports.toggleAddPost = toggleAddPost;
 	// Export Constants
 	var TOGGLE_ADD_POST = exports.TOGGLE_ADD_POST = 'TOGGLE_ADD_POST';
+	var FETCH_DEVICE = exports.FETCH_DEVICE = 'FETCH_DEVICE';
 	
 	// Export Actions
 	function toggleAddPost() {
@@ -611,8 +612,8 @@
 	    gender: 'female',
 	    isSmoking: false,
 	    dob: initialDob,
-	    health_insurance: 1,
-	    weight: 110,
+	    healthInsurance: 'MEDICARE',
+	    weight: 150,
 	    agreed_terms: false
 	  };
 	}
@@ -1733,12 +1734,8 @@
 	}(_react.Component);
 	
 	function mapStateToProps(state) {
-	  var stateObject = state.stateObject;
-	
 	  return {
-	    // showAddPost: getShowAddPost(state),
-	    medicalRights: (0, _WizardReducer.getMedicalRights)(state),
-	    stateObject: stateObject
+	    medicalRights: (0, _WizardReducer.getMedicalRights)(state)
 	  };
 	}
 	
@@ -1755,7 +1752,7 @@
 	  mixpanel: _react.PropTypes.object.isRequired
 	};
 	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps)(StepNumber1);
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, null, null, { withRef: true })(StepNumber1);
 
 /***/ },
 /* 47 */
@@ -1885,6 +1882,16 @@
 	
 	    var _this = _possibleConstructorReturn(this, (StepNumber2.__proto__ || Object.getPrototypeOf(StepNumber2)).call(this, props));
 	
+	    _this.sendUserDetails = function () {
+	      _this.context.mixpanel.track('User details', {
+	        'gender': _this.props.user.gender,
+	        'is_smoking': _this.props.user.isSmoking,
+	        'dob': _this.props.user.dob,
+	        'health_insurance': _this.props.user.healthInsurance,
+	        'weight': _this.props.user.weight
+	      });
+	    };
+	
 	    _this.state = {};
 	
 	    //Binds
@@ -1901,6 +1908,8 @@
 	    key: 'isValidated',
 	    value: function isValidated() {
 	      (0, _UserActions.updateUserDetails)();
+	      //send them with mixpanel
+	      this.sendUserDetails();
 	      return true;
 	    }
 	  }, {
@@ -1912,7 +1921,7 @@
 	    key: 'handleHealthInsuranceChange',
 	    value: function handleHealthInsuranceChange(event, index, value) {
 	      console.log('the new value is' + value);
-	      this.props.user.health_insurance = value;
+	      this.props.user.healthInsurance = value;
 	      this.updateState();
 	    }
 	  }, {
@@ -2033,19 +2042,19 @@
 	                _SelectField2.default,
 	                {
 	                  floatingLabelText: 'Health insurance',
-	                  value: this.props.user.health_insurance,
+	                  value: this.props.user.healthInsurance,
 	                  onChange: this.handleHealthInsuranceChange
 	                },
-	                _react2.default.createElement(_MenuItem2.default, { value: 1, primaryText: 'Medicare' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 2, primaryText: 'Unitedhealth Group' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 3, primaryText: 'Wellpoint Inc. Group' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 4, primaryText: 'Kaiser Foundation Group' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 5, primaryText: 'Humana Group' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 6, primaryText: 'Aetna Group' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 7, primaryText: 'HCSC Group' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 8, primaryText: 'Cigna Health Group' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 9, primaryText: 'Highmark Group' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 10, primaryText: 'Blue Cross Blue Shield Group' })
+	                _react2.default.createElement(_MenuItem2.default, { value: 'MEDICARE', primaryText: 'Medicare' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'UNITED_HEALTH', primaryText: 'Unitedhealth Group' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'WELL_POINT', primaryText: 'Wellpoint Inc. Group' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'KAISER', primaryText: 'Kaiser Foundation Group' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'HUMANA', primaryText: 'Humana Group' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'AETNA', primaryText: 'Aetna Group' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'HCSC', primaryText: 'HCSC Group' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'CIGNA_HEALTH', primaryText: 'Cigna Health Group' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'HIGHMARK', primaryText: 'Highmark Group' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'BLUE_CROSS_SHILD', primaryText: 'Blue Cross Blue Shield Group' })
 	              ),
 	              _react2.default.createElement(
 	                'div',
@@ -2109,7 +2118,7 @@
 	  mixpanel: _react.PropTypes.object.isRequired
 	};
 	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps)(StepNumber2);
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, null, null, { withRef: true })(StepNumber2);
 
 /***/ },
 /* 48 */
@@ -3061,7 +3070,7 @@
 	  mixpanel: _react.PropTypes.object.isRequired
 	};
 	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps)(StepNumber3);
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, null, null, { withRef: true })(StepNumber3);
 
 /***/ },
 /* 49 */
@@ -3169,6 +3178,13 @@
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
 	      this.context.mixpanel.track('Wizard step open', { 'ab_version': 'v1', 'step': '4' });
+	    }
+	  }, {
+	    key: 'componentWillUnmount',
+	    value: function componentWillUnmount() {
+	      this.context.mixpanel.track('Medical right results', {
+	        'num_of_selected_medical_conditions': this.props.medicalConditions.length
+	      });
 	    }
 	  }, {
 	    key: 'render',
