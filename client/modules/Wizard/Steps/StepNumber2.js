@@ -71,7 +71,7 @@ const styles = {
 
   // Gender
   genderRadioButton:{
-    display:'flex'
+    // display:'flex'
   }
 };
 

@@ -167,7 +167,7 @@ class WizardMainStepper extends React.Component {
             <StepLabel>Terms</StepLabel>
           </Step>
           <Step>
-            <StepLabel>Your rights</StepLabel>
+            <StepLabel>Your Rights</StepLabel>
           </Step>
         </Stepper>
         <ExpandTransition loading={loading} open={true}

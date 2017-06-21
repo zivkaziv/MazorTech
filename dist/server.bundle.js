@@ -115,6 +115,12 @@
 
 /***/ },
 /* 7 */
+/***/ function(module, exports) {
+
+	module.exports = require("material-ui/FlatButton");
+
+/***/ },
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -125,7 +131,7 @@
 	});
 	exports.getMedicalRightsForUser = exports.getSelectedMedicalRights = exports.getMedicalRights = undefined;
 	
-	var _WizardActions = __webpack_require__(19);
+	var _WizardActions = __webpack_require__(20);
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
@@ -197,12 +203,6 @@
 	
 	// Export Reducer
 	exports.default = WizardReducer;
-
-/***/ },
-/* 8 */
-/***/ function(module, exports) {
-
-	module.exports = require("material-ui/FlatButton");
 
 /***/ },
 /* 9 */
@@ -393,7 +393,7 @@
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _UserActions = __webpack_require__(18);
+	var _UserActions = __webpack_require__(19);
 	
 	// let initialDob = new Date();
 	// initialDob.setFullYear(initialDob.getFullYear() - 25);
@@ -548,6 +548,71 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	exports.getDevice = exports.getShowAddPost = undefined;
+	
+	var _AppActions = __webpack_require__(9);
+	
+	var _mobileDetect = __webpack_require__(87);
+	
+	var _mobileDetect2 = _interopRequireDefault(_mobileDetect);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// var mobileDetect = new MobileDetect(window.navigator.userAgent);
+	//How to check if the device is mobile or not
+	// console.log(mobileDetect.mobile());
+	
+	// Initial State
+	// Import Actions
+	var initialState = {
+	  showAddPost: false,
+	  isMobile: false
+	};
+	
+	var AppReducer = function AppReducer() {
+	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+	  var action = arguments[1];
+	
+	  switch (action.type) {
+	    case _AppActions.TOGGLE_ADD_POST:
+	      return {
+	        showAddPost: !state.showAddPost
+	      };
+	
+	    default:
+	      return state;
+	  }
+	};
+	
+	/* Selectors */
+	
+	// Get showAddPost
+	var getShowAddPost = exports.getShowAddPost = function getShowAddPost(state) {
+	  return state.app.showAddPost;
+	};
+	var getDevice = exports.getDevice = function getDevice(state, userAgent) {
+	  if (userAgent) {
+	    var mobileDetect = new _mobileDetect2.default(userAgent);
+	    state.app.isMobile = mobileDetect.mobile() !== null;
+	  } else {
+	    state.app.isMobile = false;
+	  }
+	  return state.app.isMobile;
+	};
+	
+	// Export Reducer
+	exports.default = AppReducer;
+
+/***/ },
+/* 19 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 	exports.TERMS_AGREE = exports.UPDATE_USER = exports.INIT_USER = undefined;
 	exports.initUser = initUser;
 	exports.updateUser = updateUser;
@@ -619,7 +684,7 @@
 	}
 
 /***/ },
-/* 19 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -691,7 +756,7 @@
 	}
 
 /***/ },
-/* 20 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -714,7 +779,7 @@
 	
 	__webpack_require__(79);
 	
-	var _en = __webpack_require__(90);
+	var _en = __webpack_require__(91);
 	
 	var _en2 = _interopRequireDefault(_en);
 	
@@ -724,7 +789,7 @@
 	
 	__webpack_require__(80);
 	
-	var _fr = __webpack_require__(91);
+	var _fr = __webpack_require__(92);
 	
 	var _fr2 = _interopRequireDefault(_fr);
 	
@@ -794,51 +859,6 @@
 	localizationData.fr.messages = flattenMessages(localizationData.fr.messages);
 
 /***/ },
-/* 21 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.getShowAddPost = undefined;
-	
-	var _AppActions = __webpack_require__(9);
-	
-	// Initial State
-	var initialState = {
-	  showAddPost: false
-	}; // Import Actions
-	
-	
-	var AppReducer = function AppReducer() {
-	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
-	  var action = arguments[1];
-	
-	  switch (action.type) {
-	    case _AppActions.TOGGLE_ADD_POST:
-	      return {
-	        showAddPost: !state.showAddPost
-	      };
-	
-	    default:
-	      return state;
-	  }
-	};
-	
-	/* Selectors */
-	
-	// Get showAddPost
-	var getShowAddPost = exports.getShowAddPost = function getShowAddPost(state) {
-	  return state.app.showAddPost;
-	};
-	
-	// Export Reducer
-	exports.default = AppReducer;
-
-/***/ },
 /* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -853,13 +873,13 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reduxDevtools = __webpack_require__(93);
+	var _reduxDevtools = __webpack_require__(94);
 	
-	var _reduxDevtoolsLogMonitor = __webpack_require__(95);
+	var _reduxDevtoolsLogMonitor = __webpack_require__(96);
 	
 	var _reduxDevtoolsLogMonitor2 = _interopRequireDefault(_reduxDevtoolsLogMonitor);
 	
-	var _reduxDevtoolsDockMonitor = __webpack_require__(94);
+	var _reduxDevtoolsDockMonitor = __webpack_require__(95);
 	
 	var _reduxDevtoolsDockMonitor2 = _interopRequireDefault(_reduxDevtoolsDockMonitor);
 	
@@ -890,7 +910,7 @@
 	
 	exports.switchLanguage = switchLanguage;
 	
-	var _setup = __webpack_require__(20);
+	var _setup = __webpack_require__(21);
 	
 	// Export Constants
 	var SWITCH_LANGUAGE = exports.SWITCH_LANGUAGE = 'SWITCH_LANGUAGE';
@@ -1012,7 +1032,7 @@
 	  _react2.default.createElement(_reactRouter.IndexRoute, {
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(2).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(99).default);
+	        cb(null, __webpack_require__(100).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  }),
@@ -1020,7 +1040,7 @@
 	    path: '/wizard',
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(1).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(100).default);
+	        cb(null, __webpack_require__(101).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  }),
@@ -1028,7 +1048,7 @@
 	    path: '/landing',
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(3).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(98).default);
+	        cb(null, __webpack_require__(99).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  })
@@ -1048,7 +1068,7 @@
 	
 	var _redux = __webpack_require__(26);
 	
-	var _reduxThunk = __webpack_require__(96);
+	var _reduxThunk = __webpack_require__(97);
 	
 	var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 	
@@ -1284,9 +1304,9 @@
 	/* WEBPACK VAR INJECTION */(function(__dirname) {'use strict';
 	
 	var webpack = __webpack_require__(16);
-	var cssnext = __webpack_require__(87);
-	var postcssFocus = __webpack_require__(88);
-	var postcssReporter = __webpack_require__(89);
+	var cssnext = __webpack_require__(88);
+	var postcssFocus = __webpack_require__(89);
+	var postcssReporter = __webpack_require__(90);
 	
 	module.exports = {
 	  devtool: 'cheap-module-eval-source-map',
@@ -1415,86 +1435,6 @@
 
 	"use strict";
 	'use strict';
-	/**
-	 * Bool short logo svg
-	 */
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(0);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var BoolLogoSvg = function (_Component) {
-	  _inherits(BoolLogoSvg, _Component);
-	
-	  function BoolLogoSvg() {
-	    _classCallCheck(this, BoolLogoSvg);
-	
-	    return _possibleConstructorReturn(this, (BoolLogoSvg.__proto__ || Object.getPrototypeOf(BoolLogoSvg)).apply(this, arguments));
-	  }
-	
-	  _createClass(BoolLogoSvg, [{
-	    key: 'render',
-	    value: function render() {
-	      var _props = this.props,
-	          width = _props.width,
-	          color = _props.color,
-	          className = _props.className;
-	
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          'span',
-	          null,
-	          'Insu'
-	        ),
-	        _react2.default.createElement(
-	          'span',
-	          null,
-	          'rights'
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return BoolLogoSvg;
-	}(_react.Component);
-	
-	exports.default = BoolLogoSvg;
-	
-	
-	BoolLogoSvg.propTypes = {
-	  width: _react2.default.PropTypes.number,
-	  color: _react2.default.PropTypes.string,
-	  className: _react2.default.PropTypes.string
-	};
-	
-	BoolLogoSvg.defaultProps = {
-	  color: '#154a99',
-	  width: 200,
-	  className: ''
-	};
-
-/***/ },
-/* 46 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -1512,11 +1452,11 @@
 	
 	var _MedicalDiagnosticItem2 = _interopRequireDefault(_MedicalDiagnosticItem);
 	
-	var _reactSearchInput = __webpack_require__(92);
+	var _reactSearchInput = __webpack_require__(93);
 	
 	var _reactSearchInput2 = _interopRequireDefault(_reactSearchInput);
 	
-	var _FlatButton = __webpack_require__(8);
+	var _FlatButton = __webpack_require__(7);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
@@ -1540,7 +1480,7 @@
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
-	var _WizardReducer = __webpack_require__(7);
+	var _WizardReducer = __webpack_require__(8);
 	
 	var _StepNumber = {
 	  "search-input": "_8botdKKhaM9xtYcWvL4jG"
@@ -1755,7 +1695,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, null, null, { withRef: true })(StepNumber1);
 
 /***/ },
-/* 47 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1797,7 +1737,7 @@
 	
 	var _UserReducer = __webpack_require__(12);
 	
-	var _UserActions = __webpack_require__(18);
+	var _UserActions = __webpack_require__(19);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -1870,7 +1810,7 @@
 	
 	  // Gender
 	  genderRadioButton: {
-	    display: 'flex'
+	    // display:'flex'
 	  }
 	};
 	
@@ -2121,7 +2061,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, null, null, { withRef: true })(StepNumber2);
 
 /***/ },
-/* 48 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2149,7 +2089,7 @@
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
-	var _FlatButton = __webpack_require__(8);
+	var _FlatButton = __webpack_require__(7);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
@@ -3073,7 +3013,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, null, null, { withRef: true })(StepNumber3);
 
 /***/ },
-/* 49 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3099,7 +3039,7 @@
 	
 	var _MedicalRIghtItem2 = _interopRequireDefault(_MedicalRIghtItem);
 	
-	var _WizardReducer = __webpack_require__(7);
+	var _WizardReducer = __webpack_require__(8);
 	
 	var _server_error = '/' + "2a7d2ab002a0e58fc41b937dde896a84.jpg";
 	
@@ -3271,6 +3211,86 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(StepNumber4);
 
 /***/ },
+/* 49 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	/**
+	 * Bool short logo svg
+	 */
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(0);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var BoolLogoSvg = function (_Component) {
+	  _inherits(BoolLogoSvg, _Component);
+	
+	  function BoolLogoSvg() {
+	    _classCallCheck(this, BoolLogoSvg);
+	
+	    return _possibleConstructorReturn(this, (BoolLogoSvg.__proto__ || Object.getPrototypeOf(BoolLogoSvg)).apply(this, arguments));
+	  }
+	
+	  _createClass(BoolLogoSvg, [{
+	    key: 'render',
+	    value: function render() {
+	      var _props = this.props,
+	          width = _props.width,
+	          color = _props.color,
+	          className = _props.className;
+	
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'span',
+	          null,
+	          'Insu'
+	        ),
+	        _react2.default.createElement(
+	          'span',
+	          null,
+	          'rights'
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return BoolLogoSvg;
+	}(_react.Component);
+	
+	exports.default = BoolLogoSvg;
+	
+	
+	BoolLogoSvg.propTypes = {
+	  width: _react2.default.PropTypes.number,
+	  color: _react2.default.PropTypes.string,
+	  className: _react2.default.PropTypes.string
+	};
+	
+	BoolLogoSvg.defaultProps = {
+	  color: '#154a99',
+	  width: 200,
+	  className: ''
+	};
+
+/***/ },
 /* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -3287,7 +3307,7 @@
 	
 	var _Card = __webpack_require__(83);
 	
-	var _FlatButton = __webpack_require__(8);
+	var _FlatButton = __webpack_require__(7);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
@@ -3657,7 +3677,7 @@
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _IconSvg = __webpack_require__(45);
+	var _IconSvg = __webpack_require__(49);
 	
 	var _IconSvg2 = _interopRequireDefault(_IconSvg);
 	
@@ -3716,7 +3736,7 @@
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _setup = __webpack_require__(20);
+	var _setup = __webpack_require__(21);
 	
 	var _IntlActions = __webpack_require__(23);
 	
@@ -3908,19 +3928,19 @@
 	
 	var _reactStepzilla2 = _interopRequireDefault(_reactStepzilla);
 	
-	var _StepNumber = __webpack_require__(46);
+	var _StepNumber = __webpack_require__(45);
 	
 	var _StepNumber2 = _interopRequireDefault(_StepNumber);
 	
-	var _StepNumber3 = __webpack_require__(47);
+	var _StepNumber3 = __webpack_require__(46);
 	
 	var _StepNumber4 = _interopRequireDefault(_StepNumber3);
 	
-	var _StepNumber5 = __webpack_require__(48);
+	var _StepNumber5 = __webpack_require__(47);
 	
 	var _StepNumber6 = _interopRequireDefault(_StepNumber5);
 	
-	var _StepNumber7 = __webpack_require__(49);
+	var _StepNumber7 = __webpack_require__(48);
 	
 	var _StepNumber8 = _interopRequireDefault(_StepNumber7);
 	
@@ -4195,7 +4215,7 @@
 	
 	var _AppActions = __webpack_require__(9);
 	
-	var _AppReducer = __webpack_require__(21);
+	var _AppReducer = __webpack_require__(18);
 	
 	var _PostReducer = __webpack_require__(11);
 	
@@ -4326,7 +4346,7 @@
 	
 	var _MedicalDiagnosticItem2 = _interopRequireDefault(_MedicalDiagnosticItem);
 	
-	var _WizardActions = __webpack_require__(19);
+	var _WizardActions = __webpack_require__(20);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -4407,7 +4427,7 @@
 	
 	var _redux = __webpack_require__(26);
 	
-	var _AppReducer = __webpack_require__(21);
+	var _AppReducer = __webpack_require__(18);
 	
 	var _AppReducer2 = _interopRequireDefault(_AppReducer);
 	
@@ -4419,7 +4439,7 @@
 	
 	var _IntlReducer2 = _interopRequireDefault(_IntlReducer);
 	
-	var _WizardReducer = __webpack_require__(7);
+	var _WizardReducer = __webpack_require__(8);
 	
 	var _WizardReducer2 = _interopRequireDefault(_WizardReducer);
 	
@@ -4870,7 +4890,7 @@
 	
 	var _limax2 = _interopRequireDefault(_limax);
 	
-	var _sanitizeHtml = __webpack_require__(97);
+	var _sanitizeHtml = __webpack_require__(98);
 	
 	var _sanitizeHtml2 = _interopRequireDefault(_sanitizeHtml);
 	
@@ -5127,7 +5147,7 @@
 	  var assetsManifest = process.env.webpackAssets && JSON.parse(process.env.webpackAssets);
 	  var chunkManifest = process.env.webpackChunkAssets && JSON.parse(process.env.webpackChunkAssets);
 	
-	  return '\n    <!doctype html>\n    <html>\n      <head>\n        ' + head.base.toString() + '\n        ' + head.title.toString() + '\n        ' + head.meta.toString() + '\n        ' + head.link.toString() + '\n        ' + head.script.toString() + '\n\n        ' + (process.env.NODE_ENV === 'production' ? '<link rel=\'stylesheet\' href=\'' + assetsManifest['/app.css'] + '\' />' : '') + '\n        <link href=\'https://fonts.googleapis.com/css?family=Lato:400,300,700\' rel=\'stylesheet\' type=\'text/css\'/>\n        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" type=\'text/css\'>\n        <link rel="shortcut icon" href="http://res.cloudinary.com/hashnode/image/upload/v1455629445/static_imgs/mern/mern-favicon-circle-fill.png" type="image/png" />\n        <style>\n  /* local page styles */\n  html h1 {\n    font-size: 26px;\n    margin-left: 10px;\n  }\n  html h2 {\n    font-size: 22px;\n    margin-left: 10px;\n  }\n  html h3 {\n    font-size: 14px;\n    margin-left: 10px;\n  }\n  html h4 {\n    font-size: 16px;\n  }\n  .progtrckr {\n    text-align: center;\n    padding-bottom: 16px;\n    // border-bottom: solid 1px;\n  }\n  .progtrckr li {\n    margin-bottom: 10px;\n  }\n  .val-err-tooltip {\n    background-color: red;\n    padding: 3px 5px 3px 10px;\n    font-size: 14px;\n    color: #fff;\n  }\n  .step {\n    // background-color: #ccc;\n    border:1px solid #e5e5e5;\n    min-height: 400px;\n    padding: 10px;\n    max-width: 815px;\n    min-width: 366px\n  }\n  html .row, html .form-horizontal .form-group {\n    margin: 0;\n  }\n  .footer-buttons {\n    margin-top: 10px;\n    margin-bottom: 50px;\n  }\n  html .step3 label, html .step4 label {\n    font-size: 20px;\n    text-align: left;\n  }\n  html .form-horizontal .control-label {\n    text-align: left;\n  }\n  .review .txt {\n    font-size: 20px;\n    text-align: left;\n    margin: 0;\n    padding: 0;\n  }\n  html body .saving {\n    background-color: #5cb85c;\n    width: 90%;\n    padding: 5px;\n    font-size: 16px;\n  }\n  code {\n    position: relative;\n    left: 12px;\n    line-height: 25px;\n  }\n  .eg-jump-lnk {\n    margin-top: 50px;\n    font-style: italic;\n  }\n  .lib-version {\n    font-size: 12px;\n    background-color: rgba(255, 255, 0, 0.38);\n    position: absolute;\n    right: 10px;\n    top: 10px;\n    padding: 5px;\n  }\n  html .content {\n    margin-left: 10px;\n  }\n  span.red {\n    color: #d9534f;\n  }\n  span.green {\n    color: #3c763d;\n  }\n  span.bold {\n    font-weight: bold;\n  }\n  html .hoc-alert {\n    margin-top: 20px;\n  }\n  html .form-block-holder {\n    margin-top: 20px !important;\n  }\n  ol.progtrckr {\n  margin: 0;\n  padding-bottom: 2.2rem;\n  list-style-type: none;\n}\nol.progtrckr li {\n  display: inline-block;\n  text-align: center;\n  line-height: 4.5rem;\n  padding: 0 0.7rem;\n  cursor: pointer;\n}\nol.progtrckr li span {\n  padding: 0 1.5rem;\n}\n@media (max-width: 650px) {\n  .progtrckr li span {\n    display: none;\n  }\n}\n.progtrckr em {\n  display: none;\n  font-weight: 700;\n  padding-left: 1rem;\n}\n@media (max-width: 650px) {\n  .progtrckr em {\n    display: inline;\n  }\n  border-bottom: solid 1px;\n}\n\n@media (max-width: 650px) {\n .step {\n    max-height=320px;\n    min-height=320px;\n    min-width=300px;\n  }\n}\n\n\n\n\n\n}\n\nol.progtrckr li.progtrckr-todo {\n  color: silver;\n  border-bottom: 4px solid silver;\n}\nol.progtrckr li.progtrckr-doing {\n  color: black;\n  border-bottom: 4px solid #33C3F0;\n}\nol.progtrckr li.progtrckr-done {\n  color: black;\n  border-bottom: 4px solid #33C3F0;\n}\nol.progtrckr li:after {\n  content: "\\00a0\\00a0";\n}\nol.progtrckr li:before {\n  position: relative;\n  bottom: -3.7rem;\n  float: left;\n  left: 50%;\n}\nol.progtrckr li.progtrckr-todo:before {\n  content: "\\039F";\n  color: silver;\n  background-color: white;\n  width: 1.2em;\n  line-height: 1.4em;\n}\nol.progtrckr li.progtrckr-todo:hover:before {\n  color: #0FA0CE;\n}\n\nol.progtrckr li.progtrckr-doing:before {\n  content: "\\2022";\n  color: white;\n  background-color: #33C3F0;\n  width: 1.2em;\n  line-height: 1.2em;\n  border-radius: 1.2em;\n}\nol.progtrckr li.progtrckr-doing:hover:before {\n  color: #0FA0CE;\n}\n\nol.progtrckr li.progtrckr-done:before {\n  content: "\\2713";\n  color: white;\n  background-color: #33C3F0;\n  width: 1.2em;\n  line-height: 1.2em;\n  border-radius: 1.2em;\n}\nol.progtrckr li.progtrckr-done:hover:before {\n  color: #0FA0CE;\n}\n\n  </style>\n      </head>\n      <body>\n        <div id="root">' + html + '</div>\n        <script>\n          window.__INITIAL_STATE__ = ' + JSON.stringify(initialState) + ';\n          ' + (process.env.NODE_ENV === 'production' ? '//<![CDATA[\n          window.webpackManifest = ' + JSON.stringify(chunkManifest) + ';\n          //]]>' : '') + '\n        </script>\n        <script src=\'' + (process.env.NODE_ENV === 'production' ? assetsManifest['/vendor.js'] : '/vendor.js') + '\'></script>\n        <script src=\'' + (process.env.NODE_ENV === 'production' ? assetsManifest['/app.js'] : '/app.js') + '\'></script>\n      </body>\n    </html>\n  ';
+	  return '\n    <!doctype html>\n    <html>\n      <head>\n        ' + head.base.toString() + '\n        ' + head.title.toString() + '\n        ' + head.meta.toString() + '\n        ' + head.link.toString() + '\n        ' + head.script.toString() + '\n\n        ' + (process.env.NODE_ENV === 'production' ? '<link rel=\'stylesheet\' href=\'' + assetsManifest['/app.css'] + '\' />' : '') + '\n        <link href=\'https://fonts.googleapis.com/css?family=Lato:400,300,700\' rel=\'stylesheet\' type=\'text/css\'/>\n        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" type=\'text/css\'>\n        <link rel="shortcut icon" href="http://res.cloudinary.com/hashnode/image/upload/v1455629445/static_imgs/mern/mern-favicon-circle-fill.png" type="image/png" />\n        <style>\n  /* local page styles */\n  html h1 {\n    font-size: 26px;\n    margin-left: 10px;\n  }\n  html h2 {\n    font-size: 22px;\n    margin-left: 10px;\n  }\n  html h3 {\n    font-size: 14px;\n    margin-left: 10px;\n  }\n  html h4 {\n    font-size: 16px;\n  }\n  .progtrckr {\n    text-align: center;\n    padding-bottom: 16px;\n    // border-bottom: solid 1px;\n  }\n  .progtrckr li {\n    margin-bottom: 10px;\n  }\n  .val-err-tooltip {\n    background-color: red;\n    padding: 3px 5px 3px 10px;\n    font-size: 14px;\n    color: #fff;\n  }\n  .step {\n    // background-color: #ccc;\n    border:1px solid #e5e5e5;\n    min-height: 437px;\n    padding: 10px;\n    max-width: 815px;\n  }\n  html .row, html .form-horizontal .form-group {\n    margin: 0;\n  }\n  .footer-buttons {\n    margin-top: 10px;\n    margin-bottom: 50px;\n  }\n  html .step3 label, html .step4 label {\n    font-size: 20px;\n    text-align: left;\n  }\n  html .form-horizontal .control-label {\n    text-align: left;\n  }\n  .review .txt {\n    font-size: 20px;\n    text-align: left;\n    margin: 0;\n    padding: 0;\n  }\n  html body .saving {\n    background-color: #5cb85c;\n    width: 90%;\n    padding: 5px;\n    font-size: 16px;\n  }\n  code {\n    position: relative;\n    left: 12px;\n    line-height: 25px;\n  }\n  .eg-jump-lnk {\n    margin-top: 50px;\n    font-style: italic;\n  }\n  .lib-version {\n    font-size: 12px;\n    background-color: rgba(255, 255, 0, 0.38);\n    position: absolute;\n    right: 10px;\n    top: 10px;\n    padding: 5px;\n  }\n  html .content {\n    margin-left: 10px;\n  }\n  span.red {\n    color: #d9534f;\n  }\n  span.green {\n    color: #3c763d;\n  }\n  span.bold {\n    font-weight: bold;\n  }\n  html .hoc-alert {\n    margin-top: 20px;\n  }\n  html .form-block-holder {\n    margin-top: 20px !important;\n  }\n  ol.progtrckr {\n  margin: 0;\n  padding-bottom: 2.2rem;\n  list-style-type: none;\n}\nol.progtrckr li {\n  display: inline-block;\n  text-align: center;\n  line-height: 4.5rem;\n  padding: 0 0.7rem;\n  cursor: pointer;\n}\nol.progtrckr li span {\n  padding: 0 1.5rem;\n}\n@media (max-width: 650px) {\n  .progtrckr li span {\n    display: none;\n  }\n}\n.progtrckr em {\n  display: none;\n  font-weight: 700;\n  padding-left: 1rem;\n}\n@media (max-width: 650px) {\n  .progtrckr em {\n    display: inline;\n  }\n  border-bottom: solid 1px;\n}\n\n@media (max-width: 650px) {\n .step {\n    max-height=320px;\n    min-height=437px;\n    min-width=300px;\n  }\n}\n\n\n\n\n\n}\n\nol.progtrckr li.progtrckr-todo {\n  color: silver;\n  border-bottom: 4px solid silver;\n}\nol.progtrckr li.progtrckr-doing {\n  color: black;\n  border-bottom: 4px solid #33C3F0;\n}\nol.progtrckr li.progtrckr-done {\n  color: black;\n  border-bottom: 4px solid #33C3F0;\n}\nol.progtrckr li:after {\n  content: "\\00a0\\00a0";\n}\nol.progtrckr li:before {\n  position: relative;\n  bottom: -3.7rem;\n  float: left;\n  left: 50%;\n}\nol.progtrckr li.progtrckr-todo:before {\n  content: "\\039F";\n  color: silver;\n  background-color: white;\n  width: 1.2em;\n  line-height: 1.4em;\n}\nol.progtrckr li.progtrckr-todo:hover:before {\n  color: #0FA0CE;\n}\n\nol.progtrckr li.progtrckr-doing:before {\n  content: "\\2022";\n  color: white;\n  background-color: #33C3F0;\n  width: 1.2em;\n  line-height: 1.2em;\n  border-radius: 1.2em;\n}\nol.progtrckr li.progtrckr-doing:hover:before {\n  color: #0FA0CE;\n}\n\nol.progtrckr li.progtrckr-done:before {\n  content: "\\2713";\n  color: white;\n  background-color: #33C3F0;\n  width: 1.2em;\n  line-height: 1.2em;\n  border-radius: 1.2em;\n}\nol.progtrckr li.progtrckr-done:hover:before {\n  color: #0FA0CE;\n}\n\n  </style>\n      </head>\n      <body>\n        <div id="root">' + html + '</div>\n        <script>\n          window.__INITIAL_STATE__ = ' + JSON.stringify(initialState) + ';\n          ' + (process.env.NODE_ENV === 'production' ? '//<![CDATA[\n          window.webpackManifest = ' + JSON.stringify(chunkManifest) + ';\n          //]]>' : '') + '\n        </script>\n        <script src=\'' + (process.env.NODE_ENV === 'production' ? assetsManifest['/vendor.js'] : '/vendor.js') + '\'></script>\n        <script src=\'' + (process.env.NODE_ENV === 'production' ? assetsManifest['/app.js'] : '/app.js') + '\'></script>\n      </body>\n    </html>\n  ';
 	};
 	
 	var renderError = function renderError(err) {
@@ -5295,94 +5315,107 @@
 /* 87 */
 /***/ function(module, exports) {
 
-	module.exports = require("postcss-cssnext");
+	module.exports = require("mobile-detect");
 
 /***/ },
 /* 88 */
 /***/ function(module, exports) {
 
-	module.exports = require("postcss-focus");
+	module.exports = require("postcss-cssnext");
 
 /***/ },
 /* 89 */
 /***/ function(module, exports) {
 
-	module.exports = require("postcss-reporter");
+	module.exports = require("postcss-focus");
 
 /***/ },
 /* 90 */
 /***/ function(module, exports) {
 
-	module.exports = require("react-intl/locale-data/en");
+	module.exports = require("postcss-reporter");
 
 /***/ },
 /* 91 */
 /***/ function(module, exports) {
 
-	module.exports = require("react-intl/locale-data/fr");
+	module.exports = require("react-intl/locale-data/en");
 
 /***/ },
 /* 92 */
 /***/ function(module, exports) {
 
-	module.exports = require("react-search-input");
+	module.exports = require("react-intl/locale-data/fr");
 
 /***/ },
 /* 93 */
 /***/ function(module, exports) {
 
-	module.exports = require("redux-devtools");
+	module.exports = require("react-search-input");
 
 /***/ },
 /* 94 */
 /***/ function(module, exports) {
 
-	module.exports = require("redux-devtools-dock-monitor");
+	module.exports = require("redux-devtools");
 
 /***/ },
 /* 95 */
 /***/ function(module, exports) {
 
-	module.exports = require("redux-devtools-log-monitor");
+	module.exports = require("redux-devtools-dock-monitor");
 
 /***/ },
 /* 96 */
 /***/ function(module, exports) {
 
-	module.exports = require("redux-thunk");
+	module.exports = require("redux-devtools-log-monitor");
 
 /***/ },
 /* 97 */
 /***/ function(module, exports) {
 
+	module.exports = require("redux-thunk");
+
+/***/ },
+/* 98 */
+/***/ function(module, exports) {
+
 	module.exports = require("sanitize-html");
 
 /***/ },
-/* 98 */,
 /* 99 */,
 /* 100 */,
 /* 101 */,
 /* 102 */,
 /* 103 */,
-/* 104 */
-/***/ function(module, exports) {
-
-	module.exports = require("landricks-components");
-
-/***/ },
-/* 105 */
+/* 104 */,
+/* 105 */,
+/* 106 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/Stepper");
 
 /***/ },
-/* 106 */
+/* 107 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/internal/ExpandTransition");
 
 /***/ },
-/* 107 */
+/* 108 */
+/***/ function(module, exports) {
+
+	module.exports = require("landricks-components");
+
+/***/ },
+/* 109 */
+/***/ function(module, exports) {
+
+	module.exports = require("react-scroll");
+
+/***/ },
+/* 110 */
 /***/ function(module, exports) {
 
 	module.exports = require("react-stars");

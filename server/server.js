@@ -117,10 +117,9 @@ const renderFullPage = (html, initialState) => {
   .step {
     // background-color: #ccc;
     border:1px solid #e5e5e5;
-    min-height: 400px;
+    min-height: 437px;
     padding: 10px;
     max-width: 815px;
-    min-width: 366px
   }
   html .row, html .form-horizontal .form-group {
     margin: 0;
@@ -218,7 +217,7 @@ ol.progtrckr li span {
 @media (max-width: 650px) {
  .step {
     max-height=320px;
-    min-height=320px;
+    min-height=437px;
     min-width=300px;
   }
 }

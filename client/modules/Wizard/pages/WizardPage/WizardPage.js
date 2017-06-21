@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 
 // Import Components
 import WizardMain from '../../componenets/WizardMain';
+import WizardMainStepperMobile from '../../stepper/WizardMainStepperMobile'
+import WizardMainStepper from '../../stepper/WizardMainStepper'
 
 // Import Actions
 import { fetchMedicalRights } from '../../WizardActions';
@@ -10,7 +12,7 @@ import { fetchUser } from '../../UserActions';
 // import { toggleAddPost } from '../../../App/AppActions';
 
 // Import Selectors
-// import { getShowAddPost } from '../../../App/AppReducer';
+import { getDevice } from '../../../App/AppReducer';
 import { getMedicalRights } from '../../WizardReducer';
 
 const styles = {
@@ -39,9 +41,16 @@ class WizardPage extends Component {
   // };
 
   render() {
-    return (
-      <WizardMain/>
-    );
+    const isMobile = this.props.isMobile;
+    if (!isMobile){
+      return (
+        <WizardMain/>
+      )
+    }else{
+      return(
+        <WizardMainStepperMobile/>
+      )
+    }
   }
 }
 
@@ -52,12 +61,13 @@ class WizardPage extends Component {
 function mapStateToProps(state) {
   return {
     // showAddPost: getShowAddPost(state),
-    medicalRights: getMedicalRights(state),
+    isMobile: getDevice(state,false),
   };
 }
 
 WizardPage.propTypes = {
-  medicalRight: PropTypes.any
+  medicalRight: PropTypes.any,
+  isMobile: PropTypes.any
 };
 
 WizardPage.contextTypes = {

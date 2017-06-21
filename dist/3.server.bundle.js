@@ -1,7 +1,7 @@
 exports.ids = [3];
 exports.modules = {
 
-/***/ 98:
+/***/ 99:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33,7 +33,7 @@ exports.modules = {
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
-	var _IconSvg = __webpack_require__(45);
+	var _IconSvg = __webpack_require__(49);
 	
 	var _IconSvg2 = _interopRequireDefault(_IconSvg);
 	

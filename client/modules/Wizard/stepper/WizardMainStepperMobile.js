@@ -3,6 +3,7 @@ import {
   Step,
   Stepper,
   StepLabel,
+  StepContent,
 } from 'material-ui/Stepper';
 import RaisedButton from 'material-ui/RaisedButton';
 import FlatButton from 'material-ui/FlatButton';
@@ -11,6 +12,8 @@ import TextField from 'material-ui/TextField';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import lightTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 
+import Scroll from 'react-scroll';
+var scroll     = Scroll.animateScroll;
 
 //Steps
 import Step1 from '../Steps/StepNumber1'
@@ -25,77 +28,113 @@ import StepSurvey from '../Steps/StepSurvey'
 class WizardMainStepperMobile extends React.Component {
 
   state = {
-    loading: false,
     finished: false,
     stepIndex: 0,
   };
+
   getChildContext() {
     return {
       muiTheme: getMuiTheme(lightTheme)
     };
   }
 
-  dummyAsync = (cb) => {
-    this.setState({loading: true}, () => {
-      this.asyncTimer = setTimeout(cb, 500);
-    });
-  };
-
   handleNext = () => {
     const {stepIndex} = this.state;
-    if (!this.state.loading) {
-      this.dummyAsync(() => this.setState({
-        loading: false,
+    if(this.handleStepValidation(stepIndex)) {
+      this.setState({
         stepIndex: stepIndex + 1,
         finished: stepIndex >= 3,
-      }));
+      });
     }
   };
 
   handlePrev = () => {
     const {stepIndex} = this.state;
-    if (!this.state.loading) {
-      this.dummyAsync(() => this.setState({
-        loading: false,
-        stepIndex: stepIndex - 1,
-      }));
+    if (stepIndex > 0) {
+      this.setState({stepIndex: stepIndex - 1});
     }
   };
 
-  getStepContent(stepIndex) {
-    switch (stepIndex) {
-      case 0:
-        return(
-          <Step1/>
-        );
-      case 1:
-        return(
-          <Step2/>
-        );
-      case 2:
-        return(
-          <Step3/>
-        );
-      case 3:
-        return(
-          <Step4/>
-        );
-      default:
-        // return 'You\'re a long way from home sonny jim!';
-        return (
-          <StepSurvey/>
-        )
+  handleStepValidation = (stepIndex) => {
+    try {
+      let stepIndexToWorkOn = ++stepIndex;
+      console.log(stepIndexToWorkOn);
+      if (this.refs['step' + stepIndexToWorkOn].getWrappedInstance() &&
+        this.refs['step' + stepIndexToWorkOn].getWrappedInstance().isValidated) {
+        return this.refs['step' + stepIndexToWorkOn].getWrappedInstance().isValidated()
+      } else {
+        return true;
+      }
+    }catch(err){
+      return true;
     }
+  };
+
+  renderStepActions(step) {
+    const {stepIndex} = this.state;
+
+    return (
+      <div style={{margin: '12px 0'}}>
+        <RaisedButton
+          label={stepIndex === 3 ? 'Finish' : 'Next'}
+          disableTouchRipple={true}
+          disableFocusRipple={true}
+          primary={true}
+          onTouchTap={this.handleNext}
+          style={{marginRight: 12}}
+        />
+        {step > 0 && (
+          <FlatButton
+            label="Back"
+            disabled={stepIndex === 0}
+            disableTouchRipple={true}
+            disableFocusRipple={true}
+            onTouchTap={this.handlePrev}
+          />
+        )}
+      </div>
+    );
   }
 
-  renderContent() {
+  render() {
     const {finished, stepIndex} = this.state;
-    const contentStyle = {margin: '0 16px', overflow: 'hidden'};
 
-    if (finished) {
-      return (
-        <div style={contentStyle}>
-          <p>
+    return (
+      <div style={{maxWidth: 380, margin: 'auto'}}>
+        <Stepper activeStep={stepIndex}
+                 linear={false}
+                 orientation="vertical">
+          <Step>
+            <StepLabel>Doctor Diagnosis</StepLabel>
+            <StepContent>
+              <Step1 ref="step1"/>
+              {this.renderStepActions(0)}
+            </StepContent>
+          </Step>
+          <Step>
+            <StepLabel>Personal Info</StepLabel>
+            <StepContent>
+              <Step2  ref="step2"/>
+              {this.renderStepActions(1)}
+            </StepContent>
+          </Step>
+          <Step>
+            <StepLabel>Terms</StepLabel>
+            <StepContent>
+              <Step3 ref="step3"/>
+              {this.renderStepActions(2)}
+            </StepContent>
+          </Step>
+          <Step>
+            <StepLabel>Your Medical Rights</StepLabel>
+            <StepContent>
+              <Step4 ref="step4"/>
+              {this.renderStepActions(3)}
+            </StepContent>
+          </Step>
+        </Stepper>
+        {finished && (
+          <p style={{margin: '20px 0', textAlign: 'center'}}>
             <a
               href="#"
               onClick={(event) => {
@@ -106,55 +145,7 @@ class WizardMainStepperMobile extends React.Component {
               Click here
             </a> to reset the example.
           </p>
-        </div>
-      );
-    }
-
-    return (
-      <div style={contentStyle}>
-        <div>{this.getStepContent(stepIndex)}</div>
-        <div style={{marginTop: 24, marginBottom: 12}}>
-          <FlatButton
-            label="Back"
-            disabled={stepIndex === 0}
-            onTouchTap={this.handlePrev}
-            style={{marginRight: 12}}
-          />
-          <RaisedButton
-            label={stepIndex === 3 ? 'Finish' : 'Next'}
-            primary={true}
-            onTouchTap={this.handleNext}
-          />
-        </div>
-      </div>
-    );
-  }
-
-  render() {
-    const {loading, stepIndex} = this.state;
-
-    return (
-      <div style={{width: '100%', maxWidth: 700, margin: 'auto'}}>
-        <Stepper
-          activeStep={stepIndex}
-          orientation="vertical">
-          <Step>
-            <StepLabel>Doctor Diagnosis</StepLabel>
-            {this.renderContent()}
-          </Step>
-          <Step>
-            <StepLabel>Personal Info</StepLabel>
-            {this.renderContent()}
-          </Step>
-          <Step>
-            <StepLabel>Terms</StepLabel>
-            {this.renderContent()}
-          </Step>
-          <Step>
-            <StepLabel>Your rights</StepLabel>
-            {this.renderContent()}
-          </Step>
-        </Stepper>
+        )}
       </div>
     );
   }

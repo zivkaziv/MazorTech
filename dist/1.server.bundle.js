@@ -1,7 +1,7 @@
 exports.ids = [1];
 exports.modules = {
 
-/***/ 100:
+/***/ 101:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19,15 +19,25 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(1);
 	
-	var _WizardMain = __webpack_require__(102);
+	var _WizardMain = __webpack_require__(104);
 	
 	var _WizardMain2 = _interopRequireDefault(_WizardMain);
 	
-	var _WizardActions = __webpack_require__(19);
+	var _WizardMainStepperMobile = __webpack_require__(105);
 	
-	var _UserActions = __webpack_require__(18);
+	var _WizardMainStepperMobile2 = _interopRequireDefault(_WizardMainStepperMobile);
 	
-	var _WizardReducer = __webpack_require__(7);
+	var _WizardMainStepper = __webpack_require__(103);
+	
+	var _WizardMainStepper2 = _interopRequireDefault(_WizardMainStepper);
+	
+	var _WizardActions = __webpack_require__(20);
+	
+	var _UserActions = __webpack_require__(19);
+	
+	var _AppReducer = __webpack_require__(18);
+	
+	var _WizardReducer = __webpack_require__(8);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -45,7 +55,6 @@ exports.modules = {
 	// import { toggleAddPost } from '../../../App/AppActions';
 	
 	// Import Selectors
-	// import { getShowAddPost } from '../../../App/AppReducer';
 	
 	
 	var styles = {
@@ -86,7 +95,12 @@ exports.modules = {
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement(_WizardMain2.default, null);
+	      var isMobile = this.props.isMobile;
+	      if (!isMobile) {
+	        return _react2.default.createElement(_WizardMain2.default, null);
+	      } else {
+	        return _react2.default.createElement(_WizardMainStepperMobile2.default, null);
+	      }
 	    }
 	  }]);
 	
@@ -102,12 +116,13 @@ exports.modules = {
 	function mapStateToProps(state) {
 	  return {
 	    // showAddPost: getShowAddPost(state),
-	    medicalRights: (0, _WizardReducer.getMedicalRights)(state)
+	    isMobile: (0, _AppReducer.getDevice)(state, false)
 	  };
 	}
 	
 	WizardPage.propTypes = {
-	  medicalRight: _react.PropTypes.any
+	  medicalRight: _react.PropTypes.any,
+	  isMobile: _react.PropTypes.any
 	};
 	
 	WizardPage.contextTypes = {
@@ -118,7 +133,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 101:
+/***/ 102:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -148,7 +163,7 @@ exports.modules = {
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
-	var _FlatButton = __webpack_require__(8);
+	var _FlatButton = __webpack_require__(7);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
@@ -160,11 +175,11 @@ exports.modules = {
 	
 	var _MenuItem2 = _interopRequireDefault(_MenuItem);
 	
-	var _reactStars = __webpack_require__(107);
+	var _reactStars = __webpack_require__(110);
 	
 	var _reactStars2 = _interopRequireDefault(_reactStars);
 	
-	var _WizardReducer = __webpack_require__(7);
+	var _WizardReducer = __webpack_require__(8);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -348,142 +363,6 @@ exports.modules = {
 
 /***/ },
 
-/***/ 102:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(0);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _WizardMain = {
-	  "progtrckr": "_1T2D5xuQAzMIscEjI2nghz",
-	  "val-err-tooltip": "_26s78mC1TlJwIeHL6_3T04",
-	  "step": "_1LsG1_aQ2RSuPpA8BUgQzD",
-	  "row": "YCmkvEtoQTgnkqZkV3KjA",
-	  "form-horizontal": "vFRtZyLC_JSGYTB8ZNp9L",
-	  "form-group": "_3dlrtOMwBkuI7pch-Bh2XM",
-	  "footer-buttons": "vl9sepLxLhjaOumNvMGJu",
-	  "step3": "jK2gRvchHCbebUwqQlyJV",
-	  "step4": "_2LsxfDg-ozr6rp45JIcvR-",
-	  "control-label": "_293qLqtMLuu0AncbayrNUn",
-	  "review": "_1TThIY09qLr5Wfk80vP-qp",
-	  "txt": "SSuOYzX0RxznwJiDrGboH",
-	  "saving": "_31Is94zhKTCFBbXE3PfPxb",
-	  "eg-jump-lnk": "_1jqBWnm1cdnu57XIYaEdrW",
-	  "lib-version": "_1Vr7MgDfp2ylHVa3ryYMfJ",
-	  "content": "_1u_fguEXmTnrJge1d1iz9C",
-	  "red": "_9JyYUHPUFav3UOjbxJIfD",
-	  "green": "_1YKtRyM4nU-ynOll96lla4",
-	  "bold": "_1f9bz_Z7Jv1Ae6rkj6eLCm",
-	  "hoc-alert": "_2SgTM_M73TmeYVq5XbDywY",
-	  "form-block-holder": "_2NqFL78VnXh6Hc8sN2yjLW",
-	  "progtrckr-todo": "_1hJePpQfJYCAqZPfgEDeiI",
-	  "progtrckr-doing": "_1bAEdbbdwOsDMca2Er-enQ",
-	  "progtrckr-done": "_1gy7LmBVkqoqrsnTTKTuWz",
-	  "wizard-spacer": "_1dldT6inotw2Mi2tu7jfkW"
-	};
-	
-	var _WizardMain2 = _interopRequireDefault(_WizardMain);
-	
-	var _reactStepzilla = __webpack_require__(54);
-	
-	var _reactStepzilla2 = _interopRequireDefault(_reactStepzilla);
-	
-	var _WizardMainStepper = __webpack_require__(103);
-	
-	var _WizardMainStepper2 = _interopRequireDefault(_WizardMainStepper);
-	
-	var _StepNumber = __webpack_require__(46);
-	
-	var _StepNumber2 = _interopRequireDefault(_StepNumber);
-	
-	var _StepNumber3 = __webpack_require__(47);
-	
-	var _StepNumber4 = _interopRequireDefault(_StepNumber3);
-	
-	var _StepNumber5 = __webpack_require__(48);
-	
-	var _StepNumber6 = _interopRequireDefault(_StepNumber5);
-	
-	var _StepNumber7 = __webpack_require__(49);
-	
-	var _StepNumber8 = _interopRequireDefault(_StepNumber7);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	//Steps
-	
-	
-	// Import Components
-	// import PostListItem from '../../Post/components/PostListItem/PostListItem';
-	// import styles from '../../../css/prog-tracker.css';
-	
-	function WizardMain(props) {
-	  var _this = this;
-	
-	  var steps = [{ name: 'Doctor Diagnosis', component: _react2.default.createElement(_StepNumber2.default, { getStore: function getStore() {
-	        return _this.getStore();
-	      }, updateStore: function updateStore(u) {
-	        _this.updateStore(u);
-	      } }) }, { name: 'Personal Info', component: _react2.default.createElement(_StepNumber4.default, { getStore: function getStore() {
-	        return _this.getStore();
-	      }, updateStore: function updateStore(u) {
-	        _this.updateStore(u);
-	      } }) }, { name: 'Terms', component: _react2.default.createElement(_StepNumber6.default, { getStore: function getStore() {
-	        return _this.getStore();
-	      }, updateStore: function updateStore(u) {
-	        _this.updateStore(u);
-	      } }) }, { name: 'Your Medical Rights', component: _react2.default.createElement(_StepNumber8.default, { getStore: function getStore() {
-	        return _this.getStore();
-	      }, updateStore: function updateStore(u) {
-	        _this.updateStore(u);
-	      } }) }];
-	
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'step-progress', style: {
-	          width: '100%',
-	          display: 'inline-flex',
-	          flexDirection: 'column',
-	          margin: 'auto',
-	          maxWidth: 1000
-	        } },
-	      _react2.default.createElement(_WizardMainStepper2.default, null),
-	      _react2.default.createElement(
-	        'span',
-	        { className: _WizardMain2.default['wizard-spacer'], style: {
-	            // width:'100%',
-	            display: 'inline-flex',
-	            margin: 'auto',
-	            maxWidth: 1000
-	            // visibility:'hidden'
-	          } },
-	        'spacer'
-	      )
-	    )
-	  );
-	}
-	
-	WizardMain.propTypes = {
-	  // medicalRights: PropTypes.arrayOf(PropTypes.shape({
-	  //   condition: PropTypes.string.isRequired
-	  // })).isRequired,
-	};
-	
-	exports.default = WizardMain;
-
-/***/ },
-
 /***/ 103:
 /***/ function(module, exports, __webpack_require__) {
 
@@ -500,17 +379,17 @@ exports.modules = {
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Stepper = __webpack_require__(105);
+	var _Stepper = __webpack_require__(106);
 	
 	var _RaisedButton = __webpack_require__(42);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
-	var _FlatButton = __webpack_require__(8);
+	var _FlatButton = __webpack_require__(7);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
-	var _ExpandTransition = __webpack_require__(106);
+	var _ExpandTransition = __webpack_require__(107);
 	
 	var _ExpandTransition2 = _interopRequireDefault(_ExpandTransition);
 	
@@ -526,23 +405,23 @@ exports.modules = {
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
-	var _StepNumber = __webpack_require__(46);
+	var _StepNumber = __webpack_require__(45);
 	
 	var _StepNumber2 = _interopRequireDefault(_StepNumber);
 	
-	var _StepNumber3 = __webpack_require__(47);
+	var _StepNumber3 = __webpack_require__(46);
 	
 	var _StepNumber4 = _interopRequireDefault(_StepNumber3);
 	
-	var _StepNumber5 = __webpack_require__(48);
+	var _StepNumber5 = __webpack_require__(47);
 	
 	var _StepNumber6 = _interopRequireDefault(_StepNumber5);
 	
-	var _StepNumber7 = __webpack_require__(49);
+	var _StepNumber7 = __webpack_require__(48);
 	
 	var _StepNumber8 = _interopRequireDefault(_StepNumber7);
 	
-	var _StepSurvey = __webpack_require__(101);
+	var _StepSurvey = __webpack_require__(102);
 	
 	var _StepSurvey2 = _interopRequireDefault(_StepSurvey);
 	
@@ -756,7 +635,7 @@ exports.modules = {
 	            _react2.default.createElement(
 	              _Stepper.StepLabel,
 	              null,
-	              'Your rights'
+	              'Your Rights'
 	            )
 	          )
 	        ),
@@ -777,6 +656,411 @@ exports.modules = {
 	  muiTheme: _react2.default.PropTypes.object
 	};
 	exports.default = WizardMainStepper;
+
+/***/ },
+
+/***/ 104:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(0);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _WizardMain = {
+	  "progtrckr": "_1T2D5xuQAzMIscEjI2nghz",
+	  "val-err-tooltip": "_26s78mC1TlJwIeHL6_3T04",
+	  "row": "YCmkvEtoQTgnkqZkV3KjA",
+	  "form-horizontal": "vFRtZyLC_JSGYTB8ZNp9L",
+	  "form-group": "_3dlrtOMwBkuI7pch-Bh2XM",
+	  "footer-buttons": "vl9sepLxLhjaOumNvMGJu",
+	  "step3": "jK2gRvchHCbebUwqQlyJV",
+	  "step4": "_2LsxfDg-ozr6rp45JIcvR-",
+	  "control-label": "_293qLqtMLuu0AncbayrNUn",
+	  "review": "_1TThIY09qLr5Wfk80vP-qp",
+	  "txt": "SSuOYzX0RxznwJiDrGboH",
+	  "saving": "_31Is94zhKTCFBbXE3PfPxb",
+	  "eg-jump-lnk": "_1jqBWnm1cdnu57XIYaEdrW",
+	  "lib-version": "_1Vr7MgDfp2ylHVa3ryYMfJ",
+	  "content": "_1u_fguEXmTnrJge1d1iz9C",
+	  "red": "_9JyYUHPUFav3UOjbxJIfD",
+	  "green": "_1YKtRyM4nU-ynOll96lla4",
+	  "bold": "_1f9bz_Z7Jv1Ae6rkj6eLCm",
+	  "hoc-alert": "_2SgTM_M73TmeYVq5XbDywY",
+	  "form-block-holder": "_2NqFL78VnXh6Hc8sN2yjLW",
+	  "progtrckr-todo": "_1hJePpQfJYCAqZPfgEDeiI",
+	  "progtrckr-doing": "_1bAEdbbdwOsDMca2Er-enQ",
+	  "progtrckr-done": "_1gy7LmBVkqoqrsnTTKTuWz",
+	  "wizard-spacer": "_1dldT6inotw2Mi2tu7jfkW"
+	};
+	
+	var _WizardMain2 = _interopRequireDefault(_WizardMain);
+	
+	var _reactStepzilla = __webpack_require__(54);
+	
+	var _reactStepzilla2 = _interopRequireDefault(_reactStepzilla);
+	
+	var _WizardMainStepper = __webpack_require__(103);
+	
+	var _WizardMainStepper2 = _interopRequireDefault(_WizardMainStepper);
+	
+	var _StepNumber = __webpack_require__(45);
+	
+	var _StepNumber2 = _interopRequireDefault(_StepNumber);
+	
+	var _StepNumber3 = __webpack_require__(46);
+	
+	var _StepNumber4 = _interopRequireDefault(_StepNumber3);
+	
+	var _StepNumber5 = __webpack_require__(47);
+	
+	var _StepNumber6 = _interopRequireDefault(_StepNumber5);
+	
+	var _StepNumber7 = __webpack_require__(48);
+	
+	var _StepNumber8 = _interopRequireDefault(_StepNumber7);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	//Steps
+	
+	
+	// Import Components
+	// import PostListItem from '../../Post/components/PostListItem/PostListItem';
+	// import styles from '../../../css/prog-tracker.css';
+	
+	function WizardMain(props) {
+	  var _this = this;
+	
+	  var steps = [{ name: 'Doctor Diagnosis', component: _react2.default.createElement(_StepNumber2.default, { getStore: function getStore() {
+	        return _this.getStore();
+	      }, updateStore: function updateStore(u) {
+	        _this.updateStore(u);
+	      } }) }, { name: 'Personal Info', component: _react2.default.createElement(_StepNumber4.default, { getStore: function getStore() {
+	        return _this.getStore();
+	      }, updateStore: function updateStore(u) {
+	        _this.updateStore(u);
+	      } }) }, { name: 'Terms', component: _react2.default.createElement(_StepNumber6.default, { getStore: function getStore() {
+	        return _this.getStore();
+	      }, updateStore: function updateStore(u) {
+	        _this.updateStore(u);
+	      } }) }, { name: 'Your Medical Rights', component: _react2.default.createElement(_StepNumber8.default, { getStore: function getStore() {
+	        return _this.getStore();
+	      }, updateStore: function updateStore(u) {
+	        _this.updateStore(u);
+	      } }) }];
+	
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'step-progress', style: {
+	          width: '100%',
+	          display: 'inline-flex',
+	          flexDirection: 'column',
+	          margin: 'auto',
+	          maxWidth: 1000
+	        } },
+	      _react2.default.createElement(_WizardMainStepper2.default, null),
+	      _react2.default.createElement(
+	        'span',
+	        { className: _WizardMain2.default['wizard-spacer'], style: {
+	            // width:'100%',
+	            display: 'inline-flex',
+	            margin: 'auto',
+	            maxWidth: 1000
+	            // visibility:'hidden'
+	          } },
+	        'spacer'
+	      )
+	    )
+	  );
+	}
+	
+	WizardMain.propTypes = {
+	  // medicalRights: PropTypes.arrayOf(PropTypes.shape({
+	  //   condition: PropTypes.string.isRequired
+	  // })).isRequired,
+	};
+	
+	exports.default = WizardMain;
+
+/***/ },
+
+/***/ 105:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(0);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _Stepper = __webpack_require__(106);
+	
+	var _RaisedButton = __webpack_require__(42);
+	
+	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
+	
+	var _FlatButton = __webpack_require__(7);
+	
+	var _FlatButton2 = _interopRequireDefault(_FlatButton);
+	
+	var _ExpandTransition = __webpack_require__(107);
+	
+	var _ExpandTransition2 = _interopRequireDefault(_ExpandTransition);
+	
+	var _TextField = __webpack_require__(17);
+	
+	var _TextField2 = _interopRequireDefault(_TextField);
+	
+	var _getMuiTheme = __webpack_require__(44);
+	
+	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
+	
+	var _lightBaseTheme = __webpack_require__(43);
+	
+	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
+	
+	var _reactScroll = __webpack_require__(109);
+	
+	var _reactScroll2 = _interopRequireDefault(_reactScroll);
+	
+	var _StepNumber = __webpack_require__(45);
+	
+	var _StepNumber2 = _interopRequireDefault(_StepNumber);
+	
+	var _StepNumber3 = __webpack_require__(46);
+	
+	var _StepNumber4 = _interopRequireDefault(_StepNumber3);
+	
+	var _StepNumber5 = __webpack_require__(47);
+	
+	var _StepNumber6 = _interopRequireDefault(_StepNumber5);
+	
+	var _StepNumber7 = __webpack_require__(48);
+	
+	var _StepNumber8 = _interopRequireDefault(_StepNumber7);
+	
+	var _StepSurvey = __webpack_require__(102);
+	
+	var _StepSurvey2 = _interopRequireDefault(_StepSurvey);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var scroll = _reactScroll2.default.animateScroll;
+	
+	//Steps
+	
+	/**
+	 * A contrived example using a transition between steps
+	 */
+	var WizardMainStepperMobile = function (_React$Component) {
+	  _inherits(WizardMainStepperMobile, _React$Component);
+	
+	  function WizardMainStepperMobile() {
+	    var _ref;
+	
+	    var _temp, _this, _ret;
+	
+	    _classCallCheck(this, WizardMainStepperMobile);
+	
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+	
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = WizardMainStepperMobile.__proto__ || Object.getPrototypeOf(WizardMainStepperMobile)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+	      finished: false,
+	      stepIndex: 0
+	    }, _this.handleNext = function () {
+	      var stepIndex = _this.state.stepIndex;
+	
+	      if (_this.handleStepValidation(stepIndex)) {
+	        _this.setState({
+	          stepIndex: stepIndex + 1,
+	          finished: stepIndex >= 3
+	        });
+	      }
+	    }, _this.handlePrev = function () {
+	      var stepIndex = _this.state.stepIndex;
+	
+	      if (stepIndex > 0) {
+	        _this.setState({ stepIndex: stepIndex - 1 });
+	      }
+	    }, _this.handleStepValidation = function (stepIndex) {
+	      try {
+	        var stepIndexToWorkOn = ++stepIndex;
+	        console.log(stepIndexToWorkOn);
+	        if (_this.refs['step' + stepIndexToWorkOn].getWrappedInstance() && _this.refs['step' + stepIndexToWorkOn].getWrappedInstance().isValidated) {
+	          return _this.refs['step' + stepIndexToWorkOn].getWrappedInstance().isValidated();
+	        } else {
+	          return true;
+	        }
+	      } catch (err) {
+	        return true;
+	      }
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
+	
+	  _createClass(WizardMainStepperMobile, [{
+	    key: 'getChildContext',
+	    value: function getChildContext() {
+	      return {
+	        muiTheme: (0, _getMuiTheme2.default)(_lightBaseTheme2.default)
+	      };
+	    }
+	  }, {
+	    key: 'renderStepActions',
+	    value: function renderStepActions(step) {
+	      var stepIndex = this.state.stepIndex;
+	
+	
+	      return _react2.default.createElement(
+	        'div',
+	        { style: { margin: '12px 0' } },
+	        _react2.default.createElement(_RaisedButton2.default, {
+	          label: stepIndex === 3 ? 'Finish' : 'Next',
+	          disableTouchRipple: true,
+	          disableFocusRipple: true,
+	          primary: true,
+	          onTouchTap: this.handleNext,
+	          style: { marginRight: 12 }
+	        }),
+	        step > 0 && _react2.default.createElement(_FlatButton2.default, {
+	          label: 'Back',
+	          disabled: stepIndex === 0,
+	          disableTouchRipple: true,
+	          disableFocusRipple: true,
+	          onTouchTap: this.handlePrev
+	        })
+	      );
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _this2 = this;
+	
+	      var _state = this.state,
+	          finished = _state.finished,
+	          stepIndex = _state.stepIndex;
+	
+	
+	      return _react2.default.createElement(
+	        'div',
+	        { style: { maxWidth: 380, margin: 'auto' } },
+	        _react2.default.createElement(
+	          _Stepper.Stepper,
+	          { activeStep: stepIndex,
+	            linear: false,
+	            orientation: 'vertical' },
+	          _react2.default.createElement(
+	            _Stepper.Step,
+	            null,
+	            _react2.default.createElement(
+	              _Stepper.StepLabel,
+	              null,
+	              'Doctor Diagnosis'
+	            ),
+	            _react2.default.createElement(
+	              _Stepper.StepContent,
+	              null,
+	              _react2.default.createElement(_StepNumber2.default, { ref: 'step1' }),
+	              this.renderStepActions(0)
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _Stepper.Step,
+	            null,
+	            _react2.default.createElement(
+	              _Stepper.StepLabel,
+	              null,
+	              'Personal Info'
+	            ),
+	            _react2.default.createElement(
+	              _Stepper.StepContent,
+	              null,
+	              _react2.default.createElement(_StepNumber4.default, { ref: 'step2' }),
+	              this.renderStepActions(1)
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _Stepper.Step,
+	            null,
+	            _react2.default.createElement(
+	              _Stepper.StepLabel,
+	              null,
+	              'Terms'
+	            ),
+	            _react2.default.createElement(
+	              _Stepper.StepContent,
+	              null,
+	              _react2.default.createElement(_StepNumber6.default, { ref: 'step3' }),
+	              this.renderStepActions(2)
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _Stepper.Step,
+	            null,
+	            _react2.default.createElement(
+	              _Stepper.StepLabel,
+	              null,
+	              'Your Medical Rights'
+	            ),
+	            _react2.default.createElement(
+	              _Stepper.StepContent,
+	              null,
+	              _react2.default.createElement(_StepNumber8.default, { ref: 'step4' }),
+	              this.renderStepActions(3)
+	            )
+	          )
+	        ),
+	        finished && _react2.default.createElement(
+	          'p',
+	          { style: { margin: '20px 0', textAlign: 'center' } },
+	          _react2.default.createElement(
+	            'a',
+	            {
+	              href: '#',
+	              onClick: function onClick(event) {
+	                event.preventDefault();
+	                _this2.setState({ stepIndex: 0, finished: false });
+	              }
+	            },
+	            'Click here'
+	          ),
+	          ' to reset the example.'
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return WizardMainStepperMobile;
+	}(_react2.default.Component);
+	
+	WizardMainStepperMobile.childContextTypes = {
+	  muiTheme: _react2.default.PropTypes.object
+	};
+	exports.default = WizardMainStepperMobile;
 
 /***/ }
 
