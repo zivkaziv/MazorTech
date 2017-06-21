@@ -17,15 +17,25 @@ import serverError from '../images/server_error.jpg';
 const styles = {
   wizardStepPageStyle: {
     maxHeight: 350,
-    maxWidth: 679,
+    // maxWidth: 679,
     overflow:'auto',
+  },
+  medicalRightsTitle:{
+    display:'inline-flex',
+    width:'100%',
   },
   medicalRightsContainer:{
     // overflow:'auto',
+    display:'inline-flex',
+    width:'100%',
+    flexDirection:'column'
   },
   brokenServerContainer:{
     textAlign:'center',
-    marginTop:'10%'
+    marginTop:'10%',
+    // display:'inline-flex',
+    width:'100%',
+    flexDirection:'column'
   },
   brokenServerImg:{
     height:120
@@ -33,6 +43,15 @@ const styles = {
   brokenServerText:{
     fontSize:20,
     fontWeight:'bold'
+  },
+  errorSection:{
+    width:'100%',
+    // display:'inline-flex',
+    flexDirection:'column'
+  },
+  spacer:{
+    width:'100%',
+    display:'inline-flex'
   }
 };
 
@@ -54,7 +73,7 @@ class StepNumber4 extends Component {
       results = (
         <div className="step" style={styles.wizardStepPageStyle}>
           <div className="row">
-            <section>
+            <section style={styles.medicalRightsTitle}>
               <h2>We have found for you the following medical rights</h2>
             </section>
             {/*<CircularProgress size={80} thickness={5} />*/}
@@ -77,7 +96,7 @@ class StepNumber4 extends Component {
     }else{
       results = (
         <div className="step" style={styles.wizardStepPageStyle}>
-          <div className="row">
+          <div className="row" style={styles.errorSection}>
             <div style={styles.brokenServerContainer}>
               <img src={serverError} style={styles.brokenServerImg}/>
               <div style={styles.brokenServerText}>
@@ -85,6 +104,7 @@ class StepNumber4 extends Component {
                 <br/>stay tight..
                 <br/> Our best engineers are working to fix it
               </div>
+              <span style={styles.spacer}></span>
             </div>
           </div>
         </div>

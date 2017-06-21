@@ -1,12 +1,14 @@
 import React, { PropTypes } from 'react';
 
-require('./WizardMain.css');
+import styles from './WizardMain.css';
 
 // Import Components
 // import PostListItem from '../../Post/components/PostListItem/PostListItem';
 // import styles from '../../../css/prog-tracker.css';
 
 import StepZilla from 'react-stepzilla';
+import WizardMainStepper from '../stepper/WizardMainStepper';
+
 //Steps
 import Step1 from '../Steps/StepNumber1'
 import Step2 from '../Steps/StepNumber2'
@@ -28,12 +30,28 @@ function WizardMain(props) {
 
   return (
     <div>
-      <div className='step-progress'>
-        <StepZilla steps={steps}
+      <div className='step-progress' style=
+        {{
+          width:'100%',
+          display:'inline-flex',
+          flexDirection:'column',
+          margin: 'auto',
+          maxWidth: 1000
+        }}>
+{/*        <StepZilla steps={steps}
                    dontValidate={false}
                    stepsNavigation={false}
                    skipValidationExecution = {false}
-                   nextTextOnFinalActionStep={"See my medical rights"}/>
+                   nextTextOnFinalActionStep={"See my medical rights"}/>*/}
+           <WizardMainStepper/>
+          <span className={styles['wizard-spacer']} style=
+                  {{
+                    // width:'100%',
+                    display:'inline-flex',
+                    margin: 'auto',
+                    maxWidth: 1000,
+                    // visibility:'hidden'
+                  }}>spacer</span>
       </div>
     </div>
   );

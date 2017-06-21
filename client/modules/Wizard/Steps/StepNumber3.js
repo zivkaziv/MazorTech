@@ -14,17 +14,22 @@ import FlatButton from 'material-ui/FlatButton';
 const styles = {
   wizardStepPageStyle: {
     maxHeight: 350,
-    maxWidth: 679,
+    // maxWidth: 679,
     overflow:'auto',
   },
   termsSection:{
     maxHeight: 334,
     overflow:'auto',
+    display:'inline-flex',
+    width:'100%',
+    flexDirection:'column'
   },
   toggle: {
     // marginBottom: 15,
     marginTop: 15,
-    maxWidth:250
+    maxWidth:250,
+    display:'inline-flex',
+    width:'100%'
   }
 };
 
@@ -79,7 +84,6 @@ class StepNumber3 extends Component {
       <div className="step step2" style={styles.wizardStepPageStyle}>
         <section style={styles.termsSection} >
           <h2>Terms of Use</h2>
-          <h3>Agreement between You and Instructure</h3>
           <div className="col-md-12">
             <p>Last Updated Date: August 30th, 2016</p>
             <p>PLEASE READ THIS TERMS OF USE AGREEMENT (THE <b>&ldquo;TERMS&rdquo;</b>) CAREFULLY. BY ACCESSING OR USING THIS WEBSITE OR ANY OTHER WEBSITES OF INSTRUCTURE, INC. (<b>&ldquo;INSTRUCTURE&rdquo;</b>) WITH LINKS TO THIS AGREEMENT (COLLECTIVELY, THE <b>&ldquo;WEBSITE&rdquo;</b>) IN ANY WAY, INCLUDING USING THE SERVICES ENABLED VIA THE WEBSITE (THE <b>&ldquo;SERVICES&rdquo;</b>) BY INSTRUCTURE OR USERS OF THE SITE (<b>&ldquo;USERS&rdquo;</b>), CLICKING THE &ldquo;I ACCEPT&rdquo; CHECK BOX, OR MERELY BROWSING THE WEBSITE, YOU REPRESENT THAT YOU HAVE READ, UNDERSTAND, AND AGREE TO BE BOUND BY THE TERMS.  <b>IF YOU DO NOT AGREE TO BE BOUND BY THE TERMS, YOU MAY NOT ACCESS OR USE THIS WEBSITE OR THE SERVICES.</b> </p>

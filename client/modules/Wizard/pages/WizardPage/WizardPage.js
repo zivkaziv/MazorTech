@@ -58,11 +58,6 @@ function mapStateToProps(state) {
 
 WizardPage.propTypes = {
   medicalRight: PropTypes.any
-  // medicalRights: PropTypes.arrayOf(PropTypes.shape({
-  //   condition: PropTypes.string.isRequired
-  // })).isRequired
-  // showAddPost: PropTypes.bool.isRequired,
-  // dispatch: PropTypes.func.isRequired,
 };
 
 WizardPage.contextTypes = {

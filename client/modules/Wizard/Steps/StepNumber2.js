@@ -21,8 +21,17 @@ import { updateUserDetails } from '../UserActions';
 const styles = {
   wizardStepPageStyle: {
     maxHeight: 350,
-    maxWidth: 679,
+    // maxWidth: 679,
     overflow:'auto',
+  },
+  title:{
+    display:'inline-flex',
+    width:'100%',
+  },
+  personalDetails:{
+    display:'inline-flex',
+    width:'100%',
+    flexDirection:'column'
   },
   block: {
     maxWidth: 250,
@@ -123,10 +132,10 @@ class StepNumber2 extends Component {
   render() {
     return (
       <div className="step step2" style={styles.wizardStepPageStyle}>
-        <section>
+        <section  style={styles.title}>
           <h2>We need a few more details to help you</h2>
         </section>
-        <div className="col-md-12">
+        <div className="col-md-12" style={styles.personalDetails}>
           {/*Gender*/}
           <div className="user-detail-section" style={styles.userDetailSectionWithNoAlign}>
             <div className="user-detail-text" style={styles.userDetailText}>
