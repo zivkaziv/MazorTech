@@ -19,6 +19,10 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(1);
 	
+	var _windowOrGlobal = __webpack_require__(111);
+	
+	var _windowOrGlobal2 = _interopRequireDefault(_windowOrGlobal);
+	
 	var _WizardMain = __webpack_require__(104);
 	
 	var _WizardMain2 = _interopRequireDefault(_WizardMain);
@@ -116,7 +120,7 @@ exports.modules = {
 	function mapStateToProps(state) {
 	  return {
 	    // showAddPost: getShowAddPost(state),
-	    isMobile: (0, _AppReducer.getDevice)(state, false)
+	    isMobile: (0, _AppReducer.getDevice)(state, _windowOrGlobal2.default.navigator.userAgent)
 	  };
 	}
 	

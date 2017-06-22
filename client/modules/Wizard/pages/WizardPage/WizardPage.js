@@ -1,5 +1,6 @@
 import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
+import root from 'window-or-global'
 
 // Import Components
 import WizardMain from '../../componenets/WizardMain';
@@ -61,7 +62,7 @@ class WizardPage extends Component {
 function mapStateToProps(state) {
   return {
     // showAddPost: getShowAddPost(state),
-    isMobile: getDevice(state,false),
+    isMobile: getDevice(state,root.navigator.userAgent),
   };
 }
 

@@ -11,6 +11,8 @@ import MobileDetect from 'mobile-detect';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import lightBaseTheme  from 'material-ui/styles/baseThemes/lightBaseTheme';
+import root from 'window-or-global'
+
 
 // Mixpanel
 import mixpanel from 'mixpanel-browser';
@@ -23,9 +25,9 @@ mixpanel.init("80bb2a9473ffb596cb6e7a06d7306699");
 injectTapEventPlugin();
 
 //Mobile detect
-var mobileDetect = new MobileDetect(window.navigator.userAgent);
+var mobileDetect = new MobileDetect(root.navigator.userAgent);
 //How to check if the device is mobile or not
-// console.log(mobileDetect.mobile());
+console.log(mobileDetect.mobile());
 
 // Import Routes
 import routes from './routes';

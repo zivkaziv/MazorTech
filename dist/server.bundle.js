@@ -5420,5 +5420,11 @@
 
 	module.exports = require("react-stars");
 
+/***/ },
+/* 111 */
+/***/ function(module, exports) {
+
+	module.exports = require("window-or-global");
+
 /***/ }
 /******/ ]);
