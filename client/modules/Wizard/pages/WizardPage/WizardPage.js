@@ -62,7 +62,7 @@ class WizardPage extends Component {
 function mapStateToProps(state) {
   return {
     // showAddPost: getShowAddPost(state),
-    isMobile: getDevice(state,root.navigator.userAgent),
+    isMobile: getDevice(state,root.navigator?root.navigator.userAgent:false),
   };
 }
 

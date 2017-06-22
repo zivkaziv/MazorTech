@@ -21,10 +21,34 @@ function MedicalRightItem(props) {
                     {/*target="_blank"/>*/}
       </CardActions>
       <CardText expandable={true}>
-        {props.medicalRight['Medical Right Description']}
-        <br/>
-        <br/>
-        <b>Comments:</b>  {props.medicalRight['Comments']}
+        {(function(showMe) {
+          if (showMe) {
+            return (
+              <div>
+                <b>Description:</b>  {props.medicalRight['Medical Right Description']}
+              </div>
+            );
+          }
+        })(props.medicalRight['Medical Right Description'])}
+        {(function(showMe) {
+          if (showMe) {
+            return (
+              <div>
+                <b>Comments:</b>  {props.medicalRight['Comments']}
+              </div>
+            );
+          }
+        })(props.medicalRight['Comments'])}
+        {(function(showMe) {
+          if (showMe) {
+            return (
+              <div>
+                <b>Family Background:</b>  {props.medicalRight['Family Background']}
+              </div>
+            );
+          }
+        })(props.medicalRight['Family Background'])}
+
       </CardText>
     </Card>
   );
