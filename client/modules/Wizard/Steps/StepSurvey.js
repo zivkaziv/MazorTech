@@ -31,11 +31,15 @@ export default class StepSurvey extends Component {
       generalRating:0,
       isSubmitted:false,
       moreFeatures:'',
-      freeText:''
+      freeText:'',
+      email:'',
+      isEmailSubmitted:false
     };
 
     this.ratingChanged = this.ratingChanged.bind(this);
     this.submitFeedback = this.submitFeedback.bind(this);
+    this.submitEmail= this.submitEmail.bind(this);
+    this.emailHasChanged= this.emailHasChanged.bind(this);
   }
 
   componentDidMount() {
@@ -47,6 +51,10 @@ export default class StepSurvey extends Component {
     this.state.generalRating = newRating;
   };
 
+  emailHasChanged(email){
+    this.state.email = email;
+  }
+
   submitFeedback(){
     this.context.mixpanel.track('Feedback',{
       'ab_version':'v1',
@@ -56,6 +64,15 @@ export default class StepSurvey extends Component {
     });
 
     this.setState({isSubmitted: true});
+  }
+
+  submitEmail(){
+    this.context.mixpanel.track('Register email',{
+      'ab_version':'v1',
+      'email':this.state.email,
+    });
+
+    this.setState({isEmailSubmitted: true});
   }
 
   handleChange = (event, index, value) => this.setState({moreFeatures:value});
@@ -117,6 +134,7 @@ export default class StepSurvey extends Component {
             <div className="row">
               <h1 style={{
                 display:'flex',
+                flexDirection:'column',
                 justifyContent:'center',
                 color:'#00bcd4',
                 textAlign:'center'
@@ -124,6 +142,54 @@ export default class StepSurvey extends Component {
                 Thanks..
                 <br/>
                 you really helped us
+                <br/>
+                If you want to stay in touch, enter your mail.
+                <br/>
+                We promise never to send you spam
+                <br/>
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'flex-end',
+                  textAlign: 'center',
+                  justifyContent: 'center'
+                }}>
+                  <TextField
+                    hintText="Email"
+                    onChange={this.emailHasChanged()}
+                  />
+                  {(function(showMe) {
+                    if (showMe) {
+                      return (
+                        <div>
+                          <FlatButton
+                            style={{marginTop:30}}
+                            label="Sent"
+                            disabled={true}
+                            primary={true}
+                            keyboardFocused={false}
+                          />
+                        </div>
+                      );
+                    }
+                  })(this.state.isEmailSubmitted)}
+
+                  {(function(showMe,submit) {
+                  if (showMe) {
+                    return (
+                      <div>
+                        <FlatButton
+                          style={{marginTop:30}}
+                          label="Send"
+                          primary={true}
+                          keyboardFocused={false}
+                          onTouchTap={submit}
+                        />
+                      </div>
+                    );
+                  }
+                })(!this.state.isEmailSubmitted,this.submitEmail)}
+                </div>
+
               </h1>
             </div>
           </div>

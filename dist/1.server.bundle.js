@@ -226,11 +226,15 @@ exports.modules = {
 	      generalRating: 0,
 	      isSubmitted: false,
 	      moreFeatures: '',
-	      freeText: ''
+	      freeText: '',
+	      email: '',
+	      isEmailSubmitted: false
 	    };
 	
 	    _this.ratingChanged = _this.ratingChanged.bind(_this);
 	    _this.submitFeedback = _this.submitFeedback.bind(_this);
+	    _this.submitEmail = _this.submitEmail.bind(_this);
+	    _this.emailHasChanged = _this.emailHasChanged.bind(_this);
 	    return _this;
 	  }
 	
@@ -246,6 +250,11 @@ exports.modules = {
 	      this.state.generalRating = newRating;
 	    }
 	  }, {
+	    key: 'emailHasChanged',
+	    value: function emailHasChanged(email) {
+	      this.state.email = email;
+	    }
+	  }, {
 	    key: 'submitFeedback',
 	    value: function submitFeedback() {
 	      this.context.mixpanel.track('Feedback', {
@@ -256,6 +265,16 @@ exports.modules = {
 	      });
 	
 	      this.setState({ isSubmitted: true });
+	    }
+	  }, {
+	    key: 'submitEmail',
+	    value: function submitEmail() {
+	      this.context.mixpanel.track('Register email', {
+	        'ab_version': 'v1',
+	        'email': this.state.email
+	      });
+	
+	      this.setState({ isEmailSubmitted: true });
 	    }
 	  }, {
 	    key: 'render',
@@ -339,13 +358,62 @@ exports.modules = {
 	              'h1',
 	              { style: {
 	                  display: 'flex',
+	                  flexDirection: 'column',
 	                  justifyContent: 'center',
 	                  color: '#00bcd4',
 	                  textAlign: 'center'
 	                } },
 	              'Thanks..',
 	              _react2.default.createElement('br', null),
-	              'you really helped us'
+	              'you really helped us',
+	              _react2.default.createElement('br', null),
+	              'If you want to stay in touch, enter your mail.',
+	              _react2.default.createElement('br', null),
+	              'We promise never to send you spam',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'div',
+	                { style: {
+	                    display: 'flex',
+	                    alignItems: 'flex-end',
+	                    textAlign: 'center',
+	                    justifyContent: 'center'
+	                  } },
+	                _react2.default.createElement(_TextField2.default, {
+	                  hintText: 'Email',
+	                  onChange: this.emailHasChanged()
+	                }),
+	                function (showMe) {
+	                  if (showMe) {
+	                    return _react2.default.createElement(
+	                      'div',
+	                      null,
+	                      _react2.default.createElement(_FlatButton2.default, {
+	                        style: { marginTop: 30 },
+	                        label: 'Sent',
+	                        disabled: true,
+	                        primary: true,
+	                        keyboardFocused: false
+	                      })
+	                    );
+	                  }
+	                }(this.state.isEmailSubmitted),
+	                function (showMe, submit) {
+	                  if (showMe) {
+	                    return _react2.default.createElement(
+	                      'div',
+	                      null,
+	                      _react2.default.createElement(_FlatButton2.default, {
+	                        style: { marginTop: 30 },
+	                        label: 'Send',
+	                        primary: true,
+	                        keyboardFocused: false,
+	                        onTouchTap: submit
+	                      })
+	                    );
+	                  }
+	                }(!this.state.isEmailSubmitted, this.submitEmail)
+	              )
 	            )
 	          )
 	        );
@@ -559,7 +627,7 @@ exports.modules = {
 	              },
 	              'Click here'
 	            ),
-	            ' to find some other rights'
+	            ' to find some more rights'
 	          )
 	        );
 	      }

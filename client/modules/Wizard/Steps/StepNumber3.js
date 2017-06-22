@@ -18,7 +18,7 @@ const styles = {
     overflow:'auto',
   },
   termsSection:{
-    maxHeight: 334,
+    maxHeight: 383,
     overflow:'auto',
     display:'inline-flex',
     width:'100%',

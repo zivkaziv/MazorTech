@@ -265,14 +265,7 @@ exports.modules = {
 	          theme: LIGHT_BAND_THEME,
 	          title: 'We don\'t save any information'
 	          // subtitle="if you think you can do it"
-	          , contentStyle: { textAlign: 'center' } }),
-	        _react2.default.createElement(_landricksComponents.EmailSqueezeBrick, {
-	          title: 'If you wanna stay updated about medical insurance updates',
-	          subtitle: 'Always stay updated',
-	          theme: HEAVY_BAND_THEME,
-	          buttonLabel: 'Send',
-	          placeholder: 'Enter your email'
-	        })
+	          , contentStyle: { textAlign: 'center' } })
 	      );
 	    }
 	  }]);

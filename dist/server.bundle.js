@@ -1515,7 +1515,7 @@
 	    display: 'flex'
 	  },
 	  searchContainer: {
-	    height: 350,
+	    height: 383,
 	    overflow: 'auto'
 	  },
 	  cantFindContainer: {
@@ -1979,10 +1979,10 @@
 	              'div',
 	              { className: 'user-detail-input' },
 	              _react2.default.createElement(
-	                _SelectField2.default,
-	                {
-	                  floatingLabelText: 'Health insurance',
-	                  value: this.props.user.healthInsurance,
+	                _SelectField2.default
+	                // floatingLabelText="Health insurance"
+	                ,
+	                { value: this.props.user.healthInsurance,
 	                  onChange: this.handleHealthInsuranceChange
 	                },
 	                _react2.default.createElement(_MenuItem2.default, { value: 'MEDICARE', primaryText: 'Medicare' }),
@@ -2114,7 +2114,7 @@
 	    overflow: 'auto'
 	  },
 	  termsSection: {
-	    maxHeight: 334,
+	    maxHeight: 383,
 	    overflow: 'auto',
 	    display: 'inline-flex',
 	    width: '100%',

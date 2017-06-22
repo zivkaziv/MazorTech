@@ -229,13 +229,13 @@ class LandingPage extends Component {
             {/*<PlaceHolder useLoremIpsum={ true } />*/}
             {/*<PlaceHolder label="image placeholder" />*/}
           {/*</DoubleContentBrick>*/}
-          <EmailSqueezeBrick
-            title="If you wanna stay updated about medical insurance updates"
-            subtitle="Always stay updated"
-            theme={ HEAVY_BAND_THEME }
-            buttonLabel="Send"
-            placeholder="Enter your email"
-          />
+          {/*<EmailSqueezeBrick*/}
+            {/*title="If you wanna stay updated about medical insurance updates"*/}
+            {/*subtitle="Always stay updated"*/}
+            {/*theme={ HEAVY_BAND_THEME }*/}
+            {/*buttonLabel="Send"*/}
+            {/*placeholder="Enter your email"*/}
+          {/*/>*/}
         </LandingCanvas>
     );
   }

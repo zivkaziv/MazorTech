@@ -198,7 +198,7 @@ class StepNumber2 extends Component {
             </div>
             <div className="user-detail-input">
               <SelectField
-                floatingLabelText="Health insurance"
+                // floatingLabelText="Health insurance"
                 value={this.props.user.healthInsurance}
                 onChange={this.handleHealthInsuranceChange}
               >

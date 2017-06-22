@@ -28,7 +28,7 @@ const styles = {
     display:'flex'
   },
   searchContainer:{
-    height:350,
+    height:383,
     overflow:'auto'
   },
   cantFindContainer:{
