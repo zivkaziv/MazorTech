@@ -119,7 +119,7 @@ webpackJsonp([0],{
 	function mapStateToProps(state) {
 	  return {
 	    // showAddPost: getShowAddPost(state),
-	    isMobile: (0, _AppReducer.getDevice)(state, _windowOrGlobal2.default.navigator.userAgent)
+	    isMobile: (0, _AppReducer.getDevice)(state, _windowOrGlobal2.default.navigator ? _windowOrGlobal2.default.navigator.userAgent : false)
 	  };
 	}
 	
@@ -8160,16 +8160,51 @@ webpackJsonp([0],{
 	    _react2.default.createElement(
 	      _Card.CardText,
 	      { expandable: true },
-	      props.medicalRight['Medical Right Description'],
-	      _react2.default.createElement('br', null),
-	      _react2.default.createElement('br', null),
-	      _react2.default.createElement(
-	        'b',
-	        null,
-	        'Comments:'
-	      ),
-	      '  ',
-	      props.medicalRight['Comments']
+	      function (showMe) {
+	        if (showMe) {
+	          return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	              'b',
+	              null,
+	              'Description:'
+	            ),
+	            '  ',
+	            props.medicalRight['Medical Right Description']
+	          );
+	        }
+	      }(props.medicalRight['Medical Right Description']),
+	      function (showMe) {
+	        if (showMe) {
+	          return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	              'b',
+	              null,
+	              'Comments:'
+	            ),
+	            '  ',
+	            props.medicalRight['Comments']
+	          );
+	        }
+	      }(props.medicalRight['Comments']),
+	      function (showMe) {
+	        if (showMe) {
+	          return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	              'b',
+	              null,
+	              'Family Background:'
+	            ),
+	            '  ',
+	            props.medicalRight['Family Background']
+	          );
+	        }
+	      }(props.medicalRight['Family Background'])
 	    )
 	  );
 	}

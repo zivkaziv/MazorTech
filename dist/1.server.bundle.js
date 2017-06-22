@@ -120,7 +120,7 @@ exports.modules = {
 	function mapStateToProps(state) {
 	  return {
 	    // showAddPost: getShowAddPost(state),
-	    isMobile: (0, _AppReducer.getDevice)(state, _windowOrGlobal2.default.navigator.userAgent)
+	    isMobile: (0, _AppReducer.getDevice)(state, _windowOrGlobal2.default.navigator ? _windowOrGlobal2.default.navigator.userAgent : false)
 	  };
 	}
 	
