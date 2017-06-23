@@ -1,6 +1,8 @@
 import React, { PropTypes } from 'react';
 import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
+import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton';
+
 
 // Import Style
 import styles from './MedicalRightItem.css';
@@ -15,6 +17,17 @@ function MedicalRightItem(props) {
         showExpandableButton={true}
       />
       <CardActions>
+        <RadioButtonGroup
+          defaultSelected={'DIDNT_KNOW'}>
+          <RadioButton
+            value="DIDNT_KNOW"
+            label="I didn't know"
+          />
+          <RadioButton
+            value="ALREADY_KNOW"
+            label="Already knew"
+          />
+        </RadioButtonGroup>
         {/*<FlatButton primary={true}*/}
                     {/*label="I didn't know that"*/}
                     {/*href="https://www.facebook.com/sharer.php?u=http://www.ynet.co.il/articles/0,7340,L-4970913,00.html"*/}

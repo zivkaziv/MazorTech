@@ -89,6 +89,7 @@ class StepNumber1 extends Component {
   };
 
   handleCantFindDialogOpen = () => {
+    this.context.mixpanel.track('Wizard step button',{'ab_version':'v1','step':'1','button':"can't find"});
     this.setState({cantFindDialogOpen: true});
   };
   handleCantFindDialogClose = () => {
@@ -114,7 +115,7 @@ class StepNumber1 extends Component {
 
     const actionsCantFind = [
       <FlatButton
-        label="Save"
+        label="OK"
         primary={true}
         keyboardFocused={true}
         onTouchTap={this.handleCantFindDialogClose}
@@ -150,7 +151,8 @@ class StepNumber1 extends Component {
             modal={true}
             open={this.state.cantFindDialogOpen}
             onRequestClose={this.handleCantFindDialogClose}>
-            <TextField hintText="Write here in your words the medical diagnostic"/>
+            Sorry, but we aren't support it yet...
+            {/*<TextField hintText="Write here in your words the medical diagnostic"/>*/}
           </Dialog>
 
           {/*You must choose dialog*/}

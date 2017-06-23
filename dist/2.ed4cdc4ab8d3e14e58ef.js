@@ -1403,59 +1403,59 @@ webpackJsonp([2],{
 	});
 	exports.styleHelpers = exports.PlaceHolder = exports.FeatureItem = exports.CallToAction = exports.NavigationBrick = exports.TripleContentBrick = exports.DoubleContentBrick = exports.GenericBrick = exports.StrongMessageBrick = exports.EmailSqueezeBrick = exports.GalleryBrick = exports.FooterBrick = exports.EnumerationBrick = exports.LandingCanvas = exports.ThemePropagator = undefined;
 	
-	var _ThemePropagator = __webpack_require__(853);
+	var _ThemePropagator = __webpack_require__(854);
 	
 	var _ThemePropagator2 = _interopRequireDefault(_ThemePropagator);
 	
-	var _LandingCanvas = __webpack_require__(846);
+	var _LandingCanvas = __webpack_require__(847);
 	
 	var _LandingCanvas2 = _interopRequireDefault(_LandingCanvas);
 	
-	var _EnumerationBrick = __webpack_require__(837);
+	var _EnumerationBrick = __webpack_require__(838);
 	
 	var _EnumerationBrick2 = _interopRequireDefault(_EnumerationBrick);
 	
-	var _FooterBrick = __webpack_require__(841);
+	var _FooterBrick = __webpack_require__(842);
 	
 	var _FooterBrick2 = _interopRequireDefault(_FooterBrick);
 	
-	var _EmailSqueezeBrick = __webpack_require__(835);
+	var _EmailSqueezeBrick = __webpack_require__(836);
 	
 	var _EmailSqueezeBrick2 = _interopRequireDefault(_EmailSqueezeBrick);
 	
-	var _StrongMessageBrick = __webpack_require__(851);
+	var _StrongMessageBrick = __webpack_require__(852);
 	
 	var _StrongMessageBrick2 = _interopRequireDefault(_StrongMessageBrick);
 	
-	var _GenericBrick = __webpack_require__(844);
+	var _GenericBrick = __webpack_require__(845);
 	
 	var _GenericBrick2 = _interopRequireDefault(_GenericBrick);
 	
-	var _DoubleContentBrick = __webpack_require__(833);
+	var _DoubleContentBrick = __webpack_require__(834);
 	
 	var _DoubleContentBrick2 = _interopRequireDefault(_DoubleContentBrick);
 	
-	var _TripleContentBrick = __webpack_require__(854);
+	var _TripleContentBrick = __webpack_require__(855);
 	
 	var _TripleContentBrick2 = _interopRequireDefault(_TripleContentBrick);
 	
-	var _NavigationBrick = __webpack_require__(847);
+	var _NavigationBrick = __webpack_require__(848);
 	
 	var _NavigationBrick2 = _interopRequireDefault(_NavigationBrick);
 	
-	var _GalleryBrick = __webpack_require__(842);
+	var _GalleryBrick = __webpack_require__(843);
 	
 	var _GalleryBrick2 = _interopRequireDefault(_GalleryBrick);
 	
-	var _CallToAction = __webpack_require__(831);
+	var _CallToAction = __webpack_require__(832);
 	
 	var _CallToAction2 = _interopRequireDefault(_CallToAction);
 	
-	var _FeatureItem = __webpack_require__(839);
+	var _FeatureItem = __webpack_require__(840);
 	
 	var _FeatureItem2 = _interopRequireDefault(_FeatureItem);
 	
-	var _PlaceHolder = __webpack_require__(849);
+	var _PlaceHolder = __webpack_require__(850);
 	
 	var _PlaceHolder2 = _interopRequireDefault(_PlaceHolder);
 	
@@ -3697,7 +3697,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 831:
+/***/ 832:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3717,7 +3717,7 @@ webpackJsonp([2],{
 	
 	var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
 	
-	var _styles = __webpack_require__(832);
+	var _styles = __webpack_require__(833);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
@@ -3831,7 +3831,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 832:
+/***/ 833:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3923,7 +3923,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 833:
+/***/ 834:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3943,7 +3943,7 @@ webpackJsonp([2],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _styles = __webpack_require__(834);
+	var _styles = __webpack_require__(835);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
@@ -4044,7 +4044,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 834:
+/***/ 835:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4065,7 +4065,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 835:
+/***/ 836:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4079,7 +4079,7 @@ webpackJsonp([2],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _styles = __webpack_require__(836);
+	var _styles = __webpack_require__(837);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
@@ -4142,7 +4142,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 836:
+/***/ 837:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4230,7 +4230,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 837:
+/***/ 838:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4246,7 +4246,7 @@ webpackJsonp([2],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _styles = __webpack_require__(838);
+	var _styles = __webpack_require__(839);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
@@ -4289,7 +4289,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 838:
+/***/ 839:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4332,7 +4332,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 839:
+/***/ 840:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4354,7 +4354,7 @@ webpackJsonp([2],{
 	
 	var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
 	
-	var _styles = __webpack_require__(840);
+	var _styles = __webpack_require__(841);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
@@ -4453,7 +4453,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 840:
+/***/ 841:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4556,7 +4556,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 841:
+/***/ 842:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4631,7 +4631,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 842:
+/***/ 843:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4655,7 +4655,7 @@ webpackJsonp([2],{
 	
 	var _ = __webpack_require__(764);
 	
-	var _styles = __webpack_require__(843);
+	var _styles = __webpack_require__(844);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
@@ -4808,7 +4808,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 843:
+/***/ 844:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4940,7 +4940,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 844:
+/***/ 845:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4962,7 +4962,7 @@ webpackJsonp([2],{
 	
 	var _conventions = __webpack_require__(776);
 	
-	var _styles = __webpack_require__(845);
+	var _styles = __webpack_require__(846);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
@@ -5068,7 +5068,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 845:
+/***/ 846:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5129,7 +5129,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 846:
+/***/ 847:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5184,7 +5184,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 847:
+/***/ 848:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5206,7 +5206,7 @@ webpackJsonp([2],{
 	
 	var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
 	
-	var _styler = __webpack_require__(848);
+	var _styler = __webpack_require__(849);
 	
 	var _styler2 = _interopRequireDefault(_styler);
 	
@@ -5354,7 +5354,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 848:
+/***/ 849:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5495,7 +5495,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 849:
+/***/ 850:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5509,7 +5509,7 @@ webpackJsonp([2],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _styles = __webpack_require__(850);
+	var _styles = __webpack_require__(851);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
@@ -5553,7 +5553,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 850:
+/***/ 851:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5591,7 +5591,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 851:
+/***/ 852:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5609,7 +5609,7 @@ webpackJsonp([2],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _styles = __webpack_require__(852);
+	var _styles = __webpack_require__(853);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
@@ -5714,7 +5714,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 852:
+/***/ 853:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5761,7 +5761,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 853:
+/***/ 854:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5801,7 +5801,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 854:
+/***/ 855:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5821,7 +5821,7 @@ webpackJsonp([2],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _styles = __webpack_require__(855);
+	var _styles = __webpack_require__(856);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
@@ -5938,7 +5938,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 855:
+/***/ 856:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
