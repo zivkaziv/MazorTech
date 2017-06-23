@@ -141,6 +141,7 @@ class StepNumber2 extends Component {
   handleWeightChange(e,value){
     console.log('the new weight is' + value);
     this.props.user.weight = value;
+    console.log(this.props.user);
     this.updateState();
   }
 
@@ -184,7 +185,7 @@ class StepNumber2 extends Component {
             <div className="user-detail-input">
               <DatePicker
                 hintText="Select your birth date"
-                defaultDate={new Date()}
+                defaultDate={new Date(this.props.user.dob)}
                 onChange={this.handleDOBChange}
                 formatDate={null}
               />
@@ -235,6 +236,7 @@ class StepNumber2 extends Component {
                 <TextField
                   floatingLabelText="Your weight in lb"
                   hintText="Weight"
+                  value={this.props.user.weight}
                   onChange={this.handleWeightChange}
                 />
               </div>

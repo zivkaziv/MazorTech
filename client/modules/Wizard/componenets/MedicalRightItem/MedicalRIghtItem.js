@@ -17,8 +17,7 @@ function MedicalRightItem(props) {
         showExpandableButton={true}
       />
       <CardActions>
-        <RadioButtonGroup
-          defaultSelected={'DIDNT_KNOW'}>
+        <RadioButtonGroup>
           <RadioButton
             value="DIDNT_KNOW"
             label="I didn't know"

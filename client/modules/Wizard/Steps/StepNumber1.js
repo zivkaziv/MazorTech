@@ -22,7 +22,7 @@ const styles = {
   wizardStepPageStyle: {
     maxHeight: 350,
     // maxWidth: 679,
-    overflow:'auto',
+    // overflow:'auto',
   },
   medicalDiagnosticsContainer:{
     display:'flex'
@@ -32,7 +32,8 @@ const styles = {
     overflow:'auto'
   },
   cantFindContainer:{
-    textAlign:'center'
+    textAlign:'center',
+    width:'100%'
   }
 };
 
@@ -139,6 +140,7 @@ class StepNumber1 extends Component {
             <FlatButton
               label="Can't find proper diagnostic"
               primary={true}
+              fullWidth={true}
               keyboardFocused={false}
               onTouchTap={this.handleCantFindDialogOpen}
             />

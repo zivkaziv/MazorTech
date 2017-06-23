@@ -623,18 +623,19 @@
 	
 	var _apiCaller2 = _interopRequireDefault(_apiCaller);
 	
+	var _universalCookie = __webpack_require__(99);
+	
+	var _universalCookie2 = _interopRequireDefault(_universalCookie);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// import Cookies from 'universal-cookie';
-	
 	// Export Constants
-	var INIT_USER = exports.INIT_USER = 'INIT_USER'; /**
-	                                                  * Created by ziv on 11/05/2017.
-	                                                  */
+	/**
+	 * Created by ziv on 11/05/2017.
+	 */
+	var INIT_USER = exports.INIT_USER = 'INIT_USER';
 	var UPDATE_USER = exports.UPDATE_USER = 'UPDATE_USER';
 	var TERMS_AGREE = exports.TERMS_AGREE = 'TERMS_AGREE';
-	
-	// const cookies = new Cookies();
 	
 	function initUser(user) {
 	  return {
@@ -652,9 +653,12 @@
 	
 	function fetchUser() {
 	  return function (dispatch) {
+	    var cookies = new _universalCookie2.default();
+	    console.log(cookies);
 	    //try to load from cookies otherwise use default
-	    // let user = cookies.get('mzr_usr');
-	    var user = getDefaultUser();
+	    var user = cookies.get('mzr_usr');
+	    console.log(user);
+	    // let user = getDefaultUser();
 	    if (!user) {
 	      user = getDefaultUser();
 	    }
@@ -666,13 +670,15 @@
 	function updateUserDetails(userToUpdate) {
 	  return function (dispatch) {
 	    //try to load from cookies otherwise use default
-	    // cookies.set('mzr_usr',userToUpdate);
+	    var cookies = new _universalCookie2.default();
+	    cookies.set('mzr_usr', userToUpdate);
 	    dispatch(updateUser(userToUpdate));
 	  };
 	}
 	
 	function getDefaultUser() {
 	  var initialDob = new Date();
+	  initialDob.setFullYear(initialDob.getFullYear() - 40);
 	  return {
 	    gender: 'female',
 	    isSmoking: false,
@@ -1038,7 +1044,7 @@
 	  _react2.default.createElement(_reactRouter.IndexRoute, {
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(2).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(100).default);
+	        cb(null, __webpack_require__(101).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  }),
@@ -1046,7 +1052,7 @@
 	    path: '/wizard',
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(1).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(101).default);
+	        cb(null, __webpack_require__(102).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  }),
@@ -1054,7 +1060,7 @@
 	    path: '/landing',
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(3).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(99).default);
+	        cb(null, __webpack_require__(100).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  })
@@ -1513,9 +1519,9 @@
 	
 	var styles = {
 	  wizardStepPageStyle: {
-	    maxHeight: 350,
+	    maxHeight: 350
 	    // maxWidth: 679,
-	    overflow: 'auto'
+	    // overflow:'auto',
 	  },
 	  medicalDiagnosticsContainer: {
 	    display: 'flex'
@@ -1525,7 +1531,8 @@
 	    overflow: 'auto'
 	  },
 	  cantFindContainer: {
-	    textAlign: 'center'
+	    textAlign: 'center',
+	    width: '100%'
 	  }
 	};
 	
@@ -1647,6 +1654,7 @@
 	            _react2.default.createElement(_FlatButton2.default, {
 	              label: 'Can\'t find proper diagnostic',
 	              primary: true,
+	              fullWidth: true,
 	              keyboardFocused: false,
 	              onTouchTap: this.handleCantFindDialogOpen
 	            })
@@ -1902,6 +1910,7 @@
 	    value: function handleWeightChange(e, value) {
 	      console.log('the new weight is' + value);
 	      this.props.user.weight = value;
+	      console.log(this.props.user);
 	      this.updateState();
 	    }
 	  }, {
@@ -1968,7 +1977,7 @@
 	              { className: 'user-detail-input' },
 	              _react2.default.createElement(_DatePicker2.default, {
 	                hintText: 'Select your birth date',
-	                defaultDate: new Date(),
+	                defaultDate: new Date(this.props.user.dob),
 	                onChange: this.handleDOBChange,
 	                formatDate: null
 	              })
@@ -2037,6 +2046,7 @@
 	                _react2.default.createElement(_TextField2.default, {
 	                  floatingLabelText: 'Your weight in lb',
 	                  hintText: 'Weight',
+	                  value: this.props.user.weight,
 	                  onChange: this.handleWeightChange
 	                })
 	              )
@@ -2116,9 +2126,9 @@
 	
 	var styles = {
 	  wizardStepPageStyle: {
-	    maxHeight: 350,
+	    maxHeight: 350
 	    // maxWidth: 679,
-	    overflow: 'auto'
+	    // overflow:'auto',
 	  },
 	  termsSection: {
 	    maxHeight: 383,
@@ -3345,8 +3355,7 @@
 	      null,
 	      _react2.default.createElement(
 	        _RadioButton.RadioButtonGroup,
-	        {
-	          defaultSelected: 'DIDNT_KNOW' },
+	        null,
 	        _react2.default.createElement(_RadioButton.RadioButton, {
 	          value: 'DIDNT_KNOW',
 	          label: 'I didn\'t know'
@@ -5439,44 +5448,50 @@
 	module.exports = require("sanitize-html");
 
 /***/ },
-/* 99 */,
+/* 99 */
+/***/ function(module, exports) {
+
+	module.exports = require("universal-cookie");
+
+/***/ },
 /* 100 */,
 /* 101 */,
 /* 102 */,
 /* 103 */,
 /* 104 */,
 /* 105 */,
-/* 106 */
+/* 106 */,
+/* 107 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/Stepper");
 
 /***/ },
-/* 107 */
+/* 108 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/internal/ExpandTransition");
 
 /***/ },
-/* 108 */
+/* 109 */
 /***/ function(module, exports) {
 
 	module.exports = require("landricks-components");
 
 /***/ },
-/* 109 */
+/* 110 */
 /***/ function(module, exports) {
 
 	module.exports = require("react-scroll");
 
 /***/ },
-/* 110 */
+/* 111 */
 /***/ function(module, exports) {
 
 	module.exports = require("react-stars");
 
 /***/ },
-/* 111 */
+/* 112 */
 /***/ function(module, exports) {
 
 	module.exports = require("window-or-global");

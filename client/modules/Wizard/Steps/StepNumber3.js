@@ -15,7 +15,7 @@ const styles = {
   wizardStepPageStyle: {
     maxHeight: 350,
     // maxWidth: 679,
-    overflow:'auto',
+    // overflow:'auto',
   },
   termsSection:{
     maxHeight: 383,

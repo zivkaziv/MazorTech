@@ -75,9 +75,10 @@ export default class StepSurvey extends Component {
     this.setState({isEmailSubmitted: true});
   }
 
-  handleChange = (event, index, value) => this.setState({moreFeatures:value});
+  handleChange = (event, index, value) => this.state.moreFeatures = value;
 
   textFieldChange = (event, text) => this.setState({freeText:text});
+
   render(){
       var results = null;
       if(!this.state.isSubmitted){

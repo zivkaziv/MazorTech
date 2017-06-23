@@ -70,7 +70,7 @@ class StepNumber4 extends Component {
 
   componentWillUnmount(){
     this.context.mixpanel.track('Medical right results',{
-      'num_of_selected_medical_conditions':this.props.medicalConditions.length
+      'num_of_selected_medical_conditions':this.props.medicalConditions.length,
     });
   }
 
