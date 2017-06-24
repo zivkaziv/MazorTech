@@ -57,7 +57,6 @@ class WizardMainStepper extends React.Component {
   handleStepValidation = (stepIndex) => {
     try {
       let stepIndexToWorkOn = ++stepIndex;
-      console.log(stepIndexToWorkOn);
       if (this.refs['step' + stepIndexToWorkOn].getWrappedInstance() &&
         this.refs['step' + stepIndexToWorkOn].getWrappedInstance().isValidated) {
         return this.refs['step' + stepIndexToWorkOn].getWrappedInstance().isValidated()

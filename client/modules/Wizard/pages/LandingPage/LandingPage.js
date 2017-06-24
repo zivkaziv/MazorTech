@@ -267,7 +267,7 @@ LandingPage.childContextTypes = {
 
 LandingPage.contextTypes = {
   router: React.PropTypes.object,
-  mixpanel: PropTypes.object.isRequired
+  mixpanel: React.PropTypes.object
 };
 
 export default connect(mapStateToProps)(LandingPage);

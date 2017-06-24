@@ -4407,6 +4407,10 @@ webpackJsonp([0],{
 	  cantFindContainer: {
 	    textAlign: 'center',
 	    width: '100%'
+	  },
+	  dialogContentStyle: {
+	    width: '50%',
+	    maxWidth: 'none'
 	  }
 	};
 	
@@ -4530,6 +4534,7 @@ webpackJsonp([0],{
 	              primary: true,
 	              fullWidth: true,
 	              keyboardFocused: false,
+	              contentStyle: styles.dialogContentStyle,
 	              onTouchTap: this.handleCantFindDialogOpen
 	            })
 	          ),
@@ -4540,6 +4545,7 @@ webpackJsonp([0],{
 	              actions: actionsCantFind,
 	              modal: true,
 	              open: this.state.cantFindDialogOpen,
+	              contentStyle: styles.dialogContentStyle,
 	              onRequestClose: this.handleCantFindDialogClose },
 	            'Sorry, but we aren\'t support it yet...'
 	          ),
@@ -7973,7 +7979,7 @@ webpackJsonp([0],{
 	    var _this = _possibleConstructorReturn(this, (StepSurvey.__proto__ || Object.getPrototypeOf(StepSurvey)).call(this, props));
 	
 	    _this.handleChange = function (event, index, value) {
-	      return _this.state.moreFeatures = value;
+	      return _this.setState({ moreFeatures: value });
 	    };
 	
 	    _this.textFieldChange = function (event, text) {
@@ -8005,7 +8011,7 @@ webpackJsonp([0],{
 	    key: 'ratingChanged',
 	    value: function ratingChanged(newRating) {
 	      console.log(newRating);
-	      this.state.generalRating = newRating;
+	      this.setState({ generalRating: newRating });
 	    }
 	  }, {
 	    key: 'emailHasChanged',
@@ -8067,8 +8073,10 @@ webpackJsonp([0],{
 	                ),
 	                _react2.default.createElement(_reactStars2.default, {
 	                  count: 5,
+	                  value: this.state.generalRating,
 	                  onChange: this.ratingChanged,
 	                  size: 24,
+	                  half: false,
 	                  color2: '#ffd700' })
 	              ),
 	              _react2.default.createElement(
@@ -8236,7 +8244,8 @@ webpackJsonp([0],{
 	      null,
 	      _react2.default.createElement(
 	        _RadioButton.RadioButtonGroup,
-	        null,
+	        {
+	          name: 'userRightKnowledgeStatus' },
 	        _react2.default.createElement(_RadioButton.RadioButton, {
 	          value: 'DIDNT_KNOW',
 	          label: 'I didn\'t know'
@@ -8426,7 +8435,6 @@ webpackJsonp([0],{
 	    }, _this.handleStepValidation = function (stepIndex) {
 	      try {
 	        var stepIndexToWorkOn = ++stepIndex;
-	        console.log(stepIndexToWorkOn);
 	        if (_this.refs['step' + stepIndexToWorkOn].getWrappedInstance() && _this.refs['step' + stepIndexToWorkOn].getWrappedInstance().isValidated) {
 	          return _this.refs['step' + stepIndexToWorkOn].getWrappedInstance().isValidated();
 	        } else {

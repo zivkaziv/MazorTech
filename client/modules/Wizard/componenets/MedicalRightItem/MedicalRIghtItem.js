@@ -17,7 +17,8 @@ function MedicalRightItem(props) {
         showExpandableButton={true}
       />
       <CardActions>
-        <RadioButtonGroup>
+        <RadioButtonGroup
+                  name={'userRightKnowledgeStatus'}>
           <RadioButton
             value="DIDNT_KNOW"
             label="I didn't know"

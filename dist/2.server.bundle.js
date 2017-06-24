@@ -301,7 +301,7 @@ exports.modules = {
 	
 	LandingPage.contextTypes = {
 	  router: _react2.default.PropTypes.object,
-	  mixpanel: _react.PropTypes.object.isRequired
+	  mixpanel: _react2.default.PropTypes.object
 	};
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(LandingPage);

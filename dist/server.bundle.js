@@ -1533,6 +1533,10 @@
 	  cantFindContainer: {
 	    textAlign: 'center',
 	    width: '100%'
+	  },
+	  dialogContentStyle: {
+	    width: '50%',
+	    maxWidth: 'none'
 	  }
 	};
 	
@@ -1656,6 +1660,7 @@
 	              primary: true,
 	              fullWidth: true,
 	              keyboardFocused: false,
+	              contentStyle: styles.dialogContentStyle,
 	              onTouchTap: this.handleCantFindDialogOpen
 	            })
 	          ),
@@ -1666,6 +1671,7 @@
 	              actions: actionsCantFind,
 	              modal: true,
 	              open: this.state.cantFindDialogOpen,
+	              contentStyle: styles.dialogContentStyle,
 	              onRequestClose: this.handleCantFindDialogClose },
 	            'Sorry, but we aren\'t support it yet...'
 	          ),
@@ -3355,7 +3361,8 @@
 	      null,
 	      _react2.default.createElement(
 	        _RadioButton.RadioButtonGroup,
-	        null,
+	        {
+	          name: 'userRightKnowledgeStatus' },
 	        _react2.default.createElement(_RadioButton.RadioButton, {
 	          value: 'DIDNT_KNOW',
 	          label: 'I didn\'t know'

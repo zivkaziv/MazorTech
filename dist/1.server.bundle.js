@@ -215,7 +215,7 @@ exports.modules = {
 	    var _this = _possibleConstructorReturn(this, (StepSurvey.__proto__ || Object.getPrototypeOf(StepSurvey)).call(this, props));
 	
 	    _this.handleChange = function (event, index, value) {
-	      return _this.state.moreFeatures = value;
+	      return _this.setState({ moreFeatures: value });
 	    };
 	
 	    _this.textFieldChange = function (event, text) {
@@ -247,7 +247,7 @@ exports.modules = {
 	    key: 'ratingChanged',
 	    value: function ratingChanged(newRating) {
 	      console.log(newRating);
-	      this.state.generalRating = newRating;
+	      this.setState({ generalRating: newRating });
 	    }
 	  }, {
 	    key: 'emailHasChanged',
@@ -309,8 +309,10 @@ exports.modules = {
 	                ),
 	                _react2.default.createElement(_reactStars2.default, {
 	                  count: 5,
+	                  value: this.state.generalRating,
 	                  onChange: this.ratingChanged,
 	                  size: 24,
+	                  half: false,
 	                  color2: '#ffd700' })
 	              ),
 	              _react2.default.createElement(
@@ -550,7 +552,6 @@ exports.modules = {
 	    }, _this.handleStepValidation = function (stepIndex) {
 	      try {
 	        var stepIndexToWorkOn = ++stepIndex;
-	        console.log(stepIndexToWorkOn);
 	        if (_this.refs['step' + stepIndexToWorkOn].getWrappedInstance() && _this.refs['step' + stepIndexToWorkOn].getWrappedInstance().isValidated) {
 	          return _this.refs['step' + stepIndexToWorkOn].getWrappedInstance().isValidated();
 	        } else {

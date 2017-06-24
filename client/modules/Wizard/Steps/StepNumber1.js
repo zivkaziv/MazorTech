@@ -34,6 +34,10 @@ const styles = {
   cantFindContainer:{
     textAlign:'center',
     width:'100%'
+  },
+  dialogContentStyle:{
+    width: '50%',
+    maxWidth: 'none',
   }
 };
 
@@ -142,6 +146,7 @@ class StepNumber1 extends Component {
               primary={true}
               fullWidth={true}
               keyboardFocused={false}
+              contentStyle={styles.dialogContentStyle}
               onTouchTap={this.handleCantFindDialogOpen}
             />
           </div>
@@ -152,6 +157,7 @@ class StepNumber1 extends Component {
             actions={actionsCantFind}
             modal={true}
             open={this.state.cantFindDialogOpen}
+            contentStyle={styles.dialogContentStyle}
             onRequestClose={this.handleCantFindDialogClose}>
             Sorry, but we aren't support it yet...
             {/*<TextField hintText="Write here in your words the medical diagnostic"/>*/}

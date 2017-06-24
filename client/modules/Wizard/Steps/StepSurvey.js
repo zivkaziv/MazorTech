@@ -48,7 +48,7 @@ export default class StepSurvey extends Component {
 
   ratingChanged(newRating){
     console.log(newRating);
-    this.state.generalRating = newRating;
+    this.setState({generalRating:newRating});
   };
 
   emailHasChanged(email){
@@ -75,7 +75,7 @@ export default class StepSurvey extends Component {
     this.setState({isEmailSubmitted: true});
   }
 
-  handleChange = (event, index, value) => this.state.moreFeatures = value;
+  handleChange = (event, index, value) => this.setState({moreFeatures:value});
 
   textFieldChange = (event, text) => this.setState({freeText:text});
 
@@ -94,8 +94,10 @@ export default class StepSurvey extends Component {
                   <span style={{marginRight:20}}>Did you like the idea of our wizard?</span>
                   <ReactStars
                     count={5}
+                    value={this.state.generalRating}
                     onChange={this.ratingChanged}
                     size={24}
+                    half={false}
                     color2={'#ffd700'}/>
                 </div>
                 <div style={styles.question}>
