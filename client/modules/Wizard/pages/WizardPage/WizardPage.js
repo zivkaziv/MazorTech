@@ -72,7 +72,7 @@ WizardPage.propTypes = {
 };
 
 WizardPage.contextTypes = {
-  router: React.PropTypes.object,
-  mixpanel: PropTypes.object.isRequired
+  router: PropTypes.object,
+  mixpanel: PropTypes.object
 };
 export default connect(mapStateToProps)(WizardPage);

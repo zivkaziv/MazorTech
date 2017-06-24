@@ -1,6 +1,7 @@
 'use strict';
 
-import React, { Component, PropTypes } from 'react';
+import React, { Component} from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 // Material design
@@ -261,7 +262,7 @@ StepNumber2.propTypes = {
 };
 
 StepNumber2.contextTypes = {
-  mixpanel: PropTypes.object.isRequired
+  mixpanel: PropTypes.any
 };
 
 export default connect(mapStateToProps, null, null, { withRef: true })(StepNumber2);

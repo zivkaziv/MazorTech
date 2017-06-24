@@ -12,7 +12,7 @@ function MedicalRightItem(props) {
     <Card>
       <CardHeader
         title={props.medicalRight['Medical Right']}
-        subtitle={props.medicalCondition.condition}
+        subtitle={props.medicalRight.condition}
         actAsExpander={true}
         showExpandableButton={true}
       />
@@ -69,7 +69,6 @@ function MedicalRightItem(props) {
 
 MedicalRightItem.propTypes = {
   medicalRight: PropTypes.any,
-  medicalCondition: PropTypes.any
 };
 
 export default MedicalRightItem;

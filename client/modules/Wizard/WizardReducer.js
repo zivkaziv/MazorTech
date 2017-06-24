@@ -43,17 +43,62 @@ export const getMedicalRights = state => state.medicalRights.data;
 export const getSelectedMedicalRights = state => state.medicalRights.selected;
 
 export const getMedicalRightsForUser = state => {
-  return(
-    state.medicalRights.selected.filter(function(selected){
-      return selected.rights.filter(function (right){
-        return isRelevantForUser(right, state.user)
-      });
-    })
-  );
+  let userMedicalRights=[];
+  state.medicalRights.selected.filter(function(selected){
+    selected.rights.filter(function (right){
+      isRelevantForUser(right, state.user)? addMedicalRight(userMedicalRights,right) : '';
+    });
+  });
+  console.log(userMedicalRights);
+  return userMedicalRights;
 };
 
+function addMedicalRight(rights,rightToAdd){
+  let isAlreadyExist = false;
+  rights.forEach(function(right){
+    if(right['Medical Right'] === rightToAdd['Medical Right'] ){
+      isAlreadyExist =true;
+      right.condition += ' & ' + rightToAdd.condition;
+    }
+  });
+  if(!isAlreadyExist){
+    rights.push(rightToAdd);
+  }
+}
+
 function isRelevantForUser(right,user){
-  return true;
+  let isRelevant = false;
+  // console.log(right);
+  // console.log(user);
+  //Medical health provider
+  if(right['Insurance Provider'] === user.healthInsurance){
+    isRelevant = true;
+    //Smoking condition
+    if(right['Smoking']) {
+      if (right['Smoking'] === 'TRUE' && user.isSmoking) {
+        console.log('Smoking condition ' + right['Medical Right'] + ' - pass');
+      } else {
+        console.log('Smoking condition ' + right['Medical Right'] + ' - failed');
+        return false;
+      }
+    }else{
+      console.log('No smoking condition ' + right['Medical Right']);
+    }
+
+    //Age condition
+    if(right['Age']){
+      if((right['Age'].min && right['Age'].min <= user.age) &&
+        (right['Age'].max && right['Age'].max >= user.age) ){
+        console.log('Age condition '  + right['Medical Right'] +  ' - pass');
+      }else{
+        console.log('Age condition '  + right['Medical Right'] +  ' - failed');
+        return false;
+      }
+    }else{
+      console.log('No age condition ' + right['Medical Right']);
+    }
+  }
+  return isRelevant;
 }
 
 // Get post by cuid

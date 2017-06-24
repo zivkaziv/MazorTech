@@ -25,16 +25,16 @@ export function updateUser(user) {
 
 export function fetchUser() {
   return (dispatch) => {
-    const cookies = new Cookies();
-    console.log(cookies);
+
     //try to load from cookies otherwise use default
+    const cookies = new Cookies();
     let user = cookies.get('mzr_usr');
-    console.log(user);
-    // let user = getDefaultUser();
     if(!user){
       user = getDefaultUser();
     }
-    // console.log(res.rights);
+    if(!user.age){
+      user.age = getAge(user.dob)
+    }
     dispatch(initUser(user));
   };
 }
@@ -44,6 +44,7 @@ export function updateUserDetails(userToUpdate) {
     //try to load from cookies otherwise use default
     const cookies = new Cookies();
     cookies.set('mzr_usr',userToUpdate);
+    userToUpdate.age = getAge(userToUpdate.dob);
     dispatch(updateUser(userToUpdate));
   };
 }
@@ -59,4 +60,15 @@ function getDefaultUser() {
       weight:150,
       agreed_terms:false
   };
+}
+
+export function getAge(dateString) {
+  var today = new Date();
+  var birthDate = new Date(dateString);
+  var age = today.getFullYear() - birthDate.getFullYear();
+  var m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age;
 }

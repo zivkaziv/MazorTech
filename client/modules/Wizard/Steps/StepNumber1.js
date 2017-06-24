@@ -1,6 +1,7 @@
 'use strict';
 
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import MedicalDiagnosticItem from '../componenets/MedicalDiagnosticItem/MedicalDiagnosticItem';
 import SearchInput, {createFilter} from 'react-search-input'
@@ -195,7 +196,7 @@ StepNumber1.childContextTypes = {
 
 StepNumber1.contextTypes = {
   router: React.PropTypes.object,
-  mixpanel: PropTypes.object.isRequired
+  mixpanel: PropTypes.any
 };
 
 export default connect(mapStateToProps, null, null, { withRef: true })(StepNumber1);

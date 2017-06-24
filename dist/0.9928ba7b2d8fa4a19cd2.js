@@ -129,8 +129,8 @@ webpackJsonp([0],{
 	};
 	
 	WizardPage.contextTypes = {
-	  router: _react2.default.PropTypes.object,
-	  mixpanel: _react.PropTypes.object.isRequired
+	  router: _react.PropTypes.object,
+	  mixpanel: _react.PropTypes.object
 	};
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(WizardPage);
 
@@ -4334,6 +4334,10 @@ webpackJsonp([0],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _propTypes = __webpack_require__(6);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+	
 	var _reactRedux = __webpack_require__(65);
 	
 	var _MedicalDiagnosticItem = __webpack_require__(827);
@@ -4575,7 +4579,7 @@ webpackJsonp([0],{
 	}
 	
 	StepNumber1.propTypes = {
-	  medicalRight: _react.PropTypes.any
+	  medicalRight: _propTypes2.default.any
 	};
 	
 	StepNumber1.childContextTypes = {
@@ -4584,7 +4588,7 @@ webpackJsonp([0],{
 	
 	StepNumber1.contextTypes = {
 	  router: _react2.default.PropTypes.object,
-	  mixpanel: _react.PropTypes.object.isRequired
+	  mixpanel: _propTypes2.default.any
 	};
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, null, null, { withRef: true })(StepNumber1);
@@ -4606,6 +4610,10 @@ webpackJsonp([0],{
 	var _react = __webpack_require__(0);
 	
 	var _react2 = _interopRequireDefault(_react);
+	
+	var _propTypes = __webpack_require__(6);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
 	var _reactRedux = __webpack_require__(65);
 	
@@ -4949,11 +4957,11 @@ webpackJsonp([0],{
 	}
 	
 	StepNumber2.propTypes = {
-	  user: _react.PropTypes.any
+	  user: _propTypes2.default.any
 	};
 	
 	StepNumber2.contextTypes = {
-	  mixpanel: _react.PropTypes.object.isRequired
+	  mixpanel: _propTypes2.default.any
 	};
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, null, null, { withRef: true })(StepNumber2);
@@ -4975,6 +4983,10 @@ webpackJsonp([0],{
 	var _react = __webpack_require__(0);
 	
 	var _react2 = _interopRequireDefault(_react);
+	
+	var _propTypes = __webpack_require__(6);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
 	var _reactRedux = __webpack_require__(65);
 	
@@ -5902,11 +5914,11 @@ webpackJsonp([0],{
 	}
 	
 	StepNumber3.propTypes = {
-	  user: _react.PropTypes.any
+	  user: _propTypes2.default.any
 	};
 	
 	StepNumber3.contextTypes = {
-	  mixpanel: _react.PropTypes.object.isRequired
+	  mixpanel: _propTypes2.default.any
 	};
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, null, null, { withRef: true })(StepNumber3);
@@ -5928,6 +5940,10 @@ webpackJsonp([0],{
 	var _react = __webpack_require__(0);
 	
 	var _react2 = _interopRequireDefault(_react);
+	
+	var _propTypes = __webpack_require__(6);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
 	var _reactRedux = __webpack_require__(65);
 	
@@ -6023,18 +6039,18 @@ webpackJsonp([0],{
 	    key: 'componentWillUnmount',
 	    value: function componentWillUnmount() {
 	      this.context.mixpanel.track('Medical right results', {
-	        'num_of_selected_medical_conditions': this.props.medicalConditions.length
+	        'num_of_selected_medical_conditions': this.props.medicalRights.length
 	      });
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var medicalConditions = this.props.medicalConditions;
+	      var medicalRights = this.props.medicalRights;
 	
-	      console.log(medicalConditions);
+	      console.log(medicalRights);
 	
 	      var results = null;
-	      if (this.props.medicalConditions.length > 0) {
+	      if (this.props.medicalRights.length > 0) {
 	        results = _react2.default.createElement(
 	          'div',
 	          { className: 'step', style: styles.wizardStepPageStyle },
@@ -6053,12 +6069,9 @@ webpackJsonp([0],{
 	            _react2.default.createElement(
 	              'div',
 	              { style: styles.medicalRightsContainer },
-	              this.props.medicalConditions.map(function (selectedConditions) {
+	              this.props.medicalRights.map(function (medicalRight, i) {
 	                // console.log(selectedConditions);
-	                return selectedConditions.rights.map(function (medicalRight, i) {
-	                  console.log(medicalRight);
-	                  return _react2.default.createElement(_MedicalRIghtItem2.default, { key: i, medicalRight: medicalRight, medicalCondition: selectedConditions });
-	                });
+	                return _react2.default.createElement(_MedicalRIghtItem2.default, { key: i, medicalRight: medicalRight });
 	              })
 	            )
 	          )
@@ -6100,12 +6113,12 @@ webpackJsonp([0],{
 	function mapStateToProps(state) {
 	  return {
 	    // showAddPost: getShowAddPost(state),
-	    medicalConditions: (0, _WizardReducer.getMedicalRightsForUser)(state)
+	    medicalRights: (0, _WizardReducer.getMedicalRightsForUser)(state)
 	  };
 	}
 	
 	StepNumber4.contextTypes = {
-	  mixpanel: _react.PropTypes.object.isRequired
+	  mixpanel: _propTypes2.default.any
 	};
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(StepNumber4);
@@ -8235,7 +8248,7 @@ webpackJsonp([0],{
 	    null,
 	    _react2.default.createElement(_Card.CardHeader, {
 	      title: props.medicalRight['Medical Right'],
-	      subtitle: props.medicalCondition.condition,
+	      subtitle: props.medicalRight.condition,
 	      actAsExpander: true,
 	      showExpandableButton: true
 	    }),
@@ -8312,8 +8325,7 @@ webpackJsonp([0],{
 	
 	
 	MedicalRightItem.propTypes = {
-	  medicalRight: _react.PropTypes.any,
-	  medicalCondition: _react.PropTypes.any
+	  medicalRight: _react.PropTypes.any
 	};
 	
 	exports.default = MedicalRightItem;

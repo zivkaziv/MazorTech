@@ -1,7 +1,7 @@
 exports.ids = [1];
 exports.modules = {
 
-/***/ 102:
+/***/ 103:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19,29 +19,29 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(1);
 	
-	var _windowOrGlobal = __webpack_require__(112);
+	var _windowOrGlobal = __webpack_require__(113);
 	
 	var _windowOrGlobal2 = _interopRequireDefault(_windowOrGlobal);
 	
-	var _WizardMain = __webpack_require__(105);
+	var _WizardMain = __webpack_require__(106);
 	
 	var _WizardMain2 = _interopRequireDefault(_WizardMain);
 	
-	var _WizardMainStepperMobile = __webpack_require__(106);
+	var _WizardMainStepperMobile = __webpack_require__(107);
 	
 	var _WizardMainStepperMobile2 = _interopRequireDefault(_WizardMainStepperMobile);
 	
-	var _WizardMainStepper = __webpack_require__(104);
+	var _WizardMainStepper = __webpack_require__(105);
 	
 	var _WizardMainStepper2 = _interopRequireDefault(_WizardMainStepper);
 	
-	var _WizardActions = __webpack_require__(20);
+	var _WizardActions = __webpack_require__(21);
 	
-	var _UserActions = __webpack_require__(19);
+	var _UserActions = __webpack_require__(20);
 	
-	var _AppReducer = __webpack_require__(18);
+	var _AppReducer = __webpack_require__(19);
 	
-	var _WizardReducer = __webpack_require__(8);
+	var _WizardReducer = __webpack_require__(9);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -130,14 +130,14 @@ exports.modules = {
 	};
 	
 	WizardPage.contextTypes = {
-	  router: _react2.default.PropTypes.object,
-	  mixpanel: _react.PropTypes.object.isRequired
+	  router: _react.PropTypes.object,
+	  mixpanel: _react.PropTypes.object
 	};
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(WizardPage);
 
 /***/ },
 
-/***/ 103:
+/***/ 104:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -155,35 +155,35 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(1);
 	
-	var _CircularProgress = __webpack_require__(52);
+	var _CircularProgress = __webpack_require__(53);
 	
 	var _CircularProgress2 = _interopRequireDefault(_CircularProgress);
 	
-	var _MedicalRIghtItem = __webpack_require__(51);
+	var _MedicalRIghtItem = __webpack_require__(52);
 	
 	var _MedicalRIghtItem2 = _interopRequireDefault(_MedicalRIghtItem);
 	
-	var _TextField = __webpack_require__(17);
+	var _TextField = __webpack_require__(18);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
-	var _FlatButton = __webpack_require__(7);
+	var _FlatButton = __webpack_require__(8);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
-	var _SelectField = __webpack_require__(54);
+	var _SelectField = __webpack_require__(55);
 	
 	var _SelectField2 = _interopRequireDefault(_SelectField);
 	
-	var _MenuItem = __webpack_require__(53);
+	var _MenuItem = __webpack_require__(54);
 	
 	var _MenuItem2 = _interopRequireDefault(_MenuItem);
 	
-	var _reactStars = __webpack_require__(111);
+	var _reactStars = __webpack_require__(112);
 	
 	var _reactStars2 = _interopRequireDefault(_reactStars);
 	
-	var _WizardReducer = __webpack_require__(8);
+	var _WizardReducer = __webpack_require__(9);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -437,7 +437,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 104:
+/***/ 105:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -453,49 +453,49 @@ exports.modules = {
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Stepper = __webpack_require__(107);
+	var _Stepper = __webpack_require__(108);
 	
-	var _RaisedButton = __webpack_require__(43);
+	var _RaisedButton = __webpack_require__(44);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
-	var _FlatButton = __webpack_require__(7);
+	var _FlatButton = __webpack_require__(8);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
-	var _ExpandTransition = __webpack_require__(108);
+	var _ExpandTransition = __webpack_require__(109);
 	
 	var _ExpandTransition2 = _interopRequireDefault(_ExpandTransition);
 	
-	var _TextField = __webpack_require__(17);
+	var _TextField = __webpack_require__(18);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
-	var _getMuiTheme = __webpack_require__(45);
+	var _getMuiTheme = __webpack_require__(46);
 	
 	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 	
-	var _lightBaseTheme = __webpack_require__(44);
+	var _lightBaseTheme = __webpack_require__(45);
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
-	var _StepNumber = __webpack_require__(46);
+	var _StepNumber = __webpack_require__(47);
 	
 	var _StepNumber2 = _interopRequireDefault(_StepNumber);
 	
-	var _StepNumber3 = __webpack_require__(47);
+	var _StepNumber3 = __webpack_require__(48);
 	
 	var _StepNumber4 = _interopRequireDefault(_StepNumber3);
 	
-	var _StepNumber5 = __webpack_require__(48);
+	var _StepNumber5 = __webpack_require__(49);
 	
 	var _StepNumber6 = _interopRequireDefault(_StepNumber5);
 	
-	var _StepNumber7 = __webpack_require__(49);
+	var _StepNumber7 = __webpack_require__(50);
 	
 	var _StepNumber8 = _interopRequireDefault(_StepNumber7);
 	
-	var _StepSurvey = __webpack_require__(103);
+	var _StepSurvey = __webpack_require__(104);
 	
 	var _StepSurvey2 = _interopRequireDefault(_StepSurvey);
 	
@@ -732,7 +732,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 105:
+/***/ 106:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -775,27 +775,27 @@ exports.modules = {
 	
 	var _WizardMain2 = _interopRequireDefault(_WizardMain);
 	
-	var _reactStepzilla = __webpack_require__(55);
+	var _reactStepzilla = __webpack_require__(56);
 	
 	var _reactStepzilla2 = _interopRequireDefault(_reactStepzilla);
 	
-	var _WizardMainStepper = __webpack_require__(104);
+	var _WizardMainStepper = __webpack_require__(105);
 	
 	var _WizardMainStepper2 = _interopRequireDefault(_WizardMainStepper);
 	
-	var _StepNumber = __webpack_require__(46);
+	var _StepNumber = __webpack_require__(47);
 	
 	var _StepNumber2 = _interopRequireDefault(_StepNumber);
 	
-	var _StepNumber3 = __webpack_require__(47);
+	var _StepNumber3 = __webpack_require__(48);
 	
 	var _StepNumber4 = _interopRequireDefault(_StepNumber3);
 	
-	var _StepNumber5 = __webpack_require__(48);
+	var _StepNumber5 = __webpack_require__(49);
 	
 	var _StepNumber6 = _interopRequireDefault(_StepNumber5);
 	
-	var _StepNumber7 = __webpack_require__(49);
+	var _StepNumber7 = __webpack_require__(50);
 	
 	var _StepNumber8 = _interopRequireDefault(_StepNumber7);
 	
@@ -867,7 +867,7 @@ exports.modules = {
 
 /***/ },
 
-/***/ 106:
+/***/ 107:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -883,53 +883,53 @@ exports.modules = {
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Stepper = __webpack_require__(107);
+	var _Stepper = __webpack_require__(108);
 	
-	var _RaisedButton = __webpack_require__(43);
+	var _RaisedButton = __webpack_require__(44);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
-	var _FlatButton = __webpack_require__(7);
+	var _FlatButton = __webpack_require__(8);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
-	var _ExpandTransition = __webpack_require__(108);
+	var _ExpandTransition = __webpack_require__(109);
 	
 	var _ExpandTransition2 = _interopRequireDefault(_ExpandTransition);
 	
-	var _TextField = __webpack_require__(17);
+	var _TextField = __webpack_require__(18);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
-	var _getMuiTheme = __webpack_require__(45);
+	var _getMuiTheme = __webpack_require__(46);
 	
 	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 	
-	var _lightBaseTheme = __webpack_require__(44);
+	var _lightBaseTheme = __webpack_require__(45);
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
-	var _reactScroll = __webpack_require__(110);
+	var _reactScroll = __webpack_require__(111);
 	
 	var _reactScroll2 = _interopRequireDefault(_reactScroll);
 	
-	var _StepNumber = __webpack_require__(46);
+	var _StepNumber = __webpack_require__(47);
 	
 	var _StepNumber2 = _interopRequireDefault(_StepNumber);
 	
-	var _StepNumber3 = __webpack_require__(47);
+	var _StepNumber3 = __webpack_require__(48);
 	
 	var _StepNumber4 = _interopRequireDefault(_StepNumber3);
 	
-	var _StepNumber5 = __webpack_require__(48);
+	var _StepNumber5 = __webpack_require__(49);
 	
 	var _StepNumber6 = _interopRequireDefault(_StepNumber5);
 	
-	var _StepNumber7 = __webpack_require__(49);
+	var _StepNumber7 = __webpack_require__(50);
 	
 	var _StepNumber8 = _interopRequireDefault(_StepNumber7);
 	
-	var _StepSurvey = __webpack_require__(103);
+	var _StepSurvey = __webpack_require__(104);
 	
 	var _StepSurvey2 = _interopRequireDefault(_StepSurvey);
 	

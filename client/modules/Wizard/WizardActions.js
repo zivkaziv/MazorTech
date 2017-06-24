@@ -38,6 +38,11 @@ export function fetchMedicalRights() {
   return (dispatch) => {
     return callApi('medicalrights').then(res => {
       // console.log(res.rights);
+      res.medicalEntry.map((conditionEntry)=>{
+        conditionEntry.rights.map((medicalRight)=>{
+          medicalRight.condition = conditionEntry.condition;
+        });
+      });
       dispatch(initMedicalRights(res.medicalEntry));
     });
   };

@@ -12702,15 +12702,61 @@ webpackJsonp([4],[
 	};
 	
 	var getMedicalRightsForUser = exports.getMedicalRightsForUser = function getMedicalRightsForUser(state) {
-	  return state.medicalRights.selected.filter(function (selected) {
-	    return selected.rights.filter(function (right) {
-	      return isRelevantForUser(right, state.user);
+	  var userMedicalRights = [];
+	  state.medicalRights.selected.filter(function (selected) {
+	    selected.rights.filter(function (right) {
+	      isRelevantForUser(right, state.user) ? addMedicalRight(userMedicalRights, right) : '';
 	    });
 	  });
+	  console.log(userMedicalRights);
+	  return userMedicalRights;
 	};
 	
+	function addMedicalRight(rights, rightToAdd) {
+	  var isAlreadyExist = false;
+	  rights.forEach(function (right) {
+	    if (right['Medical Right'] === rightToAdd['Medical Right']) {
+	      isAlreadyExist = true;
+	      right.condition += ' & ' + rightToAdd.condition;
+	    }
+	  });
+	  if (!isAlreadyExist) {
+	    rights.push(rightToAdd);
+	  }
+	}
+	
 	function isRelevantForUser(right, user) {
-	  return true;
+	  var isRelevant = false;
+	  // console.log(right);
+	  // console.log(user);
+	  //Medical health provider
+	  if (right['Insurance Provider'] === user.healthInsurance) {
+	    isRelevant = true;
+	    //Smoking condition
+	    if (right['Smoking']) {
+	      if (right['Smoking'] === 'TRUE' && user.isSmoking) {
+	        console.log('Smoking condition ' + right['Medical Right'] + ' - pass');
+	      } else {
+	        console.log('Smoking condition ' + right['Medical Right'] + ' - failed');
+	        return false;
+	      }
+	    } else {
+	      console.log('No smoking condition ' + right['Medical Right']);
+	    }
+	
+	    //Age condition
+	    if (right['Age']) {
+	      if (right['Age'].min && right['Age'].min <= user.age && right['Age'].max && right['Age'].max >= user.age) {
+	        console.log('Age condition ' + right['Medical Right'] + ' - pass');
+	      } else {
+	        console.log('Age condition ' + right['Medical Right'] + ' - failed');
+	        return false;
+	      }
+	    } else {
+	      console.log('No age condition ' + right['Medical Right']);
+	    }
+	  }
+	  return isRelevant;
 	}
 	
 	// Get post by cuid
@@ -12848,6 +12894,7 @@ webpackJsonp([4],[
 	exports.updateUser = updateUser;
 	exports.fetchUser = fetchUser;
 	exports.updateUserDetails = updateUserDetails;
+	exports.getAge = getAge;
 	
 	var _apiCaller = __webpack_require__(94);
 	
@@ -12883,16 +12930,16 @@ webpackJsonp([4],[
 	
 	function fetchUser() {
 	  return function (dispatch) {
-	    var cookies = new _universalCookie2.default();
-	    console.log(cookies);
+	
 	    //try to load from cookies otherwise use default
+	    var cookies = new _universalCookie2.default();
 	    var user = cookies.get('mzr_usr');
-	    console.log(user);
-	    // let user = getDefaultUser();
 	    if (!user) {
 	      user = getDefaultUser();
 	    }
-	    // console.log(res.rights);
+	    if (!user.age) {
+	      user.age = getAge(user.dob);
+	    }
 	    dispatch(initUser(user));
 	  };
 	}
@@ -12902,6 +12949,7 @@ webpackJsonp([4],[
 	    //try to load from cookies otherwise use default
 	    var cookies = new _universalCookie2.default();
 	    cookies.set('mzr_usr', userToUpdate);
+	    userToUpdate.age = getAge(userToUpdate.dob);
 	    dispatch(updateUser(userToUpdate));
 	  };
 	}
@@ -12917,6 +12965,17 @@ webpackJsonp([4],[
 	    weight: 150,
 	    agreed_terms: false
 	  };
+	}
+	
+	function getAge(dateString) {
+	  var today = new Date();
+	  var birthDate = new Date(dateString);
+	  var age = today.getFullYear() - birthDate.getFullYear();
+	  var m = today.getMonth() - birthDate.getMonth();
+	  if (m < 0 || m === 0 && today.getDate() < birthDate.getDate()) {
+	    age--;
+	  }
+	  return age;
 	}
 
 /***/ },
@@ -13020,6 +13079,11 @@ webpackJsonp([4],[
 	  return function (dispatch) {
 	    return (0, _apiCaller2.default)('medicalrights').then(function (res) {
 	      // console.log(res.rights);
+	      res.medicalEntry.map(function (conditionEntry) {
+	        conditionEntry.rights.map(function (medicalRight) {
+	          medicalRight.condition = conditionEntry.condition;
+	        });
+	      });
 	      dispatch(initMedicalRights(res.medicalEntry));
 	    });
 	  };
