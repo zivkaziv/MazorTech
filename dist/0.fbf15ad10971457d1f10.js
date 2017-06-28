@@ -1292,13 +1292,13 @@ webpackJsonp([0],{
 	});
 	exports.default = undefined;
 	
-	var _RaisedButton = __webpack_require__(783);
+	var _TextField = __webpack_require__(907);
 	
-	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
+	var _TextField2 = _interopRequireDefault(_TextField);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	exports.default = _RaisedButton2.default;
+	exports.default = _TextField2.default;
 
 /***/ },
 
@@ -1313,13 +1313,13 @@ webpackJsonp([0],{
 	});
 	exports.default = undefined;
 	
-	var _TextField = __webpack_require__(907);
+	var _RaisedButton = __webpack_require__(783);
 	
-	var _TextField2 = _interopRequireDefault(_TextField);
+	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	exports.default = _TextField2.default;
+	exports.default = _RaisedButton2.default;
 
 /***/ },
 
@@ -4352,7 +4352,7 @@ webpackJsonp([0],{
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
-	var _RaisedButton = __webpack_require__(770);
+	var _RaisedButton = __webpack_require__(771);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
@@ -4360,7 +4360,7 @@ webpackJsonp([0],{
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
-	var _TextField = __webpack_require__(771);
+	var _TextField = __webpack_require__(770);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
@@ -4635,7 +4635,7 @@ webpackJsonp([0],{
 	
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 	
-	var _TextField = __webpack_require__(771);
+	var _TextField = __webpack_require__(770);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
@@ -5947,6 +5947,14 @@ webpackJsonp([0],{
 	
 	var _reactRedux = __webpack_require__(65);
 	
+	var _TextField = __webpack_require__(770);
+	
+	var _TextField2 = _interopRequireDefault(_TextField);
+	
+	var _FlatButton = __webpack_require__(769);
+	
+	var _FlatButton2 = _interopRequireDefault(_FlatButton);
+	
 	var _CircularProgress = __webpack_require__(809);
 	
 	var _CircularProgress2 = _interopRequireDefault(_CircularProgress);
@@ -5957,9 +5965,9 @@ webpackJsonp([0],{
 	
 	var _WizardReducer = __webpack_require__(269);
 	
-	var _server_error = __webpack_require__(963);
+	var _onwork = __webpack_require__(963);
 	
-	var _server_error2 = _interopRequireDefault(_server_error);
+	var _onwork2 = _interopRequireDefault(_onwork);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -5972,7 +5980,7 @@ webpackJsonp([0],{
 	// Import Selectors
 	
 	
-	''; //images
+	//images
 	// Import Images
 	
 	
@@ -6025,7 +6033,25 @@ webpackJsonp([0],{
 	
 	    var _this = _possibleConstructorReturn(this, (StepNumber4.__proto__ || Object.getPrototypeOf(StepNumber4)).call(this, props));
 	
-	    _this.state = {};
+	    _this.emailHasChanged = function (email) {
+	      _this.state.email = email;
+	    };
+	
+	    _this.submitEmail = function () {
+	      _this.context.mixpanel.track('Update rights', {
+	        'ab_version': 'v1',
+	        'email': _this.state.email
+	        // 'selected':this.state.email,
+	        // 'user':this.state.email,
+	      });
+	
+	      _this.setState({ isEmailSubmitted: true });
+	    };
+	
+	    _this.state = {
+	      isEmailSubmitted: false,
+	      email: ''
+	    };
 	
 	    return _this;
 	  }
@@ -6087,15 +6113,50 @@ webpackJsonp([0],{
 	            _react2.default.createElement(
 	              'div',
 	              { style: styles.brokenServerContainer },
-	              _react2.default.createElement('img', { src: _server_error2.default, style: styles.brokenServerImg }),
+	              _react2.default.createElement('img', { src: _onwork2.default, style: styles.brokenServerImg }),
 	              _react2.default.createElement(
 	                'div',
 	                { style: styles.brokenServerText },
-	                'Our server just crashed..',
+	                'We didn\'t find any medical rights for you..',
 	                _react2.default.createElement('br', null),
-	                'stay tight..',
+	                'Our insurance experts are working on it.',
 	                _react2.default.createElement('br', null),
-	                ' Our best engineers are working to fix it'
+	                'If you wanna stay updated, we can send you an email when it will be ready',
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement(_TextField2.default, {
+	                  hintText: 'Email',
+	                  onChange: this.emailHasChanged()
+	                }),
+	                function (showMe) {
+	                  if (showMe) {
+	                    return _react2.default.createElement(
+	                      'div',
+	                      null,
+	                      _react2.default.createElement(_FlatButton2.default, {
+	                        style: { marginTop: 30 },
+	                        label: 'Sent',
+	                        disabled: true,
+	                        primary: true,
+	                        keyboardFocused: false
+	                      })
+	                    );
+	                  }
+	                }(this.state.isEmailSubmitted),
+	                function (showMe, submit) {
+	                  if (showMe) {
+	                    return _react2.default.createElement(
+	                      'div',
+	                      null,
+	                      _react2.default.createElement(_FlatButton2.default, {
+	                        style: { marginTop: 30 },
+	                        label: 'Send',
+	                        primary: true,
+	                        keyboardFocused: false,
+	                        onTouchTap: submit
+	                      })
+	                    );
+	                  }
+	                }(!this.state.isEmailSubmitted, this.submitEmail)
 	              ),
 	              _react2.default.createElement('span', { style: styles.spacer })
 	            )
@@ -7940,7 +8001,7 @@ webpackJsonp([0],{
 	
 	var _MedicalRIghtItem2 = _interopRequireDefault(_MedicalRIghtItem);
 	
-	var _TextField = __webpack_require__(771);
+	var _TextField = __webpack_require__(770);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
@@ -8350,7 +8411,7 @@ webpackJsonp([0],{
 	
 	var _Stepper = __webpack_require__(819);
 	
-	var _RaisedButton = __webpack_require__(770);
+	var _RaisedButton = __webpack_require__(771);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
@@ -8362,7 +8423,7 @@ webpackJsonp([0],{
 	
 	var _ExpandTransition2 = _interopRequireDefault(_ExpandTransition);
 	
-	var _TextField = __webpack_require__(771);
+	var _TextField = __webpack_require__(770);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
@@ -11551,7 +11612,7 @@ webpackJsonp([0],{
 	
 	var _Stepper = __webpack_require__(819);
 	
-	var _RaisedButton = __webpack_require__(770);
+	var _RaisedButton = __webpack_require__(771);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
@@ -11563,7 +11624,7 @@ webpackJsonp([0],{
 	
 	var _ExpandTransition2 = _interopRequireDefault(_ExpandTransition);
 	
-	var _TextField = __webpack_require__(771);
+	var _TextField = __webpack_require__(770);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
@@ -17407,7 +17468,7 @@ webpackJsonp([0],{
 	
 	var _DatePickerDialog2 = _interopRequireDefault(_DatePickerDialog);
 	
-	var _TextField = __webpack_require__(771);
+	var _TextField = __webpack_require__(770);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
@@ -22012,7 +22073,7 @@ webpackJsonp([0],{
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _TextField = __webpack_require__(771);
+	var _TextField = __webpack_require__(770);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
@@ -28710,7 +28771,7 @@ webpackJsonp([0],{
 /***/ 963:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "2a7d2ab002a0e58fc41b937dde896a84.jpg";
+	module.exports = __webpack_require__.p + "df4c810f4fde7a200fbc980b2ea5f232.png";
 
 /***/ }
 

@@ -41,7 +41,7 @@ exports.modules = {
 	
 	var _AppReducer = __webpack_require__(19);
 	
-	var _WizardReducer = __webpack_require__(9);
+	var _WizardReducer = __webpack_require__(10);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -163,11 +163,11 @@ exports.modules = {
 	
 	var _MedicalRIghtItem2 = _interopRequireDefault(_MedicalRIghtItem);
 	
-	var _TextField = __webpack_require__(18);
+	var _TextField = __webpack_require__(9);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
-	var _FlatButton = __webpack_require__(8);
+	var _FlatButton = __webpack_require__(5);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
@@ -183,7 +183,7 @@ exports.modules = {
 	
 	var _reactStars2 = _interopRequireDefault(_reactStars);
 	
-	var _WizardReducer = __webpack_require__(9);
+	var _WizardReducer = __webpack_require__(10);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -459,7 +459,7 @@ exports.modules = {
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
-	var _FlatButton = __webpack_require__(8);
+	var _FlatButton = __webpack_require__(5);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
@@ -467,7 +467,7 @@ exports.modules = {
 	
 	var _ExpandTransition2 = _interopRequireDefault(_ExpandTransition);
 	
-	var _TextField = __webpack_require__(18);
+	var _TextField = __webpack_require__(9);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
@@ -889,7 +889,7 @@ exports.modules = {
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
-	var _FlatButton = __webpack_require__(8);
+	var _FlatButton = __webpack_require__(5);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
@@ -897,7 +897,7 @@ exports.modules = {
 	
 	var _ExpandTransition2 = _interopRequireDefault(_ExpandTransition);
 	
-	var _TextField = __webpack_require__(18);
+	var _TextField = __webpack_require__(9);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	

@@ -13084,6 +13084,7 @@ webpackJsonp([4],[
 	          medicalRight.condition = conditionEntry.condition;
 	        });
 	      });
+	      res.medicalEntry.sort();
 	      dispatch(initMedicalRights(res.medicalEntry));
 	    });
 	  };

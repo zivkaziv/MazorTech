@@ -3,6 +3,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import TextField from 'material-ui/TextField';
+import FlatButton from 'material-ui/FlatButton';
 
 import CircularProgress from 'material-ui/CircularProgress';
 
@@ -11,9 +13,9 @@ import MedicalRightItem from '../componenets/MedicalRightItem/MedicalRIghtItem';
 // Import Selectors
 import { getMedicalRightsForUser } from '../WizardReducer';
 
-``//images
+//images
 // Import Images
-import serverError from '../images/server_error.jpg';
+import serverError from '../images/onwork.png';
 
 const styles = {
   wizardStepPageStyle: {
@@ -61,6 +63,8 @@ class StepNumber4 extends Component {
     super(props);
 
     this.state = {
+      isEmailSubmitted:false,
+      email : ''
     };
 
   }
@@ -74,6 +78,22 @@ class StepNumber4 extends Component {
       'num_of_selected_medical_conditions':this.props.medicalRights.length,
     });
   }
+
+  emailHasChanged = (email) => {
+    this.state.email = email;
+  };
+
+
+  submitEmail = () =>{
+    this.context.mixpanel.track('Update rights',{
+      'ab_version':'v1',
+      'email':this.state.email,
+      // 'selected':this.state.email,
+      // 'user':this.state.email,
+    });
+
+    this.setState({isEmailSubmitted: true});
+  };
 
   render(){
     const {medicalRights} = this.props;
@@ -106,9 +126,47 @@ class StepNumber4 extends Component {
             <div style={styles.brokenServerContainer}>
               <img src={serverError} style={styles.brokenServerImg}/>
               <div style={styles.brokenServerText}>
-                Our server just crashed..
-                <br/>stay tight..
-                <br/> Our best engineers are working to fix it
+                We didn't find any medical rights for you..
+                <br/>
+                Our insurance experts are working on it.
+                <br/>
+                If you wanna stay updated, we can send you an email when it will be ready
+                <br/>
+                <TextField
+                  hintText="Email"
+                  onChange={this.emailHasChanged()}
+                />
+                {(function(showMe) {
+                  if (showMe) {
+                    return (
+                      <div>
+                        <FlatButton
+                          style={{marginTop:30}}
+                          label="Sent"
+                          disabled={true}
+                          primary={true}
+                          keyboardFocused={false}
+                        />
+                      </div>
+                    );
+                  }
+                })(this.state.isEmailSubmitted)}
+
+                {(function(showMe,submit) {
+                  if (showMe) {
+                    return (
+                      <div>
+                        <FlatButton
+                          style={{marginTop:30}}
+                          label="Send"
+                          primary={true}
+                          keyboardFocused={false}
+                          onTouchTap={submit}
+                        />
+                      </div>
+                    );
+                  }
+                })(!this.state.isEmailSubmitted,this.submitEmail)}
               </div>
               <span style={styles.spacer}></span>
             </div>

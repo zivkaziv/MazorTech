@@ -43,6 +43,7 @@ export function fetchMedicalRights() {
           medicalRight.condition = conditionEntry.condition;
         });
       });
+      res.medicalEntry.sort();
       dispatch(initMedicalRights(res.medicalEntry));
     });
   };

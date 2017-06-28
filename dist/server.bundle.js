@@ -105,28 +105,34 @@
 /* 5 */
 /***/ function(module, exports) {
 
-	module.exports = require("prop-types");
+	module.exports = require("material-ui/FlatButton");
 
 /***/ },
 /* 6 */
 /***/ function(module, exports) {
 
-	module.exports = require("mongoose");
+	module.exports = require("prop-types");
 
 /***/ },
 /* 7 */
 /***/ function(module, exports) {
 
-	module.exports = require("react-helmet");
+	module.exports = require("mongoose");
 
 /***/ },
 /* 8 */
 /***/ function(module, exports) {
 
-	module.exports = require("material-ui/FlatButton");
+	module.exports = require("react-helmet");
 
 /***/ },
 /* 9 */
+/***/ function(module, exports) {
+
+	module.exports = require("material-ui/TextField");
+
+/***/ },
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -257,7 +263,7 @@
 	exports.default = WizardReducer;
 
 /***/ },
-/* 10 */
+/* 11 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -279,7 +285,7 @@
 	}
 
 /***/ },
-/* 11 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -297,7 +303,7 @@
 	exports.deletePost = deletePost;
 	exports.deletePostRequest = deletePostRequest;
 	
-	var _apiCaller = __webpack_require__(14);
+	var _apiCaller = __webpack_require__(15);
 	
 	var _apiCaller2 = _interopRequireDefault(_apiCaller);
 	
@@ -369,7 +375,7 @@
 	}
 
 /***/ },
-/* 12 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -380,7 +386,7 @@
 	});
 	exports.getPost = exports.getPosts = undefined;
 	
-	var _PostActions = __webpack_require__(11);
+	var _PostActions = __webpack_require__(12);
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
@@ -432,7 +438,7 @@
 	exports.default = PostReducer;
 
 /***/ },
-/* 13 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -480,7 +486,7 @@
 	exports.default = UserReducer;
 
 /***/ },
-/* 14 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -496,7 +502,7 @@
 	
 	var _isomorphicFetch2 = _interopRequireDefault(_isomorphicFetch);
 	
-	var _config = __webpack_require__(16);
+	var _config = __webpack_require__(17);
 	
 	var _config2 = _interopRequireDefault(_config);
 	
@@ -533,7 +539,7 @@
 	}
 
 /***/ },
-/* 15 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -543,7 +549,7 @@
 	  value: true
 	});
 	
-	var _mongoose = __webpack_require__(6);
+	var _mongoose = __webpack_require__(7);
 	
 	var _mongoose2 = _interopRequireDefault(_mongoose);
 	
@@ -560,7 +566,7 @@
 	exports.default = _mongoose2.default.model('MedicalEntry', schema);
 
 /***/ },
-/* 16 */
+/* 17 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -579,16 +585,10 @@
 	exports.default = config;
 
 /***/ },
-/* 17 */
-/***/ function(module, exports) {
-
-	module.exports = require("webpack");
-
-/***/ },
 /* 18 */
 /***/ function(module, exports) {
 
-	module.exports = require("material-ui/TextField");
+	module.exports = require("webpack");
 
 /***/ },
 /* 19 */
@@ -602,7 +602,7 @@
 	});
 	exports.getDevice = exports.getShowAddPost = undefined;
 	
-	var _AppActions = __webpack_require__(10);
+	var _AppActions = __webpack_require__(11);
 	
 	var _mobileDetect = __webpack_require__(88);
 	
@@ -672,7 +672,7 @@
 	exports.updateUserDetails = updateUserDetails;
 	exports.getAge = getAge;
 	
-	var _apiCaller = __webpack_require__(14);
+	var _apiCaller = __webpack_require__(15);
 	
 	var _apiCaller2 = _interopRequireDefault(_apiCaller);
 	
@@ -769,7 +769,7 @@
 	exports.selectCondition = selectCondition;
 	exports.unselectCondition = unselectCondition;
 	
-	var _apiCaller = __webpack_require__(14);
+	var _apiCaller = __webpack_require__(15);
 	
 	var _apiCaller2 = _interopRequireDefault(_apiCaller);
 	
@@ -812,6 +812,7 @@
 	          medicalRight.condition = conditionEntry.condition;
 	        });
 	      });
+	      res.medicalEntry.sort();
 	      dispatch(initMedicalRights(res.medicalEntry));
 	    });
 	  };
@@ -1247,7 +1248,7 @@
 	  });
 	};
 	
-	var _medicalEntry = __webpack_require__(15);
+	var _medicalEntry = __webpack_require__(16);
 	
 	var _medicalEntry2 = _interopRequireDefault(_medicalEntry);
 	
@@ -1385,7 +1386,7 @@
 	"use strict";
 	/* WEBPACK VAR INJECTION */(function(__dirname) {'use strict';
 	
-	var webpack = __webpack_require__(17);
+	var webpack = __webpack_require__(18);
 	var cssnext = __webpack_require__(89);
 	var postcssFocus = __webpack_require__(90);
 	var postcssReporter = __webpack_require__(91);
@@ -1528,7 +1529,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _propTypes = __webpack_require__(5);
+	var _propTypes = __webpack_require__(6);
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
@@ -1542,7 +1543,7 @@
 	
 	var _reactSearchInput2 = _interopRequireDefault(_reactSearchInput);
 	
-	var _FlatButton = __webpack_require__(8);
+	var _FlatButton = __webpack_require__(5);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
@@ -1554,7 +1555,7 @@
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
-	var _TextField = __webpack_require__(18);
+	var _TextField = __webpack_require__(9);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
@@ -1566,7 +1567,7 @@
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
-	var _WizardReducer = __webpack_require__(9);
+	var _WizardReducer = __webpack_require__(10);
 	
 	var _StepNumber = {
 	  "search-input": "_8botdKKhaM9xtYcWvL4jG"
@@ -1806,7 +1807,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _propTypes = __webpack_require__(5);
+	var _propTypes = __webpack_require__(6);
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
@@ -1830,11 +1831,11 @@
 	
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 	
-	var _TextField = __webpack_require__(18);
+	var _TextField = __webpack_require__(9);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
-	var _UserReducer = __webpack_require__(13);
+	var _UserReducer = __webpack_require__(14);
 	
 	var _UserActions = __webpack_require__(20);
 	
@@ -2178,13 +2179,13 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _propTypes = __webpack_require__(5);
+	var _propTypes = __webpack_require__(6);
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
 	var _reactRedux = __webpack_require__(1);
 	
-	var _UserReducer = __webpack_require__(13);
+	var _UserReducer = __webpack_require__(14);
 	
 	var _Toggle = __webpack_require__(87);
 	
@@ -2194,7 +2195,7 @@
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
-	var _FlatButton = __webpack_require__(8);
+	var _FlatButton = __webpack_require__(5);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
@@ -3134,11 +3135,19 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _propTypes = __webpack_require__(5);
+	var _propTypes = __webpack_require__(6);
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
 	var _reactRedux = __webpack_require__(1);
+	
+	var _TextField = __webpack_require__(9);
+	
+	var _TextField2 = _interopRequireDefault(_TextField);
+	
+	var _FlatButton = __webpack_require__(5);
+	
+	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
 	var _CircularProgress = __webpack_require__(53);
 	
@@ -3148,11 +3157,11 @@
 	
 	var _MedicalRIghtItem2 = _interopRequireDefault(_MedicalRIghtItem);
 	
-	var _WizardReducer = __webpack_require__(9);
+	var _WizardReducer = __webpack_require__(10);
 	
-	var _server_error = '/' + "2a7d2ab002a0e58fc41b937dde896a84.jpg";
+	var _onwork = '/' + "df4c810f4fde7a200fbc980b2ea5f232.png";
 	
-	var _server_error2 = _interopRequireDefault(_server_error);
+	var _onwork2 = _interopRequireDefault(_onwork);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -3165,7 +3174,7 @@
 	// Import Selectors
 	
 	
-	''; //images
+	//images
 	// Import Images
 	
 	
@@ -3218,7 +3227,25 @@
 	
 	    var _this = _possibleConstructorReturn(this, (StepNumber4.__proto__ || Object.getPrototypeOf(StepNumber4)).call(this, props));
 	
-	    _this.state = {};
+	    _this.emailHasChanged = function (email) {
+	      _this.state.email = email;
+	    };
+	
+	    _this.submitEmail = function () {
+	      _this.context.mixpanel.track('Update rights', {
+	        'ab_version': 'v1',
+	        'email': _this.state.email
+	        // 'selected':this.state.email,
+	        // 'user':this.state.email,
+	      });
+	
+	      _this.setState({ isEmailSubmitted: true });
+	    };
+	
+	    _this.state = {
+	      isEmailSubmitted: false,
+	      email: ''
+	    };
 	
 	    return _this;
 	  }
@@ -3280,15 +3307,50 @@
 	            _react2.default.createElement(
 	              'div',
 	              { style: styles.brokenServerContainer },
-	              _react2.default.createElement('img', { src: _server_error2.default, style: styles.brokenServerImg }),
+	              _react2.default.createElement('img', { src: _onwork2.default, style: styles.brokenServerImg }),
 	              _react2.default.createElement(
 	                'div',
 	                { style: styles.brokenServerText },
-	                'Our server just crashed..',
+	                'We didn\'t find any medical rights for you..',
 	                _react2.default.createElement('br', null),
-	                'stay tight..',
+	                'Our insurance experts are working on it.',
 	                _react2.default.createElement('br', null),
-	                ' Our best engineers are working to fix it'
+	                'If you wanna stay updated, we can send you an email when it will be ready',
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement(_TextField2.default, {
+	                  hintText: 'Email',
+	                  onChange: this.emailHasChanged()
+	                }),
+	                function (showMe) {
+	                  if (showMe) {
+	                    return _react2.default.createElement(
+	                      'div',
+	                      null,
+	                      _react2.default.createElement(_FlatButton2.default, {
+	                        style: { marginTop: 30 },
+	                        label: 'Sent',
+	                        disabled: true,
+	                        primary: true,
+	                        keyboardFocused: false
+	                      })
+	                    );
+	                  }
+	                }(this.state.isEmailSubmitted),
+	                function (showMe, submit) {
+	                  if (showMe) {
+	                    return _react2.default.createElement(
+	                      'div',
+	                      null,
+	                      _react2.default.createElement(_FlatButton2.default, {
+	                        style: { marginTop: 30 },
+	                        label: 'Send',
+	                        primary: true,
+	                        keyboardFocused: false,
+	                        onTouchTap: submit
+	                      })
+	                    );
+	                  }
+	                }(!this.state.isEmailSubmitted, this.submitEmail)
 	              ),
 	              _react2.default.createElement('span', { style: styles.spacer })
 	            )
@@ -3413,7 +3475,7 @@
 	
 	var _Card = __webpack_require__(85);
 	
-	var _FlatButton = __webpack_require__(8);
+	var _FlatButton = __webpack_require__(5);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
@@ -3631,7 +3693,7 @@
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _reactHelmet = __webpack_require__(7);
+	var _reactHelmet = __webpack_require__(8);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
@@ -3647,7 +3709,7 @@
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
-	var _AppActions = __webpack_require__(10);
+	var _AppActions = __webpack_require__(11);
 	
 	var _IntlActions = __webpack_require__(24);
 	
@@ -4259,7 +4321,7 @@
 	
 	var _reactRedux = __webpack_require__(1);
 	
-	var _reactHelmet = __webpack_require__(7);
+	var _reactHelmet = __webpack_require__(8);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
@@ -4277,9 +4339,9 @@
 	
 	var _PostListItem2 = _interopRequireDefault(_PostListItem);
 	
-	var _PostActions = __webpack_require__(11);
+	var _PostActions = __webpack_require__(12);
 	
-	var _PostReducer = __webpack_require__(12);
+	var _PostReducer = __webpack_require__(13);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -4370,13 +4432,13 @@
 	
 	var _PostCreateWidget2 = _interopRequireDefault(_PostCreateWidget);
 	
-	var _PostActions = __webpack_require__(11);
+	var _PostActions = __webpack_require__(12);
 	
-	var _AppActions = __webpack_require__(10);
+	var _AppActions = __webpack_require__(11);
 	
 	var _AppReducer = __webpack_require__(19);
 	
-	var _PostReducer = __webpack_require__(12);
+	var _PostReducer = __webpack_require__(13);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -4590,7 +4652,7 @@
 	
 	var _AppReducer2 = _interopRequireDefault(_AppReducer);
 	
-	var _PostReducer = __webpack_require__(12);
+	var _PostReducer = __webpack_require__(13);
 	
 	var _PostReducer2 = _interopRequireDefault(_PostReducer);
 	
@@ -4598,11 +4660,11 @@
 	
 	var _IntlReducer2 = _interopRequireDefault(_IntlReducer);
 	
-	var _WizardReducer = __webpack_require__(9);
+	var _WizardReducer = __webpack_require__(10);
 	
 	var _WizardReducer2 = _interopRequireDefault(_WizardReducer);
 	
-	var _UserReducer = __webpack_require__(13);
+	var _UserReducer = __webpack_require__(14);
 	
 	var _UserReducer2 = _interopRequireDefault(_UserReducer);
 	
@@ -4637,7 +4699,7 @@
 	exports.getMedicalRightsMock = getMedicalRightsMock;
 	exports.getAllConditions = getAllConditions;
 	
-	var _medicalEntry = __webpack_require__(15);
+	var _medicalEntry = __webpack_require__(16);
 	
 	var _medicalEntry2 = _interopRequireDefault(_medicalEntry);
 	
@@ -4952,7 +5014,7 @@
 	});
 	exports.populateDB = populateDB;
 	
-	var _medicalEntry = __webpack_require__(15);
+	var _medicalEntry = __webpack_require__(16);
 	
 	var _medicalEntry2 = _interopRequireDefault(_medicalEntry);
 	
@@ -5142,7 +5204,7 @@
 	  value: true
 	});
 	
-	var _mongoose = __webpack_require__(6);
+	var _mongoose = __webpack_require__(7);
 	
 	var _mongoose2 = _interopRequireDefault(_mongoose);
 	
@@ -5180,7 +5242,7 @@
 	
 	var _compression2 = _interopRequireDefault(_compression);
 	
-	var _mongoose = __webpack_require__(6);
+	var _mongoose = __webpack_require__(7);
 	
 	var _mongoose2 = _interopRequireDefault(_mongoose);
 	
@@ -5196,7 +5258,7 @@
 	
 	var _IntlWrapper2 = _interopRequireDefault(_IntlWrapper);
 	
-	var _webpack = __webpack_require__(17);
+	var _webpack = __webpack_require__(18);
 	
 	var _webpack2 = _interopRequireDefault(_webpack);
 	
@@ -5224,7 +5286,7 @@
 	
 	var _reactRouter = __webpack_require__(3);
 	
-	var _reactHelmet = __webpack_require__(7);
+	var _reactHelmet = __webpack_require__(8);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
@@ -5250,7 +5312,7 @@
 	
 	var _dummyData2 = _interopRequireDefault(_dummyData);
 	
-	var _config = __webpack_require__(16);
+	var _config = __webpack_require__(17);
 	
 	var _config2 = _interopRequireDefault(_config);
 	
