@@ -102,7 +102,7 @@ class StepNumber2 extends Component {
     this.context.mixpanel.track('User details',{
       'gender': this.props.user.gender,
       'is_smoking': this.props.user.isSmoking,
-      'dob': this.props.user.dob,
+      'dob': new Date(this.props.user.dob),
       'health_insurance': this.props.user.healthInsurance,
       'weight': this.props.user.weight,
     });

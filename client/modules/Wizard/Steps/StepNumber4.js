@@ -11,7 +11,8 @@ import CircularProgress from 'material-ui/CircularProgress';
 import MedicalRightItem from '../componenets/MedicalRightItem/MedicalRIghtItem';
 
 // Import Selectors
-import { getMedicalRightsForUser } from '../WizardReducer';
+import { getMedicalRightsForUser,getSelectedMedicalRights } from '../WizardReducer';
+import { getUser } from '../UserReducer';
 
 //images
 // Import Images
@@ -75,7 +76,10 @@ class StepNumber4 extends Component {
 
   componentWillUnmount(){
     this.context.mixpanel.track('Medical right results',{
-      'num_of_selected_medical_conditions':this.props.medicalRights.length,
+      'num_of_rights_found':this.props.medicalRights.length,
+      'num_of_selected_medical_conditions':this.props.selectedDiagnostics.length,
+      'selected':this.props.selectedDiagnostics.map(x => x.condition).join(','),
+      'user':JSON.stringify(this.props.user)
     });
   }
 
@@ -85,11 +89,13 @@ class StepNumber4 extends Component {
 
 
   submitEmail = () =>{
-    this.context.mixpanel.track('Update rights',{
+    var selected = this.props.selectedDiagnostics.map(x => x.condition).join(',');
+
+    this.context.mixpanel.track('No rights - But update me',{
       'ab_version':'v1',
       'email':this.state.email,
-      // 'selected':this.state.email,
-      // 'user':this.state.email,
+      'selected':selected,
+      'user':JSON.stringify(this.props.user),
     });
 
     this.setState({isEmailSubmitted: true});
@@ -181,8 +187,9 @@ class StepNumber4 extends Component {
 
 function mapStateToProps(state) {
   return {
-    // showAddPost: getShowAddPost(state),
-    medicalRights: getMedicalRightsForUser(state)
+    medicalRights: getMedicalRightsForUser(state),
+    selectedDiagnostics: getSelectedMedicalRights(state),
+    user: getUser(state)
   };
 }
 

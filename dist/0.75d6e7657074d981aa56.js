@@ -36,7 +36,7 @@ webpackJsonp([0],{
 	
 	var _WizardActions = __webpack_require__(276);
 	
-	var _UserActions = __webpack_require__(274);
+	var _UserActions = __webpack_require__(275);
 	
 	var _AppReducer = __webpack_require__(277);
 	
@@ -1377,7 +1377,7 @@ webpackJsonp([0],{
 	
 	exports.__esModule = true;
 	
-	var _from = __webpack_require__(271);
+	var _from = __webpack_require__(272);
 	
 	var _from2 = _interopRequireDefault(_from);
 	
@@ -3312,7 +3312,7 @@ webpackJsonp([0],{
 	
 	var _reactProdInvariant2 = _interopRequireDefault(_reactProdInvariant);
 	
-	var _ReactChildren = __webpack_require__(272);
+	var _ReactChildren = __webpack_require__(273);
 	
 	var _ReactChildren2 = _interopRequireDefault(_ReactChildren);
 	
@@ -4639,9 +4639,9 @@ webpackJsonp([0],{
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
-	var _UserReducer = __webpack_require__(275);
+	var _UserReducer = __webpack_require__(271);
 	
-	var _UserActions = __webpack_require__(274);
+	var _UserActions = __webpack_require__(275);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -4730,7 +4730,7 @@ webpackJsonp([0],{
 	      _this.context.mixpanel.track('User details', {
 	        'gender': _this.props.user.gender,
 	        'is_smoking': _this.props.user.isSmoking,
-	        'dob': _this.props.user.dob,
+	        'dob': new Date(_this.props.user.dob),
 	        'health_insurance': _this.props.user.healthInsurance,
 	        'weight': _this.props.user.weight
 	      });
@@ -4990,7 +4990,7 @@ webpackJsonp([0],{
 	
 	var _reactRedux = __webpack_require__(65);
 	
-	var _UserReducer = __webpack_require__(275);
+	var _UserReducer = __webpack_require__(271);
 	
 	var _Toggle = __webpack_require__(912);
 	
@@ -5965,6 +5965,8 @@ webpackJsonp([0],{
 	
 	var _WizardReducer = __webpack_require__(269);
 	
+	var _UserReducer = __webpack_require__(271);
+	
 	var _onwork = __webpack_require__(963);
 	
 	var _onwork2 = _interopRequireDefault(_onwork);
@@ -6038,11 +6040,15 @@ webpackJsonp([0],{
 	    };
 	
 	    _this.submitEmail = function () {
-	      _this.context.mixpanel.track('Update rights', {
+	      var selected = _this.props.selectedDiagnostics.map(function (x) {
+	        return x.condition;
+	      }).join(',');
+	
+	      _this.context.mixpanel.track('No rights - But update me', {
 	        'ab_version': 'v1',
-	        'email': _this.state.email
-	        // 'selected':this.state.email,
-	        // 'user':this.state.email,
+	        'email': _this.state.email,
+	        'selected': selected,
+	        'user': JSON.stringify(_this.props.user)
 	      });
 	
 	      _this.setState({ isEmailSubmitted: true });
@@ -6065,7 +6071,12 @@ webpackJsonp([0],{
 	    key: 'componentWillUnmount',
 	    value: function componentWillUnmount() {
 	      this.context.mixpanel.track('Medical right results', {
-	        'num_of_selected_medical_conditions': this.props.medicalRights.length
+	        'num_of_rights_found': this.props.medicalRights.length,
+	        'num_of_selected_medical_conditions': this.props.selectedDiagnostics.length,
+	        'selected': this.props.selectedDiagnostics.map(function (x) {
+	          return x.condition;
+	        }).join(','),
+	        'user': JSON.stringify(this.props.user)
 	      });
 	    }
 	  }, {
@@ -6173,8 +6184,9 @@ webpackJsonp([0],{
 	
 	function mapStateToProps(state) {
 	  return {
-	    // showAddPost: getShowAddPost(state),
-	    medicalRights: (0, _WizardReducer.getMedicalRightsForUser)(state)
+	    medicalRights: (0, _WizardReducer.getMedicalRightsForUser)(state),
+	    selectedDiagnostics: (0, _WizardReducer.getSelectedMedicalRights)(state),
+	    user: (0, _UserReducer.getUser)(state)
 	  };
 	}
 	

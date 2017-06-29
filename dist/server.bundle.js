@@ -109,30 +109,78 @@
 
 /***/ },
 /* 6 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = require("prop-types");
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getUser = undefined;
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _UserActions = __webpack_require__(20);
+	
+	// let initialDob = new Date();
+	// initialDob.setFullYear(initialDob.getFullYear() - 25);
+	// Initial State
+	var initialState = { user: {} };
+	
+	var UserReducer = function UserReducer() {
+	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+	  var action = arguments[1];
+	
+	  switch (action.type) {
+	    case _UserActions.INIT_USER:
+	      return _extends({}, action.user);
+	    case _UserActions.UPDATE_USER:
+	      console.log('update');
+	      return _extends({}, action.user);
+	
+	    default:
+	      return state;
+	  }
+	};
+	
+	/* Selectors */
+	var getUser = exports.getUser = function getUser(state) {
+	  return state.user;
+	};
+	
+	// Get post by cuid
+	// export const getPost = (state, cuid) => state.posts.data.filter(post => post.cuid === cuid)[0];
+	
+	// Export Reducer
+	exports.default = UserReducer;
 
 /***/ },
 /* 7 */
 /***/ function(module, exports) {
 
-	module.exports = require("mongoose");
+	module.exports = require("prop-types");
 
 /***/ },
 /* 8 */
 /***/ function(module, exports) {
 
-	module.exports = require("react-helmet");
+	module.exports = require("mongoose");
 
 /***/ },
 /* 9 */
 /***/ function(module, exports) {
 
-	module.exports = require("material-ui/TextField");
+	module.exports = require("react-helmet");
 
 /***/ },
 /* 10 */
+/***/ function(module, exports) {
+
+	module.exports = require("material-ui/TextField");
+
+/***/ },
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -263,7 +311,7 @@
 	exports.default = WizardReducer;
 
 /***/ },
-/* 11 */
+/* 12 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -285,7 +333,7 @@
 	}
 
 /***/ },
-/* 12 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -375,7 +423,7 @@
 	}
 
 /***/ },
-/* 13 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -386,7 +434,7 @@
 	});
 	exports.getPost = exports.getPosts = undefined;
 	
-	var _PostActions = __webpack_require__(12);
+	var _PostActions = __webpack_require__(13);
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
@@ -436,54 +484,6 @@
 	
 	// Export Reducer
 	exports.default = PostReducer;
-
-/***/ },
-/* 14 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.getUser = undefined;
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	var _UserActions = __webpack_require__(20);
-	
-	// let initialDob = new Date();
-	// initialDob.setFullYear(initialDob.getFullYear() - 25);
-	// Initial State
-	var initialState = { user: {} };
-	
-	var UserReducer = function UserReducer() {
-	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
-	  var action = arguments[1];
-	
-	  switch (action.type) {
-	    case _UserActions.INIT_USER:
-	      return _extends({}, action.user);
-	    case _UserActions.UPDATE_USER:
-	      console.log('update');
-	      return _extends({}, action.user);
-	
-	    default:
-	      return state;
-	  }
-	};
-	
-	/* Selectors */
-	var getUser = exports.getUser = function getUser(state) {
-	  return state.user;
-	};
-	
-	// Get post by cuid
-	// export const getPost = (state, cuid) => state.posts.data.filter(post => post.cuid === cuid)[0];
-	
-	// Export Reducer
-	exports.default = UserReducer;
 
 /***/ },
 /* 15 */
@@ -549,7 +549,7 @@
 	  value: true
 	});
 	
-	var _mongoose = __webpack_require__(7);
+	var _mongoose = __webpack_require__(8);
 	
 	var _mongoose2 = _interopRequireDefault(_mongoose);
 	
@@ -602,7 +602,7 @@
 	});
 	exports.getDevice = exports.getShowAddPost = undefined;
 	
-	var _AppActions = __webpack_require__(11);
+	var _AppActions = __webpack_require__(12);
 	
 	var _mobileDetect = __webpack_require__(88);
 	
@@ -1529,7 +1529,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _propTypes = __webpack_require__(6);
+	var _propTypes = __webpack_require__(7);
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
@@ -1555,7 +1555,7 @@
 	
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 	
-	var _TextField = __webpack_require__(9);
+	var _TextField = __webpack_require__(10);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
@@ -1567,7 +1567,7 @@
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
-	var _WizardReducer = __webpack_require__(10);
+	var _WizardReducer = __webpack_require__(11);
 	
 	var _StepNumber = {
 	  "search-input": "_8botdKKhaM9xtYcWvL4jG"
@@ -1807,7 +1807,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _propTypes = __webpack_require__(6);
+	var _propTypes = __webpack_require__(7);
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
@@ -1831,11 +1831,11 @@
 	
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 	
-	var _TextField = __webpack_require__(9);
+	var _TextField = __webpack_require__(10);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
-	var _UserReducer = __webpack_require__(14);
+	var _UserReducer = __webpack_require__(6);
 	
 	var _UserActions = __webpack_require__(20);
 	
@@ -1926,7 +1926,7 @@
 	      _this.context.mixpanel.track('User details', {
 	        'gender': _this.props.user.gender,
 	        'is_smoking': _this.props.user.isSmoking,
-	        'dob': _this.props.user.dob,
+	        'dob': new Date(_this.props.user.dob),
 	        'health_insurance': _this.props.user.healthInsurance,
 	        'weight': _this.props.user.weight
 	      });
@@ -2179,13 +2179,13 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _propTypes = __webpack_require__(6);
+	var _propTypes = __webpack_require__(7);
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
 	var _reactRedux = __webpack_require__(1);
 	
-	var _UserReducer = __webpack_require__(14);
+	var _UserReducer = __webpack_require__(6);
 	
 	var _Toggle = __webpack_require__(87);
 	
@@ -3135,13 +3135,13 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _propTypes = __webpack_require__(6);
+	var _propTypes = __webpack_require__(7);
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
 	var _reactRedux = __webpack_require__(1);
 	
-	var _TextField = __webpack_require__(9);
+	var _TextField = __webpack_require__(10);
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
@@ -3157,7 +3157,9 @@
 	
 	var _MedicalRIghtItem2 = _interopRequireDefault(_MedicalRIghtItem);
 	
-	var _WizardReducer = __webpack_require__(10);
+	var _WizardReducer = __webpack_require__(11);
+	
+	var _UserReducer = __webpack_require__(6);
 	
 	var _onwork = '/' + "df4c810f4fde7a200fbc980b2ea5f232.png";
 	
@@ -3232,11 +3234,15 @@
 	    };
 	
 	    _this.submitEmail = function () {
-	      _this.context.mixpanel.track('Update rights', {
+	      var selected = _this.props.selectedDiagnostics.map(function (x) {
+	        return x.condition;
+	      }).join(',');
+	
+	      _this.context.mixpanel.track('No rights - But update me', {
 	        'ab_version': 'v1',
-	        'email': _this.state.email
-	        // 'selected':this.state.email,
-	        // 'user':this.state.email,
+	        'email': _this.state.email,
+	        'selected': selected,
+	        'user': JSON.stringify(_this.props.user)
 	      });
 	
 	      _this.setState({ isEmailSubmitted: true });
@@ -3259,7 +3265,12 @@
 	    key: 'componentWillUnmount',
 	    value: function componentWillUnmount() {
 	      this.context.mixpanel.track('Medical right results', {
-	        'num_of_selected_medical_conditions': this.props.medicalRights.length
+	        'num_of_rights_found': this.props.medicalRights.length,
+	        'num_of_selected_medical_conditions': this.props.selectedDiagnostics.length,
+	        'selected': this.props.selectedDiagnostics.map(function (x) {
+	          return x.condition;
+	        }).join(','),
+	        'user': JSON.stringify(this.props.user)
 	      });
 	    }
 	  }, {
@@ -3367,8 +3378,9 @@
 	
 	function mapStateToProps(state) {
 	  return {
-	    // showAddPost: getShowAddPost(state),
-	    medicalRights: (0, _WizardReducer.getMedicalRightsForUser)(state)
+	    medicalRights: (0, _WizardReducer.getMedicalRightsForUser)(state),
+	    selectedDiagnostics: (0, _WizardReducer.getSelectedMedicalRights)(state),
+	    user: (0, _UserReducer.getUser)(state)
 	  };
 	}
 	
@@ -3693,7 +3705,7 @@
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _reactHelmet = __webpack_require__(8);
+	var _reactHelmet = __webpack_require__(9);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
@@ -3709,7 +3721,7 @@
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
-	var _AppActions = __webpack_require__(11);
+	var _AppActions = __webpack_require__(12);
 	
 	var _IntlActions = __webpack_require__(24);
 	
@@ -4321,7 +4333,7 @@
 	
 	var _reactRedux = __webpack_require__(1);
 	
-	var _reactHelmet = __webpack_require__(8);
+	var _reactHelmet = __webpack_require__(9);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
@@ -4339,9 +4351,9 @@
 	
 	var _PostListItem2 = _interopRequireDefault(_PostListItem);
 	
-	var _PostActions = __webpack_require__(12);
+	var _PostActions = __webpack_require__(13);
 	
-	var _PostReducer = __webpack_require__(13);
+	var _PostReducer = __webpack_require__(14);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -4432,13 +4444,13 @@
 	
 	var _PostCreateWidget2 = _interopRequireDefault(_PostCreateWidget);
 	
-	var _PostActions = __webpack_require__(12);
+	var _PostActions = __webpack_require__(13);
 	
-	var _AppActions = __webpack_require__(11);
+	var _AppActions = __webpack_require__(12);
 	
 	var _AppReducer = __webpack_require__(19);
 	
-	var _PostReducer = __webpack_require__(13);
+	var _PostReducer = __webpack_require__(14);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -4652,7 +4664,7 @@
 	
 	var _AppReducer2 = _interopRequireDefault(_AppReducer);
 	
-	var _PostReducer = __webpack_require__(13);
+	var _PostReducer = __webpack_require__(14);
 	
 	var _PostReducer2 = _interopRequireDefault(_PostReducer);
 	
@@ -4660,11 +4672,11 @@
 	
 	var _IntlReducer2 = _interopRequireDefault(_IntlReducer);
 	
-	var _WizardReducer = __webpack_require__(10);
+	var _WizardReducer = __webpack_require__(11);
 	
 	var _WizardReducer2 = _interopRequireDefault(_WizardReducer);
 	
-	var _UserReducer = __webpack_require__(14);
+	var _UserReducer = __webpack_require__(6);
 	
 	var _UserReducer2 = _interopRequireDefault(_UserReducer);
 	
@@ -5204,7 +5216,7 @@
 	  value: true
 	});
 	
-	var _mongoose = __webpack_require__(7);
+	var _mongoose = __webpack_require__(8);
 	
 	var _mongoose2 = _interopRequireDefault(_mongoose);
 	
@@ -5242,7 +5254,7 @@
 	
 	var _compression2 = _interopRequireDefault(_compression);
 	
-	var _mongoose = __webpack_require__(7);
+	var _mongoose = __webpack_require__(8);
 	
 	var _mongoose2 = _interopRequireDefault(_mongoose);
 	
@@ -5286,7 +5298,7 @@
 	
 	var _reactRouter = __webpack_require__(3);
 	
-	var _reactHelmet = __webpack_require__(8);
+	var _reactHelmet = __webpack_require__(9);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	

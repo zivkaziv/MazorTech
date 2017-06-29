@@ -12774,7 +12774,7 @@ webpackJsonp([4],[
 	
 	exports.__esModule = true;
 	
-	var _from = __webpack_require__(271);
+	var _from = __webpack_require__(272);
 	
 	var _from2 = _interopRequireDefault(_from);
 	
@@ -12796,11 +12796,59 @@ webpackJsonp([4],[
 /* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getUser = undefined;
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _UserActions = __webpack_require__(275);
+	
+	// let initialDob = new Date();
+	// initialDob.setFullYear(initialDob.getFullYear() - 25);
+	// Initial State
+	var initialState = { user: {} };
+	
+	var UserReducer = function UserReducer() {
+	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+	  var action = arguments[1];
+	
+	  switch (action.type) {
+	    case _UserActions.INIT_USER:
+	      return _extends({}, action.user);
+	    case _UserActions.UPDATE_USER:
+	      console.log('update');
+	      return _extends({}, action.user);
+	
+	    default:
+	      return state;
+	  }
+	};
+	
+	/* Selectors */
+	var getUser = exports.getUser = function getUser(state) {
+	  return state.user;
+	};
+	
+	// Get post by cuid
+	// export const getPost = (state, cuid) => state.posts.data.filter(post => post.cuid === cuid)[0];
+	
+	// Export Reducer
+	exports.default = UserReducer;
+
+/***/ },
+/* 272 */
+/***/ function(module, exports, __webpack_require__) {
+
 	module.exports = { "default": __webpack_require__(342), __esModule: true };
 
 /***/ },
-/* 272 */,
-/* 273 */
+/* 273 */,
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12880,7 +12928,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 274 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12977,54 +13025,6 @@ webpackJsonp([4],[
 	  }
 	  return age;
 	}
-
-/***/ },
-/* 275 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.getUser = undefined;
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	var _UserActions = __webpack_require__(274);
-	
-	// let initialDob = new Date();
-	// initialDob.setFullYear(initialDob.getFullYear() - 25);
-	// Initial State
-	var initialState = { user: {} };
-	
-	var UserReducer = function UserReducer() {
-	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
-	  var action = arguments[1];
-	
-	  switch (action.type) {
-	    case _UserActions.INIT_USER:
-	      return _extends({}, action.user);
-	    case _UserActions.UPDATE_USER:
-	      console.log('update');
-	      return _extends({}, action.user);
-	
-	    default:
-	      return state;
-	  }
-	};
-	
-	/* Selectors */
-	var getUser = exports.getUser = function getUser(state) {
-	  return state.user;
-	};
-	
-	// Get post by cuid
-	// export const getPost = (state, cuid) => state.posts.data.filter(post => post.cuid === cuid)[0];
-	
-	// Export Reducer
-	exports.default = UserReducer;
 
 /***/ },
 /* 276 */
@@ -14134,7 +14134,7 @@ webpackJsonp([4],[
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _IconSvg = __webpack_require__(273);
+	var _IconSvg = __webpack_require__(274);
 	
 	var _IconSvg2 = _interopRequireDefault(_IconSvg);
 	
@@ -14454,7 +14454,7 @@ webpackJsonp([4],[
 	
 	var _WizardReducer2 = _interopRequireDefault(_WizardReducer);
 	
-	var _UserReducer = __webpack_require__(275);
+	var _UserReducer = __webpack_require__(271);
 	
 	var _UserReducer2 = _interopRequireDefault(_UserReducer);
 	
