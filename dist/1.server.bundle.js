@@ -67,10 +67,13 @@ exports.modules = {
 	
 	var styles = {
 	  wizardContainer: {
+	    overflow: 'auto',
 	    position: 'fixed',
-	    top: '38px',
+	    top: '44px',
+	    bottom: '0',
 	    left: '50%',
-	    transform: 'translateX(-50%)'
+	    transform: 'translateX(-50%)',
+	    height: '100%'
 	  }
 	};
 	
@@ -1060,7 +1063,7 @@ exports.modules = {
 	
 	      return _react2.default.createElement(
 	        'div',
-	        { style: { maxWidth: 380, margin: 'auto' } },
+	        { style: { maxWidth: 380, margin: 'auto', paddingBottom: '100px' } },
 	        _react2.default.createElement(
 	          _Stepper.Stepper,
 	          { activeStep: stepIndex,
@@ -1141,7 +1144,7 @@ exports.modules = {
 	            },
 	            'Click here'
 	          ),
-	          ' to reset the example.'
+	          ' to find more medical rights.'
 	        )
 	      );
 	    }

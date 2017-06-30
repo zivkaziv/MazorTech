@@ -2215,7 +2215,8 @@
 	
 	var styles = {
 	  wizardStepPageStyle: {
-	    maxHeight: 350
+	    maxHeight: 350,
+	    minWidth: 317
 	    // maxWidth: 679,
 	    // overflow:'auto',
 	  },

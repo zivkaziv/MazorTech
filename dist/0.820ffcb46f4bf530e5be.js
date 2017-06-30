@@ -66,10 +66,13 @@ webpackJsonp([0],{
 	
 	var styles = {
 	  wizardContainer: {
+	    overflow: 'auto',
 	    position: 'fixed',
-	    top: '38px',
+	    top: '44px',
+	    bottom: '0',
 	    left: '50%',
-	    transform: 'translateX(-50%)'
+	    transform: 'translateX(-50%)',
+	    height: '100%'
 	  }
 	};
 	
@@ -5040,7 +5043,8 @@ webpackJsonp([0],{
 	
 	var styles = {
 	  wizardStepPageStyle: {
-	    maxHeight: 350
+	    maxHeight: 350,
+	    minWidth: 317
 	    // maxWidth: 679,
 	    // overflow:'auto',
 	  },
@@ -11799,7 +11803,7 @@ webpackJsonp([0],{
 	
 	      return _react2.default.createElement(
 	        'div',
-	        { style: { maxWidth: 380, margin: 'auto' } },
+	        { style: { maxWidth: 380, margin: 'auto', paddingBottom: '100px' } },
 	        _react2.default.createElement(
 	          _Stepper.Stepper,
 	          { activeStep: stepIndex,
@@ -11880,7 +11884,7 @@ webpackJsonp([0],{
 	            },
 	            'Click here'
 	          ),
-	          ' to reset the example.'
+	          ' to find more medical rights.'
 	        )
 	      );
 	    }

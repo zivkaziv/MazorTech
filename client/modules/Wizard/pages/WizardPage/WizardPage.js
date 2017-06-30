@@ -21,10 +21,13 @@ import Header from '../../../App/components/Header/Header';
 
 const styles = {
   wizardContainer: {
+    overflow:'auto',
     position: 'fixed',
-    top: '38px',
+    top: '44px',
+    bottom: '0',
     left: '50%',
-    transform: 'translateX(-50%)'
+    transform: 'translateX(-50%)',
+    height:'100%',
   }
 };
 

@@ -100,7 +100,7 @@ class WizardMainStepperMobile extends React.Component {
     const {finished, stepIndex} = this.state;
 
     return (
-      <div style={{maxWidth: 380, margin: 'auto'}}>
+      <div style={{maxWidth: 380, margin: 'auto', paddingBottom:'100px'}}>
         <Stepper activeStep={stepIndex}
                  linear={false}
                  orientation="vertical">
@@ -143,7 +143,7 @@ class WizardMainStepperMobile extends React.Component {
               }}
             >
               Click here
-            </a> to reset the example.
+            </a> to find more medical rights.
           </p>
         )}
       </div>

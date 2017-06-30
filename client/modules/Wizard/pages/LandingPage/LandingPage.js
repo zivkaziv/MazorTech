@@ -197,7 +197,7 @@ class LandingPage extends Component {
                   backgroundColor:'white',
                   color:'#71A2B6'
                 }}
-                label="See my rights"
+                label="Get started"
                 onClick={this.goToWizard}/>
             </Link>
             </div>
