@@ -4,11 +4,17 @@
  */
 import React, { Component } from 'react'
 
+import logoImageWhite from '../Wizard/images/owl_logo_white.png';
+
 export default class BoolLogoSvg extends Component {
   render () {
     const {width, color, className} = this.props;
     return (
       <div>
+        <img src={logoImageWhite} style={{
+          height:'30px',
+          marginRight:'10px'
+        }}/>
         <span>Insu</span><span>rights</span>
       </div>
     )

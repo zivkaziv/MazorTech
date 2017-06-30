@@ -35,6 +35,10 @@ import BoolLogoSvg from '../../../App/IconSvg'
 // import { getShowAddPost } from '../../../App/AppReducer';
 // import { getPosts } from '../../PostReducer';
 
+//images
+// Import Images
+import logoImageWhite from '../../images/owl_logo_white.png';
+
 const BASE_THEME = {
   fontFamily: 'Lato',
   baseFontSize: '18px'
@@ -61,12 +65,22 @@ const HEAVY_BAND_THEME = {
   objectDesign: 'square-outline'
 };
 
+
+const LIGHT_BAND_THEME = {
+  ...BASE_THEME,
+  backgroundColor: '#8fcfe8',
+  // textColor: '#888888',
+  textColor: '#FFFFFF',
+  primaryColor: '#996888',
+  secondaryColor: '#C99DA3'
+};
+
 const styles = {
   homePageContainer:{
     background: 'url("http://wallpapercave.com/wp/2N8Zebr.jpg") no-repeat center',
     textAlign:'center',
     height:'100%',
-    paddingTop:'15%'
+    paddingTop:'5%'
     // position:'fixed',
     // top:0,
     // left:0,
@@ -102,16 +116,30 @@ const styles = {
   },
   callForAction:{
     color:'#71A2B6'
-  }
-};
+  },
+  callForActionContainer:{
+    marginTop:'60px'
+  },
+  logoContainer:{
 
-const LIGHT_BAND_THEME = {
-  ...BASE_THEME,
-  backgroundColor: '#8fcfe8',
-  // textColor: '#888888',
-  textColor: '#FFFFFF',
-  primaryColor: '#996888',
-  secondaryColor: '#C99DA3'
+  },
+  logoTitleContainer:{
+    display:'flex',
+    alignItems:'center',
+    justifyContent:'center'
+  },
+  logoImage:{
+    height:'90px',
+    marginRight:'20px'
+  },
+  logoTitle:{
+    fontSize:'25px',
+    fontWeight:'bold',
+  },
+  logoTagline:{
+    marginTop:'10px',
+    fontSize:'14px'
+  },
 };
 
 class LandingPage extends Component {
@@ -148,17 +176,35 @@ class LandingPage extends Component {
               styles.homePageContainer
             }>
           <ThemePropagator>
-            <h1>Find now your medical rights</h1>
-            <h2>Easy way to see your medical rights according to your doctor diagnostic</h2>
-            <Link to={'/wizard'} style={styles.callForAction}>
+            <div style={styles.logoContainer}>
+              <div style={styles.logoTitleContainer} >
+                <img src={logoImageWhite} style={styles.logoImage} />
+                <span style={styles.logoTitle}>Insurights</span>
+              </div>
+              <div style={styles.logoTagline}>Be informed. Be healthier</div>
+            </div>
+            <div style={styles.callForActionContainer}>
+              <div style={{
+                fontSize:'30px'
+              }}>Find now your medical rights</div>
+              <div style={{
+                fontSize:'20px',
+                marginBottom:'20px'
+              }}>Easy way to see your medical rights according to your doctor diagnostic</div>
+              <Link to={'/wizard'} style={styles.callForAction}>
               <CallToAction
                 wrapperStyle={{
                   backgroundColor:'white',
                   color:'#71A2B6'
                 }}
-                label="Get started"
+                label="See my rights"
                 onClick={this.goToWizard}/>
             </Link>
+            </div>
+            <div style={{
+              textAlign: 'center',
+              fontSize:'14px'
+            }}>We don't save any information</div>
           </ThemePropagator>
             {/*theme={ HEADER_BAND_THEME }*/}
             {/*messageLevel1="Find now your medical rights"*/}
@@ -195,13 +241,7 @@ class LandingPage extends Component {
               <p>Every insurance policy is different and often very hard to interpret - We want to improve your health by rising your awareness to your medical rights..</p>
             </ThemePropagator>
           </DoubleContentBrick>
-          <GenericBrick
-            theme={ LIGHT_BAND_THEME }
-            title="We don't save any information"
-            // subtitle="if you think you can do it"
-            contentStyle={ {textAlign: 'center'} }>
-            {/*<PlaceHolder />*/}
-          </GenericBrick>
+
           {/*<EnumerationBrick*/}
             {/*theme={ HEAVY_BAND_THEME }*/}
             {/*title="Awesome features"*/}
