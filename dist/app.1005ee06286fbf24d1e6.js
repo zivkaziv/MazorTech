@@ -200,7 +200,7 @@ webpackJsonp([4],[
 	
 	exports.__esModule = true;
 	
-	var _assign = __webpack_require__(278);
+	var _assign = __webpack_require__(279);
 	
 	var _assign2 = _interopRequireDefault(_assign);
 	
@@ -6627,7 +6627,7 @@ webpackJsonp([4],[
 	
 	var _en2 = _interopRequireDefault(_en);
 	
-	var _en3 = __webpack_require__(283);
+	var _en3 = __webpack_require__(284);
 	
 	var _en4 = _interopRequireDefault(_en3);
 	
@@ -6637,7 +6637,7 @@ webpackJsonp([4],[
 	
 	var _fr2 = _interopRequireDefault(_fr);
 	
-	var _fr3 = __webpack_require__(284);
+	var _fr3 = __webpack_require__(285);
 	
 	var _fr4 = _interopRequireDefault(_fr3);
 	
@@ -12560,7 +12560,7 @@ webpackJsonp([4],[
 	
 	var _reactHotLoader = __webpack_require__(647);
 	
-	var _App = __webpack_require__(285);
+	var _App = __webpack_require__(286);
 	
 	var _App2 = _interopRequireDefault(_App);
 	
@@ -12604,7 +12604,7 @@ webpackJsonp([4],[
 	
 	exports.__esModule = true;
 	
-	var _defineProperty = __webpack_require__(279);
+	var _defineProperty = __webpack_require__(280);
 	
 	var _defineProperty2 = _interopRequireDefault(_defineProperty);
 	
@@ -13173,23 +13173,87 @@ webpackJsonp([4],[
 /* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(346), __esModule: true };
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.Header = Header;
+	
+	var _react = __webpack_require__(0);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(93);
+	
+	var _reactIntl = __webpack_require__(67);
+	
+	var _Header = __webpack_require__(398);
+	
+	var _Header2 = _interopRequireDefault(_Header);
+	
+	var _IconSvg = __webpack_require__(274);
+	
+	var _IconSvg2 = _interopRequireDefault(_IconSvg);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// Import Style
+	function Header(props, context) {
+	  // const languageNodes = props.intl.enabledLanguages.map(
+	  //   lang => <li key={lang} onClick={() => props.switchLanguage(lang)} className={lang === props.intl.locale ? styles.selected : ''}>{lang}</li>
+	  // );
+	
+	  return _react2.default.createElement(
+	    'div',
+	    { className: _Header2.default.header },
+	    _react2.default.createElement(
+	      _reactRouter.Link,
+	      { to: '/' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: _Header2.default.logo },
+	        _react2.default.createElement(_IconSvg2.default, null)
+	      )
+	    ),
+	    _react2.default.createElement('div', { className: _Header2.default['language-switcher'] })
+	  );
+	}
+	
+	Header.contextTypes = {
+	  router: _react2.default.PropTypes.object
+	};
+	
+	Header.propTypes = {
+	  toggleAddPost: _react.PropTypes.any,
+	  switchLanguage: _react.PropTypes.any,
+	  intl: _react.PropTypes.any
+	};
+	
+	exports.default = Header;
 
 /***/ },
 /* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(348), __esModule: true };
+	module.exports = { "default": __webpack_require__(346), __esModule: true };
 
 /***/ },
 /* 280 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(348), __esModule: true };
+
+/***/ },
+/* 281 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"progtrckr":"_1T2D5xuQAzMIscEjI2nghz","val-err-tooltip":"_26s78mC1TlJwIeHL6_3T04","form-horizontal":"vFRtZyLC_JSGYTB8ZNp9L","form-group":"_3dlrtOMwBkuI7pch-Bh2XM","row":"YCmkvEtoQTgnkqZkV3KjA","footer-buttons":"vl9sepLxLhjaOumNvMGJu","step3":"jK2gRvchHCbebUwqQlyJV","step4":"_2LsxfDg-ozr6rp45JIcvR-","review":"_1TThIY09qLr5Wfk80vP-qp","txt":"SSuOYzX0RxznwJiDrGboH","control-label":"_293qLqtMLuu0AncbayrNUn","saving":"_31Is94zhKTCFBbXE3PfPxb","eg-jump-lnk":"_1jqBWnm1cdnu57XIYaEdrW","lib-version":"_1Vr7MgDfp2ylHVa3ryYMfJ","content":"_1u_fguEXmTnrJge1d1iz9C","red":"_9JyYUHPUFav3UOjbxJIfD","green":"_1YKtRyM4nU-ynOll96lla4","bold":"_1f9bz_Z7Jv1Ae6rkj6eLCm","hoc-alert":"_2SgTM_M73TmeYVq5XbDywY","form-block-holder":"_2NqFL78VnXh6Hc8sN2yjLW","progtrckr-todo":"_1hJePpQfJYCAqZPfgEDeiI","progtrckr-doing":"_1bAEdbbdwOsDMca2Er-enQ","progtrckr-done":"_1gy7LmBVkqoqrsnTTKTuWz","wizard-spacer":"_1dldT6inotw2Mi2tu7jfkW"};
 
 /***/ },
-/* 281 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports.__esModule = true;
@@ -13727,7 +13791,7 @@ webpackJsonp([4],[
 	module.exports = exports["default"];
 
 /***/ },
-/* 282 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13739,7 +13803,7 @@ webpackJsonp([4],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)))
 
 /***/ },
-/* 283 */
+/* 284 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13769,7 +13833,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 284 */
+/* 285 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13799,7 +13863,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 285 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13846,7 +13910,7 @@ webpackJsonp([4],[
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
-	var _windowOrGlobal = __webpack_require__(282);
+	var _windowOrGlobal = __webpack_require__(283);
 	
 	var _windowOrGlobal2 = _interopRequireDefault(_windowOrGlobal);
 	
@@ -13885,7 +13949,7 @@ webpackJsonp([4],[
 	// Base stylesheet
 	__webpack_require__(395);
 	__webpack_require__(394);
-	__webpack_require__(280);
+	__webpack_require__(281);
 	
 	function App(props) {
 	  return _react2.default.createElement(
@@ -13916,7 +13980,7 @@ webpackJsonp([4],[
 	};
 
 /***/ },
-/* 286 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13939,7 +14003,7 @@ webpackJsonp([4],[
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _reactHelmet = __webpack_require__(281);
+	var _reactHelmet = __webpack_require__(282);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
@@ -13947,11 +14011,11 @@ webpackJsonp([4],[
 	
 	var _DevTools2 = _interopRequireDefault(_DevTools);
 	
-	var _Header = __webpack_require__(288);
+	var _Header = __webpack_require__(278);
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _Footer = __webpack_require__(287);
+	var _Footer = __webpack_require__(288);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
@@ -14000,8 +14064,6 @@ webpackJsonp([4],[
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var _this2 = this;
-	
 	      return _react2.default.createElement(
 	        'div',
 	        null,
@@ -14010,8 +14072,8 @@ webpackJsonp([4],[
 	          'div',
 	          null,
 	          _react2.default.createElement(_reactHelmet2.default, {
-	            title: 'MERN Starter - Blog App',
-	            titleTemplate: '%s - Blog App',
+	            title: 'Insurights',
+	            titleTemplate: '%s - Know your rights',
 	            meta: [{ charset: 'utf-8' }, {
 	              'http-equiv': 'X-UA-Compatible',
 	              content: 'IE=edge'
@@ -14019,13 +14081,6 @@ webpackJsonp([4],[
 	              name: 'viewport',
 	              content: 'width=device-width, initial-scale=1'
 	            }]
-	          }),
-	          _react2.default.createElement(_Header2.default, {
-	            switchLanguage: function switchLanguage(lang) {
-	              return _this2.props.dispatch((0, _IntlActions.switchLanguage)(lang));
-	            },
-	            intl: this.props.intl,
-	            toggleAddPost: this.toggleAddPostSection
 	          }),
 	          _react2.default.createElement(
 	            'div',
@@ -14056,7 +14111,7 @@ webpackJsonp([4],[
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(App);
 
 /***/ },
-/* 287 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -14109,76 +14164,6 @@ webpackJsonp([4],[
 	
 	// Import Images
 	exports.default = Footer;
-
-/***/ },
-/* 288 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.Header = Header;
-	
-	var _react = __webpack_require__(0);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRouter = __webpack_require__(93);
-	
-	var _reactIntl = __webpack_require__(67);
-	
-	var _Header = __webpack_require__(398);
-	
-	var _Header2 = _interopRequireDefault(_Header);
-	
-	var _IconSvg = __webpack_require__(274);
-	
-	var _IconSvg2 = _interopRequireDefault(_IconSvg);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	// Import Style
-	function Header(props, context) {
-	  var languageNodes = props.intl.enabledLanguages.map(function (lang) {
-	    return _react2.default.createElement(
-	      'li',
-	      { key: lang, onClick: function onClick() {
-	          return props.switchLanguage(lang);
-	        }, className: lang === props.intl.locale ? _Header2.default.selected : '' },
-	      lang
-	    );
-	  });
-	
-	  return _react2.default.createElement(
-	    'div',
-	    { className: _Header2.default.header },
-	    _react2.default.createElement(
-	      _reactRouter.Link,
-	      { to: '/' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: _Header2.default.logo },
-	        _react2.default.createElement(_IconSvg2.default, null)
-	      )
-	    ),
-	    _react2.default.createElement('div', { className: _Header2.default['language-switcher'] })
-	  );
-	}
-	
-	Header.contextTypes = {
-	  router: _react2.default.PropTypes.object
-	};
-	
-	Header.propTypes = {
-	  toggleAddPost: _react.PropTypes.func.isRequired,
-	  switchLanguage: _react.PropTypes.func.isRequired,
-	  intl: _react.PropTypes.object.isRequired
-	};
-	
-	exports.default = Header;
 
 /***/ },
 /* 289 */
@@ -14491,7 +14476,7 @@ webpackJsonp([4],[
 	
 	var _reactRouter = __webpack_require__(93);
 	
-	var _App = __webpack_require__(286);
+	var _App = __webpack_require__(287);
 	
 	var _App2 = _interopRequireDefault(_App);
 	

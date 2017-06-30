@@ -96,7 +96,9 @@ exports.modules = {
 	var styles = {
 	  homePageContainer: {
 	    background: 'url("http://wallpapercave.com/wp/2N8Zebr.jpg") no-repeat center',
-	    textAlign: 'center'
+	    textAlign: 'center',
+	    height: '100%',
+	    paddingTop: '15%'
 	    // position:'fixed',
 	    // top:0,
 	    // left:0,
@@ -257,7 +259,7 @@ exports.modules = {
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'Every insurance policy is different and often very hard to interpret - we want to help you improve your awareness to your medical rights.'
+	              'Every insurance policy is different and often very hard to interpret - We want to improve your health by rising your awareness to your medical rights..'
 	            )
 	          )
 	        ),

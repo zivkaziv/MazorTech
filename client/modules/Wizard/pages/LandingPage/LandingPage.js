@@ -64,7 +64,9 @@ const HEAVY_BAND_THEME = {
 const styles = {
   homePageContainer:{
     background: 'url("http://wallpapercave.com/wp/2N8Zebr.jpg") no-repeat center',
-    textAlign:'center'
+    textAlign:'center',
+    height:'100%',
+    paddingTop:'15%'
     // position:'fixed',
     // top:0,
     // left:0,
@@ -190,7 +192,7 @@ class LandingPage extends Component {
               }/>
             <ThemePropagator wrapperStyle={ {marginLeft: '20px'} }>
               <h1>Our goal</h1>
-              <p>Every insurance policy is different and often very hard to interpret - we want to help you improve your awareness to your medical rights.</p>
+              <p>Every insurance policy is different and often very hard to interpret - We want to improve your health by rising your awareness to your medical rights..</p>
             </ThemePropagator>
           </DoubleContentBrick>
           <GenericBrick

@@ -860,7 +860,7 @@
 	
 	var _en2 = _interopRequireDefault(_en);
 	
-	var _en3 = __webpack_require__(57);
+	var _en3 = __webpack_require__(58);
 	
 	var _en4 = _interopRequireDefault(_en3);
 	
@@ -870,7 +870,7 @@
 	
 	var _fr2 = _interopRequireDefault(_fr);
 	
-	var _fr3 = __webpack_require__(58);
+	var _fr3 = __webpack_require__(59);
 	
 	var _fr4 = _interopRequireDefault(_fr3);
 	
@@ -1083,7 +1083,7 @@
 	
 	var _reactRouter = __webpack_require__(3);
 	
-	var _App = __webpack_require__(59);
+	var _App = __webpack_require__(60);
 	
 	var _App2 = _interopRequireDefault(_App);
 	
@@ -1819,11 +1819,11 @@
 	
 	var _RadioButton = __webpack_require__(27);
 	
-	var _SelectField = __webpack_require__(55);
+	var _SelectField = __webpack_require__(56);
 	
 	var _SelectField2 = _interopRequireDefault(_SelectField);
 	
-	var _MenuItem = __webpack_require__(54);
+	var _MenuItem = __webpack_require__(55);
 	
 	var _MenuItem2 = _interopRequireDefault(_MenuItem);
 	
@@ -3149,11 +3149,11 @@
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
-	var _CircularProgress = __webpack_require__(53);
+	var _CircularProgress = __webpack_require__(54);
 	
 	var _CircularProgress2 = _interopRequireDefault(_CircularProgress);
 	
-	var _MedicalRIghtItem = __webpack_require__(52);
+	var _MedicalRIghtItem = __webpack_require__(53);
 	
 	var _MedicalRIghtItem2 = _interopRequireDefault(_MedicalRIghtItem);
 	
@@ -3480,6 +3480,78 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	exports.Header = Header;
+	
+	var _react = __webpack_require__(0);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(3);
+	
+	var _reactIntl = __webpack_require__(2);
+	
+	var _Header = {
+	  "header": "_2sEZYfHlvDy9uXqVIXG1aM",
+	  "content": "_1eavAvnySzoZc5rld6Q4pa",
+	  "site-title": "UfFn6muOcOBjkVI5_yltp",
+	  "add-post-button": "CkTz6a2gQTJjwXIEAlTSk",
+	  "language-switcher": "_3bviQya5ZWCvWr6lGdfO9h",
+	  "selected": "_3IRlmCpgSZBcTGVIGHvgaI",
+	  "logo": "LNLY14D54Y1IQaktsExe3"
+	};
+	
+	var _Header2 = _interopRequireDefault(_Header);
+	
+	var _IconSvg = __webpack_require__(51);
+	
+	var _IconSvg2 = _interopRequireDefault(_IconSvg);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// Import Style
+	function Header(props, context) {
+	  // const languageNodes = props.intl.enabledLanguages.map(
+	  //   lang => <li key={lang} onClick={() => props.switchLanguage(lang)} className={lang === props.intl.locale ? styles.selected : ''}>{lang}</li>
+	  // );
+	
+	  return _react2.default.createElement(
+	    'div',
+	    { className: _Header2.default.header },
+	    _react2.default.createElement(
+	      _reactRouter.Link,
+	      { to: '/' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: _Header2.default.logo },
+	        _react2.default.createElement(_IconSvg2.default, null)
+	      )
+	    ),
+	    _react2.default.createElement('div', { className: _Header2.default['language-switcher'] })
+	  );
+	}
+	
+	Header.contextTypes = {
+	  router: _react2.default.PropTypes.object
+	};
+	
+	Header.propTypes = {
+	  toggleAddPost: _react.PropTypes.any,
+	  switchLanguage: _react.PropTypes.any,
+	  intl: _react.PropTypes.any
+	};
+	
+	exports.default = Header;
+
+/***/ },
+/* 53 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 	
 	var _react = __webpack_require__(0);
 	
@@ -3592,31 +3664,31 @@
 	exports.default = MedicalRightItem;
 
 /***/ },
-/* 53 */
+/* 54 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/CircularProgress");
 
 /***/ },
-/* 54 */
+/* 55 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/MenuItem");
 
 /***/ },
-/* 55 */
+/* 56 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/SelectField");
 
 /***/ },
-/* 56 */
+/* 57 */
 /***/ function(module, exports) {
 
 	module.exports = require("react-stepzilla");
 
 /***/ },
-/* 57 */
+/* 58 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3646,7 +3718,7 @@
 	};
 
 /***/ },
-/* 58 */
+/* 59 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3676,7 +3748,7 @@
 	};
 
 /***/ },
-/* 59 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3713,11 +3785,11 @@
 	
 	var _DevTools2 = _interopRequireDefault(_DevTools);
 	
-	var _Header = __webpack_require__(61);
+	var _Header = __webpack_require__(52);
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _Footer = __webpack_require__(60);
+	var _Footer = __webpack_require__(61);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
@@ -3766,8 +3838,6 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var _this2 = this;
-	
 	      return _react2.default.createElement(
 	        'div',
 	        null,
@@ -3776,8 +3846,8 @@
 	          'div',
 	          null,
 	          _react2.default.createElement(_reactHelmet2.default, {
-	            title: 'MERN Starter - Blog App',
-	            titleTemplate: '%s - Blog App',
+	            title: 'Insurights',
+	            titleTemplate: '%s - Know your rights',
 	            meta: [{ charset: 'utf-8' }, {
 	              'http-equiv': 'X-UA-Compatible',
 	              content: 'IE=edge'
@@ -3785,13 +3855,6 @@
 	              name: 'viewport',
 	              content: 'width=device-width, initial-scale=1'
 	            }]
-	          }),
-	          _react2.default.createElement(_Header2.default, {
-	            switchLanguage: function switchLanguage(lang) {
-	              return _this2.props.dispatch((0, _IntlActions.switchLanguage)(lang));
-	            },
-	            intl: this.props.intl,
-	            toggleAddPost: this.toggleAddPostSection
 	          }),
 	          _react2.default.createElement(
 	            'div',
@@ -3822,7 +3885,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(App);
 
 /***/ },
-/* 60 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3877,84 +3940,6 @@
 	
 	// Import Images
 	exports.default = Footer;
-
-/***/ },
-/* 61 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.Header = Header;
-	
-	var _react = __webpack_require__(0);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRouter = __webpack_require__(3);
-	
-	var _reactIntl = __webpack_require__(2);
-	
-	var _Header = {
-	  "header": "_2sEZYfHlvDy9uXqVIXG1aM",
-	  "content": "_1eavAvnySzoZc5rld6Q4pa",
-	  "site-title": "UfFn6muOcOBjkVI5_yltp",
-	  "add-post-button": "CkTz6a2gQTJjwXIEAlTSk",
-	  "language-switcher": "_3bviQya5ZWCvWr6lGdfO9h",
-	  "selected": "_3IRlmCpgSZBcTGVIGHvgaI",
-	  "logo": "LNLY14D54Y1IQaktsExe3"
-	};
-	
-	var _Header2 = _interopRequireDefault(_Header);
-	
-	var _IconSvg = __webpack_require__(51);
-	
-	var _IconSvg2 = _interopRequireDefault(_IconSvg);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	// Import Style
-	function Header(props, context) {
-	  var languageNodes = props.intl.enabledLanguages.map(function (lang) {
-	    return _react2.default.createElement(
-	      'li',
-	      { key: lang, onClick: function onClick() {
-	          return props.switchLanguage(lang);
-	        }, className: lang === props.intl.locale ? _Header2.default.selected : '' },
-	      lang
-	    );
-	  });
-	
-	  return _react2.default.createElement(
-	    'div',
-	    { className: _Header2.default.header },
-	    _react2.default.createElement(
-	      _reactRouter.Link,
-	      { to: '/' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: _Header2.default.logo },
-	        _react2.default.createElement(_IconSvg2.default, null)
-	      )
-	    ),
-	    _react2.default.createElement('div', { className: _Header2.default['language-switcher'] })
-	  );
-	}
-	
-	Header.contextTypes = {
-	  router: _react2.default.PropTypes.object
-	};
-	
-	Header.propTypes = {
-	  toggleAddPost: _react.PropTypes.func.isRequired,
-	  switchLanguage: _react.PropTypes.func.isRequired,
-	  intl: _react.PropTypes.object.isRequired
-	};
-	
-	exports.default = Header;
 
 /***/ },
 /* 62 */
@@ -4157,7 +4142,7 @@
 	
 	var _progTracker2 = _interopRequireDefault(_progTracker);
 	
-	var _reactStepzilla = __webpack_require__(56);
+	var _reactStepzilla = __webpack_require__(57);
 	
 	var _reactStepzilla2 = _interopRequireDefault(_reactStepzilla);
 	

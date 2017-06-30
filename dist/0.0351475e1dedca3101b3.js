@@ -18,7 +18,7 @@ webpackJsonp([0],{
 	
 	var _reactRedux = __webpack_require__(65);
 	
-	var _windowOrGlobal = __webpack_require__(282);
+	var _windowOrGlobal = __webpack_require__(283);
 	
 	var _windowOrGlobal2 = _interopRequireDefault(_windowOrGlobal);
 	
@@ -42,6 +42,10 @@ webpackJsonp([0],{
 	
 	var _WizardReducer = __webpack_require__(269);
 	
+	var _Header = __webpack_require__(278);
+	
+	var _Header2 = _interopRequireDefault(_Header);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -62,7 +66,10 @@ webpackJsonp([0],{
 	
 	var styles = {
 	  wizardContainer: {
-	    width: '100%'
+	    position: 'fixed',
+	    top: '38px',
+	    left: '50%',
+	    transform: 'translateX(-50%)'
 	  }
 	};
 	
@@ -81,6 +88,7 @@ webpackJsonp([0],{
 	      this.props.dispatch((0, _WizardActions.fetchMedicalRights)());
 	      this.props.dispatch((0, _UserActions.fetchUser)());
 	      this.context.mixpanel.track('Wizard login');
+	      console.log('here');
 	    }
 	
 	    //
@@ -98,12 +106,24 @@ webpackJsonp([0],{
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var isMobile = this.props.isMobile;
-	      if (!isMobile) {
-	        return _react2.default.createElement(_WizardMain2.default, null);
-	      } else {
-	        return _react2.default.createElement(_WizardMainStepperMobile2.default, null);
-	      }
+	      return _react2.default.createElement(
+	        'div',
+	        { style: {
+	            width: '100%'
+	          } },
+	        _react2.default.createElement(_Header2.default, null),
+	        _react2.default.createElement(
+	          'div',
+	          { style: styles.wizardContainer },
+	          function (isMobile) {
+	            if (isMobile) {
+	              return _react2.default.createElement(_WizardMainStepperMobile2.default, null);
+	            } else {
+	              return _react2.default.createElement(_WizardMain2.default, null);
+	            }
+	          }(this.props.isMobile)
+	        )
+	      );
 	    }
 	  }]);
 	
@@ -2206,7 +2226,7 @@ webpackJsonp([0],{
 	
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 	
-	var _assign = __webpack_require__(278);
+	var _assign = __webpack_require__(279);
 	
 	var _assign2 = _interopRequireDefault(_assign);
 	
@@ -11510,7 +11530,7 @@ webpackJsonp([0],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _WizardMain = __webpack_require__(280);
+	var _WizardMain = __webpack_require__(281);
 	
 	var _WizardMain2 = _interopRequireDefault(_WizardMain);
 	
@@ -27430,7 +27450,7 @@ webpackJsonp([0],{
 	  value: true
 	});
 	
-	var _defineProperty = __webpack_require__(279);
+	var _defineProperty = __webpack_require__(280);
 	
 	var _defineProperty2 = _interopRequireDefault(_defineProperty);
 	

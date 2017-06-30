@@ -16,9 +16,15 @@ import { fetchUser } from '../../UserActions';
 import { getDevice } from '../../../App/AppReducer';
 import { getMedicalRights } from '../../WizardReducer';
 
+
+import Header from '../../../App/components/Header/Header';
+
 const styles = {
   wizardContainer: {
-    width: '100%',
+    position: 'fixed',
+    top: '38px',
+    left: '50%',
+    transform: 'translateX(-50%)'
   }
 };
 
@@ -27,6 +33,7 @@ class WizardPage extends Component {
     this.props.dispatch(fetchMedicalRights());
     this.props.dispatch(fetchUser());
     this.context.mixpanel.track('Wizard login');
+    console.log('here');
   }
 
   //
@@ -42,16 +49,22 @@ class WizardPage extends Component {
   // };
 
   render() {
-    const isMobile = this.props.isMobile;
-    if (!isMobile){
-      return (
-        <WizardMain/>
-      )
-    }else{
-      return(
-        <WizardMainStepperMobile/>
-      )
-    }
+    return(
+      <div style={{
+        width:'100%'
+      }}>
+        <Header/>
+        <div style={styles.wizardContainer}>
+          {(function(isMobile) {
+            if (isMobile) {
+              return ( <WizardMainStepperMobile/> );
+            }else{
+              return ( <WizardMain/> );
+            }
+          })(this.props.isMobile)}
+        </div>
+      </div>
+    );
   }
 }
 
