@@ -201,10 +201,10 @@ class LandingPage extends Component {
                 onClick={this.goToWizard}/>
             </Link>
             </div>
-            <div style={{
-              textAlign: 'center',
-              fontSize:'14px'
-            }}>We don't save any information</div>
+            {/*<div style={{*/}
+              {/*textAlign: 'center',*/}
+              {/*fontSize:'14px'*/}
+            {/*}}>We don't save any information</div>*/}
           </ThemePropagator>
             {/*theme={ HEADER_BAND_THEME }*/}
             {/*messageLevel1="Find now your medical rights"*/}

@@ -269,14 +269,6 @@ exports.modules = {
 	                  label: 'Get started',
 	                  onClick: this.goToWizard })
 	              )
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { style: {
-	                  textAlign: 'center',
-	                  fontSize: '14px'
-	                } },
-	              'We don\'t save any information'
 	            )
 	          )
 	        ),
