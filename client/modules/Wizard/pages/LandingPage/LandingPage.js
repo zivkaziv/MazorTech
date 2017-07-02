@@ -186,11 +186,11 @@ class LandingPage extends Component {
             <div style={styles.callForActionContainer}>
               <div style={{
                 fontSize:'30px'
-              }}>Find now your medical rights</div>
+              }}>Find your medical rights</div>
               <div style={{
                 fontSize:'20px',
                 marginBottom:'20px'
-              }}>Easy way to see your medical rights according to your doctor diagnostic</div>
+              }}>Easy way to see your medical rights based on your Doctor's diagnostic</div>
               <Link to={'/wizard'} style={styles.callForAction}>
               <CallToAction
                 wrapperStyle={{

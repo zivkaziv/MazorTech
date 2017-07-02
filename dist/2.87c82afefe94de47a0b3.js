@@ -247,7 +247,7 @@ webpackJsonp([2],{
 	                { style: {
 	                    fontSize: '30px'
 	                  } },
-	                'Find now your medical rights'
+	                'Find your medical rights'
 	              ),
 	              _react2.default.createElement(
 	                'div',
@@ -255,7 +255,7 @@ webpackJsonp([2],{
 	                    fontSize: '20px',
 	                    marginBottom: '20px'
 	                  } },
-	                'Easy way to see your medical rights according to your doctor diagnostic'
+	                'Easy way to see your medical rights based on your Doctor\'s diagnostic'
 	              ),
 	              _react2.default.createElement(
 	                _reactRouter.Link,
