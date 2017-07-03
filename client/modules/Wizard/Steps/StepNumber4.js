@@ -111,7 +111,7 @@ class StepNumber4 extends Component {
         <div className="step" style={styles.wizardStepPageStyle}>
           <div className="row">
             <section style={styles.medicalRightsTitle}>
-              <h2>We have found for you the following medical rights</h2>
+              <h2>Based on your input, these are your medical rights:</h2>
             </section>
             <div style={styles.medicalRightsContainer}>
               {this.props.medicalRights.map((medicalRight,i) => {

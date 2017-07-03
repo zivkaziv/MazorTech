@@ -3295,7 +3295,7 @@
 	              _react2.default.createElement(
 	                'h2',
 	                null,
-	                'We have found for you the following medical rights'
+	                'Based on your input, these are your medical rights:'
 	              )
 	            ),
 	            _react2.default.createElement(

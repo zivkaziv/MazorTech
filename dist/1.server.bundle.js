@@ -651,7 +651,7 @@ exports.modules = {
 	              },
 	              'Click here'
 	            ),
-	            ' to find some more rights'
+	            ' to find additional rights'
 	          )
 	        );
 	      }
@@ -1144,7 +1144,7 @@ exports.modules = {
 	            },
 	            'Click here'
 	          ),
-	          ' to find more medical rights.'
+	          ' to find additional rights'
 	        )
 	      );
 	    }

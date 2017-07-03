@@ -143,7 +143,7 @@ class WizardMainStepperMobile extends React.Component {
               }}
             >
               Click here
-            </a> to find more medical rights.
+            </a> to find additional rights
           </p>
         )}
       </div>

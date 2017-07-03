@@ -6124,7 +6124,7 @@ webpackJsonp([0],{
 	              _react2.default.createElement(
 	                'h2',
 	                null,
-	                'We have found for you the following medical rights'
+	                'Based on your input, these are your medical rights:'
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -8620,7 +8620,7 @@ webpackJsonp([0],{
 	              },
 	              'Click here'
 	            ),
-	            ' to find some more rights'
+	            ' to find additional rights'
 	          )
 	        );
 	      }
@@ -11884,7 +11884,7 @@ webpackJsonp([0],{
 	            },
 	            'Click here'
 	          ),
-	          ' to find more medical rights.'
+	          ' to find additional rights'
 	        )
 	      );
 	    }

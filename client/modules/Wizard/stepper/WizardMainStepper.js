@@ -121,7 +121,7 @@ class WizardMainStepper extends React.Component {
               }}
             >
               Click here
-            </a> to find some more rights
+            </a> to find additional rights
           </p>
         </div>
       );
