@@ -6014,6 +6014,7 @@ webpackJsonp([0],{
 	  wizardStepPageStyle: {
 	    maxHeight: 350,
 	    // maxWidth: 679,
+	    minWidth: 318,
 	    overflow: 'auto'
 	  },
 	  medicalRightsTitle: {
