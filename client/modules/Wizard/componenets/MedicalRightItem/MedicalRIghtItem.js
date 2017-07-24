@@ -39,7 +39,7 @@ function MedicalRightItem(props) {
                     icon={<FontIcon className="muidocs-icon-custom-github" />}
         />
       </CardActions>
-      <CardText e'xpandable={true}>
+      <CardText expandable={true}>
         {(function(showMe) {
           if (showMe) {
             return (
