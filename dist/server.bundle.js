@@ -604,7 +604,7 @@
 	
 	var _AppActions = __webpack_require__(12);
 	
-	var _mobileDetect = __webpack_require__(88);
+	var _mobileDetect = __webpack_require__(89);
 	
 	var _mobileDetect2 = _interopRequireDefault(_mobileDetect);
 	
@@ -676,7 +676,7 @@
 	
 	var _apiCaller2 = _interopRequireDefault(_apiCaller);
 	
-	var _universalCookie = __webpack_require__(100);
+	var _universalCookie = __webpack_require__(101);
 	
 	var _universalCookie2 = _interopRequireDefault(_universalCookie);
 	
@@ -856,7 +856,7 @@
 	
 	__webpack_require__(81);
 	
-	var _en = __webpack_require__(92);
+	var _en = __webpack_require__(93);
 	
 	var _en2 = _interopRequireDefault(_en);
 	
@@ -866,7 +866,7 @@
 	
 	__webpack_require__(82);
 	
-	var _fr = __webpack_require__(93);
+	var _fr = __webpack_require__(94);
 	
 	var _fr2 = _interopRequireDefault(_fr);
 	
@@ -950,13 +950,13 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reduxDevtools = __webpack_require__(95);
+	var _reduxDevtools = __webpack_require__(96);
 	
-	var _reduxDevtoolsLogMonitor = __webpack_require__(97);
+	var _reduxDevtoolsLogMonitor = __webpack_require__(98);
 	
 	var _reduxDevtoolsLogMonitor2 = _interopRequireDefault(_reduxDevtoolsLogMonitor);
 	
-	var _reduxDevtoolsDockMonitor = __webpack_require__(96);
+	var _reduxDevtoolsDockMonitor = __webpack_require__(97);
 	
 	var _reduxDevtoolsDockMonitor2 = _interopRequireDefault(_reduxDevtoolsDockMonitor);
 	
@@ -1115,7 +1115,7 @@
 	  _react2.default.createElement(_reactRouter.IndexRoute, {
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(2).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(102).default);
+	        cb(null, __webpack_require__(103).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  }),
@@ -1123,7 +1123,7 @@
 	    path: '/wizard',
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(1).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(103).default);
+	        cb(null, __webpack_require__(104).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  }),
@@ -1131,7 +1131,7 @@
 	    path: '/landing',
 	    getComponent: function getComponent(nextState, cb) {
 	      __webpack_require__.e/* nsure */(3).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
-	        cb(null, __webpack_require__(101).default);
+	        cb(null, __webpack_require__(102).default);
 	      }).bind(null, __webpack_require__));
 	    }
 	  })
@@ -1151,7 +1151,7 @@
 	
 	var _redux = __webpack_require__(28);
 	
-	var _reduxThunk = __webpack_require__(98);
+	var _reduxThunk = __webpack_require__(99);
 	
 	var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 	
@@ -1387,9 +1387,9 @@
 	/* WEBPACK VAR INJECTION */(function(__dirname) {'use strict';
 	
 	var webpack = __webpack_require__(18);
-	var cssnext = __webpack_require__(89);
-	var postcssFocus = __webpack_require__(90);
-	var postcssReporter = __webpack_require__(91);
+	var cssnext = __webpack_require__(90);
+	var postcssFocus = __webpack_require__(91);
+	var postcssReporter = __webpack_require__(92);
 	
 	module.exports = {
 	  devtool: 'cheap-module-eval-source-map',
@@ -1539,7 +1539,7 @@
 	
 	var _MedicalDiagnosticItem2 = _interopRequireDefault(_MedicalDiagnosticItem);
 	
-	var _reactSearchInput = __webpack_require__(94);
+	var _reactSearchInput = __webpack_require__(95);
 	
 	var _reactSearchInput2 = _interopRequireDefault(_reactSearchInput);
 	
@@ -1570,7 +1570,7 @@
 	var _WizardReducer = __webpack_require__(11);
 	
 	var _StepNumber = {
-	  "search-input": "_1fjfTt9HrlRBAahawKhjWu"
+	  "search-input": "_8botdKKhaM9xtYcWvL4jG"
 	};
 	
 	var _StepNumber2 = _interopRequireDefault(_StepNumber);
@@ -1595,6 +1595,8 @@
 	var styles = {
 	  wizardStepPageStyle: {
 	    maxHeight: 350
+	    // maxWidth: 679,
+	    // overflow:'auto',
 	  },
 	  medicalDiagnosticsContainer: {
 	    display: 'flex'
@@ -2185,7 +2187,7 @@
 	
 	var _UserReducer = __webpack_require__(6);
 	
-	var _Toggle = __webpack_require__(87);
+	var _Toggle = __webpack_require__(88);
 	
 	var _Toggle2 = _interopRequireDefault(_Toggle);
 	
@@ -3499,13 +3501,13 @@
 	var _reactIntl = __webpack_require__(2);
 	
 	var _Header = {
-	  "header": "_3EGjKVGKCGTGQn_m_YASdF",
-	  "content": "_391cv5n_RFU0K9SBOjXDEt",
-	  "site-title": "_11V45Tl3_Hdy_ARI53CW9g",
-	  "add-post-button": "XrNjmGRHH_vMEgGeC3S75",
-	  "language-switcher": "X6vAu1vEuRDWiN2kDvA_z",
-	  "selected": "_3ecuVjN6tTUWkR7u3Co3s",
-	  "logo": "_34cZaLcfrnwFllCl-QejH-"
+	  "header": "_2sEZYfHlvDy9uXqVIXG1aM",
+	  "content": "_1eavAvnySzoZc5rld6Q4pa",
+	  "site-title": "UfFn6muOcOBjkVI5_yltp",
+	  "add-post-button": "CkTz6a2gQTJjwXIEAlTSk",
+	  "language-switcher": "_3bviQya5ZWCvWr6lGdfO9h",
+	  "selected": "_3IRlmCpgSZBcTGVIGHvgaI",
+	  "logo": "LNLY14D54Y1IQaktsExe3"
 	};
 	
 	var _Header2 = _interopRequireDefault(_Header);
@@ -3573,10 +3575,16 @@
 	
 	var _RadioButton = __webpack_require__(27);
 	
+	var _RadioButton2 = _interopRequireDefault(_RadioButton);
+	
+	var _FontIcon = __webpack_require__(87);
+	
+	var _FontIcon2 = _interopRequireDefault(_FontIcon);
+	
 	var _MedicalRightItem = {
-	  "medical-right-item": "_2p6LYNjXGU3Bj7sOFUIZ_d",
-	  "medical-condition": "_1IZoy5MqqU1QojWgk1Rz6B",
-	  "radioButtonKnew": "_1ND-8U37dI5mLbv-WonZfg"
+	  "medical-right-item": "_2OPQaFLVSkPuvLOeotACNW",
+	  "medical-condition": "_-zsAwla7bqudwL3lryVKn",
+	  "radioButtonKnew": "_2gY4EkWSl0gbnoPy9jdX0c"
 	};
 	
 	var _MedicalRightItem2 = _interopRequireDefault(_MedicalRightItem);
@@ -3608,7 +3616,13 @@
 	          value: 'ALREADY_KNOW',
 	          label: 'Already knew'
 	        })
-	      )
+	      ),
+	      _react2.default.createElement(_FlatButton2.default, { primary: true,
+	        label: 'Chat with us'
+	        // href="https://www.facebook.com/sharer.php?u=http://www.ynet.co.il/articles/0,7340,L-4970913,00.html"
+	        // target="_blank"
+	        , icon: _react2.default.createElement(_FontIcon2.default, { className: 'muidocs-icon-custom-github' })
+	      })
 	    ),
 	    _react2.default.createElement(
 	      _Card.CardText,
@@ -3776,11 +3790,11 @@
 	var _reactRedux = __webpack_require__(1);
 	
 	var _App = {
-	  "container": "_15uqt7TaQcflNYjiD0-re1",
-	  "progtrckr": "_29170fZOPMUSFcA1kVqwFe",
-	  "progtrckr-todo": "_2iypyKDO4OoeyqHp-0NTY",
-	  "progtrckr-doing": "_2u_zgaBfcUgPYHKQaMQ6hG",
-	  "progtrckr-done": "_2ems2-1Ow5uOk-QfqPMgiL"
+	  "container": "_4uEyKcd5WHob5qPzotT7",
+	  "progtrckr": "_3Y6DQZh1IQy_Ho6ycb_ahP",
+	  "progtrckr-todo": "_1N_rZ4VqyEgJwR20fEJFZ1",
+	  "progtrckr-doing": "_3uNOy-0WRNUayqAfLXOFGF",
+	  "progtrckr-done": "_-ZF6hpRyofG5f3ViJeGlc"
 	};
 	
 	var _App2 = _interopRequireDefault(_App);
@@ -3911,7 +3925,7 @@
 	var _reactIntl = __webpack_require__(2);
 	
 	var _Footer = {
-	  "footer": "_1oiRVDtQ6fOWkhBVWcRyE_"
+	  "footer": "_3vPEi87A1wyh1iLR3bsBGf"
 	};
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
@@ -4017,12 +4031,12 @@
 	var _reactIntl = __webpack_require__(2);
 	
 	var _PostCreateWidget = {
-	  "form": "_1_WEV3z8MyISJ_IVeQGbfN",
-	  "form-content": "_3CPctdi6XIS37va2ubmlCG",
-	  "form-title": "_1CSMUfhA4ysKjSED0EfzhX",
-	  "form-field": "_2UV8G3K76UKXYl2G9ov3yn",
-	  "post-submit-button": "_1atG94QrpmrK4ei1Y4lDc3",
-	  "appear": "_38mS7lSZiNDV5iEXieRUC7"
+	  "form": "_1HNxVmVCIfsWU6Q22cRSd7",
+	  "form-content": "VlHIHfXe5nkoruuc0N8pJ",
+	  "form-title": "_32cczwmKrlcNdTsvCr-oBL",
+	  "form-field": "_1srubE9zVaJuCqkgKCA3lY",
+	  "post-submit-button": "_2m9Bzr_sJcQ7FK3o3X0PBL",
+	  "appear": "_30KT3DYyUvGj_5sBYnixvw"
 	};
 	
 	var _PostCreateWidget2 = _interopRequireDefault(_PostCreateWidget);
@@ -4122,30 +4136,30 @@
 	var _PostListItem2 = _interopRequireDefault(_PostListItem);
 	
 	var _progTracker = {
-	  "progtrckr": "_2W0MvdniKJtnJWik_8gt8o",
-	  "val-err-tooltip": "_3vOq0S18iPHp9X-hIJoUSP",
-	  "step": "gzJswym7080nAj7iLUu3e",
-	  "row": "_13gEu0E83lnIO-wsdWTXoP",
-	  "form-horizontal": "_2vKibUFnbiLiQX2YEjGHcU",
-	  "form-group": "_1pdzDy81t89OerHDQkMkg3",
-	  "footer-buttons": "_3al5P46juLifxx5b0BrzIy",
-	  "step3": "_24UmriiYQJeozzWbu6Uc1Z",
-	  "step4": "V7IPG0wW56j8SiG6A-VzT",
-	  "control-label": "_1IlLNQmZegwofd9r0tEI1X",
-	  "review": "_3Lxwgqnwzl5n8ImGu_MhU6",
-	  "txt": "_2ajx9xjuT09kYwerr8fsw5",
-	  "saving": "VOb7fMPmFB4q371baTKzG",
-	  "eg-jump-lnk": "qf1M1nM-jayIfceA34oJu",
-	  "lib-version": "_2HtgmLoFT0y_gIxHQtrQsI",
-	  "content": "_1HS62k5r00-mxEXmjI_J_o",
-	  "red": "_20QuM4ceLNlEcJa9rBCKTu",
-	  "green": "_2ncFXFYz3R-a2LsD2wtNKR",
-	  "bold": "QitRx0lK69F6yZ4TlhBsS",
-	  "hoc-alert": "_1J3_eAsvr6XDbL9zlrjXF4",
-	  "form-block-holder": "_2QWZWRdctJ0bhZlNrQ6w6k",
-	  "progtrckr-todo": "_182DkWzH6FuKy7psWyfy46",
-	  "progtrckr-doing": "_3HUI2MO604iIUCVUBnhmnh",
-	  "progtrckr-done": "_35cvEpS4UUkJS_IzMeFN0-"
+	  "progtrckr": "_1gots0T1qmximnr_geso4_",
+	  "val-err-tooltip": "_9vCWgvVPszZxQNscac2Ic",
+	  "step": "_1Lw7KWNcw1KcP4MogUxDao",
+	  "row": "_1A0QsO2w5NaRQ1G9oYcU3c",
+	  "form-horizontal": "_3t_6TlM0CU-IisvGk9NK_y",
+	  "form-group": "_1xMhoS_wFX3PDFN6THuRiq",
+	  "footer-buttons": "_3cHwoF0oTMYhUOY_AVxIc1",
+	  "step3": "_33jkjCKn4b9H8dFr-OmDco",
+	  "step4": "_25JJ0qY_sVAf94SdmFzzUc",
+	  "control-label": "VkflfFTpn4gmWEjpfgmN6",
+	  "review": "WcHoTG7viE6JzKImJwJkt",
+	  "txt": "_2DSVPD_z8OekWJPFr5Ujkt",
+	  "saving": "HMvG0YAmEQQck0GZo6Yjn",
+	  "eg-jump-lnk": "_1mqogYJsRWO_p1owkPkKBp",
+	  "lib-version": "_GRxm4KrXd1_JhsPoR7uo",
+	  "content": "_1vKtlU1rl8N2NCVRsmsyp8",
+	  "red": "_1ZjFff1GaWnOAAEtd87glv",
+	  "green": "_3tgNwq-qgolFUVj6lS-DqJ",
+	  "bold": "_1bJvCGENAbkau4FdN7nAlF",
+	  "hoc-alert": "_1xGGQMpWFglkUzMznl314f",
+	  "form-block-holder": "_1xQyqqV63sg3I0HCeTAJfQ",
+	  "progtrckr-todo": "_3ojFsatz22_d65C5w_LGhd",
+	  "progtrckr-doing": "_1UpcKFdVQwIpotH0H44uYE",
+	  "progtrckr-done": "_21aScf6uurGWYPvd6q37Cr"
 	};
 	
 	var _progTracker2 = _interopRequireDefault(_progTracker);
@@ -4241,13 +4255,13 @@
 	var _reactIntl = __webpack_require__(2);
 	
 	var _PostListItem = {
-	  "single-post": "_2wFZUrnLLPIM2UvuNgnV1r",
-	  "post-title": "_1BU3HyU1b5fh1tsPA9MtRq",
-	  "author-name": "_2pYEGhQRMs0Mh9CsoJsCrq",
-	  "post-desc": "_2hG8tPFCGI0k7BZ5cz9nnH",
-	  "post-action": "_37qYFcYfJHxrTH_bV6-TQo",
-	  "divider": "_3H_6OlXO_Hx_93avyoPoZ2",
-	  "post-detail": "_16xorg78DM6DwmPTBglw02"
+	  "single-post": "_3B15Q62CNe0LaxJ8BUZr5W",
+	  "post-title": "_3mZF-WLrnBUxaWr9zFi6Q_",
+	  "author-name": "_1cSDPptMi8rvUEB2tAonlW",
+	  "post-desc": "_3D8Fgk2edKTkFyBDsUEZ2u",
+	  "post-action": "_3S84cKmlvGO49pK1biPlXr",
+	  "divider": "y2SIF3ydn02JYMgeklO7S",
+	  "post-detail": "_3W9vrxIdnQ93EmH-x2UgJR"
 	};
 	
 	var _PostListItem2 = _interopRequireDefault(_PostListItem);
@@ -4333,13 +4347,13 @@
 	var _reactIntl = __webpack_require__(2);
 	
 	var _PostListItem = {
-	  "single-post": "_2wFZUrnLLPIM2UvuNgnV1r",
-	  "post-title": "_1BU3HyU1b5fh1tsPA9MtRq",
-	  "author-name": "_2pYEGhQRMs0Mh9CsoJsCrq",
-	  "post-desc": "_2hG8tPFCGI0k7BZ5cz9nnH",
-	  "post-action": "_37qYFcYfJHxrTH_bV6-TQo",
-	  "divider": "_3H_6OlXO_Hx_93avyoPoZ2",
-	  "post-detail": "_16xorg78DM6DwmPTBglw02"
+	  "single-post": "_3B15Q62CNe0LaxJ8BUZr5W",
+	  "post-title": "_3mZF-WLrnBUxaWr9zFi6Q_",
+	  "author-name": "_1cSDPptMi8rvUEB2tAonlW",
+	  "post-desc": "_3D8Fgk2edKTkFyBDsUEZ2u",
+	  "post-action": "_3S84cKmlvGO49pK1biPlXr",
+	  "divider": "y2SIF3ydn02JYMgeklO7S",
+	  "post-detail": "_3W9vrxIdnQ93EmH-x2UgJR"
 	};
 	
 	var _PostListItem2 = _interopRequireDefault(_PostListItem);
@@ -4567,7 +4581,7 @@
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 	
 	var _MedicalDiagnosticItem = {
-	  "medical-diagnostic-item": "_3xcbhGj1DVBA2AzP1oNNH9"
+	  "medical-diagnostic-item": "_Uhygq52TmiRQTOLmE_0"
 	};
 	
 	var _MedicalDiagnosticItem2 = _interopRequireDefault(_MedicalDiagnosticItem);
@@ -5116,7 +5130,7 @@
 	
 	var _limax2 = _interopRequireDefault(_limax);
 	
-	var _sanitizeHtml = __webpack_require__(99);
+	var _sanitizeHtml = __webpack_require__(100);
 	
 	var _sanitizeHtml2 = _interopRequireDefault(_sanitizeHtml);
 	
@@ -5529,125 +5543,131 @@
 /* 87 */
 /***/ function(module, exports) {
 
-	module.exports = require("material-ui/Toggle");
+	module.exports = require("material-ui/FontIcon");
 
 /***/ },
 /* 88 */
 /***/ function(module, exports) {
 
-	module.exports = require("mobile-detect");
+	module.exports = require("material-ui/Toggle");
 
 /***/ },
 /* 89 */
 /***/ function(module, exports) {
 
-	module.exports = require("postcss-cssnext");
+	module.exports = require("mobile-detect");
 
 /***/ },
 /* 90 */
 /***/ function(module, exports) {
 
-	module.exports = require("postcss-focus");
+	module.exports = require("postcss-cssnext");
 
 /***/ },
 /* 91 */
 /***/ function(module, exports) {
 
-	module.exports = require("postcss-reporter");
+	module.exports = require("postcss-focus");
 
 /***/ },
 /* 92 */
 /***/ function(module, exports) {
 
-	module.exports = require("react-intl/locale-data/en");
+	module.exports = require("postcss-reporter");
 
 /***/ },
 /* 93 */
 /***/ function(module, exports) {
 
-	module.exports = require("react-intl/locale-data/fr");
+	module.exports = require("react-intl/locale-data/en");
 
 /***/ },
 /* 94 */
 /***/ function(module, exports) {
 
-	module.exports = require("react-search-input");
+	module.exports = require("react-intl/locale-data/fr");
 
 /***/ },
 /* 95 */
 /***/ function(module, exports) {
 
-	module.exports = require("redux-devtools");
+	module.exports = require("react-search-input");
 
 /***/ },
 /* 96 */
 /***/ function(module, exports) {
 
-	module.exports = require("redux-devtools-dock-monitor");
+	module.exports = require("redux-devtools");
 
 /***/ },
 /* 97 */
 /***/ function(module, exports) {
 
-	module.exports = require("redux-devtools-log-monitor");
+	module.exports = require("redux-devtools-dock-monitor");
 
 /***/ },
 /* 98 */
 /***/ function(module, exports) {
 
-	module.exports = require("redux-thunk");
+	module.exports = require("redux-devtools-log-monitor");
 
 /***/ },
 /* 99 */
 /***/ function(module, exports) {
 
-	module.exports = require("sanitize-html");
+	module.exports = require("redux-thunk");
 
 /***/ },
 /* 100 */
 /***/ function(module, exports) {
 
+	module.exports = require("sanitize-html");
+
+/***/ },
+/* 101 */
+/***/ function(module, exports) {
+
 	module.exports = require("universal-cookie");
 
 /***/ },
-/* 101 */,
 /* 102 */,
 /* 103 */,
 /* 104 */,
 /* 105 */,
 /* 106 */,
 /* 107 */,
-/* 108 */
+/* 108 */,
+/* 109 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/Stepper");
 
 /***/ },
-/* 109 */
+/* 110 */
 /***/ function(module, exports) {
 
 	module.exports = require("material-ui/internal/ExpandTransition");
 
 /***/ },
-/* 110 */
+/* 111 */
 /***/ function(module, exports) {
 
 	module.exports = require("landricks-components");
 
 /***/ },
-/* 111 */
+/* 112 */
 /***/ function(module, exports) {
 
 	module.exports = require("react-scroll");
 
 /***/ },
-/* 112 */
+/* 113 */
 /***/ function(module, exports) {
 
 	module.exports = require("react-stars");
 
 /***/ },
-/* 113 */
+/* 114 */
 /***/ function(module, exports) {
 
 	module.exports = require("window-or-global");

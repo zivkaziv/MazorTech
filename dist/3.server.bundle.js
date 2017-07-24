@@ -1,7 +1,7 @@
 exports.ids = [3];
 exports.modules = {
 
-/***/ 101:
+/***/ 102:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -92,6 +92,7 @@ exports.modules = {
 	    textAlign: 'center',
 	    display: 'inline-flex',
 	    fontSize: "24px"
+	    // fontWeight:"bold"
 	  }
 	
 	};

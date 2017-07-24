@@ -2,7 +2,8 @@ import React, { PropTypes } from 'react';
 import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton';
-
+import RaisedButton from 'material-ui/RadioButton';
+import FontIcon from 'material-ui/FontIcon';
 
 // Import Style
 import styles from './MedicalRightItem.css';
@@ -28,12 +29,17 @@ function MedicalRightItem(props) {
             label="Already knew"
           />
         </RadioButtonGroup>
-        {/*<FlatButton primary={true}*/}
-                    {/*label="I didn't know that"*/}
-                    {/*href="https://www.facebook.com/sharer.php?u=http://www.ynet.co.il/articles/0,7340,L-4970913,00.html"*/}
-                    {/*target="_blank"/>*/}
+        {/*<div>*/}
+          {/*<RaisedButton label="Chat with us" primary={true} />*/}
+        {/*</div>*/}
+        <FlatButton primary={true}
+                    label="Chat with us"
+                    // href="https://www.facebook.com/sharer.php?u=http://www.ynet.co.il/articles/0,7340,L-4970913,00.html"
+                    // target="_blank"
+                    icon={<FontIcon className="muidocs-icon-custom-github" />}
+        />
       </CardActions>
-      <CardText expandable={true}>
+      <CardText e'xpandable={true}>
         {(function(showMe) {
           if (showMe) {
             return (

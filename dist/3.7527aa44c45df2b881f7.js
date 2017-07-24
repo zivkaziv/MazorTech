@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 756:
+/***/ 753:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16,11 +16,11 @@ webpackJsonp([3],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRouter = __webpack_require__(92);
+	var _reactRouter = __webpack_require__(93);
 	
 	var _reactRedux = __webpack_require__(65);
 	
-	var _RaisedButton = __webpack_require__(775);
+	var _RaisedButton = __webpack_require__(772);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
@@ -32,7 +32,7 @@ webpackJsonp([3],{
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
-	var _IconSvg = __webpack_require__(276);
+	var _IconSvg = __webpack_require__(274);
 	
 	var _IconSvg2 = _interopRequireDefault(_IconSvg);
 	
@@ -91,6 +91,7 @@ webpackJsonp([3],{
 	    textAlign: 'center',
 	    display: 'inline-flex',
 	    fontSize: "24px"
+	    // fontWeight:"bold"
 	  }
 	
 	};
@@ -221,7 +222,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 759:
+/***/ 756:
 /***/ function(module, exports) {
 
 	module.exports = function (target) {
@@ -239,7 +240,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 760:
+/***/ 757:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -280,7 +281,25 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 763:
+/***/ 760:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	
+	exports.__esModule = true;
+	
+	var _shallowEqual = __webpack_require__(92);
+	
+	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = _shallowEqual2.default;
+
+/***/ },
+
+/***/ 761:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -297,25 +316,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 764:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-	
-	exports.__esModule = true;
-	
-	var _shallowEqual = __webpack_require__(91);
-	
-	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = _shallowEqual2.default;
-
-/***/ },
-
-/***/ 766:
+/***/ 763:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -326,7 +327,7 @@ webpackJsonp([3],{
 	});
 	exports.default = undefined;
 	
-	var _Paper = __webpack_require__(785);
+	var _Paper = __webpack_require__(783);
 	
 	var _Paper2 = _interopRequireDefault(_Paper);
 	
@@ -336,7 +337,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 767:
+/***/ 764:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -378,7 +379,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 768:
+/***/ 765:
 /***/ function(module, exports) {
 
 	// Source: http://jsfiddle.net/vWx8V/
@@ -531,7 +532,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 769:
+/***/ 766:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -549,7 +550,7 @@ webpackJsonp([3],{
 	
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 	
-	var _getPrototypeOf = __webpack_require__(269);
+	var _getPrototypeOf = __webpack_require__(268);
 	
 	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 	
@@ -557,7 +558,7 @@ webpackJsonp([3],{
 	
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 	
-	var _createClass2 = __webpack_require__(268);
+	var _createClass2 = __webpack_require__(267);
 	
 	var _createClass3 = _interopRequireDefault(_createClass2);
 	
@@ -569,7 +570,7 @@ webpackJsonp([3],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(759);
+	var _simpleAssign = __webpack_require__(756);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -581,21 +582,21 @@ webpackJsonp([3],{
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _childUtils = __webpack_require__(771);
+	var _childUtils = __webpack_require__(768);
 	
-	var _events = __webpack_require__(776);
+	var _events = __webpack_require__(773);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
-	var _keycode = __webpack_require__(768);
+	var _keycode = __webpack_require__(765);
 	
 	var _keycode2 = _interopRequireDefault(_keycode);
 	
-	var _FocusRipple = __webpack_require__(778);
+	var _FocusRipple = __webpack_require__(775);
 	
 	var _FocusRipple2 = _interopRequireDefault(_FocusRipple);
 	
-	var _TouchRipple = __webpack_require__(779);
+	var _TouchRipple = __webpack_require__(776);
 	
 	var _TouchRipple2 = _interopRequireDefault(_TouchRipple);
 	
@@ -944,14 +945,286 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 770:
+/***/ 767:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(793);
+	"use strict";
+	'use strict';
+	
+	exports.__esModule = true;
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _chainFunction = __webpack_require__(780);
+	
+	var _chainFunction2 = _interopRequireDefault(_chainFunction);
+	
+	var _react = __webpack_require__(0);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _propTypes = __webpack_require__(6);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+	
+	var _warning = __webpack_require__(66);
+	
+	var _warning2 = _interopRequireDefault(_warning);
+	
+	var _ChildMapping = __webpack_require__(790);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var propTypes = {
+	  component: _propTypes2.default.any,
+	  childFactory: _propTypes2.default.func,
+	  children: _propTypes2.default.node
+	};
+	
+	var defaultProps = {
+	  component: 'span',
+	  childFactory: function childFactory(child) {
+	    return child;
+	  }
+	};
+	
+	var TransitionGroup = function (_React$Component) {
+	  _inherits(TransitionGroup, _React$Component);
+	
+	  function TransitionGroup(props, context) {
+	    _classCallCheck(this, TransitionGroup);
+	
+	    var _this = _possibleConstructorReturn(this, _React$Component.call(this, props, context));
+	
+	    _this.performAppear = function (key) {
+	      _this.currentlyTransitioningKeys[key] = true;
+	
+	      var component = _this.childRefs[key];
+	
+	      if (component.componentWillAppear) {
+	        component.componentWillAppear(_this._handleDoneAppearing.bind(_this, key));
+	      } else {
+	        _this._handleDoneAppearing(key);
+	      }
+	    };
+	
+	    _this._handleDoneAppearing = function (key) {
+	      var component = _this.childRefs[key];
+	      if (component && component.componentDidAppear) {
+	        component.componentDidAppear();
+	      }
+	
+	      delete _this.currentlyTransitioningKeys[key];
+	
+	      var currentChildMapping = (0, _ChildMapping.getChildMapping)(_this.props.children);
+	
+	      if (!currentChildMapping || !currentChildMapping.hasOwnProperty(key)) {
+	        // This was removed before it had fully appeared. Remove it.
+	        _this.performLeave(key);
+	      }
+	    };
+	
+	    _this.performEnter = function (key) {
+	      _this.currentlyTransitioningKeys[key] = true;
+	
+	      var component = _this.childRefs[key];
+	
+	      if (component.componentWillEnter) {
+	        component.componentWillEnter(_this._handleDoneEntering.bind(_this, key));
+	      } else {
+	        _this._handleDoneEntering(key);
+	      }
+	    };
+	
+	    _this._handleDoneEntering = function (key) {
+	      var component = _this.childRefs[key];
+	      if (component && component.componentDidEnter) {
+	        component.componentDidEnter();
+	      }
+	
+	      delete _this.currentlyTransitioningKeys[key];
+	
+	      var currentChildMapping = (0, _ChildMapping.getChildMapping)(_this.props.children);
+	
+	      if (!currentChildMapping || !currentChildMapping.hasOwnProperty(key)) {
+	        // This was removed before it had fully entered. Remove it.
+	        _this.performLeave(key);
+	      }
+	    };
+	
+	    _this.performLeave = function (key) {
+	      _this.currentlyTransitioningKeys[key] = true;
+	
+	      var component = _this.childRefs[key];
+	      if (component.componentWillLeave) {
+	        component.componentWillLeave(_this._handleDoneLeaving.bind(_this, key));
+	      } else {
+	        // Note that this is somewhat dangerous b/c it calls setState()
+	        // again, effectively mutating the component before all the work
+	        // is done.
+	        _this._handleDoneLeaving(key);
+	      }
+	    };
+	
+	    _this._handleDoneLeaving = function (key) {
+	      var component = _this.childRefs[key];
+	
+	      if (component && component.componentDidLeave) {
+	        component.componentDidLeave();
+	      }
+	
+	      delete _this.currentlyTransitioningKeys[key];
+	
+	      var currentChildMapping = (0, _ChildMapping.getChildMapping)(_this.props.children);
+	
+	      if (currentChildMapping && currentChildMapping.hasOwnProperty(key)) {
+	        // This entered again before it fully left. Add it again.
+	        _this.performEnter(key);
+	      } else {
+	        _this.setState(function (state) {
+	          var newChildren = _extends({}, state.children);
+	          delete newChildren[key];
+	          return { children: newChildren };
+	        });
+	      }
+	    };
+	
+	    _this.childRefs = Object.create(null);
+	
+	    _this.state = {
+	      children: (0, _ChildMapping.getChildMapping)(props.children)
+	    };
+	    return _this;
+	  }
+	
+	  TransitionGroup.prototype.componentWillMount = function componentWillMount() {
+	    this.currentlyTransitioningKeys = {};
+	    this.keysToEnter = [];
+	    this.keysToLeave = [];
+	  };
+	
+	  TransitionGroup.prototype.componentDidMount = function componentDidMount() {
+	    var initialChildMapping = this.state.children;
+	    for (var key in initialChildMapping) {
+	      if (initialChildMapping[key]) {
+	        this.performAppear(key);
+	      }
+	    }
+	  };
+	
+	  TransitionGroup.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+	    var nextChildMapping = (0, _ChildMapping.getChildMapping)(nextProps.children);
+	    var prevChildMapping = this.state.children;
+	
+	    this.setState({
+	      children: (0, _ChildMapping.mergeChildMappings)(prevChildMapping, nextChildMapping)
+	    });
+	
+	    for (var key in nextChildMapping) {
+	      var hasPrev = prevChildMapping && prevChildMapping.hasOwnProperty(key);
+	      if (nextChildMapping[key] && !hasPrev && !this.currentlyTransitioningKeys[key]) {
+	        this.keysToEnter.push(key);
+	      }
+	    }
+	
+	    for (var _key in prevChildMapping) {
+	      var hasNext = nextChildMapping && nextChildMapping.hasOwnProperty(_key);
+	      if (prevChildMapping[_key] && !hasNext && !this.currentlyTransitioningKeys[_key]) {
+	        this.keysToLeave.push(_key);
+	      }
+	    }
+	
+	    // If we want to someday check for reordering, we could do it here.
+	  };
+	
+	  TransitionGroup.prototype.componentDidUpdate = function componentDidUpdate() {
+	    var keysToEnter = this.keysToEnter;
+	    this.keysToEnter = [];
+	    keysToEnter.forEach(this.performEnter);
+	
+	    var keysToLeave = this.keysToLeave;
+	    this.keysToLeave = [];
+	    keysToLeave.forEach(this.performLeave);
+	  };
+	
+	  TransitionGroup.prototype.render = function render() {
+	    var _this2 = this;
+	
+	    // TODO: we could get rid of the need for the wrapper node
+	    // by cloning a single child
+	    var childrenToRender = [];
+	
+	    var _loop = function _loop(key) {
+	      var child = _this2.state.children[key];
+	      if (child) {
+	        var isCallbackRef = typeof child.ref !== 'string';
+	        var factoryChild = _this2.props.childFactory(child);
+	        var ref = function ref(r) {
+	          _this2.childRefs[key] = r;
+	        };
+	
+	         false ? (0, _warning2.default)(isCallbackRef, 'string refs are not supported on children of TransitionGroup and will be ignored. ' + 'Please use a callback ref instead: https://facebook.github.io/react/docs/refs-and-the-dom.html#the-ref-callback-attribute') : void 0;
+	
+	        // Always chaining the refs leads to problems when the childFactory
+	        // wraps the child. The child ref callback gets called twice with the
+	        // wrapper and the child. So we only need to chain the ref if the
+	        // factoryChild is not different from child.
+	        if (factoryChild === child && isCallbackRef) {
+	          ref = (0, _chainFunction2.default)(child.ref, ref);
+	        }
+	
+	        // You may need to apply reactive updates to a child as it is leaving.
+	        // The normal React way to do it won't work since the child will have
+	        // already been removed. In case you need this behavior you can provide
+	        // a childFactory function to wrap every child, even the ones that are
+	        // leaving.
+	        childrenToRender.push(_react2.default.cloneElement(factoryChild, {
+	          key: key,
+	          ref: ref
+	        }));
+	      }
+	    };
+	
+	    for (var key in this.state.children) {
+	      _loop(key);
+	    }
+	
+	    // Do not forward TransitionGroup props to primitive DOM nodes
+	    var props = _extends({}, this.props);
+	    delete props.transitionLeave;
+	    delete props.transitionName;
+	    delete props.transitionAppear;
+	    delete props.transitionEnter;
+	    delete props.childFactory;
+	    delete props.transitionLeaveTimeout;
+	    delete props.transitionEnterTimeout;
+	    delete props.transitionAppearTimeout;
+	    delete props.component;
+	
+	    return _react2.default.createElement(this.props.component, props, childrenToRender);
+	  };
+	
+	  return TransitionGroup;
+	}(_react2.default.Component);
+	
+	TransitionGroup.displayName = 'TransitionGroup';
+	
+	
+	TransitionGroup.propTypes = propTypes;
+	TransitionGroup.defaultProps = defaultProps;
+	
+	exports.default = TransitionGroup;
+	module.exports = exports['default'];
 
 /***/ },
 
-/***/ 771:
+/***/ 768:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -967,9 +1240,9 @@ webpackJsonp([3],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactAddonsCreateFragment = __webpack_require__(790);
+	var _ReactFragment = __webpack_require__(785);
 	
-	var _reactAddonsCreateFragment2 = _interopRequireDefault(_reactAddonsCreateFragment);
+	var _ReactFragment2 = _interopRequireDefault(_ReactFragment);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -991,7 +1264,7 @@ webpackJsonp([3],{
 	
 	  if (validChildrenCount === 0) return undefined;
 	  if (validChildrenCount === 1) return newFragments[firstKey];
-	  return (0, _reactAddonsCreateFragment2.default)(newFragments);
+	  return (0, _ReactFragment2.default)(newFragments);
 	}
 	
 	function extendChildren(children, extendedProps, extendedChildren) {
@@ -1010,7 +1283,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 775:
+/***/ 772:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1021,7 +1294,7 @@ webpackJsonp([3],{
 	});
 	exports.default = undefined;
 	
-	var _RaisedButton = __webpack_require__(786);
+	var _RaisedButton = __webpack_require__(784);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
@@ -1031,7 +1304,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 776:
+/***/ 773:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1077,7 +1350,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 777:
+/***/ 774:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1085,7 +1358,7 @@ webpackJsonp([3],{
 	
 	exports.__esModule = true;
 	
-	var _from = __webpack_require__(273);
+	var _from = __webpack_require__(272);
 	
 	var _from2 = _interopRequireDefault(_from);
 	
@@ -1097,7 +1370,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 778:
+/***/ 775:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1107,7 +1380,7 @@ webpackJsonp([3],{
 	  value: true
 	});
 	
-	var _getPrototypeOf = __webpack_require__(269);
+	var _getPrototypeOf = __webpack_require__(268);
 	
 	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 	
@@ -1115,7 +1388,7 @@ webpackJsonp([3],{
 	
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 	
-	var _createClass2 = __webpack_require__(268);
+	var _createClass2 = __webpack_require__(267);
 	
 	var _createClass3 = _interopRequireDefault(_createClass2);
 	
@@ -1127,7 +1400,7 @@ webpackJsonp([3],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(759);
+	var _simpleAssign = __webpack_require__(756);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -1143,19 +1416,19 @@ webpackJsonp([3],{
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _shallowEqual = __webpack_require__(764);
+	var _shallowEqual = __webpack_require__(760);
 	
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 	
-	var _autoPrefix = __webpack_require__(763);
+	var _autoPrefix = __webpack_require__(761);
 	
 	var _autoPrefix2 = _interopRequireDefault(_autoPrefix);
 	
-	var _transitions = __webpack_require__(760);
+	var _transitions = __webpack_require__(757);
 	
 	var _transitions2 = _interopRequireDefault(_transitions);
 	
-	var _ScaleIn = __webpack_require__(788);
+	var _ScaleIn = __webpack_require__(787);
 	
 	var _ScaleIn2 = _interopRequireDefault(_ScaleIn);
 	
@@ -1303,7 +1576,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 779:
+/***/ 776:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1313,11 +1586,11 @@ webpackJsonp([3],{
 	  value: true
 	});
 	
-	var _toConsumableArray2 = __webpack_require__(271);
+	var _toConsumableArray2 = __webpack_require__(270);
 	
 	var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
 	
-	var _getPrototypeOf = __webpack_require__(269);
+	var _getPrototypeOf = __webpack_require__(268);
 	
 	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 	
@@ -1325,7 +1598,7 @@ webpackJsonp([3],{
 	
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 	
-	var _createClass2 = __webpack_require__(268);
+	var _createClass2 = __webpack_require__(267);
 	
 	var _createClass3 = _interopRequireDefault(_createClass2);
 	
@@ -1337,11 +1610,11 @@ webpackJsonp([3],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _toArray2 = __webpack_require__(777);
+	var _toArray2 = __webpack_require__(774);
 	
 	var _toArray3 = _interopRequireDefault(_toArray2);
 	
-	var _simpleAssign = __webpack_require__(759);
+	var _simpleAssign = __webpack_require__(756);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -1357,15 +1630,15 @@ webpackJsonp([3],{
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _reactAddonsTransitionGroup = __webpack_require__(770);
+	var _TransitionGroup = __webpack_require__(767);
 	
-	var _reactAddonsTransitionGroup2 = _interopRequireDefault(_reactAddonsTransitionGroup);
+	var _TransitionGroup2 = _interopRequireDefault(_TransitionGroup);
 	
-	var _dom = __webpack_require__(780);
+	var _dom = __webpack_require__(777);
 	
 	var _dom2 = _interopRequireDefault(_dom);
 	
-	var _CircleRipple = __webpack_require__(787);
+	var _CircleRipple = __webpack_require__(786);
 	
 	var _CircleRipple2 = _interopRequireDefault(_CircleRipple);
 	
@@ -1579,7 +1852,7 @@ webpackJsonp([3],{
 	        }, style);
 	
 	        rippleGroup = _react2.default.createElement(
-	          _reactAddonsTransitionGroup2.default,
+	          _TransitionGroup2.default,
 	          { style: prepareStyles(mergedStyles) },
 	          ripples
 	        );
@@ -1620,7 +1893,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 780:
+/***/ 777:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1651,7 +1924,34 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 785:
+/***/ 780:
+/***/ function(module, exports) {
+
+	
+	module.exports = function chain(){
+	  var len = arguments.length
+	  var args = [];
+	
+	  for (var i = 0; i < len; i++)
+	    args[i] = arguments[i]
+	
+	  args = args.filter(function(fn){ return fn != null })
+	
+	  if (args.length === 0) return undefined
+	  if (args.length === 1) return args[0]
+	
+	  return args.reduce(function(current, next){
+	    return function chainedFunction() {
+	      current.apply(this, arguments);
+	      next.apply(this, arguments);
+	    };
+	  })
+	}
+
+
+/***/ },
+
+/***/ 783:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1669,7 +1969,7 @@ webpackJsonp([3],{
 	
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 	
-	var _getPrototypeOf = __webpack_require__(269);
+	var _getPrototypeOf = __webpack_require__(268);
 	
 	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 	
@@ -1677,7 +1977,7 @@ webpackJsonp([3],{
 	
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 	
-	var _createClass2 = __webpack_require__(268);
+	var _createClass2 = __webpack_require__(267);
 	
 	var _createClass3 = _interopRequireDefault(_createClass2);
 	
@@ -1689,7 +1989,7 @@ webpackJsonp([3],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(759);
+	var _simpleAssign = __webpack_require__(756);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -1701,11 +2001,11 @@ webpackJsonp([3],{
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _propTypes3 = __webpack_require__(767);
+	var _propTypes3 = __webpack_require__(764);
 	
 	var _propTypes4 = _interopRequireDefault(_propTypes3);
 	
-	var _transitions = __webpack_require__(760);
+	var _transitions = __webpack_require__(757);
 	
 	var _transitions2 = _interopRequireDefault(_transitions);
 	
@@ -1809,7 +2109,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 786:
+/***/ 784:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1827,7 +2127,7 @@ webpackJsonp([3],{
 	
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 	
-	var _getPrototypeOf = __webpack_require__(269);
+	var _getPrototypeOf = __webpack_require__(268);
 	
 	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 	
@@ -1835,7 +2135,7 @@ webpackJsonp([3],{
 	
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 	
-	var _createClass2 = __webpack_require__(268);
+	var _createClass2 = __webpack_require__(267);
 	
 	var _createClass3 = _interopRequireDefault(_createClass2);
 	
@@ -1847,7 +2147,7 @@ webpackJsonp([3],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(759);
+	var _simpleAssign = __webpack_require__(756);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -1859,19 +2159,19 @@ webpackJsonp([3],{
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _transitions = __webpack_require__(760);
+	var _transitions = __webpack_require__(757);
 	
 	var _transitions2 = _interopRequireDefault(_transitions);
 	
-	var _colorManipulator = __webpack_require__(90);
+	var _colorManipulator = __webpack_require__(91);
 	
-	var _childUtils = __webpack_require__(771);
+	var _childUtils = __webpack_require__(768);
 	
-	var _EnhancedButton = __webpack_require__(769);
+	var _EnhancedButton = __webpack_require__(766);
 	
 	var _EnhancedButton2 = _interopRequireDefault(_EnhancedButton);
 	
-	var _Paper = __webpack_require__(766);
+	var _Paper = __webpack_require__(763);
 	
 	var _Paper2 = _interopRequireDefault(_Paper);
 	
@@ -2312,7 +2612,124 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 787:
+/***/ 785:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _typeof2 = __webpack_require__(90);
+	
+	var _typeof3 = _interopRequireDefault(_typeof2);
+	
+	var _reactProdInvariant = __webpack_require__(36);
+	
+	var _reactProdInvariant2 = _interopRequireDefault(_reactProdInvariant);
+	
+	var _ReactChildren = __webpack_require__(273);
+	
+	var _ReactChildren2 = _interopRequireDefault(_ReactChildren);
+	
+	var _ReactElement = __webpack_require__(35);
+	
+	var _ReactElement2 = _interopRequireDefault(_ReactElement);
+	
+	var _emptyFunction = __webpack_require__(11);
+	
+	var _emptyFunction2 = _interopRequireDefault(_emptyFunction);
+	
+	var _invariant = __webpack_require__(1);
+	
+	var _invariant2 = _interopRequireDefault(_invariant);
+	
+	var _warning = __webpack_require__(2);
+	
+	var _warning2 = _interopRequireDefault(_warning);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	/**
+	 * We used to allow keyed objects to serve as a collection of ReactElements,
+	 * or nested sets. This allowed us a way to explicitly key a set or fragment of
+	 * components. This is now being replaced with an opaque data structure.
+	 * The upgrade path is to call React.addons.createFragment({ key: value }) to
+	 * create a keyed fragment. The resulting data structure is an array.
+	 */
+	
+	/**
+	 * Copyright 2015-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 */
+	
+	/**
+	 * Copied from react/lib/ReactFragment in React 15.5.4
+	 * because this file does not exist anymore in React 16.
+	 * Modified to match code style.
+	 */
+	
+	var numericPropertyRegex = /^\d+$/;
+	
+	var warnedAboutNumeric = false;
+	
+	var ReactFragment = {
+	  /**
+	   * Wrap a keyed object in an opaque proxy that warns you if you access any
+	   * of its properties.
+	   * See https://facebook.github.io/react/docs/create-fragment.html
+	   */
+	  create: function create(object) {
+	    if ((typeof object === 'undefined' ? 'undefined' : (0, _typeof3.default)(object)) !== 'object' || !object || Array.isArray(object)) {
+	      if (false) {
+	        process.env.NODE_ENV !== "production" ? (0, _warning2.default)(false, 'React.addons.createFragment only accepts a single object. Got: %s', object) : void 0;
+	      }
+	
+	      return object;
+	    }
+	    if (_ReactElement2.default.isValidElement(object)) {
+	      if (false) {
+	        process.env.NODE_ENV !== "production" ? (0, _warning2.default)(false, 'React.addons.createFragment does not accept a ReactElement ' + 'without a wrapper object.') : void 0;
+	      }
+	      return object;
+	    }
+	
+	    if (!(object.nodeType !== 1)) {
+	      if (false) {
+	        (0, _invariant2.default)(false, 'React.addons.createFragment(...): Encountered an invalid child; ' + 'DOM elements are not valid children of React components.');
+	      } else {
+	        (0, _reactProdInvariant2.default)('0');
+	      }
+	    }
+	
+	    var result = [];
+	
+	    for (var key in object) {
+	      if (false) {
+	        if (!warnedAboutNumeric && numericPropertyRegex.test(key)) {
+	          process.env.NODE_ENV !== "production" ? (0, _warning2.default)(false, 'React.addons.createFragment(...): ' + 'Child objects should have ' + 'non-numeric keys so ordering is preserved.') : void 0;
+	          warnedAboutNumeric = true;
+	        }
+	      }
+	      _ReactChildren2.default.mapIntoWithKeyPrefixInternal(object[key], result, key, _emptyFunction2.default.thatReturnsArgument);
+	    }
+	
+	    return result;
+	  }
+	};
+	
+	exports.default = ReactFragment.create;
+
+/***/ },
+
+/***/ 786:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2330,7 +2747,7 @@ webpackJsonp([3],{
 	
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 	
-	var _getPrototypeOf = __webpack_require__(269);
+	var _getPrototypeOf = __webpack_require__(268);
 	
 	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 	
@@ -2338,7 +2755,7 @@ webpackJsonp([3],{
 	
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 	
-	var _createClass2 = __webpack_require__(268);
+	var _createClass2 = __webpack_require__(267);
 	
 	var _createClass3 = _interopRequireDefault(_createClass2);
 	
@@ -2350,7 +2767,7 @@ webpackJsonp([3],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(759);
+	var _simpleAssign = __webpack_require__(756);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -2366,15 +2783,15 @@ webpackJsonp([3],{
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _shallowEqual = __webpack_require__(764);
+	var _shallowEqual = __webpack_require__(760);
 	
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 	
-	var _autoPrefix = __webpack_require__(763);
+	var _autoPrefix = __webpack_require__(761);
 	
 	var _autoPrefix2 = _interopRequireDefault(_autoPrefix);
 	
-	var _transitions = __webpack_require__(760);
+	var _transitions = __webpack_require__(757);
 	
 	var _transitions2 = _interopRequireDefault(_transitions);
 	
@@ -2491,7 +2908,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 788:
+/***/ 787:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2509,7 +2926,7 @@ webpackJsonp([3],{
 	
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 	
-	var _getPrototypeOf = __webpack_require__(269);
+	var _getPrototypeOf = __webpack_require__(268);
 	
 	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 	
@@ -2517,7 +2934,7 @@ webpackJsonp([3],{
 	
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 	
-	var _createClass2 = __webpack_require__(268);
+	var _createClass2 = __webpack_require__(267);
 	
 	var _createClass3 = _interopRequireDefault(_createClass2);
 	
@@ -2529,7 +2946,7 @@ webpackJsonp([3],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(759);
+	var _simpleAssign = __webpack_require__(756);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -2541,11 +2958,11 @@ webpackJsonp([3],{
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _reactAddonsTransitionGroup = __webpack_require__(770);
+	var _TransitionGroup = __webpack_require__(767);
 	
-	var _reactAddonsTransitionGroup2 = _interopRequireDefault(_reactAddonsTransitionGroup);
+	var _TransitionGroup2 = _interopRequireDefault(_TransitionGroup);
 	
-	var _ScaleInChild = __webpack_require__(789);
+	var _ScaleInChild = __webpack_require__(788);
 	
 	var _ScaleInChild2 = _interopRequireDefault(_ScaleInChild);
 	
@@ -2594,7 +3011,7 @@ webpackJsonp([3],{
 	      });
 	
 	      return _react2.default.createElement(
-	        _reactAddonsTransitionGroup2.default,
+	        _TransitionGroup2.default,
 	        (0, _extends3.default)({}, other, {
 	          style: prepareStyles(mergedRootStyles),
 	          component: 'div'
@@ -2627,7 +3044,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 789:
+/***/ 788:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2645,7 +3062,7 @@ webpackJsonp([3],{
 	
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 	
-	var _getPrototypeOf = __webpack_require__(269);
+	var _getPrototypeOf = __webpack_require__(268);
 	
 	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 	
@@ -2653,7 +3070,7 @@ webpackJsonp([3],{
 	
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 	
-	var _createClass2 = __webpack_require__(268);
+	var _createClass2 = __webpack_require__(267);
 	
 	var _createClass3 = _interopRequireDefault(_createClass2);
 	
@@ -2665,7 +3082,7 @@ webpackJsonp([3],{
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _simpleAssign = __webpack_require__(759);
+	var _simpleAssign = __webpack_require__(756);
 	
 	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 	
@@ -2681,11 +3098,11 @@ webpackJsonp([3],{
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _autoPrefix = __webpack_require__(763);
+	var _autoPrefix = __webpack_require__(761);
 	
 	var _autoPrefix2 = _interopRequireDefault(_autoPrefix);
 	
-	var _transitions = __webpack_require__(760);
+	var _transitions = __webpack_require__(757);
 	
 	var _transitions2 = _interopRequireDefault(_transitions);
 	
@@ -2808,787 +3225,97 @@ webpackJsonp([3],{
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	/**
-	 * Copyright 2015-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 */
-	
 	'use strict';
 	
-	var React = __webpack_require__(0);
+	exports.__esModule = true;
+	exports.getChildMapping = getChildMapping;
+	exports.mergeChildMappings = mergeChildMappings;
 	
-	var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
-	  Symbol.for &&
-	  Symbol.for('react.element')) ||
-	  0xeac7;
-	
-	var emptyFunction = __webpack_require__(11);
-	var invariant = __webpack_require__(1);
-	var warning = __webpack_require__(2);
-	
-	var SEPARATOR = '.';
-	var SUBSEPARATOR = ':';
-	
-	var didWarnAboutMaps = false;
-	
-	var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
-	var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
-	
-	function getIteratorFn(maybeIterable) {
-	  var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
-	  if (typeof iteratorFn === 'function') {
-	    return iteratorFn;
-	  }
-	}
-	
-	function escape(key) {
-	  var escapeRegex = /[=:]/g;
-	  var escaperLookup = {
-	    '=': '=0',
-	    ':': '=2'
-	  };
-	  var escapedString = ('' + key).replace(escapeRegex, function(match) {
-	    return escaperLookup[match];
-	  });
-	
-	  return '$' + escapedString;
-	}
-	
-	function getComponentKey(component, index) {
-	  // Do some typechecking here since we call this blindly. We want to ensure
-	  // that we don't block potential future ES APIs.
-	  if (component && typeof component === 'object' && component.key != null) {
-	    // Explicit key
-	    return escape(component.key);
-	  }
-	  // Implicit key determined by the index in the set
-	  return index.toString(36);
-	}
-	
-	function traverseAllChildrenImpl(
-	  children,
-	  nameSoFar,
-	  callback,
-	  traverseContext
-	) {
-	  var type = typeof children;
-	
-	  if (type === 'undefined' || type === 'boolean') {
-	    // All of the above are perceived as null.
-	    children = null;
-	  }
-	
-	  if (
-	    children === null ||
-	    type === 'string' ||
-	    type === 'number' ||
-	    // The following is inlined from ReactElement. This means we can optimize
-	    // some checks. React Fiber also inlines this logic for similar purposes.
-	    (type === 'object' && children.$$typeof === REACT_ELEMENT_TYPE)
-	  ) {
-	    callback(
-	      traverseContext,
-	      children,
-	      // If it's the only child, treat the name as if it was wrapped in an array
-	      // so that it's consistent if the number of children grows.
-	      nameSoFar === '' ? SEPARATOR + getComponentKey(children, 0) : nameSoFar
-	    );
-	    return 1;
-	  }
-	
-	  var child;
-	  var nextName;
-	  var subtreeCount = 0; // Count of children found in the current subtree.
-	  var nextNamePrefix = nameSoFar === '' ? SEPARATOR : nameSoFar + SUBSEPARATOR;
-	
-	  if (Array.isArray(children)) {
-	    for (var i = 0; i < children.length; i++) {
-	      child = children[i];
-	      nextName = nextNamePrefix + getComponentKey(child, i);
-	      subtreeCount += traverseAllChildrenImpl(
-	        child,
-	        nextName,
-	        callback,
-	        traverseContext
-	      );
-	    }
-	  } else {
-	    var iteratorFn = getIteratorFn(children);
-	    if (iteratorFn) {
-	      if (false) {
-	        // Warn about using Maps as children
-	        if (iteratorFn === children.entries) {
-	          warning(
-	            didWarnAboutMaps,
-	            'Using Maps as children is unsupported and will likely yield ' +
-	              'unexpected results. Convert it to a sequence/iterable of keyed ' +
-	              'ReactElements instead.'
-	          );
-	          didWarnAboutMaps = true;
-	        }
-	      }
-	
-	      var iterator = iteratorFn.call(children);
-	      var step;
-	      var ii = 0;
-	      while (!(step = iterator.next()).done) {
-	        child = step.value;
-	        nextName = nextNamePrefix + getComponentKey(child, ii++);
-	        subtreeCount += traverseAllChildrenImpl(
-	          child,
-	          nextName,
-	          callback,
-	          traverseContext
-	        );
-	      }
-	    } else if (type === 'object') {
-	      var addendum = '';
-	      if (false) {
-	        addendum = ' If you meant to render a collection of children, use an array ' +
-	          'instead or wrap the object using createFragment(object) from the ' +
-	          'React add-ons.';
-	      }
-	      var childrenString = '' + children;
-	      invariant(
-	        false,
-	        'Objects are not valid as a React child (found: %s).%s',
-	        childrenString === '[object Object]'
-	          ? 'object with keys {' + Object.keys(children).join(', ') + '}'
-	          : childrenString,
-	        addendum
-	      );
-	    }
-	  }
-	
-	  return subtreeCount;
-	}
-	
-	function traverseAllChildren(children, callback, traverseContext) {
-	  if (children == null) {
-	    return 0;
-	  }
-	
-	  return traverseAllChildrenImpl(children, '', callback, traverseContext);
-	}
-	
-	var userProvidedKeyEscapeRegex = /\/+/g;
-	function escapeUserProvidedKey(text) {
-	  return ('' + text).replace(userProvidedKeyEscapeRegex, '$&/');
-	}
-	
-	function cloneAndReplaceKey(oldElement, newKey) {
-	  return React.cloneElement(
-	    oldElement,
-	    { key: newKey },
-	    oldElement.props !== undefined
-	      ? oldElement.props.children
-	      : undefined
-	  );
-	};
-	
-	var DEFAULT_POOL_SIZE = 10;
-	var DEFAULT_POOLER = oneArgumentPooler;
-	
-	var oneArgumentPooler = function(copyFieldsFrom) {
-	  var Klass = this;
-	  if (Klass.instancePool.length) {
-	    var instance = Klass.instancePool.pop();
-	    Klass.call(instance, copyFieldsFrom);
-	    return instance;
-	  } else {
-	    return new Klass(copyFieldsFrom);
-	  }
-	};
-	
-	var addPoolingTo = function addPoolingTo(
-	  CopyConstructor,
-	  pooler
-	) {
-	  // Casting as any so that flow ignores the actual implementation and trusts
-	  // it to match the type we declared
-	  var NewKlass = CopyConstructor;
-	  NewKlass.instancePool = [];
-	  NewKlass.getPooled = pooler || DEFAULT_POOLER;
-	  if (!NewKlass.poolSize) {
-	    NewKlass.poolSize = DEFAULT_POOL_SIZE;
-	  }
-	  NewKlass.release = standardReleaser;
-	  return NewKlass;
-	};
-	
-	var standardReleaser = function standardReleaser(instance) {
-	  var Klass = this;
-	  invariant(
-	    instance instanceof Klass,
-	    'Trying to release an instance into a pool of a different type.'
-	  );
-	  instance.destructor();
-	  if (Klass.instancePool.length < Klass.poolSize) {
-	    Klass.instancePool.push(instance);
-	  }
-	};
-	
-	var fourArgumentPooler = function fourArgumentPooler(a1, a2, a3, a4) {
-	  var Klass = this;
-	  if (Klass.instancePool.length) {
-	    var instance = Klass.instancePool.pop();
-	    Klass.call(instance, a1, a2, a3, a4);
-	    return instance;
-	  } else {
-	    return new Klass(a1, a2, a3, a4);
-	  }
-	};
-	
-	function MapBookKeeping(mapResult, keyPrefix, mapFunction, mapContext) {
-	  this.result = mapResult;
-	  this.keyPrefix = keyPrefix;
-	  this.func = mapFunction;
-	  this.context = mapContext;
-	  this.count = 0;
-	}
-	MapBookKeeping.prototype.destructor = function() {
-	  this.result = null;
-	  this.keyPrefix = null;
-	  this.func = null;
-	  this.context = null;
-	  this.count = 0;
-	};
-	addPoolingTo(MapBookKeeping, fourArgumentPooler);
-	
-	function mapSingleChildIntoContext(bookKeeping, child, childKey) {
-	  var result = bookKeeping.result;
-	  var keyPrefix = bookKeeping.keyPrefix;
-	  var func = bookKeeping.func;
-	  var context = bookKeeping.context;
-	
-	  var mappedChild = func.call(context, child, bookKeeping.count++);
-	  if (Array.isArray(mappedChild)) {
-	    mapIntoWithKeyPrefixInternal(
-	      mappedChild,
-	      result,
-	      childKey,
-	      emptyFunction.thatReturnsArgument
-	    );
-	  } else if (mappedChild != null) {
-	    if (React.isValidElement(mappedChild)) {
-	      mappedChild = cloneAndReplaceKey(
-	        mappedChild,
-	        // Keep both the (mapped) and old keys if they differ, just as
-	        // traverseAllChildren used to do for objects as children
-	        keyPrefix +
-	          (mappedChild.key && (!child || child.key !== mappedChild.key)
-	            ? escapeUserProvidedKey(mappedChild.key) + '/'
-	            : '') +
-	          childKey
-	      );
-	    }
-	    result.push(mappedChild);
-	  }
-	}
-	
-	function mapIntoWithKeyPrefixInternal(children, array, prefix, func, context) {
-	  var escapedPrefix = '';
-	  if (prefix != null) {
-	    escapedPrefix = escapeUserProvidedKey(prefix) + '/';
-	  }
-	  var traverseContext = MapBookKeeping.getPooled(
-	    array,
-	    escapedPrefix,
-	    func,
-	    context
-	  );
-	  traverseAllChildren(children, mapSingleChildIntoContext, traverseContext);
-	  MapBookKeeping.release(traverseContext);
-	}
-	
-	var numericPropertyRegex = /^\d+$/;
-	
-	var warnedAboutNumeric = false;
-	
-	function createReactFragment(object) {
-	  if (typeof object !== 'object' || !object || Array.isArray(object)) {
-	    warning(
-	      false,
-	      'React.addons.createFragment only accepts a single object. Got: %s',
-	      object
-	    );
-	    return object;
-	  }
-	  if (React.isValidElement(object)) {
-	    warning(
-	      false,
-	      'React.addons.createFragment does not accept a ReactElement ' +
-	        'without a wrapper object.'
-	    );
-	    return object;
-	  }
-	
-	  invariant(
-	    object.nodeType !== 1,
-	    'React.addons.createFragment(...): Encountered an invalid child; DOM ' +
-	      'elements are not valid children of React components.'
-	  );
-	
-	  var result = [];
-	
-	  for (var key in object) {
-	    if (false) {
-	      if (!warnedAboutNumeric && numericPropertyRegex.test(key)) {
-	        warning(
-	          false,
-	          'React.addons.createFragment(...): Child objects should have ' +
-	            'non-numeric keys so ordering is preserved.'
-	        );
-	        warnedAboutNumeric = true;
-	      }
-	    }
-	    mapIntoWithKeyPrefixInternal(
-	      object[key],
-	      result,
-	      key,
-	      emptyFunction.thatReturnsArgument
-	    );
-	  }
-	
-	  return result;
-	}
-	
-	module.exports = createReactFragment;
-
-
-/***/ },
-
-/***/ 792:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 */
-	
-	'use strict';
-	
-	var flattenChildren = __webpack_require__(794);
-	
-	var ReactTransitionChildMapping = {
-	  /**
-	   * Given `this.props.children`, return an object mapping key to child. Just
-	   * simple syntactic sugar around flattenChildren().
-	   *
-	   * @param {*} children `this.props.children`
-	   * @param {number=} selfDebugID Optional debugID of the current internal instance.
-	   * @return {object} Mapping of key to child
-	   */
-	  getChildMapping: function (children, selfDebugID) {
-	    if (!children) {
-	      return children;
-	    }
-	
-	    if (false) {
-	      return flattenChildren(children, selfDebugID);
-	    }
-	
-	    return flattenChildren(children);
-	  },
-	
-	  /**
-	   * When you're adding or removing children some may be added or removed in the
-	   * same render pass. We want to show *both* since we want to simultaneously
-	   * animate elements in and out. This function takes a previous set of keys
-	   * and a new set of keys and merges them with its best guess of the correct
-	   * ordering. In the future we may expose some of the utilities in
-	   * ReactMultiChild to make this easy, but for now React itself does not
-	   * directly have this concept of the union of prevChildren and nextChildren
-	   * so we implement it here.
-	   *
-	   * @param {object} prev prev children as returned from
-	   * `ReactTransitionChildMapping.getChildMapping()`.
-	   * @param {object} next next children as returned from
-	   * `ReactTransitionChildMapping.getChildMapping()`.
-	   * @return {object} a key set that contains all keys in `prev` and all keys
-	   * in `next` in a reasonable order.
-	   */
-	  mergeChildMappings: function (prev, next) {
-	    prev = prev || {};
-	    next = next || {};
-	
-	    function getValueForKey(key) {
-	      if (next.hasOwnProperty(key)) {
-	        return next[key];
-	      } else {
-	        return prev[key];
-	      }
-	    }
-	
-	    // For each key of `next`, the list of keys to insert before that key in
-	    // the combined list
-	    var nextKeysPending = {};
-	
-	    var pendingKeys = [];
-	    for (var prevKey in prev) {
-	      if (next.hasOwnProperty(prevKey)) {
-	        if (pendingKeys.length) {
-	          nextKeysPending[prevKey] = pendingKeys;
-	          pendingKeys = [];
-	        }
-	      } else {
-	        pendingKeys.push(prevKey);
-	      }
-	    }
-	
-	    var i;
-	    var childMapping = {};
-	    for (var nextKey in next) {
-	      if (nextKeysPending.hasOwnProperty(nextKey)) {
-	        for (i = 0; i < nextKeysPending[nextKey].length; i++) {
-	          var pendingNextKey = nextKeysPending[nextKey][i];
-	          childMapping[nextKeysPending[nextKey][i]] = getValueForKey(pendingNextKey);
-	        }
-	      }
-	      childMapping[nextKey] = getValueForKey(nextKey);
-	    }
-	
-	    // Finally, add the keys which didn't appear before any key in `next`
-	    for (i = 0; i < pendingKeys.length; i++) {
-	      childMapping[pendingKeys[i]] = getValueForKey(pendingKeys[i]);
-	    }
-	
-	    return childMapping;
-	  }
-	};
-	
-	module.exports = ReactTransitionChildMapping;
-
-/***/ },
-
-/***/ 793:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 */
-	
-	'use strict';
-	
-	var _assign = __webpack_require__(4);
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var React = __webpack_require__(35);
-	var ReactTransitionChildMapping = __webpack_require__(792);
-	
-	var propTypesFactory = __webpack_require__(156);
-	var PropTypes = propTypesFactory(React.isValidElement);
-	
-	var emptyFunction = __webpack_require__(11);
+	var _react = __webpack_require__(0);
 	
 	/**
-	 * A basis for animations. When children are declaratively added or removed,
-	 * special lifecycle hooks are called.
-	 * See https://facebook.github.io/react/docs/animation.html#low-level-api-reacttransitiongroup
-	 */
-	
-	var ReactTransitionGroup = function (_React$Component) {
-	  _inherits(ReactTransitionGroup, _React$Component);
-	
-	  function ReactTransitionGroup() {
-	    var _temp, _this, _ret;
-	
-	    _classCallCheck(this, ReactTransitionGroup);
-	
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
-	
-	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
-	      // TODO: can we get useful debug information to show at this point?
-	      children: ReactTransitionChildMapping.getChildMapping(_this.props.children)
-	    }, _this.performAppear = function (key) {
-	      _this.currentlyTransitioningKeys[key] = true;
-	
-	      var component = _this.refs[key];
-	
-	      if (component.componentWillAppear) {
-	        component.componentWillAppear(_this._handleDoneAppearing.bind(_this, key));
-	      } else {
-	        _this._handleDoneAppearing(key);
-	      }
-	    }, _this._handleDoneAppearing = function (key) {
-	      var component = _this.refs[key];
-	      if (component.componentDidAppear) {
-	        component.componentDidAppear();
-	      }
-	
-	      delete _this.currentlyTransitioningKeys[key];
-	
-	      var currentChildMapping = ReactTransitionChildMapping.getChildMapping(_this.props.children);
-	
-	      if (!currentChildMapping || !currentChildMapping.hasOwnProperty(key)) {
-	        // This was removed before it had fully appeared. Remove it.
-	        _this.performLeave(key);
-	      }
-	    }, _this.performEnter = function (key) {
-	      _this.currentlyTransitioningKeys[key] = true;
-	
-	      var component = _this.refs[key];
-	
-	      if (component.componentWillEnter) {
-	        component.componentWillEnter(_this._handleDoneEntering.bind(_this, key));
-	      } else {
-	        _this._handleDoneEntering(key);
-	      }
-	    }, _this._handleDoneEntering = function (key) {
-	      var component = _this.refs[key];
-	      if (component.componentDidEnter) {
-	        component.componentDidEnter();
-	      }
-	
-	      delete _this.currentlyTransitioningKeys[key];
-	
-	      var currentChildMapping = ReactTransitionChildMapping.getChildMapping(_this.props.children);
-	
-	      if (!currentChildMapping || !currentChildMapping.hasOwnProperty(key)) {
-	        // This was removed before it had fully entered. Remove it.
-	        _this.performLeave(key);
-	      }
-	    }, _this.performLeave = function (key) {
-	      _this.currentlyTransitioningKeys[key] = true;
-	
-	      var component = _this.refs[key];
-	      if (component.componentWillLeave) {
-	        component.componentWillLeave(_this._handleDoneLeaving.bind(_this, key));
-	      } else {
-	        // Note that this is somewhat dangerous b/c it calls setState()
-	        // again, effectively mutating the component before all the work
-	        // is done.
-	        _this._handleDoneLeaving(key);
-	      }
-	    }, _this._handleDoneLeaving = function (key) {
-	      var component = _this.refs[key];
-	
-	      if (component.componentDidLeave) {
-	        component.componentDidLeave();
-	      }
-	
-	      delete _this.currentlyTransitioningKeys[key];
-	
-	      var currentChildMapping = ReactTransitionChildMapping.getChildMapping(_this.props.children);
-	
-	      if (currentChildMapping && currentChildMapping.hasOwnProperty(key)) {
-	        // This entered again before it fully left. Add it again.
-	        _this.performEnter(key);
-	      } else {
-	        _this.setState(function (state) {
-	          var newChildren = _assign({}, state.children);
-	          delete newChildren[key];
-	          return { children: newChildren };
-	        });
-	      }
-	    }, _temp), _possibleConstructorReturn(_this, _ret);
-	  }
-	
-	  ReactTransitionGroup.prototype.componentWillMount = function componentWillMount() {
-	    this.currentlyTransitioningKeys = {};
-	    this.keysToEnter = [];
-	    this.keysToLeave = [];
-	  };
-	
-	  ReactTransitionGroup.prototype.componentDidMount = function componentDidMount() {
-	    var initialChildMapping = this.state.children;
-	    for (var key in initialChildMapping) {
-	      if (initialChildMapping[key]) {
-	        this.performAppear(key);
-	      }
-	    }
-	  };
-	
-	  ReactTransitionGroup.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
-	    var nextChildMapping = ReactTransitionChildMapping.getChildMapping(nextProps.children);
-	    var prevChildMapping = this.state.children;
-	
-	    this.setState({
-	      children: ReactTransitionChildMapping.mergeChildMappings(prevChildMapping, nextChildMapping)
-	    });
-	
-	    var key;
-	
-	    for (key in nextChildMapping) {
-	      var hasPrev = prevChildMapping && prevChildMapping.hasOwnProperty(key);
-	      if (nextChildMapping[key] && !hasPrev && !this.currentlyTransitioningKeys[key]) {
-	        this.keysToEnter.push(key);
-	      }
-	    }
-	
-	    for (key in prevChildMapping) {
-	      var hasNext = nextChildMapping && nextChildMapping.hasOwnProperty(key);
-	      if (prevChildMapping[key] && !hasNext && !this.currentlyTransitioningKeys[key]) {
-	        this.keysToLeave.push(key);
-	      }
-	    }
-	
-	    // If we want to someday check for reordering, we could do it here.
-	  };
-	
-	  ReactTransitionGroup.prototype.componentDidUpdate = function componentDidUpdate() {
-	    var keysToEnter = this.keysToEnter;
-	    this.keysToEnter = [];
-	    keysToEnter.forEach(this.performEnter);
-	
-	    var keysToLeave = this.keysToLeave;
-	    this.keysToLeave = [];
-	    keysToLeave.forEach(this.performLeave);
-	  };
-	
-	  ReactTransitionGroup.prototype.render = function render() {
-	    // TODO: we could get rid of the need for the wrapper node
-	    // by cloning a single child
-	    var childrenToRender = [];
-	    for (var key in this.state.children) {
-	      var child = this.state.children[key];
-	      if (child) {
-	        // You may need to apply reactive updates to a child as it is leaving.
-	        // The normal React way to do it won't work since the child will have
-	        // already been removed. In case you need this behavior you can provide
-	        // a childFactory function to wrap every child, even the ones that are
-	        // leaving.
-	        childrenToRender.push(React.cloneElement(this.props.childFactory(child), { ref: key, key: key }));
-	      }
-	    }
-	
-	    // Do not forward ReactTransitionGroup props to primitive DOM nodes
-	    var props = _assign({}, this.props);
-	    delete props.transitionLeave;
-	    delete props.transitionName;
-	    delete props.transitionAppear;
-	    delete props.transitionEnter;
-	    delete props.childFactory;
-	    delete props.transitionLeaveTimeout;
-	    delete props.transitionEnterTimeout;
-	    delete props.transitionAppearTimeout;
-	    delete props.component;
-	
-	    return React.createElement(this.props.component, props, childrenToRender);
-	  };
-	
-	  return ReactTransitionGroup;
-	}(React.Component);
-	
-	ReactTransitionGroup.displayName = 'ReactTransitionGroup';
-	ReactTransitionGroup.propTypes = {
-	  component: PropTypes.any,
-	  childFactory: PropTypes.func
-	};
-	ReactTransitionGroup.defaultProps = {
-	  component: 'span',
-	  childFactory: emptyFunction.thatReturnsArgument
-	};
-	
-	
-	module.exports = ReactTransitionGroup;
-
-/***/ },
-
-/***/ 794:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/* WEBPACK VAR INJECTION */(function(process) {/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
+	 * Given `this.props.children`, return an object mapping key to child.
 	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * 
+	 * @param {*} children `this.props.children`
+	 * @return {object} Mapping of key to child
 	 */
-	
-	'use strict';
-	
-	var KeyEscapeUtils = __webpack_require__(274);
-	var traverseAllChildren = __webpack_require__(275);
-	var warning = __webpack_require__(2);
-	
-	var ReactComponentTreeHook;
-	
-	if (typeof process !== 'undefined' && {"NODE_ENV":"production"} && "production" === 'test') {
-	  // Temporary hack.
-	  // Inline requires don't work well with Jest:
-	  // https://github.com/facebook/react/issues/7240
-	  // Remove the inline requires when we don't need them anymore:
-	  // https://github.com/facebook/react/pull/7178
-	  ReactComponentTreeHook = __webpack_require__(157);
-	}
-	
-	/**
-	 * @param {function} traverseContext Context passed through traversal.
-	 * @param {?ReactComponent} child React child component.
-	 * @param {!string} name String name of key path to child.
-	 * @param {number=} selfDebugID Optional debugID of the current internal instance.
-	 */
-	function flattenSingleChildIntoContext(traverseContext, child, name, selfDebugID) {
-	  // We found a component instance.
-	  if (traverseContext && typeof traverseContext === 'object') {
-	    var result = traverseContext;
-	    var keyUnique = result[name] === undefined;
-	    if (false) {
-	      if (!ReactComponentTreeHook) {
-	        ReactComponentTreeHook = require('./ReactComponentTreeHook');
-	      }
-	      if (!keyUnique) {
-	        process.env.NODE_ENV !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeHook.getStackAddendumByID(selfDebugID)) : void 0;
-	      }
-	    }
-	    if (keyUnique && child != null) {
-	      result[name] = child;
-	    }
-	  }
-	}
-	
-	/**
-	 * Flattens children that are typically specified as `props.children`. Any null
-	 * children will not be included in the resulting object.
-	 * @return {!object} flattened children keyed by name.
-	 */
-	function flattenChildren(children, selfDebugID) {
-	  if (children == null) {
+	function getChildMapping(children) {
+	  if (!children) {
 	    return children;
 	  }
 	  var result = {};
-	
-	  if (false) {
-	    traverseAllChildren(children, function (traverseContext, child, name) {
-	      return flattenSingleChildIntoContext(traverseContext, child, name, selfDebugID);
-	    }, result);
-	  } else {
-	    traverseAllChildren(children, flattenSingleChildIntoContext, result);
-	  }
+	  _react.Children.map(children, function (child) {
+	    return child;
+	  }).forEach(function (child) {
+	    result[child.key] = child;
+	  });
 	  return result;
 	}
 	
-	module.exports = flattenChildren;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(155)))
+	/**
+	 * When you're adding or removing children some may be added or removed in the
+	 * same render pass. We want to show *both* since we want to simultaneously
+	 * animate elements in and out. This function takes a previous set of keys
+	 * and a new set of keys and merges them with its best guess of the correct
+	 * ordering. In the future we may expose some of the utilities in
+	 * ReactMultiChild to make this easy, but for now React itself does not
+	 * directly have this concept of the union of prevChildren and nextChildren
+	 * so we implement it here.
+	 *
+	 * @param {object} prev prev children as returned from
+	 * `ReactTransitionChildMapping.getChildMapping()`.
+	 * @param {object} next next children as returned from
+	 * `ReactTransitionChildMapping.getChildMapping()`.
+	 * @return {object} a key set that contains all keys in `prev` and all keys
+	 * in `next` in a reasonable order.
+	 */
+	function mergeChildMappings(prev, next) {
+	  prev = prev || {};
+	  next = next || {};
+	
+	  function getValueForKey(key) {
+	    if (next.hasOwnProperty(key)) {
+	      return next[key];
+	    }
+	
+	    return prev[key];
+	  }
+	
+	  // For each key of `next`, the list of keys to insert before that key in
+	  // the combined list
+	  var nextKeysPending = {};
+	
+	  var pendingKeys = [];
+	  for (var prevKey in prev) {
+	    if (next.hasOwnProperty(prevKey)) {
+	      if (pendingKeys.length) {
+	        nextKeysPending[prevKey] = pendingKeys;
+	        pendingKeys = [];
+	      }
+	    } else {
+	      pendingKeys.push(prevKey);
+	    }
+	  }
+	
+	  var i = void 0;
+	  var childMapping = {};
+	  for (var nextKey in next) {
+	    if (nextKeysPending.hasOwnProperty(nextKey)) {
+	      for (i = 0; i < nextKeysPending[nextKey].length; i++) {
+	        var pendingNextKey = nextKeysPending[nextKey][i];
+	        childMapping[nextKeysPending[nextKey][i]] = getValueForKey(pendingNextKey);
+	      }
+	    }
+	    childMapping[nextKey] = getValueForKey(nextKey);
+	  }
+	
+	  // Finally, add the keys which didn't appear before any key in `next`
+	  for (i = 0; i < pendingKeys.length; i++) {
+	    childMapping[pendingKeys[i]] = getValueForKey(pendingKeys[i]);
+	  }
+	
+	  return childMapping;
+	}
 
 /***/ }
 

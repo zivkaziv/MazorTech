@@ -1,7 +1,7 @@
 exports.ids = [2];
 exports.modules = {
 
-/***/ 102:
+/***/ 103:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -43,7 +43,7 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(1);
 	
-	var _landricksComponents = __webpack_require__(110);
+	var _landricksComponents = __webpack_require__(111);
 	
 	var _background_city = '/' + "588dd433b0d32f56235d81ba17f0a11c.jpg";
 	
@@ -146,6 +146,7 @@ exports.modules = {
 	    textAlign: 'center',
 	    display: 'inline-flex',
 	    fontSize: "24px"
+	    // fontWeight:"bold"
 	  },
 	  callForAction: {
 	    color: '#71A2B6'
