@@ -82,13 +82,13 @@ module.exports = {
       filename: "chunk-manifest.json",
       manifestVariable: "webpackManifest",
     })
-    // ,
-    // new webpack.optimize.UglifyJsPlugin({
-    //   compressor: {
-    //     warnings: false,
-    //   }
-    // }
-    // ),
+    ,
+    new webpack.optimize.UglifyJsPlugin({
+      compressor: {
+        warnings: false,
+      }
+    }
+    ),
   ],
 
   postcss: () => [
