@@ -578,7 +578,7 @@
 	var config = {
 	  mongoURL: 'mongodb://heroku_8tlqs9j6:ic64tk953vbvp6l9j20ftjinio@ds157380.mlab.com:57380/heroku_8tlqs9j6' || 'mongodb://localhost:27017/mern-starter',
 	  //Test12345
-	  // mongoURL: process.env.MONGODB_URI || 'mongodb://localhost:27017/mazor',
+	  // mongoURL: process.env.MONGODB_URI || 'mongodb://localhost:27017/mazor123',
 	  port: process.env.PORT || 8000
 	};
 	
@@ -2087,6 +2087,7 @@
 	                  onChange: this.handleHealthInsuranceChange
 	                },
 	                _react2.default.createElement(_MenuItem2.default, { value: 'MEDICARE', primaryText: 'Medicare' }),
+	                _react2.default.createElement(_MenuItem2.default, { value: 'BLUE_CROSS_SHILD', primaryText: 'Blue Cross Blue Shield Group' }),
 	                _react2.default.createElement(_MenuItem2.default, { value: 'UNITED_HEALTH', primaryText: 'Unitedhealth Group' }),
 	                _react2.default.createElement(_MenuItem2.default, { value: 'WELL_POINT', primaryText: 'Wellpoint Inc. Group' }),
 	                _react2.default.createElement(_MenuItem2.default, { value: 'KAISER', primaryText: 'Kaiser Foundation Group' }),
@@ -2094,8 +2095,7 @@
 	                _react2.default.createElement(_MenuItem2.default, { value: 'AETNA', primaryText: 'Aetna Group' }),
 	                _react2.default.createElement(_MenuItem2.default, { value: 'HCSC', primaryText: 'HCSC Group' }),
 	                _react2.default.createElement(_MenuItem2.default, { value: 'CIGNA_HEALTH', primaryText: 'Cigna Health Group' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 'HIGHMARK', primaryText: 'Highmark Group' }),
-	                _react2.default.createElement(_MenuItem2.default, { value: 'BLUE_CROSS_SHILD', primaryText: 'Blue Cross Blue Shield Group' })
+	                _react2.default.createElement(_MenuItem2.default, { value: 'HIGHMARK', primaryText: 'Highmark Group' })
 	              ),
 	              _react2.default.createElement(
 	                'div',
@@ -3592,11 +3592,12 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function MedicalRightItem(props) {
+	  var medicalRightTitle = props.medicalRight['Medical Right Category'] ? props.medicalRight['Medical Right Category'] + ' - ' + props.medicalRight['Medical Right'] : props.medicalRight['Medical Right'];
 	  return _react2.default.createElement(
 	    _Card.Card,
 	    null,
 	    _react2.default.createElement(_Card.CardHeader, {
-	      title: props.medicalRight['Medical Right'],
+	      title: medicalRightTitle,
 	      subtitle: props.medicalRight.condition,
 	      actAsExpander: true,
 	      showExpandableButton: true

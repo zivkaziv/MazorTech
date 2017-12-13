@@ -9,10 +9,12 @@ import FontIcon from 'material-ui/FontIcon';
 import styles from './MedicalRightItem.css';
 
 function MedicalRightItem(props) {
+  let medicalRightTitle = props.medicalRight['Medical Right Category'] ?
+    props.medicalRight['Medical Right Category'] + ' - ' + props.medicalRight['Medical Right'] : props.medicalRight['Medical Right'];
   return (
     <Card>
       <CardHeader
-        title={props.medicalRight['Medical Right']}
+        title= {medicalRightTitle}
         subtitle={props.medicalRight.condition}
         actAsExpander={true}
         showExpandableButton={true}

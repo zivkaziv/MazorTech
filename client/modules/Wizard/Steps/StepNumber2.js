@@ -205,6 +205,7 @@ class StepNumber2 extends Component {
                 onChange={this.handleHealthInsuranceChange}
               >
                 <MenuItem value={'MEDICARE'} primaryText="Medicare" />
+                <MenuItem value={'BLUE_CROSS_SHILD'} primaryText="Blue Cross Blue Shield Group" />
                 <MenuItem value={'UNITED_HEALTH'} primaryText="Unitedhealth Group" />
                 <MenuItem value={'WELL_POINT'} primaryText="Wellpoint Inc. Group" />
                 <MenuItem value={'KAISER'} primaryText="Kaiser Foundation Group" />
@@ -213,7 +214,6 @@ class StepNumber2 extends Component {
                 <MenuItem value={'HCSC'} primaryText="HCSC Group" />
                 <MenuItem value={'CIGNA_HEALTH'} primaryText="Cigna Health Group" />
                 <MenuItem value={'HIGHMARK'} primaryText="Highmark Group" />
-                <MenuItem value={'BLUE_CROSS_SHILD'} primaryText="Blue Cross Blue Shield Group" />
               </SelectField>
               <div style={styles.userDetailNote}>
                 If you can't find your insurance company it's must be because we are still working on analyze this data...
