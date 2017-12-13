@@ -5153,7 +5153,7 @@
 	
 	/**
 	 * Save a post
-	 * @param reqc
+	 * @param req
 	 * @param res
 	 * @returns void
 	 */
