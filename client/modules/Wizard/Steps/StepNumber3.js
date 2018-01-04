@@ -147,7 +147,6 @@ class StepNumber3 extends Component {
   }
 }
 
-
 function mapStateToProps(state) {
   return {
     user: getUser(state),
